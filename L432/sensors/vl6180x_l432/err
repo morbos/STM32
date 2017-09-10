@@ -1,0 +1,9 @@
+stm32-dcmi.adb:51:45: "DCMI_Periph" is undefined (more references follow)
+stm32-dcmi.ads:42:06: file "stm32_svd-dcmi.ads" not found
+stm32-dcmi.ads:42:06: "STM32.DCMI (body)" depends on "STM32.DCMI (spec)"
+stm32-dcmi.ads:42:06: "STM32.DCMI (spec)" depends on "STM32_SVD.DCMI (spec)"
+stm32-dcmi.ads:42:15: warning: unit "STM32_SVD.DCMI" is not referenced
+stm32-dcmi.ads:42:26: "STM32_SVD" is undefined
+stm32-dcmi.ads:102:25: "DR_Byte_Field_Array" is undefined (more references follow)
+gprbuild: *** compilation phase failed
+make: *** [default] Error 4
