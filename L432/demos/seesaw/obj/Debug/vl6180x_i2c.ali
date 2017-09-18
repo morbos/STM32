@@ -1,0 +1,124 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U vl6180x_i2c%b		vl6180x_i2c.ads		e86f38e3 NE OO PK IU
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W vl6180x%s		vl6180x.adb		vl6180x.ali  AD
+W vl6180x_i2c_io%s	vl6180x_i2c_io.adb	vl6180x_i2c_io.ali
+
+U vl6180x_i2c%s		vl6180x_i2c.ads		3d21dfc8 EB EE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W vl6180x%s		vl6180x.adb		vl6180x.ali  AD
+W vl6180x_i2c_io%s	vl6180x_i2c_io.adb	vl6180x_i2c_io.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-except.ads		20170610185419 291912d5 ada.exceptions%s
+D a-finali.ads		20170610185419 bf4f806b ada.finalization%s
+D a-reatim.ads		20170610185418 6cf3693f ada.real_time%s
+D a-stream.ads		20170610185419 119b8fb3 ada.streams%s
+D a-tags.ads		20170610185419 01f5e3ef ada.tags%s
+D a-unccon.ads		20170610185418 1cf21617 ada.unchecked_conversion%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D interfac.ads		20170610185418 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190223 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20170610185808 d038a450 interfaces.stm32%s
+D i-stm32-pwr.ads	20170610185845 13c7029d interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170610185851 c25eb87d interfaces.stm32.rcc%s
+D system.ads		20170610185418 6646b8c6 system%s
+D s-bb.ads		20170610185419 b4de4dfd system.bb%s
+D s-bbbopa.ads		20170610185421 c6aa82c7 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185418 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185418 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185418 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185418 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20170610185421 4d7fdeec system.bb.mcu_parameters%s
+D s-bbpara.ads		20170610185418 9e97c9bf system.bb.parameters%s
+D s-bbthre.ads		20170610185418 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185418 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185418 ad086247 system.bb.time%s
+D s-finmas.ads		20170610185418 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170610185420 4ff27390 system.finalization_root%s
+D s-multip.ads		20170610185418 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185418 7200ae92 system.os_interface%s
+D s-parame.ads		20170610185419 c9fe535f system.parameters%s
+D s-pooglo.ads		20170610185419 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170610185418 a4d06a42 system.secondary_stack%s
+D s-stalib.ads		20170610185420 09bd3940 system.standard_library%s
+D s-stm32.ads		20170610185421 4ab394a4 system.stm32%s
+D s-stoele.ads		20170610185418 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170610185419 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170610185418 b16154c2 system.storage_pools%s
+D s-stratt.ads		20170610185418 aedef97e system.stream_attributes%s
+D s-traent.ads		20170610185419 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D vl6180x.ads		20170917194701 f8351409 vl6180x%s
+D vl6180x.adb		20170917194701 3fcb021f vl6180x%b
+D vl6180x_i2c.ads	20170917194701 e86f38e3 vl6180x_i2c%s
+D vl6180x_i2c.ads	20170917194701 e86f38e3 vl6180x_i2c%b
+D vl6180x_i2c_io.ads	20170917194701 23acc21a vl6180x_i2c_io%s
+D /.share/CACHEDEV1_DATA/Ada/seesaw/gnat.adc  20170917194701 00000000
+X 8 hal.ads
+34K9*HAL 166e8 45|2r6 2r26
+53M9*UInt8<10|58M9>
+162A9*UInt8_Array(53M9)<integer>
+X 9 hal-i2c.ads
+32K13*I2C 84e12 45|2w10 2r30
+40A12*I2C_Data{8|162A9}<integer> 45|10r26
+X 10 interfac.ads
+58M9*Unsigned_8
+X 20 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+X 42 vl6180x.ads
+42H9 IO_Port 45|8r4
+44P9 Any_IO_Port(42R9) 45|9r4
+58A9 Sensor_Data_Buffer(8|53M9)<integer> 45|10r4
+72k9*VL6180X 204e12 45|4w6 7r28
+X 45 vl6180x_i2c.ads
+7K9*VL6180X_I2C[42|72]
+X 46 vl6180x_i2c_io.ads
+38K9*VL6180X_I2C_IO 45|1w6 1r27 46|62e19
+40R9*IO_Port 45|8r26 46|43e14
+45P9*Any_IO_Port(40R9) 45|9r26
+47U14*Read 42|46i19
+52U14*Write 42|52i19
+

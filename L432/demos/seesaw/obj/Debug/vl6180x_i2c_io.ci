@@ -1,0 +1,115 @@
+edge: { sourcename: "vl6180x_i2c_io__Tio_portCFD"
+  targetname: "-9:vl6180x_i2c_io__io_port,vl6180x_i2c_io__io_port"
+  label: "vl6180x_i2c_io.ads:40:9"
+}
+class {
+  classname: "vl6180x_i2c_io__io_port"
+  label: "vl6180x_i2c_io__io_port\vl6180x_i2c_io.ads:40:9"
+  virtuals: "-1:vl6180x_i2c_io___size\n
+             -2:vl6180x_i2c_io__io_portSR\n
+             -3:vl6180x_i2c_io__io_portSW\n
+             -4:vl6180x_i2c_io__io_portSI\n
+             -5:vl6180x_i2c_io__io_portSO\n
+             -6:vl6180x_i2c_io__Oeq\n
+             -7:vl6180x_i2c_io___assign\n
+             -8:vl6180x_i2c_io__io_portDA\n
+             -9:vl6180x_i2c_io__io_portDF"
+}
+edge: { sourcename: "vl6180x_i2c_io__read"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "vl6180x_i2c_io.adb:46:7"
+}
+edge: { sourcename: "vl6180x_i2c_io__write"
+  targetname: "3:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "vl6180x_i2c_io.adb:71:7"
+}
+edge: { sourcename: "vl6180x_i2c_io__read_buffer"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "vl6180x_i2c_io.adb:94:7"
+}
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb"
+node: { title: "memcpy" label: "memcpy\n<built-in>" shape : ellipse }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:538:14" shape : ellipse }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:451:14" shape : ellipse }
+node: { title: "system__finalization_masters__set_finalize_address" label: "Set_Finalize_Address\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:121:14" shape : ellipse }
+node: { title: "system__finalization_masters__set_base_pool" label: "Set_Base_Pool\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:196:14" shape : ellipse }
+node: { title: "system__finalization_masters__initialize__2" label: "Initialize\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:193:25" shape : ellipse }
+node: { title: "system__finalization_masters__finalization_masterIP" label: "Finalization_Masterip\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:156:9" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:183:14" shape : ellipse }
+node: { title: "system__img_enum_new__image_enumeration_8" label: "Image_Enumeration_8\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-imenne.ads:43:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_end_handler" label: "gnat_end_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_begin_handler" label: "gnat_begin_handler\n<built-in>" shape : ellipse }
+node: { title: "system__finalization_masters__finalize" label: "Finalize\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:91:25" shape : ellipse }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:570:14" shape : ellipse }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-secsta.ads:49:14" shape : ellipse }
+node: { title: "system__stream_attributes__w_su" label: "W_Su\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:145:14" shape : ellipse }
+node: { title: "system__stream_attributes__w_as" label: "W_As\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:128:14" shape : ellipse }
+node: { title: "system__stream_attributes__i_su" label: "I_Su\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:113:13" shape : ellipse }
+node: { title: "system__stream_attributes__i_as" label: "I_As\n/.share/CACHEDEV1_DATA/Ada/seesaw/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:97:13" shape : ellipse }
+node: { title: "vl6180x_i2c_io___elabs" label: "VL6180X_I2C_IO\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:38:1\n8 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io___elabs" targetname: "ada__tags__register_tag" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+edge: { sourcename: "vl6180x_i2c_io___elabs" targetname: "ada__tags__check_tsd" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+edge: { sourcename: "vl6180x_i2c_io___elabs" targetname: "system__finalization_masters__set_finalize_address" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:45:9" }
+edge: { sourcename: "vl6180x_i2c_io___elabs" targetname: "system__finalization_masters__set_base_pool" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:45:9" }
+edge: { sourcename: "vl6180x_i2c_io___elabs" targetname: "system__finalization_masters__initialize__2" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:45:9" }
+edge: { sourcename: "vl6180x_i2c_io___elabs" targetname: "system__finalization_masters__finalization_masterIP" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:45:9" }
+node: { title: "vl6180x_i2c_io__read_buffer" label: "READ_BUFFER\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:87:4\n120 bytes (dynamic)" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:102:10" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "memcpy" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:102:58" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "system__img_enum_new__image_enumeration_8" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:102:66" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:102:60" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:94:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:96:14" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:95:20" }
+edge: { sourcename: "vl6180x_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:95:14" }
+node: { title: "vl6180x_i2c_io__write" label: "WRITE\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:63:4\n120 bytes (dynamic)" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:79:10" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "memcpy" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:79:54" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "system__img_enum_new__image_enumeration_8" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:79:62" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:79:56" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:71:7" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:73:14" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:72:20" }
+edge: { sourcename: "vl6180x_i2c_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:72:14" }
+node: { title: "vl6180x_i2c_io__read" label: "READ\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:38:4\n112 bytes (dynamic)" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:54:10" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "memcpy" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:54:53" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "system__img_enum_new__image_enumeration_8" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:54:61" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:54:55" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:46:7" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:48:14" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:47:20" }
+edge: { sourcename: "vl6180x_i2c_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.adb:47:14" }
+node: { title: "vl6180x_i2c_io__finalize_spec" label: "FINALIZE_SPEC\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:38:1\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io__finalize_spec" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl6180x_i2c_io__finalize_spec" targetname: "__gnat_end_handler" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:38:0" }
+edge: { sourcename: "vl6180x_i2c_io__finalize_spec" targetname: "__gnat_begin_handler" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:38:1" }
+edge: { sourcename: "vl6180x_i2c_io__finalize_spec" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl6180x_i2c_io__finalize_spec" targetname: "system__finalization_masters__finalize" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:45:9" }
+edge: { sourcename: "vl6180x_i2c_io__finalize_spec" targetname: "ada__tags__unregister_tag" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:38:1" }
+node: { title: "vl6180x_i2c_io__Tio_portCFD" label: "TIO_PORTCFD\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n32 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io__Tio_portCFD" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+node: { title: "vl6180x_i2c_io__io_portDF" label: "IO_PORTDF\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n16 bytes (static)" }
+node: { title: "vl6180x_i2c_io__io_portDA" label: "IO_PORTDA\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n16 bytes (static)" }
+node: { title: "vl6180x_i2c_io___assign" label: "VL6180X_I2C_IO\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n440 bytes (static)" }
+node: { title: "vl6180x_i2c_io__Oeq" label: "=\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:4\n16 bytes (static)" }
+node: { title: "vl6180x_i2c_io__io_portSO" label: "IO_PORTSO\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSO" targetname: "vl6180x_i2c_io__io_portSW" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+node: { title: "vl6180x_i2c_io__io_portSI" label: "IO_PORTSI\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n40 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSI" targetname: "system__secondary_stack__ss_allocate" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSI" targetname: "vl6180x_i2c_io__io_portSR" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSI" targetname: "vl6180x_i2c_io__io_portIP" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+node: { title: "vl6180x_i2c_io__io_portSW" label: "IO_PORTSW\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSW" targetname: "system__stream_attributes__w_su" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSW" targetname: "system__stream_attributes__w_as" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+node: { title: "vl6180x_i2c_io__io_portSR" label: "IO_PORTSR\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSR" targetname: "system__stream_attributes__i_su" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+edge: { sourcename: "vl6180x_i2c_io__io_portSR" targetname: "system__stream_attributes__i_as" label: "/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9" }
+node: { title: "vl6180x_i2c_io___size" label: "VL6180X_I2C_IO\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n16 bytes (static)" }
+node: { title: "vl6180x_i2c_io__io_portIP" label: "IO_PORTIP\n/.share/CACHEDEV1_DATA/Ada/seesaw/src/vl6180x_i2c_io.ads:40:9\n16 bytes (static)" }
+}
