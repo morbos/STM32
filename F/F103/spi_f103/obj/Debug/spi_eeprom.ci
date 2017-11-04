@@ -1,0 +1,87 @@
+edge: { sourcename: "spi_eeprom__read4"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:35:13"
+}
+edge: { sourcename: "spi_eeprom__read4"
+  targetname: "4:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:36:13"
+}
+edge: { sourcename: "spi_eeprom__write4"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:59:13"
+}
+edge: { sourcename: "spi_eeprom__write4"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:60:13"
+}
+edge: { sourcename: "spi_eeprom__getstatus"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:86:7"
+}
+edge: { sourcename: "spi_eeprom__getstatus"
+  targetname: "4:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:87:7"
+}
+edge: { sourcename: "spi_eeprom__writeenable"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:114:7"
+}
+edge: { sourcename: "spi_eeprom__writedisable"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "spi_eeprom.adb:126:7"
+}
+graph: { title: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb"
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:199:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-assert.ads:41:14" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:193:14" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "spi_eeprom__writedisable" label: "Writedisable\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:118:4\n40 bytes (static)" }
+edge: { sourcename: "spi_eeprom__writedisable" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:127:7" }
+edge: { sourcename: "spi_eeprom__writedisable" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:126:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "spi_eeprom__writedisable" targetname: "stm32__gpio__clear" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:125:7" }
+node: { title: "spi_eeprom__writeenable" label: "Writeenable\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:106:4\n40 bytes (static)" }
+edge: { sourcename: "spi_eeprom__writeenable" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:115:7" }
+edge: { sourcename: "spi_eeprom__writeenable" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:114:7" }
+edge: { sourcename: "spi_eeprom__writeenable" targetname: "stm32__gpio__clear" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:113:7" }
+node: { title: "spi_eeprom__writeablep" label: "Writeablep\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:93:4\n24 bytes (static)" }
+edge: { sourcename: "spi_eeprom__writeablep" targetname: "spi_eeprom__getstatus" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:98:10" }
+edge: { sourcename: "spi_eeprom__writeablep" targetname: "spi_eeprom__sr_registerIP" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:96:7" }
+node: { title: "spi_eeprom__getstatus" label: "Getstatus\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:75:4\n64 bytes (static)" }
+edge: { sourcename: "spi_eeprom__getstatus" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:88:7" }
+edge: { sourcename: "spi_eeprom__getstatus" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:87:7" }
+edge: { sourcename: "spi_eeprom__getstatus" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:86:7" }
+edge: { sourcename: "spi_eeprom__getstatus" targetname: "stm32__gpio__clear" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:85:7" }
+edge: { sourcename: "spi_eeprom__getstatus" targetname: "spi_eeprom__sr_registerIP" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:82:7" }
+node: { title: "spi_eeprom__eeprom_size" label: "Eeprom_Size\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:69:4\n16 bytes (static)" }
+node: { title: "spi_eeprom__write4" label: "Write4\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:45:4\n72 bytes (static)" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:61:13" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:60:13" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:59:13" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "stm32__gpio__clear" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:58:13" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:57:33" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:56:50" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:53:16" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:91:14" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "spi_eeprom__writeablep" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:93:14" }
+edge: { sourcename: "spi_eeprom__write4" targetname: "spi_eeprom__eeprom_size" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:91:23" }
+node: { title: "spi_eeprom__read4" label: "Read4\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:21:4\n64 bytes (static)" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:37:13" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:36:13" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:35:13" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "stm32__gpio__clear" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:34:13" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:33:33" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:32:50" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:29:16" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:84:13" }
+edge: { sourcename: "spi_eeprom__read4" targetname: "spi_eeprom__eeprom_size" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:84:21" }
+node: { title: "spi_eeprom__initialize" label: "Initialize\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:10:4\n24 bytes (static)" }
+edge: { sourcename: "spi_eeprom__initialize" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.adb:18:7" }
+node: { title: "spi_eeprom__eepromIP" label: "Eepromip\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:97:9\n16 bytes (static)" }
+node: { title: "spi_eeprom__cell4IP" label: "Cell4ip\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:43:9\n16 bytes (static)" }
+node: { title: "spi_eeprom__cell4EQ" label: "Cell4eq\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:43:9\n24 bytes (static)" }
+edge: { sourcename: "spi_eeprom__cell4EQ" targetname: "memcmp" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:43:9" }
+node: { title: "spi_eeprom__sr_registerIP" label: "Sr_Registerip\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:25:9\n16 bytes (static)" }
+node: { title: "spi_eeprom__eeprom_commandsRP" label: "Eeprom_Commandsrp\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:10:9\n16 bytes (static)" }
+}

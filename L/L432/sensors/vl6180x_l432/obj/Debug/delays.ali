@@ -1,0 +1,86 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/sfp/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_DELAY
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U delays%b		delays.adb		a9468071 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+
+U delays%s		delays.ads		c12601b6 EE NE OO PK
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-reatim.ads		20170610185418 6cf3693f ada.real_time%s
+D a-retide.ads		20170610185418 081cdaa4 ada.real_time.delays%s
+D delays.ads		20171104191258 c12601b6 delays%s
+D delays.adb		20171104192036 0493e8f8 delays%b
+D interfac.ads		20170610185418 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190223 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20170610185808 d038a450 interfaces.stm32%s
+D i-stm32-pwr.ads	20170610185845 13c7029d interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170610185851 c25eb87d interfaces.stm32.rcc%s
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-bb.ads		20170610185419 b4de4dfd system.bb%s
+D s-bbbopa.ads		20170610185421 c6aa82c7 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185418 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185418 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185418 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185418 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20170610185421 4d7fdeec system.bb.mcu_parameters%s
+D s-bbpara.ads		20170610185418 9e97c9bf system.bb.parameters%s
+D s-bbthre.ads		20170610185418 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185418 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185418 ad086247 system.bb.time%s
+D s-multip.ads		20170610185418 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185418 7200ae92 system.os_interface%s
+D s-stm32.ads		20170610185421 4ab394a4 system.stm32%s
+D s-stoele.ads		20170610185418 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/gnat.adc  20170309004503 00000000
+X 1 ada.ads
+16K9*Ada 20e8 5|1r6 1r25
+X 2 a-reatim.ads
+36K13*Real_Time 151e18 5|1w10 1r29
+48M9*Time<22|41M9> 5|4r21
+59I9*Time_Span<22|76I9>
+66V13*Clock{48M9}<22|129p13> 5|8s23 12s19 17s10
+70V14*"+"{48M9} 5|8s29 12s25
+79V14*">"{boolean} 5|17r16
+102V13*Milliseconds{59I9} 5|8s31 12s27
+X 4 delays.ads
+1K9*Delays 5l5 5e11 5|3b14 23l5 23t11
+2U14*Delay_Milliseconds 2>34 5|10b14 13l8 13t26
+2i34 Count{positive} 5|10b34 12r41
+3U14*Init_Timeout 3>28 5|5b14 9l8 9t20
+3i28 Timeout{positive} 5|5b28 8r45
+4V13*TimeoutP{boolean} 5|14b13 22l8 22t16
+X 5 delays.adb
+4m4 Timeout_Time{2|48M9} 8m7 17r18
+X 16 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+X 22 s-bbtime.ads
+41M9*Time
+76I9*Time_Span<long_long_integer>
+

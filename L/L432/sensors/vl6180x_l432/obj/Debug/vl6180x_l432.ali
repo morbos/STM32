@@ -1,0 +1,219 @@
+V "GNAT Lib v2016"
+M P W=b
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/sfp/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV SPARK_05
+
+U vl6180x_l432%b	vl6180x_l432.adb	660cdf2e NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W hal%s			hal.ads			hal.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.i2c%s		stm32-i2c.adb		stm32-i2c.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W vl6180x_i2c%s		vl6180x_i2c.ads		vl6180x_i2c.ali
+W vl6180x_i2c_io%s	vl6180x_i2c_io.adb	vl6180x_i2c_io.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-finali.ads		20170610185419 bf4f806b ada.finalization%s
+D a-reatim.ads		20170610185418 6cf3693f ada.real_time%s
+D a-stream.ads		20170610185419 119b8fb3 ada.streams%s
+D a-tags.ads		20170610185419 01f5e3ef ada.tags%s
+D a-textio.ads		20170610185419 ffc84532 ada.text_io%s
+D delays.ads		20171104191258 c12601b6 delays%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D hal-spi.ads		20170625184526 fe139819 hal.spi%s
+D interfac.ads		20170610185418 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190223 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20170610185808 d038a450 interfaces.stm32%s
+D i-stm32-pwr.ads	20170610185845 13c7029d interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170610185851 c25eb87d interfaces.stm32.rcc%s
+D stm32.ads		20170625184525 698e2c3b stm32%s
+D stm32-adc.ads		20171104182711 ccb8d517 stm32.adc%s
+D stm32-dac.ads		20171104182719 df36c124 stm32.dac%s
+D stm32-device.ads	20170716194203 290d0c80 stm32.device%s
+D stm32-dma.ads		20170716222002 bb3118d3 stm32.dma%s
+D stm32-exti.ads	20170625184525 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20170625184525 0ffd30d6 stm32.gpio%s
+D stm32-i2c.ads		20170625184525 a917bb1e stm32.i2c%s
+D stm32-spi.ads		20170625184525 8cefd63f stm32.spi%s
+D stm32-timers.ads	20170625184525 57d7eba0 stm32.timers%s
+D stm32_svd.ads		20170625184525 62c1384f stm32_svd%s
+D stm32_svd-adc.ads	20170625192859 4f6d4a34 stm32_svd.adc%s
+D stm32_svd-dac.ads	20170625184525 738e6732 stm32_svd.dac%s
+D stm32_svd-dma.ads	20170625184525 e9a28962 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20170625184525 639e7098 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20170625184525 0a034032 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20170625184525 b8115cb2 stm32_svd.spi%s
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-bb.ads		20170610185419 b4de4dfd system.bb%s
+D s-bbbopa.ads		20170610185421 c6aa82c7 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185418 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185418 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185418 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185418 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20170610185421 4d7fdeec system.bb.mcu_parameters%s
+D s-bbpara.ads		20170610185418 9e97c9bf system.bb.parameters%s
+D s-bbthre.ads		20170610185418 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185418 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185418 ad086247 system.bb.time%s
+D s-finroo.ads		20170610185420 4ff27390 system.finalization_root%s
+D s-imguns.ads		20170610185419 9ff43cf7 system.img_uns%s
+D s-multip.ads		20170610185418 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185418 7200ae92 system.os_interface%s
+D s-secsta.ads		20170610185418 a4d06a42 system.secondary_stack%s
+D s-stm32.ads		20170610185421 4ab394a4 system.stm32%s
+D s-stoele.ads		20170610185418 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170610185418 b16154c2 system.storage_pools%s
+D s-stratt.ads		20170610185418 aedef97e system.stream_attributes%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D vl6180x.ads		20171104191407 4504f490 vl6180x%s
+D vl6180x_i2c.ads	20171104191032 67c63a7e vl6180x_i2c%s
+D vl6180x_i2c_io.ads	20171104183910 23acc21a vl6180x_i2c_io%s
+D vl6180x_l432.adb	20171104185819 15f84401 vl6180x_l432%b
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/gnat.adc  20170309004503 00000000
+X 1 ada.ads
+16K9*Ada 20e8 59|8r6 8r32 12r6 12r25
+X 3 a-reatim.ads
+36K13*Real_Time 151e18 59|12w10 12r29
+X 6 a-textio.ads
+31K13*Text_IO 47e16 59|8w10 8r36
+41U14*Put_Line 59|120s7
+X 7 delays.ads
+2U14*Delay_Milliseconds 56|67i19
+3U14*Init_Timeout 56|72i19
+4V13*TimeoutP{boolean} 56|74i18
+X 8 hal.ads
+34K9*HAL 166e8 59|2w6 2r15
+43M9*UInt4
+53M9*UInt8<12|58M9> 59|112r16 120r28
+54M9*UInt10
+97M9*UInt32<12|69M9>
+X 9 hal-gpio.ads
+44h9*GPIO_Point
+X 10 hal-i2c.ads
+46M12*I2C_Address{8|54M9}
+48h9*I2C_Port
+X 11 hal-spi.ads
+48h9*SPI_Port
+X 12 interfac.ads
+58M9*Unsigned_8
+69M9*Unsigned_32
+X 17 stm32.ads
+39K9*STM32 48e10 59|4r6 4r25 5r6 5r25 6r6 6r25 10r5 54r56 55r56 86r7
+42M9*GPIO_Alternate_Function<8|43M9> 59|19r16 21r16 29r39 61r16 63r16
+X 20 stm32-device.ads
+55K15*Device 339e17 59|4w12 4r31
+63U14*Enable_Clock 59|44s7 69s7 70s7
+101r4*PA9{23|129R9} 59|30r49
+102r4*PA10{23|129R9} 59|31r49
+111r4*PB3{23|129R9} 59|39m34 39r34
+187m4*GPIO_AF_I2C1_4{17|42M9} 59|29r66
+242r4*I2C_1{24|67R9} 59|28m58 28r58
+250U14*Enable_Clock 59|72s7
+X 23 stm32-gpio.ads
+49K15*GPIO 271e15 59|5w12 5r31 54r62 55r62
+87n35*Mode_Out{87E9} 59|46r36
+87n45*Mode_AF{87E9} 59|80r32
+96n30*Push_Pull{96E9} 59|47r36
+96n41*Open_Drain{96E9} 59|81r32
+101n70*Speed_100MHz{101E9} 59|48r36 79r32
+115n36*Floating{115E9} 59|49r36
+115n46*Pull_Up{115E9} 59|82r32
+122R9*GPIO_Port_Configuration 127e14 59|42r23 66r30
+123e7*Mode{87E9} 59|46m21 80m17
+124e7*Output_Type{96E9} 59|47m21 81m17
+125e7*Speed{101E9} 59|48m21 79m17
+126e7*Resistors{115E9} 59|49m21 82m17
+129R9*GPIO_Point<9|44R9> 134e14 59|18r16 20r16 30r30 31r30 37r24 60r16 62r16
+159U14*Set<9|74p14> 59|54r67
+165U14*Clear<9|77p14> 59|55r67
+185U14*Configure_IO 59|50s7 83s7 84s7
+187r7 Config{122R9} 59|51r21
+202U14*Configure_Alternate_Function 59|76s7 77s7
+X 24 stm32-i2c.ads
+38K15*I2C 139e14 59|6w12 6r31 86r13
+43n7*Addressing_Mode_7bit{42E9} 59|89r39
+47m7*Clock_Speed{8|97M9} 59|88m11
+48e7*Addressing_Mode{42E9} 59|89m11
+49m7*Own_Address{8|54M9} 59|92m11
+53b7*General_Call_Enabled{boolean} 59|90m11
+57b7*Clock_Stretching_Enabled{boolean} 59|91m11
+67R9*I2C_Port<10|48R9> 137e17 59|17r23 28r46 59r23
+73U14*Configure 59|86s17
+X 39 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+X 56 vl6180x.ads
+81R9*VL6180X_Rng_ALS 59|35r14[57|7]
+98V13*ReadRange{8|53M9} 59|119s28[57|7]
+102U14*StaticInit 59|108s15[57|7]
+107m4*VL6180X_Primary_Address{10|46M12} 59|33r73[57|7]
+X 57 vl6180x_i2c.ads
+7K9*VL6180X_I2C[56|79] 59|3w6 3r25
+X 58 vl6180x_i2c_io.ads
+38K9*VL6180X_I2C_IO 62e19 59|7w6 33r26
+40R9*IO_Port 43e14 59|33r41
+47U14*Read 56|46i19
+52U14*Write 56|52i19
+X 59 vl6180x_l432.adb
+14U11*Vl6180x_l432 14b11 127l5 127t17
+16U14 Initialize_Rng_ALS_Hardware 17^7 18>7 19>7 20>7 21>7 58b14 96l8 96t35
+. 100s7
+17p7 Port(24|67R9) 59b7 72r21 87r10 101r10
+18r7 SCL{23|129R9} 60b7 69r21 76r37 83r21 102r10
+19m7 SCL_AF{17|42M9} 61b7 76r42 103r10
+20r7 SDA{23|129R9} 62b7 70r21 77r37 84r21 104r10
+21m7 SDA_AF{17|42M9} 63b7 77r42 105r10
+24U14 Initialize_LED 41b14 52l8 52t22 117s4
+25U14 Set_Up_Rng_ALS 98b14 110l8 110t22 115s4
+28p4 VL6180XA1_I2C_Port(24|67R9) 33r53 101r20
+29m4 VL6180XA1_I2C_Port_AF{17|42M9} 103r20 105r20
+30r4 VL6180XA1_I2C_Clock_Pin=30:49{23|129R9} 102r20
+31r4 VL6180XA1_I2C_Data_Pin=31:49{23|129R9} 104r20
+33r4 Sensor_Port{58|40R9} 35m31 35r31
+35r4 Rng_ALS{56|81R9[57|7]} 108m7 108r7 119m20 119r20
+37R12 User_LED{23|129R9} 39r17 54r38 55r38
+39r4 Green_LED=39:34{23|129R9} 44r21 50r21 122r19 124r20
+42r7 Configuration{23|122R9} 46m7 47m7 48m7 49m7 51r31
+54U14 Turn_On=54:67 122s10
+54r24 This{37R12}
+55U14 Turn_Off=55:67 124s10
+55r24 This{37R12}
+66r7 GPIO_Conf{23|122R9} 79m7 80m7 81m7 82m7 83r26 84r26
+67N7 VL6180XA1_Clock_Speed 88r39
+112m4 Range_Val{8|53M9} 119m7 120r41 121r10
+

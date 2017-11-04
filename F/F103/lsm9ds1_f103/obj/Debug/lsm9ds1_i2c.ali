@@ -1,0 +1,119 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES SS ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsm9ds1_i2c%b		lsm9ds1_i2c.ads		0184e89e NE OO PK IU
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_conversion%s
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W lsm9ds1%s		lsm9ds1.adb		lsm9ds1.ali  AD
+W lsm9ds1_i2c_io%s	lsm9ds1_i2c_io.adb	lsm9ds1_i2c_io.ali
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U lsm9ds1_i2c%s		lsm9ds1_i2c.ads		689e5dde EB NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W lsm9ds1%s		lsm9ds1.adb		lsm9ds1.ali  AD
+W lsm9ds1_i2c_io%s	lsm9ds1_i2c_io.adb	lsm9ds1_i2c_io.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-except.ads		20170610185420 5b5f0f2f ada.exceptions%s
+D a-except.adb		20170610185421 0537fae3 ada.exceptions%b
+D a-reatim.ads		20170610185420 6cf3693f ada.real_time%s
+D a-retide.ads		20170610185420 081cdaa4 ada.real_time.delays%s
+D a-tags.ads		20170610185420 cc425f51 ada.tags%s
+D a-unccon.ads		20170610185420 1cf21617 ada.unchecked_conversion%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D interfac.ads		20170610185420 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190252 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20171008190010 7f31ad58 interfaces.stm32%s
+D i-stm32-pwr.ads	20171006213128 dbc7df38 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20171008190040 736cfed1 interfaces.stm32.rcc%s
+D lsm9ds1.ads		20171024173401 c435640e lsm9ds1%s
+D lsm9ds1.adb		20171024173615 cef38a51 lsm9ds1%b
+D lsm9ds1_i2c.ads	20170513200039 0184e89e lsm9ds1_i2c%s
+D lsm9ds1_i2c.ads	20170513200039 0184e89e lsm9ds1_i2c%b
+D lsm9ds1_i2c_io.ads	20170513200058 a3f8e076 lsm9ds1_i2c_io%s
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-bb.ads		20170610185420 b4de4dfd system.bb%s
+D s-bbbopa.ads		20171011225700 ce0fdd60 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185420 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185420 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185420 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185420 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20171006213127 bf216535 system.bb.mcu_parameters%s
+D s-bbpara.ads		20171008212940 8d67de69 system.bb.parameters%s
+D s-bbthre.ads		20170610185420 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185420 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185420 ad086247 system.bb.time%s
+D s-multip.ads		20170610185420 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185420 7200ae92 system.os_interface%s
+D s-secsta.ads		20171008081042 5eb6d602 system.secondary_stack%s
+D s-stm32.ads		20171008204936 e60e59e5 system.stm32%s
+D s-stoele.ads		20170610185420 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /backup/ada/STM32/F/F103/lsm9ds1_f103/gnat.adc  20170513192400 00000000
+X 8 hal.ads
+34K9*HAL 166e8 18|2r6 2r26
+53M9*UInt8<10|58M9>
+162A9*UInt8_Array(53M9)<integer>
+X 9 hal-i2c.ads
+32K13*I2C 84e12 18|2w10 2r30
+40A12*I2C_Data{8|162A9}<integer> 18|10r26
+X 10 interfac.ads
+58M9*Unsigned_8
+X 15 lsm9ds1.ads
+42H9 IO_Port 18|8r4
+44P9 Any_IO_Port(42R9) 18|9r4
+58A9 Sensor_Data_Buffer(8|53M9)<integer> 18|10r4
+69k9*LSM9DS1 300e12 18|4w6 7r28
+X 18 lsm9ds1_i2c.ads
+7K9*LSM9DS1_I2C[15|69]
+X 19 lsm9ds1_i2c_io.ads
+38K9*LSM9DS1_I2C_IO 18|1w6 1r27 19|62e19
+40R9*IO_Port 18|8r26 19|43e14
+45P9*Any_IO_Port(40R9) 18|9r26
+47U14*Read 15|46i19
+52U14*Write 15|52i19
+57U14*Read_Buffer 15|61i19
+X 25 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+

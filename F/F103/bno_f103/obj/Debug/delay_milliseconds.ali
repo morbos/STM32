@@ -1,0 +1,78 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_DELAY
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U delay_milliseconds%b	delay_milliseconds.adb	2500fbb1 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+
+U delay_milliseconds%s	delay_milliseconds.ads	1a3c3a9e EE NE OO SU
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-reatim.ads		20170610185420 6cf3693f ada.real_time%s
+D a-retide.ads		20170610185420 081cdaa4 ada.real_time.delays%s
+D delay_milliseconds.ads  20171010173648 1a3c3a9e delay_milliseconds%s
+D delay_milliseconds.adb  20171010173648 53cfa810 delay_milliseconds%b
+D interfac.ads		20170610185420 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190252 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20171008190010 7f31ad58 interfaces.stm32%s
+D i-stm32-pwr.ads	20171006213128 dbc7df38 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20171008190040 736cfed1 interfaces.stm32.rcc%s
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-bb.ads		20170610185420 b4de4dfd system.bb%s
+D s-bbbopa.ads		20171011225700 ce0fdd60 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185420 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185420 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185420 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185420 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20171006213127 bf216535 system.bb.mcu_parameters%s
+D s-bbpara.ads		20171008212940 8d67de69 system.bb.parameters%s
+D s-bbthre.ads		20170610185420 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185420 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185420 ad086247 system.bb.time%s
+D s-multip.ads		20170610185420 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185420 7200ae92 system.os_interface%s
+D s-stm32.ads		20171008204936 e60e59e5 system.stm32%s
+D s-stoele.ads		20170610185420 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /backup/ada/STM32/F/F103/bno_f103/gnat.adc  20171010020729 00000000
+X 1 ada.ads
+16K9*Ada 20e8 5|1r6 1r25
+X 2 a-reatim.ads
+36K13*Real_Time 151e18 5|1w10 1r29
+48M9*Time<22|41M9>
+59I9*Time_Span<22|76I9>
+66V13*Clock{48M9}<22|129p13> 5|5s16
+70V14*"+"{48M9} 5|5s22
+102V13*Milliseconds{59I9} 5|5s24
+X 4 delay_milliseconds.ads
+1U11*Delay_Milliseconds 1>31 5|3b11 6l5 6t23
+1i31 Count{positive} 5|3b31 5r38
+X 16 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+X 22 s-bbtime.ads
+41M9*Time
+76I9*Time_Span<long_long_integer>
+

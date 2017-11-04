@@ -1,0 +1,50 @@
+[GENERATED OBJECT FILE]
+b__try_l476.o
+[PROJECT FILES]
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/try_l476.gpr
+20171104204006
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/middleware/middleware.gpr
+20170625184526
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/components/components.gpr
+20170625184526
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20170625184525
+/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/HAL.gpr
+20170625184526
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/STM32/stm32l4x6.gpr
+20171003012503
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/target_options.gpr
+20170610185421
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/runtime_build.gpr
+20171104182329
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/ravenscar_build.gpr
+20170610185421
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/stm32l476_sensortile/board.gpr
+20170925000105
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/stm32l476_sensortile.gpr
+20171003223046
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/stm32l476_sensortile/config.gpr
+20171003222608
+[BOUND OBJECT FILES]
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/obj/Debug/try_l476.o
+[GENERATED SOURCE FILES]
+b__try_l476.ads
+b__try_l476.adb
+b__try_l476.ali
+[RESULTING OPTIONS]
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/obj/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/obj/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/lib/stm32l476sensortile/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/stm32l476_sensortile/lib/stm32l4nucleo/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4nucleo/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4nucleo/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4nucleo/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/components/lib/stm32l4nucleo/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/middleware/lib/stm32l4nucleo/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+-static
+-static-libgcc
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/libgnarl.a
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/libgnat.a

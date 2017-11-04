@@ -1,0 +1,48 @@
+graph: { title: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb"
+node: { title: "stm32__gpio__set__2" label: "SET\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:193:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:199:14" shape : ellipse }
+node: { title: "stm32__crc__value" label: "VALUE\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-crc.ads:51:13" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__single_entry__protected_single_entry_call" label: "Protected_Single_Entry_Call\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-tposen.ads:204:14" shape : ellipse }
+node: { title: "stm32__crc__dma__update_crc" label: "UPDATE_CRC\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-crc-dma.ads:86:14" shape : ellipse }
+node: { title: "stm32__crc__reset_calculator" label: "RESET_CALCULATOR\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-crc.ads:45:14" shape : ellipse }
+node: { title: "stm32__device__reset__5" label: "RESET\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:281:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__6" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:280:14" shape : ellipse }
+node: { title: "stm32__crc__update_crc__2" label: "UPDATE_CRC\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-crc.ads:71:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__12" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:343:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/backup/ada/STM32/F/F103/crc_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/src/stm32-board.ads:45:14" shape : ellipse }
+node: { title: "_ada_crc_f103" label: "Crc_F103\n/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:21:1\n96 bytes (static)" }
+edge: { sourcename: "_ada_crc_f103" targetname: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:134:7" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__crc__value" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:128:17" }
+edge: { sourcename: "_ada_crc_f103" targetname: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:125:7" }
+edge: { sourcename: "_ada_crc_f103" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:122:19" }
+edge: { sourcename: "_ada_crc_f103" targetname: "system__tasking__protected_objects__single_entry__protected_single_entry_call" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:122:19" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__crc__dma__update_crc" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:115:7" }
+edge: { sourcename: "_ada_crc_f103" targetname: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:100:7" }
+edge: { sourcename: "_ada_crc_f103" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:97:19" }
+edge: { sourcename: "_ada_crc_f103" targetname: "system__tasking__protected_objects__single_entry__protected_single_entry_call" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:97:19" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__crc__dma__update_crc" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:95:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__crc__reset_calculator" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:93:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__device__reset__5" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:91:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__device__enable_clock__6" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:89:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:84:7" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__crc__update_crc__2" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:81:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__crc__update_crc__2" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:80:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__device__enable_clock__12" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:75:4" }
+edge: { sourcename: "_ada_crc_f103" targetname: "stm32__board__initialize_board" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:73:4" }
+node: { title: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" label: "Panic\n/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:62:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:68:10" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:68:28" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:68:30" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:68:22" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "stm32__gpio__set__2" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:67:10" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:66:10" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:66:28" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:66:30" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:66:22" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:crc_f103__panic.4130" targetname: "stm32__gpio__clear" label: "/backup/ada/STM32/F/F103/crc_f103/src/crc_f103.adb:65:10" }
+}

@@ -1,0 +1,17 @@
+graph: { title: "b__bno_f103.adb"
+node: { title: "_ada_bno_f103" label: "ada_main_program\nb__bno_f103.adb:54:14" shape : ellipse }
+node: { title: "__gnat_start_slave_cpus" label: "start_slave_cpus\nb__bno_f103.adb:27:17" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e23b\nb__bno_f103.adb:45:19" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e21b\nb__bno_f103.adb:39:16" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e19b\nb__bno_f103.adb:34:20" shape : ellipse }
+node: { title: "ada__text_io___elabb" label: "e17b\nb__bno_f103.adb:32:18" shape : ellipse }
+node: { title: "main" label: "main\nb__bno_f103.adb:57:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_bno_f103" label: "b__bno_f103.adb:63:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__bno_f103.adb:62:7" }
+node: { title: "adainit" label: "adainit\nb__bno_f103.adb:26:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_start_slave_cpus" label: "b__bno_f103.adb:51:7" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__bno_f103.adb:45:19" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__bno_f103.adb:39:16" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__bno_f103.adb:34:20" }
+edge: { sourcename: "adainit" targetname: "ada__text_io___elabb" label: "b__bno_f103.adb:32:18" }
+}

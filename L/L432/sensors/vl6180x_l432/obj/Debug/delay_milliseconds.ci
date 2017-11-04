@@ -1,0 +1,11 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delay_milliseconds.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "_ada_delay_milliseconds" label: "Delay_Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delay_milliseconds.adb:3:1\n32 bytes (static)" }
+edge: { sourcename: "_ada_delay_milliseconds" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delay_milliseconds.adb:5:4" }
+edge: { sourcename: "_ada_delay_milliseconds" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delay_milliseconds.adb:5:22" }
+edge: { sourcename: "_ada_delay_milliseconds" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delay_milliseconds.adb:5:24" }
+edge: { sourcename: "_ada_delay_milliseconds" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delay_milliseconds.adb:5:16" }
+}

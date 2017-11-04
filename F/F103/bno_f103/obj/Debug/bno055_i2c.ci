@@ -1,0 +1,266 @@
+class {
+  classname: "bno055_i2c__bno055_9dof_imu"
+  label: "bno055_i2c__bno055_9dof_imu\bosch_bno055.ads:126:9 [bno055_i2c.ads:7:1]"
+  parent: "bno055_i2c__bno055_9dof_imu"
+  virtuals: "1:bno055_i2c__device_id\n
+             2:bno055_i2c__current_mode\n
+             3:bno055_i2c__configure\n
+             4:bno055_i2c__set_mode\n
+             5:bno055_i2c__set_acceleration_units\n
+             6:bno055_i2c__set_angular_rate_units\n
+             7:bno055_i2c__set_euler_angle_units\n
+             8:bno055_i2c__set_temperature_units\n
+             9:bno055_i2c__set_pitch_rotation\n
+             10:bno055_i2c__selected_euler_units\n
+             11:bno055_i2c__selected_acceleration_units\n
+             12:bno055_i2c__selected_temperature_units\n
+             13:bno055_i2c__reset\n
+             14:bno055_i2c__get_revision_info\n
+             15:bno055_i2c__get_status\n
+             16:bno055_i2c__sensor_calibration\n
+             17:bno055_i2c__calibration_complete\n
+             18:bno055_i2c__output\n
+             19:bno055_i2c__quaternion_orientation\n
+             20:bno055_i2c__sensor_temperature\n
+             21:bno055_i2c__sensor_offsets\n
+             22:bno055_i2c__set_sensor_offsets\n
+             23:bno055_i2c__remap_axes\n
+             24:bno055_i2c__remap_axes_signs\n
+             -1:bno055_i2c___size"
+}
+graph: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads"
+node: { title: "__aeabi_fmul" label: "aeabi_fmul\n<built-in>" shape : ellipse }
+node: { title: "__aeabi_fdiv" label: "aeabi_fdiv\n<built-in>" shape : ellipse }
+node: { title: "__aeabi_i2f" label: "aeabi_i2f\n<built-in>" shape : ellipse }
+node: { title: "bno055_i2c_io__read_buffer" label: "READ_BUFFER\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bno055_i2c_io.ads:57:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "bno055_i2c_io__read" label: "READ\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bno055_i2c_io.ads:47:14" shape : ellipse }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-assert.ads:41:14" shape : ellipse }
+node: { title: "_ada_delay_milliseconds" label: "Delay_Milliseconds\n/backup/ada/STM32/F/F103/bno_f103/src/delay_milliseconds.ads:1:11" shape : ellipse }
+node: { title: "bno055_i2c_io__write" label: "WRITE\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bno055_i2c_io.ads:52:14" shape : ellipse }
+node: { title: "bno055_i2c__to_integer_16" label: "To_Integer_16\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:691:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:699:26" }
+edge: { sourcename: "bno055_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:697:17" }
+edge: { sourcename: "bno055_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:697:32" }
+edge: { sourcename: "bno055_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:695:14" }
+edge: { sourcename: "bno055_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:694:14" }
+node: { title: "bno055_i2c__value_at" label: "Value_At\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:675:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__value_at" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:680:7" }
+edge: { sourcename: "bno055_i2c__value_at" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:679:7" }
+node: { title: "bno055_i2c__value_at__2" label: "Value_At\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:663:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__value_at__2" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:668:7" }
+edge: { sourcename: "bno055_i2c__value_at__2" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:667:7" }
+edge: { sourcename: "bno055_i2c__value_at__2" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:666:7" }
+node: { title: "bno055_i2c__remap_axes_signs" label: "Remap_Axes_Signs\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:641:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__remap_axes_signs" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:656:7" }
+edge: { sourcename: "bno055_i2c__remap_axes_signs" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:655:7" }
+node: { title: "bno055_i2c__remap_axes" label: "Remap_Axes\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:621:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__remap_axes" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:634:7" }
+edge: { sourcename: "bno055_i2c__remap_axes" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:633:7" }
+node: { title: "bno055_i2c__set_units_register" label: "Set_Units_Register\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:592:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_units_register" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:613:10" }
+edge: { sourcename: "bno055_i2c__set_units_register" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:610:7" }
+edge: { sourcename: "bno055_i2c__set_units_register" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:609:7" }
+edge: { sourcename: "bno055_i2c__set_units_register" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:606:7" }
+edge: { sourcename: "bno055_i2c__set_units_register" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:601:10" }
+node: { title: "bno055_i2c__set_sensor_offsets" label: "Set_Sensor_Offsets\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:521:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:585:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:581:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:581:62" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:580:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:580:71" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:575:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:575:64" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:574:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:574:73" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:569:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:569:64" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:568:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:568:73" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:565:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:565:64" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:564:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:564:73" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:561:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:561:64" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:560:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:560:73" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:555:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:555:65" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:554:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:554:74" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:551:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:551:65" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:550:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:550:74" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:547:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:547:65" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:546:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:546:74" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:541:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:541:66" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:540:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:540:75" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:537:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:537:66" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:536:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:536:75" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:533:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:533:66" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:532:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:532:75" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:529:7" }
+edge: { sourcename: "bno055_i2c__set_sensor_offsets" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:528:7" }
+node: { title: "bno055_i2c__sensor_offsets" label: "Sensor_Offsets\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:489:4\n48 bytes (static)" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:512:7" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:510:31" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:509:31" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:507:31" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:506:31" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:505:31" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:503:32" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:502:32" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:501:32" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:499:33" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:498:33" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__value_at__2" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:497:33" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:495:7" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:494:7" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:490:18" }
+edge: { sourcename: "bno055_i2c__sensor_offsets" targetname: "bno055_i2c__calibration_complete" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:490:22" }
+node: { title: "bno055_i2c__sensor_temperature" label: "Sensor_Temperature\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:469:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__sensor_temperature" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:482:25" }
+edge: { sourcename: "bno055_i2c__sensor_temperature" targetname: "bno055_i2c__selected_temperature_units" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:479:10" }
+edge: { sourcename: "bno055_i2c__sensor_temperature" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:478:7" }
+edge: { sourcename: "bno055_i2c__sensor_temperature" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:477:7" }
+node: { title: "bno055_i2c__quaternion_orientation" label: "Quaternion_Orientation\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:436:4\n64 bytes (static)" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:460:35" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:460:21" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:459:35" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:459:21" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:458:35" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:458:21" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:457:35" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:457:21" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:455:13" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:454:13" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:453:13" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:452:13" }
+edge: { sourcename: "bno055_i2c__quaternion_orientation" targetname: "bno055_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:447:7" }
+node: { title: "bno055_i2c__output" label: "Output\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:363:4\n64 bytes (static)" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__aeabi_fdiv" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:427:35" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:427:21" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__aeabi_fdiv" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:426:35" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:426:21" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__aeabi_fdiv" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:425:35" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:425:21" }
+edge: { sourcename: "bno055_i2c__output" targetname: "bno055_i2c__selected_acceleration_units" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:417:16" }
+edge: { sourcename: "bno055_i2c__output" targetname: "bno055_i2c__selected_euler_units" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:409:16" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:405:12" }
+edge: { sourcename: "bno055_i2c__output" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:403:13" }
+edge: { sourcename: "bno055_i2c__output" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:402:13" }
+edge: { sourcename: "bno055_i2c__output" targetname: "bno055_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:401:13" }
+edge: { sourcename: "bno055_i2c__output" targetname: "bno055_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:396:7" }
+edge: { sourcename: "bno055_i2c__output" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:376:12" }
+node: { title: "bno055_i2c__calibration_complete" label: "Calibration_Complete\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:332:4\n64 bytes (static)" }
+edge: { sourcename: "bno055_i2c__calibration_complete" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:340:15" }
+edge: { sourcename: "bno055_i2c__calibration_complete" targetname: "bno055_i2c__sensor_calibration" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:337:47" }
+edge: { sourcename: "bno055_i2c__calibration_complete" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:416:18" }
+node: { title: "bno055_i2c__sensor_calibration" label: "Sensor_Calibration\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:315:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__sensor_calibration" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:324:35" }
+edge: { sourcename: "bno055_i2c__sensor_calibration" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:323:53" }
+edge: { sourcename: "bno055_i2c__sensor_calibration" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:322:49" }
+edge: { sourcename: "bno055_i2c__sensor_calibration" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:321:48" }
+edge: { sourcename: "bno055_i2c__sensor_calibration" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:320:7" }
+node: { title: "bno055_i2c__get_status" label: "Get_Status\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:295:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__get_status" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:308:48" }
+edge: { sourcename: "bno055_i2c__get_status" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:307:7" }
+edge: { sourcename: "bno055_i2c__get_status" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:305:7" }
+edge: { sourcename: "bno055_i2c__get_status" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:304:50" }
+edge: { sourcename: "bno055_i2c__get_status" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:303:7" }
+node: { title: "bno055_i2c__get_revision_info" label: "Get_Revision_Info\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:279:4\n16 bytes (static)" }
+edge: { sourcename: "bno055_i2c__get_revision_info" targetname: "bno055_i2c__value_at" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:288:24" }
+edge: { sourcename: "bno055_i2c__get_revision_info" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:287:7" }
+edge: { sourcename: "bno055_i2c__get_revision_info" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:286:7" }
+edge: { sourcename: "bno055_i2c__get_revision_info" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:285:7" }
+edge: { sourcename: "bno055_i2c__get_revision_info" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:284:7" }
+node: { title: "bno055_i2c__current_mode" label: "Current_Mode\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:265:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__current_mode" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:272:42" }
+edge: { sourcename: "bno055_i2c__current_mode" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:271:7" }
+edge: { sourcename: "bno055_i2c__current_mode" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:269:7" }
+edge: { sourcename: "bno055_i2c__current_mode" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:268:7" }
+node: { title: "bno055_i2c__set_mode" label: "Set_Mode\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:238:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_mode___postconditions.5010" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:259:8" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:255:10" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:254:10" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:252:10" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:251:10" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:249:10" }
+edge: { sourcename: "bno055_i2c__set_mode" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:248:10" }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_mode___postconditions.5010" label: "Set_Mode\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:238:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_mode___postconditions.5010" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:211:19" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_mode___postconditions.5010" targetname: "bno055_i2c__current_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:211:19" }
+node: { title: "bno055_i2c__device_id" label: "Device_Id\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:224:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__device_id" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:230:7" }
+node: { title: "bno055_i2c__selected_temperature_units" label: "Selected_Temperature_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:207:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__selected_temperature_units" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:212:7" }
+node: { title: "bno055_i2c__selected_acceleration_units" label: "Selected_Acceleration_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:190:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__selected_acceleration_units" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:195:7" }
+node: { title: "bno055_i2c__selected_euler_units" label: "Selected_Euler_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:172:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__selected_euler_units" targetname: "bno055_i2c_io__read" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:178:7" }
+node: { title: "bno055_i2c__set_pitch_rotation" label: "Set_Pitch_Rotation\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:160:4\n16 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_pitch_rotation" targetname: "bno055_i2c__set_units_register" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:165:7" }
+node: { title: "bno055_i2c__set_temperature_units" label: "Set_Temperature_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:148:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_temperature_units" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_temperature_units___postconditions.4997" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:154:8" }
+edge: { sourcename: "bno055_i2c__set_temperature_units" targetname: "bno055_i2c__set_units_register" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:153:7" }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_temperature_units___postconditions.4997" label: "Set_Temperature_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:148:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_temperature_units___postconditions.4997" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:256:19" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_temperature_units___postconditions.4997" targetname: "bno055_i2c__selected_temperature_units" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:256:19" }
+node: { title: "bno055_i2c__set_euler_angle_units" label: "Set_Euler_Angle_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:136:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_euler_angle_units" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_euler_angle_units___postconditions.4993" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:142:8" }
+edge: { sourcename: "bno055_i2c__set_euler_angle_units" targetname: "bno055_i2c__set_units_register" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:141:7" }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_euler_angle_units___postconditions.4993" label: "Set_Euler_Angle_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:136:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_euler_angle_units___postconditions.4993" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:245:17" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_euler_angle_units___postconditions.4993" targetname: "bno055_i2c__selected_euler_units" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:245:17" }
+node: { title: "bno055_i2c__set_angular_rate_units" label: "Set_Angular_Rate_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:124:4\n16 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_angular_rate_units" targetname: "bno055_i2c__set_units_register" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:129:7" }
+node: { title: "bno055_i2c__set_acceleration_units" label: "Set_Acceleration_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:112:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__set_acceleration_units" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_acceleration_units___postconditions.4989" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:118:8" }
+edge: { sourcename: "bno055_i2c__set_acceleration_units" targetname: "bno055_i2c__set_units_register" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:117:7" }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_acceleration_units___postconditions.4989" label: "Set_Acceleration_Units\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:112:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_acceleration_units___postconditions.4989" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:223:19" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__set_acceleration_units___postconditions.4989" targetname: "bno055_i2c__selected_acceleration_units" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:223:19" }
+node: { title: "bno055_i2c__configure" label: "Configure\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:78:4\n32 bytes (static)" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__configure___postconditions.4982" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:106:8" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:103:7" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:101:7" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:99:10" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:97:10" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:92:7" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:91:7" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:89:7" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:88:7" }
+edge: { sourcename: "bno055_i2c__configure" targetname: "bno055_i2c__set_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:85:7" }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__configure___postconditions.4982" label: "Configure\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:78:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__configure___postconditions.4982" targetname: "system__assertions__raise_assert_failure" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:206:19" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno055_i2c.ads:bno055_i2c__configure___postconditions.4982" targetname: "bno055_i2c__current_mode" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:206:19" }
+node: { title: "bno055_i2c__reset" label: "Reset\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:67:4\n24 bytes (static)" }
+edge: { sourcename: "bno055_i2c__reset" targetname: "_ada_delay_milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:71:7" }
+edge: { sourcename: "bno055_i2c__reset" targetname: "bno055_i2c_io__write" label: "/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.adb:70:7" }
+node: { title: "bno055_i2c__Taxes_sign_remappingBIP" label: "Taxes_Sign_Remappingbip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:520:4\n16 bytes (static)" }
+node: { title: "bno055_i2c__Taxes_remappingBIP" label: "Taxes_Remappingbip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:504:4\n16 bytes (static)" }
+node: { title: "bno055_i2c__sensor_offset_valuesIP" label: "Sensor_Offset_Valuesip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:475:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__temperature_sourcePredicate" label: "Temperature_Sourcepredicate\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:462:12\n16 bytes (static)" }
+node: { title: "bno055_i2c__TquaternionBIP" label: "Tquaternionbip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:447:4\n16 bytes (static)" }
+node: { title: "bno055_i2c__Tsensor_dataBIP" label: "Tsensor_Databip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:430:4\n16 bytes (static)" }
+node: { title: "bno055_i2c__calibration_statesIP" label: "Calibration_Statesip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:380:9\n24 bytes (static)" }
+node: { title: "bno055_i2c__revision_informationIP" label: "Revision_Informationip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:291:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__pitch_rotation_conventionsRP" label: "Pitch_Rotation_Conventionsrp\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:258:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__temperature_unitsRP" label: "Temperature_Unitsrp\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:247:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__euler_angle_unitsRP" label: "Euler_Angle_Unitsrp\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:236:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__angular_rate_unitsRP" label: "Angular_Rate_Unitsrp\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:225:9\n16 bytes (static)" }
+node: { title: "bno055_i2c___size" label: "Bno055_I2c\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:529:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__bno055_9dof_imuIP" label: "Bno055_9dof_Imuip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:529:9\n24 bytes (static)" }
+node: { title: "bno055_i2c__sensors_selectionIP" label: "Sensors_Selectionip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:408:9\n16 bytes (static)" }
+node: { title: "bno055_i2c__self_test_resultsIP" label: "Self_Test_Resultsip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:324:9\n16 bytes (static)" }
+}

@@ -1,0 +1,27 @@
+graph: { title: "b__timer_f103.adb"
+node: { title: "_ada_timer_f103" label: "ada_main_program\nb__timer_f103.adb:66:14" shape : ellipse }
+node: { title: "__gnat_start_slave_cpus" label: "start_slave_cpus\nb__timer_f103.adb:35:17" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__timer_f103.adb:32:17" shape : ellipse }
+node: { title: "__gnat_attach_all_handlers" label: "install_restricted_handlers_sequential\nb__timer_f103.adb:26:17" shape : ellipse }
+node: { title: "stm32f1_timer_interrupts___elabs" label: "e31b\nb__timer_f103.adb:59:31" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e29b\nb__timer_f103.adb:54:19" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e27b\nb__timer_f103.adb:48:16" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e25b\nb__timer_f103.adb:46:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "e23b\nb__timer_f103.adb:44:55" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e21b\nb__timer_f103.adb:42:39" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e19b\nb__timer_f103.adb:40:20" shape : ellipse }
+node: { title: "main" label: "main\nb__timer_f103.adb:69:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_timer_f103" label: "b__timer_f103.adb:75:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__timer_f103.adb:74:7" }
+node: { title: "adainit" label: "adainit\nb__timer_f103.adb:25:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_start_slave_cpus" label: "b__timer_f103.adb:63:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__timer_f103.adb:62:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_attach_all_handlers" label: "b__timer_f103.adb:61:7" }
+edge: { sourcename: "adainit" targetname: "stm32f1_timer_interrupts___elabs" label: "b__timer_f103.adb:59:31" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__timer_f103.adb:54:19" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__timer_f103.adb:48:16" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__timer_f103.adb:46:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects__multiprocessors___elabb" label: "b__timer_f103.adb:44:55" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__timer_f103.adb:42:39" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__timer_f103.adb:40:20" }
+}

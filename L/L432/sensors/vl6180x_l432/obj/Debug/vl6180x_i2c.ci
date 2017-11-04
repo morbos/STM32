@@ -1,0 +1,98 @@
+class {
+  classname: "vl6180x_i2c__vl6180x_rng_als"
+  label: "vl6180x_i2c__vl6180x_rng_als\vl6180x.ads:81:9 [vl6180x_i2c.ads:7:1]"
+  parent: "vl6180x_i2c__vl6180x_rng_als"
+  virtuals: "1:vl6180x_i2c__device_id\n
+             2:vl6180x_i2c__rangestatus\n
+             3:vl6180x_i2c__readrange\n
+             4:vl6180x_i2c__readals\n
+             5:vl6180x_i2c__staticinit\n
+             -1:vl6180x_i2c___size"
+}
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/vl6180x_i2c.ads"
+node: { title: "ada__tags__register_tag" label: "Register_Tag\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:538:14" shape : ellipse }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:451:14" shape : ellipse }
+node: { title: "ada__exceptions__raise_exception" label: "Raise_Exception\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:85:14" shape : ellipse }
+node: { title: "delays__timeoutp" label: "Timeoutp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delays.ads:4:13" shape : ellipse }
+node: { title: "delays__init_timeout" label: "Init_Timeout\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/delays.ads:3:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "vl6180x_i2c_io__write" label: "WRITE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x_i2c_io.ads:52:14" shape : ellipse }
+node: { title: "vl6180x_i2c_io__read" label: "READ\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x_i2c_io.ads:47:14" shape : ellipse }
+node: { title: "vl6180x_i2c___elabs" label: "VL6180X_I2C\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/src/vl6180x_i2c.ads:7:1\n8 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c___elabs" targetname: "ada__tags__register_tag" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.ads:113:9" }
+edge: { sourcename: "vl6180x_i2c___elabs" targetname: "ada__tags__check_tsd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.ads:113:9" }
+node: { title: "vl6180x_i2c__staticinit" label: "STATICINIT\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:113:4\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:182:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:179:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:178:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:173:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:169:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:167:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:165:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:161:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:159:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:157:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:156:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:155:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:154:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:150:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:149:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:148:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:147:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:146:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:145:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:144:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:143:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:142:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:141:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:140:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:139:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:138:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:137:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:136:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:135:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:134:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:133:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:132:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:131:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:130:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:129:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:128:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:127:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:126:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:125:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:124:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:123:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:122:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:121:7" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "ada__exceptions__raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:117:10" }
+edge: { sourcename: "vl6180x_i2c__staticinit" targetname: "vl6180x_i2c__device_id" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:116:14" }
+node: { title: "vl6180x_i2c__readals" label: "READALS\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:84:4\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:105:7" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:104:7" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:103:7" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "delays__timeoutp" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:98:13" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:97:10" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "delays__init_timeout" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:95:7" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:95:21" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:94:7" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:92:7" }
+edge: { sourcename: "vl6180x_i2c__readals" targetname: "vl6180x_i2c__status_gpio_registerIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:90:7" }
+node: { title: "vl6180x_i2c__readrange" label: "READRANGE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:61:4\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:79:7" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:78:7" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "delays__timeoutp" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:73:13" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:72:10" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "delays__init_timeout" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:70:7" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:70:21" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:69:7" }
+edge: { sourcename: "vl6180x_i2c__readrange" targetname: "vl6180x_i2c_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:67:7" }
+node: { title: "vl6180x_i2c__rangestatus" label: "RANGESTATUS\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:54:4\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c__rangestatus" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:57:7" }
+node: { title: "vl6180x_i2c__device_id" label: "DEVICE_ID\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:44:4\n24 bytes (static)" }
+edge: { sourcename: "vl6180x_i2c__device_id" targetname: "vl6180x_i2c_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.adb:50:7" }
+node: { title: "vl6180x_i2c__status_gpio_registerIP" label: "Status_Gpio_Registerip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.ads:119:9\n16 bytes (static)" }
+node: { title: "vl6180x_i2c__status_gpio_registerEQ" label: "Status_Gpio_Registereq\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.ads:119:9\n16 bytes (static)" }
+node: { title: "vl6180x_i2c___size" label: "Vl6180x_I2c\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.ads:113:9\n16 bytes (static)" }
+node: { title: "vl6180x_i2c__vl6180x_rng_alsIP" label: "Vl6180x_Rng_Alsip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L432/sensors/vl6180x_l432/Ada_Drivers_Library/components/src/range_sensor/VL6180X/vl6180x.ads:113:9\n24 bytes (static)" }
+}
