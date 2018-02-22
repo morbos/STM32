@@ -1,0 +1,17 @@
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/ada.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-osinte.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-multip.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-bb.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stoele.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bbthre.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bbcppr.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bbtime.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bbinte.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bcprmu.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bbthqu.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-bbbosu.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-textio.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-unstyp.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
+diff /backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-stream.ads /usr/gnat2017/arm-eabi/lib/gnat/ravenscar-full-stm32f4/gnat
