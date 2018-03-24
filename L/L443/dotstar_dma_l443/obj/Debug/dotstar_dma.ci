@@ -1,0 +1,44 @@
+edge: { sourcename: "dotstar_dma__send"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "dotstar_dma.adb:71:7"
+}
+graph: { title: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb"
+node: { title: "system__tasking__protected_objects__single_entry__protected_single_entry_call" label: "Protected_Single_Entry_Call\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tposen.ads:207:14" shape : ellipse }
+node: { title: "stm32__spi__dma__transmit_dma" label: "TRANSMIT_DMA\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-spi-dma.ads:51:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__reset__10" label: "RESET\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x3/stm32-device.ads:296:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__11" label: "ENABLE_CLOCK\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x3/stm32-device.ads:295:14" shape : ellipse }
+node: { title: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "gnat_rcheck_PE_Unchecked_Union_Restriction\n<built-in>" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "dotstar_dma___elabb" label: "Dotstar_Dma\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:8:1\n8 bytes (static)" }
+edge: { sourcename: "dotstar_dma___elabb" targetname: "dotstar_dma__ds_fulltIP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:10:4" }
+node: { title: "dotstar_dma__send_dma" label: "Send_Dma\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:74:4\n56 bytes (static)" }
+edge: { sourcename: "dotstar_dma__send_dma" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:81:22" }
+edge: { sourcename: "dotstar_dma__send_dma" targetname: "system__tasking__protected_objects__single_entry__protected_single_entry_call" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:81:22" }
+edge: { sourcename: "dotstar_dma__send_dma" targetname: "stm32__spi__dma__transmit_dma" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:80:7" }
+edge: { sourcename: "dotstar_dma__send_dma" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:80:77" }
+node: { title: "dotstar_dma__send" label: "Send\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:64:4\n40 bytes (static)" }
+edge: { sourcename: "dotstar_dma__send" targetname: "__indirect_call" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:71:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "dotstar_dma__send" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:71:37" }
+node: { title: "dotstar_dma__test" label: "Test\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:29:4\n32 bytes (static)" }
+edge: { sourcename: "dotstar_dma__test" targetname: "dotstar_dma__send_dma" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:59:10" }
+edge: { sourcename: "dotstar_dma__test" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:31:7" }
+node: { title: "dotstar_dma__initialize" label: "Initialize\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:17:4\n16 bytes (static)" }
+edge: { sourcename: "dotstar_dma__initialize" targetname: "stm32__device__reset__10" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:25:7" }
+edge: { sourcename: "dotstar_dma__initialize" targetname: "stm32__device__enable_clock__11" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.adb:23:7" }
+node: { title: "dotstar_dma__dotstar_elemIP" label: "Dotstar_Elemip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:63:9\n16 bytes (static)" }
+node: { title: "dotstar_dma__ds_fulltIP" label: "Ds_Fulltip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:46:9\n24 bytes (static)" }
+edge: { sourcename: "dotstar_dma__ds_fulltIP" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:49:7" }
+edge: { sourcename: "dotstar_dma__ds_fulltIP" targetname: "dotstar_dma__Tds_arraytBIP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:48:7" }
+edge: { sourcename: "dotstar_dma__ds_fulltIP" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:47:7" }
+node: { title: "dotstar_dma__ds_fulltEQ" label: "Ds_Fullteq\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:46:4\n16 bytes (static)" }
+edge: { sourcename: "dotstar_dma__ds_fulltEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:46:9" }
+node: { title: "dotstar_dma__Tds_arraytBIP" label: "Tds_Arraytbip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:44:4\n48 bytes (static)" }
+edge: { sourcename: "dotstar_dma__Tds_arraytBIP" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:44:4" }
+node: { title: "dotstar_dma__cell4IP" label: "Cell4ip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:30:9\n16 bytes (static)" }
+edge: { sourcename: "dotstar_dma__cell4IP" targetname: "dotstar_dma__dotstar_cellIP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:35:13" }
+node: { title: "dotstar_dma__cell4EQ" label: "Cell4eq\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:30:9\n24 bytes (static)" }
+edge: { sourcename: "dotstar_dma__cell4EQ" targetname: "memcmp" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:30:9" }
+node: { title: "dotstar_dma__dotstar_cellIP" label: "Dotstar_Cellip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dotstar_dma.ads:12:9\n16 bytes (static)" }
+}

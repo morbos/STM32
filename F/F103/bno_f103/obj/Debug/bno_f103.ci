@@ -1,0 +1,43 @@
+graph: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb"
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:36:17" shape : ellipse }
+node: { title: "stm32__i2c__configure" label: "CONFIGURE\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/i2c_stm32f1/stm32-i2c.ads:88:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:219:14" shape : ellipse }
+node: { title: "stm32__device__reset__5" label: "RESET\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:308:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__5" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:305:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:67:14" shape : ellipse }
+node: { title: "bno055_i2c__device_id" label: "Device_Id\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:134:13" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "bno055_i2c__output" label: "Output\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:440:13" shape : ellipse }
+node: { title: "bno055_i2c__configure" label: "Configure\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:201:14" shape : ellipse }
+node: { title: "bno055_i2c__bno055_9dof_imuIP" label: "Bno055_9dof_Imuip\n/backup/ada/STM32/F/F103/bno_f103/Ada_Drivers_Library/components/src/motion/bno055/bosch_bno055.ads:529:9" shape : ellipse }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__set_up_imu.4194" label: "Set_Up_Imu\n/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:106:4\n48 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__set_up_imu.4194" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:117:10" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__set_up_imu.4194" targetname: "bno055_i2c__device_id" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:116:13" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__set_up_imu.4194" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:108:7" }
+node: { title: "_ada_bno_f103" label: "Bno_F103\n/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:16:1\n56 bytes (static)" }
+edge: { sourcename: "_ada_bno_f103" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:129:7" }
+edge: { sourcename: "_ada_bno_f103" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:129:25" }
+edge: { sourcename: "_ada_bno_f103" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:129:27" }
+edge: { sourcename: "_ada_bno_f103" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:129:19" }
+edge: { sourcename: "_ada_bno_f103" targetname: "bno055_i2c__output" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:127:12" }
+edge: { sourcename: "_ada_bno_f103" targetname: "bno055_i2c__configure" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:125:7" }
+edge: { sourcename: "_ada_bno_f103" targetname: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__set_up_imu.4194" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:123:4" }
+edge: { sourcename: "_ada_bno_f103" targetname: "bno055_i2c__bno055_9dof_imuIP" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:18:4" }
+node: { title: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" label: "Initialize_Imu_Io_Hardware\n/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:41:4\n48 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__i2c__configure" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:74:16" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:75:15" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:72:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:71:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:62:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__device__reset__5" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:56:19" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:56:32" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__device__enable_clock__5" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:54:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:54:26" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:52:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:51:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:bno_f103__initialize_imu_io_hardware.4721" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/bno_f103/src/bno_f103.adb:50:7" }
+}

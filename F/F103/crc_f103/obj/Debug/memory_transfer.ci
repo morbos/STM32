@@ -1,0 +1,5 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/crc_f103/src/memory_transfer.ads"
+node: { title: "dma_interrupt_handling__dma_unit_irq_handlerVIP" label: "Dma_Unit_Irq_Handlervip\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/crc_f103/src/dma_interrupt_handling.ads:53:4" shape : ellipse }
+node: { title: "memory_transfer___elabs" label: "Memory_Transfer\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/crc_f103/src/memory_transfer.ads:44:1\n8 bytes (static)" }
+edge: { sourcename: "memory_transfer___elabs" targetname: "dma_interrupt_handling__dma_unit_irq_handlerVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/crc_f103/src/memory_transfer.ads:53:4" }
+}

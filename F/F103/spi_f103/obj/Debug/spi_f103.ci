@@ -1,0 +1,42 @@
+graph: { title: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb"
+node: { title: "stm32__spi__configure" label: "CONFIGURE\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-spi.ads:86:14" shape : ellipse }
+node: { title: "stm32__spi__disable" label: "DISABLE\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-spi.ads:90:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:219:14" shape : ellipse }
+node: { title: "stm32__device__reset__8" label: "RESET\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:309:14" shape : ellipse }
+node: { title: "stm32__spi__enable" label: "ENABLE\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-spi.ads:88:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__9" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:307:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:67:14" shape : ellipse }
+node: { title: "spi_eeprom__write4" label: "Write4\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:86:14" shape : ellipse }
+node: { title: "spi_eeprom__writeenable" label: "Writeenable\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:73:14" shape : ellipse }
+node: { title: "spi_eeprom__read4" label: "Read4\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:79:14" shape : ellipse }
+node: { title: "spi_eeprom__initialize" label: "Initialize\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:59:14" shape : ellipse }
+node: { title: "spi_eeprom__cell4IP" label: "Cell4ip\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:43:9" shape : ellipse }
+node: { title: "spi_eeprom__eepromIP" label: "Eepromip\n/backup/ada/STM32/F/F103/spi_f103/src/spi_eeprom.ads:97:9" shape : ellipse }
+node: { title: "_ada_spi_f103" label: "Spi_F103\n/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:16:1\n40 bytes (static)" }
+edge: { sourcename: "_ada_spi_f103" targetname: "spi_eeprom__write4" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:93:4" }
+edge: { sourcename: "_ada_spi_f103" targetname: "spi_eeprom__writeenable" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:92:4" }
+edge: { sourcename: "_ada_spi_f103" targetname: "spi_eeprom__read4" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:90:4" }
+edge: { sourcename: "_ada_spi_f103" targetname: "spi_eeprom__initialize" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:89:4" }
+edge: { sourcename: "_ada_spi_f103" targetname: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:83:4" }
+edge: { sourcename: "_ada_spi_f103" targetname: "spi_eeprom__cell4IP" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:79:4" }
+edge: { sourcename: "_ada_spi_f103" targetname: "spi_eeprom__eepromIP" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:18:4" }
+node: { title: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" label: "Initialize_Gpio\n/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:28:4\n48 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:75:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__spi__enable" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:69:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__spi__configure" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:68:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__spi__disable" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:67:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:55:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:54:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:53:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__device__reset__8" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:47:19" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:47:32" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__spi__enable" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:45:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:45:20" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__device__enable_clock__9" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:43:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:43:26" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:42:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:41:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:40:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:spi_f103__initialize_gpio.4630" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/spi_f103/src/spi_f103.adb:39:7" }
+}

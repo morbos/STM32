@@ -138,7 +138,6 @@ begin
       else
          Turn_Off (Green_LED);
       end if;
-
    end loop;
 
 end Vl53l0x_f103;

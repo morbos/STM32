@@ -1,0 +1,146 @@
+class {
+  classname: "lsm9ds1_i2c__lsm9ds1_accgyro"
+  label: "lsm9ds1_i2c__lsm9ds1_accgyro\lsm9ds1.ads:71:9 [lsm9ds1_i2c.ads:7:1]"
+  parent: "lsm9ds1_i2c__lsm9ds1_accgyro"
+  virtuals: "1:lsm9ds1_i2c__device_id\n
+             2:lsm9ds1_i2c__getstatus\n
+             3:lsm9ds1_i2c__getfifostatus\n
+             4:lsm9ds1_i2c__getfifoctrl\n
+             5:lsm9ds1_i2c__gettemp\n
+             6:lsm9ds1_i2c__gettemp_raw\n
+             7:lsm9ds1_i2c__config__2\n
+             8:lsm9ds1_i2c__calibrate\n
+             9:lsm9ds1_i2c__getxyz__2\n
+             10:lsm9ds1_i2c__getxyz_raw__2\n
+             -1:lsm9ds1_i2c___size"
+}
+class {
+  classname: "lsm9ds1_i2c__lsm9ds1_mag"
+  label: "lsm9ds1_i2c__lsm9ds1_mag\lsm9ds1.ads:73:9 [lsm9ds1_i2c.ads:7:1]"
+  parent: "lsm9ds1_i2c__lsm9ds1_mag"
+  virtuals: "1:lsm9ds1_i2c__device_id_m\n
+             2:lsm9ds1_i2c__config\n
+             3:lsm9ds1_i2c__getxyz\n
+             4:lsm9ds1_i2c__getxyz_raw\n
+             -1:lsm9ds1_i2c___size__2"
+}
+graph: { title: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1_i2c.ads"
+node: { title: "__aeabi_fdiv" label: "aeabi_fdiv\n<built-in>" shape : ellipse }
+node: { title: "__aeabi_fmul" label: "aeabi_fmul\n<built-in>" shape : ellipse }
+node: { title: "__aeabi_i2f" label: "aeabi_i2f\n<built-in>" shape : ellipse }
+node: { title: "__aeabi_fsub" label: "aeabi_fsub\n<built-in>" shape : ellipse }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-secsta.ads:49:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:36:17" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "lsm9ds1_i2c_io__read_buffer" label: "READ_BUFFER\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1_i2c_io.ads:57:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "lsm9ds1_i2c_io__write" label: "WRITE\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1_i2c_io.ads:52:14" shape : ellipse }
+node: { title: "lsm9ds1_i2c_io__read" label: "READ\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1_i2c_io.ads:47:14" shape : ellipse }
+node: { title: "lsm9ds1_i2c__to_uint8" label: "TO_UINT8\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:387:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__to_uint8" targetname: "system__secondary_stack__ss_allocate" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:395:7" }
+edge: { sourcename: "lsm9ds1_i2c__to_uint8" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:393:25" }
+edge: { sourcename: "lsm9ds1_i2c__to_uint8" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:392:32" }
+node: { title: "lsm9ds1_i2c__to_integer_16" label: "TO_INTEGER_16\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:372:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:380:26" }
+edge: { sourcename: "lsm9ds1_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:378:17" }
+edge: { sourcename: "lsm9ds1_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:378:32" }
+edge: { sourcename: "lsm9ds1_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:376:14" }
+edge: { sourcename: "lsm9ds1_i2c__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:375:14" }
+node: { title: "lsm9ds1_i2c__getxyz_raw__2" label: "GETXYZ_RAW\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:341:4\n56 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw__2" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:361:19" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw__2" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:360:19" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw__2" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:359:19" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw__2" targetname: "lsm9ds1_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:357:7" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw__2" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:348:12" }
+node: { title: "lsm9ds1_i2c__getxyz__2" label: "GETXYZ\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:291:4\n64 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_fsub" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:332:41" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:331:41" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_fsub" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:327:41" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:326:41" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_fdiv" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:325:41" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:324:41" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:321:12" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:319:21" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:318:21" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:317:21" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:315:13" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:314:13" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:313:13" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "lsm9ds1_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:311:7" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz__2" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:302:12" }
+node: { title: "lsm9ds1_i2c__getxyz_raw" label: "GETXYZ_RAW\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:272:4\n48 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:285:19" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:284:19" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:283:19" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz_raw" targetname: "lsm9ds1_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:281:7" }
+node: { title: "lsm9ds1_i2c__getxyz" label: "GETXYZ\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:237:4\n56 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "__aeabi_fdiv" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:265:35" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "__aeabi_fmul" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:264:35" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:261:21" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:260:21" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:259:21" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:257:13" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:256:13" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:255:13" }
+edge: { sourcename: "lsm9ds1_i2c__getxyz" targetname: "lsm9ds1_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:250:7" }
+node: { title: "lsm9ds1_i2c__gettemp_raw" label: "GETTEMP_RAW\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:223:4\n32 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__gettemp_raw" targetname: "lsm9ds1_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:229:7" }
+node: { title: "lsm9ds1_i2c__gettemp" label: "GETTEMP\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:199:4\n56 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__gettemp" targetname: "__aeabi_i2f" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:218:14" }
+edge: { sourcename: "lsm9ds1_i2c__gettemp" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:216:11" }
+edge: { sourcename: "lsm9ds1_i2c__gettemp" targetname: "lsm9ds1_i2c__to_integer_16" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:214:11" }
+edge: { sourcename: "lsm9ds1_i2c__gettemp" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:41:7" }
+edge: { sourcename: "lsm9ds1_i2c__gettemp" targetname: "lsm9ds1_i2c_io__read_buffer" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:206:7" }
+node: { title: "lsm9ds1_i2c__calibrate" label: "CALIBRATE\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:188:4\n40 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__calibrate" targetname: "lsm9ds1_i2c__getxyz__2" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:193:19" }
+edge: { sourcename: "lsm9ds1_i2c__calibrate" targetname: "__aeabi_fsub" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:192:40" }
+edge: { sourcename: "lsm9ds1_i2c__calibrate" targetname: "lsm9ds1_i2c__getxyz__2" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:191:19" }
+node: { title: "lsm9ds1_i2c__config__2" label: "CONFIG\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:142:4\n48 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:175:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:172:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:169:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:167:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:164:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:162:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:159:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:158:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:156:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:153:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:153:25" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:153:27" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:153:19" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:151:7" }
+edge: { sourcename: "lsm9ds1_i2c__config__2" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:149:7" }
+node: { title: "lsm9ds1_i2c__config" label: "CONFIG\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:98:4\n56 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:122:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:120:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:117:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:115:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c__getxyz_raw" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:112:21" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:111:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:109:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:109:25" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:109:27" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:109:19" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__write" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:107:7" }
+edge: { sourcename: "lsm9ds1_i2c__config" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:105:7" }
+node: { title: "lsm9ds1_i2c__getfifoctrl" label: "GETFIFOCTRL\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:84:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getfifoctrl" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:88:7" }
+node: { title: "lsm9ds1_i2c__getfifostatus" label: "GETFIFOSTATUS\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:75:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getfifostatus" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:79:7" }
+node: { title: "lsm9ds1_i2c__getstatus" label: "GETSTATUS\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:66:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__getstatus" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:70:7" }
+node: { title: "lsm9ds1_i2c__device_id_m" label: "DEVICE_ID_M\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:58:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__device_id_m" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:62:7" }
+node: { title: "lsm9ds1_i2c__device_id" label: "DEVICE_ID\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:50:4\n24 bytes (static)" }
+edge: { sourcename: "lsm9ds1_i2c__device_id" targetname: "lsm9ds1_i2c_io__read" label: "/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.adb:54:7" }
+node: { title: "lsm9ds1_i2c__Tsensor_data_rawBIP" label: "Tsensor_Data_Rawbip\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.ads:103:4\n16 bytes (static)" }
+node: { title: "lsm9ds1_i2c__Tsensor_dataBIP" label: "Tsensor_Databip\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.ads:101:4\n16 bytes (static)" }
+node: { title: "lsm9ds1_i2c___size__2" label: "Lsm9ds1_I2c\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.ads:135:9\n16 bytes (static)" }
+node: { title: "lsm9ds1_i2c__lsm9ds1_magIP" label: "Lsm9ds1_Magip\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.ads:135:9\n24 bytes (static)" }
+node: { title: "lsm9ds1_i2c___size" label: "Lsm9ds1_I2c\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.ads:130:9\n16 bytes (static)" }
+node: { title: "lsm9ds1_i2c__lsm9ds1_accgyroIP" label: "Lsm9ds1_Accgyroip\n/backup/ada/STM32/F/F103/lsm9ds1_f103/src/lsm9ds1.ads:130:9\n24 bytes (static)" }
+}

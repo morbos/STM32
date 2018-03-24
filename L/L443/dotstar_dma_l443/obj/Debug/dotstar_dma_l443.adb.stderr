@@ -1,0 +1,5 @@
+a-stream.ads:65:09: expected type "Standard.Boolean"
+a-stream.ads:65:09: found type "Ada.Tags.Size_Ptr"
+a-stream.ads:65:09: expected type "Ada.Tags.Select_Specific_Data_Ptr"
+a-stream.ads:65:09: found a composite type
+a-stream.ads:65:09: no value supplied for component "Tags_Table"

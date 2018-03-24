@@ -1,0 +1,19 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb"
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x6/stm32-device.ads:63:14" shape : ellipse }
+node: { title: "stm32__gpio__toggle" label: "TOGGLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:171:14" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__Osubtract__2" label: "-\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "_ada_try_l476" label: "Try_L476\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:12:1\n32 bytes (static)" }
+edge: { sourcename: "_ada_try_l476" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:45:16" }
+edge: { sourcename: "_ada_try_l476" targetname: "stm32__gpio__toggle" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:44:10" }
+edge: { sourcename: "_ada_try_l476" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:43:26" }
+edge: { sourcename: "_ada_try_l476" targetname: "ada__real_time__Osubtract__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:43:16" }
+edge: { sourcename: "_ada_try_l476" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:43:10" }
+edge: { sourcename: "_ada_try_l476" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:try_l476__initialize_led.4233" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:40:4" }
+edge: { sourcename: "_ada_try_l476" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:38:10" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:try_l476__initialize_led.4233" label: "Initialize_Led\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:18:4\n24 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:try_l476__initialize_led.4233" targetname: "stm32__gpio__configure_io" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:27:7" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:try_l476__initialize_led.4233" targetname: "stm32__device__enable_clock__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/try_l476/src/try_l476.adb:21:7" }
+}

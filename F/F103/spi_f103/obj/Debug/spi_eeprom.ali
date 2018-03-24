@@ -1,0 +1,183 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/backup/ada/STM32/F/F103/spi_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U spi_eeprom%b		spi_eeprom.adb		45fecf1a NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+
+U spi_eeprom%s		spi_eeprom.ads		6318dbc4 EE NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-tags.ads		20170610185420 cc425f51 ada.tags%s
+D a-unccon.ads		20170610185420 1cf21617 ada.unchecked_conversion%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-spi.ads		20170625184526 fe139819 hal.spi%s
+D interfac.ads		20170610185420 5ab55268 interfaces%s
+D spi_eeprom.ads	20171102181846 d78a1e0f spi_eeprom%s
+D spi_eeprom.adb	20171102181911 70955f1b spi_eeprom%b
+D stm32.ads		20171006212415 698e2c3b stm32%s
+D stm32-exti.ads	20171006212416 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20171010213237 6a2e5d0d stm32.gpio%s
+D stm32_svd.ads		20171006214440 58ad1fd6 stm32_svd%s
+D stm32_svd-gpio.ads	20171009220928 e12f4994 stm32_svd.gpio%s
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-assert.ads		20170610185420 cd8d2c94 system.assertions%s
+D s-stoele.ads		20170610185420 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /backup/ada/STM32/F/F103/spi_f103/gnat.adc  20170513192400 00000000
+X 1 ada.ads
+16K9*Ada 20e8 9|2r6 6r29 7r29 8r29
+X 3 a-unccon.ads
+20v14*Unchecked_Conversion 9|2w10 6r33 7r33 8r33
+X 4 hal.ads
+34K9*HAL 166e8 8|2w6 2r27 3r6 28r24 29r24 48r19 50r19 57r24 83r34 90r35 97r33
+. 9|1r6 1r25 7r55 8r55 25r34 27r14 49r35 51r14 79r16 80r16 81r16 109r16 110r16
+. 121r16 122r16
+39M9*UInt2 8|28r28
+41M9*UInt3 8|29r28
+53M9*UInt8<7|58M9> 9|6r72 7r76 32r21 33r21 56r21 57r21
+97M9*UInt32<7|69M9> 8|48r23 62r41 68r48 81r30 88r31 99r22 9|13r33 23r30 47r31
+. 69r48
+X 5 hal-gpio.ads
+44h9*GPIO_Point
+X 6 hal-spi.ads
+32K13*SPI 86e12 8|3w10 50r23 57r28 83r38 90r39 97r37 9|1w10 1r29 7r59 8r59
+. 25r38 27r18 49r39 51r18 79r20 80r20 81r20 109r20 110r20 121r20 122r20
+34E9*SPI_Status 38e12 8|83r42 90r43 9|25r42 49r43 79r24 109r24 121r24
+44A9*SPI_Data_8b(4|53M9)<integer> 8|50r27 9|7r63 8r63 27r22 51r22 80r24 81r24
+. 110r24 122r24
+48h9*SPI_Port
+50P9*Any_SPI_Port(48R9) 8|57r32 97r41
+54x14*Transmit 9|35R13 59R13 60R13 86R7 114R7 126R7
+70x14*Receive 9|36R13 87R7
+X 7 interfac.ads
+58M9*Unsigned_8
+69M9*Unsigned_32
+120V13*Shift_Right{69M9} 9|32s28 56s28
+X 8 spi_eeprom.ads
+6K9*SPI_EEprom 97E9 103l5 103e15 9|4b14 130l5 130t15
+8E9*EEprom_Address_Bytes 8e66 61r41 100r22 9|12r41
+8n34*Two_Byte{8E9} 9|30r15 54r15
+8n44*Three_Byte{8E9} 9|38r15 62r15
+8n56*Four_Byte{8E9} 9|40r15 64r15
+10E9*EEprom_Commands 10e65 12r8 22r8 9|6r55
+10n29*WRSR{10E9} 14r7
+10n35*WRITE{10E9} 15r7 9|55r31
+10n42*READ{10E9} 16r7 9|31r31
+10n48*WRDI{10E9} 17r7 9|124r27
+10n54*RDSR{10E9} 18r7 9|84r27
+10n60*WREN{10E9} 19r7 9|112r27
+25R9*SR_Register 32e6 35r8 66r30 9|8r76 77r30 82r16 96r16
+26b7*RDYB{boolean} 36r7
+27b7*WEN{boolean} 37r7 9|99r17
+28m7*BP{4|39M9} 38r7
+29m7*Reserved{4|41M9} 39r7
+30b7*WPEN{boolean} 40r7
+43R9*Cell4 44d7 53e6 82r34 89r31 9|24r34 48r31
+44b7*As_Array{boolean} 46r12
+48m13*Val{4|97M9}
+50a13*Arr{6|44A9} 9|36m44 60r43
+56R9*EEprom 57d7 59r48 64r31 68r33 70r32 73r34 76r35 79r30 86r31 97c9 101e14
+. 9|10r40 21r30 45r31 69r33 75r31 93r32 106r34 118r35
+57p7 Port{6|50P9} 97r17 9|35r28 36r27 59r28 60r28 86r22 87r21 114r22 126r22
+59U14*Initialize 59=26 60=26 61>26 62>26 9|10b14 19l8 19t18
+59r26 This{56R9} 9|10b26 16m7 17m7
+60r26 CS{12|163R9} 9|11b26 18m12
+61e26 Address_Size{8E9} 9|12b26 17r28
+62m26 Size{4|97M9} 9|13b26 16r28
+64V13*GetStatus{25R9} 64>24 65=24 9|75b13 91l8 91t17 98s13
+64r24 This{56R9} 9|75b24 86r17 87r16
+65r24 CS{12|163R9} 9|76b24 85m14 88m12
+68V13*EEprom_Size{4|97M9} 68>26 84s21 91s23 9|69b13 73l8 73t19
+68r26 This{56R9} 9|69b26 72r14
+70V13*WriteableP{boolean} 70>25 71=25 93s14 9|93b13 104l8 104t18
+70r25 This{56R9} 9|93b25 98r24
+71r25 CS{12|163R9} 9|94b25 98m30 98r30
+73U14*WriteEnable 73>27 74=27 9|106b14 116l8 116t19
+73r27 This{56R9} 9|106b27 114r17
+74r27 CS{12|163R9} 9|107b27 113m14 115m12
+76U14*WriteDisable 76>28 77=28 9|118b14 128l8 128t20
+76r28 This{56R9} 9|118b28 126r17
+77r28 CS{12|163R9} 9|119b28 125m14 127m12
+79U14*Read4 79>21 80=21 81>21 82<21 83<21 9|21b14 43l8 43t13
+79r21 This{56R9} 84r34 9|21b21 29r12 35r23 36r22
+80r21 CS{12|163R9} 9|22b21 34m20 37m18
+81m21 Addr{4|97M9} 84r13 9|23b21 32r41 33r28
+82r21 Result{43R9} 9|24b21 36m37 36r37
+83e21 Status{6|34E9} 9|25b21 35m43 36m49
+86U14*Write4 86>22 87=22 88>22 89>22 90<22 9|45b14 67l8 67t14
+86r22 This{56R9} 91r36 93r26 9|45b22 53r12 59r23 60r23
+87r22 CS{12|163R9} 93m32 93r32 9|46b22 58m20 61m18
+88m22 Addr{4|97M9} 91r14 9|47b22 56r41 57r28
+89r22 Data{43R9} 9|48b22 60r38
+90e22 Status{6|34E9} 9|49b22 59m43 60m48
+99m7*Size{4|97M9} 9|16m12 72r19
+100e7*Address_Size{8E9} 9|17m12 29r17 53r17
+X 9 spi_eeprom.adb
+6V13 To_UInt8[3|20]{4|53M9} 31s21 55s21 84s17 112s17 124s17
+7V13 To_UInt8[3|20]{4|53M9}
+8V13 To_SR[3|20]{8|25R9} 89s17
+27a7 Tx3{6|44A9} 31m13 35r38
+51a7 Tx3{6|44A9} 55m13 59r38
+79e7 Status{6|34E9} 86m36 87m35
+80a7 Sr{6|44A9} 87m31 89r24
+81a7 Tx{6|44A9} 84m7 86r32
+82r7 Result{8|25R9} 89m7 90r14
+96r7 Sr{8|25R9} 98m7 99r14
+109e7 Status{6|34E9} 114m36
+110a7 Tx{6|44A9} 112m7 114r32
+121e7 Status{6|34E9} 126m36
+122a7 Tx{6|44A9} 124m7 126r32
+X 10 stm32.ads
+39K9*STM32 8|1r6 1r27 10|48e10
+X 12 stm32-gpio.ads
+49K15*GPIO 8|1w12 1r33 12|319e15
+163R9*GPIO_Point<5|44R9> 8|60r48 65r38 71r39 74r41 77r42 80r37 87r38 9|11r40
+. 22r37 46r38 76r38 94r39 107r41 119r42 12|168e14
+193U14*Set<5|74p14> 9|18s7 37s13 61s13 88s7 115s7 127s7
+199U14*Clear<5|77p14> 9|34s13 58s13 85s7 113s7 125s7
+X 15 system.ads
+60K9*System 8|4w6 33r24 15|174e11
+114n41*Low_Order_First{114E9} 8|33r31
+

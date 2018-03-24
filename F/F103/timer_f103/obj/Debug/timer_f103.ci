@@ -1,0 +1,15 @@
+graph: { title: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb"
+node: { title: "stm32__timers__enable" label: "ENABLE\n/backup/ada/STM32/F/F103/timer_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-timers.ads:54:14" shape : ellipse }
+node: { title: "stm32__timers__enable_interrupt" label: "ENABLE_INTERRUPT\n/backup/ada/STM32/F/F103/timer_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-timers.ads:204:14" shape : ellipse }
+node: { title: "stm32__timers__configure" label: "CONFIGURE\n/backup/ada/STM32/F/F103/timer_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-timers.ads:65:14" shape : ellipse }
+node: { title: "stm32__device__reset__10" label: "RESET\n/backup/ada/STM32/F/F103/timer_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:339:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__11" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/timer_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:337:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/backup/ada/STM32/F/F103/timer_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/src/stm32-board.ads:45:14" shape : ellipse }
+node: { title: "_ada_timer_f103" label: "Timer_F103\n/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:11:1\n8 bytes (static)" }
+edge: { sourcename: "_ada_timer_f103" targetname: "stm32__timers__enable" label: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:23:4" }
+edge: { sourcename: "_ada_timer_f103" targetname: "stm32__timers__enable_interrupt" label: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:21:4" }
+edge: { sourcename: "_ada_timer_f103" targetname: "stm32__timers__configure" label: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:19:4" }
+edge: { sourcename: "_ada_timer_f103" targetname: "stm32__device__reset__10" label: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:17:4" }
+edge: { sourcename: "_ada_timer_f103" targetname: "stm32__device__enable_clock__11" label: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:15:4" }
+edge: { sourcename: "_ada_timer_f103" targetname: "stm32__board__initialize_board" label: "/backup/ada/STM32/F/F103/timer_f103/src/timer_f103.adb:13:4" }
+}

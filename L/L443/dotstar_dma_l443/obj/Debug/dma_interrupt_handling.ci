@@ -1,0 +1,68 @@
+graph: { title: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__single_entry__service_entry" label: "Service_Entry\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tposen.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__single_entry__lock_entry" label: "Lock_Entry\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tposen.ads:187:14" shape : ellipse }
+node: { title: "stm32__dma__circular_mode" label: "CIRCULAR_MODE\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-dma.ads:294:13" shape : ellipse }
+node: { title: "stm32__dma__clear_status" label: "CLEAR_STATUS\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-dma.ads:329:14" shape : ellipse }
+node: { title: "stm32__dma__disable_interrupt" label: "DISABLE_INTERRUPT\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-dma.ads:310:14" shape : ellipse }
+node: { title: "stm32__dma__interrupt_enabled" label: "INTERRUPT_ENABLED\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-dma.ads:317:13" shape : ellipse }
+node: { title: "stm32__dma__status" label: "STATUS\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-dma.ads:344:13" shape : ellipse }
+node: { title: "__gnat_end_handler" label: "gnat_end_handler\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__single_entry__exceptional_complete_single_entry_body" label: "Exceptional_Complete_Single_Entry_Body\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tposen.ads:220:14" shape : ellipse }
+node: { title: "system__soft_links__get_gnat_exception" label: "Get_Gnat_Exception\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-soflin.ads:134:13" shape : ellipse }
+node: { title: "__gnat_begin_handler" label: "gnat_begin_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-interr.ads:87:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__single_entry__initialize_protection_entry" label: "Initialize_Protection_Entry\n/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tposen.ads:179:14" shape : ellipse }
+node: { title: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP" label: "Irq_Handlerp\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:7\n32 bytes (static)" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP" targetname: "_Unwind_Resume" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP" targetname: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP___finalizer.4831" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:0" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP" targetname: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:7" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP" targetname: "system__tasking__protected_objects__single_entry__lock_entry" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:7" }
+node: { title: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP___finalizer.4831" label: "Irq_Handlerp\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:7\n16 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:dma_interrupt_handling__dma_unit_irq_handler__irq_handlerP___finalizer.4831" targetname: "system__tasking__protected_objects__single_entry__service_entry" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:7" }
+node: { title: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" label: "Irq_Handlern\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:54:7\n40 bytes (static)" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__clear_status" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:81:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:81:41" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__disable_interrupt" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:79:19" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:79:49" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__circular_mode" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:78:23" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:78:49" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__interrupt_enabled" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:77:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:77:46" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__status" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:76:13" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:76:32" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__clear_status" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:70:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:70:41" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__disable_interrupt" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:68:19" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:68:49" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__circular_mode" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:67:23" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:67:49" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__interrupt_enabled" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:66:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:66:46" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__status" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:65:13" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:65:32" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__clear_status" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:59:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:59:41" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__disable_interrupt" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:58:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:58:46" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__interrupt_enabled" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:57:16" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:57:46" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "stm32__dma__status" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:56:13" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__irq_handlerN" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:56:32" }
+node: { title: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" label: "Await_Event_E5s\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:44:7\n72 bytes (static)" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "_Unwind_Resume" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "__gnat_end_handler" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "system__tasking__protected_objects__single_entry__exceptional_complete_single_entry_body" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "system__soft_links__get_gnat_exception" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "__gnat_begin_handler" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "_Unwind_Resume" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:46:10" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:44:26" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handler__await_event_E5s" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:44:7" }
+node: { title: "dma_interrupt_handling__dma_unit_irq_handler__await_event_B6s" label: "Await_Event_B6s\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.adb:44:63\n16 bytes (static)" }
+node: { title: "dma_interrupt_handling__P3sIP" label: "P3sip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.ads:60:7\n16 bytes (static)" }
+node: { title: "dma_interrupt_handling__dma_unit_irq_handlerVIP" label: "Dma_Unit_Irq_Handlervip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.ads:53:4\n48 bytes (static)" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handlerVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.ads:53:4" }
+edge: { sourcename: "dma_interrupt_handling__dma_unit_irq_handlerVIP" targetname: "system__tasking__protected_objects__single_entry__initialize_protection_entry" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.ads:53:4" }
+}

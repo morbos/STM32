@@ -1,0 +1,47 @@
+edge: { sourcename: "dotstar_dma__send"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "dotstar_dma.adb:61:7"
+}
+edge: { sourcename: "dotstar_dma__test2"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "dotstar_dma.adb:70:7"
+}
+graph: { title: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb"
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "gnat_rcheck_PE_Unchecked_Union_Restriction\n<built-in>" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "dotstar_dma___elabb" label: "Dotstar_Dma\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:4:1\n8 bytes (static)" }
+edge: { sourcename: "dotstar_dma___elabb" targetname: "dotstar_dma__ds_fulltIP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:6:4" }
+node: { title: "dotstar_dma__test2" label: "Test2\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:64:4\n40 bytes (static)" }
+edge: { sourcename: "dotstar_dma__test2" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:70:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+node: { title: "dotstar_dma__send" label: "Send\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:54:4\n40 bytes (static)" }
+edge: { sourcename: "dotstar_dma__send" targetname: "__indirect_call" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:61:7" }
+edge: { sourcename: "dotstar_dma__send" targetname: "__gnat_rcheck_CE_Access_Check" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:61:37" }
+node: { title: "dotstar_dma__test" label: "Test\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:20:4\n48 bytes (static)" }
+edge: { sourcename: "dotstar_dma__test" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:50:10" }
+edge: { sourcename: "dotstar_dma__test" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:50:28" }
+edge: { sourcename: "dotstar_dma__test" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:50:30" }
+edge: { sourcename: "dotstar_dma__test" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:50:22" }
+edge: { sourcename: "dotstar_dma__test" targetname: "dotstar_dma__send" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:49:10" }
+edge: { sourcename: "dotstar_dma__test" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:22:7" }
+node: { title: "dotstar_dma__initialize" label: "Initialize\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.adb:13:4\n16 bytes (static)" }
+node: { title: "dotstar_dma__dotstar_elemIP" label: "Dotstar_Elemip\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:61:9\n16 bytes (static)" }
+node: { title: "dotstar_dma__ds_fulltIP" label: "Ds_Fulltip\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:45:9\n24 bytes (static)" }
+edge: { sourcename: "dotstar_dma__ds_fulltIP" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:48:7" }
+edge: { sourcename: "dotstar_dma__ds_fulltIP" targetname: "dotstar_dma__Tds_arraytBIP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:47:7" }
+edge: { sourcename: "dotstar_dma__ds_fulltIP" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:46:7" }
+node: { title: "dotstar_dma__ds_fulltEQ" label: "Ds_Fullteq\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:45:4\n16 bytes (static)" }
+edge: { sourcename: "dotstar_dma__ds_fulltEQ" targetname: "__gnat_rcheck_PE_Unchecked_Union_Restriction" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:45:9" }
+node: { title: "dotstar_dma__Tds_arraytBIP" label: "Tds_Arraytbip\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:43:4\n48 bytes (static)" }
+edge: { sourcename: "dotstar_dma__Tds_arraytBIP" targetname: "dotstar_dma__cell4IP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:43:4" }
+node: { title: "dotstar_dma__cell4IP" label: "Cell4ip\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:29:9\n16 bytes (static)" }
+edge: { sourcename: "dotstar_dma__cell4IP" targetname: "dotstar_dma__dotstar_cellIP" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:34:13" }
+node: { title: "dotstar_dma__cell4EQ" label: "Cell4eq\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:29:9\n24 bytes (static)" }
+edge: { sourcename: "dotstar_dma__cell4EQ" targetname: "memcmp" label: "/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:29:9" }
+node: { title: "dotstar_dma__dotstar_cellIP" label: "Dotstar_Cellip\n/backup/ada/STM32/F/F722/dotstar_dma_f722/src/dotstar_dma.ads:11:9\n16 bytes (static)" }
+}

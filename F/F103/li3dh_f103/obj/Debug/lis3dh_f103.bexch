@@ -1,0 +1,53 @@
+[GENERATED OBJECT FILE]
+b__lis3dh_f103.o
+[PROJECT FILES]
+/backup/ada/STM32/F/F103/li3dh_f103/lis3dh_f103.gpr
+20171105215005
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/middleware/middleware.gpr
+20170625184526
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/components/components.gpr
+20170625184526
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m3.gpr
+20171006220615
+/backup/ada/Ada_Drivers_Library/hal/HAL.gpr
+20170625184526
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/STM32/stm32f103.gpr
+20171031230437
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/target_options.gpr
+20170610185422
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/runtime_build.gpr
+20171008080630
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ravenscar_build.gpr
+20171008010937
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/board.gpr
+20171006211831
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/stm32f103_bluepill.gpr
+20171007213611
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/config.gpr
+20171006211952
+[BOUND OBJECT FILES]
+/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/lis3dh.o
+/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/peripherals.o
+/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/last_chance_handler.o
+/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/lis3dh_f103.o
+[GENERATED SOURCE FILES]
+b__lis3dh_f103.ads
+b__lis3dh_f103.adb
+b__lis3dh_f103.ali
+[RESULTING OPTIONS]
+-L/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/
+-L/backup/ada/STM32/F/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/Ada_Drivers_Library/hal/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m3/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/components/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/middleware/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+-L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
+-static
+-static-libgcc
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnarl.a
+/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a

@@ -1,0 +1,54 @@
+[GENERATED OBJECT FILE]
+b__dotstar_dma_l443.o
+[PROJECT FILES]
+/backup/ada/STM32/L/L443/dotstar_dma_l443/dotstar_dma_l443.gpr
+20171114012454
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/middleware/middleware.gpr
+20170625184526
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/components/components.gpr
+20170625184526
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20170625184525
+/backup/ada/Ada_Drivers_Library/hal/HAL.gpr
+20170625184526
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/stm32l4x3.gpr
+20171111181148
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/target_options.gpr
+20170610185421
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/runtime_build.gpr
+20171119223018
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/ravenscar_build.gpr
+20171111231709
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/board.gpr
+20171111180712
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/boards/stm32l443_bluepill.gpr
+20171119222611
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/config.gpr
+20171111231525
+[BOUND OBJECT FILES]
+/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/dma_interrupt_handling.o
+/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/memory_transfer.o
+/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/peripherals.o
+/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/dotstar_dma_l443.o
+/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/dotstar_dma.o
+[GENERATED SOURCE FILES]
+b__dotstar_dma_l443.ads
+b__dotstar_dma_l443.adb
+b__dotstar_dma_l443.ali
+[RESULTING OPTIONS]
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/obj/Debug/
+-L/backup/ada/STM32/L/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/backup/ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+-static
+-static-libgcc
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a
+/backup/ada/STM32/L/L443/dotstar_dma_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a

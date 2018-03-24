@@ -1,0 +1,77 @@
+graph: { title: "b__dotstar_dma_l443.adb"
+node: { title: "__gnat_finalize" label: "finalize\nb__dotstar_dma_l443.adb:200:17" shape : ellipse }
+node: { title: "_ada_dotstar_dma_l443" label: "ada_main_program\nb__dotstar_dma_l443.adb:193:14" shape : ellipse }
+node: { title: "__gnat_initialize" label: "initialize\nb__dotstar_dma_l443.adb:197:17" shape : ellipse }
+node: { title: "__gnat_start_slave_cpus" label: "start_slave_cpus\nb__dotstar_dma_l443.adb:105:17" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__dotstar_dma_l443.adb:103:17" shape : ellipse }
+node: { title: "__gnat_attach_all_handlers" label: "install_restricted_handlers_sequential\nb__dotstar_dma_l443.adb:97:17" shape : ellipse }
+node: { title: "dotstar_dma___elabb" label: "e108b\nb__dotstar_dma_l443.adb:186:18" shape : ellipse }
+node: { title: "memory_transfer___elabs" label: "e106b\nb__dotstar_dma_l443.adb:184:22" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e104b\nb__dotstar_dma_l443.adb:181:19" shape : ellipse }
+node: { title: "stm32__spi___elabs" label: "e102b\nb__dotstar_dma_l443.adb:178:16" shape : ellipse }
+node: { title: "stm32__i2c___elabs" label: "e100b\nb__dotstar_dma_l443.adb:175:16" shape : ellipse }
+node: { title: "stm32__gpio___elabs" label: "e98b\nb__dotstar_dma_l443.adb:174:17" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e96b\nb__dotstar_dma_l443.adb:169:16" shape : ellipse }
+node: { title: "hal__spi___elabs" label: "e94b\nb__dotstar_dma_l443.adb:167:14" shape : ellipse }
+node: { title: "hal__i2c___elabs" label: "e92b\nb__dotstar_dma_l443.adb:165:14" shape : ellipse }
+node: { title: "hal__gpio___elabs" label: "e90b\nb__dotstar_dma_l443.adb:163:15" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e88b\nb__dotstar_dma_l443.adb:161:20" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e86b\nb__dotstar_dma_l443.adb:159:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "e84b\nb__dotstar_dma_l443.adb:157:55" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e82b\nb__dotstar_dma_l443.adb:155:39" shape : ellipse }
+node: { title: "ada__tags___elabb" label: "e80b\nb__dotstar_dma_l443.adb:153:15" shape : ellipse }
+node: { title: "system__finalization_masters___elabb" label: "e78b\nb__dotstar_dma_l443.adb:151:34" shape : ellipse }
+node: { title: "system__pool_global___elabs" label: "e76b\nb__dotstar_dma_l443.adb:149:25" shape : ellipse }
+node: { title: "system__exception_table___elabb" label: "e74b\nb__dotstar_dma_l443.adb:147:29" shape : ellipse }
+node: { title: "ada__text_io___elabb" label: "e72b\nb__dotstar_dma_l443.adb:145:18" shape : ellipse }
+node: { title: "system__bb__timing_events___elabs" label: "e70b\nb__dotstar_dma_l443.adb:142:30" shape : ellipse }
+node: { title: "system__finalization_masters___elabs" label: "e68b\nb__dotstar_dma_l443.adb:141:34" shape : ellipse }
+node: { title: "system__storage_pools___elabs" label: "e66b\nb__dotstar_dma_l443.adb:139:27" shape : ellipse }
+node: { title: "system__soft_links___elabs" label: "e64b\nb__dotstar_dma_l443.adb:138:24" shape : ellipse }
+node: { title: "ada__finalization___elabs" label: "e62b\nb__dotstar_dma_l443.adb:136:23" shape : ellipse }
+node: { title: "system__finalization_root___elabs" label: "e60b\nb__dotstar_dma_l443.adb:134:31" shape : ellipse }
+node: { title: "ada__streams___elabs" label: "e58b\nb__dotstar_dma_l443.adb:132:18" shape : ellipse }
+node: { title: "__gnat_runtime_initialize" label: "runtime_initialize\nb__dotstar_dma_l443.adb:95:17" shape : ellipse }
+node: { title: "system__standard_library__adafinal" label: "s_stalib_adafinal\nb__dotstar_dma_l443.adb:46:17" shape : ellipse }
+node: { title: "__gnat_runtime_finalize" label: "runtime_finalize\nb__dotstar_dma_l443.adb:49:17" shape : ellipse }
+node: { title: "main" label: "main\nb__dotstar_dma_l443.adb:196:4\n24 bytes (static)" }
+edge: { sourcename: "main" targetname: "__gnat_finalize" label: "b__dotstar_dma_l443.adb:212:7" }
+edge: { sourcename: "main" targetname: "adafinal" label: "b__dotstar_dma_l443.adb:211:7" }
+edge: { sourcename: "main" targetname: "_ada_dotstar_dma_l443" label: "b__dotstar_dma_l443.adb:210:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__dotstar_dma_l443.adb:209:7" }
+edge: { sourcename: "main" targetname: "__gnat_initialize" label: "b__dotstar_dma_l443.adb:208:7" }
+node: { title: "adainit" label: "adainit\nb__dotstar_dma_l443.adb:61:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_start_slave_cpus" label: "b__dotstar_dma_l443.adb:190:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__dotstar_dma_l443.adb:189:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_attach_all_handlers" label: "b__dotstar_dma_l443.adb:188:7" }
+edge: { sourcename: "adainit" targetname: "dotstar_dma___elabb" label: "b__dotstar_dma_l443.adb:186:18" }
+edge: { sourcename: "adainit" targetname: "memory_transfer___elabs" label: "b__dotstar_dma_l443.adb:184:22" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__dotstar_dma_l443.adb:181:19" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabs" label: "b__dotstar_dma_l443.adb:178:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabs" label: "b__dotstar_dma_l443.adb:175:16" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabs" label: "b__dotstar_dma_l443.adb:174:17" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__dotstar_dma_l443.adb:169:16" }
+edge: { sourcename: "adainit" targetname: "hal__spi___elabs" label: "b__dotstar_dma_l443.adb:167:14" }
+edge: { sourcename: "adainit" targetname: "hal__i2c___elabs" label: "b__dotstar_dma_l443.adb:165:14" }
+edge: { sourcename: "adainit" targetname: "hal__gpio___elabs" label: "b__dotstar_dma_l443.adb:163:15" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__dotstar_dma_l443.adb:161:20" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__dotstar_dma_l443.adb:159:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects__multiprocessors___elabb" label: "b__dotstar_dma_l443.adb:157:55" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__dotstar_dma_l443.adb:155:39" }
+edge: { sourcename: "adainit" targetname: "ada__tags___elabb" label: "b__dotstar_dma_l443.adb:153:15" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabb" label: "b__dotstar_dma_l443.adb:151:34" }
+edge: { sourcename: "adainit" targetname: "system__pool_global___elabs" label: "b__dotstar_dma_l443.adb:149:25" }
+edge: { sourcename: "adainit" targetname: "system__exception_table___elabb" label: "b__dotstar_dma_l443.adb:147:29" }
+edge: { sourcename: "adainit" targetname: "ada__text_io___elabb" label: "b__dotstar_dma_l443.adb:145:18" }
+edge: { sourcename: "adainit" targetname: "system__bb__timing_events___elabs" label: "b__dotstar_dma_l443.adb:142:30" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabs" label: "b__dotstar_dma_l443.adb:141:34" }
+edge: { sourcename: "adainit" targetname: "system__storage_pools___elabs" label: "b__dotstar_dma_l443.adb:139:27" }
+edge: { sourcename: "adainit" targetname: "system__soft_links___elabs" label: "b__dotstar_dma_l443.adb:138:24" }
+edge: { sourcename: "adainit" targetname: "ada__finalization___elabs" label: "b__dotstar_dma_l443.adb:136:23" }
+edge: { sourcename: "adainit" targetname: "system__finalization_root___elabs" label: "b__dotstar_dma_l443.adb:134:31" }
+edge: { sourcename: "adainit" targetname: "ada__streams___elabs" label: "b__dotstar_dma_l443.adb:132:18" }
+edge: { sourcename: "adainit" targetname: "__gnat_runtime_initialize" label: "b__dotstar_dma_l443.adb:130:7" }
+node: { title: "adafinal" label: "adafinal\nb__dotstar_dma_l443.adb:45:4\n8 bytes (static)" }
+edge: { sourcename: "adafinal" targetname: "system__standard_library__adafinal" label: "b__dotstar_dma_l443.adb:58:7" }
+edge: { sourcename: "adafinal" targetname: "__gnat_runtime_finalize" label: "b__dotstar_dma_l443.adb:57:7" }
+}

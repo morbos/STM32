@@ -1,0 +1,210 @@
+V "GNAT Lib v2016"
+M P W=b
+A -O0
+A -gnatA
+A --RTS=/backup/ada/STM32/L/L443/dotstar_l443/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U dotstar_l443%b	dotstar_l443.adb	6e0d13f2 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W dotstar%s		dotstar.adb		dotstar.ali
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W interfaces%s		interfac.ads		interfac.ali
+W peripherals%s		peripherals.ads		peripherals.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.spi%s		stm32-spi.adb		stm32-spi.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-except.ads		20170610185419 291912d5 ada.exceptions%s
+D a-finali.ads		20170610185419 bf4f806b ada.finalization%s
+D a-reatim.ads		20170610185418 6cf3693f ada.real_time%s
+D a-stream.ads		20170610185419 119b8fb3 ada.streams%s
+D a-tags.ads		20170610185419 01f5e3ef ada.tags%s
+D a-textio.ads		20170610185419 ffc84532 ada.text_io%s
+D a-unccon.ads		20170610185418 1cf21617 ada.unchecked_conversion%s
+D dotstar.ads		20171112224014 c6183ea9 dotstar%s
+D dotstar_l443.adb	20171114013809 2d3c6a5e dotstar_l443%b
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D hal-spi.ads		20171113051629 fe139819 hal.spi%s
+D interfac.ads		20170610185418 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190223 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20171111071046 d038a450 interfaces.stm32%s
+D i-stm32-pwr.ads	20171111071046 13c7029d interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20171111071046 c25eb87d interfaces.stm32.rcc%s
+D peripherals.ads	20171112233901 e9c15656 peripherals%s
+D stm32.ads		20171111181124 698e2c3b stm32%s
+D stm32-adc.ads		20171111181124 ccb8d517 stm32.adc%s
+D stm32-board.ads	20171111073701 e44a5696 stm32.board%s
+D stm32-crc.ads		20171113224918 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20171111181124 df36c124 stm32.dac%s
+D stm32-device.ads	20171113224034 7762ae12 stm32.device%s
+D stm32-dma.ads		20171114005245 a771b9fb stm32.dma%s
+D stm32-exti.ads	20171111181124 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20171111181124 0ffd30d6 stm32.gpio%s
+D stm32-i2c.ads		20171111181124 a917bb1e stm32.i2c%s
+D stm32-spi.ads		20171113185925 ece2f773 stm32.spi%s
+D stm32-timers.ads	20171111184710 e257e983 stm32.timers%s
+D stm32_svd.ads		20170625184525 c54207f5 stm32_svd%s
+D stm32_svd-adc.ads	20170625184525 989a330c stm32_svd.adc%s
+D stm32_svd-crc.ads	20170625184525 f6105a75 stm32_svd.crc%s
+D stm32_svd-dac.ads	20170625184525 738e6732 stm32_svd.dac%s
+D stm32_svd-dma.ads	20170625184525 e9a28962 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20170625184525 639e7098 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20170625184525 ad463189 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20171113061003 cb7bae50 stm32_svd.spi%s
+D system.ads		20170610185418 6646b8c6 system%s
+D s-bb.ads		20170610185419 b4de4dfd system.bb%s
+D s-bbbopa.ads		20171111071046 c6aa82c7 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185418 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185418 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185418 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185418 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20171111071046 4d7fdeec system.bb.mcu_parameters%s
+D s-bbpara.ads		20170610185418 9e97c9bf system.bb.parameters%s
+D s-bbthre.ads		20170610185418 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185418 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185418 ad086247 system.bb.time%s
+D s-finmas.ads		20170610185418 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170610185420 4ff27390 system.finalization_root%s
+D s-multip.ads		20170610185418 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185418 7200ae92 system.os_interface%s
+D s-parame.ads		20170610185419 c9fe535f system.parameters%s
+D s-pooglo.ads		20170610185419 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170610185418 a4d06a42 system.secondary_stack%s
+D s-stalib.ads		20170610185420 09bd3940 system.standard_library%s
+D s-stm32.ads		20171111071046 4ab394a4 system.stm32%s
+D s-stoele.ads		20170610185418 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170610185418 b16154c2 system.storage_pools%s
+D s-stratt.ads		20170610185418 aedef97e system.stream_attributes%s
+D s-traent.ads		20170610185419 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /backup/ada/STM32/L/L443/dotstar_l443/gnat.adc  20170513192400 00000000
+X 1 ada.ads
+16K9*Ada 20e8 10|13r6 13r27 14r6 14r27
+X 4 a-reatim.ads
+36K13*Real_Time 151e18 10|13w10 13r31
+X 7 a-textio.ads
+31K13*Text_IO 47e16 10|14w10 14r31
+X 9 dotstar.ads
+7K9*Dotstar 56e12 10|9w6 9r27
+11M9*Dotstar_Matrix_Idx 10|77r14
+42R9*Dotstar_Elem 54e14 10|18r9
+45U14*Initialize 10|85s4
+47U14*Test 10|88s7
+X 10 dotstar_l443.adb
+16U11*Dotstar_l443 16b11 91l5 91t17
+18r4 DS{9|42R9} 85m16 85r16 88m13 88r13
+20U14 Initialize_GPIO 21^7 22>7 23>7 24>7 25>7 28b14 74l8 74t23 79s4
+21p7 Port(31|52R9) 29b7 42r21 44r15 46r27 79r21
+22m7 SPI_AF{21|42M9} 30b7 56r43 57r43 58r43 80r21
+23r7 SCL{29|129R9} 31b7 39r21 52r21 56r37 81r21
+24r7 MOSI{29|129R9} 32b7 40r21 53r21 57r37 83r21
+25r7 MISO{29|129R9} 33b7 41r21 54r21 58r37 82r21
+36r7 GPIO_Conf{29|122R9} 48m7 49m7 50m7 51m7 52r27 53r27 54r27
+37r7 Config{31|74R9} 60m7 61m7 62m7 63m7 64m7 65m7 66m7 67m7 68m7 71r41
+76e4 Status{14|34E9}
+77m4 Idx{9|11M9} 86m4 88r17 89m7 89r14
+X 11 hal.ads
+34K9*HAL 10|2w6 2r15 10r6 68r27 76r14 11|166e8
+43M9*UInt4
+66M9*UInt16<15|61M9>
+X 12 hal-gpio.ads
+44h9*GPIO_Point
+X 13 hal-i2c.ads
+48h9*I2C_Port
+X 14 hal-spi.ads
+32K13*SPI 10|10w10 68r31 76r18 14|86e12
+34E9*SPI_Status 10|76r22 14|38e12
+41n7*Data_Size_8b{40E9} 10|68r35
+48h9*SPI_Port
+X 15 interfac.ads
+33K9*Interfaces 10|4w6 4r27 15|179e15
+61M9*Unsigned_16
+X 20 peripherals.ads
+38K9*Peripherals 10|3w6 3r27 20|46e16
+40p4*Selected_SPI_Port(31|52R9) 10|18r23 70r16 71r18 72r15 79r29
+41m4*Selected_SPI_Port_AF{21|42M9} 10|80r31
+42r4*Selected_SPI_Clock_Pin=42:48{29|129R9} 10|81r30
+43r4*Selected_SPI_Miso_Pin=43:48{29|129R9} 10|82r30
+44r4*Selected_SPI_Mosi_Pin=44:48{29|129R9} 10|83r30
+X 21 stm32.ads
+39K9*STM32 10|5r6 5r27 6r6 6r27 7r6 7r27 8r6 8r27 11r5 46r7 21|48e10
+42M9*GPIO_Alternate_Function<11|43M9> 10|22r18 30r18
+X 23 stm32-board.ads
+49K15*Board 10|6w12 6r33 23|68e16
+X 26 stm32-device.ads
+56K15*Device 10|5w12 5r33 46r13 26|345e17
+64U14*Enable_Clock 10|39s7 40s7 41s7
+271U14*Enable_Clock 10|42s7
+272U14*Reset 10|46s20
+X 29 stm32-gpio.ads
+49K15*GPIO 10|7w12 7r33 29|271e15
+87n45*Mode_AF{87E9} 10|51r32
+96n30*Push_Pull{96E9} 10|48r32
+101n57*Speed_50MHz{101E9} 10|50r32
+115n36*Floating{115E9} 10|49r32
+122R9*GPIO_Port_Configuration 10|36r30 29|127e14
+123e7*Mode{87E9} 10|51m17
+124e7*Output_Type{96E9} 10|48m17
+125e7*Speed{101E9} 10|50m17
+126e7*Resistors{115E9} 10|49m17
+129R9*GPIO_Point<12|44R9> 10|23r18 24r18 25r18 31r18 32r18 33r18 29|134e14
+185U14*Configure_IO 10|52s7 53s7 54s7
+202U14*Configure_Alternate_Function 10|56s7 57s7 58s7
+X 31 stm32-spi.ads
+48K15*SPI 10|8w12 8r33 31|249e14
+52R9*SPI_Port<14|48R9> 10|21r25 29r25 31|219e51
+56n7*D2Lines_FullDuplex{55E9} 10|67r27
+61n22*Master{61E9} 10|60r22
+63n38*Low{63E9} 10|62r32
+65n29*P1Edge{65E9} 10|63r29
+67n34*Software_Managed{67E9} 10|66r34
+70n44*BRP_64{69E9} 10|61r37
+72n27*MSB{72E9} 10|64r27
+74R9*SPI_Configuration 10|37r30 31|84e14
+75e7*Direction{55E9} 10|67m14
+76e7*Mode{61E9} 10|60m14
+77e7*Data_Size{14|40E9} 10|68m14
+78e7*Clock_Polarity{63E9} 10|62m14
+79e7*Clock_Phase{65E9} 10|63m14
+80e7*Slave_Management{67E9} 10|66m14
+81e7*Baud_Rate_Prescaler{69E9} 10|61m14
+82e7*First_Bit{72E9} 10|64m14
+83m7*CRC_Poly{11|66M9} 10|65m14
+86U14*Configure 10|71s7
+88U14*Enable 10|44s7 72s7
+90U14*Disable 10|70s7
+X 46 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+

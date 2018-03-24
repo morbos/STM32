@@ -1,0 +1,55 @@
+[GENERATED OBJECT FILE]
+b__dotstar_dma_f722.o
+[PROJECT FILES]
+/backup/ada/STM32/F/F722/dotstar_dma_f722/dotstar_dma_f722.gpr
+20171115233831
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/middleware/middleware.gpr
+20170625184526
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/components/components.gpr
+20170625184526
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m7.gpr
+20170625184525
+/backup/ada/Ada_Drivers_Library/middleware/sdmmc.gpr
+20170625184526
+/backup/ada/Ada_Drivers_Library/hal/HAL.gpr
+20170625184526
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/arch/ARM/STM32/stm32f7x.gpr
+20170625184525
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f722nucleo/target_options.gpr
+20170610185422
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f722nucleo/runtime_build.gpr
+20170610185422
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f722nucleo/ravenscar_build.gpr
+20170610185422
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/stm32f722_nucleo/board.gpr
+20170625184526
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/stm32f722_nucleo.gpr
+20170625184526
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/stm32f722_nucleo/config.gpr
+20170625184526
+[BOUND OBJECT FILES]
+/backup/ada/STM32/F/F722/dotstar_dma_f722/obj/Debug/dotstar_dma.o
+/backup/ada/STM32/F/F722/dotstar_dma_f722/obj/Debug/peripherals.o
+/backup/ada/STM32/F/F722/dotstar_dma_f722/obj/Debug/dotstar_dma_f722.o
+[GENERATED SOURCE FILES]
+b__dotstar_dma_f722.ads
+b__dotstar_dma_f722.adb
+b__dotstar_dma_f722.ali
+[RESULTING OPTIONS]
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/obj/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/obj/Debug/
+-L/backup/ada/STM32/F/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/stm32f722_nucleo/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f722nucleo/full/adalib/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/Ada_Drivers_Library/hal/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/Ada_Drivers_Library/middleware/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m7/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/components/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/middleware/lib/stm32f722nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f722nucleo/full/adalib/
+-static
+-static-libgcc
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f722nucleo/full/adalib/libgnarl.a
+/backup/ada/STM32/F/F722/dotstar_dma_f722/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f722nucleo/full/adalib/libgnat.a

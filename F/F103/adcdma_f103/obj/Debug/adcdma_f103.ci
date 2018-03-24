@@ -1,0 +1,51 @@
+graph: { title: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb"
+node: { title: "stm32__adc__enable_dma" label: "ENABLE_DMA\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-adc.ads:384:14" shape : ellipse }
+node: { title: "stm32__adc__configure_regular_conversions" label: "CONFIGURE_REGULAR_CONVERSIONS\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-adc.ads:187:14" shape : ellipse }
+node: { title: "stm32__adc__configure_unit" label: "CONFIGURE_UNIT\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-adc.ads:119:14" shape : ellipse }
+node: { title: "stm32__device__reset_all_adc_units" label: "RESET_ALL_ADC_UNITS\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:250:14" shape : ellipse }
+node: { title: "stm32__dma__clear_all_status" label: "CLEAR_ALL_STATUS\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-dma.ads:337:14" shape : ellipse }
+node: { title: "stm32__dma__configure" label: "CONFIGURE\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-dma.ads:500:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__6" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:280:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:219:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:67:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "stm32__gpio__toggle" label: "TOGGLE\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:205:14" shape : ellipse }
+node: { title: "stm32__dma__start_transfer" label: "START_TRANSFER\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-dma.ads:187:14" shape : ellipse }
+node: { title: "stm32__adc__data_register_address" label: "DATA_REGISTER_ADDRESS\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-adc.ads:306:13" shape : ellipse }
+node: { title: "stm32__adc__start_conversion" label: "START_CONVERSION\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-adc.ads:292:14" shape : ellipse }
+node: { title: "stm32__adc__enable" label: "ENABLE\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-adc.ads:103:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__4" label: "ENABLE_CLOCK\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:248:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/backup/ada/STM32/F/F103/adcdma_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/src/stm32-board.ads:45:14" shape : ellipse }
+node: { title: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_adc.5194" label: "Initialize_Adc\n/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:138:4\n40 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_adc.5194" targetname: "stm32__adc__enable_dma" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:152:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_adc.5194" targetname: "stm32__adc__configure_regular_conversions" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:146:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_adc.5194" targetname: "stm32__adc__configure_unit" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:142:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_adc.5194" targetname: "stm32__device__reset_all_adc_units" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:140:7" }
+node: { title: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_dma.5192" label: "Initialize_Dma\n/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:110:4\n40 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_dma.5192" targetname: "stm32__dma__clear_all_status" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:131:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_dma.5192" targetname: "stm32__dma__configure" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:129:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_dma.5192" targetname: "stm32__device__enable_clock__6" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:113:7" }
+node: { title: "_ada_adcdma_f103" label: "Adcdma_F103\n/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:62:1\n96 bytes (static)" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:184:7" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:184:25" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:184:27" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:184:19" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__gpio__toggle" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:182:7" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__dma__start_transfer" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:173:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__adc__data_register_address" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:176:22" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__adc__start_conversion" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:171:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__adc__enable" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:169:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_adc.5194" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:165:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__initialize_dma.5192" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:163:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__device__enable_clock__4" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:161:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__configure_analog_input.5190" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:159:4" }
+edge: { sourcename: "_ada_adcdma_f103" targetname: "stm32__board__initialize_board" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:157:4" }
+node: { title: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__configure_analog_input.5190" label: "Configure_Analog_Input\n/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:98:4\n32 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__configure_analog_input.5190" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:103:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__configure_analog_input.5190" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:102:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__configure_analog_input.5190" targetname: "stm32__gpio__configure_io" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:101:7" }
+edge: { sourcename: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:adcdma_f103__configure_analog_input.5190" targetname: "stm32__device__enable_clock__2" label: "/backup/ada/STM32/F/F103/adcdma_f103/src/adcdma_f103.adb:100:7" }
+}

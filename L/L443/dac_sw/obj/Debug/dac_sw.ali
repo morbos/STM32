@@ -1,0 +1,228 @@
+V "GNAT Lib v2016"
+M P W=b
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U dac_sw%b		dac_sw.adb		dabd2e26 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W hal%s			hal.ads			hal.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.dac%s		stm32-dac.adb		stm32-dac.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W system%s		system.ads		system.ali
+W system.libm_single%s	s-libsin.adb		s-libsin.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-except.ads		20170610185419 291912d5 ada.exceptions%s
+D a-finali.ads		20170610185419 bf4f806b ada.finalization%s
+D a-numeri.ads		20170610185418 bb51c45a ada.numerics%s
+D a-reatim.ads		20170610185418 6cf3693f ada.real_time%s
+D a-stream.ads		20170610185419 119b8fb3 ada.streams%s
+D a-tags.ads		20170610185419 01f5e3ef ada.tags%s
+D a-textio.ads		20170610185419 ffc84532 ada.text_io%s
+D a-unccon.ads		20170610185418 1cf21617 ada.unchecked_conversion%s
+D dac_sw.adb		20170715185607 0e4cf103 dac_sw%b
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D hal-spi.ads		20171113051629 fe139819 hal.spi%s
+D interfac.ads		20170610185418 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190223 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20171111071046 d038a450 interfaces.stm32%s
+D i-stm32-pwr.ads	20171111071046 13c7029d interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20171117021832 424a6653 interfaces.stm32.rcc%s
+D stm32.ads		20171111181124 698e2c3b stm32%s
+D stm32-adc.ads		20171111181124 ccb8d517 stm32.adc%s
+D stm32-crc.ads		20171113224918 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20171111181124 df36c124 stm32.dac%s
+D stm32-device.ads	20171113224034 7762ae12 stm32.device%s
+D stm32-dma.ads		20171119021648 93d5e507 stm32.dma%s
+D stm32-exti.ads	20171111181124 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20171111181124 0ffd30d6 stm32.gpio%s
+D stm32-i2c.ads		20171111181124 a917bb1e stm32.i2c%s
+D stm32-spi.ads		20171119024146 da72cfca stm32.spi%s
+D stm32-timers.ads	20171111184710 e257e983 stm32.timers%s
+D stm32_svd.ads		20170625184525 c54207f5 stm32_svd%s
+D stm32_svd-adc.ads	20171116235606 4f6d4a34 stm32_svd.adc%s
+D stm32_svd-crc.ads	20170625184525 f6105a75 stm32_svd.crc%s
+D stm32_svd-dac.ads	20170625184525 738e6732 stm32_svd.dac%s
+D stm32_svd-dma.ads	20170625184525 e9a28962 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20170625184525 639e7098 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20170625184525 ad463189 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20171113061003 cb7bae50 stm32_svd.spi%s
+D system.ads		20170610185418 6646b8c6 system%s
+D s-bb.ads		20170610185419 b4de4dfd system.bb%s
+D s-bbbopa.ads		20171117224009 c6aa82c7 system.bb.board_parameters%s
+D s-bbbosu.ads		20170610185418 2372c70e system.bb.board_support%s
+D s-bbcppr.ads		20170610185418 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170610185418 5dbb63a2 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170610185418 4743e2d6 system.bb.interrupts%s
+D s-bbmcpa.ads		20171111071046 4d7fdeec system.bb.mcu_parameters%s
+D s-bbpara.ads		20171117224022 9e97c9bf system.bb.parameters%s
+D s-bbthre.ads		20170610185418 8bccdbdf system.bb.threads%s
+D s-bbthqu.ads		20170610185418 eb75c42b system.bb.threads.queues%s
+D s-bbtime.ads		20170610185418 ad086247 system.bb.time%s
+D s-finmas.ads		20170610185418 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170610185420 4ff27390 system.finalization_root%s
+D s-libpre.ads		20170610185418 f93cda94 system.libm_prefix%s
+D s-libsin.ads		20170610185418 7070a09c system.libm_single%s
+D s-multip.ads		20170610185418 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170610185418 7200ae92 system.os_interface%s
+D s-parame.ads		20170610185419 c9fe535f system.parameters%s
+D s-pooglo.ads		20170610185419 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170610185418 a4d06a42 system.secondary_stack%s
+D s-stalib.ads		20170610185420 09bd3940 system.standard_library%s
+D s-stm32.ads		20171117225028 4ab394a4 system.stm32%s
+D s-stoele.ads		20170610185418 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170610185418 b16154c2 system.storage_pools%s
+D s-stratt.ads		20170610185418 aedef97e system.stream_attributes%s
+D s-traent.ads		20170610185419 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw/gnat.adc  20170309004503 00000000
+X 1 ada.ads
+16K9*Ada 20e8 10|5r6 5r30 6r6 6r30 11r6 11r30
+X 4 a-numeri.ads
+16K13*Numerics 32e17 10|6w10 6r34
+21N4*Pi 10|113r25
+X 5 a-reatim.ads
+36K13*Real_Time 151e18 10|11w10 11r34
+X 8 a-textio.ads
+31K13*Text_IO 47e16 10|5w10 5r34
+X 10 dac_sw.adb
+13U11*Dac_Sw 13b11 177l5 177t11
+15e4 Output_Channel1{23|52E9} 76r24 83r27 86r27 89r19 160r19
+16e4 Output_Channel2{23|52E9} 77r24 84r27 87r27 90r19 166r19
+18U14 Configure_DAC_GPIO 18>34 51b14 61l8 61t26 76s4 77s4
+18e34 Output_Channel{23|52E9} 51b34 52r43
+25R12 User_LED{27|129R9} 27r17 44r38 45r38
+27r4 Green_LED=27:34{27|129R9} 34r21 40r21
+29U14 Initialize_LED 31b14 42l8 42t22 74s4
+32r7 Configuration{27|122R9} 36m7 37m7 38m7 39m7 41r31
+44U14 Turn_On=44:67
+44r24 This{25R12}
+45U14 Turn_Off=45:67
+45r24 This{25R12}
+52r7 Output{27|129R9} 57r21 60r21
+55r7 Config{27|122R9} 58m7 59m7 60r29
+64i4 Step{natural} 66r23 117r36
+66M9 ValIdx 70r31 102r17 103r17
+68F9 Value_Type<short_float>
+70A9 Value_Array(float)<66M9> 72r8
+72a4 X{70A9} 116r16 118m10 145r22 146r58 147r58 148r25 149r25
+93E12 Dirs 93e41 98r17 99r17
+93n21 Forwards{93E12} 125r28 129r28 135r28 139r28 146r37 147r37
+93n31 Backwards{93E12} 124r28 130r28 134r28 140r28
+94m7 Value{11|97M9}
+95f7 Tmp{float} 117m10 118r33
+96f7 Tmp_X{float} 148m16 152m16 152r25 154m16 154r25 156r35
+97f7 Tmp_Y{float} 149m16 153m16 153r25 155m16 155r25 157r35
+98e7 Dir_X{93E12} 124m19 129m19 134m19 139m19 146r29
+99e7 Dir_Y{93E12} 125m19 130m19 135m19 140m19 147r29
+100f7 Sign_X{float} 126m19 131m19 136m19 141m19 148r37
+101f7 Sign_Y{float} 127m19 132m19 137m19 142m19 149r37
+102m7 Idx_X{66M9} 146m16 148r28
+103m7 Idx_Y{66M9} 147m16 149r28
+104m7 Count_X{11|97M9} 156m16 161r19
+105m7 Count_Y{11|97M9} 157m16 167r19
+107e7 Resolution{23|85E9} 110r43 162r19 168r19
+110m7 Max_Counts{11|97M9} 156r50 157r50
+113f7 Pi_O_2{float} 118r24
+116m11 I{66M9} 117r24 118r13
+121i14 Quadrant{integer} 122r18
+145m17 I{66M9} 146r51 146r67 147r51 147r67
+X 11 hal.ads
+34K9*HAL 10|1w6 1r30 11|166e8
+97M9*UInt32<15|69M9> 10|94r17 104r17 105r17 110r29 156r27 157r27
+X 12 hal-gpio.ads
+44h9*GPIO_Point
+X 13 hal-i2c.ads
+48h9*I2C_Port
+X 14 hal-spi.ads
+48h9*SPI_Port
+X 15 interfac.ads
+69M9*Unsigned_32
+X 20 stm32.ads
+39K9*STM32 10|2r6 2r30 3r6 3r30 4r6 4r30 9r5 44r56 45r56 20|48e10
+X 23 stm32-dac.ads
+48K15*DAC 10|4w12 4r36 23|328e14
+50R9*Digital_To_Analog_Converter<34|512R9>
+52E9*DAC_Channel 10|15r31 16r31 18r51 51r51 23|52e46
+52n25*Channel_1{52E9} 10|15r46 52r60
+52n36*Channel_2{52E9} 10|16r46
+56U14*Enable 10|89s4 90s4
+85E9*DAC_Resolution 10|107r29 23|85e74
+85n28*DAC_Resolution_12_Bits{85E9} 10|107r47 110r56
+87N4*Max_12bit_Resolution 10|111r45
+88N4*Max_8bit_Resolution 10|112r45
+90n42*Right_Aligned{90E9} 10|163r19 169r19
+92U14*Set_Output 10|158s16 164s16
+120U14*Trigger_Conversion_By_Software 10|172s16
+153n7*Software_Trigger{145E9} 10|83r44 84r44
+155U14*Select_Trigger 10|83s4 84s4
+171U14*Enable_Trigger 10|86s4 87s4
+X 24 stm32-device.ads
+56K15*Device 10|2w12 2r36 24|345e17
+64U14*Enable_Clock 10|34s7 57s7
+120r4*PB3{27|129R9} 10|27r34
+279r4*DAC_1{23|50R9} 10|79m18 79r18 81m11 81r11 83m20 83r20 84m20 84r20 86m20
+. 86r20 87m20 87r20 89m12 89r12 90m12 90r12 159m19 159r19 165m19 165r19 172m48
+. 172r48
+281r4*DAC_Channel_1_IO=281:42{27|129R9} 10|53r45
+282r4*DAC_Channel_2_IO=282:42{27|129R9} 10|54r45
+284U14*Enable_Clock 10|79s4
+286U14*Reset 10|81s4
+X 27 stm32-gpio.ads
+49K15*GPIO 10|3w12 3r36 44r62 45r62 27|271e15
+87n35*Mode_Out{87E9} 10|36r36
+87n54*Mode_Analog{87E9} 10|58r22
+96n30*Push_Pull{96E9} 10|37r36
+101n70*Speed_100MHz{101E9} 10|38r36
+115n36*Floating{115E9} 10|39r36 59r27
+122R9*GPIO_Port_Configuration 10|32r23 55r16 27|127e14
+123e7*Mode{87E9} 10|36m21 58m14
+124e7*Output_Type{96E9} 10|37m21
+125e7*Speed{101E9} 10|38m21
+126e7*Resistors{115E9} 10|39m21 59m14
+129R9*GPIO_Point<12|44R9> 10|25r24 52r25 27|134e14
+159U14*Set<12|74p14> 10|44r67
+165U14*Clear<12|77p14> 10|45r67
+185U14*Configure_IO 10|40s7 60s7
+187r7 Config{122R9} 10|41r21
+X 39 system.ads
+45K9*System 10|7r6 7r30 39|159e11
+X 44 s-bcprmu.ads
+41U14*Start_All_CPUs 42i<c,__gnat_start_slave_cpus>22
+X 54 s-libsin.ads
+35K16*Libm_Single 10|7w13 7r37 54|530e23
+426V13*Sin{float} 10|118s19
+

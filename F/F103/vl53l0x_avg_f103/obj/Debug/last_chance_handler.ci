@@ -1,0 +1,23 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb"
+node: { title: "stm32__gpio__set__2" label: "SET\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:193:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:199:14" shape : ellipse }
+node: { title: "stm32__board__all_leds_off" label: "ALL_LEDS_OFF\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/src/stm32-board.ads:55:14" shape : ellipse }
+node: { title: "stm32__board__initialize_leds" label: "INITIALIZE_LEDS\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/vl53l0x_avg_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/src/stm32-board.ads:46:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:45:4\n32 bytes (static)" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:57:10" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:57:28" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:57:30" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:57:22" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:56:10" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:55:10" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:55:28" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:55:30" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:55:22" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:54:10" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__board__all_leds_off" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:50:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__board__initialize_leds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/lch_ssfp/led/last_chance_handler.adb:48:7" }
+}

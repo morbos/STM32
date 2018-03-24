@@ -1,0 +1,5 @@
+graph: { title: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/memory_transfer.ads"
+node: { title: "dma_interrupt_handling__dma_unit_irq_handlerVIP" label: "Dma_Unit_Irq_Handlervip\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/dma_interrupt_handling.ads:53:4" shape : ellipse }
+node: { title: "memory_transfer___elabs" label: "Memory_Transfer\n/backup/ada/STM32/L/L443/dotstar_dma_l443/src/memory_transfer.ads:44:1\n8 bytes (static)" }
+edge: { sourcename: "memory_transfer___elabs" targetname: "dma_interrupt_handling__dma_unit_irq_handlerVIP" label: "/backup/ada/STM32/L/L443/dotstar_dma_l443/src/memory_transfer.ads:53:4" }
+}

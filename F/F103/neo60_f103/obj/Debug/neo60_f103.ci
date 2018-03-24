@@ -1,0 +1,11 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb"
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:219:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:67:14" shape : ellipse }
+node: { title: "neo__test2" label: "Test2\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo.ads:41:14" shape : ellipse }
+node: { title: "_ada_neo60_f103" label: "Neo60_F103\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:14:1\n16 bytes (static)" }
+edge: { sourcename: "_ada_neo60_f103" targetname: "neo__test2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:34:4" }
+edge: { sourcename: "_ada_neo60_f103" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:neo60_f103__initialize_gpio.4475" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:30:4" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:neo60_f103__initialize_gpio.4475" label: "Initialize_Gpio\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:18:4\n24 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:neo60_f103__initialize_gpio.4475" targetname: "stm32__gpio__configure_io" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:26:7" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:neo60_f103__initialize_gpio.4475" targetname: "stm32__device__enable_clock__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/neo60_f103/src/neo60_f103.adb:21:7" }
+}

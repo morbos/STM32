@@ -1,0 +1,20 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:193:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:199:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/src/stm32-board.ads:45:14" shape : ellipse }
+node: { title: "_ada_try_f103" label: "Try_F103\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:14:1\n16 bytes (static)" }
+edge: { sourcename: "_ada_try_f103" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:28:7" }
+edge: { sourcename: "_ada_try_f103" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:27:7" }
+edge: { sourcename: "_ada_try_f103" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:26:7" }
+edge: { sourcename: "_ada_try_f103" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:25:7" }
+edge: { sourcename: "_ada_try_f103" targetname: "stm32__board__initialize_board" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:23:4" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" label: "My_Delay\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:18:4\n32 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:20:7" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:20:25" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:20:27" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:try_f103__my_delay.4087" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/try_f103/src/try_f103.adb:20:19" }
+}

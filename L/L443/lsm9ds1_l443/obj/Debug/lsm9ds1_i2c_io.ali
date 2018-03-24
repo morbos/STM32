@@ -1,0 +1,110 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/backup/ada/STM32/F/F103/lsm9ds1_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lsm9ds1_i2c_io%b	lsm9ds1_i2c_io.adb	fac1952c NE OO PK IU
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system.img_lli%s	s-imglli.adb		s-imglli.ali
+
+U lsm9ds1_i2c_io%s	lsm9ds1_i2c_io.ads	ad2fd14e EE NE OO PK IU
+W ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W system%s		system.ads		system.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-except.ads		20170610185420 5b5f0f2f ada.exceptions%s
+D a-except.adb		20170610185421 0537fae3 ada.exceptions%b
+D a-tags.ads		20170610185420 cc425f51 ada.tags%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D interfac.ads		20170610185420 5ab55268 interfaces%s
+D lsm9ds1_i2c_io.ads	20170513200058 a3f8e076 lsm9ds1_i2c_io%s
+D lsm9ds1_i2c_io.adb	20170513200049 5939755a lsm9ds1_i2c_io%b
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-imglli.ads		20170610185420 114f55d1 system.img_lli%s
+D s-stoele.ads		20170610185420 2dc34a04 system.storage_elements%s
+D /backup/ada/STM32/F/F103/lsm9ds1_f103/gnat.adc  20170513192400 00000000
+X 5 hal.ads
+34K9*HAL 166e8 8|35r6 35r22 36r5
+53M9*UInt8<7|58M9> 8|49r18 50r22 54r18 55r18 59r18 9|40r18 41r22 65r18 66r18
+. 89r18
+54M9*UInt10
+66M9*UInt16<7|61M9> 9|49r27 74r27 97r27
+162A9*UInt8_Array(53M9)<integer>
+X 6 hal-i2c.ads
+32K13*I2C 84e12 8|35w10 35r26
+34E9*I2C_Status 38e12 9|44r18 69r18 92r18
+35n7*Ok{34E9} 9|53r20 78r20 101r20
+40A12*I2C_Data{5|162A9}<integer> 8|60r22 9|43r18 68r27 90r22
+43n7*Memory_Size_8b{42E9} 9|50r27 75r27 98r27
+46M12*I2C_Address{5|54M9} 8|42r16
+48h9*I2C_Port
+50P9*Any_I2C_Port(48R9) 8|41r16
+66x14*Mem_Write 9|71R7
+69m7 Mem_Addr{5|66M9} 9|74r10
+70e7 Mem_Addr_Size{42E9} 9|75r10
+71a7 Data{40A12} 9|76r10
+72e7 Status{34E9} 9|77r10
+75x14*Mem_Read 9|46R7 94R7
+78m7 Mem_Addr{5|66M9} 9|49r10 97r10
+79e7 Mem_Addr_Size{42E9} 9|50r10 98r10
+80a7 Data{40A12} 9|51r10 99r10
+81e7 Status{34E9} 9|52r10 100r10
+X 7 interfac.ads
+58M9*Unsigned_8
+61M9*Unsigned_16
+X 8 lsm9ds1_i2c_io.ads
+38K9*LSM9DS1_I2C_IO 62l5 62e19 9|32b14 106l5 106t19
+40R9*IO_Port 43e14 45r35
+41p7*Port{6|50P9} 9|47r15 72r15 95r15
+42m7*Device{6|46M12} 9|48r15 73r15 96r15
+45P9*Any_IO_Port(40R9) 48r18 53r18 58r18 9|39r18 64r18 88r18
+47U14*Read 48>7 49>7 50<7 9|38b14 57l8 57t12
+48p7 This{45P9} 9|39b7 47r10 48r10
+49m7 Register{5|53M9} 9|40b7 49r35
+50m7 Value{5|53M9} 9|41b7 56m7
+52U14*Write 53>7 54>7 55>7 9|63b14 81l8 81t13
+53p7 This{45P9} 9|64b7 72r10 73r10
+54m7 Register{5|53M9} 9|65b7 74r35
+55m7 Value{5|53M9} 9|66b7 68r54
+57U14*Read_Buffer 58>7 59>7 60<7 9|87b14 104l8 104t19
+58p7 This{45P9} 9|88b7 95r10 96r10
+59m7 Register{5|53M9} 9|89b7 97r35
+60a7 Value{6|40A12} 9|90b7 99m27
+X 9 lsm9ds1_i2c_io.adb
+43a7 Incoming{6|40A12} 51m27 56r16
+44e7 Result{6|34E9} 52m27 53r10 54r55
+68a7 Outgoing{6|40A12} 76r27
+69e7 Result{6|34E9} 77m27 78r10 79r56
+92e7 Result{6|34E9} 100m27 101r10 102r60
+

@@ -115,8 +115,6 @@ begin
 
    Initialize (Display);
 
-   Turn_On (Display);
-
    Set_Frame_Rate_Normal (LCD         => Display,
                           RTN         => 1,
                           Front_Porch => 16#2c#,
@@ -177,6 +175,10 @@ begin
 
    Set_Pixel_Format (LCD => Display, Pix_Fmt => Pixel_16bits);
 
+   Set_Display (LCD => Display, Data => ST7735_BLACK);
+
+   Turn_On (Display);
+
    Col_Limit := Width (Display) - 1;
    Row_Limit := Height (Display) - 1;
    Total := Width (Display) * Height (Display);
@@ -184,6 +186,5 @@ begin
       Set_Display (LCD => Display, Data => ST7735_RED);
       Set_Display (LCD => Display, Data => ST7735_GREEN);
       Set_Display (LCD => Display, Data => ST7735_BLUE);
---      Update_Layers (Display);
    end loop;
 end Kmr1_8_f103;
