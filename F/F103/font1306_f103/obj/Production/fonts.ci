@@ -1,0 +1,23 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb"
+node: { title: "ssd1306_spi__update_layers" label: "UPDATE_LAYERS\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/Ada_Drivers_Library/components/src/screen/ssd1306_spi/ssd1306_spi.ads:156:14" shape : ellipse }
+node: { title: "ssd1306_spi__set_pixel" label: "SET_PIXEL\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/Ada_Drivers_Library/components/src/screen/ssd1306_spi/ssd1306_spi.ads:179:14" shape : ellipse }
+node: { title: "ssd1306_spi__set_native_source" label: "SET_NATIVE_SOURCE\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/Ada_Drivers_Library/components/src/screen/ssd1306_spi/ssd1306_spi.ads:88:14" shape : ellipse }
+node: { title: "ssd1306_spi__fill_region" label: "FILL_REGION\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/Ada_Drivers_Library/components/src/screen/ssd1306_spi/ssd1306_spi.ads:84:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "fonts__getchar" label: "Getchar\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:54:4\n40 bytes (static)" }
+edge: { sourcename: "fonts__getchar" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:63:49" }
+edge: { sourcename: "fonts__getchar" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:62:43" }
+node: { title: "fonts__drawstring" label: "Drawstring\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:40:4\n56 bytes (static)" }
+edge: { sourcename: "fonts__drawstring" targetname: "fonts__drawchar" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:47:10" }
+node: { title: "fonts__drawchar" label: "Drawchar\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:4:4\n112 bytes (static)" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306_spi__update_layers" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:37:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306_spi__set_pixel" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:30:16" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:29:35" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:27:20" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:27:20" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306_spi__set_native_source" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:24:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306_spi__fill_region" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:18:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "fonts__getchar" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:16:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.adb:15:23" }
+node: { title: "fonts__font_arrayIP" label: "Font_Arrayip\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts.ads:5:9\n16 bytes (static)" }
+}

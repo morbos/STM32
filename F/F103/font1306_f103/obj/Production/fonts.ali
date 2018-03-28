@@ -1,0 +1,122 @@
+V "GNAT Lib v2016"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U fonts%b		fonts.adb		aaa800a5 NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W fonts%s		fonts.adb		fonts.ali
+W fonts.font2%s		fonts-font2.ads		fonts-font2.ali
+
+U fonts%s		fonts.ads		e70a6253 EE NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W ssd1306_spi%s		ssd1306_spi.adb		ssd1306_spi.ali
+
+D ada.ads		20170610185420 669e66b4 ada%s
+D a-tags.ads		20170610185420 cc425f51 ada.tags%s
+D fonts.ads		20180327173143 a7e3f80e fonts%s
+D fonts.adb		20180327173630 155f4510 fonts%b
+D fonts-font2.ads	20180326215804 1814bdbb fonts.font2%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-bitmap.ads	20170625184526 03ebc14f hal.bitmap%s
+D hal-framebuffer.ads	20170625184526 9811b908 hal.framebuffer%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-spi.ads		20171113051629 fe139819 hal.spi%s
+D hal-time.ads		20170625184526 f5295cd7 hal.time%s
+D interfac.ads		20170610185420 5ab55268 interfaces%s
+D memory_mapped_bitmap.ads  20170625184526 b7ed57c8 memory_mapped_bitmap%s
+D soft_drawing_bitmap.ads  20170625184526 41d47adc soft_drawing_bitmap%s
+D ssd1306_spi.ads	20180326221408 6bab5253 ssd1306_spi%s
+D system.ads		20170610185420 0bedc8d1 system%s
+D s-assert.ads		20170610185420 cd8d2c94 system.assertions%s
+D s-stoele.ads		20170610185420 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170610185420 34867c83 system.unsigned_types%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/gnat.adc  20180326214917 00000000
+X 3 fonts.ads
+3K9*Fonts 26l5 26e10 4|1r6 1r23 2b14 71l5 71t10
+5A9*Font_Array(6|53M9)<integer> 6r35 22r31
+6P9*Fa_Ptr(5A9) 8r56 4|9r14 55r53
+7U14*GetChar 7>23 7>45 8<45 9<45 10<45 4|16s7 54b14 70l8 70t15
+7i23 FontNumber{integer} 4|54b23 60r12
+7i45 Char{integer} 4|54b45 62r43 63r49
+8p45 P{6P9} 4|55b45 62m13 66m13
+9m45 W{6|53M9} 4|56b45 63m13 67m13
+10m45 H{6|53M9} 4|57b45 64m13 68m13
+12U14*DrawChar 12=24 13=24 13=27 14>24 15>24 4|4b14 38l8 38t16 47s10
+12r24 Display{15|46R9} 4|4b24 18m20 24m26 30m27 37m22
+13m24 X{6|66M9} 4|5b24 19r29 20r29 31r48 36m7 36r12
+13m27 Y{6|66M9} 4|5b27 21r29 22r29 32r48
+14e24 C{character} 4|6b24 15r29
+15m24 Colour{6|97M9} 4|7b24 23r24 24r35
+17U14*DrawString 17=26 18=24 18=27 19>24 20>24 4|40b14 49l8 49t18
+17r26 Display{15|46R9} 4|40b26 47m20
+18m24 X{6|66M9} 4|41b24 47m29
+18m27 Y{6|66M9} 4|41b27 47m32
+19a24 S{string} 4|42b24 46r16 47r35
+20m24 Colour{6|97M9} 4|43b24 47r42
+22a4*No_Char{5A9} 4|66r18
+X 4 fonts.adb
+9p7 P{3|6P9} 16m24 16r24 27r18
+10i7 Idx{integer} 15m7 16r19
+11m7 W{6|53M9} 16m27 20r43 36r24
+12m7 H{6|53M9} 16m30 22r43 26r42
+13m7 Elem{6|53M9} 27m10 29r17
+26m11 I<12|61M9> 27r34 32r62
+28i14 J{integer} 29r38 31r66
+46i11 I{integer} 47r38
+X 5 fonts-font2.ads
+3K15*Font2 4|1w12 1r29 5|542e16
+5m4*Chr_Hgt_F16{6|53M9} 4|64r18
+7I9*Font2_Range<short_short_integer> 4|62r30 63r36
+9A9*Width_Font2_Array(6|53M9)<7I9>
+11a4*Widtbl_Font2_F16{9A9} 4|63r18
+513A9*Chrtbl_F16_T(3|6P9)<7I9>
+515a4*Chrtbl_F16{513A9} 4|62r18
+X 6 hal.ads
+34K9*HAL 3|1w6 1r27 6|166e8
+53M9*UInt8<12|58M9> 3|5r52 9r56 10r56 4|11r14 12r14 13r14 29r26 56r53 57r53
+66M9*UInt16<12|61M9> 3|13r41 18r43 4|5r41 26r16 26r34 36r16 41r43
+97M9*UInt32<12|69M9> 3|15r34 20r36 4|7r34 43r36
+X 7 hal-bitmap.ads
+68i7*X{natural} 4|31m34
+69i7*Y{natural} 4|32m34
+98h9*Bitmap_Buffer
+X 8 hal-framebuffer.ads
+44h9*Frame_Buffer_Display
+X 12 interfac.ads
+58M9*Unsigned_8
+61M9*Unsigned_16
+69M9*Unsigned_32
+X 15 ssd1306_spi.ads
+42K9*SSD1306_SPI 3|2w6 2r27 15|250e16
+46R9*SSD1306_SPI_Screen<8|44R9> 3|12r41 17r43 4|4r41 40r43 15|220e17
+84U14*Fill_Region 4|18s7
+88U14*Set_Native_Source 4|24s7
+156U14*Update_Layers<8|106p14> 4|37s7
+179U14*Set_Pixel 4|30s16
+181r7 Pt{7|67R9} 4|31r27
+

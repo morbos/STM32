@@ -1,0 +1,19 @@
+graph: { title: "b__font1306_f103.adb"
+node: { title: "_ada_font1306_f103" label: "ada_main_program\nb__font1306_f103.adb:63:14" shape : ellipse }
+node: { title: "__gnat_start_slave_cpus" label: "start_slave_cpus\nb__font1306_f103.adb:31:17" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e29b\nb__font1306_f103.adb:53:19" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e27b\nb__font1306_f103.adb:47:16" shape : ellipse }
+node: { title: "ravenscar_time___elabb" label: "e25b\nb__font1306_f103.adb:41:21" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e23b\nb__font1306_f103.adb:38:20" shape : ellipse }
+node: { title: "ada__text_io___elabb" label: "e21b\nb__font1306_f103.adb:36:18" shape : ellipse }
+node: { title: "main" label: "main\nb__font1306_f103.adb:66:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_font1306_f103" label: "b__font1306_f103.adb:72:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__font1306_f103.adb:71:7" }
+node: { title: "adainit" label: "adainit\nb__font1306_f103.adb:30:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_start_slave_cpus" label: "b__font1306_f103.adb:60:7" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__font1306_f103.adb:53:19" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__font1306_f103.adb:47:16" }
+edge: { sourcename: "adainit" targetname: "ravenscar_time___elabb" label: "b__font1306_f103.adb:41:21" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__font1306_f103.adb:38:20" }
+edge: { sourcename: "adainit" targetname: "ada__text_io___elabb" label: "b__font1306_f103.adb:36:18" }
+}

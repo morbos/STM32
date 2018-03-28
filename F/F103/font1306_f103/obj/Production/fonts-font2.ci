@@ -1,0 +1,4 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts-font2.ads"
+node: { title: "fonts__font2__Tchrtbl_f16_tBIP" label: "Tchrtbl_F16_Tbip\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts-font2.ads:513:4\n24 bytes (static)" }
+node: { title: "fonts__font2__Twidth_font2_arrayBIP" label: "Twidth_Font2_Arraybip\n/.share/CACHEDEV1_DATA/Ada/STM32/F/F103/font1306_f103/src/fonts-font2.ads:9:4\n16 bytes (static)" }
+}
