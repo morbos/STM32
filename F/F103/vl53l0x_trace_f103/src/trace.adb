@@ -1,3 +1,8 @@
+--
+--  This trace module is a conversion to Ada of the great work by Petteri Aimonen
+--  http://essentialscrap.com/tips/arm_trace/
+--  https://hackaday.com/2015/03/09/execution-tracing-on-cortex-m-microcontrollers/
+--
 with Ada.Unchecked_Conversion;
 
 package body Trace is
