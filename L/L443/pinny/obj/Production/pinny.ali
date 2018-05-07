@@ -27,7 +27,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U pinny%b		pinny.adb		f114fe79 NE OO SU IL
+U pinny%b		pinny.adb		ecff9035 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.real_time.delays%s  a-retide.adb		a-retide.ali
@@ -54,7 +54,7 @@ D i-bit_types.ads	20170610190223 bd94d513 interfaces.bit_types%s
 D i-stm32.ads		20171111071046 d038a450 interfaces.stm32%s
 D i-stm32-pwr.ads	20171111071046 13c7029d interfaces.stm32.pwr%s
 D i-stm32-rcc.ads	20171117021832 424a6653 interfaces.stm32.rcc%s
-D pinny.adb		20180507184911 fa64ad4e pinny%b
+D pinny.adb		20180507222738 e78fc302 pinny%b
 D stm32.ads		20171111181124 698e2c3b stm32%s
 D stm32-adc.ads		20171111181124 ccb8d517 stm32.adc%s
 D stm32-board.ads	20171111073701 e44a5696 stm32.board%s
@@ -143,7 +143,8 @@ X 24 stm32-device.ads
 110r4*PA9{27|129R9} 18|16r13
 111r4*PA10{27|129R9} 18|16r20
 112r4*PA11{27|129R9} 18|16r27
-116r4*PA15{27|129R9} 18|16r34
+113r4*PA12{27|129R9} 18|16r34
+116r4*PA15{27|129R9} 18|16r41
 117r4*PB0{27|129R9} 18|13r6
 118r4*PB1{27|129R9} 18|13r13
 120r4*PB3{27|129R9} 18|13r20

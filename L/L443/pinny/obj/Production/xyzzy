@@ -180,7 +180,7 @@ Discarded input sections
  .text          0x00000000        0x0 pinny.o
  .data          0x00000000        0x0 pinny.o
  .bss           0x00000000        0x0 pinny.o
- .ARM.extab.text.pinny__initialize.4808
+ .ARM.extab.text.pinny__initialize.4809
                 0x00000000        0x0 pinny.o
  .text          0x00000000        0x0 b__pinny.o
  .data          0x00000000        0x0 b__pinny.o
@@ -6539,522 +6539,522 @@ END GROUP
  *(.vectors)
  .vectors       0x08000000       0x14 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(start-rom.o)
  *(.text .text.* .gnu.linkonce.t*)
- .text.pinny__initialize.4808
+ .text.pinny__initialize.4809
                 0x08000014       0x44 pinny.o
  .text._ada_pinny
-                0x08000058      0x284 pinny.o
+                0x08000058      0x298 pinny.o
                 0x08000058                _ada_pinny
  .text.adafinal
-                0x080002dc       0x2c b__pinny.o
-                0x080002dc                adafinal
- .text.adainit  0x08000308      0x2bc b__pinny.o
-                0x08000308                adainit
- .text.main     0x080005c4       0x30 b__pinny.o
-                0x080005c4                main
+                0x080002f0       0x2c b__pinny.o
+                0x080002f0                adafinal
+ .text.adainit  0x0800031c      0x2bc b__pinny.o
+                0x0800031c                adainit
+ .text.main     0x080005d8       0x30 b__pinny.o
+                0x080005d8                main
  .text.stm32__rcc__syscfg_clock_enable
-                0x080005f4       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-rcc.o)
-                0x080005f4                stm32__rcc__syscfg_clock_enable
+                0x08000608       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-rcc.o)
+                0x08000608                stm32__rcc__syscfg_clock_enable
  .text.stm32__device__enable_clock
-                0x08000618       0xd4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
-                0x08000618                stm32__device__enable_clock
+                0x0800062c       0xd4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
+                0x0800062c                stm32__device__enable_clock
  .text.stm32__device__enable_clock__3
-                0x080006ec       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
-                0x080006ec                stm32__device__enable_clock__3
+                0x08000700       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
+                0x08000700                stm32__device__enable_clock__3
  .text.stm32__device___elabs
-                0x0800075c      0xe68 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
-                0x0800075c                stm32__device___elabs
+                0x08000770      0xe68 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
+                0x08000770                stm32__device___elabs
  .text.stm32__i2c__i2c_configurationIP
-                0x080015c4       0x20 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080015c4                stm32__i2c__i2c_configurationIP
+                0x080015d8       0x20 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080015d8                stm32__i2c__i2c_configurationIP
  .text.stm32__i2c__i2c_portIP
-                0x080015e4       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080015e4                stm32__i2c__i2c_portIP
+                0x080015f8       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080015f8                stm32__i2c__i2c_portIP
  .text.stm32__i2c___size__2
-                0x08001634       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001634                stm32__i2c___size__2
+                0x08001648       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001648                stm32__i2c___size__2
  .text.stm32__i2c__i2c_portSR__i2c_configuration_39SR__2.5131
-                0x08001650       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001664       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
  .text.stm32__i2c__i2c_portSR__2
-                0x080016ac       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080016ac                stm32__i2c__i2c_portSR__2
+                0x080016c0       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080016c0                stm32__i2c__i2c_portSR__2
  .text.stm32__i2c__i2c_portSW__i2c_configuration_43SW__2.5163
-                0x080016e8       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080016fc       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
  .text.stm32__i2c__i2c_portSW__2
-                0x0800173c       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x0800173c                stm32__i2c__i2c_portSW__2
+                0x08001750       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001750                stm32__i2c__i2c_portSW__2
  .text.stm32__i2c__i2c_portSI__2
-                0x08001778       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001778                stm32__i2c__i2c_portSI__2
+                0x0800178c       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x0800178c                stm32__i2c__i2c_portSI__2
  .text.stm32__i2c__i2c_portSO__2
-                0x080017d0       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080017d0                stm32__i2c__i2c_portSO__2
+                0x080017e4       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080017e4                stm32__i2c__i2c_portSO__2
  .text.stm32__i2c__Oeq
-                0x080017f8       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080017f8                stm32__i2c__Oeq
+                0x0800180c       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x0800180c                stm32__i2c__Oeq
  .text.stm32__i2c___assign
-                0x08001868       0x64 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001868                stm32__i2c___assign
+                0x0800187c       0x64 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x0800187c                stm32__i2c___assign
  .text.stm32__i2c__i2c_portDA
-                0x080018cc       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080018cc                stm32__i2c__i2c_portDA
+                0x080018e0       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080018e0                stm32__i2c__i2c_portDA
  .text.stm32__i2c__i2c_portDF__2
-                0x080018e4       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080018e4                stm32__i2c__i2c_portDF__2
+                0x080018f8       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080018f8                stm32__i2c__i2c_portDF__2
  .text.stm32__i2c__port_enabled
-                0x080018fc       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080018fc                stm32__i2c__port_enabled
+                0x08001910       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001910                stm32__i2c__port_enabled
  .text.stm32__i2c__configure___postconditions.5466
-                0x08001920       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001934       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
  .text.stm32__i2c__configure
-                0x0800195c      0x298 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x0800195c                stm32__i2c__configure
+                0x08001970      0x298 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001970                stm32__i2c__configure
  .text.stm32__i2c__is_configured
-                0x08001bf4       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001bf4                stm32__i2c__is_configured
+                0x08001c08       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001c08                stm32__i2c__is_configured
  .text.stm32__i2c__config_transfer
-                0x08001c18       0xf0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001c18                stm32__i2c__config_transfer
+                0x08001c2c       0xf0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001c2c                stm32__i2c__config_transfer
  .text.stm32__i2c__reset_config
-                0x08001d08       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001d08                stm32__i2c__reset_config
+                0x08001d1c       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001d1c                stm32__i2c__reset_config
  .text.stm32__i2c__check_nack
-                0x08001d5c      0x118 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001d5c                stm32__i2c__check_nack
+                0x08001d70      0x118 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001d70                stm32__i2c__check_nack
  .text.stm32__i2c__wait_tx_interrupt_status
-                0x08001e74       0xa0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001e74                stm32__i2c__wait_tx_interrupt_status
+                0x08001e88       0xa0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001e88                stm32__i2c__wait_tx_interrupt_status
  .text.stm32__i2c__wait_transfer_complete_reset_flag
-                0x08001f14       0x84 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001f14                stm32__i2c__wait_transfer_complete_reset_flag
+                0x08001f28       0x84 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001f28                stm32__i2c__wait_transfer_complete_reset_flag
  .text.stm32__i2c__wait_stop_flag
-                0x08001f98       0xb8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08001f98                stm32__i2c__wait_stop_flag
+                0x08001fac       0xb8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08001fac                stm32__i2c__wait_stop_flag
  .text.stm32__i2c__master_transmit
-                0x08002050      0x3dc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08002050                stm32__i2c__master_transmit
+                0x08002064      0x3dc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08002064                stm32__i2c__master_transmit
  .text.stm32__i2c__master_receive
-                0x0800242c      0x578 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x0800242c                stm32__i2c__master_receive
+                0x08002440      0x578 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08002440                stm32__i2c__master_receive
  .text.stm32__i2c__mem_write
-                0x080029a4      0x538 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080029a4                stm32__i2c__mem_write
+                0x080029b8      0x538 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080029b8                stm32__i2c__mem_write
  .text.stm32__i2c__mem_read
-                0x08002edc      0x6dc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x08002edc                stm32__i2c__mem_read
+                0x08002ef0      0x6dc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x08002ef0                stm32__i2c__mem_read
  .text.stm32__i2c___elabs
-                0x080035b8       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
-                0x080035b8                stm32__i2c___elabs
+                0x080035cc       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+                0x080035cc                stm32__i2c___elabs
  .text.stm32__gpio__gpio_pinRP
-                0x080035d4       0xe0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080035d4                stm32__gpio__gpio_pinRP
+                0x080035e8       0xe0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080035e8                stm32__gpio__gpio_pinRP
  .text.stm32__gpio__gpio_pointIP
-                0x080036b4       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080036b4                stm32__gpio__gpio_pointIP
+                0x080036c8       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080036c8                stm32__gpio__gpio_pointIP
  .text.stm32__gpio___size__2
-                0x080036f4       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080036f4                stm32__gpio___size__2
+                0x08003708       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003708                stm32__gpio___size__2
  .text.stm32__gpio__gpio_pointSR__2
-                0x08003710       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003710                stm32__gpio__gpio_pointSR__2
+                0x08003724       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003724                stm32__gpio__gpio_pointSR__2
  .text.stm32__gpio__gpio_pointSW__2
-                0x08003740       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003740                stm32__gpio__gpio_pointSW__2
+                0x08003754       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003754                stm32__gpio__gpio_pointSW__2
  .text.stm32__gpio__gpio_pointSI__2
-                0x08003768       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003768                stm32__gpio__gpio_pointSI__2
+                0x0800377c       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x0800377c                stm32__gpio__gpio_pointSI__2
  .text.stm32__gpio__gpio_pointSO__2
-                0x080037b0       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080037b0                stm32__gpio__gpio_pointSO__2
+                0x080037c4       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080037c4                stm32__gpio__gpio_pointSO__2
  .text.stm32__gpio__Oeq
-                0x080037cc       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080037cc                stm32__gpio__Oeq
+                0x080037e0       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080037e0                stm32__gpio__Oeq
  .text.stm32__gpio___assign
-                0x08003800       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003800                stm32__gpio___assign
+                0x08003814       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003814                stm32__gpio___assign
  .text.stm32__gpio__gpio_pointDA
-                0x08003840       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003840                stm32__gpio__gpio_pointDA
+                0x08003854       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003854                stm32__gpio__gpio_pointDA
  .text.stm32__gpio__gpio_pointDF__2
-                0x08003858       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003858                stm32__gpio__gpio_pointDF__2
+                0x0800386c       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x0800386c                stm32__gpio__gpio_pointDF__2
  .text.stm32__gpio__gpio_pointsIP
-                0x08003870       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003870                stm32__gpio__gpio_pointsIP
+                0x08003884       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003884                stm32__gpio__gpio_pointsIP
  .text.stm32__gpio__mode
-                0x080038b4       0x8c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080038b4                stm32__gpio__mode
+                0x080038c8       0x8c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080038c8                stm32__gpio__mode
  .text.stm32__gpio__set_mode
-                0x08003940       0xd0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003940                stm32__gpio__set_mode
+                0x08003954       0xd0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003954                stm32__gpio__set_mode
  .text.stm32__gpio__pull_resistor
-                0x08003a10       0xac /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003a10                stm32__gpio__pull_resistor
+                0x08003a24       0xac /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003a24                stm32__gpio__pull_resistor
  .text.stm32__gpio__set_pull_resistor
-                0x08003abc      0x118 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003abc                stm32__gpio__set_pull_resistor
+                0x08003ad0      0x118 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003ad0                stm32__gpio__set_pull_resistor
  .text.stm32__gpio__set
-                0x08003bd4       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003bd4                stm32__gpio__set
+                0x08003be8       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003be8                stm32__gpio__set
  .text.stm32__gpio__set__2
-                0x08003c1c       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003c1c                stm32__gpio__set__2
+                0x08003c30       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003c30                stm32__gpio__set__2
  .text.stm32__gpio__clear
-                0x08003c78       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003c78                stm32__gpio__clear
+                0x08003c8c       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003c8c                stm32__gpio__clear
  .text.stm32__gpio__toggle
-                0x08003cd4       0x78 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003cd4                stm32__gpio__toggle
+                0x08003ce8       0x78 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003ce8                stm32__gpio__toggle
  .text.stm32__gpio__toggle__2
-                0x08003d4c       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003d4c                stm32__gpio__toggle__2
+                0x08003d60       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003d60                stm32__gpio__toggle__2
  .text.stm32__gpio__locked
-                0x08003d9c       0x4c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003d9c                stm32__gpio__locked
+                0x08003db0       0x4c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003db0                stm32__gpio__locked
  .text.stm32__gpio__lock_the_pin
-                0x08003de8       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003de8                stm32__gpio__lock_the_pin
+                0x08003dfc       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003dfc                stm32__gpio__lock_the_pin
  .text.stm32__gpio__lock___postconditions.5851
-                0x08003e1c       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003e30       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
  .text.stm32__gpio__lock
-                0x08003e58       0x6c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003e58                stm32__gpio__lock
+                0x08003e6c       0x6c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003e6c                stm32__gpio__lock
  .text.stm32__gpio__configure_io
-                0x08003ec4      0x188 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08003ec4                stm32__gpio__configure_io
+                0x08003ed8      0x188 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08003ed8                stm32__gpio__configure_io
  .text.stm32__gpio__configure_io__2
-                0x0800404c       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x0800404c                stm32__gpio__configure_io__2
+                0x08004060       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08004060                stm32__gpio__configure_io__2
  .text.stm32__gpio__configure_alternate_function
-                0x0800409c      0x10c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x0800409c                stm32__gpio__configure_alternate_function
+                0x080040b0      0x10c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080040b0                stm32__gpio__configure_alternate_function
  .text.stm32__gpio__interrupt_line_number
-                0x080041a8       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080041a8                stm32__gpio__interrupt_line_number
+                0x080041bc       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x080041bc                stm32__gpio__interrupt_line_number
  .text.stm32__gpio__configure_trigger
-                0x080041f0       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x080041f0                stm32__gpio__configure_trigger
+                0x08004204       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08004204                stm32__gpio__configure_trigger
  .text.stm32__gpio___elabs
-                0x08004270       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
-                0x08004270                stm32__gpio___elabs
+                0x08004284       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+                0x08004284                stm32__gpio___elabs
  .text.stm32__spi__spi_portIP
-                0x0800428c       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x0800428c                stm32__spi__spi_portIP
+                0x080042a0       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080042a0                stm32__spi__spi_portIP
  .text.stm32__spi___size__2
-                0x080042cc       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080042cc                stm32__spi___size__2
+                0x080042e0       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080042e0                stm32__spi___size__2
  .text.stm32__spi__spi_portDF__2
-                0x080042e8       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080042e8                stm32__spi__spi_portDF__2
+                0x080042fc       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080042fc                stm32__spi__spi_portDF__2
  .text.stm32__spi__configure
-                0x08004300      0x2f8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004300                stm32__spi__configure
+                0x08004314      0x2f8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004314                stm32__spi__configure
  .text.stm32__spi__enable
-                0x080045f8       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080045f8                stm32__spi__enable
+                0x0800460c       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x0800460c                stm32__spi__enable
  .text.stm32__spi__disable
-                0x08004620       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004620                stm32__spi__disable
+                0x08004634       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004634                stm32__spi__disable
  .text.stm32__spi__enabled
-                0x08004644       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004644                stm32__spi__enabled
+                0x08004658       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004658                stm32__spi__enabled
  .text.stm32__spi__send
-                0x08004668       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004668                stm32__spi__send
+                0x0800467c       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x0800467c                stm32__spi__send
  .text.stm32__spi__data
-                0x08004698       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004698                stm32__spi__data
+                0x080046ac       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080046ac                stm32__spi__data
  .text.stm32__spi__send__2
-                0x080046bc       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080046bc                stm32__spi__send__2
+                0x080046d0       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080046d0                stm32__spi__send__2
  .text.stm32__spi__data__2
-                0x080046e0       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080046e0                stm32__spi__data__2
+                0x080046f4       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080046f4                stm32__spi__data__2
  .text.stm32__spi__is_busy
-                0x0800470c       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x0800470c                stm32__spi__is_busy
+                0x08004720       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004720                stm32__spi__is_busy
  .text.stm32__spi__tx_is_empty
-                0x08004750       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004750                stm32__spi__tx_is_empty
+                0x08004764       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004764                stm32__spi__tx_is_empty
  .text.stm32__spi__rx_is_empty
-                0x08004774       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004774                stm32__spi__rx_is_empty
+                0x08004788       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004788                stm32__spi__rx_is_empty
  .text.stm32__spi__busy
-                0x080047a0       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080047a0                stm32__spi__busy
+                0x080047b4       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080047b4                stm32__spi__busy
  .text.stm32__spi__current_mode
-                0x080047c4       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080047c4                stm32__spi__current_mode
+                0x080047d8       0x40 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080047d8                stm32__spi__current_mode
  .text.stm32__spi__current_data_direction
-                0x08004804       0x68 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004804                stm32__spi__current_data_direction
+                0x08004818       0x68 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004818                stm32__spi__current_data_direction
  .text.stm32__spi__crc_enabled
-                0x0800486c       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x0800486c                stm32__spi__crc_enabled
+                0x08004880       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004880                stm32__spi__crc_enabled
  .text.stm32__spi__crc_error_indicated
-                0x08004890       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004890                stm32__spi__crc_error_indicated
+                0x080048a4       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080048a4                stm32__spi__crc_error_indicated
  .text.stm32__spi__mode_fault_indicated
-                0x080048b4       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080048b4                stm32__spi__mode_fault_indicated
+                0x080048c8       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080048c8                stm32__spi__mode_fault_indicated
  .text.stm32__spi__overrun_indicated
-                0x080048d8       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080048d8                stm32__spi__overrun_indicated
+                0x080048ec       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080048ec                stm32__spi__overrun_indicated
  .text.stm32__spi__frame_fmt_error_indicated
-                0x080048fc       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080048fc                stm32__spi__frame_fmt_error_indicated
+                0x08004910       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004910                stm32__spi__frame_fmt_error_indicated
  .text.stm32__spi__clear_overrun
-                0x08004920       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004920                stm32__spi__clear_overrun
+                0x08004934       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004934                stm32__spi__clear_overrun
  .text.stm32__spi__reset_crc
-                0x08004950       0x38 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004950                stm32__spi__reset_crc
+                0x08004964       0x38 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004964                stm32__spi__reset_crc
  .text.stm32__spi__is_data_frame_16bit
-                0x08004988       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004988                stm32__spi__is_data_frame_16bit
+                0x0800499c       0x24 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x0800499c                stm32__spi__is_data_frame_16bit
  .text.stm32__spi__data_size
-                0x080049ac       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080049ac                stm32__spi__data_size
+                0x080049c0       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080049c0                stm32__spi__data_size
  .text.stm32__spi__transmit
-                0x080049d8       0xd4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080049d8                stm32__spi__transmit
+                0x080049ec       0xd4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080049ec                stm32__spi__transmit
  .text.stm32__spi__transmit__2
-                0x08004aac       0xd8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004aac                stm32__spi__transmit__2
+                0x08004ac0       0xd8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004ac0                stm32__spi__transmit__2
  .text.stm32__spi__transmit__3
-                0x08004b84       0xa8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004b84                stm32__spi__transmit__3
+                0x08004b98       0xa8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004b98                stm32__spi__transmit__3
  .text.stm32__spi__receive
-                0x08004c2c       0xa4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004c2c                stm32__spi(long double,...)(char,...)(int, void,...)
+                0x08004c40       0xa4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004c40                stm32__spi(long double,...)(char,...)(int, void,...)
  .text.stm32__spi__receive__2
-                0x08004cd0       0xa4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004cd0                stm32__spi__receive__2
+                0x08004ce4       0xa4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004ce4                stm32__spi__receive__2
  .text.stm32__spi__receive__3
-                0x08004d74       0xbc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004d74                stm32__spi__receive__3
+                0x08004d88       0xbc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004d88                stm32__spi__receive__3
  .text.stm32__spi__transmit_receive
-                0x08004e30      0x108 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004e30                stm32__spi__transmit_receive
+                0x08004e44      0x108 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004e44                stm32__spi__transmit_receive
  .text.stm32__spi__transmit_receive__2
-                0x08004f38       0xfc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08004f38                stm32__spi__transmit_receive__2
+                0x08004f4c       0xfc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08004f4c                stm32__spi__transmit_receive__2
  .text.stm32__spi__send_receive_16bit_mode
-                0x08005034      0x360 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08005034                stm32__spi__send_receive_16bit_mode
+                0x08005048      0x360 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08005048                stm32__spi__send_receive_16bit_mode
  .text.stm32__spi__send_receive_8bit_mode
-                0x08005394      0x2cc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08005394                stm32__spi__send_receive_8bit_mode
+                0x080053a8      0x2cc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080053a8                stm32__spi__send_receive_8bit_mode
  .text.stm32__spi__send_16bit_mode
-                0x08005660      0x1e4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08005660                stm32__spi__send_16bit_mode
+                0x08005674      0x1e4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08005674                stm32__spi__send_16bit_mode
  .text.stm32__spi__send_8bit_mode
-                0x08005844      0x188 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08005844                stm32__spi__send_8bit_mode
+                0x08005858      0x188 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08005858                stm32__spi__send_8bit_mode
  .text.stm32__spi__receive_16bit_mode
-                0x080059cc       0x98 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x080059cc                stm32__spi__receive_16bit_mode
+                0x080059e0       0x98 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x080059e0                stm32__spi__receive_16bit_mode
  .text.stm32__spi__receive_8bit_mode
-                0x08005a64       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08005a64                stm32__spi__receive_8bit_mode
+                0x08005a78       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08005a78                stm32__spi__receive_8bit_mode
  .text.stm32__spi___elabs
-                0x08005ae4       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
-                0x08005ae4                stm32__spi___elabs
+                0x08005af8       0x1c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+                0x08005af8                stm32__spi___elabs
  .text.stm32__adc___elabs
-                0x08005b00       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-adc.o)
-                0x08005b00                stm32__adc___elabs
+                0x08005b14       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-adc.o)
+                0x08005b14                stm32__adc___elabs
  .text.stm32__exti__enable_external_interrupt
-                0x08005b58      0x148 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-exti.o)
-                0x08005b58                stm32__exti__enable_external_interrupt
+                0x08005b6c      0x148 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-exti.o)
+                0x08005b6c                stm32__exti__enable_external_interrupt
  .text.stm32__exti__enable_external_event
-                0x08005ca0      0x150 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-exti.o)
-                0x08005ca0                stm32__exti__enable_external_event
+                0x08005cb4      0x150 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-exti.o)
+                0x08005cb4                stm32__exti__enable_external_event
  .text.stm32__syscfg__connect_external_interrupt__4
-                0x08005df0       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
-                0x08005df0                stm32__syscfg__connect_external_interrupt__4
+                0x08005e04       0x18 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
+                0x08005e04                stm32__syscfg__connect_external_interrupt__4
  .text.stm32__syscfg__connect_external_interrupt
-                0x08005e08       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
-                0x08005e08                stm32__syscfg__connect_external_interrupt
+                0x08005e1c       0x48 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
+                0x08005e1c                stm32__syscfg__connect_external_interrupt
  .text.stm32__syscfg__connect_external_interrupt__2
-                0x08005e50       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
-                0x08005e50                stm32__syscfg__connect_external_interrupt__2
+                0x08005e64       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
+                0x08005e64                stm32__syscfg__connect_external_interrupt__2
  .text.stm32_svd__spi__sr_registerIP
-                0x08005e84       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32_svd-spi.o)
-                0x08005e84                stm32_svd__spi__sr_registerIP
+                0x08005e98       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32_svd-spi.o)
+                0x08005e98                stm32_svd__spi__sr_registerIP
  .text.hal__i2c__Ti2c_portCFD
-                0x08005f04       0x30 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-i2c.o)
-                0x08005f04                hal__i2c__Ti2c_portCFD
+                0x08005f18       0x30 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-i2c.o)
+                0x08005f18                hal__i2c__Ti2c_portCFD
  .text.hal__i2c___elabs
-                0x08005f34       0x50 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-i2c.o)
-                0x08005f34                hal__i2c___elabs
+                0x08005f48       0x50 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-i2c.o)
+                0x08005f48                hal__i2c___elabs
  .text.hal__spi__Tspi_portCFD
-                0x08005f84       0x30 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-spi.o)
-                0x08005f84                hal__spi__Tspi_portCFD
+                0x08005f98       0x30 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-spi.o)
+                0x08005f98                hal__spi__Tspi_portCFD
  .text.hal__spi___elabs
-                0x08005fb4       0x50 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-spi.o)
-                0x08005fb4                hal__spi___elabs
+                0x08005fc8       0x50 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-spi.o)
+                0x08005fc8                hal__spi___elabs
  .text.hal__gpio__Tgpio_pointCFD
-                0x08006004       0x30 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-gpio.o)
-                0x08006004                hal__gpio__Tgpio_pointCFD
+                0x08006018       0x30 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-gpio.o)
+                0x08006018                hal__gpio__Tgpio_pointCFD
  .text.hal__gpio___elabs
-                0x08006034       0x50 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-gpio.o)
-                0x08006034                hal__gpio___elabs
+                0x08006048       0x50 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-gpio.o)
+                0x08006048                hal__gpio___elabs
  .text.ada__real_time__Oadd
-                0x08006084       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
-                0x08006084                ada__real_time__Oadd
+                0x08006098       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+                0x08006098                ada__real_time__Oadd
  .text.ada__real_time__Osubtract__2
-                0x080060f4       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
-                0x080060f4                ada__real_time__Osubtract__2
+                0x08006108       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+                0x08006108                ada__real_time__Osubtract__2
  .text.ada__real_time__clock
-                0x08006138       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
-                0x08006138                ada__real_time__clock
+                0x0800614c       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+                0x0800614c                ada__real_time__clock
  .text.ada__real_time__microseconds
-                0x08006190       0x38 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
-                0x08006190                ada__real_time__microseconds
+                0x080061a4       0x38 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+                0x080061a4                ada__real_time__microseconds
  .text.ada__real_time__milliseconds
-                0x080061c8       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
-                0x080061c8                ada__real_time__milliseconds
+                0x080061dc       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+                0x080061dc                ada__real_time__milliseconds
  .text.ada__real_time___elabb
-                0x08006204        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
-                0x08006204                ada__real_time___elabb
+                0x08006218        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+                0x08006218                ada__real_time___elabb
  .text.system__bb__timing_events___size
-                0x08006208        0x8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006208                system__bb__timing_events___size
+                0x0800621c        0x8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x0800621c                system__bb__timing_events___size
  .text.system__bb__timing_events__timing_eventDF
-                0x08006210        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006210                system__bb__timing_events__timing_eventDF
+                0x08006224        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x08006224                system__bb__timing_events__timing_eventDF
  .text.system__bb__timing_events__current_handler
-                0x08006214        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006214                system__bb__timing_events__current_handler
+                0x08006228        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x08006228                system__bb__timing_events__current_handler
  .text.system__bb__timing_events__time_of_event
-                0x08006218       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006218                system__bb__timing_events__time_of_event
+                0x0800622c       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x0800622c                system__bb__timing_events__time_of_event
  .text.system__bb__timing_events__cancel_handler
-                0x08006228       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006228                system__bb__timing_events__cancel_handler
+                0x0800623c       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x0800623c                system__bb__timing_events__cancel_handler
  .text.system__bb__timing_events__execute_expired_timing_events
-                0x08006284       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006284                system__bb__timing_events__execute_expired_timing_events
+                0x08006298       0x80 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x08006298                system__bb__timing_events__execute_expired_timing_events
  .text.system__bb__timing_events__insert
-                0x08006304       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x08006304                system__bb__timing_events__insert
+                0x08006318       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x08006318                system__bb__timing_events__insert
  .text.system__bb__timing_events__set_handler
-                0x0800635c       0x7c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x0800635c                system__bb__timing_events__set_handler
+                0x08006370       0x7c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x08006370                system__bb__timing_events__set_handler
  .text.system__bb__timing_events___elabs
-                0x080063d8        0xc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
-                0x080063d8                system__bb__timing_events___elabs
+                0x080063ec        0xc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+                0x080063ec                system__bb__timing_events___elabs
  .text.__gnat_start_slave_cpus
-                0x080063e4        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bcprmu.o)
-                0x080063e4                __gnat_start_slave_cpus
+                0x080063f8        0x4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bcprmu.o)
+                0x080063f8                __gnat_start_slave_cpus
  .text.system__bb__threads__queues__change_priority
-                0x080063e8       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
-                0x080063e8                system__bb__threads__queues__change_priority
+                0x080063fc       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
+                0x080063fc                system__bb__threads__queues__change_priority
  .text.system__bb__threads__queues__insert_alarm
-                0x08006458       0x60 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
-                0x08006458                system__bb__threads__queues__insert_alarm
+                0x0800646c       0x60 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
+                0x0800646c                system__bb__threads__queues__insert_alarm
  .text.system__bb__threads__queues__wakeup_expired_alarms
-                0x080064b8       0xf8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
-                0x080064b8                system__bb__threads__queues__wakeup_expired_alarms
+                0x080064cc       0xf8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
+                0x080064cc                system__bb__threads__queues__wakeup_expired_alarms
  .text.system__bb__threads__queues__yield
-                0x080065b0       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
-                0x080065b0                system__bb__threads__queues__yield
+                0x080065c4       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
+                0x080065c4                system__bb__threads__queues__yield
  .text.system__bb__time__get_next_timeout
-                0x080065f4       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
-                0x080065f4                system__bb__time__get_next_timeout
+                0x08006608       0x58 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+                0x08006608                system__bb__time__get_next_timeout
  .text.system__bb__time__initialize_timers
-                0x0800664c       0x9c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
-                0x0800664c                system__bb__time__initialize_timers
+                0x08006660       0x9c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+                0x08006660                system__bb__time__initialize_timers
  .text.system__bb__time__update_alarm
-                0x080066e8       0x94 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
-                0x080066e8                system__bb__time__update_alarm
+                0x080066fc       0x94 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+                0x080066fc                system__bb__time__update_alarm
  .text.system__bb__time__delay_until
-                0x0800677c       0xec /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
-                0x0800677c                system__bb__time__delay_until
+                0x08006790       0xec /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+                0x08006790                system__bb__time__delay_until
  .text.system__bb__time__update_clock
-                0x08006868       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
-                0x08006868                system__bb__time__update_clock
+                0x0800687c       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+                0x0800687c                system__bb__time__update_clock
  .text.system__bb__time__alarm_handler
-                0x08006898       0x94 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
-                0x08006898                system__bb__time__alarm_handler
+                0x080068ac       0x94 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+                0x080068ac                system__bb__time__alarm_handler
  .text.system__bb__board_support__read_clock
-                0x0800692c       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
-                0x0800692c                system__bb__board_support__read_clock
+                0x08006940       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
+                0x08006940                system__bb__board_support__read_clock
  .text.system__bb__board_support__set_alarm
-                0x08006968       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
-                0x08006968                system__bb__board_support__set_alarm
+                0x0800697c       0x2c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
+                0x0800697c                system__bb__board_support__set_alarm
  .text.system__bb__board_support__initialize_board
-                0x08006994       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
-                0x08006994                system__bb__board_support__initialize_board
+                0x080069a8       0x50 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
+                0x080069a8                system__bb__board_support__initialize_board
  .text.system__bb__board_support__enable_interrupt_request
-                0x080069e4       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
-                0x080069e4                system__bb__board_support__enable_interrupt_request
+                0x080069f8       0x5c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
+                0x080069f8                system__bb__board_support__enable_interrupt_request
  .text.system__bb__board_support__install_interrupt_handler
-                0x08006a40       0x4c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
-                0x08006a40                system__bb__board_support__install_interrupt_handler
+                0x08006a54       0x4c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
+                0x08006a54                system__bb__board_support__install_interrupt_handler
  .text.__gnat_get_secondary_stack
-                0x08006a8c       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
-                0x08006a8c                __gnat_get_secondary_stack
+                0x08006aa0       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
+                0x08006aa0                __gnat_get_secondary_stack
  .text.system__tasking__initialize_atcb
-                0x08006a9c       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
-                0x08006a9c                system__tasking__initialize_atcb
+                0x08006ab0       0x34 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
+                0x08006ab0                system__tasking__initialize_atcb
  .text.system__tasking__initialize
-                0x08006ad0      0x138 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
-                0x08006ad0                system__tasking__initialize
+                0x08006ae4      0x138 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
+                0x08006ae4                system__tasking__initialize
  .text.system__bb__cpu_primitives__gnat_error_handler
-                0x08006c08       0x7c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
-                0x08006c08                system__bb__cpu_primitives__gnat_error_handler
+                0x08006c1c       0x7c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+                0x08006c1c                system__bb__cpu_primitives__gnat_error_handler
  .text.__gnat_irq_trap
-                0x08006c84       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
-                0x08006c84                __gnat_irq_trap
+                0x08006c98       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+                0x08006c98                __gnat_irq_trap
  .text.__gnat_pend_sv_trap
-                0x08006cd8       0x4c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
-                0x08006cd8                __gnat_pend_sv_trap
+                0x08006cec       0x4c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+                0x08006cec                __gnat_pend_sv_trap
  .text.__gnat_sv_call_trap
-                0x08006d24        0x8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
-                0x08006d24                __gnat_sv_call_trap
+                0x08006d38        0x8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+                0x08006d38                __gnat_sv_call_trap
  .text.__gnat_sys_tick_trap
-                0x08006d2c       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
-                0x08006d2c                __gnat_sys_tick_trap
+                0x08006d40       0x70 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+                0x08006d40                __gnat_sys_tick_trap
  .text.system__bb__cpu_primitives__install_trap_handler
-                0x08006d9c       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
-                0x08006d9c                system__bb__cpu_primitives__install_trap_handler
+                0x08006db0       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+                0x08006db0                system__bb__cpu_primitives__install_trap_handler
  .text.ada__real_time__delays__delay_until
-                0x08006dac       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-retide.o)
-                0x08006dac                ada__real_time__delays__delay_until
+                0x08006dc0       0x30 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-retide.o)
+                0x08006dc0                ada__real_time__delays__delay_until
  .text.system__task_primitives__operations__enter_task
-                0x08006ddc       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
-                0x08006ddc                system__task_primitives__operations__enter_task
+                0x08006df0       0x3c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
+                0x08006df0                system__task_primitives__operations__enter_task
  .text.system__task_primitives__operations__idle
-                0x08006e18       0x14 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
-                0x08006e18                system__task_primitives__operations(int, double, long,...)
+                0x08006e2c       0x14 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
+                0x08006e2c                system__task_primitives__operations(int, double, long,...)
  .text.system__task_primitives__operations__initialize_idle
-                0x08006e2c       0x6c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
-                0x08006e2c                system__task_primitives__operations__initialize_idle
+                0x08006e40       0x6c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
+                0x08006e40                system__task_primitives__operations__initialize_idle
  .text.system__bb__protection__leave_kernel
-                0x08006e98       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbprot.o)
-                0x08006e98                system__bb__protection__leave_kernel
+                0x08006eac       0x54 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbprot.o)
+                0x08006eac                system__bb__protection__leave_kernel
  .text.system__bb__interrupts__interrupt_wrapper
-                0x08006eec      0x104 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbinte.o)
-                0x08006eec                system__bb__interrupts__interrupt_wrapper
+                0x08006f00      0x104 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbinte.o)
+                0x08006f00                system__bb__interrupts__interrupt_wrapper
  .text.system__bb__interrupts__initialize_interrupts
-                0x08006ff0       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbinte.o)
-                0x08006ff0                system__bb__interrupts__initialize_interrupts
+                0x08007004       0x10 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbinte.o)
+                0x08007004                system__bb__interrupts__initialize_interrupts
  .text.system__bb__threads__get_cpu
-                0x08007000        0xc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
-                0x08007000                system__bb__threads__get_cpu
+                0x08007014        0xc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
+                0x08007014                system__bb__threads__get_cpu
  .text.system__bb__threads__initialize_thread
-                0x0800700c      0x110 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
-                0x0800700c                system__bb__threads__initialize_thread
+                0x08007020      0x110 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
+                0x08007020                system__bb__threads__initialize_thread
  .text.system__bb__threads__initialize
-                0x0800711c       0xd4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
-                0x0800711c                system__bb__threads__initialize
+                0x08007130       0xd4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
+                0x08007130                system__bb__threads__initialize
  .text.system__bb__threads__sleep
-                0x080071f0       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
-                0x080071f0                system__bb__threads(short, long,...)(...)( *)
+                0x08007204       0x44 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
+                0x08007204                system__bb__threads(short, long,...)(...)( *)
  .text.system__bb__threads__thread_create
-                0x08007234       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
-                0x08007234                system__bb__threads__thread_create
- *fill*         0x0800725c      0x1a4 
+                0x08007248       0x28 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
+                0x08007248                system__bb__threads__thread_create
+ *fill*         0x08007270      0x190 
  .text          0x08007400      0x1a0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(handler.o)
                 0x08007400                __vectors
  .text          0x080075a0       0xe4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(start-rom.o)
@@ -8024,7 +8024,7 @@ END GROUP
 
 .ARM.exidx      0x0800be98      0xa90
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx.text.pinny__initialize.4808
+ .ARM.exidx.text.pinny__initialize.4809
                 0x0800be98        0x8 pinny.o
  .ARM.exidx.text._ada_pinny
                 0x0800bea0        0x8 pinny.o
@@ -10253,84 +10253,84 @@ END GROUP
  .debug_abbrev  0x0000aaa7      0x176 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_divdi3.o)
  .debug_abbrev  0x0000ac1d      0x161 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_udivdi3.o)
 
-.debug_line     0x00000000     0xe4b8
+.debug_line     0x00000000     0xe4bd
  *(.debug_line)
- .debug_line    0x00000000      0x2ef pinny.o
- .debug_line    0x000002ef       0xc0 b__pinny.o
- .debug_line    0x000003af       0xc8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-rcc.o)
- .debug_line    0x00000477      0x793 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
- .debug_line    0x00000c0a      0xa97 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
- .debug_line    0x000016a1      0x78c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
- .debug_line    0x00001e2d      0xa67 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
- .debug_line    0x00002894      0xeda /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-adc.o)
- .debug_line    0x0000376e      0x2ea /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-exti.o)
- .debug_line    0x00003a58      0x8e4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-dac.o)
- .debug_line    0x0000433c      0x2c1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
- .debug_line    0x000045fd       0xda /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32_svd-spi.o)
- .debug_line    0x000046d7      0x119 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-i2c.o)
- .debug_line    0x000047f0      0x119 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-spi.o)
- .debug_line    0x00004909      0x11a /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-gpio.o)
- .debug_line    0x00004a23      0x4e2 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
- .debug_line    0x00004f05      0x38c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
- .debug_line    0x00005291      0x103 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bcprmu.o)
- .debug_line    0x00005394      0x2cc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
- .debug_line    0x00005660      0x57b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
- .debug_line    0x00005bdb      0x2da /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
- .debug_line    0x00005eb5      0x4b5 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
- .debug_line    0x0000636a      0x3bb /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
- .debug_line    0x00006725      0x311 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-retide.o)
- .debug_line    0x00006a36      0x65a /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
- .debug_line    0x00007090      0x1b1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbprot.o)
- .debug_line    0x00007241      0x2c1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbinte.o)
- .debug_line    0x00007502      0x46b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
- .debug_line    0x0000796d      0x289 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-tasdeb.o)
- .debug_line    0x00007bf6      0x473 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(raise-gcc.o)
- .debug_line    0x00008069       0xba /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-except.o)
- .debug_line    0x00008123      0x203 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-init.o)
- .debug_line    0x00008326      0x104 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memcom.o)
- .debug_line    0x0000842a      0x9e2 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-tags.o)
- .debug_line    0x00008e0c      0x457 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stratt.o)
- .debug_line    0x00009263      0x14f /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-finali.o)
- .debug_line    0x000093b2      0x878 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-finmas.o)
- .debug_line    0x00009c2a      0x10b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-assert.o)
- .debug_line    0x00009d35     0x1019 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-except.o)
- .debug_line    0x0000ad4e      0x122 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-secsta.o)
- .debug_line    0x0000ae70      0x129 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-addima.o)
- .debug_line    0x0000af99      0x4a9 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-soflin.o)
- .debug_line    0x0000b442      0x140 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stopoo.o)
- .debug_line    0x0000b582      0x1b4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-io.o)
- .debug_line    0x0000b736      0x194 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-pooglo.o)
- .debug_line    0x0000b8ca      0x2a0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-elchha.o)
- .debug_line    0x0000bb6a       0xdc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-traent.o)
- .debug_line    0x0000bc46       0xe1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memcop.o)
- .debug_line    0x0000bd27      0x143 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memory.o)
- .debug_line    0x0000be6a      0x113 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stalib.o)
- .debug_line    0x0000bf7d       0xf2 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memmov.o)
- .debug_line    0x0000c06f      0x185 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-excmac.o)
- .debug_line    0x0000c1f4      0x2f5 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-exctab.o)
- .debug_line    0x0000c4e9      0x153 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-stream.o)
- .debug_line    0x0000c63c       0xba /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-ioexce.o)
- .debug_line    0x0000c6f6      0x12c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-finroo.o)
- .debug_line    0x0000c822       0xcd /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-parame.o)
- .debug_line    0x0000c8ef      0x121 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-excdeb.o)
- .debug_line    0x0000ca10       0xf0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-macres.o)
- .debug_line    0x0000cb00      0x18f /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(setup_pll.o)
- .debug_line    0x0000cc8f      0x1d7 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-textio.o)
- .debug_line    0x0000ce66       0xe0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-bbmcpa.o)
- .debug_line    0x0000cf46       0xb4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(adaint-xi.o)
- .debug_line    0x0000cffa       0xe8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-imgboo.o)
- .debug_line    0x0000d0e2      0x1d9 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-traceb.o)
- .debug_line    0x0000d2bb      0x27d /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-cmallo.o)
- .debug_line    0x0000d538      0x223 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(g-debuti.o)
- .debug_line    0x0000d75b      0x13b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stm32.o)
- .debug_line    0x0000d896       0x6c /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_aeabi_ldivmod.o)
- .debug_line    0x0000d902       0x6b /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(bpabi.o)
- .debug_line    0x0000d96d      0x4fe /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(unwind-arm.o)
- .debug_line    0x0000de6b       0xb4 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(libunwind.o)
- .debug_line    0x0000df1f      0x1db /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(pr-support.o)
- .debug_line    0x0000e0fa       0x67 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000e161      0x1ae /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_divdi3.o)
- .debug_line    0x0000e30f      0x1a9 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_udivdi3.o)
+ .debug_line    0x00000000      0x2f4 pinny.o
+ .debug_line    0x000002f4       0xc0 b__pinny.o
+ .debug_line    0x000003b4       0xc8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-rcc.o)
+ .debug_line    0x0000047c      0x793 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-device.o)
+ .debug_line    0x00000c0f      0xa97 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-i2c.o)
+ .debug_line    0x000016a6      0x78c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-gpio.o)
+ .debug_line    0x00001e32      0xa67 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-spi.o)
+ .debug_line    0x00002899      0xeda /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-adc.o)
+ .debug_line    0x00003773      0x2ea /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-exti.o)
+ .debug_line    0x00003a5d      0x8e4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-dac.o)
+ .debug_line    0x00004341      0x2c1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32-syscfg.o)
+ .debug_line    0x00004602       0xda /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/libstm32l4xx.a(stm32_svd-spi.o)
+ .debug_line    0x000046dc      0x119 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-i2c.o)
+ .debug_line    0x000047f5      0x119 /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-spi.o)
+ .debug_line    0x0000490e      0x11a /.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/libHAL.a(hal-gpio.o)
+ .debug_line    0x00004a28      0x4e2 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-reatim.o)
+ .debug_line    0x00004f0a      0x38c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtiev.o)
+ .debug_line    0x00005296      0x103 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bcprmu.o)
+ .debug_line    0x00005399      0x2cc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthqu.o)
+ .debug_line    0x00005665      0x57b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbtime.o)
+ .debug_line    0x00005be0      0x2da /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbbosu.o)
+ .debug_line    0x00005eba      0x4b5 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taskin.o)
+ .debug_line    0x0000636f      0x3bb /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbcppr.o)
+ .debug_line    0x0000672a      0x311 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(a-retide.o)
+ .debug_line    0x00006a3b      0x65a /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-taprop.o)
+ .debug_line    0x00007095      0x1b1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbprot.o)
+ .debug_line    0x00007246      0x2c1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbinte.o)
+ .debug_line    0x00007507      0x46b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-bbthre.o)
+ .debug_line    0x00007972      0x289 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a(s-tasdeb.o)
+ .debug_line    0x00007bfb      0x473 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(raise-gcc.o)
+ .debug_line    0x0000806e       0xba /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-except.o)
+ .debug_line    0x00008128      0x203 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-init.o)
+ .debug_line    0x0000832b      0x104 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memcom.o)
+ .debug_line    0x0000842f      0x9e2 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-tags.o)
+ .debug_line    0x00008e11      0x457 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stratt.o)
+ .debug_line    0x00009268      0x14f /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-finali.o)
+ .debug_line    0x000093b7      0x878 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-finmas.o)
+ .debug_line    0x00009c2f      0x10b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-assert.o)
+ .debug_line    0x00009d3a     0x1019 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-except.o)
+ .debug_line    0x0000ad53      0x122 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-secsta.o)
+ .debug_line    0x0000ae75      0x129 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-addima.o)
+ .debug_line    0x0000af9e      0x4a9 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-soflin.o)
+ .debug_line    0x0000b447      0x140 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stopoo.o)
+ .debug_line    0x0000b587      0x1b4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-io.o)
+ .debug_line    0x0000b73b      0x194 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-pooglo.o)
+ .debug_line    0x0000b8cf      0x2a0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-elchha.o)
+ .debug_line    0x0000bb6f       0xdc /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-traent.o)
+ .debug_line    0x0000bc4b       0xe1 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memcop.o)
+ .debug_line    0x0000bd2c      0x143 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memory.o)
+ .debug_line    0x0000be6f      0x113 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stalib.o)
+ .debug_line    0x0000bf82       0xf2 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-memmov.o)
+ .debug_line    0x0000c074      0x185 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-excmac.o)
+ .debug_line    0x0000c1f9      0x2f5 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-exctab.o)
+ .debug_line    0x0000c4ee      0x153 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-stream.o)
+ .debug_line    0x0000c641       0xba /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(a-ioexce.o)
+ .debug_line    0x0000c6fb      0x12c /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-finroo.o)
+ .debug_line    0x0000c827       0xcd /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-parame.o)
+ .debug_line    0x0000c8f4      0x121 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-excdeb.o)
+ .debug_line    0x0000ca15       0xf0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-macres.o)
+ .debug_line    0x0000cb05      0x18f /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(setup_pll.o)
+ .debug_line    0x0000cc94      0x1d7 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-textio.o)
+ .debug_line    0x0000ce6b       0xe0 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_line    0x0000cf4b       0xb4 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(adaint-xi.o)
+ .debug_line    0x0000cfff       0xe8 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-imgboo.o)
+ .debug_line    0x0000d0e7      0x1d9 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-traceb.o)
+ .debug_line    0x0000d2c0      0x27d /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-cmallo.o)
+ .debug_line    0x0000d53d      0x223 /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(g-debuti.o)
+ .debug_line    0x0000d760      0x13b /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a(s-stm32.o)
+ .debug_line    0x0000d89b       0x6c /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x0000d907       0x6b /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(bpabi.o)
+ .debug_line    0x0000d972      0x4fe /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(unwind-arm.o)
+ .debug_line    0x0000de70       0xb4 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(libunwind.o)
+ .debug_line    0x0000df24      0x1db /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(pr-support.o)
+ .debug_line    0x0000e0ff       0x67 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000e166      0x1ae /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_divdi3.o)
+ .debug_line    0x0000e314      0x1a9 /usr/gnat/gnat2016/arm/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/fpu/fpv4-sp-d16/libgcc.a(_udivdi3.o)
 
 .debug_frame    0x00000000     0x7b18
  *(.debug_frame)
