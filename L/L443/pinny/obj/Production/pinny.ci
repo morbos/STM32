@@ -1,0 +1,55 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "stm32__gpio__configure_io__2" label: "CONFIGURE_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:243:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__3" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x3/stm32-device.ads:65:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:37:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:70:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:102:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:66:13" shape : ellipse }
+node: { title: "stm32__gpio__toggle__2" label: "TOGGLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:234:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:208:9" shape : ellipse }
+node: { title: "_ada_pinny" label: "pinny\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:10:1\n408 bytes (static)" }
+edge: { sourcename: "_ada_pinny" targetname: "_Unwind_Resume" }
+edge: { sourcename: "_ada_pinny" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:41:7" }
+edge: { sourcename: "_ada_pinny" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:41:25" }
+edge: { sourcename: "_ada_pinny" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:41:27" }
+edge: { sourcename: "_ada_pinny" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:41:19" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio__toggle__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:40:7" }
+edge: { sourcename: "_ada_pinny" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:pinny__initialize.4808" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:37:4" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio___assign" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+edge: { sourcename: "_ada_pinny" targetname: "stm32__gpio__gpio_pointsIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:17:18" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:pinny__initialize.4808" label: "initialize\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:21:4\n40 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:pinny__initialize.4808" targetname: "stm32__gpio__configure_io__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:32:7" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:pinny__initialize.4808" targetname: "stm32__device__enable_clock__3" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny/src/pinny.adb:25:7" }
+}
