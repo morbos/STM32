@@ -1,0 +1,50 @@
+[GENERATED OBJECT FILE]
+b__pinny2.o
+[PROJECT FILES]
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/pinny2.gpr
+20180507220825
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/middleware/middleware.gpr
+20180211224821
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/components/components.gpr
+20170625184526
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20170625184525
+/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/HAL.gpr
+20170625184526
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/arch/ARM/STM32/stm32l4x3.gpr
+20171111181148
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/target_options.gpr
+20170610185421
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/runtime_build.gpr
+20171119223018
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/ravenscar_build.gpr
+20171111231709
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/boards/stm32l443_bluepill/board.gpr
+20171111180712
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/boards/stm32l443_bluepill.gpr
+20171119222611
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/boards/stm32l443_bluepill/config.gpr
+20171111231525
+[BOUND OBJECT FILES]
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/obj/Production/pinny2.o
+[GENERATED SOURCE FILES]
+b__pinny2.ads
+b__pinny2.adb
+b__pinny2.ali
+[RESULTING OPTIONS]
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/obj/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/obj/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Production/
+-L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Production/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+-static
+-static-libgcc
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/pinny2/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a
