@@ -1,0 +1,21 @@
+graph: { title: "b__vl53l1x_f103.adb"
+node: { title: "_ada_vl53l1x_f103" label: "ada_main_program\nb__vl53l1x_f103.adb:56:14" shape : ellipse }
+node: { title: "__gnat_start_slave_cpus" label: "start_slave_cpus\nb__vl53l1x_f103.adb:27:17" shape : ellipse }
+node: { title: "trace___elabb" label: "e27b\nb__vl53l1x_f103.adb:50:12" shape : ellipse }
+node: { title: "trace___elabs" label: "e25b\nb__vl53l1x_f103.adb:49:12" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e23b\nb__vl53l1x_f103.adb:42:19" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e21b\nb__vl53l1x_f103.adb:36:16" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e19b\nb__vl53l1x_f103.adb:34:20" shape : ellipse }
+node: { title: "ada__text_io___elabb" label: "e17b\nb__vl53l1x_f103.adb:32:18" shape : ellipse }
+node: { title: "main" label: "main\nb__vl53l1x_f103.adb:59:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_vl53l1x_f103" label: "b__vl53l1x_f103.adb:65:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__vl53l1x_f103.adb:64:7" }
+node: { title: "adainit" label: "adainit\nb__vl53l1x_f103.adb:26:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_start_slave_cpus" label: "b__vl53l1x_f103.adb:53:7" }
+edge: { sourcename: "adainit" targetname: "trace___elabb" label: "b__vl53l1x_f103.adb:50:12" }
+edge: { sourcename: "adainit" targetname: "trace___elabs" label: "b__vl53l1x_f103.adb:49:12" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__vl53l1x_f103.adb:42:19" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__vl53l1x_f103.adb:36:16" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__vl53l1x_f103.adb:34:20" }
+edge: { sourcename: "adainit" targetname: "ada__text_io___elabb" label: "b__vl53l1x_f103.adb:32:18" }
+}
