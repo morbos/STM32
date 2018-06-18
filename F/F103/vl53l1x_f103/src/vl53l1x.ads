@@ -208,7 +208,7 @@ private
       Dss_Actual_Effective_Spads_Sd0                      : UInt16;
       Peak_Signal_Count_Rate_Mcps_Sd0                     : UInt16;
       Ambient_Count_Rate_Mcps_Sd0                         : UInt16;
-    Sigma_Sd0                                           : UInt16;
+      Sigma_Sd0                                           : UInt16;
       Phase_Sd0                                           : UInt16;
       Final_Crosstalk_Corrected_Range_Mm_Sd0              : UInt16;
       Peak_Signal_Count_Rate_Crosstalk_Corrected_Mcps_Sd0 : UInt16;
