@@ -1,0 +1,35 @@
+graph: { title: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb"
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_PE_Misaligned_Address_Value" label: "gnat_rcheck_PE_Misaligned_Address_Value\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+node: { title: "trace___elabs" label: "Trace\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:12:1\n4 bytes (static)" }
+node: { title: "trace___elabb" label: "Trace\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:8:1\n8 bytes (static)" }
+edge: { sourcename: "trace___elabb" targetname: "trace__tcr_registerIP" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:10:4" }
+node: { title: "trace__configure_watchpoint" label: "Configure_Watchpoint\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:157:4\n24 bytes (static)" }
+edge: { sourcename: "trace__configure_watchpoint" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:165:12" }
+node: { title: "trace__itm_print" label: "Itm_Print\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:146:4\n48 bytes (static)" }
+edge: { sourcename: "trace__itm_print" targetname: "trace__itm_sendvalue__3" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:150:10" }
+edge: { sourcename: "trace__itm_print" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:150:10" }
+node: { title: "trace__itm_sendvalue__3" label: "Itm_Sendvalue\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:128:4\n24 bytes (static)" }
+edge: { sourcename: "trace__itm_sendvalue__3" targetname: "trace__tcr_registerIP" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:130:7" }
+node: { title: "trace__itm_sendvalue__2" label: "Itm_Sendvalue\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:111:4\n32 bytes (static)" }
+edge: { sourcename: "trace__itm_sendvalue__2" targetname: "__gnat_rcheck_PE_Misaligned_Address_Value" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:114:42" }
+edge: { sourcename: "trace__itm_sendvalue__2" targetname: "trace__tcr_registerIP" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:113:7" }
+node: { title: "trace__itm_sendvalue" label: "Itm_Sendvalue\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:96:4\n24 bytes (static)" }
+edge: { sourcename: "trace__itm_sendvalue" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:105:20" }
+edge: { sourcename: "trace__itm_sendvalue" targetname: "trace__tcr_registerIP" label: "/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:98:7" }
+node: { title: "trace__configure_tracing" label: "Configure_Tracing\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:22:4\n40 bytes (static)" }
+node: { title: "trace__disable_tracing" label: "Disable_Tracing\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.adb:12:4\n4 bytes (static)" }
+node: { title: "trace__tcr_registerIP" label: "Tcr_Registerip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:137:9\n16 bytes (static)" }
+node: { title: "trace__tcr_registerEQ" label: "Tcr_Registereq\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:137:9\n24 bytes (static)" }
+node: { title: "trace__tcr_fieldsIP" label: "Tcr_Fieldsip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:111:9\n16 bytes (static)" }
+node: { title: "trace__etm_peripheralIP" label: "Etm_Peripheralip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:155:9\n16 bytes (static)" }
+node: { title: "trace__Tu32of8BIP" label: "Tu32of8bip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:152:4\n16 bytes (static)" }
+node: { title: "trace__Tu32of3BIP" label: "Tu32of3bip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:149:4\n16 bytes (static)" }
+node: { title: "trace__Tu32of6BIP" label: "Tu32of6bip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:151:4\n16 bytes (static)" }
+node: { title: "trace__Tu32of4BIP" label: "Tu32of4bip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:150:4\n16 bytes (static)" }
+node: { title: "trace__Tu32of16BIP" label: "Tu32of16bip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:153:4\n16 bytes (static)" }
+node: { title: "trace__itm_peripheralIP" label: "Itm_Peripheralip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:60:9\n16 bytes (static)" }
+node: { title: "trace__Tport_tBIP" label: "Tport_Tbip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:59:4\n16 bytes (static)" }
+node: { title: "trace__tpi_peripheralIP" label: "Tpi_Peripheralip\n/backup/ada/STM32/L/L443/vl53l1x_l443/src/trace.ads:14:9\n16 bytes (static)" }
+}
