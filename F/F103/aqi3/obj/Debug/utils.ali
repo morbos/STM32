@@ -1,0 +1,134 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/backup/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U utils%b		utils.adb		3bc8a0a9 NE OO PK
+W system%s		system.ads		system.ali
+W system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+U utils%s		utils.ads		0aa98b7f EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D hal.ads		20170625184526 2b42c80e hal%s
+D interfac.ads		20180628232934 5ab55268 interfaces%s
+D system.ads		20180628234446 aa7dab5a system%s
+D s-maccod.ads		20180628232936 6d68a701 system.machine_code%s
+D utils.ads		20181120220729 7b5e1119 utils%s
+D utils.adb		20181120220729 2dfe16b1 utils%b
+D /backup/ada/STM32/F/F103/aqi3/gnat.adc  20181120220712 00000000
+X 1 hal.ads
+34K9*HAL 166e8 5|2w6 2r25
+53M9*UInt8<2|63M9> 5|33r34 33r48 35r30 35r44 37r51 6|11r34 11r48 22r30 22r44
+. 30r51 33r14 34r14
+66M9*UInt16<2|66M9> 5|35r58 37r66 45r61 47r54 57r24 57r39 59r24 59r39 6|22r58
+. 27r14 30r66 61r61 63r14 79r54 125r24 125r39 130r24 130r39
+97M9*UInt32<2|74M9> 5|22r20 43r67 53r32 55r31 6|23r16 25r17 26r26 53r67 109r32
+. 111r11 113r42 118r31 121r41
+162A9*UInt8_Array(53M9)<integer> 5|7r27
+163A9*UInt16_Array(66M9)<integer> 5|9r27
+X 2 interfac.ads
+38K9*Interfaces 184e15 5|1w6 1r25
+49I9*Integer_16<short_integer> 5|11r57 33r62 47r70 6|11r62 19r14 79r70
+52I9*Integer_32<integer> 5|20r20 39r73 41r74 6|12r16 14r17 15r26 37r73 45r74
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+105V13*Shift_Right{66M9} 6|33s21 68s17
+X 3 system.ads
+60K9*System 174e11 6|1r6 1r31
+X 4 s-maccod.ads
+36K16*Machine_Code 131e24 6|1w13 1r38
+44I9*Asm_Input_Operand<integer>
+45I9*Asm_Output_Operand<integer>
+83U14*Asm 6|93s7 103s7 113s7 121s7
+85i6 Outputs{45I9} 6|113r31
+86i6 Inputs{44I9} 6|121r31
+87a6 Clobber{string} 6|106r12
+88b6 Volatile{boolean} 6|93r23 106r33 114r12 122r12
+X 5 utils.ads
+5K9*Utils 61l5 61e10 6|3b14 137l5 137t10
+7A9*Four_UInt8<1|162A9>(1|53M9)<integer> 28r20 39r53 43r42 6|37r53 53r42
+9A9*Two_UInt16<1|163A9>(1|66M9)<integer> 26r20 41r54 6|45r54
+11A9*Integer_16_Array(2|49I9)<integer> 13r31
+13A9*Two_Integer_16<11A9>(2|49I9)<integer> 24r20
+15R9*Union4 16d7 31e6 6|39r11 47r11 55r11 81r11
+16i7*As_Array{natural} 18r12
+20i13*Val{2|52I9} 6|41m9 49m9
+22m13*UVal{1|97M9} 6|58r19
+24a13*IArr{13A9} 6|83m9
+26a13*HArr{9A9} 6|50r19 84r19
+28a13*BArr{7A9} 6|42r19 57m9
+33V13*To_Integer_16{2|49I9} 33>28 33>42 6|11b13 20l8 20t21
+33m28 MSB{1|53M9} 6|11b28 14r29 16r11
+33m42 LSB{1|53M9} 6|11b42 15r38
+35V13*To_UInt16{1|66M9} 35>24 35>38 6|22b13 28l8 28t17
+35m24 MSB{1|53M9} 6|22b24 25r25
+35m38 LSB{1|53M9} 6|22b38 26r34
+37U14*To_UInt8_From_UInt16 37<36 37<41 37>58 6|30b14 35l8 35t28
+37m36 Msb{1|53M9} 6|30b36 33m7
+37m41 Lsb{1|53M9} 6|30b41 34m7
+37m58 Value{1|66M9} 6|30b58 33r34 34r21
+39U14*To_UInt8_From_Integer_32 39<40 39>65 6|37b14 43l8 43t32
+39a40 Result{7A9} 6|37b40 42m7
+39i65 Value{2|52I9} 6|37b65 41r16
+41U14*To_UInt16_From_Integer_32 41<41 41>66 6|45b14 51l8 51t33
+41a41 Result{9A9} 6|45b41 50m7
+41i66 Value{2|52I9} 6|45b66 49r16
+43U14*To_UInt32_From_UInt8 43>36 43<54 6|53b14 59l8 59t28
+43a36 Dat{7A9} 6|53b36 57r17
+43m54 Result{1|97M9} 6|53b54 58m7
+45U14*To_String_From_UInt16 45<37 45>53 6|61b14 77l8 77t29
+45a37 S{string} 6|61b37 67r16 75m10
+45m53 Value{1|66M9} 6|61b53 68r30
+47U14*To_UInt16_From_Integer_16 47<41 47>62 6|79b14 85l8 85t33
+47m41 Result{1|66M9} 6|79b41 84m7
+47i62 Value{2|49I9} 6|79b62 83r21
+49U14*Disable_Interrupts 6|91b14 94l8 94t26
+51U14*Enable_Interrupts 6|100b14 107l8 107t25
+53V13*Get_Primask{1|97M9} 6|109b13 116l8 116t19
+55U14*Set_Primask 55>27 6|118b14 123l8 123t19
+55m27 R{1|97M9} 6|118b27 121r64
+57V13*Htobs{1|66M9} 57>20 6|125b13 129l8 129t13
+57m20 X{1|66M9} 6|125b20 128r14
+59V13*Btohs{1|66M9} 59>20 6|130b13 135l8 135t13
+59m20 X{1|66M9} 6|130b20 134r14
+X 6 utils.adb
+5a4 NL{string} 103r24 104r24
+12i7 Result{2|52I9} 14m7 15m7 15r17 17m10 17r34 19r26
+23m7 Result{1|97M9} 25m7 26m7 26r17 27r22
+39r7 X{5|15R9} 41m7 42r17
+47r7 X{5|15R9} 49m7 50r17
+55r7 X{5|15R9} 57m7 58r17
+63m7 Idx{1|66M9} 68m10 69r15 71r58 73r59
+64e7 C{character} 71m16 73m16 75r19
+67i11 I{integer} 68r43 75r13
+81r7 X{5|15R9} 83m7 84r17
+111m7 R{1|97M9} 113m67 113r67 115r14
+

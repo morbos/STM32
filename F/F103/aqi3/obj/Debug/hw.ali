@@ -1,0 +1,319 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/backup/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U hw%b			hw.adb			ec3eccd0 NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+U hw%s			hw.ads			760853eb EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W hal.uart%s		hal-uart.ads		hal-uart.ali
+W interfaces%s		interfac.ads		interfac.ali
+W peripherals%s		peripherals.ads		peripherals.ali
+W st7735r%s		st7735r.adb		st7735r.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.spi%s		stm32-spi.adb		stm32-spi.ali
+W stm32.usarts%s	stm32-usarts.adb	stm32-usarts.ali
+
+D ada.ads		20180628232933 76789da1 ada%s
+D a-reatim.ads		20180628233416 4c16970e ada.real_time%s
+D a-tags.ads		20180628232933 2dde273c ada.tags%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-audio.ads		20170625184526 09f1fb35 hal.audio%s
+D hal-bitmap.ads	20170625184526 03ebc14f hal.bitmap%s
+D hal-framebuffer.ads	20170625184526 9811b908 hal.framebuffer%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D hal-real_time_clock.ads  20170625184526 9dd52fca hal.real_time_clock%s
+D hal-spi.ads		20180712235727 73427149 hal.spi%s
+D hal-time.ads		20170625184526 f5295cd7 hal.time%s
+D hal-uart.ads		20170625184526 d58316b4 hal.uart%s
+D hw.ads		20181120222554 ba80b72e hw%s
+D hw.adb		20181120222323 56be7bfe hw%b
+D interfac.ads		20180628232934 5ab55268 interfaces%s
+D i-bit_types.ads	20170610190252 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20171008190010 7f31ad58 interfaces.stm32%s
+D i-stm32-pwr.ads	20171006213128 dbc7df38 interfaces.stm32.pwr%s
+D peripherals.ads	20181120220727 c1d88f8e peripherals%s
+D soft_drawing_bitmap.ads  20170625184526 41d47adc soft_drawing_bitmap%s
+D st7735r.ads		20180228222617 f0201880 st7735r%s
+D stm32.ads		20171006212415 698e2c3b stm32%s
+D stm32-adc.ads		20171020013359 ea83c12b stm32.adc%s
+D stm32-board.ads	20171020013736 e44a5696 stm32.board%s
+D stm32-crc.ads		20171006212421 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20171007202401 5a6a13e6 stm32.dac%s
+D stm32-device.ads	20180209215822 7fcc61df stm32.device%s
+D stm32-dma.ads		20171023222454 a771b9fb stm32.dma%s
+D stm32-exti.ads	20171006212416 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20171010213237 6a2e5d0d stm32.gpio%s
+D stm32-i2c.ads		20171006212420 6fa3b92b stm32.i2c%s
+D stm32-i2s.ads		20171006212416 29c9082d stm32.i2s%s
+D stm32-rtc.ads		20180719194312 69b416d3 stm32.rtc%s
+D stm32-spi.ads		20180719181228 b60e4efe stm32.spi%s
+D stm32-timers.ads	20171006212417 63c500b2 stm32.timers%s
+D stm32-usarts.ads	20171006235616 6de0aaea stm32.usarts%s
+D stm32_svd.ads		20171006214440 58ad1fd6 stm32_svd%s
+D stm32_svd-adc.ads	20171006214442 02731202 stm32_svd.adc%s
+D stm32_svd-crc.ads	20171006214443 ef17177d stm32_svd.crc%s
+D stm32_svd-dac.ads	20171006214443 6e9f8d82 stm32_svd.dac%s
+D stm32_svd-dma.ads	20171006214441 f294e42e stm32_svd.dma%s
+D stm32_svd-gpio.ads	20171009220928 e12f4994 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20171006214442 b5e39574 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20171006214442 34edd16c stm32_svd.spi%s
+D stm32_svd-usart.ads	20171006214442 e77009d4 stm32_svd.usart%s
+D system.ads		20180628234446 aa7dab5a system%s
+D s-assert.ads		20180628232934 cd8d2c94 system.assertions%s
+D s-bb.ads		20180628232934 09e072ae system.bb%s
+D s-bbbopa.ads		20171011225700 ce0fdd60 system.bb.board_parameters%s
+D s-bbbosu.ads		20180628233417 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20180628233417 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20180628233418 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20171006213127 bf216535 system.bb.mcu_parameters%s
+D s-bbpara.ads		20180629195208 ca2da5da system.bb.parameters%s
+D s-bbthre.ads		20180628233418 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20180628233418 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20180628233418 ad086247 system.bb.time%s
+D s-multip.ads		20180628233419 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20180628233419 229b14dd system.os_interface%s
+D s-stm32.ads		20171008204936 e60e59e5 system.stm32%s
+D s-stoele.ads		20180628232937 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20180628232937 34867c83 system.unsigned_types%s
+D /backup/ada/STM32/F/F103/aqi3/gnat.adc  20181120220712 00000000
+X 4 hal.ads
+34K9*HAL 166e8 14|1w6 1r27 2r6 2r27 11r6 15|45r27
+39M9*UInt2
+41M9*UInt3
+43M9*UInt4
+45M9*UInt5
+47M9*UInt6
+53M9*UInt8<16|63M9>
+66M9*UInt16<16|66M9>
+X 5 hal-audio.ads
+59h9*Audio_Stream
+X 6 hal-bitmap.ads
+98h9*Bitmap_Buffer
+X 7 hal-framebuffer.ads
+44h9*Frame_Buffer_Display
+X 8 hal-gpio.ads
+44h9*GPIO_Point
+X 9 hal-i2c.ads
+48h9*I2C_Port
+X 11 hal-spi.ads
+32K13*SPI 95e12 14|11w10 15|45r31
+41n7*Data_Size_8b{40E9} 15|45r35
+48h9*SPI_Port
+X 13 hal-uart.ads
+32K13*UART 86e13 14|2w10 2r31
+48h9*UART_Port
+X 14 hw.ads
+14K9*Hw 22E4 35l5 35e7 15|1b14 192l5 192t7
+16U14*Initialize_UART 15|93b14 109l8 109t23
+18U14*Initialize_Screen 18=33 15|112b14 190l8 190t25
+18r33 Display{22|48R9} 15|112b33 124m19 126r45 131r45 136r56 144r46 149r36
+. 155r37 160r35 164r35 168r35 172r24 174r30 176r54 184r32 186r27 188r16
+22U14 Initialize_Screen_GPIO 23^7 24>7 25>7 26>7 27>7 28>7 29>7 15|3b14 69l8
+. 69t30 115s7
+23p7 Port(35|52R9) 15|4b7 22r21 24r15 26r27 115r31
+24r7 SCL{31|163R9} 15|5b7 16r21 32r21 116r31
+25r7 MOSI{31|163R9} 15|6b7 17r21 33r21 118r31
+26r7 MISO{31|163R9} 15|7b7 18r21 34r21 117r31
+27r7 CS{31|163R9} 15|8b7 19r21 55r21 119r31
+28r7 RST{31|163R9} 15|9b7 20r21 61r21 120r31
+29r7 RS{31|163R9} 15|10b7 21r21 67r21 121r31
+33U14 Initialize_UART_GPIO 15|71b14 91l8 91t28 96s7
+X 15 hw.adb
+13r7 GPIO_Conf{31|156R9} 28m7 29m7 30m7 31m7 32r27 33r27 34r27 51m7 52m7
+. 53m7 54m7 55r35 57m7 58m7 59m7 60m7 61r36 63m7 64m7 65m7 66m7 67r35
+14r7 Config{35|74R9} 36m7 38m7 39m7 40m7 41m7 42m7 43m7 44m7 45m7 48r41
+72r7 Configuration{31|156R9} 77m7 78m7 79m7 80m7 82r29 84m7 85m7 86m7 87m7
+. 89r29
+X 16 interfac.ads
+38K9*Interfaces 14|4w6 4r27 16|184e15
+63M9*Unsigned_8
+66M9*Unsigned_16
+X 20 peripherals.ads
+38K9*Peripherals 14|3w6 3r27 20|50e16
+40p4*Selected_SPI_Port(35|52R9) 15|47r16 48r18 49r15 115r40
+41r4*Selected_SPI_Clock_Pin=41:48{31|163R9} 15|116r40
+42r4*Selected_SPI_Miso_Pin=42:48{31|163R9} 15|117r40
+43r4*Selected_SPI_Mosi_Pin=43:48{31|163R9} 15|118r40
+44r4*CS_Pin=44:48{31|163R9} 15|119r40
+45r4*RST_Pin=45:48{31|163R9} 15|120r40
+46r4*RS_Pin=46:48{31|163R9} 15|121r40
+48r4*RX_Pin=48:48{31|163R9} 15|75r21 82r21
+49r4*TX_Pin=49:48{31|163R9} 15|75r30 89r21
+X 22 st7735r.ads
+46K9*ST7735R 14|10w6 10r27 22|436e12
+48R9*ST7735R_Screen<7|44R9> 14|18r50 15|112r50 22|388e14
+58U14*Initialize 15|124s7
+63U14*Turn_On 15|188s7
+66U14*Display_Inversion_Off 15|174s7
+69n40*Pixel_16bits{69E9} 15|184r52
+71U14*Set_Pixel_Format 15|184s7
+71r32 LCD{48R9} 15|184r25
+71e54 Pix_Fmt{69E9} 15|184r41
+73n27*RGB_Order{73E9} 15|177r54
+75n36*Vertical_Refresh_Top_Bottom{75E9} 15|178r54
+78n38*Horizontal_Refresh_Left_Right{78E9} 15|179r54
+82n31*Row_Address_Bottom_Top{81E9} 15|180r54
+85n34*Column_Address_Right_Left{84E9} 15|181r54
+88U14*Set_Memory_Data_Access 15|176s7
+89r7 LCD{48R9} 15|176r31
+90e7 Color_Order{73E9} 15|177r31
+91e7 Vertical{75E9} 15|178r31
+92e7 Horizontal{78E9} 15|179r31
+93e7 Row_Addr_Order{81E9} 15|180r31
+94e7 Column_Addr_Order{84E9} 15|181r31
+95b7 Row_Column_Exchange{boolean} 15|182r31
+97U14*Set_Frame_Rate_Normal 15|126s7
+98r7 LCD{48R9} 15|126r30
+99m7 RTN{4|43M9} 15|127r27
+100m7 Front_Porch{4|47M9} 15|128r27
+101m7 Back_Porch{4|47M9} 15|129r27
+103U14*Set_Frame_Rate_Idle 15|131s7
+104r7 LCD{48R9} 15|131r28
+105m7 RTN{4|43M9} 15|132r28
+106m7 Front_Porch{4|47M9} 15|133r28
+107m7 Back_Porch{4|47M9} 15|134r28
+109U14*Set_Frame_Rate_Partial_Full 15|136s7
+110r7 LCD{48R9} 15|136r36
+111m7 RTN_Part{4|43M9} 15|137r36
+112m7 Front_Porch_Part{4|47M9} 15|138r36
+113m7 Back_Porch_Part{4|47M9} 15|139r36
+114m7 RTN_Full{4|43M9} 15|140r36
+115m7 Front_Porch_Full{4|47M9} 15|141r36
+116m7 Back_Porch_Full{4|47M9} 15|142r36
+118n46*Line_Inversion{118E9} 15|145r46 146r46 147r46
+120U14*Set_Inversion_Control 15|144s7
+121r7 LCD{48R9} 15|144r30
+122e7 Normal{118E9} 15|145r30
+122e15 Idle{118E9} 15|146r30
+122e21 Full_Partial{118E9} 15|147r30
+124U14*Set_Power_Control_1 15|149s7
+125r7 LCD{48R9} 15|149r28
+126m7 AVDD{4|41M9} 15|150r28
+127m7 VRHP{4|45M9} 15|151r28
+128m7 VRHN{4|45M9} 15|152r28
+129m7 MODE{4|39M9} 15|153r28
+131U14*Set_Power_Control_2 15|155s7
+132r7 LCD{48R9} 15|155r28
+133m7 VGH25{4|39M9} 15|156r28
+134m7 VGSEL{4|39M9} 15|157r28
+135m7 VGHBT{4|39M9} 15|158r28
+137U14*Set_Power_Control_3 15|160s7
+138r7 LCD{48R9} 15|160r28
+139m7 P1{4|53M9} 15|161r28
+139m11 P2{4|53M9} 15|162r28
+141U14*Set_Power_Control_4 15|164s7
+142r7 LCD{48R9} 15|164r28
+143m7 P1{4|53M9} 15|165r28
+143m11 P2{4|53M9} 15|166r28
+145U14*Set_Power_Control_5 15|168s7
+146r7 LCD{48R9} 15|168r28
+147m7 P1{4|53M9} 15|169r28
+147m11 P2{4|53M9} 15|170r28
+149U14*Set_Vcom 15|172s7
+149r24 LCD{48R9} 15|172r17
+149m46 VCOMS{4|47M9} 15|172r33
+183U14*Set_Display 15|186s7
+183r27 LCD{48R9} 15|186r20
+183m50 Data{4|66M9} 15|186r36
+273m4*ST7735_BLACK{4|66M9} 15|186r44
+X 23 stm32.ads
+39K9*STM32 14|5r6 5r27 6r6 6r27 7r6 7r27 8r6 8r27 9r6 9r27 12r5 15|26r7 23|48e10
+X 25 stm32-board.ads
+37K15*Board 14|6w12 6r33 25|58e16
+X 28 stm32-device.ads
+59K15*Device 14|5w12 5r33 15|26r13 28|430e17
+68U14*Enable_Clock 15|16s7 17s7 18s7 19s7 20s7 21s7
+70U14*Enable_Clock 15|75s7
+269r4*USART_1{37|56R9} 15|74m21 74r21 98m16 98r16 100m25 100r25 101m25 101r25
+. 102m25 102r25 103m25 103r25 104m25 104r25 105m25 105r25 107m15 107r15
+275U14*Enable_Clock 15|74s7
+309U14*Enable_Clock 15|22s7
+311U14*Reset 15|26s20
+X 31 stm32-gpio.ads
+49K15*GPIO 14|7w12 7r33 31|319e15
+123n26*Mode_In{123E9} 15|77r29
+123n35*Mode_Out{123E9} 15|51r32 57r32 63r32 84r29
+123n45*Mode_AF{123E9} 15|31r32
+132n30*Push_Pull{132E9} 15|28r32 52r32 58r32 64r32 79r36 86r36
+137n31*Speed_2MHz{137E9} 15|53r32 59r32 65r32 78r30 85r30
+137n56*Speed_50MHz{137E9} 15|30r32
+149n36*Floating{149E9} 15|29r32 54r32 60r32 66r32 80r34
+149n46*Pull_Up{149E9} 15|87r34
+156R9*GPIO_Port_Configuration 15|13r30 72r23 31|161e14
+157e7*Mode{123E9} 15|31m17 51m17 57m17 63m17 77m21 84m21
+158e7*Output_Type{132E9} 15|28m17 52m17 58m17 64m17 79m21 86m21
+159e7*Speed{137E9} 15|30m17 53m17 59m17 65m17 78m21 85m21
+160e7*Resistors{149E9} 15|29m17 54m17 60m17 66m17 80m21 87m21
+163R9*GPIO_Point<8|44R9> 14|24r18 25r18 26r18 27r18 28r18 29r18 15|5r18 6r18
+. 7r18 8r18 9r18 10r18 31|168e14
+219U14*Configure_IO 15|32s7 33s7 34s7 55s7 61s7 67s7 82s7 89s7
+221r7 Config{156R9} 15|55r25 61r26 67r25
+X 35 stm32-spi.ads
+48K15*SPI 14|9w12 9r33 35|251e14
+52R9*SPI_Port<11|48R9> 14|23r25 15|4r25 35|221e51
+56n7*D2Lines_FullDuplex{55E9} 15|44r27
+61n22*Master{61E9} 15|36r22
+63n38*Low{63E9} 15|39r32
+65n29*P1Edge{65E9} 15|40r29
+67n34*Software_Managed{67E9} 15|43r34
+70n14*BRP_4{69E9} 15|38r37
+72n27*MSB{72E9} 15|41r27
+74R9*SPI_Configuration 15|14r30 35|84e14
+75e7*Direction{55E9} 15|44m14
+76e7*Mode{61E9} 15|36m14
+77e7*Data_Size{11|40E9} 15|45m14
+78e7*Clock_Polarity{63E9} 15|39m14
+79e7*Clock_Phase{65E9} 15|40m14
+80e7*Slave_Management{67E9} 15|43m14
+81e7*Baud_Rate_Prescaler{69E9} 15|38m14
+82e7*First_Bit{72E9} 15|41m14
+83m7*CRC_Poly{4|66M9} 15|42m14
+86U14*Configure 15|48s7
+88U14*Enable 15|24s7 49s7
+90U14*Disable 15|47s7
+X 37 stm32-usarts.ads
+52K15*USARTs 14|8w12 8r33 37|271e17
+59U14*Enable 15|107s7
+63U14*Disable 15|98s7
+81n23*Stopbits_1{81E9} 15|102r34
+85U14*Set_Stop_Bits 15|102s7
+87n26*Word_Length_8{87E9} 15|103r34
+89U14*Set_Word_Length 15|103s7
+91n22*No_Parity{91E9} 15|104r34
+93U14*Set_Parity 15|104s7
+97U14*Set_Baud_Rate 15|100s7
+106n42*Tx_Rx_Mode{106E9} 15|101r34
+108U14*Set_Mode 15|101s7
+111n7*No_Flow_Control{110E9} 15|105r34
+116U14*Set_Flow_Control 15|105s7
+

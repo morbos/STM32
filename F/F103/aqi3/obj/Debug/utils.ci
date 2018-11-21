@@ -1,0 +1,42 @@
+graph: { title: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb"
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "utils__btohs" label: "Btohs\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:130:4\n16 bytes (static)" }
+node: { title: "utils__htobs" label: "Htobs\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:125:4\n16 bytes (static)" }
+node: { title: "utils__set_primask" label: "Set_Primask\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:118:4\n16 bytes (static)" }
+node: { title: "utils__get_primask" label: "Get_Primask\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:109:4\n16 bytes (static)" }
+node: { title: "utils__enable_interrupts" label: "Enable_Interrupts\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:100:4\n4 bytes (static)" }
+node: { title: "utils__disable_interrupts" label: "Disable_Interrupts\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:91:4\n4 bytes (static)" }
+node: { title: "utils__to_uint16_from_integer_16" label: "To_Uint16_From_Integer_16\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:79:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint16_from_integer_16" targetname: "utils__union4IP" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:81:7" }
+node: { title: "utils__to_string_from_uint16" label: "To_String_From_Uint16\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:61:4\n48 bytes (static)" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:73:56" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:71:56" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:68:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:68:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:68:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:68:40" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:68:45" }
+node: { title: "utils__to_uint32_from_uint8" label: "To_Uint32_From_Uint8\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:53:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint32_from_uint8" targetname: "utils__union4IP" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:55:7" }
+node: { title: "utils__to_uint16_from_integer_32" label: "To_Uint16_From_Integer_32\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:45:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint16_from_integer_32" targetname: "utils__union4IP" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:47:7" }
+node: { title: "utils__to_uint8_from_integer_32" label: "To_Uint8_From_Integer_32\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:37:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint8_from_integer_32" targetname: "utils__union4IP" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:39:7" }
+node: { title: "utils__to_uint8_from_uint16" label: "To_Uint8_From_Uint16\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:30:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint8_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:34:27" }
+edge: { sourcename: "utils__to_uint8_from_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:33:44" }
+node: { title: "utils__to_uint16" label: "To_Uint16\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:22:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:27:22" }
+node: { title: "utils__to_integer_16" label: "To_Integer_16\n/backup/ada/STM32/F/F103/aqi3/src/utils.adb:11:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:19:26" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:17:20" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:17:32" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.adb:15:24" }
+node: { title: "utils__union4IP" label: "Union4ip\n/backup/ada/STM32/F/F103/aqi3/src/utils.ads:15:9\n16 bytes (static)" }
+node: { title: "utils__union4EQ" label: "Union4eq\n/backup/ada/STM32/F/F103/aqi3/src/utils.ads:15:9\n24 bytes (static)" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.ads:15:9" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.ads:15:9" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/backup/ada/STM32/F/F103/aqi3/src/utils.ads:15:9" }
+node: { title: "utils__integer_16_arrayIP" label: "Integer_16_Arrayip\n/backup/ada/STM32/F/F103/aqi3/src/utils.ads:11:9\n16 bytes (static)" }
+}

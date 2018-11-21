@@ -145,8 +145,6 @@ procedure Aqi is
    First       : Boolean  := True;
    LastSlot    : Aq_Range := Aq_Range'Last;
    LastData    : UInt16_Array (1 .. 4) := (999, 999, 999, 999);
-   Data_Impure : array (1 .. 4) of Boolean := (others => False);
-   Slot_Impure : Boolean := True;
 begin
    Initialize_Board;
 
@@ -185,38 +183,27 @@ begin
             Swap (Frm.Pm (J));
             Gui (J + 1).Val := Frm.Pm (J);
          end loop;
+         --  Handle AQI and the coloured rectangle resulting
          if Compute_Aqi (Frm.Pm (2), Slot, AqiVal) then
             Gui (1).Val := UInt16 (AqiVal);
-            for J in 1 .. 4 loop
-               if LastData (J) /= Gui (J).Val then
-                  Data_Impure (J) := True;
-               else
-                  Data_Impure (J) := False;
-               end if;
-               LastData (J) := Gui (J).Val;
-            end loop;
             if First or Slot /= LastSlot then
-               Slot_Impure := True;
                First := False;
-            end if;
-
-            if Slot_Impure then
                DrawRect (Display, 10, 10, 110, 124, AqA (Slot).Colour);
                DrawRect (Display, 11, 11, 108, 122, AqA (Slot).Colour);
                LastSlot := Slot;
             end if;
-
-            for J in 1 .. 4 loop
-               if Data_Impure (J) then
-                  X := 20;
-                  Y := UInt16 (J * 20) + 10;
-                  DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
-                  X := 20;
-                  Y := UInt16 (J * 20) + 10;
-                  DrawString (Display, X, Y, Gui (J).Str & Gui (J).Val'Image, ST7735_BLUE, ST7735_BLACK);
-               end if;
-            end loop;
          end if;
+         for J in 1 .. 4 loop
+            if LastData (J) /= Gui (J).Val then
+               X := 25;
+               Y := UInt16 (J * 20) + 10;
+               DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
+               X := 25;
+               Y := UInt16 (J * 20) + 10;
+               DrawString (Display, X, Y, Gui (J).Str & Gui (J).Val'Image, ST7735_BLUE, ST7735_BLACK);
+            end if;
+            LastData (J) := Gui (J).Val;
+         end loop;
       else
          Turn_On (Green_LED);
       end if;

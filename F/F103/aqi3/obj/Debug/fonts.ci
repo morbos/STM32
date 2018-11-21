@@ -1,0 +1,20 @@
+graph: { title: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb"
+node: { title: "st7735r__set_pixel" label: "SET_PIXEL\n/backup/ada/STM32/F/F103/aqi3/Ada_Drivers_Library/components/src/screen/ST7735R/st7735r.ads:156:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "st7735r__fill_region" label: "FILL_REGION\n/backup/ada/STM32/F/F103/aqi3/Ada_Drivers_Library/components/src/screen/ST7735R/st7735r.ads:169:14" shape : ellipse }
+node: { title: "fonts__getchar" label: "Getchar\n/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:45:4\n48 bytes (static)" }
+edge: { sourcename: "fonts__getchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:54:49" }
+edge: { sourcename: "fonts__getchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:53:43" }
+node: { title: "fonts__drawstring" label: "Drawstring\n/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:33:4\n56 bytes (static)" }
+edge: { sourcename: "fonts__drawstring" targetname: "fonts__drawchar" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:41:10" }
+node: { title: "fonts__drawchar" label: "Drawchar\n/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:3:4\n104 bytes (static)" }
+edge: { sourcename: "fonts__drawchar" targetname: "st7735r__set_pixel" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:26:16" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:26:36" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:25:35" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:23:20" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:23:20" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_last_chance_handler" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:20:14" }
+edge: { sourcename: "fonts__drawchar" targetname: "st7735r__fill_region" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:18:10" }
+edge: { sourcename: "fonts__drawchar" targetname: "fonts__getchar" label: "/backup/ada/STM32/F/F103/aqi3/src/fonts.adb:16:7" }
+node: { title: "fonts__font_arrayIP" label: "Font_Arrayip\n/backup/ada/STM32/F/F103/aqi3/src/fonts.ads:4:9\n16 bytes (static)" }
+}
