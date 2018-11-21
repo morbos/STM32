@@ -72,8 +72,8 @@ procedure Aqi is
 
    Gui : Gui_Array := (
                        ("AQI    : ", 999),
-                       ("pm2.5  : ", 999),
                        ("pm1    : ", 999),
+                       ("pm2.5  : ", 999),
                        ("pm10   : ", 999));
 
    Display : ST7735R_Screen (Port => Selected_SPI_Port,
@@ -209,10 +209,10 @@ begin
             for J in 1 .. 4 loop
                if Data_Impure (J) then
                   X := 20;
-                  Y := UInt16 (J * 20);
+                  Y := UInt16 (J * 20) + 10;
                   DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
                   X := 20;
-                  Y := UInt16 (J * 20);
+                  Y := UInt16 (J * 20) + 10;
                   DrawString (Display, X, Y, Gui (J).Str & Gui (J).Val'Image, ST7735_BLUE, ST7735_BLACK);
                end if;
             end loop;
