@@ -1,4 +1,0 @@
-graph: { title: "/backup/ada/STM32/F/F103/aqi3/src/fonts-font2.ads"
-node: { title: "fonts__font2__Tchrtbl_f16_tBIP" label: "Tchrtbl_F16_Tbip\n/backup/ada/STM32/F/F103/aqi3/src/fonts-font2.ads:513:4\n24 bytes (static)" }
-node: { title: "fonts__font2__Twidth_font2_arrayBIP" label: "Twidth_Font2_Arraybip\n/backup/ada/STM32/F/F103/aqi3/src/fonts-font2.ads:9:4\n16 bytes (static)" }
-}
