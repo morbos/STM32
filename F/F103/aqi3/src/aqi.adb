@@ -38,9 +38,7 @@ procedure Aqi is
    type Uart_Frame is record
       Magic      : UInt16; --  0
       Len        : UInt16; --  1
-      Pm1_Std    : UInt16; --  2
-      Pm2_5_Std  : UInt16; --  3
-      Pm10_Std   : UInt16; --  4
+      Pm         : UInt16_Array (1 .. 3);
       Pm1_Conc   : UInt16; --  5
       Pm2_5_Conc : UInt16; --  6
       Pm10_Conc  : UInt16; --  7
@@ -64,6 +62,19 @@ procedure Aqi is
 
    --  Per the datasheet for the PSM7003
    Magic_Num : constant UInt8_Array (1 .. 2) := (16#42#, 16#4d#);
+
+   type GuiT is record
+      Str : String (1 .. 9);
+      Val : UInt16;
+   end record;
+
+   type Gui_Array is array (1 .. 4) of GuiT;
+
+   Gui : Gui_Array := (
+                       ("AQI    : ", 999),
+                       ("pm2.5  : ", 999),
+                       ("pm1    : ", 999),
+                       ("pm10   : ", 999));
 
    Display : ST7735R_Screen (Port => Selected_SPI_Port,
                              CS   => CS_Pin'Access,
@@ -127,14 +138,15 @@ procedure Aqi is
       end if;
    end Check_Valid;
 
-   Pm25      : UInt16;
-   Slot      : Aq_Range;
-   AqiVal    : Float;
-   AqiInt    : UInt16;
-   X         : UInt16;
-   Y         : UInt16;
-   First     : Boolean  := True;
-   Last      : Aq_Range := Aq_Range'Last;
+   Slot        : Aq_Range;
+   AqiVal      : Float;
+   X           : UInt16;
+   Y           : UInt16;
+   First       : Boolean  := True;
+   LastSlot    : Aq_Range := Aq_Range'Last;
+   LastData    : UInt16_Array (1 .. 4) := (999, 999, 999, 999);
+   Data_Impure : array (1 .. 4) of Boolean := (others => False);
+   Slot_Impure : Boolean := True;
 begin
    Initialize_Board;
 
@@ -169,42 +181,41 @@ begin
       end;
       if Check_Valid then
          Turn_Off (Green_LED);
-         Swap (Frm.Pm2_5_Std);
-         Pm25 := Frm.Pm2_5_Std;
-         if Compute_Aqi (Pm25, Slot, AqiVal) then
-            if First or Slot /= Last then
-               Swap (Frm.Pm1_Std);
-               Swap (Frm.Pm10_Std);
-               AqiInt := UInt16 (AqiVal);
+         for J in 1 .. 3 loop
+            Swap (Frm.Pm (J));
+            Gui (J + 1).Val := Frm.Pm (J);
+         end loop;
+         if Compute_Aqi (Frm.Pm (2), Slot, AqiVal) then
+            Gui (1).Val := UInt16 (AqiVal);
+            for J in 1 .. 4 loop
+               if LastData (J) /= Gui (J).Val then
+                  Data_Impure (J) := True;
+               else
+                  Data_Impure (J) := False;
+               end if;
+               LastData (J) := Gui (J).Val;
+            end loop;
+            if First or Slot /= LastSlot then
+               Slot_Impure := True;
+               First := False;
+            end if;
+
+            if Slot_Impure then
                DrawRect (Display, 10, 10, 110, 124, AqA (Slot).Colour);
                DrawRect (Display, 11, 11, 108, 122, AqA (Slot).Colour);
-               X := 20;
-               Y := 30;
-               DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 30;
-               DrawString (Display, X, Y, "AQI    : " & AqiInt'Image, ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 50;
-               DrawString (Display, X, Y, "              ", ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 50;
-               DrawString (Display, X, Y, "pm2.5 : " & Pm25'Image, ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 70;
-               DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 70;
-               DrawString (Display, X, Y, "pm1   : " & Frm.Pm1_Std'Image, ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 90;
-               DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
-               X := 20;
-               Y := 90;
-               DrawString (Display, X, Y, "pm10  : " & Frm.Pm10_Std'Image, ST7735_BLUE, ST7735_BLACK);
-               First := False;
-               Last := Slot;
+               LastSlot := Slot;
             end if;
+
+            for J in 1 .. 4 loop
+               if Data_Impure (J) then
+                  X := 20;
+                  Y := UInt16 (J * 20);
+                  DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
+                  X := 20;
+                  Y := UInt16 (J * 20);
+                  DrawString (Display, X, Y, Gui (J).Str & Gui (J).Val'Image, ST7735_BLUE, ST7735_BLACK);
+               end if;
+            end loop;
          end if;
       else
          Turn_On (Green_LED);
