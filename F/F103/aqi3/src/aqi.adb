@@ -35,21 +35,32 @@ procedure Aqi is
                                (250.5, 350.4, 301, 400, ST7735_MAROON),
                                (350.5, 500.4, 401, 500, ST7735_MAROON));
 
+   type PM_Select is
+     (PM1_0,
+      PM2_5,
+      PM10_0);
+
+   type Aq_Select is
+     (AQI_Value,
+      PM1_0_Value,
+      PM2_5_Value,
+      PM10_0_Value);
+
+   type PM_Array is array (PM_Select range PM1_0 .. PM10_0) of UInt16;
+
    type Uart_Frame is record
-      Magic      : UInt16; --  0
-      Len        : UInt16; --  1
-      Pm         : UInt16_Array (1 .. 3);
-      Pm1_Conc   : UInt16; --  5
-      Pm2_5_Conc : UInt16; --  6
-      Pm10_Conc  : UInt16; --  7
-      N_0_3      : UInt16; --  8
-      N_0_5      : UInt16; --  9
-      N_1_0      : UInt16; --  10
-      N_2_5      : UInt16; --  11
-      N_5_0      : UInt16; --  12
-      N_10_0     : UInt16; --  13
-      Reserved   : UInt16; --  14
-      Csum       : UInt16; --  15
+      Magic      : UInt16;   --  0
+      Len        : UInt16;   --  1
+      Pm_Ug      : PM_Array; --  2 .. 4
+      Pm1_Conc   : PM_Array; --  5 .. 7
+      N_0_3      : UInt16;   --  8
+      N_0_5      : UInt16;   --  9
+      N_1_0      : UInt16;   --  10
+      N_2_5      : UInt16;   --  11
+      N_5_0      : UInt16;   --  12
+      N_10_0     : UInt16;   --  13
+      Reserved   : UInt16;   --  14
+      Csum       : UInt16;   --  15
    end record
      with Pack;
 
@@ -68,7 +79,7 @@ procedure Aqi is
       Val : UInt16;
    end record;
 
-   type Gui_Array is array (1 .. 4) of GuiT;
+   type Gui_Array is array (AQI_Value .. PM10_0_Value) of GuiT;
 
    Gui : Gui_Array := (
                        ("AQI    : ", 999),
@@ -144,7 +155,7 @@ procedure Aqi is
    Y           : UInt16;
    First       : Boolean  := True;
    LastSlot    : Aq_Range := Aq_Range'Last;
-   LastData    : UInt16_Array (1 .. 4) := (999, 999, 999, 999);
+   LastData    : array (Aq_Select range AQI_Value .. PM10_0_Value) of UInt16 := (999, 999, 999, 999);
 begin
    Initialize_Board;
 
@@ -179,13 +190,13 @@ begin
       end;
       if Check_Valid then
          Turn_Off (Green_LED);
-         for J in 1 .. 3 loop
-            Swap (Frm.Pm (J));
-            Gui (J + 1).Val := Frm.Pm (J);
+         for J in PM_Select loop
+            Swap (Frm.Pm_Ug (J));
+            Gui (Aq_Select'Val (PM_Select'Pos (J) + 1)).Val := Frm.Pm_Ug (J);
          end loop;
          --  Handle AQI and the coloured rectangle resulting
-         if Compute_Aqi (Frm.Pm (2), Slot, AqiVal) then
-            Gui (1).Val := UInt16 (AqiVal);
+         if Compute_Aqi (Frm.Pm_Ug (PM2_5), Slot, AqiVal) then
+            Gui (AQI_Value).Val := UInt16 (AqiVal);
             if First or Slot /= LastSlot then
                First := False;
                DrawRect (Display, 10, 10, 110, 124, AqA (Slot).Colour);
@@ -193,13 +204,13 @@ begin
                LastSlot := Slot;
             end if;
          end if;
-         for J in 1 .. 4 loop
+         for J in Aq_Select loop
             if LastData (J) /= Gui (J).Val then
                X := 25;
-               Y := UInt16 (J * 20) + 10;
+               Y := UInt16 ((Aq_Select'Pos (J) + 1) * 20) + 10;
                DrawString (Display, X, Y, "               ", ST7735_BLUE, ST7735_BLACK);
                X := 25;
-               Y := UInt16 (J * 20) + 10;
+               Y := UInt16 ((Aq_Select'Pos (J) + 1) * 20) + 10;
                DrawString (Display, X, Y, Gui (J).Str & Gui (J).Val'Image, ST7735_BLUE, ST7735_BLACK);
             end if;
             LastData (J) := Gui (J).Val;
