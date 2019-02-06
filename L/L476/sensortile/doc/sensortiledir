@@ -1,0 +1,10 @@
+.1 sensortile.
+.2 obj.
+.3 Debug.
+.2 src.
+.3 comm.
+.4 bt.
+.5 hci.
+.6 controller.
+.5 utils.
+.3 sensors.

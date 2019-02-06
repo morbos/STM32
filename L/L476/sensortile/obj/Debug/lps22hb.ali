@@ -1,0 +1,244 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lps22hb%b		lps22hb.adb		269fd178 NE OO PK GE IU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W utils%s		utils.adb		utils.ali
+
+U lps22hb%s		lps22hb.ads		bb1be8bb BN EE NE OO PK GE
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20180628182813 76789da1 ada%s
+D a-except.ads		20180628182814 291912d5 ada.exceptions%s
+D a-finali.ads		20180628182815 bf4f806b ada.finalization%s
+D a-reatim.ads		20180628181410 4c16970e ada.real_time%s
+D a-stream.ads		20180628182818 119b8fb3 ada.streams%s
+D a-tags.ads		20180628182822 491b781d ada.tags%s
+D a-unccon.ads		20180628182822 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-spi.ads		20180712235727 73427149 hal.spi%s
+D interfac.ads		20180628182831 5ab55268 interfaces%s
+D i-bit_types.ads	20180628184650 bd94d513 interfaces.bit_types%s
+D lps22hb.ads		20190124184027 496fde1b lps22hb%s
+D lps22hb.adb		20190124184021 ff2f3218 lps22hb%b
+D system.ads		20180628180938 db831581 system%s
+D s-bb.ads		20180628182833 09e072ae system.bb%s
+D s-bbbopa.ads		20181110012014 465a95d8 system.bb.board_parameters%s
+D s-bbbosu.ads		20180628181412 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20180628181412 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20180628181413 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20181124052307 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20180628213523 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20180628181414 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20180628181413 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20180628181414 ad086247 system.bb.time%s
+D s-finmas.ads		20180628182840 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180628182841 4ff27390 system.finalization_root%s
+D s-multip.ads		20180628181415 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20180628181416 229b14dd system.os_interface%s
+D s-parame.ads		20180628182902 d106111e system.parameters%s
+D s-pooglo.ads		20180628182902 ede33ef8 system.pool_global%s
+D s-stalib.ads		20180628182906 09bd3940 system.standard_library%s
+D s-stm32.ads		20170610185421 4ab394a4 system.stm32%s
+D s-stoele.ads		20180628182906 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20180628182907 b16154c2 system.storage_pools%s
+D s-traent.ads		20180628182909 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180628182909 34867c83 system.unsigned_types%s
+D utils.ads		20190119014505 dcc9aa75 utils%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 1 ada.ads
+16K9*Ada 20e8 13|2r6 2r25
+X 4 a-reatim.ads
+41K13*Real_Time 182e18 13|2w10 2r29
+51M9*Time<24|46M9>
+61I9*Time_Span<24|81I9>
+68V13*Clock{51M9}<24|134p13> 13|50s19 67s19
+72V14*"+"{51M9} 13|50s25 67s25
+128V13*Milliseconds{61I9} 13|50s27 67s27
+X 8 hal.ads
+34K9*HAL 166e8 12|3r6 3r22 5r5
+53M9*UInt8<10|63M9> 12|15r18 16r22 21r18 22r18 25r59 30r18 239r61 243r62
+. 13|9r61 11r16 17r62 19r16 35r14 36r14
+66M9*UInt16<10|66M9> 13|61r18
+97M9*UInt32<10|74M9> 13|63r18
+162A9*UInt8_Array(53M9)<integer>
+X 9 hal-spi.ads
+32K13*SPI 95e12 12|3w10 3r26
+X 10 interfac.ads
+38K9*Interfaces 184e15 12|2w6 2r22
+49I9*Integer_16<short_integer> 13|62r18
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 12 lps22hb.ads
+9H9 IO_Port 11r35
+11P9 Any_IO_Port(9R9) 14r18 20r18 29r18 38r41 261r41
+13U19 Read 14>7 15>7 16<7 13|13s7 21s7
+14*7 This{11P9}
+15m7 Register{8|53M9}
+16m7 Value{8|53M9} 13|13r42 21r40
+19U19 Write 20>7 21>7 22>7 13|49s7 51s7 66s7
+20*7 This{11P9}
+21m7 Register{8|53M9}
+22m7 Value{8|53M9}
+25A9 Sensor_Data_Buffer(8|53M9)<integer> 31r22 13|60r18
+28U19 Read_Buffer 29>7 30>7 31<7 13|68s7
+29*7 This{11P9}
+30m7 Register{8|53M9}
+31*7 Value{25A9}
+36k9*LPS22HB 9z9 11z9 13z19 19z19 25z9 28z19 261E9 285l5 285e12 13|4b14 79l5
+. 79t12
+38R9*LPS22HB_Sensor 38d25 239p13 239r38 243p13 243r39 245p14 245r38 247p14
+. 248r29 261c9 264e14 13|9r38 17r39 26r29 58r38
+38*25 Port{11P9} 261r25 13|13r18 21r18 49r19 51r19 66r19 68r25
+41E9*SPI_Serial_Interface_Mode_Selection 43e30 45r8 254r22 13|32r22
+42n7*Serial_Interface_4Wire{41E9} 46r7
+43n7*Serial_Interface_3Wire{41E9} 47r7
+49E9*Block_Data_Update_Selection 52e7 54r8 253r22 13|31r22
+50n7*BDU_Continuous{49E9} 55r7
+51n7*BDU_After_MSB_LSB_Rd{49E9} 56r7
+59E9*Low_Pass_Config_Selection 64e7 67r8
+60n7*ODR_By_2{59E9} 68r7
+61n7*ODR_By_2_Alt{59E9} 69r7
+62n7*ODR_By_9{59E9} 70r7
+63n7*ODR_By_20{59E9} 71r7
+74E9*Data_Rate_Power_Mode_Selection 81e7 83r8 249r22 13|27r22
+75n7*Power_Down{74E9} 84r7
+76n7*ODR_1Hz{74E9} 85r7
+77n7*ODR_10Hz{74E9} 86r7
+78n7*ODR_25Hz{74E9} 87r7
+79n7*ODR_50Hz{74E9} 88r7
+80n7*ODR_75Hz{74E9} 89r7
+94E9*One_Shot_Selection 97e7 99r8
+95n7*One_Shot_Idle{94E9} 100r7
+96n7*One_Shot_Acquire{94E9} 101r7
+104E9*SW_Reset_Selection 107e7 109r8
+105n7*Normal{104E9} 110r7
+106n7*SW_Reset{104E9} 111r7 13|47r9
+114E9*I2C_Selection 117e7 119r8 252r22 13|30r22
+115n7*Enabled{114E9} 120r7
+116n7*Disabled{114E9} 121r7
+124E9*Auto_Inc_Selection 127e7 129r8 251r22 13|29r22
+125n7*Disabled{124E9} 130r7
+126n7*Enabled{124E9} 131r7
+134E9*Fifo_Stop_Selection 137e7 139r8
+135n7*Disabled{134E9} 140r7
+136n7*Enabled{134E9} 141r7
+144E9*Fifo_Enable_Selection 147e7 149r8 250r22 13|28r22
+145n7*Disabled{144E9} 150r7
+146n7*Enabled{144E9} 151r7
+154E9*Boot_Selection 157e7 159r8
+155n7*Normal{154E9} 160r7
+156n7*Reboot{154E9} 161r7
+165E9*Int_Sx_Selection 170e7 172r8
+166n7*Data_Signal{165E9} 173r7
+167n7*P_High{165E9} 174r7
+168n7*P_Low{165E9} 175r7
+169n7*P_Low_Or_High{165E9} 176r7
+179E9*Data_Ready_Int_Selection 182e7 184r8
+180n7*Disable{179E9} 185r7
+181n7*Enable{179E9} 186r7
+189E9*Fifo_Overrun_Int_Selection 192e7 194r8
+190n7*Disable{189E9} 195r7
+191n7*Enable{189E9} 196r7
+199E9*Fifo_Watermark_Int_Selection 202e7 204r8
+200n7*Disable{199E9} 205r7
+201n7*Enable{199E9} 206r7
+209E9*Fifo_Full_Int_Selection 212e7 214r8
+210n7*Disable{209E9} 215r7
+211n7*Enable{209E9} 216r7
+219E9*Int_Pad_Selection 222e7 224r8
+220n7*Push_Pull{219E9} 225r7
+221n7*Open_Drain{219E9} 226r7
+229E9*Int_Stance_Selection 232e7 234r8
+230n7*Active_High{229E9} 235r7
+231n7*Active_Low{229E9} 236r7
+239V13*Device_Id{8|53M9} 239=24 13|9b13 15l8 15t17 53s15
+239r24 This{38R9} 13|9b24 13r13
+243V13*Get_Status{8|53M9} 243=25 13|17b13 23l8 23t18
+243r25 This{38R9} 13|17b25 21r13
+245U14*Get_Data 245=24 245<54 245<76 13|58b14 77l8 77t16
+245r24 This{38R9} 13|58b24 66r14 68r20
+245f54 Pressure{float} 13|58b54 74m7
+245f76 Temp{float} 13|58b76 76m7
+247U14*Configure 248=7 249>7 250>7 251>7 252>7 253>7 254>7 13|25b14 56l8
+. 56t17
+248r7 This{38R9} 13|26b7 49r14 51r14 53m10 53r10
+249e7 ODR{74E9} 13|27b7 39r9
+250e7 Fifo_Enable{144E9} 13|28b7 44r9
+251e7 Auto_Inc{124E9} 13|29b7 45r9
+252e7 I2C_Stance{114E9} 13|30b7 46r9
+253e7 BDU{49E9} 13|31b7 40r9
+254e7 SPI_Wire{41E9} 13|32b7 41r9
+257N4*I_Am_LPS22HB 13|53r28
+263i7 Mode{natural}
+267N4 LPS22HB_WHO_AM_I 13|13r24
+268N4 LPS22HB_CTRL_REG1 13|51r25
+269N4 LPS22HB_CTRL_REG2 13|49r25 66r25
+270N4 LPS22HB_FIFO_CTRL
+271N4 LPS22HB_REF_P
+273N4 LPS22HB_RES_CONF
+275N4 LPS22HB_FIFO_STATUS
+276N4 LPS22HB_STATUS 13|21r24
+277N4 LPS22HB_PRESS_OUT 13|68r31
+278N4 LPS22HB_PRESS_OUT_XL
+279N4 LPS22HB_PRESS_OUT_L
+280N4 LPS22HB_PRESS_OUT_H
+281N4 LPS22HB_TEMP_OUT
+282N4 LPS22HB_TEMP_OUT_L
+283N4 LPS22HB_TEMP_OUT_H
+X 13 lps22hb.adb
+11m7 Result{8|53M9} 13m51 14r14
+19m7 Result{8|53M9} 21m49 22r14
+35m7 Reg1{8|53M9} 38m7 51r44
+36m7 Reg2{8|53M9} 43m7 49r44
+60*7 Buffer{12|25A9} 68m50 69r18 70r18 71r18 75r41 75r60
+61m7 Result{8|66M9}
+62i7 Raw_Temp{10|49I9} 75m7 76r22
+63m7 Result32{8|97M9} 73m34 74r26
+64a7 Dat{37|11A9} 69m7 70m7 71m7 72m7 73r29
+X 14 system.ads
+50K9*System 12|1w6 14|164e11
+X 24 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 37 utils.ads
+5K9*Utils 13|1w6 1r25 37|67e10
+11A9*Four_UInt8<8|162A9>(8|53M9)<integer> 13|64r18
+37V13*To_Integer_16{10|49I9} 13|75s19
+37m28 MSB{8|53M9} 13|75r53
+37m42 LSB{8|53M9} 13|75r34
+47U14*To_UInt32_From_UInt8 13|73s7
+

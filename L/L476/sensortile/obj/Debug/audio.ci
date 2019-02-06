@@ -1,0 +1,71 @@
+edge: { sourcename: "audio__TTpcm1774SCFD"
+  targetname: "-9:pcm1774_i2c__pcm1774_codec,pcm1774_i2c__pcm1774_codec"
+  label: "audio.ads:17:4"
+}
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb"
+node: { title: "pcm1774_i2c__pcm1774_codecIP" label: "Pcm1774_Codecip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/pcm1774.ads:628:9" shape : ellipse }
+node: { title: "stm32__dma__enable" label: "ENABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:102:14" shape : ellipse }
+node: { title: "stm32__dma__configure_data_flow" label: "CONFIGURE_DATA_FLOW\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:148:14" shape : ellipse }
+node: { title: "stm32__dma__clear_status" label: "CLEAR_STATUS\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:329:14" shape : ellipse }
+node: { title: "stm32__sai__enable_dma" label: "ENABLE_DMA\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-sai.ads:278:14" shape : ellipse }
+node: { title: "stm32__sai__enable" label: "ENABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-sai.ads:268:14" shape : ellipse }
+node: { title: "stm32__dma__start_transfer_with_interrupts" label: "START_TRANSFER_WITH_INTERRUPTS\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:214:14" shape : ellipse }
+node: { title: "stm32__sai__configure_block_slot" label: "CONFIGURE_BLOCK_SLOT\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-sai.ads:324:14" shape : ellipse }
+node: { title: "stm32__sai__configure_block_frame" label: "CONFIGURE_BLOCK_FRAME\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-sai.ads:315:14" shape : ellipse }
+node: { title: "stm32__sai__configure_audio_block" label: "CONFIGURE_AUDIO_BLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-sai.ads:298:14" shape : ellipse }
+node: { title: "stm32__sai__disable" label: "DISABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-sai.ads:273:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_alternate_function__2" label: "CONFIGURE_ALTERNATE_FUNCTION\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:255:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io__2" label: "CONFIGURE_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:243:14" shape : ellipse }
+node: { title: "stm32__dma__clear_all_status" label: "CLEAR_ALL_STATUS\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:337:14" shape : ellipse }
+node: { title: "stm32__dma__configure" label: "CONFIGURE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:503:14" shape : ellipse }
+node: { title: "stm32__dma__disable" label: "DISABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-dma.ads:110:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__11" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x6/stm32-device.ads:386:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__3" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x6/stm32-device.ads:66:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__5" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x6/stm32-device.ads:98:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "ada__numerics__short_elementary_functions__sin" label: "Sin\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/math/a-ngelfu.ads:93:13" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "system__fat_sflt__attr_short_float__ceiling" label: "Ceiling\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-fatgen.ads:56:13" shape : ellipse }
+node: { title: "audio___elabs" label: "Audio\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:12:1\n8 bytes (static)" }
+edge: { sourcename: "audio___elabs" targetname: "pcm1774_i2c__pcm1774_codecIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:17:4" }
+node: { title: "DMA1_CH6_IRQ" label: "Audio_Buffer_Reload\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:182:4\n16 bytes (static)" }
+edge: { sourcename: "DMA1_CH6_IRQ" targetname: "stm32__dma__enable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:196:7" }
+edge: { sourcename: "DMA1_CH6_IRQ" targetname: "stm32__dma__configure_data_flow" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:189:7" }
+edge: { sourcename: "DMA1_CH6_IRQ" targetname: "stm32__dma__disable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:187:7" }
+edge: { sourcename: "DMA1_CH6_IRQ" targetname: "stm32__dma__clear_status" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:185:7" }
+node: { title: "audio__setfreq" label: "Setfreq\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:140:4\n48 bytes (static)" }
+edge: { sourcename: "audio__setfreq" targetname: "audio__initialize_wave" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:174:7" }
+node: { title: "audio__initialize_audio" label: "Initialize_Audio\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:40:4\n160 bytes (static)" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__sai__enable_dma" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:134:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__sai__enable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:133:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__dma__start_transfer_with_interrupts" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:124:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__sai__configure_block_slot" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:116:16" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__sai__configure_block_frame" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:107:16" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__sai__configure_audio_block" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:90:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__sai__disable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:88:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__gpio__configure_alternate_function__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:86:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__gpio__configure_io__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:80:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__dma__clear_all_status" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:78:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__dma__configure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:62:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__dma__disable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:61:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__device__enable_clock__11" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:60:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__device__enable_clock__3" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:57:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "stm32__device__enable_clock__5" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:56:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "audio__initialize_wave" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:51:7" }
+edge: { sourcename: "audio__initialize_audio" targetname: "audio__initialize_wave" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:46:7" }
+node: { title: "audio__initialize_wave" label: "Initialize_Wave\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:15:4\n56 bytes (static)" }
+edge: { sourcename: "audio__initialize_wave" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:32:48" }
+edge: { sourcename: "audio__initialize_wave" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:32:10" }
+edge: { sourcename: "audio__initialize_wave" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:31:48" }
+edge: { sourcename: "audio__initialize_wave" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:31:10" }
+edge: { sourcename: "audio__initialize_wave" targetname: "ada__numerics__short_elementary_functions__sin" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:30:15" }
+edge: { sourcename: "audio__initialize_wave" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:28:35" }
+edge: { sourcename: "audio__initialize_wave" targetname: "system__fat_sflt__attr_short_float__ceiling" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:28:35" }
+node: { title: "audio__TsamplesizeBIP" label: "Tsamplesizebip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.adb:8:4\n16 bytes (static)" }
+node: { title: "audio__Tsample_buffersBIP" label: "Tsample_Buffersbip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:27:4\n16 bytes (static)" }
+node: { title: "audio__Tvalue_arrayBIP" label: "Tvalue_Arraybip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:26:4\n16 bytes (static)" }
+node: { title: "audio__sampleIP" label: "Sampleip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:21:9\n24 bytes (static)" }
+node: { title: "audio__TTpcm1774SCFD" label: "Ttpcm1774scfd\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:17:4\n32 bytes (static)" }
+edge: { sourcename: "audio__TTpcm1774SCFD" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:17:4" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+}

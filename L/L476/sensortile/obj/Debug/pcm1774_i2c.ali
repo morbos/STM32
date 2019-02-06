@@ -1,0 +1,120 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U pcm1774_i2c%b		pcm1774_i2c.ads		6e8fe6f2 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_conversion%s
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z log%s			log.adb			log.ali
+W pcm1774%s		pcm1774.adb		pcm1774.ali  ED
+W pcm1774_i2c_io%s	pcm1774_i2c_io.adb	pcm1774_i2c_io.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+Z utils%s		utils.adb		utils.ali
+
+U pcm1774_i2c%s		pcm1774_i2c.ads		da4e6f63 EB EE OO PK IU
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W pcm1774%s		pcm1774.adb		pcm1774.ali
+W pcm1774_i2c_io%s	pcm1774_i2c_io.adb	pcm1774_i2c_io.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20180628182813 76789da1 ada%s
+D a-except.ads		20180628182814 291912d5 ada.exceptions%s
+D a-finali.ads		20180628182815 bf4f806b ada.finalization%s
+D a-reatim.ads		20180628181410 4c16970e ada.real_time%s
+D a-stream.ads		20180628182818 119b8fb3 ada.streams%s
+D a-tags.ads		20180628182822 491b781d ada.tags%s
+D a-unccon.ads		20180628182822 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D interfac.ads		20180628182831 5ab55268 interfaces%s
+D i-bit_types.ads	20180628184650 bd94d513 interfaces.bit_types%s
+D log.ads		20190124190106 81eeead1 log%s
+D pcm1774.ads		20190201013819 8dec4fcd pcm1774%s
+D pcm1774.adb		20190203013300 046c49ae pcm1774%b
+D pcm1774_i2c.ads	20181216015722 6e8fe6f2 pcm1774_i2c%s
+D pcm1774_i2c.ads	20181216015722 6e8fe6f2 pcm1774_i2c%b
+D pcm1774_i2c_io.ads	20190124184241 1cb83f6a pcm1774_i2c_io%s
+D system.ads		20180628180938 db831581 system%s
+D s-bb.ads		20180628182833 09e072ae system.bb%s
+D s-bbbopa.ads		20181110012014 465a95d8 system.bb.board_parameters%s
+D s-bbbosu.ads		20180628181412 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20180628181412 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20180628181413 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20181124052307 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20180628213523 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20180628181414 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20180628181413 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20180628181414 ad086247 system.bb.time%s
+D s-finmas.ads		20180628182840 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180628182841 4ff27390 system.finalization_root%s
+D s-multip.ads		20180628181415 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20180628181416 229b14dd system.os_interface%s
+D s-parame.ads		20180628182902 d106111e system.parameters%s
+D s-pooglo.ads		20180628182902 ede33ef8 system.pool_global%s
+D s-secsta.ads		20180628182905 56a2861c system.secondary_stack%s
+D s-stalib.ads		20180628182906 09bd3940 system.standard_library%s
+D s-stm32.ads		20170610185421 4ab394a4 system.stm32%s
+D s-stoele.ads		20180628182906 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20180628182906 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20180628182907 b16154c2 system.storage_pools%s
+D s-stratt.ads		20180628182907 aedef97e system.stream_attributes%s
+D s-traent.ads		20180628182909 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180628182909 34867c83 system.unsigned_types%s
+D utils.ads		20190119014505 dcc9aa75 utils%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 8 hal.ads
+34K9*HAL 166e8 16|2r6 2r27 3w6
+X 9 hal-i2c.ads
+32K13*I2C 84e12 16|2w10 2r31
+X 13 pcm1774.ads
+7H9 IO_Port 16|8r4
+9P9 Any_IO_Port(7R9) 16|9r4
+30k9*PCM1774 659e12 16|5w6 7r28
+X 16 pcm1774_i2c.ads
+7K9*PCM1774_I2C[13|30]
+X 17 pcm1774_i2c_io.ads
+4K9*PCM1774_I2C_IO 16|1w6 1r27 17|28e19
+6R9*IO_Port 16|8r26 17|9e14
+11P9*Any_IO_Port(6R9) 16|9r26
+13U14*Read 13|11i19
+18U14*Write 13|17i19
+23U14*Read_Buffer 13|23i19
+

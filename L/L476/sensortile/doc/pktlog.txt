@@ -1,0 +1,55 @@
+ISR @0 6
+"proprietary event"
+SENDCMD @8 4 0 ogf 4 ocf 1 OGF_INFO_PARAM OCF_READ_LOCAL_VERSION plen 0
+ISR @15 15
+"EVT_CMD_COMPLETE_CODE"
+[04,001]
+status 00
+hci_version 07
+hci_revision 3107
+lmp_pal_version 07
+manufacturer name 0030
+lmp_pal_subversion 2323
+ISR @32 6
+"proprietary event"
+SENDCMD @40 4 0 ogf 3f ocf 101 OGF_VENDOR_CMD OCF_GATT_INIT plen 0
+ISR @47 7
+"EVT_CMD_COMPLETE_CODE"
+[3f,101]
+status 00
+SENDCMD @56 4 3 ogf 3f ocf 8a OGF_VENDOR_CMD OCF_GAP_INIT plen 3
+ISR @66 13
+"EVT_CMD_COMPLETE_CODE"
+[3f,08a]
+status 00
+service_handle 0005
+dev_name_char_handle 0006
+appearance_char_handle 0008
+SENDCMD @81 4 6 ogf 8 ocf 5 OGF_LE_CTL OCF_LE_SET_RANDOM_ADDRESS plen 6
+ISR @94 7
+"EVT_CMD_COMPLETE_CODE"
+[08,005]
+status 00
+SENDCMD @103 4 13 ogf 3f ocf 106 OGF_VENDOR_CMD OCF_GATT_UPD_CHAR_VAL plen 13
+ts 614d: servh 0005 charh 0006 cvo 0 cvl 7
+6b 65 41 64 61
+ISR @123 7
+"EVT_CMD_COMPLETE_CODE"
+[3f,106]
+status 00
+SENDCMD @132 4 26 ogf 3f ocf 86 OGF_VENDOR_CMD OCF_GAP_SET_AUTH_REQUIREMENT plen 26
+ISR @165 7
+"EVT_CMD_COMPLETE_CODE"
+[3f,086]
+status 00
+SENDCMD @174 4 2 ogf 3f ocf f OGF_VENDOR_CMD OCF_HAL_SET_TX_POWER_LEVEL plen 2
+ISR @183 7
+"EVT_CMD_COMPLETE_CODE"
+[3f,00f]
+status 00
+SENDCMD @192 4 19 ogf 3f ocf 102 OGF_VENDOR_CMD OCF_GATT_ADD_SERV plen 19
+ISR @218 9
+"EVT_CMD_COMPLETE_CODE"
+[3f,102]
+status 00
+handle 000c

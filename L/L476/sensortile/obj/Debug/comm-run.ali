@@ -1,0 +1,561 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_TASKS=1
+
+U comm.run%b		comm-run.adb		236cc501 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.short_elementary_functions%s  a-nselfu.ads  a-nselfu.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W audio%s		audio.adb		audio.ali
+W ble_status%s		ble_status.ads		ble_status.ali
+W bluenrg_aci%s		bluenrg_aci.ads		bluenrg_aci.ali
+W bluenrg_gap%s		bluenrg_gap.ads		bluenrg_gap.ali
+W bluenrg_gap_aci%s	bluenrg_gap_aci.adb	bluenrg_gap_aci.ali
+W bluenrg_gatt_aci%s	bluenrg_gatt_aci.adb	bluenrg_gatt_aci.ali
+W comm%s		comm.adb		comm.ali
+W comm.setup%s		comm-setup.adb		comm-setup.ali
+W interfaces%s		interfac.ads		interfac.ali
+W main%s		main.adb		main.ali
+W sensors%s		sensors.adb		sensors.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.timers%s	stm32-timers.adb	stm32-timers.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+
+U comm.run%s		comm-run.ads		d234e197 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.synchronous_task_control%s  a-sytaco.adb	a-sytaco.ali
+W bluenrg_l2cap_aci%s	bluenrg_l2cap_aci.adb	bluenrg_l2cap_aci.ali
+W comm%s		comm.adb		comm.ali
+W hal%s			hal.ads			hal.ali
+W hci%s			hci.adb			hci.ali
+W hci_le%s		hci_le.adb		hci_le.ali
+W system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+T 0 1
+
+D ada.ads		20180628182813 76789da1 ada%s
+D a-except.ads		20180628182814 291912d5 ada.exceptions%s
+D a-finali.ads		20180628182815 bf4f806b ada.finalization%s
+D a-numeri.ads		20180628180019 bb51c45a ada.numerics%s
+D a-ngelfu.ads		20180628180021 ac447086 ada.numerics.generic_elementary_functions%s
+D a-nselfu.ads		20180628180019 7d457e41 ada.numerics.short_elementary_functions%s
+D a-reatim.ads		20180628181410 4c16970e ada.real_time%s
+D a-stream.ads		20180628182818 119b8fb3 ada.streams%s
+D a-sytaco.ads		20180628181411 e57638e1 ada.synchronous_task_control%s
+D a-tags.ads		20180628182822 491b781d ada.tags%s
+D a-taside.ads		20180628181411 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20180628182822 0e9b276f ada.unchecked_conversion%s
+D audio.ads		20190203212815 f79db59f audio%s
+D ble_status.ads	20190102214249 4b2a7901 ble_status%s
+D bluenrg.ads		20190124185254 d121dbee bluenrg%s
+D bluenrg_aci.ads	20190123230032 04a442f7 bluenrg_aci%s
+D bluenrg_gap.ads	20190123230052 232b6eef bluenrg_gap%s
+D bluenrg_gap_aci.ads	20190125001335 9a13392c bluenrg_gap_aci%s
+D bluenrg_gatt_aci.ads	20190125001202 0432ad6f bluenrg_gatt_aci%s
+D bluenrg_hal_aci.ads	20190125001011 76ec3cd7 bluenrg_hal_aci%s
+D bluenrg_l2cap_aci.ads	20190124015515 0f07b759 bluenrg_l2cap_aci%s
+D bluenrg_spi.ads	20190124185341 7e0cb3f5 bluenrg_spi%s
+D bluenrg_spi_io.ads	20190124185358 043d6831 bluenrg_spi_io%s
+D comm.ads		20190124000932 e6cc5f4b comm%s
+D comm-run.ads		20190124013821 e40c2ed6 comm.run%s
+D comm-run.adb		20190203212515 cc013b33 comm.run%b
+D comm-setup.ads	20190123234641 9dc97a42 comm.setup%s
+D gen_list.ads		20190124190033 4741cd9a gen_list%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hal-gpio.ads		20170625184526 146364b8 hal.gpio%s
+D hal-i2c.ads		20170625184526 0ed73138 hal.i2c%s
+D hal-spi.ads		20180712235727 73427149 hal.spi%s
+D hci.ads		20190125001214 9a179a38 hci%s
+D hci_le.ads		20190124185919 50535805 hci_le%s
+D hts221.ads		20190120214356 bc7f8306 hts221%s
+D hts221_i2c.ads	20181106204322 2a3c40a8 hts221_i2c%s
+D hts221_i2c_io.ads	20190124183302 94bf9b0a hts221_i2c_io%s
+D interfac.ads		20180628182831 5ab55268 interfaces%s
+D i-bit_types.ads	20180628184650 bd94d513 interfaces.bit_types%s
+D i-stm32.ads		20170610185808 d038a450 interfaces.stm32%s
+D i-stm32-rcc.ads	20170610185851 c25eb87d interfaces.stm32.rcc%s
+D lps22hb.ads		20190124184027 496fde1b lps22hb%s
+D lps22hb_spi.ads	20190124183322 b86a3bc4 lps22hb_spi%s
+D lps22hb_spi_io.ads	20190124183339 a4a4e2dc lps22hb_spi_io%s
+D lsm303agr.ads		20190203005643 211ef547 lsm303agr%s
+D lsm303agr_spi.ads	20190124183550 296ebc32 lsm303agr_spi%s
+D lsm303agr_spi_io.ads	20190124183702 b576e02d lsm303agr_spi_io%s
+D lsm6dsm.ads		20190124184131 fecb0457 lsm6dsm%s
+D lsm6dsm_spi.ads	20190124184152 b8a6f0db lsm6dsm_spi%s
+D lsm6dsm_spi_io.ads	20190124184204 a14dd153 lsm6dsm_spi_io%s
+D main.ads		20190124190221 30696c8e main%s
+D ogf_ocf.ads		20190114200025 ee83137a ogf_ocf%s
+D pcm1774.ads		20190201013819 8dec4fcd pcm1774%s
+D pcm1774_i2c.ads	20181216015722 6e8fe6f2 pcm1774_i2c%s
+D pcm1774_i2c_io.ads	20190124184241 1cb83f6a pcm1774_i2c_io%s
+D peripherals.ads	20190124190229 f7134b0c peripherals%s
+D security.ads		20190123230353 404941d5 security%s
+D sensor_types.ads	20181126202506 ca0cd86c sensor_types%s
+D sensors.ads		20190124000614 fc9bba0f sensors%s
+D stc3115.ads		20190124022407 7e66afd8 stc3115%s
+D stc3115_i2c.ads	20181108185421 cbba3bb5 stc3115_i2c%s
+D stc3115_i2c_io.ads	20190124184454 af77c005 stc3115_i2c_io%s
+D stm32.ads		20170625184525 698e2c3b stm32%s
+D stm32-adc.ads		20171003014504 ccb8d517 stm32.adc%s
+D stm32-board.ads	20170925000152 bc5cb4b7 stm32.board%s
+D stm32-dac.ads		20171104183445 dad959c1 stm32.dac%s
+D stm32-device.ads	20181231235432 63725865 stm32.device%s
+D stm32-dfsdm.ads	20181107012620 2c3ce09f stm32.dfsdm%s
+D stm32-dma.ads		20180703020035 93d5e507 stm32.dma%s
+D stm32-exti.ads	20170625184525 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20180831010734 635b1bf9 stm32.gpio%s
+D stm32-i2c.ads		20190106234102 23873713 stm32.i2c%s
+D stm32-sai.ads		20181231195024 fb0093a4 stm32.sai%s
+D stm32-spi.ads		20180712234454 4c59a487 stm32.spi%s
+D stm32-syscfg.ads	20170625184525 2e11d3e4 stm32.syscfg%s
+D stm32-timers.ads	20180831010706 57d7eba0 stm32.timers%s
+D stm32_svd.ads		20170625184525 e2b090a5 stm32_svd%s
+D stm32_svd-adc.ads	20171003015421 2da4f97a stm32_svd.adc%s
+D stm32_svd-dac.ads	20170625184525 e8c22745 stm32_svd.dac%s
+D stm32_svd-dfsdm.ads	20181107004933 0e511b51 stm32_svd.dfsdm%s
+D stm32_svd-dma.ads	20170625184525 e9a28962 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20170625184525 74dc42d7 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20170625184525 0a034032 stm32_svd.i2c%s
+D stm32_svd-sai.ads	20170625184525 a3239536 stm32_svd.sai%s
+D stm32_svd-spi.ads	20170625184525 b8115cb2 stm32_svd.spi%s
+D system.ads		20180628180938 db831581 system%s
+D s-bb.ads		20180628182833 09e072ae system.bb%s
+D s-bbbopa.ads		20181110012014 465a95d8 system.bb.board_parameters%s
+D s-bbbosu.ads		20180628181412 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20180628181412 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20180628181413 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20181124052307 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20180628213523 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20180628181414 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20180628181413 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20180628181414 ad086247 system.bb.time%s
+D s-finmas.ads		20180628182840 7811a767 system.finalization_masters%s
+D s-finroo.ads		20180628182841 4ff27390 system.finalization_root%s
+D s-multip.ads		20180628181415 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20180628181415 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20180628181416 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20180628181416 229b14dd system.os_interface%s
+D s-parame.ads		20180628182902 d106111e system.parameters%s
+D s-pooglo.ads		20180628182902 ede33ef8 system.pool_global%s
+D s-secsta.ads		20180628182905 56a2861c system.secondary_stack%s
+D s-stalib.ads		20180628182906 09bd3940 system.standard_library%s
+D s-stm32.ads		20170610185421 4ab394a4 system.stm32%s
+D s-stoele.ads		20180628182906 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20180628182907 b16154c2 system.storage_pools%s
+D s-stratt.ads		20180628182907 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20180628181417 801abd01 system.task_info%s
+D s-taspri.ads		20180628181418 351848fa system.task_primitives%s
+D s-taskin.ads		20180628181418 58b15916 system.tasking%s
+D s-taprob.ads		20180628181416 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20180628181418 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-tasres.ads		20180628181418 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20180628181417 c88b6d9a system.tasking.restricted.stages%s
+D s-traent.ads		20180628182909 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180628182909 34867c83 system.unsigned_types%s
+D utils.ads		20190119014505 dcc9aa75 utils%s
+D uuid.ads		20190123230627 03622ef4 uuid%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 1 ada.ads
+16K9*Ada 20e8 25|6r6 6r40 26|16r6 16r32 17r6 18r6
+X 4 a-numeri.ads
+16K13*Numerics 32e17 26|17r10 18r10
+X 6 a-nselfu.ads
+18K22*Short_Elementary_Functions[5|41] 26|17w19 18r19
+X 7 a-reatim.ads
+41K13*Real_Time 182e18 26|16w10 16r36
+51M9*Time<96|46M9> 26|477r24
+61I9*Time_Span<96|81I9> 26|475r33
+68V13*Clock{51M9}<96|134p13> 26|497s32 507s25
+72V14*"+"{51M9} 26|497s38
+87V14*">"{boolean} 26|507r31
+128V13*Milliseconds{61I9} 26|475s46
+X 9 a-sytaco.ads
+40K13*Synchronous_Task_Control 92e33 25|6w10 6r44
+46W9*Suspension_Object 90e25 25|19r17
+49U14*Set_True 26|138s10 278s22 288s7 389s22
+63U14*Suspend_Until_True 26|480s10
+X 13 audio.ads
+12K9*Audio 41e10 26|11w6 209r7
+35U14*Audio_Buffer_Reload 39i<c,DMA1_CH6_IRQ>22
+36U14*SetFreq 26|209s13
+36i23 Y{38|49I9} 26|210r10
+36i39 Dist{38|49I9} 26|211r10
+X 14 ble_status.ads
+2K9*BLE_Status 63e15 26|5w6 5r32
+4M9*BLE_Status_Code<29|53M9> 26|57r16 109r16 217r16 401r16 418r16 438r16
+. 474r24
+5m4*BLE_STATUS_OK{4M9} 26|74r20 90r20 99r20 122r23 231r20 410r20 428r20 447r20
+. 492r32 502r36 525r32
+X 16 bluenrg_aci.ads
+3K9*Bluenrg_Aci 10e16 26|6w6 6r32
+5R9*Evt_Blue_Aci 7e14 26|343r27
+6m7*Ecode{29|66M9} 26|348r30
+8m4*EVT_BLUE_ACI_SIZE{29|53M9} 26|157r9 342r18
+X 17 bluenrg_gap.ads
+3K9*Bluenrg_Gap 71e16 26|7w6 7r32
+28m4*AD_TYPE_COMPLETE_LOCAL_NAME{29|53M9} 26|32r10 59r25 264r47
+29m4*AD_TYPE_TX_POWER_LEVEL{29|53M9} 26|28r10
+38m4*AD_TYPE_MANUFACTURER_SPECIFIC_DATA{29|53M9} 26|42r10
+X 18 bluenrg_gap_aci.ads
+7K9*Bluenrg_Gap_Aci 167e20 26|8w6 8r32
+75m4*EVT_BLUE_GAP_PROCEDURE_COMPLETE{29|66M9} 26|388r24
+79n7*General_Discovery_Proc{77E9} 26|501r43
+115V13*Aci_Gap_Set_Discoverable{14|4M9} 26|77s17
+116m7 AdvType{29|53M9} 26|78r10
+117m7 AdvIntervMin{29|66M9} 26|79r10
+118m7 AdvIntervMax{29|66M9} 26|80r10
+119m7 OwnAddrType{29|53M9} 26|81r10
+120m7 AdvFilterPolicy{29|53M9} 26|82r10
+121m7 LocalNameLen{29|53M9} 26|83r10
+122a7 LocalName{29|162A9} 26|84r10
+123m7 ServiceUUIDLen{29|53M9} 26|85r10
+124a7 ServiceUUIDList{29|162A9} 26|86r10
+125m7 SlaveConnIntervMin{29|66M9} 26|87r10
+126m7 SlaveConnIntervMax{29|66M9} 26|88r10
+128V13*Aci_Gap_Update_Adv_Data{14|4M9} 26|95s17
+129m7 AdvLen{29|53M9} 26|96r10
+130a7 AdvData{29|162A9} 26|97r10
+132V13*Aci_Gap_Create_Connection{14|4M9} 26|512s29
+133m7 ScanInterval{29|66M9} 26|513r22
+134m7 ScanWindow{29|66M9} 26|514r22
+135m7 Peer_Bdaddr_Type{29|53M9} 26|515r22
+136a7 Peer_Bdaddr{34|7A9} 26|516r22
+137m7 Own_Bdaddr_Type{29|53M9} 26|517r22
+138m7 Conn_Min_Interval{29|66M9} 26|518r22
+139m7 Conn_Max_Interval{29|66M9} 26|519r22
+140m7 Conn_Latency{29|66M9} 26|520r22
+141m7 Supervision_Timeout{29|66M9} 26|521r22
+142m7 Min_Conn_Length{29|66M9} 26|522r22
+143m7 Max_Conn_Length{29|66M9} 26|523r22
+145V13*Aci_Gap_Start_General_Discovery_Proc{14|4M9} 26|486s29
+146m7 ScanInterval{29|66M9} 26|487r22
+147m7 ScanWindow{29|66M9} 26|488r22
+148m7 Own_Address_Type{29|53M9} 26|489r22
+149m7 FilterDuplicates{29|53M9} 26|490r22
+164V13*Aci_Gap_Terminate_Gap_Procedure{14|4M9} 26|500s32
+165e7 Procedure_Code{77E9} 26|501r25
+X 19 bluenrg_gatt_aci.ads
+7K9*Bluenrg_Gatt_Aci 103e21 26|9w6 9r32
+26m4*EVT_BLUE_GATT_ATTRIBUTE_MODIFIED_CODE{29|66M9} 26|358r24
+27R9*Evt_Gatt_Attr_Modified_IDB05A1 33e6 26|360r31
+29m7*Attr_Handle{29|66M9} 26|366r32
+30m7*Data_Length{29|53M9} 26|369r32
+34m4*EVT_BLUE_GATT_ATTRIBUTE_MODIFIED_SIZE{29|53M9} 26|158r9 368r37
+36m4*EVT_BLUE_GATT_READ_PERMIT_REQ{29|66M9} 26|349r24
+37R9*Evt_Gatt_Read_Permit_Req 43e6 26|351r30
+39m7*Attr_Handle{29|66M9} 26|356r45
+45m4*EVT_BLUE_GATT_NOTIFICATION_CODE{29|66M9} 26|371r24
+46R9*Evt_Gatt_Attr_Notification 51e6 26|199r13
+52m4*EVT_BLUE_GATT_NOTIFICATION_SIZE{29|53M9} 26|206r37
+54m4*EVT_BLUE_GATT_DISC_READ_CHAR_BY_UUID_RESP_CODE{29|66M9} 26|375r24
+64V13*Aci_Gatt_Update_Char_Value{14|4M9} 26|403s17 421s17 440s17
+65m7 ServHandle{29|66M9} 26|404r10 422r10 441r10
+66m7 CharHandle{29|66M9} 26|405r10 423r10 442r10
+67m7 CharValOffset{29|53M9} 26|406r10 424r10 443r10
+68m7 CharValueLen{29|53M9} 26|407r10 425r10 444r10
+69a7 CharValue{33|33A9} 26|408r10 426r10 445r10
+X 21 bluenrg_l2cap_aci.ads
+7K9*Bluenrg_L2Cap_Aci 72e22 25|2w6 2r29
+22m4*EVT_BLUE_L2CAP_CONN_UPD_REQ_CODE{29|66M9} 26|379r24
+23R9*Evt_L2cap_Conn_Upd_Req 33e6 25|57r13 26|215r35 381r31
+24m7*Conn_Handle{29|66M9} 26|221r39
+26m7*Identifier{29|53M9} 26|228r39
+28m7*Interval_Min{29|66M9} 26|222r39
+29m7*Interval_Max{29|66M9} 26|223r39
+30m7*Slave_Latency{29|66M9} 26|224r39
+31m7*Timeout_Mult{29|66M9} 26|225r39
+51n7*Acceptable{49E9} 26|229r35
+53V13*Aci_L2cap_Connection_Parameter_Update_Request{14|4M9} 26|115s20
+54m7 Handle{29|66M9} 26|116r13
+55m7 Interval_Min{29|66M9} 26|117r13
+56m7 Interval_Max{29|66M9} 26|118r13
+57m7 Slave_Latency{29|66M9} 26|119r13
+58m7 Timeout_Multiplier{29|66M9} 26|120r13
+61V13*Aci_L2cap_Connection_Parameter_Update_Response_IDB05A1{14|4M9} 26|220s9
+62m7 Conn_Handle{29|66M9} 26|221r10
+63m7 Interval_Min{29|66M9} 26|222r10
+64m7 Interval_Max{29|66M9} 26|223r10
+65m7 Slave_Latency{29|66M9} 26|224r10
+66m7 Timeout_Multiplier{29|66M9} 26|225r10
+67m7 Min_Conn_Event_Length{29|66M9} 26|226r10
+68m7 Max_Conn_Event_Length{29|66M9} 26|227r10
+69m7 Id{29|53M9} 26|228r10
+70e7 Stance{49E9} 26|229r10
+X 23 bluenrg_spi_io.ads
+17U14*Reset 15|15i19
+19U14*Transmit_Receive 15|17i19
+X 24 comm.ads
+1K9*Comm 5e9 25|8r9 68r5 26|10r6 10r32 20r14 538r5
+X 25 comm-run.ads
+8K14*Run 24|1k9 25|68l10 68e13 26|20b19 538l10 538t13
+10b4*Connected{boolean} 26|111m7 132m7 481r17
+11b4*Wait_For_Connection{boolean} 26|113m7 135m7
+12b4*First_Connection_Config{boolean} 26|186m13 188m13
+14b4*Char_Running{boolean} 26|133m7 208m7
+16f4*Max_Len{short_float}
+17f4*Min_Len{short_float}
+19w4*Client_Go{9|46W9} 26|138m20 138r20 278m32 278r32 288m17 288r17 389m32
+. 389r32 480m30 480r30
+21b4*Matched{boolean} 26|277m22 484m19 499r22
+23U14*SetConnectable 26|22b14 103l8 103t22
+25U14*GAP_ConnectionComplete_CB 26>7 27>7 26|105b14 127l8 127t33 323s25
+26a7 Addr{34|7A9} 26|106b7
+27m7 Handle{29|66M9} 26|107b7 112r30 116r35
+29U14*GAP_DisconnectionComplete_CB 26|129b14 140l8 140t36 305s13
+31U14*Read_Request_CB 31>31 26|142b14 146l8 146t23 356s25
+31m31 Handle{29|66M9} 26|142b31
+33U14*Attribute_Modified_CB 34>7 35>7 36>7 37>7 26|148b14 193l8 193t29 365s25
+34m7 Handle{29|66M9} 26|149b7 160r10 168r13 176r13 184r13
+35a7 Buff{33|33A9} 26|150b7 161r13 164r16 169r13 177r13 185r13 187r16
+36m7 Offset{29|53M9} 26|151b7 161r28 164r31 169r28 177r28 185r28 187r31
+37m7 Data_Length{29|53M9} 26|152b7
+39U14*HCI_Event_CB 39>28 26|291b14 397l8 397t20
+39a28 Pckt{33|33A9} 26|291b28 294r41
+41U14*GATT_Notification_CB 42>7 43>7 26|195b14 213l8 213t28 373s25
+42a7 Buff{33|33A9} 26|196b7 202r9 206r9
+43m7 Offset{29|53M9} 26|197b7 202r28 206r28
+45U14*Environmental_Update 46>7 26|399b14 414l8 414t28
+46a7 Buff{33|33A9} 26|399b36 408r27
+48U14*AccGyroMag_Update 49>7 26|416b14 434l8 434t25
+49a7 Buff{33|33A9} 26|416b33 426r27
+51U14*GG_Update 52>7 26|436b14 451l8 451t17
+52a7 Buff{33|33A9} 26|436b25 445r27
+54U14*Set_Timer4 54>26 26|162s13 170s13 178s13 453b14 460l8 460t18
+54m26 Period{29|97M9} 26|453b26
+56U14*L2cap_Respond 57>7 26|215b14 235l8 235t21 386s25
+57r7 Evt{21|23R9} 26|215b29 221r35 222r35 223r35 224r35 225r35 228r35
+59U14*Advertising_Info_CB 60>7 61>7 26|240b14 289l8 289t27 332s25
+60a7 Buff{33|33A9} 26|241b7 244r30 245r30 252r37 262r23 264r19 268r25 272r22
+61m7 Offset{29|53M9} 26|242b7 244r45 245r45 246r30
+63t9*Scan_Task 26|467b14 536l8 536t17
+X 26 comm-run.adb
+24a7 Local_Name{29|162A9} 59m7 61m10 83r32 84r32
+26a7 Manuf_Data{29|162A9} 65m7 66m7 67m7 68m7 69m7 70m7 97r21
+56a7 Dummy{29|162A9} 73r47 86r32
+57m7 Status{14|4M9} 73m7 74r10 77m7 90r10 95m7 99r10
+60i11 I{integer} 61r26 61r42
+109m7 Status{14|4M9} 115m10 122r13
+154m7 Idx{29|53M9}
+199r7 Evt{19|46R9} 200r11 201m11 201r11
+203r7 Agm{59|36R9} 204r11 205m11 205r11 210r18 211r18
+217m7 Status{14|4M9} 219m7 231r10
+244m7 Sub_Event{29|53M9}
+245m7 Num_Reports{29|53M9} 248r21
+246m7 LOff{29|53M9} 252r52 259m13 259r21 262r38 264r34 268r40 272r37 282m16
+. 282r25
+248m11 I<38|63M9>
+250r13 AdvInfo{34|63R9} 251r17 252m17 252r17 258r23 276r35
+253m13 Budget{29|53M9} 258m13 284r35
+254m13 Accum{29|53M9} 283m16 283r25 284r26
+255m13 Len{29|53M9} 262m16 275r34 282r32 283r33
+256m13 Match_Len{29|53M9} 266m19 269m25 269r38 273m22 273r35 275r22
+267i23 J{integer} 268r52 268r84
+293r7 Hci_Hdr{33|42R9} 295m11 295r11 300r10
+294a7 Buff{33|33A9} 295m31 295r31 298m34 298r34 311m18 311r18 319m27 319r27
+. 332r46 346m18 346r18 354m27 354r27 363m27 363r27 367r28 373r47 384m27 384r27
+296r7 Event_Pckt{33|49R9} 297r11 298m11 298r11 303r12
+308r16 Me{34|41R9} 309r20 310m20 310r20 313r21
+316r25 Cc{34|48R9} 317r29 318m29 318r29 323r52 323r68
+327m25 Offset{29|53M9} 332r52
+340N16 Offset 354r46 363r46 368r28 373r53 384r46
+343r16 Blue_Evt{16|5R9} 344r20 345m20 345r20 348r21
+351r25 Pr{19|37R9} 352r29 353m29 353r29 356r42
+360r25 Evt{19|27R9} 361r29 362m29 362r29 366r28 369r28
+381r25 Evt{21|23R9} 382r29 383m29 383r29 386r40
+401m7 Status{14|4M9} 403m7 410r10
+418m7 Status{14|4M9} 421m7 428r10
+438m7 Status{14|4M9} 440m7 447r10
+469E12 Scan_States 473e27 476r24
+470n10 Need_Scan{469E12} 476r39 483r21 508r39 533r27
+471n10 Process_Results{469E12} 496r33 498r21
+472n10 Make_Connection{469E12} 505r36 511r21
+473n10 Check_Connection{469E12} 528r33 529r21
+474m7 Status{14|4M9} 486m19 492r22 500m22 502r25 512m19 525r22
+475i7 Scan_Reload{7|61I9} 497r40
+476e7 Scan_State{469E12} 482r18 496m19 505m22 508m25 528m19 533m13
+477m7 Next_Scan{7|51M9} 497m19 507r33
+X 27 comm-setup.ads
+4K14*Setup 26|10w11 10r37 27|97e15
+6m4*Connection_Handle{29|66M9} 26|112m7 134m7
+8m4*HWServW2STHandle{29|66M9} 26|404r27 422r27 441r27
+12m4*EnvironmentalCharHandle{29|66M9} 26|160r19 405r27
+13m4*EnvironmentalCharSize{29|53M9} 26|407r27
+15m4*AccGyroMagCharHandle{29|66M9} 26|176r22 423r27
+16m4*AccGyroMagCharSize{29|53M9} 26|425r27
+24m4*BatteryFeaturesCharHandle{29|66M9} 26|168r22 442r27
+25m4*BatteryFeaturesCharSize{29|53M9} 26|444r27
+51m4*ConfigCharHandle{29|66M9} 26|184r22
+65N4*SCAN_P 26|487r42 513r45
+68N4*SCAN_L 26|488r42 514r45
+71N4*SUPERV_TIMEOUT 26|521r45
+74N4*CONN_P1 26|518r45
+77N4*CONN_P2 26|519r45
+80N4*CONN_L1 26|522r45
+83N4*CONN_L2 26|523r45
+93U14*Initialize_AccGyroMag_Characteristic 26|234s7
+X 29 hal.ads
+34K9*HAL 25|1w6 1r29 29|166e8
+53M9*UInt8<38|63M9> 25|36r21 37r21 43r16 61r16 26|151r21 152r21 154r13 197r16
+. 242r16 244r21 245r21 246r21 253r25 254r25 255r25 256r25 327r43
+66M9*UInt16<38|66M9> 25|27r16 31r40 34r21 26|107r16 142r40 149r21
+97M9*UInt32<38|74M9> 25|54r35 26|453r35
+162A9*UInt8_Array(53M9)<integer> 26|24r20 26r20 56r15
+X 30 hal-gpio.ads
+44h9*GPIO_Point
+X 31 hal-i2c.ads
+48h9*I2C_Port
+X 32 hal-spi.ads
+48h9*SPI_Port
+X 33 hci.ads
+5K9*Hci 25|3w6 3r29 33|149e8
+15m4*HCI_EVENT_PKT{29|53M9} 26|300r30
+33A9*DataBuffT<29|162A9>(29|53M9)<integer> 25|35r21 39r35 42r16 46r14 49r14
+. 52r14 60r16 26|150r21 196r16 241r16 291r35 294r28 399r43 416r40 436r32
+42R9*Hci_Uart_Pckt 26|293r20 33|45e6
+43m7*Pkt_Type{29|53M9} 26|300r18
+47m4*HCI_HDR_SIZE{29|53M9} 26|155r9 298r53 311r37 319r46 328r27 340r37 346r37
+49R9*Hci_Event_Pckt 26|296r20 33|53e6
+50m7*Evt{29|53M9} 26|303r23
+54m4*HCI_EVENT_HDR_SIZE{29|53M9} 26|156r9 311r52 320r48 329r27 341r18 346r52
+81m4*EVT_DISCONN_COMPLETE_CODE{29|53M9} 26|304r15
+96m4*EVT_VENDOR{29|53M9} 26|338r15
+X 34 hci_le.ads
+5K9*Hci_Le 25|4w6 4r29 34|231e11
+7A9*BDAddrT<29|162A9>(29|53M9)<integer> 25|26r16 26|106r16
+9m4*PUBLIC_ADDR{29|53M9} 26|81r32 515r45 517r45
+15m4*ADV_IND{29|53M9} 26|78r32
+21m4*NO_WHITE_LIST_USE{29|53M9} 26|82r32
+40m4*EVT_LE_META_EVENT_CODE{29|53M9} 26|306r15
+41R9*Evt_Le_Meta_Event 26|308r21 34|44e6
+42m7*Subevent{29|53M9} 26|313r24
+45m4*EVT_LE_META_EVENT_SIZE{29|53M9} 26|321r48 330r27
+47m4*EVT_LE_CONN_COMPLETE{29|53M9} 26|314r24
+48R9*Evt_Le_Connection_Complete 26|316r30 34|59e6
+50m7*Handle{29|66M9} 26|323r71
+53a7*Peer_Bdaddr{7A9} 26|323r55
+62m4*EVT_LE_ADVERTISING_REPORT{29|53M9} 26|325r24
+63R9*Evt_Le_Advertising_Info 26|250r25 34|69e6
+66a7*Bdaddr{7A9} 26|276r43
+67m7*Data_Length{29|53M9} 26|258r31
+70m4*EVT_LE_ADVERTISING_INFO_SIZE{29|53M9} 26|259r28
+149V13*Hci_Le_Set_Scan_Resp_Data{14|4M9} 26|73s17
+X 37 hts221_i2c_io.ads
+16U14*Read 35|11i19
+21U14*Write 35|17i19
+26U14*Read_Buffer 35|23i19
+X 38 interfac.ads
+38K9*Interfaces 26|2w6 2r32 38|184e15
+49I9*Integer_16<short_integer>
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 44 lps22hb_spi_io.ads
+20U14*Read 42|13i19
+25U14*Write 42|19i19
+30U14*Read_Buffer 42|28i19
+X 47 lsm303agr_spi_io.ads
+20U14*Read 45|14i19
+25U14*Write 45|20i19
+30U14*Read_Buffer 45|29i19
+X 50 lsm6dsm_spi_io.ads
+20U14*Read 48|14i19
+25U14*Write 48|20i19
+30U14*Read_Buffer 48|29i19
+X 51 main.ads
+14K9*Main 26|1w6 1r32 51|76e9
+22a4*Board_Name{string} 26|267r34 268r72 272r49
+23a4*NodeName{29|162A9} 26|33r10 34r10 35r10 36r10 37r10 38r10 39r10 61r32
+25a4*BDaddr{34|7A9} 26|65r26 66r26 67r26 68r26 69r26 70r26
+27a4*Peer_Addr{34|7A9} 26|276m22 516r45
+33N4*Environmental_Event 26|163r41 166r46
+34N4*Battery_Event 26|171r41 174r46
+35N4*AccGyroMag_Event 26|179r41 182r46
+37a4*AttribVals{29|162A9} 26|45r10 46r10 47r10 48r10
+43m4*Event_List{29|97M9} 26|163m13 163r27 166m13 166r27 171m13 171r27 174m13
+. 174r27 179m13 179r27 182m13 182r27
+57U14*LED_On 26|420s7
+59U14*LED_Off 26|136s7 432s7
+63V13*Is_Server{boolean} 26|114s10
+65V13*Is_Client{boolean} 26|137s10 376s25
+X 55 pcm1774_i2c_io.ads
+13U14*Read 53|11i19
+18U14*Write 53|17i19
+23U14*Read_Buffer 53|23i19
+X 59 sensors.ads
+24K9*Sensors 26|12w6 203r13 59|84e12
+36R9*AccGyroMag_Data 26|203r21 59|48e6
+39i7*Ay{38|49I9} 26|210r22
+45i7*My{38|49I9} 26|211r22
+X 62 stc3115_i2c_io.ads
+13U14*Read 60|12i19
+18U14*Write 60|18i19
+23U14*Read_Buffer 60|24i19
+28U14*Write_Buffer 60|31i19
+X 63 stm32.ads
+39K9*STM32 26|3r6 3r32 4r6 4r32 14r5 63|48e10
+X 67 stm32-device.ads
+57K15*Device 26|3w12 3r38 67|450e17
+72r4*Timer_4{76|52R9} 26|165m22 165r22 173m22 173r22 181m22 181r22 456m14
+. 456r14 457m25 457r25 458m18 458r18 459m15 459r15
+87U14*Reset 26|456s7
+X 76 stm32-timers.ads
+50K15*Timers 26|4w12 4r38 76|1414e17
+54U14*Enable 26|459s7
+57U14*Disable 26|165s13 173s13 181s13
+65U14*Configure 26|458s7
+67m7 Prescaler{29|66M9} 26|458r27
+68m7 Period{29|97M9} 26|458r47
+185n7*Timer_Update_Interrupt{184E9} 26|457r34
+204U14*Enable_Interrupt 26|457s7
+X 86 system.ads
+50K9*System 25|5w6 65r24 86|164e11
+114i4*Max_Priority{positive} 25|65r31
+X 96 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 105 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 113 s-taskin.ads
+407V13*Get_Sec_Stack{105|46P9} 408i<c,__gnat_get_secondary_stack>22
+X 117 s-tarest.ads
+232U14*Activate_All_Tasks_Sequential 233i<c,__gnat_activate_all_tasks>22
+

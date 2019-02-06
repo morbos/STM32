@@ -1,0 +1,5 @@
+set logging overwrite on
+set logging file DAC.log
+set logging redirect on
+set logging on
+x/256x 0x40007400

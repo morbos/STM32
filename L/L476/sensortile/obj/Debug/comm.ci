@@ -1,0 +1,9 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm.adb"
+node: { title: "comm__setup__initialize_comm_setup" label: "Initialize_Comm_Setup\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-setup.ads:95:14" shape : ellipse }
+node: { title: "comm__hw__initialize_comm_hardware" label: "Initialize_Comm_Hardware\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-hw.ads:24:14" shape : ellipse }
+node: { title: "hci__hci_init" label: "Hci_Init\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/hci.ads:127:14" shape : ellipse }
+node: { title: "comm__initialize_comm" label: "Initialize_Comm\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm.adb:11:4\n8 bytes (static)" }
+edge: { sourcename: "comm__initialize_comm" targetname: "comm__setup__initialize_comm_setup" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm.adb:16:7" }
+edge: { sourcename: "comm__initialize_comm" targetname: "comm__hw__initialize_comm_hardware" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm.adb:15:7" }
+edge: { sourcename: "comm__initialize_comm" targetname: "hci__hci_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm.adb:14:7" }
+}

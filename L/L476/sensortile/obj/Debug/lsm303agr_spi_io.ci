@@ -1,0 +1,164 @@
+edge: { sourcename: "lsm303agr_spi_io__Tio_portCFD"
+  targetname: "-9:lsm303agr_spi_io__io_port,lsm303agr_spi_io__io_port"
+  label: "lsm303agr_spi_io.ads:13:9"
+}
+class {
+  classname: "lsm303agr_spi_io__io_port"
+  label: "lsm303agr_spi_io__io_port\lsm303agr_spi_io.ads:13:9"
+  virtuals: "-1:lsm303agr_spi_io___size\n
+             -2:lsm303agr_spi_io__io_portSR\n
+             -3:lsm303agr_spi_io__io_portSW\n
+             -4:lsm303agr_spi_io__io_portSI\n
+             -5:lsm303agr_spi_io__io_portSO\n
+             -6:lsm303agr_spi_io__Oeq\n
+             -7:lsm303agr_spi_io___assign\n
+             -8:lsm303agr_spi_io__io_portDA\n
+             -9:lsm303agr_spi_io__io_portDF"
+}
+edge: { sourcename: "lsm303agr_spi_io__write"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "lsm303agr_spi_io__write"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "lsm303agr_spi_io.adb:15:16"
+}
+edge: { sourcename: "lsm303agr_spi_io__read"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "lsm303agr_spi_io__read"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "lsm303agr_spi_io.adb:39:16"
+}
+edge: { sourcename: "lsm303agr_spi_io__read"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:76:21"
+}
+edge: { sourcename: "lsm303agr_spi_io__read"
+  targetname: "4:hal__spi__spi_port,hal__spi__spi_port"
+  label: "lsm303agr_spi_io.adb:46:16"
+}
+edge: { sourcename: "lsm303agr_spi_io__read_buffer"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "lsm303agr_spi_io__read_buffer"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "lsm303agr_spi_io.adb:70:16"
+}
+edge: { sourcename: "lsm303agr_spi_io__read_buffer"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:76:21"
+}
+edge: { sourcename: "lsm303agr_spi_io__read_buffer"
+  targetname: "4:hal__spi__spi_port,hal__spi__spi_port"
+  label: "lsm303agr_spi_io.adb:79:16"
+}
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:552:14" shape : ellipse }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:465:14" shape : ellipse }
+node: { title: "system__finalization_masters__set_finalize_address" label: "Set_Finalize_Address\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:126:14" shape : ellipse }
+node: { title: "system__finalization_masters__set_base_pool" label: "Set_Base_Pool\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:201:14" shape : ellipse }
+node: { title: "system__finalization_masters__initialize__2" label: "Initialize\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:198:25" shape : ellipse }
+node: { title: "system__finalization_masters__finalization_masterIP" label: "Finalization_Masterip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:161:9" shape : ellipse }
+node: { title: "__gnat_rcheck_PE_Explicit_Raise" label: "gnat_rcheck_PE_Explicit_Raise\n<built-in>" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-assert.ads:46:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_end_handler" label: "gnat_end_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_begin_handler" label: "gnat_begin_handler\n<built-in>" shape : ellipse }
+node: { title: "system__finalization_masters__finalize" label: "Finalize\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:96:25" shape : ellipse }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:588:14" shape : ellipse }
+node: { title: "stm32__gpio__Oeq" label: "=\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-secsta.ads:58:14" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointSW__2" label: "GPIO_POINTSW\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "system__stream_attributes__w_as" label: "W_As\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:133:14" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointSR__2" label: "GPIO_POINTSR\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "system__stream_attributes__i_as" label: "I_As\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:102:13" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointIP" label: "GPIO_POINTIP\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "lsm303agr_spi_io___elabs" label: "LSM303AGR_SPI_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:5:1\n8 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io___elabs" targetname: "ada__tags__register_tag" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+edge: { sourcename: "lsm303agr_spi_io___elabs" targetname: "ada__tags__check_tsd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+edge: { sourcename: "lsm303agr_spi_io___elabs" targetname: "system__finalization_masters__set_finalize_address" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:18:9" }
+edge: { sourcename: "lsm303agr_spi_io___elabs" targetname: "system__finalization_masters__set_base_pool" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:18:9" }
+edge: { sourcename: "lsm303agr_spi_io___elabs" targetname: "system__finalization_masters__initialize__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:18:9" }
+edge: { sourcename: "lsm303agr_spi_io___elabs" targetname: "system__finalization_masters__finalization_masterIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:18:9" }
+node: { title: "lsm303agr_spi_io__read_buffer" label: "READ_BUFFER\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:61:4\n64 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:85:10" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:81:14" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:81:11" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:79:16" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "system__assertions__raise_assert_failure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:79:16" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/src/hal-spi.ads:76:21" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:79:11" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:79:11" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:76:10" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:70:16" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "system__assertions__raise_assert_failure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:70:16" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:70:11" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:70:11" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:68:14" }
+edge: { sourcename: "lsm303agr_spi_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:68:11" }
+node: { title: "lsm303agr_spi_io__read" label: "READ\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:30:4\n64 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "_Unwind_Resume" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:52:10" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:48:14" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:48:11" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:46:16" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "system__assertions__raise_assert_failure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:46:16" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/src/hal-spi.ads:76:21" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:46:11" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:46:11" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:43:10" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:39:16" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "system__assertions__raise_assert_failure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:39:16" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:39:11" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:39:11" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:38:14" }
+edge: { sourcename: "lsm303agr_spi_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:38:11" }
+node: { title: "lsm303agr_spi_io__write" label: "WRITE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:7:4\n40 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__gnat_rcheck_PE_Explicit_Raise" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:22:10" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:18:14" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:18:11" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:15:16" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "system__assertions__raise_assert_failure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:15:16" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:15:11" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:15:11" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:14:14" }
+edge: { sourcename: "lsm303agr_spi_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.adb:14:11" }
+node: { title: "lsm303agr_spi_io__finalize_spec" label: "FINALIZE_SPEC\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:5:1\n16 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__finalize_spec" targetname: "__gnat_end_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:5:1" }
+edge: { sourcename: "lsm303agr_spi_io__finalize_spec" targetname: "__gnat_begin_handler" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:5:1" }
+edge: { sourcename: "lsm303agr_spi_io__finalize_spec" targetname: "_Unwind_Resume" }
+edge: { sourcename: "lsm303agr_spi_io__finalize_spec" targetname: "system__finalization_masters__finalize" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:18:9" }
+edge: { sourcename: "lsm303agr_spi_io__finalize_spec" targetname: "ada__tags__unregister_tag" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:5:1" }
+node: { title: "lsm303agr_spi_io__Tio_portCFD" label: "TIO_PORTCFD\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n32 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__Tio_portCFD" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+node: { title: "lsm303agr_spi_io__io_portDF" label: "IO_PORTDF\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n16 bytes (static)" }
+node: { title: "lsm303agr_spi_io__io_portDA" label: "IO_PORTDA\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n16 bytes (static)" }
+node: { title: "lsm303agr_spi_io___assign" label: "LSM303AGR_SPI_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n448 bytes (static)" }
+node: { title: "lsm303agr_spi_io__Oeq" label: "=\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:4\n16 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__Oeq" targetname: "stm32__gpio__Oeq" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+node: { title: "lsm303agr_spi_io__io_portSO" label: "IO_PORTSO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n24 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSO" targetname: "lsm303agr_spi_io__io_portSW" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+node: { title: "lsm303agr_spi_io__io_portSI" label: "IO_PORTSI\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n56 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSI" targetname: "system__secondary_stack__ss_allocate" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSI" targetname: "lsm303agr_spi_io__io_portSR" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSI" targetname: "lsm303agr_spi_io__io_portIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+node: { title: "lsm303agr_spi_io__io_portSW" label: "IO_PORTSW\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n24 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSW" targetname: "stm32__gpio__gpio_pointSW__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSW" targetname: "system__stream_attributes__w_as" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+node: { title: "lsm303agr_spi_io__io_portSR" label: "IO_PORTSR\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n24 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSR" targetname: "stm32__gpio__gpio_pointSR__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+edge: { sourcename: "lsm303agr_spi_io__io_portSR" targetname: "system__stream_attributes__i_as" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9" }
+node: { title: "lsm303agr_spi_io___size" label: "LSM303AGR_SPI_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n16 bytes (static)" }
+node: { title: "lsm303agr_spi_io__io_portIP" label: "IO_PORTIP\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:13:9\n16 bytes (static)" }
+edge: { sourcename: "lsm303agr_spi_io__io_portIP" targetname: "stm32__gpio__gpio_pointIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lsm303agr_spi_io.ads:15:7" }
+}

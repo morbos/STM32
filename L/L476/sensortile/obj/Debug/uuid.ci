@@ -1,0 +1,3 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/uuid.adb"
+node: { title: "uuid__uuid_copy" label: "Uuid_Copy\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/uuid.adb:3:4\n24 bytes (static)" }
+}

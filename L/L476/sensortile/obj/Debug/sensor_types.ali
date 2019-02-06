@@ -1,0 +1,38 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P ES ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U sensor_types%s	sensor_types.ads	ca0cd86c NE OO PK
+
+D sensor_types.ads	20181126202506 ca0cd86c sensor_types%s
+D system.ads		20180628180938 db831581 system%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 1 sensor_types.ads
+1K9*Sensor_Types 7l5 7e17
+3E9*Sensor_Status 6e53
+3n27*COMPONENT_OK{3E9}
+4n27*COMPONENT_ERROR{3E9}
+5n27*COMPONENT_TIMEOUT{3E9}
+6n27*COMPONENT_NOT_IMPLEMENTED{3E9}
+

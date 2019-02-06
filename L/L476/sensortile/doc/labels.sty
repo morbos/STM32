@@ -1,0 +1,287 @@
+\ProvidesPackage{labels}[20001/02/26 v3.0]
+
+\newcommand{\Ref}[2]{%
+    \expandafter\ifx\csname pr@#1\endcsname\relax%
+    \PackageWarning{labels}{Reference format #1\space undefined. Making a default definition}%
+    #1~\ref{#2}%
+      \newRef{#1}{#1~\ref{#1:##1}}%
+  \else%
+    \csname pr@#1\endcsname{#2}%
+  \fi%
+}
+
+\def\newRef#1#2{%
+  \@namedef{pr@#1}##1{#2}}
+
+\newcommand\eq[1]{\Ref{Equation}{#1}}
+\newRef{Equation}{\textup{(\ref{Equation:#1})}}
+\newRef{Lemma}{Lem.~\ref{Lemma:#1}}
+\newRef{Theorem}{Thm.~\ref{Theorem:#1}}
+\newRef{Definition}{Def.~\ref{Definition:#1}}
+\newRef{Corollary}{Corr.~\ref{Corollary:#1}}
+\newRef{Proposition}{Prop.~\ref{Corollary:#1}}
+\newRef{Chapter}{Chap.~\ref{Chapter:#1}}
+\newRef{Section}{Sec.~\ref{Section:#1}}
+\newRef{Appendix}{App.~\ref{Appendix:#1}}
+\newRef{Table}{Tab.~\ref{Table:#1}}
+\newRef{Figure}{Fig.~\ref{Figure:#1}}
+\newRef{Algorithm}{Alg.~\ref{Algorithm:#1}}
+\newRef{Example}{Examp.~\ref{Example:#1}}
+
+
+
+
+
+
+\def\NewDivision#1#2{%
+    \expandafter
+        \newcommand
+            \csname%
+                #1%
+            \endcsname[2][\relax]%
+        {%
+            \lowercase{\csname#1\endcsname}{##2}%
+            \ifx##1\relax 
+                \label{#2:##2}
+            \else
+                \label{#2:##1}%
+            \fi
+        }%
+}
+
+
+\NewDivision{Chapter}{Chapter}
+\NewDivision{Section}{Section}
+\NewDivision{Subsection}{Section}
+\NewDivision{Subsubsection}{Section}
+
+\let\Appendices=\appendix
+\let\appendix=\section
+\NewDivision{Appendix}{Appendix}
+
+
+
+
+\def\NewClaim#1{
+        \newenvironment{#1}[1]{%
+            \lowercase{\begin{#1}}%
+            \label{#1:##1}%
+        }{\lowercase{\end{#1}}}
+}
+
+
+\NewClaim{Definition}
+\NewClaim{Theorem}
+\NewClaim{Lemma}
+\NewClaim{Corollary}
+\NewClaim{Proposition}
+\NewClaim{Claim}
+\NewClaim{Fact}
+\NewClaim{Remark}
+\NewClaim{Example}
+
+
+\newenvironment{xFigure}[2][\relax]{%
+    \begin{figure}%
+            \ifx##1\relax 
+                \def\MyLabel{}%
+                \def\PutLabel{}%
+            \else
+                \def\MyLabel{{Figure:#1}}%
+                \def\PutLabel{\label{Figure:#1}}%
+            \fi
+        \def\MyCaption{#2}%
+}{%
+    \caption{\MyCaption.\PutLabel}%
+    \end{figure}%
+}
+
+\def\NewFloat#1#2{%
+\newenvironment{#1}[2][\relax]{%
+    \begin{#2}%
+            \ifx##1\relax 
+                \def\MyLabel{}%
+                \def\PutLabel{}%
+            \else
+           \def\MyLabel{{#1:##1}}%
+        \def\PutLabel{\label{#1:##1}}%
+            \fi
+       \def\MyCaption{##2}%
+}{%
+   \caption{\MyCaption.\PutLabel}%
+   \end{#2}%
+}
+}
+
+\NewFloat{Table}{table}
+\NewFloat{Algorithm}{algorithm}
+\NewFloat{Figure}{figure}
+
+\endinput
+
+
+\newenvironment{nullenvironment}{}{}
+
+\def\@@NewFloat#1#2#3#4#5{
+% #1 <- old float name, e.g., "figure"
+% #2 <- New Environment name, e.g., "Figure"
+% #3 <- Environment Label Prefix, e.g. "Figure" to be used as \label{Figure:my.figure}
+% #4 <- Short name to be used in refering to environment, e.g., "Fig."
+% #5 <- Environment to wrap inside the old environment, e.g., "cpluplus", or nullenvironment
+        \newenvironment{#2}[2]{%
+            \begin{#1}[ht]%
+            \def\MyLabel{#3:##1}
+            \def\MyCaption{##2}
+            \begin{#5}
+        }{%
+            \end{#5}%
+            \caption{\MyCaption.}%
+            \label{\MyLabel}%
+            \vspace{-1ex}%
+            \end{#1}%
+        }%
+    \expandafter
+        \def
+            \csname
+                ref#3%
+            \endcsname##1%
+        {%
+            #4~\ref{#3:##1}%
+        }
+}
+
+\def\refTable#1{Table~\ref{Table:#1}}
+\newenvironment{Table}[2]{%
+    \begin{table}%
+        \def\MyLabel{Table:#1}%
+        \def\MyCaption{#2}%
+}{%
+        \caption{\MyCaption.}%
+        \label{\MyLabel}%
+    \end{table}%
+}
+
+\def\@@NewFloatFigure#1#2#3#4#5{
+        \newenvironment{#2}[2]{%
+            \begin{#1}%
+            \def\MyLabel{#3:##1}
+            \def\MyCaption{##2}
+            \begin{#5}
+        }{%
+            \end{#5}%
+            \caption{\MyCaption.}%
+            \label{\MyLabel}%
+            \vspace{-1ex}%
+            \end{#1}%
+        }%
+    \expandafter
+        \def
+            \csname
+                ref#3%
+            \endcsname##1%
+        {%
+            #4~\ref{#3:##1}%
+        }
+}
+
+\def\@@NestedEnvironment{nullenvironment}
+
+\def\NewFloat#1#2{\lowercase{\@@NewFloat{#1}}{#1}{#1}{#2}{\@@NestedEnvironment}}
+
+\NewFloat{Figure}{Fig.}
+
+
+\newenvironment{CPLUSPLUS}[2]{
+    \def\@@NestedEnvironment{cplusplus}
+    \Figure{#1}{#2}
+}{
+    \endFigure
+}
+
+\newenvironment{myfloatingfigure}{%
+    \floatingfigure{0.5\columnwidth}%
+}{%
+    \endfloatingfigure
+}
+
+
+\newenvironment{EPS}{%
+        \begin{centering}%
+        \def\@temp##1{\expandafter\@@temp##1]}
+        \def\@@temp{\includegraphics[}
+        \hbox to \columnwidth{%
+            \hfil
+                \@temp\IncludeGraphicsParameters
+                    {\EncapsulatedPostScriptFileName}%
+            \hfil
+            }%\\
+}{%
+        \end{centering}
+}
+
+\newenvironment{FEPS}{%
+        \begin{centering}%
+        \def\@temp##1{\expandafter\@@temp##1]}
+        \def\@@temp{\includegraphics[}
+%       \hbox to 0.0\columnwidth{%
+%           \hfil
+                \@temp\IncludeGraphicsParameters
+                    {\EncapsulatedPostScriptFileName}%
+%           \hfil
+%           }%\\
+}{%
+        \end{centering}
+}
+
+
+
+\@@NewFloat{figure}{EpsFigure}{Figure}{Fig.}{EPS}
+\@@NewFloatFigure{myfloatingfigure}{FEPSFigure}{Figure}{Fig.}{FEPS}
+
+\newcommand{\PSFIGURE}[3][width=\columnwidth]{
+    \begingroup
+    \def\EncapsulatedPostScriptFileName{#2.eps}
+    \def\IncludeGraphicsParameters{#1}
+    \EpsFigure{#2}{#3}
+    \endEpsFigure
+    \endgroup
+}
+
+\newcommand{\FEPSFIGURE}[3][width=0.5\columnwidth]{
+    \begingroup
+    \def\EncapsulatedPostScriptFileName{#2.eps}
+    \def\IncludeGraphicsParameters{#1}
+    \FEPSFigure{#2}{#3}
+    \endFEPSFigure
+    \endgroup
+}
+
+
+\newlength{\@mycaptionwidth}%
+\long\def\@makecaption#1#2{{%
+   \vskip 0\p@%
+   %\vspace{-0.5ex}%
+   \setbox\@tempboxa\hbox{{\small #1:~#2}}%
+   \ifdim \wd\@tempboxa >\hsize {%
+        \setbox\@tempboxa\hbox{\small #1:\ }%
+        \setlength{\@mycaptionwidth}{\hsize}%
+        \addtolength\@mycaptionwidth{-\wd\@tempboxa}%
+        \mbox{{\small #1:\ }}\parbox[t]{\@mycaptionwidth}{#2}%
+     } \else
+       \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+   \fi
+}}
+
+%       {\noindent \small #1:~#2}\par
+
+
+
+
+
+
+
+
+%\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+%                                     {-1ex\@plus -1ex \@minus -.2ex}%
+%                                     {1.5ex \@plus .2ex}%
+%%                                     {\normalfont\bfseries}}

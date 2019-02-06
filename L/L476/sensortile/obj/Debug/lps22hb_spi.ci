@@ -1,0 +1,93 @@
+edge: { sourcename: "lps22hb_spi__Tlps22hb_sensorCFD"
+  targetname: "-9:lps22hb_spi__lps22hb_sensor,lps22hb_spi__lps22hb_sensor"
+  label: "lps22hb.ads:38:9 [lps22hb_spi.ads:6:1]"
+}
+class {
+  classname: "lps22hb_spi__lps22hb_sensor"
+  label: "lps22hb_spi__lps22hb_sensor\lps22hb.ads:38:9 [lps22hb_spi.ads:6:1]"
+  parent: "lps22hb_spi__lps22hb_sensor"
+  virtuals: "1:lps22hb_spi__device_id\n
+             2:lps22hb_spi__get_status\n
+             3:lps22hb_spi__get_data\n
+             4:lps22hb_spi__configure\n
+             -1:lps22hb_spi___size\n
+             -9:lps22hb_spi__lps22hb_sensorDF"
+}
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb_spi.ads"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:552:14" shape : ellipse }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:465:14" shape : ellipse }
+node: { title: "utils__to_integer_16" label: "To_Integer_16\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/utils.ads:37:13" shape : ellipse }
+node: { title: "utils__to_uint32_from_uint8" label: "To_Uint32_From_Uint8\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/utils.ads:47:14" shape : ellipse }
+node: { title: "lps22hb_spi_io__read_buffer" label: "READ_BUFFER\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb_spi_io.ads:30:14" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "lps22hb_spi_io__write" label: "WRITE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb_spi_io.ads:25:14" shape : ellipse }
+node: { title: "lps22hb_spi_io__read" label: "READ\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb_spi_io.ads:20:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+node: { title: "lps22hb_spi___elabs" label: "LPS22HB_SPI\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb_spi.ads:6:1\n8 bytes (static)" }
+edge: { sourcename: "lps22hb_spi___elabs" targetname: "ada__tags__register_tag" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:261:9" }
+edge: { sourcename: "lps22hb_spi___elabs" targetname: "ada__tags__check_tsd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:261:9" }
+node: { title: "lps22hb_spi__get_data" label: "GET_DATA\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:58:4\n72 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "_Unwind_Resume" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "utils__to_integer_16" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:75:16" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "utils__to_uint32_from_uint8" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:73:7" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "lps22hb_spi_io__read_buffer" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:68:7" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:67:7" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:67:25" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:67:27" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:67:19" }
+edge: { sourcename: "lps22hb_spi__get_data" targetname: "lps22hb_spi_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:66:7" }
+node: { title: "lps22hb_spi__configure" label: "CONFIGURE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:25:4\n40 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:54:10" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "lps22hb_spi__device_id" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:53:14" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "lps22hb_spi_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:51:7" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:50:7" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:50:25" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:50:27" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:50:19" }
+edge: { sourcename: "lps22hb_spi__configure" targetname: "lps22hb_spi_io__write" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:49:7" }
+node: { title: "lps22hb_spi__get_status" label: "GET_STATUS\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:17:4\n24 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__get_status" targetname: "lps22hb_spi_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:21:7" }
+node: { title: "lps22hb_spi__device_id" label: "DEVICE_ID\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:9:4\n24 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__device_id" targetname: "lps22hb_spi_io__read" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.adb:13:7" }
+node: { title: "lps22hb_spi__int_stance_selectionRP" label: "Int_Stance_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:229:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__int_stance_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:229:9" }
+node: { title: "lps22hb_spi__int_pad_selectionRP" label: "Int_Pad_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:219:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__int_pad_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:219:9" }
+node: { title: "lps22hb_spi__fifo_full_int_selectionRP" label: "Fifo_Full_Int_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:209:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__fifo_full_int_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:209:9" }
+node: { title: "lps22hb_spi__fifo_watermark_int_selectionRP" label: "Fifo_Watermark_Int_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:199:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__fifo_watermark_int_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:199:9" }
+node: { title: "lps22hb_spi__fifo_overrun_int_selectionRP" label: "Fifo_Overrun_Int_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:189:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__fifo_overrun_int_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:189:9" }
+node: { title: "lps22hb_spi__data_ready_int_selectionRP" label: "Data_Ready_Int_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:179:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__data_ready_int_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:179:9" }
+node: { title: "lps22hb_spi__boot_selectionRP" label: "Boot_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:154:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__boot_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:154:9" }
+node: { title: "lps22hb_spi__fifo_enable_selectionRP" label: "Fifo_Enable_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:144:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__fifo_enable_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:144:9" }
+node: { title: "lps22hb_spi__fifo_stop_selectionRP" label: "Fifo_Stop_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:134:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__fifo_stop_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:134:9" }
+node: { title: "lps22hb_spi__auto_inc_selectionRP" label: "Auto_Inc_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:124:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__auto_inc_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:124:9" }
+node: { title: "lps22hb_spi__i2c_selectionRP" label: "I2c_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:114:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__i2c_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:114:9" }
+node: { title: "lps22hb_spi__sw_reset_selectionRP" label: "Sw_Reset_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:104:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__sw_reset_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:104:9" }
+node: { title: "lps22hb_spi__data_rate_power_mode_selectionRP" label: "Data_Rate_Power_Mode_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:74:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__data_rate_power_mode_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:74:9" }
+node: { title: "lps22hb_spi__low_pass_config_selectionRP" label: "Low_Pass_Config_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:59:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__low_pass_config_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:59:9" }
+node: { title: "lps22hb_spi__block_data_update_selectionRP" label: "Block_Data_Update_Selectionrp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:49:9\n16 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__block_data_update_selectionRP" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:49:9" }
+node: { title: "lps22hb_spi__Tlps22hb_sensorCFD" label: "Tlps22hb_Sensorcfd\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:38:9\n32 bytes (static)" }
+edge: { sourcename: "lps22hb_spi__Tlps22hb_sensorCFD" targetname: "__indirect_call" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:38:9" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+node: { title: "lps22hb_spi__lps22hb_sensorDF" label: "Lps22hb_Sensordf\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:261:9\n16 bytes (static)" }
+node: { title: "lps22hb_spi___size" label: "Lps22hb_Spi\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:261:9\n16 bytes (static)" }
+node: { title: "lps22hb_spi__lps22hb_sensorIP" label: "Lps22hb_Sensorip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensors/components/lps22hb.ads:261:9\n24 bytes (static)" }
+}

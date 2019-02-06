@@ -1,0 +1,9 @@
+with HAL;       use HAL;
+with Hci;       use Hci;
+package NRG_Hal is
+
+   procedure Hal_Write_Serial (Data1    : DataBuffT;
+                               Data2    : DataBuffT;
+                               N_Bytes1 : UInt8;
+                               N_Bytes2 : UInt8);
+end NRG_Hal;

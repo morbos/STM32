@@ -1,0 +1,124 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bluenrg_hal_aci%b	bluenrg_hal_aci.adb	7675d0cf NE OO PK
+Z system%s		system.ads		system.ali
+
+U bluenrg_hal_aci%s	bluenrg_hal_aci.ads	6210049a EE NE OO PK
+W ble_status%s		ble_status.ads		ble_status.ali
+W hal%s			hal.ads			hal.ali
+W hci%s			hci.adb			hci.ali
+W ogf_ocf%s		ogf_ocf.ads		ogf_ocf.ali
+
+D ble_status.ads	20190102214249 4b2a7901 ble_status%s
+D bluenrg_hal_aci.ads	20190125001011 76ec3cd7 bluenrg_hal_aci%s
+D bluenrg_hal_aci.adb	20190125000851 0099ec18 bluenrg_hal_aci%b
+D gen_list.ads		20190124190033 4741cd9a gen_list%s
+D hal.ads		20170625184526 2b42c80e hal%s
+D hci.ads		20190125001214 9a179a38 hci%s
+D interfac.ads		20180628182831 5ab55268 interfaces%s
+D ogf_ocf.ads		20190114200025 ee83137a ogf_ocf%s
+D system.ads		20180628180938 db831581 system%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 1 ble_status.ads
+2K9*BLE_Status 63e15 2|4w6 4r27
+4M9*BLE_Status_Code<5|53M9> 2|39r46 44r34 3|5r46 14r17 40r34 45r17
+31m4*BLE_STATUS_INVALID_PARAMS{4M9} 3|52r17
+61m4*BLE_STATUS_TIMEOUT{4M9} 3|30r17 75r17
+X 2 bluenrg_hal_aci.ads
+6K9*Bluenrg_Hal_Aci 46l5 46e20 3|1b14 81l5 81t20
+8I9*PA_Level_Range<short_short_integer> 39r23 3|5r23
+10N4*CONFIG_DATA_PUBADDR_OFFSET
+11N4*CONFIG_DATA_DIV_OFFSET
+12N4*CONFIG_DATA_ER_OFFSET
+13N4*CONFIG_DATA_IR_OFFSET
+14N4*CONFIG_DATA_LL_WITHOUT_HOST
+15N4*CONFIG_DATA_RANDOM_ADDRESS
+16N4*CONFIG_DATA_MODE_OFFSET
+17N4*CONFIG_DATA_WATCHDOG_DISABLE
+18N4*CONFIG_DATA_PUBADDR_LEN
+19N4*CONFIG_DATA_DIV_LEN
+20N4*CONFIG_DATA_ER_LEN
+21N4*CONFIG_DATA_IR_LEN
+22N4*CONFIG_DATA_LL_WITHOUT_HOST_LEN
+23N4*CONFIG_DATA_MODE_LEN
+24N4*CONFIG_DATA_WATCHDOG_DISABLE_LEN
+26m4*OCF_HAL_SET_TX_POWER_LEVEL{5|54M9} 3|23r24
+28R9*Hal_Set_Tx_Power_Level_Cp 32e6 3|10r17
+29m7*En_High_Power{5|53M9} 3|18m10
+30m7*Pa_Level{5|53M9} 3|19m10
+33m4*HAL_SET_TX_POWER_LEVEL_CP_SIZE{5|53M9} 3|25r24
+35m4*OCF_HAL_WRITE_CONFIG_DATA{5|54M9} 3|68r24
+37V13*Aci_Hal_Set_Tx_Power_Level{1|4M9} 38>7 39>7 3|3b13 35l8 35t34
+38b7 En_High_Power{boolean} 3|4b7 18r31
+39i7 PA_Level{8I9} 3|5b7 19r34
+41V13*Aci_Hal_Write_Config_Data{1|4M9} 42>7 43>7 44>7 3|37b13 79l8 79t33
+42m7 Offset{5|53M9} 3|38b7 55r33
+43m7 Len{5|53M9} 3|39b7 51r19 58r33 61r21 64r21
+44a7 Param{6|33A9} 3|40b7 62r44
+X 3 bluenrg_hal_aci.adb
+7r7 Rq{6|116R9} 8r35 9m30 9r30 22m7 23m7 24m7 25m7 26m7 27m7 29m24 29r24
+8a7 RqBuff{5|162A9} 9m11 9r11 21m7
+10r7 Cp{2|28R9} 12r11 13m11 13r11 18m7 19m7
+11a7 CpBuf{6|33A9} 13m26 13r26 24m24 24r24
+14m7 Status{1|4M9} 16m11 16r11 32r17
+15a7 StatBuf{6|33A9} 16m30 16r30 26m24 26r24
+42r7 Rq{6|116R9} 43r35 44m30 44r30 67m7 68m7 69m7 70m7 71m7 72m7 74m24 74r24
+43a7 RqBuff{5|162A9} 44m11 44r11 66m7
+45m7 Status{1|4M9} 47m11 47r11 77r17
+46a7 StatBuf{6|33A9} 47m30 47r30 71m24 71r24
+48a7 Buffer{6|33A9} 55m7 58m7 62m10 69m24 69r24
+49m7 Idx{5|53M9} 55r24 56m7 56r14 58r24 59m7 59r14 62r31 64m7 64r15 70r24
+61m11 I<7|63M9> 62r27 62r60
+X 5 hal.ads
+34K9*HAL 2|1w6 1r27 5|166e8
+47M9*UInt6
+53M9*UInt8<7|63M9> 2|29r23 30r23 33r46 42r16 43r16 3|19r27 38r16 39r16 49r17
+54M9*UInt10 2|26r42 35r43
+162A9*UInt8_Array(53M9)<integer> 3|8r17 43r17
+X 6 hci.ads
+5K9*Hci 2|2w6 2r27 6|149e8
+7i4*HCI_MAX_PAYLOAD_SIZE{natural} 3|51r30
+23m7*Ogf{5|47M9} 3|22m17 67m17
+24m7*Ocf{5|54M9} 3|23m17 68m17
+33A9*DataBuffT<5|162A9>(5|53M9)<integer> 2|44r16 3|11r25 15r25 40r16 46r25
+. 48r25
+116R9*Hci_Request 3|7r17 42r17 6|123e14
+117r7*Opcode{22R9} 3|22m10 23m10 67m10 68m10
+119p7*Cparam(33A9) 3|24m10 69m10
+120m7*Clen{5|53M9} 3|25m10 70m10
+121p7*Rparam(33A9) 3|26m10 71m10
+122m7*Rlen{5|53M9} 3|27m10 72m10
+145V13*Hci_Send_Req{integer} 3|29s10 74s10
+X 7 interfac.ads
+63M9*Unsigned_8
+X 8 ogf_ocf.ads
+2K9*Ogf_Ocf 2|3w6 3r27 8|57e12
+21m4*OGF_VENDOR_CMD{5|47M9} 3|22r24 67r24
+

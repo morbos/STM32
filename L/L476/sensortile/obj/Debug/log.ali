@@ -1,0 +1,57 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U log%b			log.adb			9071a049 NE OO PK
+W system%s		system.ads		system.ali
+
+U log%s			log.ads			aaac22df EE NE OO PK
+W hal%s			hal.ads			hal.ali
+
+D hal.ads		20170625184526 2b42c80e hal%s
+D interfac.ads		20180628182831 5ab55268 interfaces%s
+D log.ads		20190124190106 81eeead1 log%s
+D log.adb		20190112012848 ca1c5f19 log%b
+D system.ads		20180628180938 db831581 system%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 1 hal.ads
+34K9*HAL 166e8 3|1w6 1r28
+53M9*UInt8<2|63M9> 3|5r26 4|13r26
+162A9*UInt8_Array(53M9)<integer> 4|15r16
+X 2 interfac.ads
+63M9*Unsigned_8
+X 3 log.ads
+3K9*Log 7l5 7e8 4|6b14 23l5 23t8
+5U14*Logger 5>22 4|13b14 21l8 21t14
+5m22 X{1|53M9} 4|13b22 18r29
+X 4 log.adb
+8i4 Logidx{integer} 17r10 18r18 19m10 19r20
+10m4 SRAM2_Base{5|80M9} 15r70
+15a7 Buffer{1|162A9} 17r20 18m10
+X 5 system.ads
+50K9*System 4|1w6 10r26 11r6 5|164e11
+80M9*Address 4|10r33 11r6
+

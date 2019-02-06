@@ -1,0 +1,182 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{prog2tex}[2000/04/20 Include C++ files in LaTeX2e]
+\renewcommand{\ttdefault}{pcr}
+
+\InputIfFileExists{\jobname.prg}{}{%
+	\PackageError{prog2tex}{Missing \jobname.prg}{%
+		Please run: prog2tex \jobname.tex \MessageBreak
+		to generate \jobname.prg. You may proceed now,   
+		but please be advised that your \jobname.dvi 
+		will not display the program excerpts in \jobname.tex. 
+}}
+
+\newcommand{\progtex}{\textsc{Prog}$2$\TeX{}}
+
+\def\bnf#1{}
+\def\cpp#1{}
+\def\java#1{}
+
+\newcommand\Keyword[1]{\texttt{\textbf{#1}}}
+
+\newcommand{\@nl}[1]{#1}
+\newcommand{\@enl}[1]{\relax}
+\newcommand{\@size}{\footnotesize}
+
+\DeclareOption{linenum}{\renewcommand{\@nl}[1]{#1}}
+\DeclareOption{nolinenum}{\renewcommand{\@nl}[1]{\relax}}
+\DeclareOption{emptylinenum}{\renewcommand{\@enl}[1]{#1}}
+\DeclareOption{noemptylinenum}{\renewcommand{\@enl}[1]{\relax}}
+
+\ProcessOptions\relax
+
+
+\newcommand{\Cpp}{\mbox{C++}\xspace}
+\newcommand{\CLang}{C}
+\newcommand{\CPPFILE}[1]{}
+\newcommand{\BNFFILE}[1]{}
+\newcommand{\JAVAFILE}[1]{}
+\newcommand{\cppfile}[1]{}
+\newcommand{\bnffile}[1]{}
+\newcommand{\javafile}[1]{}
+
+\usepackage{ifthen}
+
+% ----------------------------------------------------------------
+\newenvironment{@CPP}{%
+\newenvironment{EMPTY}{\relax}{\relax}%
+\ttfamily%
+\@size%
+\ttfamily%
+\setlength{\parindent}{0in}%
+\setlength{\parsep}{0in}%
+\newcommand{\NOTE}{// \begin{EMPTY}\rmfamily}%
+\newcommand{\LTNOTE}{// \begin{EMPTY}\rmfamily}%
+\newcommand{\LTCOMMENT}{/* \begin{EMPTY}\rmfamily}%
+\newcommand{\ENDNOTE}{\end{EMPTY}}%
+\newcommand{\COMMENT}{/*\begin{EMPTY}\rmfamily}%
+\newcommand{\ENDCOMMENT}{\end{EMPTY}\ttfamily\textup*/}%
+%      \begin{tabbing}%
+%      \ttfamily
+%      \newcommand{\TSIZE}{1234}
+%      1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=
+%      \kill 
+\newcommand{\STRING}{\begin{EMPTY}\textrm{``}\begin{EMPTY}\itshape}%
+\newcommand{\ESTRING}{\end{EMPTY}\textrm{''}\end{EMPTY}}%
+\newcommand{\CHAR}{\begin{EMPTY}\textrm{`}\begin{EMPTY}\itshape}%
+\newcommand{\ECHAR}{\end{EMPTY}\textrm{'}\end{EMPTY}}%
+\newcommand{\BTAB}{\relax}%
+\newcommand{\TAB}{\relax%
+			%\>\ttfamily
+}%
+\newcommand{\SP}{\mbox{ }}%
+\newcommand{\BSP}{{\texttt{ }}}%
+\newcommand{\BSTAR}{\texttt{*}}%
+\newcommand{\NL}[1]{\mbox{} \hfill\textrm{}\ifthenelse{##1<3}{\normalsize}{}\par\footnotesize}%
+\newcommand{\EMPTYLINE}[1]{\mbox{} \hfill\textrm{\@enl{##1}}\ifthenelse{##1<3}{\normalsize}{}\par\footnotesize}%
+\newcommand{\KW}[1]{\textbf{##1}}%
+\newcommand{\ID}[1]{##1}%
+\newcommand{\PRE}[1]{\textbf{\textit{##1}}}%
+}{%
+	%\end{tabbing}
+}%
+
+\newenvironment{@BNF}{%
+\newenvironment{EMPTY}{\relax}{\relax}%
+\sffamily%
+\@size%
+\setlength{\parindent}{0in}%
+\setlength{\parsep}{0in}%
+\newcommand{\LTNOTE}{// \begin{EMPTY}\rmfamily}%
+\newcommand{\LTCOMMENT}{/* \begin{EMPTY}\rmfamily}%
+\newcommand{\BCOMMENT}{\mbox{-}\mbox{-}\begin{EMPTY}\rm\it\itshape}%
+\newcommand{\ENDBCOMMENT}{\end{EMPTY}}%
+%      \begin{tabbing}%
+%      \ttfamily
+%      \newcommand{\TSIZE}{1234}
+%      1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=
+%      \kill 
+\newcommand{\STRING}{\begin{EMPTY}\textrm{``}\begin{EMPTY}}%
+\newcommand{\ESTRING}{\end{EMPTY}\textrm{''}\end{EMPTY}}%
+\newcommand{\REGEXP}{\begin{EMPTY}$\langle$\begin{EMPTY}}%
+\newcommand{\EREGEXP}{\end{EMPTY}$\rangle$\end{EMPTY}}%
+\newcommand{\CHAR}{\begin{EMPTY}\textrm{`}\begin{EMPTY}\itshape}%
+\newcommand{\ECHAR}{\end{EMPTY}\textrm{'}\end{EMPTY}}%
+\newcommand{\BTAB}{\relax}%
+\newcommand{\TAB}{\relax%
+			%\>\ttfamily
+}%
+\newcommand{\SP}{\texttt{\mbox{ }}}%
+\newcommand{\BSP}{{\texttt{ }}}%
+\newcommand{\BSTAR}{\texttt{*}}%
+\newcommand{\der}{$\rightarrow$}
+\newcommand{\NL}[1]{\mbox{} \hfill\textrm{}\ifthenelse{##1<3}{\normalsize}{}\par\footnotesize}%
+\newcommand{\EMPTYLINE}[1]{\mbox{} \hfill\textrm{\@enl{##1}}\normalsize\par\footnotesize}%
+\newcommand{\BKW}[1]{\textbf{##1}}%
+\newcommand{\VAR}[1]{{##1}}% DEPRECATED, left for backwards compatibility
+\newcommand{\BVAR}[1]{{##1}}%
+\newcommand{\LKEYWORD}[1]{{\textbf{##1}}}%
+\newcommand{\ID}[1]{##1}%
+}{%
+	%\end{tabbing}
+}
+
+% ----------------------------------------------------------------
+\newenvironment{@JAVA}{%
+\newenvironment{EMPTY}{\relax}{\relax}%
+\ttfamily%
+\@size%
+\ttfamily%
+\setlength{\parindent}{0in}%
+\setlength{\parsep}{0in}%
+\newcommand{\NOTE}{// \begin{EMPTY}\rmfamily}%
+\newcommand{\LTNOTE}{// \begin{EMPTY}\rmfamily}%
+\newcommand{\LTCOMMENT}{/* \begin{EMPTY}\rmfamily}%
+\newcommand{\ENDNOTE}{\end{EMPTY}}%
+\newcommand{\COMMENT}{/*\begin{EMPTY}\rmfamily}%
+\newcommand{\ENDCOMMENT}{\end{EMPTY}\ttfamily\textup*/}%
+%      \begin{tabbing}%
+%      \ttfamily
+%      \newcommand{\TSIZE}{1234}
+%      1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=1234\=
+%      \kill 
+\newcommand{\STRING}{\begin{EMPTY}\textrm{``}\begin{EMPTY}\itshape}%
+\newcommand{\ESTRING}{\end{EMPTY}\textrm{''}\end{EMPTY}}%
+\newcommand{\CHAR}{\begin{EMPTY}\textrm{`}\begin{EMPTY}\itshape}%
+\newcommand{\ECHAR}{\end{EMPTY}\textrm{'}\end{EMPTY}}%
+\newcommand{\BTAB}{\relax}%
+\newcommand{\TAB}{\relax%
+			%\>\ttfamily
+}%
+\newcommand{\SP}{\mbox{ }}%
+\newcommand{\BSP}{{\texttt{ }}}%
+\newcommand{\BSTAR}{\texttt{*}}%
+\newcommand{\NL}[1]{\mbox{} \hfill\textrm{}\ifthenelse{##1<3}{\normalsize}{}\par\footnotesize}%
+\newcommand{\EMPTYLINE}[1]{\mbox{} \hfill\textrm{\@enl{##1}}\ifthenelse{##1<3}{\normalsize}{}\par\footnotesize}%
+\newcommand{\KW}[1]{\textbf{##1}}%
+\newcommand{\JDOC}[1]{\texttt{\textbf{##1}}}%
+\newcommand{\ID}[1]{##1}%
+\newcommand{\PRE}[1]{\textbf{\textit{##1}}}%
+}{%
+	%\end{tabbing}
+}%
+
+
+\begingroup
+\gdef\END{}
+\catcode`\{=12\relax
+\catcode`\}=12\relax
+\catcode`\(=1\relax
+\catcode`\)=2\relax
+\catcode`\@=11\relax
+\gdef\reset@brace(\catcode'173=1\catcode'175=2)
+
+\gdef\BNF(\@bsphack\catcode`\}=12\catcode`\{=12\@EAT)\relax
+\gdef\CPP(\@bsphack\catcode`\}=12\catcode`\{=12\@EAT)\relax
+\gdef\JAVA(\@bsphack\catcode`\}=12\catcode`\{=12\@EAT)\relax
+\gdef\@EAT(\@esphack\@NOTE)\relax
+\long\gdef\@NOTE#1\END(\reset@brace)\relax
+\reset@brace
+\endgroup
+
+
+

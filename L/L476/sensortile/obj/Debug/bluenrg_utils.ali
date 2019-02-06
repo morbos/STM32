@@ -1,0 +1,71 @@
+V "GNAT Lib v2018"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P ES ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bluenrg_utils%b	bluenrg_utils.adb	df6d227b NE OO PK
+W hci_le%s		hci_le.adb		hci_le.ali
+
+U bluenrg_utils%s	bluenrg_utils.ads	200f8c16 EE NE OO PK
+W ble_status%s		ble_status.ads		ble_status.ali
+W hal%s			hal.ads			hal.ali
+
+D ble_status.ads	20190102214249 4b2a7901 ble_status%s
+D bluenrg_utils.ads	20190118223915 40673d19 bluenrg_utils%s
+D bluenrg_utils.adb	20190118223928 cf594767 bluenrg_utils%b
+D hal.ads		20170625184526 2b42c80e hal%s
+D hci_le.ads		20190124185919 50535805 hci_le%s
+D interfac.ads		20180628182831 5ab55268 interfaces%s
+D ogf_ocf.ads		20190114200025 ee83137a ogf_ocf%s
+D system.ads		20180628180938 db831581 system%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/gnat.adc  20170924235220 00000000
+X 1 ble_status.ads
+2K9*BLE_Status 63e15 2|2w6 2r23
+4M9*BLE_Status_Code<4|53M9> 2|8r38 3|6r38 8r28
+5m4*BLE_STATUS_OK{4M9} 3|19r19
+X 2 bluenrg_utils.ads
+4K9*Bluenrg_Utils 10l5 10e18 3|2b14 29l5 29t18
+6V13*GetBlueNRGVersion{1|4M9} 7<7 8<7 3|4b13 27l8 27t25
+7m7 HwVersion{4|53M9} 3|5b7 20m10
+8m7 FwVersion{4|66M9} 3|6b7 21m10 22m10 22r23 24m10 24r23
+X 3 bluenrg_utils.adb
+8m7 Status{1|4M9} 16m7 19r10 26r14
+9m7 Hci_Version{4|53M9} 16m44 16r44
+10m7 Lmp_Pal_Version{4|53M9} 16m71 16r71
+11m7 Hci_Revision{4|66M9} 16m57 16r57 20r43 21r35
+12m7 Manufacturer_Name{4|66M9} 17m38 17r38
+13m7 Lmp_Pal_Subversion{4|66M9} 17m57 17r57 23r38 24r37
+X 4 hal.ads
+34K9*HAL 2|1w6 1r23 4|166e8
+53M9*UInt8<6|63M9> 2|7r23 3|5r23 9r28 10r28 20r23
+66M9*UInt16<6|66M9> 2|8r23 3|6r23 11r28 12r28 13r28
+X 5 hci_le.ads
+5K9*Hci_Le 3|1w6 1r29 5|231e11
+101V13*Hci_Le_Read_Local_Version{1|4M9} 3|16s17
+X 6 interfac.ads
+63M9*Unsigned_8
+66M9*Unsigned_16
+101V13*Shift_Left{66M9} 3|21s23 23s12
+105V13*Shift_Right{66M9} 3|20s30 23s25
+

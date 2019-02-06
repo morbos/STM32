@@ -1,0 +1,134 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspension_objectVIP" label: "Suspension_Objectvip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:77:4" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_task" label: "Complete_Restricted_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:248:14" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_create_connection" label: "Aci_Gap_Create_Connection\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:132:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_terminate_gap_procedure" label: "Aci_Gap_Terminate_Gap_Procedure\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:164:13" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_start_general_discovery_proc" label: "Aci_Gap_Start_General_Discovery_Proc\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:145:13" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:63:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_activation" label: "Complete_Restricted_Activation\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:239:14" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "stm32__timers__enable" label: "ENABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-timers.ads:54:14" shape : ellipse }
+node: { title: "stm32__timers__configure" label: "CONFIGURE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-timers.ads:65:14" shape : ellipse }
+node: { title: "stm32__timers__enable_interrupt" label: "ENABLE_INTERRUPT\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-timers.ads:204:14" shape : ellipse }
+node: { title: "stm32__device__reset__4" label: "RESET\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x6/stm32-device.ads:87:14" shape : ellipse }
+node: { title: "main__led_on" label: "Led_On\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/main.ads:57:14" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "Aci_Gatt_Update_Char_Value\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:64:13" shape : ellipse }
+node: { title: "comm__setup__initialize_accgyromag_characteristic" label: "Initialize_Accgyromag_Characteristic\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-setup.ads:93:14" shape : ellipse }
+node: { title: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" label: "Aci_L2cap_Connection_Parameter_Update_Response_Idb05a1\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:61:13" shape : ellipse }
+node: { title: "audio__setfreq" label: "Setfreq\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/audio/audio.ads:36:14" shape : ellipse }
+node: { title: "stm32__timers__disable" label: "DISABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-timers.ads:57:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_true" label: "Set_True\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:49:14" shape : ellipse }
+node: { title: "main__is_client" label: "Is_Client\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/main.ads:65:13" shape : ellipse }
+node: { title: "main__led_off" label: "Led_Off\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/main.ads:59:14" shape : ellipse }
+node: { title: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" label: "Aci_L2cap_Connection_Parameter_Update_Request\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:53:13" shape : ellipse }
+node: { title: "main__is_server" label: "Is_Server\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/main.ads:63:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_update_adv_data" label: "Aci_Gap_Update_Adv_Data\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:128:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_set_discoverable" label: "Aci_Gap_Set_Discoverable\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:115:13" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "hci_le__hci_le_set_scan_resp_data" label: "Hci_Le_Set_Scan_Resp_Data\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/hci_le.ads:149:13" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "Create_Restricted_Task_Sequential\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:193:14" shape : ellipse }
+node: { title: "comm__run___elabs" label: "Run\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.ads:8:1\n16 bytes (static)" }
+edge: { sourcename: "comm__run___elabs" targetname: "comm__run__scan_taskTKVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.ads:63:4" }
+edge: { sourcename: "comm__run___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.ads:19:4" }
+node: { title: "comm__run___elabb" label: "Run\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:20:1\n4 bytes (static)" }
+node: { title: "comm__run__scan_taskTKB" label: "Scan_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:467:4\n112 bytes (static)" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:comm__run__scan_taskTK___finalizer.6825" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:536:0" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:526:22" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "bluenrg_gap_aci__aci_gap_create_connection" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:512:26" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:507:25" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:503:25" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "bluenrg_gap_aci__aci_gap_terminate_gap_procedure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:500:29" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:497:29" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:497:32" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:493:22" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "bluenrg_gap_aci__aci_gap_start_general_discovery_proc" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:486:26" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:482:18" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:480:10" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:467:4" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:475:7" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:comm__run__scan_taskTK___finalizer.6825" label: "Scan_Tasktk\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:467:4\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:comm__run__scan_taskTK___finalizer.6825" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:467:4" }
+node: { title: "comm__run__set_timer4" label: "Set_Timer4\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:453:4\n16 bytes (static)" }
+edge: { sourcename: "comm__run__set_timer4" targetname: "stm32__timers__enable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:459:7" }
+edge: { sourcename: "comm__run__set_timer4" targetname: "stm32__timers__configure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:458:7" }
+edge: { sourcename: "comm__run__set_timer4" targetname: "stm32__timers__enable_interrupt" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:457:7" }
+edge: { sourcename: "comm__run__set_timer4" targetname: "stm32__device__reset__4" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:456:7" }
+node: { title: "comm__run__gg_update" label: "Gg_Update\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:436:4\n40 bytes (static)" }
+edge: { sourcename: "comm__run__gg_update" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:448:10" }
+edge: { sourcename: "comm__run__gg_update" targetname: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:440:14" }
+node: { title: "comm__run__accgyromag_update" label: "Accgyromag_Update\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:416:4\n40 bytes (static)" }
+edge: { sourcename: "comm__run__accgyromag_update" targetname: "main__led_off" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:432:7" }
+edge: { sourcename: "comm__run__accgyromag_update" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:429:10" }
+edge: { sourcename: "comm__run__accgyromag_update" targetname: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:421:14" }
+edge: { sourcename: "comm__run__accgyromag_update" targetname: "main__led_on" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:420:7" }
+node: { title: "comm__run__environmental_update" label: "Environmental_Update\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:399:4\n40 bytes (static)" }
+edge: { sourcename: "comm__run__environmental_update" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:411:10" }
+edge: { sourcename: "comm__run__environmental_update" targetname: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:403:14" }
+node: { title: "comm__run__hci_event_cb" label: "Hci_Event_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:291:4\n184 bytes (static)" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:389:22" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__l2cap_respond" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:386:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "main__is_client" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:376:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__gatt_notification_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:373:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__attribute_modified_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:365:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__read_request_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:356:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__advertising_info_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:332:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__gap_connectioncomplete_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:323:25" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "comm__run__gap_disconnectioncomplete_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:305:13" }
+edge: { sourcename: "comm__run__hci_event_cb" targetname: "memcpy" }
+node: { title: "comm__run__advertising_info_cb" label: "Advertising_Info_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:240:4\n40 bytes (static)" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:288:7" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:278:22" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:272:22" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:268:25" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:264:19" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:262:23" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:252:37" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:245:30" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:244:30" }
+node: { title: "comm__run__l2cap_respond" label: "L2cap_Respond\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:215:4\n64 bytes (static)" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "comm__setup__initialize_accgyromag_characteristic" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:234:7" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:232:10" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:219:14" }
+node: { title: "comm__run__gatt_notification_cb" label: "Gatt_Notification_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:195:4\n24 bytes (static)" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "audio__setfreq" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:209:12" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:206:9" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:202:9" }
+node: { title: "comm__run__attribute_modified_cb" label: "Attribute_Modified_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:148:4\n24 bytes (static)" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:187:16" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:185:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "stm32__timers__disable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:181:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "comm__run__set_timer4" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:178:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:177:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "stm32__timers__disable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:173:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "comm__run__set_timer4" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:170:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:169:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "stm32__timers__disable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:165:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:164:16" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "comm__run__set_timer4" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:162:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:161:13" }
+node: { title: "comm__run__read_request_cb" label: "Read_Request_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:142:4\n16 bytes (static)" }
+node: { title: "comm__run__gap_disconnectioncomplete_cb" label: "Gap_Disconnectioncomplete_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:129:4\n8 bytes (static)" }
+edge: { sourcename: "comm__run__gap_disconnectioncomplete_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:138:10" }
+edge: { sourcename: "comm__run__gap_disconnectioncomplete_cb" targetname: "main__is_client" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:137:10" }
+edge: { sourcename: "comm__run__gap_disconnectioncomplete_cb" targetname: "main__led_off" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:136:7" }
+node: { title: "comm__run__gap_connectioncomplete_cb" label: "Gap_Connectioncomplete_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:105:4\n40 bytes (static)" }
+edge: { sourcename: "comm__run__gap_connectioncomplete_cb" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:123:13" }
+edge: { sourcename: "comm__run__gap_connectioncomplete_cb" targetname: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:115:17" }
+edge: { sourcename: "comm__run__gap_connectioncomplete_cb" targetname: "main__is_server" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:114:10" }
+node: { title: "comm__run__setconnectable" label: "Setconnectable\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:22:4\n160 bytes (static)" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:100:10" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "bluenrg_gap_aci__aci_gap_update_adv_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:95:14" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:91:10" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "bluenrg_gap_aci__aci_gap_set_discoverable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:77:14" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:75:10" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "hci_le__hci_le_set_scan_resp_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.adb:73:14" }
+node: { title: "comm__run__scan_taskTKVIP" label: "Scan_Tasktkvip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.ads:63:4\n80 bytes (static)" }
+edge: { sourcename: "comm__run__scan_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/comm-run.ads:63:4" }
+}

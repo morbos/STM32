@@ -1,0 +1,25 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "hci__hci_isr" label: "Hci_Isr\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/hci.ads:131:14" shape : ellipse }
+node: { title: "stm32__exti__external_interrupt_pending" label: "EXTERNAL_INTERRUPT_PENDING\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/driversL4x6/stm32-exti.ads:106:13" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "bluenrg_int___elabs" label: "Bluenrg_Int\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.ads:3:1\n8 bytes (static)" }
+edge: { sourcename: "bluenrg_int___elabs" targetname: "bluenrg_int__handlerTVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.ads:5:4" }
+node: { title: "bluenrg_int__handler__irq_handlerP" label: "Irq_Handlerp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:7\n32 bytes (static)" }
+edge: { sourcename: "bluenrg_int__handler__irq_handlerP" targetname: "_Unwind_Resume" }
+edge: { sourcename: "bluenrg_int__handler__irq_handlerP" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:bluenrg_int__handler__irq_handlerP___finalizer.5958" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:0" }
+edge: { sourcename: "bluenrg_int__handler__irq_handlerP" targetname: "bluenrg_int__handler__irq_handlerN" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:7" }
+edge: { sourcename: "bluenrg_int__handler__irq_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:7" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:bluenrg_int__handler__irq_handlerP___finalizer.5958" label: "Irq_Handlerp\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:7\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:bluenrg_int__handler__irq_handlerP___finalizer.5958" targetname: "system__tasking__protected_objects__unlock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:7" }
+node: { title: "bluenrg_int__handler__irq_handlerN" label: "Irq_Handlern\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:21:7\n24 bytes (static)" }
+edge: { sourcename: "bluenrg_int__handler__irq_handlerN" targetname: "hci__hci_isr" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:25:13" }
+edge: { sourcename: "bluenrg_int__handler__irq_handlerN" targetname: "stm32__exti__external_interrupt_pending" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.adb:24:13" }
+node: { title: "bluenrg_int__finalize_spec" label: "Finalize_Spec\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.ads:3:1\n4 bytes (static)" }
+node: { title: "bluenrg_int__handlerTVIP" label: "Handlertvip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.ads:5:4\n40 bytes (static)" }
+edge: { sourcename: "bluenrg_int__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.ads:5:4" }
+edge: { sourcename: "bluenrg_int__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bluenrg_int.ads:5:4" }
+}

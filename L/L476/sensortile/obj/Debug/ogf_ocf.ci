@@ -1,0 +1,5 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/ogf_ocf.ads"
+node: { title: "ogf_ocf__gap_update_char_recIP" label: "Gap_Update_Char_Recip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/ogf_ocf.ads:49:9\n16 bytes (static)" }
+node: { title: "ogf_ocf__gap_init_rpIP" label: "Gap_Init_Rpip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/ogf_ocf.ads:39:9\n16 bytes (static)" }
+node: { title: "ogf_ocf__gap_init_cp_idb05a1IP" label: "Gap_Init_Cp_Idb05a1ip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/ogf_ocf.ads:30:9\n24 bytes (static)" }
+}

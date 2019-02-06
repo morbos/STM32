@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{First steps}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{SWD}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Examination phase one}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Examination phase two}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Preliminaries}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{CM4F Memory Protection Unit \(MPU\)}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{First FW}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.7}{Moving on}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{BLE \(or the elephant in the room\)}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{BLE first steps}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{HCI\137Isr}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{BLE setup}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Source tree}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Two board flavors from one source tree}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Ada tasking}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{The demos}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{App: ST BLE}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{AdaTheremin}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Magnetic fields}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Audio generation}{section.5}% 21
+\BOOKMARK [1][-]{section.6}{Deficiencies and Improvements}{}% 22
+\BOOKMARK [1][-]{section.7}{Final thoughts}{}% 23
