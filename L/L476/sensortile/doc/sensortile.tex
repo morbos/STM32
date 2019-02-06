@@ -12,8 +12,10 @@
   %\large
   \textsc{Hedley Rainnie}
   \mbox{}\\ %
+  Cupertino, CA\\
+  \\
   \url{http://hrrzi.com}\\
-  Cupertino, CA 95014\\
+  hedley@pacbell.net\\
   \mbox{}\\ %
 }
 %\documentclass{acmconf}
@@ -840,15 +842,16 @@ antenna, the pitch rises. The flat loop antenna on the left is
 controlled by the left hand to control amplitude. Touching the loop
 produces zero amplitude going to progressively higher amplitude in
 proportion to the players hand distance from the loop. For the
-AdaTheremin a magniture is computed from the magnetometer's XYZ
-vector. The force seen by the MEMs magnetometer is proportional to $1
+AdaTheremin a distance is computed from the magnetometer's Y
+axis. The force seen by the MEMs magnetometer is proportional to $1
 / distance^2$ so we map that force change as a pitch change.  The
 force range change is translated to this frequency band: 100hz to
 3hkz. In lieu of a left hand amplitude computation the angle of the
 sensor to the horizontal plane in front of the magnet is translated
 into the PCM1774 amplitude. If the sensor is tipped to the left the
 amplitude is reduced and if tipped to the right, it advances to the
-maximum amplitude.
+maximum amplitude. This angle is deduced from the Y axis accelerometer
+g value.
 
 \clearpage
 \subsection{Audio generation}
