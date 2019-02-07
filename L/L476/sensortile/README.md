@@ -1,15 +1,4 @@
 # Ada on the ST SensorTile
-## Table of Contents
-<details>
-<summary>Click to expand</summary>
-
-1. [Videos](#Videos)
-2. [Status](#Status)
-3. [Prerequisites](#Prerequisites)  
-4. [Dependencies](#Dependencies)
-5. [Building on Linux](#Building)
-
-</details>
 
 ## Videos
 
@@ -24,9 +13,12 @@
 - gnat2018
 
 ## Dependencies
-- from <a href="https://github.com/morbos/Ada_Drivers_Library">Ada_Drivers_Lib</a>
-- from <a href="https://github.com/morbos/embedded-runtimes">embedded-runtimes</a>
+- from [Ada_Drivers_Lib](https://github.com/morbos/Ada_Drivers_Library)
+- from [embedded-runtimes](https://github.com/morbos/embedded-runtimes)
 - Place the embedded-runtimes folder in the Ada_Drivers_Lib folder
 
 ## Building on Linux
-- $ make
+- First make a symbolic link to the Ada_Drivers_Library
+- From the top of the sensortile dir you can type
+$ make
+
