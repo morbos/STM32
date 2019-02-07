@@ -1,4 +1,4 @@
-Ada on the ST SensorTile
+# Ada on the ST SensorTile
 ## Table of Contents
 <details>
 <summary>Click to expand</summary>
@@ -12,10 +12,10 @@ Ada on the ST SensorTile
 </details>
 
 ## Videos
-<div align="center">
-<a href="https://www.youtube.com/watch?v=E290oAYr0f8">Full video</a>
-<a href="https://youtu.be/E290oAYr0f8?t=404">AdaTheremin</a>
-</div>
+
+[Full video](https://www.youtube.com/watch?v=E290oAYr0f8)
+
+[AdaTheremin](https://youtu.be/E290oAYr0f8?t=404)
 
 ## Status
 - Project is released for #MakeWithAda
