@@ -1,17 +1,28 @@
 This is a work in progress for STM32 projects
 
-Currently the L432 is being worked on. This was for the MakeWithAda
-contest. My project was to use the VL6180X range sensor to tip a
-see-saw back and forth. To do that needed the range sensor
-working. There is a working program for the board I am using in
-STM32/L432/sensors/vl6180x_l432.
+The structure of this dir is based around ST Microelectronics part
+naming conventions. A typical ST part might look like:
 
 
-Further, now there is a demo of a seesaw for the MakeWithAda
-contest. It is in: STM32/L432/demos/seesaw
+STM32L443CC
 
-The L432 SoC is realized for this project on the 32pin Nucleo-L432KC
-board.
+STM32 - indicates ST Microlectronics and a 32bit microprocessor.
+
+L - Stands for the Low power line
+443 - is the # of the part in that line
+CC - helps to clarify the package used.
+
+So here we have currently two subdirs:
+
+L & F
+
+F handles the first generation STM32 parts. Not too much here other
+than some work I do on the BluePill STM32F103C8 its in STM32/F/F103.
+
+Look for a new dir WB to appear March 2019 or so.
+
+
+
 
 
 
