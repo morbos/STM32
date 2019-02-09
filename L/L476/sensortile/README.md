@@ -1,5 +1,12 @@
 # Ada on the ST SensorTile
 
+This project shows how to initialize a SensorTile and how to send
+sensor data over BLE from a SensorTile to a suitable host (that host
+might be another SensorTile). There are two roles, a server and a
+client. Servers accept connections and can send back sensor data when
+prompted. Clients can scan for a server and prod the server to send
+sensor data.
+
 ## Videos
 
 [Full video](https://www.youtube.com/watch?v=E290oAYr0f8)
