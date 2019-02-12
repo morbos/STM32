@@ -6,7 +6,7 @@ naming conventions. A typical ST part might look like:
 
 STM32L443CC
 
-STM32 - indicates ST Microlectronics and a 32bit microprocessor.
+STM32 - indicates ST Microelectronics and a 32bit microprocessor.
 
 L - Stands for the Low power line
 443 - is the # of the part in that line
