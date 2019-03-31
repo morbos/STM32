@@ -7,6 +7,22 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TIM1_CC</name>
+       <value>27</value>
+     </interrupt>
+     <interrupt>
+       <name>TIM1_BRK</name>
+       <value>24</value>
+     </interrupt>
+     <interrupt>
+       <name>TIM1_UP</name>
+       <value>25</value>
+     </interrupt>
+     <interrupt>
+       <name>TIM1_TRG_COM</name>
+       <value>26</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>

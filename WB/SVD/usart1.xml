@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>USART1</name>
+       <value>36</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -387,9 +391,14 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>BRR</name>
-             <bitOffset>0</bitOffset>
-             <bitWidth>16</bitWidth>
+             <name>DIV_Mantissa</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>12</bitWidth>
+           </field>
+           <field>
+             <name>DIV_Fraction</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>4</bitWidth>
            </field>
          </fields>
        </register>
@@ -577,7 +586,7 @@
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>TXFNF</name>
+             <name>TXE</name>
              <bitOffset>7</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -587,7 +596,7 @@
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>RXFNE</name>
+             <name>RXNE</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>

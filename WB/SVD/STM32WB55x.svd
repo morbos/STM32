@@ -30,6 +30,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>RCC</name>
+       <value>5</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -550,12 +554,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCRST.</name>
+             <name>TSCRST</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CRCRST.</name>
+             <name>CRCRST</name>
              <bitOffset>12</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -585,12 +589,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>AES1RST.</name>
+             <name>AES1RST</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>ADCRST.</name>
+             <name>ADCRST</name>
              <bitOffset>13</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -635,32 +639,32 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>FLASHRST.</name>
+             <name>FLASHRST</name>
              <bitOffset>25</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>IPCCRST.</name>
+             <name>IPCCRST</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>HSEMRST.</name>
+             <name>HSEMRST</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>RNGRST.</name>
+             <name>RNGRST</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>AES2RST.</name>
+             <name>AES2RST</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>PKARST.</name>
+             <name>PKARST</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -805,7 +809,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCEN.</name>
+             <name>TSCEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -1055,7 +1059,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCSMEN.</name>
+             <name>TSCSMEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -1605,7 +1609,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCEN.</name>
+             <name>TSCEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -1870,7 +1874,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCSMEN.</name>
+             <name>TSCSMEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -2132,6 +2136,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>ADC</name>
+       <value>18</value>
+     </interrupt>
      <registers>
        <register>
          <name>ISR</name>
@@ -2332,7 +2340,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>JQDIS.</name>
+             <name>JQDIS</name>
              <bitOffset>31</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -3172,13 +3180,41 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>DMA1</name>
-     <groupName>DMA1</groupName>
+     <groupName>DMA</groupName>
      <baseAddress>0x40020000</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>DMA1_CH1</name>
+       <value>11</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA1_CH2</name>
+       <value>12</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA1_CH3</name>
+       <value>13</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA1_CH4</name>
+       <value>14</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA1_CH5</name>
+       <value>15</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA1_CH6</name>
+       <value>16</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA1_CH7</name>
+       <value>17</value>
+     </interrupt>
      <registers>
        <register>
          <name>ISR</name>
@@ -4289,13 +4325,41 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>DMA2</name>
-     <groupName>DMA2</groupName>
+     <groupName>DMA</groupName>
      <baseAddress>0x40020400</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>DMA2_CH1</name>
+       <value>55</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH2</name>
+       <value>56</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH3</name>
+       <value>57</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH4</name>
+       <value>58</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH5</name>
+       <value>59</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH6</name>
+       <value>60</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH7</name>
+       <value>61</value>
+     </interrupt>
      <registers>
        <register>
          <name>ISR</name>
@@ -5406,13 +5470,17 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>SPI1</name>
-     <groupName>SPI1</groupName>
+     <groupName>SPI</groupName>
      <baseAddress>0x40013000</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>SPI1</name>
+       <value>34</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -5682,14 +5750,18 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
      </registers>
    </peripheral>
    <peripheral>
-     <name>SPI1</name>
-     <groupName>SPI1</groupName>
+     <name>SPI2</name>
+     <groupName>SPI</groupName>
      <baseAddress>0x40003800</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>SPI2</name>
+       <value>35</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -5960,13 +6032,21 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>I2C1</name>
-     <groupName>I2C1</groupName>
+     <groupName>I2C</groupName>
      <baseAddress>0x40005400</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>I2C1_EV</name>
+       <value>30</value>
+     </interrupt>
+     <interrupt>
+       <name>I2C1_ER</name>
+       <value>31</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -6462,13 +6542,21 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>I2C3</name>
-     <groupName>I2C3</groupName>
+     <groupName>I2C</groupName>
      <baseAddress>0x40005c00</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>I2C3_EV</name>
+       <value>32</value>
+     </interrupt>
+     <interrupt>
+       <name>I2C3_ER</name>
+       <value>33</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -6971,6 +7059,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x200</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>COMP</name>
+       <value>22</value>
+     </interrupt>
      <registers>
        <register>
          <name>COMP1_CSR</name>
@@ -7001,7 +7093,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>BRGEN.</name>
+             <name>BRGEN</name>
              <bitOffset>22</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -7016,7 +7108,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>2</bitWidth>
            </field>
            <field>
-             <name>POLARITY.</name>
+             <name>POLARITY</name>
              <bitOffset>15</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -7066,12 +7158,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>2</bitWidth>
            </field>
            <field>
-             <name>SCALEN.</name>
+             <name>SCALEN</name>
              <bitOffset>23</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>BRGEN.</name>
+             <name>BRGEN</name>
              <bitOffset>22</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -7086,7 +7178,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>2</bitWidth>
            </field>
            <field>
-             <name>POLARITY.</name>
+             <name>POLARITY</name>
              <bitOffset>15</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -7128,6 +7220,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>LCD</name>
+       <value>49</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -9133,7 +9229,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>AES1</name>
-     <groupName>AES1</groupName>
+     <groupName>AES</groupName>
      <baseAddress>0x50050400</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -9585,7 +9681,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>AES2</name>
-     <groupName>AES2</groupName>
+     <groupName>AES</groupName>
      <baseAddress>0x58001800</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -11148,6 +11244,34 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>PVD</name>
+       <value>1</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI0</name>
+       <value>6</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI1</name>
+       <value>7</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI2</name>
+       <value>8</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI3</name>
+       <value>9</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI4</name>
+       <value>10</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI15_10</name>
+       <value>40</value>
+     </interrupt>
      <registers>
        <register>
          <name>RTSR1</name>
@@ -11460,6 +11584,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>FLASH</name>
+       <value>4</value>
+     </interrupt>
      <registers>
        <register>
          <name>ACR</name>
@@ -14048,6 +14176,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>SAI</name>
+       <value>38</value>
+     </interrupt>
      <registers>
        <register>
          <name>ACR1</name>
@@ -14153,7 +14285,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>6</bitWidth>
            </field>
            <field>
-             <name>MUTE VAL</name>
+             <name>MUTE_VAL</name>
              <bitOffset>6</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -14498,7 +14630,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>6</bitWidth>
            </field>
            <field>
-             <name>MUTE VAL</name>
+             <name>MUTE_VAL</name>
              <bitOffset>6</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -16782,6 +16914,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>WWDG</name>
+       <value>0</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -16854,6 +16990,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>USB_HP</name>
+       <value>19</value>
+     </interrupt>
+     <interrupt>
+       <name>USB_LP</name>
+       <value>20</value>
+     </interrupt>
      <registers>
        <register>
          <name>USB_EP0R</name>
@@ -17651,6 +17795,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>USART1</name>
+       <value>36</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -18031,9 +18179,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>BRR</name>
-             <bitOffset>0</bitOffset>
-             <bitWidth>16</bitWidth>
+             <name>DIV_Mantissa</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>12</bitWidth>
+           </field>
+           <field>
+             <name>DIV_Fraction</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>4</bitWidth>
            </field>
          </fields>
        </register>
@@ -18221,7 +18374,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>TXFNF</name>
+             <name>TXE</name>
              <bitOffset>7</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -18231,7 +18384,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>RXFNE</name>
+             <name>RXNE</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -18403,6 +18556,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TSC</name>
+       <value>39</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -19330,6 +19487,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>RNG</name>
+       <value>53</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -19417,6 +19578,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>CRS</name>
+       <value>42</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -19599,6 +19764,18 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TAMP</name>
+       <value>2</value>
+     </interrupt>
+     <interrupt>
+       <name>RTC_WKUP</name>
+       <value>3</value>
+     </interrupt>
+     <interrupt>
+       <name>RTC_ALARM</name>
+       <value>41</value>
+     </interrupt>
      <registers>
        <register>
          <name>TR</name>
@@ -20754,7 +20931,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>GPIOA</name>
-     <groupName>GPIOA</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48000000</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -21761,7 +21938,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>GPIOB</name>
-     <groupName>GPIOB</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48000400</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -22768,7 +22945,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>GPIOC</name>
-     <groupName>GPIOC</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48000800</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -23775,7 +23952,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>GPIOD</name>
-     <groupName>GPIOD</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48000c00</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -24782,7 +24959,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>GPIOE</name>
-     <groupName>GPIOE</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48001000</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -24798,6 +24975,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>MODE15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
            <field>
              <name>MODE4</name>
              <bitOffset>8</bitOffset>
@@ -24834,6 +25066,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OT15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>OT4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -24868,6 +25155,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>OSPEED15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
            <field>
              <name>OSPEED4</name>
              <bitOffset>8</bitOffset>
@@ -24904,6 +25246,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>PUPD15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
              <name>PUPD4</name>
              <bitOffset>8</bitOffset>
              <bitWidth>2</bitWidth>
@@ -24938,6 +25335,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>ID15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
            <field>
              <name>ID4</name>
              <bitOffset>4</bitOffset>
@@ -24974,6 +25426,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OD15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>OD4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -25009,6 +25516,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>BR15</name>
+             <bitOffset>31</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR14</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR13</name>
+             <bitOffset>29</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR12</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR11</name>
+             <bitOffset>27</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR10</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR9</name>
+             <bitOffset>25</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR8</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR7</name>
+             <bitOffset>23</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR6</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR5</name>
+             <bitOffset>21</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>BR4</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
@@ -25031,6 +25593,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
            <field>
              <name>BR0</name>
              <bitOffset>16</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS5</name>
+             <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25074,6 +25691,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>1</bitWidth>
            </field>
            <field>
+             <name>LCK15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>LCK4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -25108,6 +25780,21 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>AFSEL7</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL6</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL5</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
            <field>
              <name>AFSEL4</name>
              <bitOffset>16</bitOffset>
@@ -25194,6 +25881,61 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>BR15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>BR4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -25224,7 +25966,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    </peripheral>
    <peripheral>
      <name>GPIOH</name>
-     <groupName>GPIOH</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48001c00</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -25241,8 +25983,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>MODE15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE4</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
              <name>MODE3</name>
              <bitOffset>6</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE2</name>
+             <bitOffset>4</bitOffset>
              <bitWidth>2</bitWidth>
            </field>
            <field>
@@ -25266,8 +26073,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OT15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT4</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>OT3</name>
              <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT2</name>
+             <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25291,8 +26163,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OSPEED15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED4</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
              <name>OSPEED3</name>
              <bitOffset>6</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED2</name>
+             <bitOffset>4</bitOffset>
              <bitWidth>2</bitWidth>
            </field>
            <field>
@@ -25316,8 +26253,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>PUPD15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD4</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
              <name>PUPD3</name>
              <bitOffset>6</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD2</name>
+             <bitOffset>4</bitOffset>
              <bitWidth>2</bitWidth>
            </field>
            <field>
@@ -25341,8 +26343,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>ID15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID4</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>ID3</name>
              <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID2</name>
+             <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25366,8 +26433,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OD15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD4</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>OD3</name>
              <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD2</name>
+             <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25391,8 +26523,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>BR15</name>
+             <bitOffset>31</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR14</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR13</name>
+             <bitOffset>29</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR12</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR11</name>
+             <bitOffset>27</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR10</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR9</name>
+             <bitOffset>25</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR8</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR7</name>
+             <bitOffset>23</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR6</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR5</name>
+             <bitOffset>21</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR4</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>BR3</name>
              <bitOffset>19</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR2</name>
+             <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25406,8 +26603,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>1</bitWidth>
            </field>
            <field>
+             <name>BS15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS4</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>BS3</name>
              <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS2</name>
+             <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25436,8 +26698,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <bitWidth>1</bitWidth>
            </field>
            <field>
+             <name>LCK15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK4</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>LCK3</name>
              <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK2</name>
+             <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25461,8 +26788,33 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>AFSEL7</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL6</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL5</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL4</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
              <name>AFSEL3</name>
              <bitOffset>12</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL2</name>
+             <bitOffset>8</bitOffset>
              <bitWidth>4</bitWidth>
            </field>
            <field>
@@ -25536,8 +26888,73 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>BR15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR4</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>BR3</name>
              <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR2</name>
+             <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -25563,6 +26980,22 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TIM1_CC</name>
+       <value>27</value>
+     </interrupt>
+     <interrupt>
+       <name>TIM1_BRK</name>
+       <value>24</value>
+     </interrupt>
+     <interrupt>
+       <name>TIM1_UP</name>
+       <value>25</value>
+     </interrupt>
+     <interrupt>
+       <name>TIM1_TRG_COM</name>
+       <value>26</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -26820,6 +28253,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TIM2</name>
+       <value>28</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -27622,6 +29059,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TIM16</name>
+       <value>25</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -28224,6 +29665,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TIM17</name>
+       <value>26</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -28812,6 +30257,658 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
              <name>TI1SEL</name>
              <bitOffset>0</bitOffset>
              <bitWidth>4</bitWidth>
+           </field>
+         </fields>
+       </register>
+     </registers>
+   </peripheral>
+   <peripheral>
+     <name>LPTIM1</name>
+     <groupName>LPTIM1</groupName>
+     <baseAddress>0x40007c00</baseAddress>
+     <addressBlock>
+       <offset>0</offset>
+       <size>0x400</size>
+       <usage>registers</usage>
+     </addressBlock>
+     <interrupt>
+       <name>LPTIM1</name>
+       <value>47</value>
+     </interrupt>
+     <registers>
+       <register>
+         <name>ISR</name>
+         <displayName>ISR</displayName>
+         <addressOffset>0x000</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>DOWN</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>UP</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARROK</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPOK</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>EXTTRIG</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARRM</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPM</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>ICR</name>
+         <displayName>ICR</displayName>
+         <addressOffset>0x004</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>DOWNCF</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>UPCF</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARROKCF</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPOKCF</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>EXTTRIGCF</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARRMCF</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPMCF</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>IER</name>
+         <displayName>IER</displayName>
+         <addressOffset>0x008</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>DOWNIE</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>UPIE</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARROKIE</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPOKIE</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>EXTTRIGIE</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARRMIE</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPMIE</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CFGR</name>
+         <displayName>CFGR</displayName>
+         <addressOffset>0x00C</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>ENC</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>COUNTMODE</name>
+             <bitOffset>23</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>PRELOAD</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>WAVEPOL</name>
+             <bitOffset>21</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>WAVE</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>TIMOUT</name>
+             <bitOffset>19</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>TRIGEN</name>
+             <bitOffset>17</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>TRIGSEL</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>3</bitWidth>
+           </field>
+           <field>
+             <name>PRESC</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>3</bitWidth>
+           </field>
+           <field>
+             <name>TRGFLT</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>CKFLT</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>CKPOL</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>CKSEL</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CR</name>
+         <displayName>CR</displayName>
+         <addressOffset>0x010</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>RSTARE</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>COUNTRST</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CNTSTRT</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>SNGSTRT</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ENABLE</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CMP</name>
+         <displayName>CMP</displayName>
+         <addressOffset>0x014</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>CMP</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>16</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>ARR</name>
+         <displayName>ARR</displayName>
+         <addressOffset>0x018</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>ARR</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>16</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CNT</name>
+         <displayName>CNT</displayName>
+         <addressOffset>0x01C</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>CNT</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>16</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>OR</name>
+         <displayName>OR</displayName>
+         <addressOffset>0x020</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>OR_1</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OR_0</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+     </registers>
+   </peripheral>
+   <peripheral>
+     <name>LPTIM2</name>
+     <groupName>LPTIM2</groupName>
+     <baseAddress>0x40008000</baseAddress>
+     <addressBlock>
+       <offset>0</offset>
+       <size>0x400</size>
+       <usage>registers</usage>
+     </addressBlock>
+     <interrupt>
+       <name>LPTIM2</name>
+       <value>48</value>
+     </interrupt>
+     <registers>
+       <register>
+         <name>ISR</name>
+         <displayName>ISR</displayName>
+         <addressOffset>0x000</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>DOWN</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>UP</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARROK</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPOK</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>EXTTRIG</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARRM</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPM</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>ICR</name>
+         <displayName>ICR</displayName>
+         <addressOffset>0x004</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>DOWNCF</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>UPCF</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARROKCF</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPOKCF</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>EXTTRIGCF</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARRMCF</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPMCF</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>IER</name>
+         <displayName>IER</displayName>
+         <addressOffset>0x008</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>DOWNIE</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>UPIE</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARROKIE</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPOKIE</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>EXTTRIGIE</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ARRMIE</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CMPMIE</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CFGR</name>
+         <displayName>CFGR</displayName>
+         <addressOffset>0x00C</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>ENC</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>COUNTMODE</name>
+             <bitOffset>23</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>PRELOAD</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>WAVEPOL</name>
+             <bitOffset>21</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>WAVE</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>TIMOUT</name>
+             <bitOffset>19</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>TRIGEN</name>
+             <bitOffset>17</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>TRIGSEL</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>3</bitWidth>
+           </field>
+           <field>
+             <name>PRESC</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>3</bitWidth>
+           </field>
+           <field>
+             <name>TRGFLT</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>CKFLT</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>CKPOL</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>CKSEL</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CR</name>
+         <displayName>CR</displayName>
+         <addressOffset>0x010</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>RSTARE</name>
+             <bitOffset>4</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>COUNTRST</name>
+             <bitOffset>3</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>CNTSTRT</name>
+             <bitOffset>2</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>SNGSTRT</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ENABLE</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CMP</name>
+         <displayName>CMP</displayName>
+         <addressOffset>0x014</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>CMP</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>16</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>ARR</name>
+         <displayName>ARR</displayName>
+         <addressOffset>0x018</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>ARR</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>16</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>CNT</name>
+         <displayName>CNT</displayName>
+         <addressOffset>0x01C</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>CNT</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>16</bitWidth>
+           </field>
+         </fields>
+       </register>
+       <register>
+         <name>OR</name>
+         <displayName>OR</displayName>
+         <addressOffset>0x020</addressOffset>
+         <size>0x20</size>
+         <access>read-write</access>
+         <resetValue>0x00000000</resetValue>
+         <fields>
+           <field>
+             <name>OR_1</name>
+             <bitOffset>1</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OR_0</name>
+             <bitOffset>0</bitOffset>
+             <bitWidth>1</bitWidth>
            </field>
          </fields>
        </register>
@@ -29859,6 +31956,226 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>IPR_N3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>DBGMCU</name>
+      <description>MCU debug component</description>
+      <groupName>DBGMCU</groupName>
+      <baseAddress>0xE0042000</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x15</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>IDCODE</name>
+          <displayName>IDCODE</displayName>
+          <description>DBGMCU_IDCODE</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DEV_ID</name>
+              <description>Device identifier</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>12</bitWidth>
+            </field>
+            <field>
+              <name>REV_ID</name>
+              <description>Revision identifie</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>16</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CR</name>
+          <displayName>CR</displayName>
+          <description>Debug MCU configuration
+          register</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_SLEEP</name>
+              <description>Debug Sleep mode</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_STOP</name>
+              <description>Debug Stop mode</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_STANDBY</name>
+              <description>Debug Standby mode</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRACE_IOEN</name>
+              <description>Trace pin assignment
+              control</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRACE_MODE</name>
+              <description>Trace pin assignment
+              control</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>APB1FZR1</name>
+          <displayName>APB1FZR1</displayName>
+          <description>Debug MCU APB1 freeze
+          register1</description>
+          <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_TIM2_STOP</name>
+              <description>TIM2 counter stopped when core is
+              halted</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM6_STOP</name>
+              <description>TIM6 counter stopped when core is
+              halted</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM7_STOP</name>
+              <description>TIM7 counter stopped when core is
+              halted</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_RTC_STOP</name>
+              <description>RTC counter stopped when core is
+              halted</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_WWDG_STOP</name>
+              <description>Window watchdog counter stopped when
+              core is halted</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_IWDG_STOP</name>
+              <description>Independent watchdog counter stopped
+              when core is halted</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_I2C1_STOP</name>
+              <description>I2C1 SMBUS timeout counter stopped when
+              core is halted</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_I2C2_STOP</name>
+              <description>I2C2 SMBUS timeout counter stopped when
+              core is halted</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_I2C3_STOP</name>
+              <description>I2C3 SMBUS timeout counter stopped when
+              core is halted</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_CAN_STOP</name>
+              <description>bxCAN stopped when core is
+              halted</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_LPTIM1_STOP</name>
+              <description>LPTIM1 counter stopped when core is
+              halted</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>APB1FZR2</name>
+          <displayName>APB1FZR2</displayName>
+          <description>Debug MCU APB1 freeze register
+          2</description>
+          <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_LPTIM2_STOP</name>
+              <description>LPTIM2 counter stopped when core is
+              halted</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>APB2FZR</name>
+          <displayName>APB2FZR</displayName>
+          <description>Debug MCU APB2 freeze register</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_TIM1_STOP</name>
+              <description>TIM1 counter stopped when core is
+              halted</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM15_STOP</name>
+              <description>TIM15 counter stopped when core is
+              halted</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM16_STOP</name>
+              <description>TIM16 counter stopped when core is
+              halted</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>

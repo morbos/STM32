@@ -7,6 +7,10 @@
        <size>0x200</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>COMP</name>
+       <value>22</value>
+     </interrupt>
      <registers>
        <register>
          <name>COMP1_CSR</name>
@@ -37,7 +41,7 @@
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>BRGEN.</name>
+             <name>BRGEN</name>
              <bitOffset>22</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -52,7 +56,7 @@
              <bitWidth>2</bitWidth>
            </field>
            <field>
-             <name>POLARITY.</name>
+             <name>POLARITY</name>
              <bitOffset>15</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -102,12 +106,12 @@
              <bitWidth>2</bitWidth>
            </field>
            <field>
-             <name>SCALEN.</name>
+             <name>SCALEN</name>
              <bitOffset>23</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>BRGEN.</name>
+             <name>BRGEN</name>
              <bitOffset>22</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -122,7 +126,7 @@
              <bitWidth>2</bitWidth>
            </field>
            <field>
-             <name>POLARITY.</name>
+             <name>POLARITY</name>
              <bitOffset>15</bitOffset>
              <bitWidth>1</bitWidth>
            </field>

@@ -7,6 +7,14 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>USB_HP</name>
+       <value>19</value>
+     </interrupt>
+     <interrupt>
+       <name>USB_LP</name>
+       <value>20</value>
+     </interrupt>
      <registers>
        <register>
          <name>USB_EP0R</name>

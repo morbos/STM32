@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TIM2</name>
+       <value>28</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>

@@ -1,12 +1,40 @@
    <peripheral>
      <name>DMA2</name>
-     <groupName>DMA2</groupName>
+     <groupName>DMA</groupName>
      <baseAddress>0x40020400</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>DMA2_CH1</name>
+       <value>55</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH2</name>
+       <value>56</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH3</name>
+       <value>57</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH4</name>
+       <value>58</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH5</name>
+       <value>59</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH6</name>
+       <value>60</value>
+     </interrupt>
+     <interrupt>
+       <name>DMA2_CH7</name>
+       <value>61</value>
+     </interrupt>
      <registers>
        <register>
          <name>ISR</name>

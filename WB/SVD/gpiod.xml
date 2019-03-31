@@ -1,6 +1,6 @@
    <peripheral>
      <name>GPIOD</name>
-     <groupName>GPIOD</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48000c00</baseAddress>
      <addressBlock>
        <offset>0</offset>

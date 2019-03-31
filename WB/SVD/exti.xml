@@ -7,6 +7,34 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>PVD</name>
+       <value>1</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI0</name>
+       <value>6</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI1</name>
+       <value>7</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI2</name>
+       <value>8</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI3</name>
+       <value>9</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI4</name>
+       <value>10</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI15_10</name>
+       <value>40</value>
+     </interrupt>
      <registers>
        <register>
          <name>RTSR1</name>

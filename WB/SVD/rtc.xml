@@ -7,6 +7,18 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>TAMP</name>
+       <value>2</value>
+     </interrupt>
+     <interrupt>
+       <name>RTC_WKUP</name>
+       <value>3</value>
+     </interrupt>
+     <interrupt>
+       <name>RTC_ALARM</name>
+       <value>41</value>
+     </interrupt>
      <registers>
        <register>
          <name>TR</name>

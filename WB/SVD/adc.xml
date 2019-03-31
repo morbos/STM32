@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>ADC</name>
+       <value>18</value>
+     </interrupt>
      <registers>
        <register>
          <name>ISR</name>
@@ -207,7 +211,7 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>JQDIS.</name>
+             <name>JQDIS</name>
              <bitOffset>31</bitOffset>
              <bitWidth>1</bitWidth>
            </field>

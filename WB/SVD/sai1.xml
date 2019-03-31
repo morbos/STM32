@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>SAI</name>
+       <value>38</value>
+     </interrupt>
      <registers>
        <register>
          <name>ACR1</name>
@@ -112,7 +116,7 @@
              <bitWidth>6</bitWidth>
            </field>
            <field>
-             <name>MUTE VAL</name>
+             <name>MUTE_VAL</name>
              <bitOffset>6</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -457,7 +461,7 @@
              <bitWidth>6</bitWidth>
            </field>
            <field>
-             <name>MUTE VAL</name>
+             <name>MUTE_VAL</name>
              <bitOffset>6</bitOffset>
              <bitWidth>1</bitWidth>
            </field>

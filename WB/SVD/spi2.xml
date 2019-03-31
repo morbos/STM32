@@ -1,12 +1,16 @@
    <peripheral>
-     <name>SPI1</name>
-     <groupName>SPI1</groupName>
+     <name>SPI2</name>
+     <groupName>SPI</groupName>
      <baseAddress>0x40003800</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>SPI2</name>
+       <value>35</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>

@@ -96,8 +96,8 @@ Res.
 Res.
 Res.
 Res.
-Res.
-BRR[15:0]
+DIV_Mantissa[15:4]
+DIV_Fraction[3:0]
 Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0x10
 USART_GTPR
@@ -186,9 +186,9 @@ RTOF
 CTS
 CTSIF
 LBDF
-TXFNF
+TXE
 TC
-RXFNE
+RXNE
 IDLE
 ORE
 NE

@@ -1,6 +1,6 @@
    <peripheral>
      <name>GPIOE</name>
-     <groupName>GPIOE</groupName>
+     <groupName>GPIO</groupName>
      <baseAddress>0x48001000</baseAddress>
      <addressBlock>
        <offset>0</offset>
@@ -16,6 +16,61 @@
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>MODE15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>MODE5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
            <field>
              <name>MODE4</name>
              <bitOffset>8</bitOffset>
@@ -52,6 +107,61 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OT15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OT5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>OT4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -86,6 +196,61 @@
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>OSPEED15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>OSPEED5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
            <field>
              <name>OSPEED4</name>
              <bitOffset>8</bitOffset>
@@ -122,6 +287,61 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>PUPD15</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD14</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD13</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD12</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD11</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD10</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD9</name>
+             <bitOffset>18</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD8</name>
+             <bitOffset>16</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD7</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD6</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
+             <name>PUPD5</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>2</bitWidth>
+           </field>
+           <field>
              <name>PUPD4</name>
              <bitOffset>8</bitOffset>
              <bitWidth>2</bitWidth>
@@ -156,6 +376,61 @@
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>ID15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>ID5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
            <field>
              <name>ID4</name>
              <bitOffset>4</bitOffset>
@@ -192,6 +467,61 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>OD15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>OD5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>OD4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -227,6 +557,61 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
+             <name>BR15</name>
+             <bitOffset>31</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR14</name>
+             <bitOffset>30</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR13</name>
+             <bitOffset>29</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR12</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR11</name>
+             <bitOffset>27</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR10</name>
+             <bitOffset>26</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR9</name>
+             <bitOffset>25</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR8</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR7</name>
+             <bitOffset>23</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR6</name>
+             <bitOffset>22</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR5</name>
+             <bitOffset>21</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>BR4</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
@@ -249,6 +634,61 @@
            <field>
              <name>BR0</name>
              <bitOffset>16</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BS5</name>
+             <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
@@ -292,6 +732,61 @@
              <bitWidth>1</bitWidth>
            </field>
            <field>
+             <name>LCK15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>LCK5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
              <name>LCK4</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
@@ -326,6 +821,21 @@
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>AFSEL7</name>
+             <bitOffset>28</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL6</name>
+             <bitOffset>24</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
+           <field>
+             <name>AFSEL5</name>
+             <bitOffset>20</bitOffset>
+             <bitWidth>4</bitWidth>
+           </field>
            <field>
              <name>AFSEL4</name>
              <bitOffset>16</bitOffset>
@@ -411,6 +921,61 @@
          <access>read-write</access>
          <resetValue>0x00000000</resetValue>
          <fields>
+           <field>
+             <name>BR15</name>
+             <bitOffset>15</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR14</name>
+             <bitOffset>14</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR13</name>
+             <bitOffset>13</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR12</name>
+             <bitOffset>12</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR11</name>
+             <bitOffset>11</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR10</name>
+             <bitOffset>10</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR9</name>
+             <bitOffset>9</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR8</name>
+             <bitOffset>8</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR7</name>
+             <bitOffset>7</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR6</name>
+             <bitOffset>6</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
+           <field>
+             <name>BR5</name>
+             <bitOffset>5</bitOffset>
+             <bitWidth>1</bitWidth>
+           </field>
            <field>
              <name>BR4</name>
              <bitOffset>4</bitOffset>

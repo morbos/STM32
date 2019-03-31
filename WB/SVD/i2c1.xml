@@ -1,12 +1,20 @@
    <peripheral>
      <name>I2C1</name>
-     <groupName>I2C1</groupName>
+     <groupName>I2C</groupName>
      <baseAddress>0x40005400</baseAddress>
      <addressBlock>
        <offset>0</offset>
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>I2C1_EV</name>
+       <value>30</value>
+     </interrupt>
+     <interrupt>
+       <name>I2C1_ER</name>
+       <value>31</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>

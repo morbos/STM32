@@ -11,7 +11,11 @@ $options[:name] = "RCC"
 $options[:preindent] = 3
 $options[:indent] = 2
 $options[:trim] = nil
+$options[:root] = nil
 $options[:size] = "0x400"
+$options[:int] = nil
+$options[:int_num] = nil
+$options[:int_range] = "[nil]"
 
 OptionParser.new do |opts|
   opts.banner = "Usage: txt2svd.rb [options]"
@@ -27,8 +31,22 @@ OptionParser.new do |opts|
     $options[:trim] = x
   end
 
+  opts.on("--root=xyz", 'root name of the peripheral') do |x|
+    $options[:root] = x
+  end
+
   opts.on("--size=blocksize", 'Default is 0x400 but u can override') do |x|
     $options[:size] = x
+  end
+
+  opts.on("--interrupt=istring", 'ex: %s_%d') do |x|
+    $options[:int] = x
+  end
+  opts.on("--interrupt_num=x", 'ex: 11') do |x|
+    $options[:int_num] = x
+  end
+  opts.on("--interrupt_range=n..m", 'ex: 0..7') do |x|
+    $options[:int_range] = x
   end
 
   opts.on("", "--debug", 'enable debug') do
@@ -171,7 +189,11 @@ def dump
   printf "%s", $options[:name]
   printf "</name>\n"
   indent(1, "<groupName>", false)
-  printf "%s", $options[:name]
+  if $options[:root]
+    printf "%s", $options[:root]
+  else
+    printf "%s", $options[:name]
+  end
   printf "</groupName>\n"
   indent(1, "<baseAddress>", false)
   printf "0x%08x", $options[:base]
@@ -181,6 +203,33 @@ def dump
   indent(2, "<size>#{$options[:size]}</size>", true)
   indent(2, "<usage>registers</usage>", true)
   indent(1, "</addressBlock>", true)
+  if $options[:int]
+    l = eval($options[:int])
+    nl = eval($options[:int_num])
+    rl = eval($options[:int_range])
+    l.each_with_index do |e,i|
+#      $stderr.puts(l[i])
+#      $stderr.puts(nl[i])
+#      $stderr.puts(rl[i])
+      if rl[i]
+        for j in rl[i] do
+          indent(1, "<interrupt>", true)
+          s = sprintf e,$options[:name],j
+          indent(2, "<name>#{s}</name>", true)
+          n = nl[i].to_i + j
+          indent(2, "<value>#{n}</value>", true)
+          indent(1, "</interrupt>", true)
+        end
+      else
+        indent(1, "<interrupt>", true)
+        s = sprintf e,$options[:name]
+        indent(2, "<name>#{s}</name>", true)
+        n = nl[i].to_i
+        indent(2, "<value>#{n}</value>", true)
+        indent(1, "</interrupt>", true)
+      end
+    end
+  end
   indent(1, "<registers>", true)
   $periph.each do |rec|
 #    p rec

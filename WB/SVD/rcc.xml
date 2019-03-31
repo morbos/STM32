@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>RCC</name>
+       <value>5</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -527,12 +531,12 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCRST.</name>
+             <name>TSCRST</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CRCRST.</name>
+             <name>CRCRST</name>
              <bitOffset>12</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -562,12 +566,12 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>AES1RST.</name>
+             <name>AES1RST</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>ADCRST.</name>
+             <name>ADCRST</name>
              <bitOffset>13</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -612,32 +616,32 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>FLASHRST.</name>
+             <name>FLASHRST</name>
              <bitOffset>25</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>IPCCRST.</name>
+             <name>IPCCRST</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>HSEMRST.</name>
+             <name>HSEMRST</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>RNGRST.</name>
+             <name>RNGRST</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>AES2RST.</name>
+             <name>AES2RST</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>PKARST.</name>
+             <name>PKARST</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -782,7 +786,7 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCEN.</name>
+             <name>TSCEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -1032,7 +1036,7 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCSMEN.</name>
+             <name>TSCSMEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -1582,7 +1586,7 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCEN.</name>
+             <name>TSCEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -1847,7 +1851,7 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>TSCSMEN.</name>
+             <name>TSCSMEN</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>

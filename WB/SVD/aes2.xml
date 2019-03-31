@@ -1,6 +1,6 @@
    <peripheral>
      <name>AES2</name>
-     <groupName>AES2</groupName>
+     <groupName>AES</groupName>
      <baseAddress>0x58001800</baseAddress>
      <addressBlock>
        <offset>0</offset>
