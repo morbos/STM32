@@ -1,7 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/log.adb"
-node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
-node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
-node: { title: "log__logger" label: "Logger\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/log.adb:13:4\n24 bytes (static)" }
-edge: { sourcename: "log__logger" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/log.adb:19:27" }
-edge: { sourcename: "log__logger" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/log.adb:18:10" }
-}

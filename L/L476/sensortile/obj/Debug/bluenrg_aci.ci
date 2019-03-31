@@ -1,3 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_aci.ads"
-node: { title: "bluenrg_aci__evt_blue_aciIP" label: "Evt_Blue_Aciip\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_aci.ads:5:9\n16 bytes (static)" }
-}

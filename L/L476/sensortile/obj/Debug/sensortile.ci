@@ -1,7 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensortile.adb"
-node: { title: "main__process" label: "Process\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/main.ads:51:14" shape : ellipse }
-node: { title: "main__initialize" label: "Initialize\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/main.ads:49:14" shape : ellipse }
-node: { title: "_ada_sensortile" label: "Sensortile\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensortile.adb:4:1\n8 bytes (static)" }
-edge: { sourcename: "_ada_sensortile" targetname: "main__process" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensortile.adb:7:4" }
-edge: { sourcename: "_ada_sensortile" targetname: "main__initialize" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/sensortile.adb:6:4" }
-}

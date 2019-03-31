@@ -1,7 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_utils.adb"
-node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
-node: { title: "hci_le__hci_le_read_local_version" label: "Hci_Le_Read_Local_Version\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/hci_le.ads:101:13" shape : ellipse }
-node: { title: "bluenrg_utils__getbluenrgversion" label: "Getbluenrgversion\n/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_utils.adb:4:4\n48 bytes (static)" }
-edge: { sourcename: "bluenrg_utils__getbluenrgversion" targetname: "__gnat_rcheck_CE_Range_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_utils.adb:20:60" }
-edge: { sourcename: "bluenrg_utils__getbluenrgversion" targetname: "hci_le__hci_le_read_local_version" label: "/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/src/comm/bt/hci/controller/bluenrg_utils.adb:16:17" }
-}
