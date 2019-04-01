@@ -10,6 +10,8 @@ use STM32; -- for GPIO_Alternate_Function
 with Ada.Real_Time; use Ada.Real_Time;
 
 procedure Try_wb55x is
+
+   LEDs : GPIO_Points := (Red_LED, Green_LED, Blue_LED);
    procedure My_Delay;
 
    procedure My_Delay is
@@ -19,17 +21,9 @@ procedure Try_wb55x is
 begin
    Initialize_Board;
    loop
-      Turn_On (Red_LED);
-      My_Delay;
-      Turn_On (Green_LED);
-      My_Delay;
-      Turn_On (Blue_LED);
-      My_Delay;
-      Turn_Off (Red_LED);
-      My_Delay;
-      Turn_Off (Green_LED);
-      My_Delay;
-      Turn_Off (Blue_LED);
-      My_Delay;
+      for I in LEDs'Range loop
+         Toggle (LEDs (I));
+         My_Delay;
+      end loop;
    end loop;
 end Try_wb55x;

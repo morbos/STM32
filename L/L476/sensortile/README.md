@@ -23,9 +23,7 @@ sensor data.
 - git clone https://github.com/morbos/Ada_Drivers_Library.git
 - git clone https://github.com/morbos/embedded-runtimes.git
 - git clone https://github.com/morbos/STM32.git
-- cd Ada_Drivers_Library
-- mv ../embedded-runtimes .
-- cd ..
+- mv ../embedded-runtimes Ada_Drivers_Library
 - cd STM32/L/L476/sensortile
 - make
 
