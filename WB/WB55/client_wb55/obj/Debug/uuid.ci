@@ -1,3 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/uuid.adb"
-node: { title: "uuid__uuid_copy" label: "Uuid_Copy\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/uuid.adb:3:4\n24 bytes (static)" }
-}

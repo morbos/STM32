@@ -1,3 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-hw.adb"
-node: { title: "comm__hw__initialize_comm_hardware" label: "Initialize_Comm_Hardware\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-hw.adb:8:4\n4 bytes (static)" }
-}
