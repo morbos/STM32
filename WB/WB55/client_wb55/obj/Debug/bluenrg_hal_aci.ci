@@ -1,0 +1,16 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb"
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "hci__hci_send_req" label: "Hci_Send_Req\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/hci.ads:155:13" shape : ellipse }
+node: { title: "hci__hci_requestIP" label: "Hci_Requestip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/hci.ads:134:9" shape : ellipse }
+node: { title: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" label: "Aci_Hal_Set_Radio_Activity_Mask\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:81:4\n560 bytes (static)" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" targetname: "hci__hci_send_req" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:104:10" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" targetname: "hci__hci_requestIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:84:7" }
+node: { title: "bluenrg_hal_aci__aci_hal_write_config_data" label: "Aci_Hal_Write_Config_Data\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:37:4\n568 bytes (static)" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_write_config_data" targetname: "hci__hci_send_req" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:74:10" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_write_config_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:62:10" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_write_config_data" targetname: "hci__hci_requestIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:42:7" }
+node: { title: "bluenrg_hal_aci__aci_hal_set_tx_power_level" label: "Aci_Hal_Set_Tx_Power_Level\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:3:4\n560 bytes (static)" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_set_tx_power_level" targetname: "hci__hci_send_req" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:29:10" }
+edge: { sourcename: "bluenrg_hal_aci__aci_hal_set_tx_power_level" targetname: "hci__hci_requestIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.adb:7:7" }
+node: { title: "bluenrg_hal_aci__hal_set_tx_power_level_cpIP" label: "Hal_Set_Tx_Power_Level_Cpip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.ads:29:9\n16 bytes (static)" }
+}

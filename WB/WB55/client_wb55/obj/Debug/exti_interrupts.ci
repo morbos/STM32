@@ -1,0 +1,33 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "stm32__exti__clear_external_interrupt" label: "CLEAR_EXTERNAL_INTERRUPT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-exti.ads:110:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_true" label: "Set_True\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:49:14" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__Osubtract__2" label: "-\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:76:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "exti_interrupts___elabs" label: "Exti_Interrupts\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.ads:36:1\n8 bytes (static)" }
+edge: { sourcename: "exti_interrupts___elabs" targetname: "exti_interrupts__handlerTVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.ads:39:4" }
+node: { title: "exti_interrupts___elabb" label: "Exti_Interrupts\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:40:1\n16 bytes (static)" }
+edge: { sourcename: "exti_interrupts___elabb" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:42:19" }
+node: { title: "exti_interrupts__handler__sw1_handlerP" label: "Sw1_Handlerp\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:7\n32 bytes (static)" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerP" targetname: "_Unwind_Resume" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerP" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:exti_interrupts__handler__sw1_handlerP___finalizer.6004" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:0" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerP" targetname: "exti_interrupts__handler__sw1_handlerN" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:7" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:7" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:exti_interrupts__handler__sw1_handlerP___finalizer.6004" label: "Sw1_Handlerp\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:7\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:exti_interrupts__handler__sw1_handlerP___finalizer.6004" targetname: "system__tasking__protected_objects__unlock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:7" }
+node: { title: "exti_interrupts__handler__sw1_handlerN" label: "Sw1_Handlern\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:54:7\n40 bytes (static)" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerN" targetname: "stm32__exti__clear_external_interrupt" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:63:10" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerN" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:60:13" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerN" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:59:29" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerN" targetname: "ada__real_time__Osubtract__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:59:19" }
+edge: { sourcename: "exti_interrupts__handler__sw1_handlerN" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.adb:58:15" }
+node: { title: "exti_interrupts__finalize_spec" label: "Finalize_Spec\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.ads:36:1\n4 bytes (static)" }
+node: { title: "exti_interrupts__handlerTVIP" label: "Handlertvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.ads:39:4\n40 bytes (static)" }
+edge: { sourcename: "exti_interrupts__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.ads:39:4" }
+edge: { sourcename: "exti_interrupts__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/exti_interrupts.ads:39:4" }
+}

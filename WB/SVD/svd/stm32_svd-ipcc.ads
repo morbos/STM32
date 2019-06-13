@@ -32,21 +32,59 @@ package STM32_SVD.IPCC is
       Reserved_17_31 at 0 range 17 .. 31;
    end record;
 
+   --  C1MR_CHOM array
+   type C1MR_CHOM_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1MR_CHOM
+   type C1MR_CHOM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHOM as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHOM as an array
+            Arr : C1MR_CHOM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1MR_CHOM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C1MR_CHFM array
+   type C1MR_CHFM_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1MR_CHFM
+   type C1MR_CHFM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHFM as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHFM as an array
+            Arr : C1MR_CHFM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1MR_CHFM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
    type C1MR_Register is record
-      CH1OM          : Boolean := False;
-      CH2OM          : Boolean := False;
-      CH3OM          : Boolean := False;
-      CH4OM          : Boolean := False;
-      CH5OM          : Boolean := False;
-      CH6OM          : Boolean := False;
+      CHOM           : C1MR_CHOM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : HAL.UInt10 := 16#0#;
-      CH1FM          : Boolean := False;
-      CH2FM          : Boolean := False;
-      CH3FM          : Boolean := False;
-      CH4FM          : Boolean := False;
-      CH5FM          : Boolean := False;
-      CH6FM          : Boolean := False;
+      CHFM           : C1MR_CHFM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : HAL.UInt10 := 16#0#;
    end record
@@ -54,37 +92,65 @@ package STM32_SVD.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C1MR_Register use record
-      CH1OM          at 0 range 0 .. 0;
-      CH2OM          at 0 range 1 .. 1;
-      CH3OM          at 0 range 2 .. 2;
-      CH4OM          at 0 range 3 .. 3;
-      CH5OM          at 0 range 4 .. 4;
-      CH6OM          at 0 range 5 .. 5;
+      CHOM           at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1FM          at 0 range 16 .. 16;
-      CH2FM          at 0 range 17 .. 17;
-      CH3FM          at 0 range 18 .. 18;
-      CH4FM          at 0 range 19 .. 19;
-      CH5FM          at 0 range 20 .. 20;
-      CH6FM          at 0 range 21 .. 21;
+      CHFM           at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
+   --  C1SCR_CHC array
+   type C1SCR_CHC_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1SCR_CHC
+   type C1SCR_CHC_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHC as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHC as an array
+            Arr : C1SCR_CHC_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1SCR_CHC_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C1SCR_CHS array
+   type C1SCR_CHS_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1SCR_CHS
+   type C1SCR_CHS_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHS as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHS as an array
+            Arr : C1SCR_CHS_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1SCR_CHS_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
    type C1SCR_Register is record
-      CH1C           : Boolean := False;
-      CH2C           : Boolean := False;
-      CH3C           : Boolean := False;
-      CH4C           : Boolean := False;
-      CH5C           : Boolean := False;
-      CH6C           : Boolean := False;
+      CHC            : C1SCR_CHC_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : HAL.UInt10 := 16#0#;
-      CH1S           : Boolean := False;
-      CH2S           : Boolean := False;
-      CH3S           : Boolean := False;
-      CH4S           : Boolean := False;
-      CH5S           : Boolean := False;
-      CH6S           : Boolean := False;
+      CHS            : C1SCR_CHS_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : HAL.UInt10 := 16#0#;
    end record
@@ -92,29 +158,38 @@ package STM32_SVD.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C1SCR_Register use record
-      CH1C           at 0 range 0 .. 0;
-      CH2C           at 0 range 1 .. 1;
-      CH3C           at 0 range 2 .. 2;
-      CH4C           at 0 range 3 .. 3;
-      CH5C           at 0 range 4 .. 4;
-      CH6C           at 0 range 5 .. 5;
+      CHC            at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1S           at 0 range 16 .. 16;
-      CH2S           at 0 range 17 .. 17;
-      CH3S           at 0 range 18 .. 18;
-      CH4S           at 0 range 19 .. 19;
-      CH5S           at 0 range 20 .. 20;
-      CH6S           at 0 range 21 .. 21;
+      CHS            at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
+   --  C1TOC2SR_CHF array
+   type C1TOC2SR_CHF_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1TOC2SR_CHF
+   type C1TOC2SR_CHF_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHF as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHF as an array
+            Arr : C1TOC2SR_CHF_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1TOC2SR_CHF_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
    type C1TOC2SR_Register is record
-      CH1F          : Boolean := False;
-      CH2F          : Boolean := False;
-      CH3F          : Boolean := False;
-      CH4F          : Boolean := False;
-      CH5F          : Boolean := False;
-      CH6F          : Boolean := False;
+      CHF           : C1TOC2SR_CHF_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_31 : HAL.UInt26 := 16#0#;
    end record
@@ -122,12 +197,7 @@ package STM32_SVD.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C1TOC2SR_Register use record
-      CH1F          at 0 range 0 .. 0;
-      CH2F          at 0 range 1 .. 1;
-      CH3F          at 0 range 2 .. 2;
-      CH4F          at 0 range 3 .. 3;
-      CH5F          at 0 range 4 .. 4;
-      CH6F          at 0 range 5 .. 5;
+      CHF           at 0 range 0 .. 5;
       Reserved_6_31 at 0 range 6 .. 31;
    end record;
 
@@ -149,21 +219,59 @@ package STM32_SVD.IPCC is
       Reserved_17_31 at 0 range 17 .. 31;
    end record;
 
+   --  C2MR_CHOM array
+   type C2MR_CHOM_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2MR_CHOM
+   type C2MR_CHOM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHOM as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHOM as an array
+            Arr : C2MR_CHOM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2MR_CHOM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C2MR_CHFM array
+   type C2MR_CHFM_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2MR_CHFM
+   type C2MR_CHFM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHFM as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHFM as an array
+            Arr : C2MR_CHFM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2MR_CHFM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
    type C2MR_Register is record
-      CH1OM          : Boolean := False;
-      CH2OM          : Boolean := False;
-      CH3OM          : Boolean := False;
-      CH4OM          : Boolean := False;
-      CH5OM          : Boolean := False;
-      CH6OM          : Boolean := False;
+      CHOM           : C2MR_CHOM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : HAL.UInt10 := 16#0#;
-      CH1FM          : Boolean := False;
-      CH2FM          : Boolean := False;
-      CH3FM          : Boolean := False;
-      CH4FM          : Boolean := False;
-      CH5FM          : Boolean := False;
-      CH6FM          : Boolean := False;
+      CHFM           : C2MR_CHFM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : HAL.UInt10 := 16#0#;
    end record
@@ -171,37 +279,65 @@ package STM32_SVD.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C2MR_Register use record
-      CH1OM          at 0 range 0 .. 0;
-      CH2OM          at 0 range 1 .. 1;
-      CH3OM          at 0 range 2 .. 2;
-      CH4OM          at 0 range 3 .. 3;
-      CH5OM          at 0 range 4 .. 4;
-      CH6OM          at 0 range 5 .. 5;
+      CHOM           at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1FM          at 0 range 16 .. 16;
-      CH2FM          at 0 range 17 .. 17;
-      CH3FM          at 0 range 18 .. 18;
-      CH4FM          at 0 range 19 .. 19;
-      CH5FM          at 0 range 20 .. 20;
-      CH6FM          at 0 range 21 .. 21;
+      CHFM           at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
+   --  C2SCR_CHC array
+   type C2SCR_CHC_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2SCR_CHC
+   type C2SCR_CHC_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHC as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHC as an array
+            Arr : C2SCR_CHC_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2SCR_CHC_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C2SCR_CHS array
+   type C2SCR_CHS_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2SCR_CHS
+   type C2SCR_CHS_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHS as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHS as an array
+            Arr : C2SCR_CHS_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2SCR_CHS_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
    type C2SCR_Register is record
-      CH1C           : Boolean := False;
-      CH2C           : Boolean := False;
-      CH3C           : Boolean := False;
-      CH4C           : Boolean := False;
-      CH5C           : Boolean := False;
-      CH6C           : Boolean := False;
+      CHC            : C2SCR_CHC_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : HAL.UInt10 := 16#0#;
-      CH1S           : Boolean := False;
-      CH2S           : Boolean := False;
-      CH3S           : Boolean := False;
-      CH4S           : Boolean := False;
-      CH5S           : Boolean := False;
-      CH6S           : Boolean := False;
+      CHS            : C2SCR_CHS_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : HAL.UInt10 := 16#0#;
    end record
@@ -209,29 +345,38 @@ package STM32_SVD.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C2SCR_Register use record
-      CH1C           at 0 range 0 .. 0;
-      CH2C           at 0 range 1 .. 1;
-      CH3C           at 0 range 2 .. 2;
-      CH4C           at 0 range 3 .. 3;
-      CH5C           at 0 range 4 .. 4;
-      CH6C           at 0 range 5 .. 5;
+      CHC            at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1S           at 0 range 16 .. 16;
-      CH2S           at 0 range 17 .. 17;
-      CH3S           at 0 range 18 .. 18;
-      CH4S           at 0 range 19 .. 19;
-      CH5S           at 0 range 20 .. 20;
-      CH6S           at 0 range 21 .. 21;
+      CHS            at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
+   --  C2TOC1SR_CHF array
+   type C2TOC1SR_CHF_Field_Array is array (1 .. 6) of Boolean
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2TOC1SR_CHF
+   type C2TOC1SR_CHF_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHF as a value
+            Val : HAL.UInt6;
+         when True =>
+            --  CHF as an array
+            Arr : C2TOC1SR_CHF_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2TOC1SR_CHF_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
    type C2TOC1SR_Register is record
-      CH1F          : Boolean := False;
-      CH2F          : Boolean := False;
-      CH3F          : Boolean := False;
-      CH4F          : Boolean := False;
-      CH5F          : Boolean := False;
-      CH6F          : Boolean := False;
+      CHF           : C2TOC1SR_CHF_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_31 : HAL.UInt26 := 16#0#;
    end record
@@ -239,12 +384,7 @@ package STM32_SVD.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C2TOC1SR_Register use record
-      CH1F          at 0 range 0 .. 0;
-      CH2F          at 0 range 1 .. 1;
-      CH3F          at 0 range 2 .. 2;
-      CH4F          at 0 range 3 .. 3;
-      CH5F          at 0 range 4 .. 4;
-      CH6F          at 0 range 5 .. 5;
+      CHF           at 0 range 0 .. 5;
       Reserved_6_31 at 0 range 6 .. 31;
    end record;
 

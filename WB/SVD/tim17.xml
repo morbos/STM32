@@ -8,7 +8,7 @@
        <usage>registers</usage>
      </addressBlock>
      <interrupt>
-       <name>TIM17</name>
+       <name>TIM1_TRG_COM_TIM17</name>
        <value>26</value>
      </interrupt>
      <registers>

@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>AES2</name>
+       <value>52</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>

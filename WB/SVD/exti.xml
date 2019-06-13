@@ -32,6 +32,10 @@
        <value>10</value>
      </interrupt>
      <interrupt>
+       <name>EXTI9_5</name>
+       <value>23</value>
+     </interrupt>
+     <interrupt>
        <name>EXTI15_10</name>
        <value>40</value>
      </interrupt>

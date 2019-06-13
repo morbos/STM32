@@ -39,34 +39,65 @@ package Interfaces.STM32.IPCC is
       Reserved_17_31 at 0 range 17 .. 31;
    end record;
 
-   subtype C1MR_CH1OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH2OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH3OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH4OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH5OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH6OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH1FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH2FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH3FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH4FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH5FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C1MR_CH6FM_Field is Interfaces.Bit_Types.Bit;
+   --  C1MR_CHOM array element
+   subtype C1MR_CHOM_Element is Interfaces.Bit_Types.Bit;
+
+   --  C1MR_CHOM array
+   type C1MR_CHOM_Field_Array is array (1 .. 6) of C1MR_CHOM_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1MR_CHOM
+   type C1MR_CHOM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHOM as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHOM as an array
+            Arr : C1MR_CHOM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1MR_CHOM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C1MR_CHFM array element
+   subtype C1MR_CHFM_Element is Interfaces.Bit_Types.Bit;
+
+   --  C1MR_CHFM array
+   type C1MR_CHFM_Field_Array is array (1 .. 6) of C1MR_CHFM_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1MR_CHFM
+   type C1MR_CHFM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHFM as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHFM as an array
+            Arr : C1MR_CHFM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1MR_CHFM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
 
    type C1MR_Register is record
-      CH1OM          : C1MR_CH1OM_Field := 16#0#;
-      CH2OM          : C1MR_CH2OM_Field := 16#0#;
-      CH3OM          : C1MR_CH3OM_Field := 16#0#;
-      CH4OM          : C1MR_CH4OM_Field := 16#0#;
-      CH5OM          : C1MR_CH5OM_Field := 16#0#;
-      CH6OM          : C1MR_CH6OM_Field := 16#0#;
+      CHOM           : C1MR_CHOM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : Interfaces.Bit_Types.UInt10 := 16#0#;
-      CH1FM          : C1MR_CH1FM_Field := 16#0#;
-      CH2FM          : C1MR_CH2FM_Field := 16#0#;
-      CH3FM          : C1MR_CH3FM_Field := 16#0#;
-      CH4FM          : C1MR_CH4FM_Field := 16#0#;
-      CH5FM          : C1MR_CH5FM_Field := 16#0#;
-      CH6FM          : C1MR_CH6FM_Field := 16#0#;
+      CHFM           : C1MR_CHFM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : Interfaces.Bit_Types.UInt10 := 16#0#;
    end record
@@ -74,50 +105,71 @@ package Interfaces.STM32.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C1MR_Register use record
-      CH1OM          at 0 range 0 .. 0;
-      CH2OM          at 0 range 1 .. 1;
-      CH3OM          at 0 range 2 .. 2;
-      CH4OM          at 0 range 3 .. 3;
-      CH5OM          at 0 range 4 .. 4;
-      CH6OM          at 0 range 5 .. 5;
+      CHOM           at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1FM          at 0 range 16 .. 16;
-      CH2FM          at 0 range 17 .. 17;
-      CH3FM          at 0 range 18 .. 18;
-      CH4FM          at 0 range 19 .. 19;
-      CH5FM          at 0 range 20 .. 20;
-      CH6FM          at 0 range 21 .. 21;
+      CHFM           at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
-   subtype C1SCR_CH1C_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH2C_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH3C_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH4C_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH5C_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH6C_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH1S_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH2S_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH3S_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH4S_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH5S_Field is Interfaces.Bit_Types.Bit;
-   subtype C1SCR_CH6S_Field is Interfaces.Bit_Types.Bit;
+   --  C1SCR_CHC array element
+   subtype C1SCR_CHC_Element is Interfaces.Bit_Types.Bit;
+
+   --  C1SCR_CHC array
+   type C1SCR_CHC_Field_Array is array (1 .. 6) of C1SCR_CHC_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1SCR_CHC
+   type C1SCR_CHC_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHC as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHC as an array
+            Arr : C1SCR_CHC_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1SCR_CHC_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C1SCR_CHS array element
+   subtype C1SCR_CHS_Element is Interfaces.Bit_Types.Bit;
+
+   --  C1SCR_CHS array
+   type C1SCR_CHS_Field_Array is array (1 .. 6) of C1SCR_CHS_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1SCR_CHS
+   type C1SCR_CHS_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHS as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHS as an array
+            Arr : C1SCR_CHS_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1SCR_CHS_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
 
    type C1SCR_Register is record
-      CH1C           : C1SCR_CH1C_Field := 16#0#;
-      CH2C           : C1SCR_CH2C_Field := 16#0#;
-      CH3C           : C1SCR_CH3C_Field := 16#0#;
-      CH4C           : C1SCR_CH4C_Field := 16#0#;
-      CH5C           : C1SCR_CH5C_Field := 16#0#;
-      CH6C           : C1SCR_CH6C_Field := 16#0#;
+      CHC            : C1SCR_CHC_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : Interfaces.Bit_Types.UInt10 := 16#0#;
-      CH1S           : C1SCR_CH1S_Field := 16#0#;
-      CH2S           : C1SCR_CH2S_Field := 16#0#;
-      CH3S           : C1SCR_CH3S_Field := 16#0#;
-      CH4S           : C1SCR_CH4S_Field := 16#0#;
-      CH5S           : C1SCR_CH5S_Field := 16#0#;
-      CH6S           : C1SCR_CH6S_Field := 16#0#;
+      CHS            : C1SCR_CHS_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : Interfaces.Bit_Types.UInt10 := 16#0#;
    end record
@@ -125,36 +177,41 @@ package Interfaces.STM32.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C1SCR_Register use record
-      CH1C           at 0 range 0 .. 0;
-      CH2C           at 0 range 1 .. 1;
-      CH3C           at 0 range 2 .. 2;
-      CH4C           at 0 range 3 .. 3;
-      CH5C           at 0 range 4 .. 4;
-      CH6C           at 0 range 5 .. 5;
+      CHC            at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1S           at 0 range 16 .. 16;
-      CH2S           at 0 range 17 .. 17;
-      CH3S           at 0 range 18 .. 18;
-      CH4S           at 0 range 19 .. 19;
-      CH5S           at 0 range 20 .. 20;
-      CH6S           at 0 range 21 .. 21;
+      CHS            at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
-   subtype C1TOC2SR_CH1F_Field is Interfaces.Bit_Types.Bit;
-   subtype C1TOC2SR_CH2F_Field is Interfaces.Bit_Types.Bit;
-   subtype C1TOC2SR_CH3F_Field is Interfaces.Bit_Types.Bit;
-   subtype C1TOC2SR_CH4F_Field is Interfaces.Bit_Types.Bit;
-   subtype C1TOC2SR_CH5F_Field is Interfaces.Bit_Types.Bit;
-   subtype C1TOC2SR_CH6F_Field is Interfaces.Bit_Types.Bit;
+   --  C1TOC2SR_CHF array element
+   subtype C1TOC2SR_CHF_Element is Interfaces.Bit_Types.Bit;
+
+   --  C1TOC2SR_CHF array
+   type C1TOC2SR_CHF_Field_Array is array (1 .. 6) of C1TOC2SR_CHF_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C1TOC2SR_CHF
+   type C1TOC2SR_CHF_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHF as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHF as an array
+            Arr : C1TOC2SR_CHF_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C1TOC2SR_CHF_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
 
    type C1TOC2SR_Register is record
-      CH1F          : C1TOC2SR_CH1F_Field := 16#0#;
-      CH2F          : C1TOC2SR_CH2F_Field := 16#0#;
-      CH3F          : C1TOC2SR_CH3F_Field := 16#0#;
-      CH4F          : C1TOC2SR_CH4F_Field := 16#0#;
-      CH5F          : C1TOC2SR_CH5F_Field := 16#0#;
-      CH6F          : C1TOC2SR_CH6F_Field := 16#0#;
+      CHF           : C1TOC2SR_CHF_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_31 : Interfaces.Bit_Types.UInt26 := 16#0#;
    end record
@@ -162,12 +219,7 @@ package Interfaces.STM32.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C1TOC2SR_Register use record
-      CH1F          at 0 range 0 .. 0;
-      CH2F          at 0 range 1 .. 1;
-      CH3F          at 0 range 2 .. 2;
-      CH4F          at 0 range 3 .. 3;
-      CH5F          at 0 range 4 .. 4;
-      CH6F          at 0 range 5 .. 5;
+      CHF           at 0 range 0 .. 5;
       Reserved_6_31 at 0 range 6 .. 31;
    end record;
 
@@ -192,34 +244,65 @@ package Interfaces.STM32.IPCC is
       Reserved_17_31 at 0 range 17 .. 31;
    end record;
 
-   subtype C2MR_CH1OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH2OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH3OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH4OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH5OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH6OM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH1FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH2FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH3FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH4FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH5FM_Field is Interfaces.Bit_Types.Bit;
-   subtype C2MR_CH6FM_Field is Interfaces.Bit_Types.Bit;
+   --  C2MR_CHOM array element
+   subtype C2MR_CHOM_Element is Interfaces.Bit_Types.Bit;
+
+   --  C2MR_CHOM array
+   type C2MR_CHOM_Field_Array is array (1 .. 6) of C2MR_CHOM_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2MR_CHOM
+   type C2MR_CHOM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHOM as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHOM as an array
+            Arr : C2MR_CHOM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2MR_CHOM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C2MR_CHFM array element
+   subtype C2MR_CHFM_Element is Interfaces.Bit_Types.Bit;
+
+   --  C2MR_CHFM array
+   type C2MR_CHFM_Field_Array is array (1 .. 6) of C2MR_CHFM_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2MR_CHFM
+   type C2MR_CHFM_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHFM as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHFM as an array
+            Arr : C2MR_CHFM_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2MR_CHFM_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
 
    type C2MR_Register is record
-      CH1OM          : C2MR_CH1OM_Field := 16#0#;
-      CH2OM          : C2MR_CH2OM_Field := 16#0#;
-      CH3OM          : C2MR_CH3OM_Field := 16#0#;
-      CH4OM          : C2MR_CH4OM_Field := 16#0#;
-      CH5OM          : C2MR_CH5OM_Field := 16#0#;
-      CH6OM          : C2MR_CH6OM_Field := 16#0#;
+      CHOM           : C2MR_CHOM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : Interfaces.Bit_Types.UInt10 := 16#0#;
-      CH1FM          : C2MR_CH1FM_Field := 16#0#;
-      CH2FM          : C2MR_CH2FM_Field := 16#0#;
-      CH3FM          : C2MR_CH3FM_Field := 16#0#;
-      CH4FM          : C2MR_CH4FM_Field := 16#0#;
-      CH5FM          : C2MR_CH5FM_Field := 16#0#;
-      CH6FM          : C2MR_CH6FM_Field := 16#0#;
+      CHFM           : C2MR_CHFM_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : Interfaces.Bit_Types.UInt10 := 16#0#;
    end record
@@ -227,50 +310,71 @@ package Interfaces.STM32.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C2MR_Register use record
-      CH1OM          at 0 range 0 .. 0;
-      CH2OM          at 0 range 1 .. 1;
-      CH3OM          at 0 range 2 .. 2;
-      CH4OM          at 0 range 3 .. 3;
-      CH5OM          at 0 range 4 .. 4;
-      CH6OM          at 0 range 5 .. 5;
+      CHOM           at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1FM          at 0 range 16 .. 16;
-      CH2FM          at 0 range 17 .. 17;
-      CH3FM          at 0 range 18 .. 18;
-      CH4FM          at 0 range 19 .. 19;
-      CH5FM          at 0 range 20 .. 20;
-      CH6FM          at 0 range 21 .. 21;
+      CHFM           at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
-   subtype C2SCR_CH1C_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH2C_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH3C_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH4C_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH5C_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH6C_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH1S_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH2S_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH3S_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH4S_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH5S_Field is Interfaces.Bit_Types.Bit;
-   subtype C2SCR_CH6S_Field is Interfaces.Bit_Types.Bit;
+   --  C2SCR_CHC array element
+   subtype C2SCR_CHC_Element is Interfaces.Bit_Types.Bit;
+
+   --  C2SCR_CHC array
+   type C2SCR_CHC_Field_Array is array (1 .. 6) of C2SCR_CHC_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2SCR_CHC
+   type C2SCR_CHC_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHC as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHC as an array
+            Arr : C2SCR_CHC_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2SCR_CHC_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
+
+   --  C2SCR_CHS array element
+   subtype C2SCR_CHS_Element is Interfaces.Bit_Types.Bit;
+
+   --  C2SCR_CHS array
+   type C2SCR_CHS_Field_Array is array (1 .. 6) of C2SCR_CHS_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2SCR_CHS
+   type C2SCR_CHS_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHS as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHS as an array
+            Arr : C2SCR_CHS_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2SCR_CHS_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
 
    type C2SCR_Register is record
-      CH1C           : C2SCR_CH1C_Field := 16#0#;
-      CH2C           : C2SCR_CH2C_Field := 16#0#;
-      CH3C           : C2SCR_CH3C_Field := 16#0#;
-      CH4C           : C2SCR_CH4C_Field := 16#0#;
-      CH5C           : C2SCR_CH5C_Field := 16#0#;
-      CH6C           : C2SCR_CH6C_Field := 16#0#;
+      CHC            : C2SCR_CHC_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_15  : Interfaces.Bit_Types.UInt10 := 16#0#;
-      CH1S           : C2SCR_CH1S_Field := 16#0#;
-      CH2S           : C2SCR_CH2S_Field := 16#0#;
-      CH3S           : C2SCR_CH3S_Field := 16#0#;
-      CH4S           : C2SCR_CH4S_Field := 16#0#;
-      CH5S           : C2SCR_CH5S_Field := 16#0#;
-      CH6S           : C2SCR_CH6S_Field := 16#0#;
+      CHS            : C2SCR_CHS_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_22_31 : Interfaces.Bit_Types.UInt10 := 16#0#;
    end record
@@ -278,36 +382,41 @@ package Interfaces.STM32.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C2SCR_Register use record
-      CH1C           at 0 range 0 .. 0;
-      CH2C           at 0 range 1 .. 1;
-      CH3C           at 0 range 2 .. 2;
-      CH4C           at 0 range 3 .. 3;
-      CH5C           at 0 range 4 .. 4;
-      CH6C           at 0 range 5 .. 5;
+      CHC            at 0 range 0 .. 5;
       Reserved_6_15  at 0 range 6 .. 15;
-      CH1S           at 0 range 16 .. 16;
-      CH2S           at 0 range 17 .. 17;
-      CH3S           at 0 range 18 .. 18;
-      CH4S           at 0 range 19 .. 19;
-      CH5S           at 0 range 20 .. 20;
-      CH6S           at 0 range 21 .. 21;
+      CHS            at 0 range 16 .. 21;
       Reserved_22_31 at 0 range 22 .. 31;
    end record;
 
-   subtype C2TOC1SR_CH1F_Field is Interfaces.Bit_Types.Bit;
-   subtype C2TOC1SR_CH2F_Field is Interfaces.Bit_Types.Bit;
-   subtype C2TOC1SR_CH3F_Field is Interfaces.Bit_Types.Bit;
-   subtype C2TOC1SR_CH4F_Field is Interfaces.Bit_Types.Bit;
-   subtype C2TOC1SR_CH5F_Field is Interfaces.Bit_Types.Bit;
-   subtype C2TOC1SR_CH6F_Field is Interfaces.Bit_Types.Bit;
+   --  C2TOC1SR_CHF array element
+   subtype C2TOC1SR_CHF_Element is Interfaces.Bit_Types.Bit;
+
+   --  C2TOC1SR_CHF array
+   type C2TOC1SR_CHF_Field_Array is array (1 .. 6) of C2TOC1SR_CHF_Element
+     with Component_Size => 1, Size => 6;
+
+   --  Type definition for C2TOC1SR_CHF
+   type C2TOC1SR_CHF_Field
+     (As_Array : Boolean := False)
+   is record
+      case As_Array is
+         when False =>
+            --  CHF as a value
+            Val : Interfaces.Bit_Types.UInt6;
+         when True =>
+            --  CHF as an array
+            Arr : C2TOC1SR_CHF_Field_Array;
+      end case;
+   end record
+     with Unchecked_Union, Size => 6;
+
+   for C2TOC1SR_CHF_Field use record
+      Val at 0 range 0 .. 5;
+      Arr at 0 range 0 .. 5;
+   end record;
 
    type C2TOC1SR_Register is record
-      CH1F          : C2TOC1SR_CH1F_Field := 16#0#;
-      CH2F          : C2TOC1SR_CH2F_Field := 16#0#;
-      CH3F          : C2TOC1SR_CH3F_Field := 16#0#;
-      CH4F          : C2TOC1SR_CH4F_Field := 16#0#;
-      CH5F          : C2TOC1SR_CH5F_Field := 16#0#;
-      CH6F          : C2TOC1SR_CH6F_Field := 16#0#;
+      CHF           : C2TOC1SR_CHF_Field := (As_Array => False, Val => 16#0#);
       --  unspecified
       Reserved_6_31 : Interfaces.Bit_Types.UInt26 := 16#0#;
    end record
@@ -315,12 +424,7 @@ package Interfaces.STM32.IPCC is
           Bit_Order => System.Low_Order_First;
 
    for C2TOC1SR_Register use record
-      CH1F          at 0 range 0 .. 0;
-      CH2F          at 0 range 1 .. 1;
-      CH3F          at 0 range 2 .. 2;
-      CH4F          at 0 range 3 .. 3;
-      CH5F          at 0 range 4 .. 4;
-      CH6F          at 0 range 5 .. 5;
+      CHF           at 0 range 0 .. 5;
       Reserved_6_31 at 0 range 6 .. 31;
    end record;
 

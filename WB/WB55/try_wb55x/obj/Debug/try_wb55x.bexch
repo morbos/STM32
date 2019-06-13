@@ -1,0 +1,50 @@
+[GENERATED OBJECT FILE]
+b__try_wb55x.o
+[PROJECT FILES]
+/backup/ada/STM32/WB/WB55/try_wb55x/try_wb55x.gpr
+20190401185941
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/middleware/middleware.gpr
+20190401184310
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/components/components.gpr
+20190401183837
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20190401183226
+/backup/ada/Ada_Drivers_Library/hal/HAL.gpr
+20190401184150
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/arch/ARM/STM32/stm32wb55x.gpr
+20190401183114
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/target_options.gpr
+20190401185504
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/runtime_build.gpr
+20190401185503
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/ravenscar_build.gpr
+20190401185503
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/boards/stm32wb55x_nucleo/config.gpr
+20190401183832
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/boards/stm32wb55x_nucleo/board.gpr
+20190401183832
+/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/boards/stm32wb55x_nucleo.gpr
+20190401183831
+[BOUND OBJECT FILES]
+/backup/ada/STM32/WB/WB55/try_wb55x/obj/Debug/try_wb55x.o
+[GENERATED SOURCE FILES]
+b__try_wb55x.ads
+b__try_wb55x.adb
+b__try_wb55x.ali
+[RESULTING OPTIONS]
+-L/backup/ada/STM32/WB/WB55/try_wb55x/obj/Debug/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/obj/Debug/
+-L/backup/ada/STM32/WB/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/boards/lib/stm32wb55x_nucleo/ravenscar-full/Debug/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/boards/stm32wb55x_nucleo/lib/stm32wb55x/ravenscar-full/Debug/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/adalib/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32wb55x/ravenscar-full/Debug/
+-L/backup/ada/Ada_Drivers_Library/hal/lib/stm32wb55x/ravenscar-full/Debug/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32wb55x/ravenscar-full/Debug/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/components/lib/stm32wb55x/ravenscar-full/Debug/
+-L/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/middleware/lib/stm32wb55x/ravenscar-full/Debug/
+-L/backup/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/adalib/
+-static
+-static-libgcc
+/backup/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/adalib/libgnarl.a
+/backup/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/adalib/libgnat.a

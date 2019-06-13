@@ -1,0 +1,78 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb"
+node: { title: "hci_le__hci_le_read_local_version" label: "Hci_Le_Read_Local_Version\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/hci_le.ads:102:13" shape : ellipse }
+node: { title: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" label: "Aci_Hal_Set_Radio_Activity_Mask\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.ads:49:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_configure_whitelist" label: "Aci_Gap_Configure_Whitelist\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:172:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_set_auth_requirement" label: "Aci_Gap_Set_Auth_Requirement\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:109:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_set_io_capabilty" label: "Aci_Gap_Set_Io_Capabilty\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:174:13" shape : ellipse }
+node: { title: "memset" label: "builtin_memset\n<built-in>" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "Aci_Gatt_Update_Char_Value\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:122:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_init" label: "Aci_Gap_Init\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:101:13" shape : ellipse }
+node: { title: "main__is_server" label: "Is_Server\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:41:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_init" label: "Aci_Gatt_Init\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:120:13" shape : ellipse }
+node: { title: "bluenrg_hal_aci__aci_hal_set_tx_power_level" label: "Aci_Hal_Set_Tx_Power_Level\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.ads:40:13" shape : ellipse }
+node: { title: "bluenrg_hal_aci__aci_hal_write_config_data" label: "Aci_Hal_Write_Config_Data\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.ads:44:13" shape : ellipse }
+node: { title: "memmove" label: "builtin_memmove\n<built-in>" shape : ellipse }
+node: { title: "comm__ble__initialize_ble" label: "Initialize_Ble\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-ble.ads:3:14" shape : ellipse }
+node: { title: "comm__shci__initialize_shci" label: "Initialize_Shci\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-shci.ads:71:14" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_add_char" label: "Aci_Gatt_Add_Char\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:136:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_add_serv" label: "Aci_Gatt_Add_Serv\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:129:13" shape : ellipse }
+node: { title: "uuid__uuid_copy" label: "Uuid_Copy\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/uuid.ads:122:14" shape : ellipse }
+node: { title: "comm__setup__initialize_comm_setup" label: "Initialize_Comm_Setup\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:170:4\n720 bytes (static)" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "comm__setup__init_bluenrg_custom_services" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:355:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "main__is_server" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:354:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:350:13" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "hci_le__hci_le_read_local_version" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:343:20" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:333:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:330:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:327:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gap_aci__aci_gap_configure_whitelist" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:324:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:321:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gap_aci__aci_gap_set_auth_requirement" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:308:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:305:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gap_aci__aci_gap_set_io_capabilty" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:303:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:299:13" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:292:17" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "memset" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:285:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:277:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:271:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gap_aci__aci_gap_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:258:17" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "main__is_server" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:259:22" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:255:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_gatt_aci__aci_gatt_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:253:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:250:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_hal_aci__aci_hal_set_tx_power_level" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:245:14" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:241:13" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_hal_aci__aci_hal_write_config_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:236:17" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "memmove" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:232:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:226:13" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_hal_aci__aci_hal_write_config_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:221:17" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "memmove" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:217:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:211:13" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_hal_aci__aci_hal_write_config_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:206:17" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "memmove" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:202:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:196:13" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "bluenrg_hal_aci__aci_hal_write_config_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:191:17" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "memmove" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:187:10" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "comm__ble__initialize_ble" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:178:7" }
+edge: { sourcename: "comm__setup__initialize_comm_setup" targetname: "comm__shci__initialize_shci" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:176:7" }
+node: { title: "comm__setup__init_bluenrg_custom_services" label: "Init_Bluenrg_Custom_Services\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:160:4\n24 bytes (static)" }
+edge: { sourcename: "comm__setup__init_bluenrg_custom_services" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:166:10" }
+edge: { sourcename: "comm__setup__init_bluenrg_custom_services" targetname: "comm__setup__add_hw_sw_servw2st_service" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:164:14" }
+node: { title: "comm__setup__add_configw2st_service" label: "Add_Configw2st_Service\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:118:4\n56 bytes (static)" }
+edge: { sourcename: "comm__setup__add_configw2st_service" targetname: "bluenrg_gatt_aci__aci_gatt_add_char" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:136:18" }
+edge: { sourcename: "comm__setup__add_configw2st_service" targetname: "uuid__uuid_copy" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:135:7" }
+edge: { sourcename: "comm__setup__add_configw2st_service" targetname: "bluenrg_gatt_aci__aci_gatt_add_serv" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:124:17" }
+edge: { sourcename: "comm__setup__add_configw2st_service" targetname: "uuid__uuid_copy" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:123:7" }
+node: { title: "comm__setup__add_consolew2st_service" label: "Add_Consolew2st_Service\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:55:4\n56 bytes (static)" }
+edge: { sourcename: "comm__setup__add_consolew2st_service" targetname: "bluenrg_gatt_aci__aci_gatt_add_char" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:94:18" }
+edge: { sourcename: "comm__setup__add_consolew2st_service" targetname: "uuid__uuid_copy" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:93:7" }
+edge: { sourcename: "comm__setup__add_consolew2st_service" targetname: "bluenrg_gatt_aci__aci_gatt_add_char" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:73:18" }
+edge: { sourcename: "comm__setup__add_consolew2st_service" targetname: "uuid__uuid_copy" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:72:7" }
+edge: { sourcename: "comm__setup__add_consolew2st_service" targetname: "bluenrg_gatt_aci__aci_gatt_add_serv" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:61:17" }
+edge: { sourcename: "comm__setup__add_consolew2st_service" targetname: "uuid__uuid_copy" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:60:7" }
+node: { title: "comm__setup__add_hw_sw_servw2st_service" label: "Add_Hw_Sw_Servw2st_Service\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:32:4\n32 bytes (static)" }
+edge: { sourcename: "comm__setup__add_hw_sw_servw2st_service" targetname: "bluenrg_gatt_aci__aci_gatt_add_serv" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:38:17" }
+edge: { sourcename: "comm__setup__add_hw_sw_servw2st_service" targetname: "uuid__uuid_copy" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-setup.adb:37:7" }
+}

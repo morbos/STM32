@@ -1,0 +1,7 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/client_wb55x.adb"
+node: { title: "main__process" label: "Process\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:45:14" shape : ellipse }
+node: { title: "main__initialize" label: "Initialize\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:39:14" shape : ellipse }
+node: { title: "_ada_client_wb55x" label: "Client_Wb55x\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/client_wb55x.adb:5:1\n8 bytes (static)" }
+edge: { sourcename: "_ada_client_wb55x" targetname: "main__process" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/client_wb55x.adb:9:4" }
+edge: { sourcename: "_ada_client_wb55x" targetname: "main__initialize" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/client_wb55x.adb:8:4" }
+}

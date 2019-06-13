@@ -1,0 +1,374 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U hci_le%b		hci_le.adb		d9823e6b NE OO PK
+W hci%s			hci.adb			hci.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W utils%s		utils.adb		utils.ali
+
+U hci_le%s		hci_le.ads		93a19c40 EE NE OO PK
+W ble_status%s		ble_status.ads		ble_status.ali
+W hal%s			hal.ads			hal.ali
+W memory%s		memory.adb		memory.ali
+W ogf_ocf%s		ogf_ocf.ads		ogf_ocf.ali
+
+D ble_status.ads	20190523214215 4b2a7901 ble_status%s
+D gen_list.ads		20190603015254 c97a5cb2 gen_list%s
+D hal.ads		20190401184234 2b42c80e hal%s
+D hci.ads		20190611171240 1e6f4d57 hci%s
+D hci_le.ads		20190611170805 94fc4637 hci_le%s
+D hci_le.adb		20190524182958 655ae601 hci_le%b
+D interfac.ads		20190401184735 5ab55268 interfaces%s
+D memory.ads		20190606010608 89b67802 memory%s
+D ogf_ocf.ads		20190524182825 ee83137a ogf_ocf%s
+D system.ads		20190401184659 db831581 system%s
+D s-stoele.ads		20190401184815 2dc34a04 system.storage_elements%s
+D utils.ads		20190602212515 364bd30a utils%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/gnat.adc  20190514185441 00000000
+G a e
+G c Z s b [hci_le_read_local_version hci_le 102 13 none]
+G c Z s b [hci_reset hci_le 109 13 none]
+G c Z s b [hci_disconnect hci_le 111 13 none]
+G c Z s b [hci_le_read_buffer_size hci_le 115 13 none]
+G c Z s b [hci_le_set_advertising_parameters hci_le 119 13 none]
+G c Z s b [hci_le_set_advertising_data hci_le 129 13 none]
+G c Z s b [hci_le_set_advertise_enable hci_le 133 13 none]
+G c Z s b [hci_le_set_scan_parameters hci_le 136 13 none]
+G c Z s b [hci_le_set_scan_enable hci_le 143 13 none]
+G c Z s b [hci_le_rand hci_le 147 13 none]
+G c Z s b [hci_le_set_scan_resp_data hci_le 150 13 none]
+G c Z s b [hci_le_read_advertising_channel_tx_power hci_le 154 13 none]
+G c Z s b [hci_le_set_random_address hci_le 157 13 none]
+G c Z s b [hci_read_bd_addr hci_le 160 13 none]
+G c Z s b [hci_le_create_connection hci_le 163 13 none]
+G c Z s b [hci_le_create_connection_cancel hci_le 177 13 none]
+G c Z s b [hci_le_encrypt hci_le 179 13 none]
+G c Z s b [hci_le_ltk_request_reply hci_le 184 13 none]
+G c Z s b [hci_le_ltk_request_neg_reply hci_le 187 13 none]
+G c Z s b [hci_le_read_white_list_size hci_le 189 13 none]
+G c Z s b [hci_le_clear_white_list hci_le 192 13 none]
+G c Z s b [hci_le_add_device_to_white_list hci_le 194 13 none]
+G c Z s b [hci_le_remove_device_from_white_list hci_le 198 13 none]
+G c Z s b [hci_read_transmit_power_level hci_le 202 13 none]
+G c Z s b [hci_read_rssi hci_le 207 13 none]
+G c Z s b [hci_le_read_local_supported_features hci_le 211 13 none]
+G c Z s b [hci_le_read_channel_map hci_le 214 13 none]
+G c Z s b [hci_le_read_supported_states hci_le 218 13 none]
+G c Z s b [hci_le_receiver_test hci_le 221 13 none]
+G c Z s b [hci_le_transmitter_test hci_le 224 13 none]
+G c Z s b [hci_le_test_end hci_le 229 13 none]
+G c Z s s [le_set_scan_response_data_cpIP hci_le 34 9 none]
+G c Z s s [evt_le_meta_eventIP hci_le 42 9 none]
+G c Z s s [evt_le_connection_completeIP hci_le 49 9 none]
+G c Z s s [evt_le_advertising_infoIP hci_le 64 9 none]
+G c Z s s [evt_le_connection_update_completeIP hci_le 74 9 none]
+G c Z s s [evt_le_read_remote_used_features_completeIP hci_le 85 9 none]
+G c Z s s [evt_le_long_term_key_requestIP hci_le 94 9 none]
+G r s hci_request [hci_le_read_local_version hci_le 102 13 none] [hci_requestIP hci 134 9 none]
+G r c none [hci_le_read_local_version hci_le 102 13 none] [hci_send_req hci 155 13 none]
+G r c none [hci_le_read_local_version hci_le 102 13 none] [btohs utils 63 13 none]
+G r s hci_request [hci_reset hci_le 109 13 none] [hci_requestIP hci 134 9 none]
+G r c none [hci_reset hci_le 109 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [hci_le_set_scan_resp_data hci_le 150 13 none] [hci_requestIP hci 134 9 none]
+G r c none [hci_le_set_scan_resp_data hci_le 150 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [hci_le_set_random_address hci_le 157 13 none] [hci_requestIP hci 134 9 none]
+G r c none [hci_le_set_random_address hci_le 157 13 none] [hci_send_req hci 155 13 none]
+X 1 ble_status.ads
+2K9*BLE_Status 63e15 5|2w6 2r22
+4M9*BLE_Status_Code<3|53M9> 5|107r47 109r30 113r30 117r35 127r42 131r36 134r30
+. 141r39 145r34 148r47 152r36 155r42 158r32 161r32 175r44 177r52 182r47 185r33
+. 187r49 190r32 192r44 196r37 200r37 205r39 209r39 212r36 216r36 219r36 222r33
+. 227r33 230r37 6|11r47 34r17 47r30 52r17 75r30 83r35 99r42 107r36 114r30
+. 125r39 133r34 142r47 151r36 160r17 188r42 196r32 201r22 223r32 241r44 247r52
+. 256r47 266r33 273r49 280r32 287r44 295r37 305r37 316r39 327r39 336r36 345r41
+. 354r36 361r33 370r33 377r37
+5m4*BLE_STATUS_OK{4M9} 6|43r14 78r14 88r14 102r14 110r14 117r14 128r14 138r14
+. 146r14 192r14 226r14 244r14 250r14 262r14 270r14 276r14 284r14 290r14 300r14
+. 310r14 322r14 332r14 340r14 350r14 357r14 364r14 373r14 381r14
+61m4*BLE_STATUS_TIMEOUT{4M9} 6|30r17 66r17 181r17 216r17
+X 3 hal.ads
+34K9*HAL 166e8 5|1w6 1r22
+47M9*UInt6 5|29r48
+53M9*UInt8<7|63M9> 5|10r44 11r44 12r44 13r44 14r44 16r44 17r44 18r44 19r44
+. 20r44 22r41 23r41 24r41 25r41 27r48 27r57 35r16 39r51 41r41 43r18 46r41
+. 48r36 50r31 52r31 53r31 61r41 63r41 65r31 66r31 68r31 71r44 73r43 75r29
+. 82r49 84r62 86r18 91r62 93r34 100r39 103r32 105r32 113r16 117r21 122r28
+. 123r28 124r28 126r28 127r28 130r16 134r16 137r25 140r25 141r25 144r20 145r20
+. 151r16 155r28 166r29 167r29 169r29 190r18 195r21 199r21 204r21 205r25 209r25
+. 212r22 222r19 225r19 226r19 227r19 6|7r32 9r32 75r16 83r21 94r28 95r28
+. 96r28 98r28 99r28 106r16 114r16 121r25 124r25 125r25 132r20 133r20 150r16
+. 188r28 232r29 233r29 235r29 280r18 294r21 304r21 315r21 316r25 327r25 336r22
+. 361r19 368r19 369r19 370r19
+54M9*UInt10 5|30r48 32r48
+66M9*UInt16<7|66M9> 5|51r31 55r31 56r31 57r31 58r31 76r29 77r29 78r29 79r29
+. 87r18 95r16 97r16 104r32 106r32 107r32 112r16 116r21 120r28 121r28 138r25
+. 139r25 164r29 165r29 170r29 171r29 172r29 173r29 174r29 175r29 203r25 208r25
+. 215r25 230r22 6|8r32 10r32 11r32 74r16 82r21 92r28 93r28 122r25 123r25
+. 230r29 231r29 236r29 237r29 238r29 239r29 240r29 241r29 314r25 326r25 344r25
+. 377r22
+162A9*UInt8_Array(53M9)<integer> 5|8r24 36r16 88r18 96r16 131r16 148r27 152r16
+. 180r23 181r23 182r27 185r13 216r16 219r16 6|14r18 50r18 107r16 142r27 151r16
+. 154r17 199r22 254r23 255r23 256r27 266r13 345r21 354r16
+X 4 hci.ads
+6K9*Hci 161e8 6|1w6 1r27
+22m7*Ogf{3|47M9} 6|23m17 59m17 174m17 209m17
+23m7*Ocf{3|54M9} 6|24m17 60m17 175m17 210m17
+123R9*Read_Local_Version_Rp 131e6 6|17r18
+124m7*Status{3|53M9} 6|33r15 34r39
+125m7*Hci_Version{3|53M9} 6|37r34
+126m7*Hci_Revision{3|66M9} 6|38r42
+127m7*Lmp_Pal_Version{3|53M9} 6|39r34
+128m7*Manufacturer_Name{3|66M9} 6|40r41
+129m7*Lmp_Pal_Subversion{3|66M9} 6|41r41
+132m4*READ_LOCAL_VERSION_RP_SIZE{3|53M9} 6|27r24
+134R9*Hci_Request 141e14 6|13r18 49r18 153r17 198r22
+135r7*Opcode{21R9} 6|23m10 24m10 59m10 60m10 174m10 175m10 209m10 210m10
+137p7*Cparam(8|8A9) 6|176m10 211m10
+138m7*Clen{3|53M9} 6|25m10 61m10 177m10 212m10
+139p7*Rparam(8|8A9) 6|26m10 62m10 178m10 213m10
+140m7*Rlen{3|53M9} 6|27m10 63m10 179m10 214m10
+155V13*Hci_Send_Req{integer} 6|29s10 65s10 180s10 215s10
+X 5 hci_le.ads
+6K9*Hci_Le 232l5 232e11 6|4b14 384l5 384t11
+8A9*BDAddrT<3|162A9>(3|53M9)<integer> 27r64 54r31 67r31 125r28 158r16 161r16
+. 168r29 196r21 200r21 6|97r28 196r16 205r30 223r16 234r29 295r21 305r21
+10m4*PUBLIC_ADDR{3|53M9}
+11m4*RANDOM_ADDR{3|53M9}
+12m4*STATIC_RANDOM_ADDR{3|53M9}
+13m4*RESOLVABLE_PRIVATE_ADDR{3|53M9}
+14m4*NON_RESOLVABLE_PRIVATE_ADDR{3|53M9}
+16m4*ADV_IND{3|53M9}
+17m4*ADV_DIRECT_IND{3|53M9}
+18m4*ADV_SCAN_IND{3|53M9}
+19m4*ADV_NONCONN_IND{3|53M9}
+20m4*SCAN_RSP{3|53M9}
+22m4*NO_WHITE_LIST_USE{3|53M9}
+23m4*WHITE_LIST_FOR_ONLY_SCAN{3|53M9}
+24m4*WHITE_LIST_FOR_ONLY_CONN{3|53M9}
+25m4*WHITE_LIST_FOR_ALL{3|53M9}
+27m4*LE_SET_RANDOM_ADDRESS_CP_SIZE{3|53M9} 6|212r24
+29m4*OGF_LE_CTL{3|47M9} 6|174r24 209r24
+30m4*OCF_LE_SET_RANDOM_ADDRESS{3|54M9} 6|210r24
+32m4*OCF_LE_SET_SCAN_RESPONSE_DATA{3|54M9} 6|175r24
+34R9*Le_Set_Scan_Response_Data_Cp 38e6 6|156r22
+35m7*Length{3|53M9} 6|166m20
+36a7*Data{3|162A9} 6|170m29
+39m4*LE_SET_SCAN_RESPONSE_DATA_CP_SIZE{3|53M9} 6|177r24
+41m4*EVT_LE_META_EVENT_CODE{3|53M9}
+42R9*Evt_Le_Meta_Event 45e6
+43m7*Subevent{3|53M9}
+46m4*EVT_LE_META_EVENT_SIZE{3|53M9}
+48m4*EVT_LE_CONN_COMPLETE{3|53M9}
+49R9*Evt_Le_Connection_Complete 60e6
+50m7*Status{3|53M9}
+51m7*Handle{3|66M9}
+52m7*Role{3|53M9}
+53m7*Peer_Bdaddr_Type{3|53M9}
+54a7*Peer_Bdaddr{8A9}
+55m7*Interval{3|66M9}
+56m7*Latency{3|66M9}
+57m7*Supervision_Timeout{3|66M9}
+58m7*Master_Clock_Accuracy{3|66M9}
+61m4*EVT_LE_CONN_COMPLETE_SIZE{3|53M9}
+63m4*EVT_LE_ADVERTISING_REPORT{3|53M9}
+64R9*Evt_Le_Advertising_Info 70e6
+65m7*Evt_Type{3|53M9}
+66m7*Bdaddr_Type{3|53M9}
+67a7*Bdaddr{8A9}
+68m7*Data_Length{3|53M9}
+71m4*EVT_LE_ADVERTISING_INFO_SIZE{3|53M9}
+73m4*EVT_LE_CONN_UPDATE_COMPLETE{3|53M9}
+74R9*Evt_Le_Connection_Update_Complete 81e6
+75m7*Status{3|53M9}
+76m7*Handle{3|66M9}
+77m7*Interval{3|66M9}
+78m7*Latency{3|66M9}
+79m7*Supervision_Timeout{3|66M9}
+82m4*EVT_LE_CONN_UPDATE_COMPLETE_SIZE{3|53M9}
+84m4*EVT_LE_READ_REMOTE_USED_FEATURES_COMPLETE_CODE{3|53M9}
+85R9*Evt_Le_Read_Remote_Used_Features_Complete 90e6
+86m7*Status{3|53M9}
+87m7*Handle{3|66M9}
+88a7*Features{3|162A9}
+91m4*EVT_LE_READ_REMOTE_USED_FEATURES_COMPLETE_SIZE{3|53M9}
+93m4*EVT_LE_LTK_REQUEST{3|53M9}
+94R9*Evt_Le_Long_Term_Key_Request 99e6
+95m7*Handle{3|66M9}
+96a7*Random{3|162A9}
+97m7*Ediv{3|66M9}
+100m4*EVT_LE_LTK_REQUEST_SIZE{3|53M9}
+102V13*Hci_Le_Read_Local_Version{1|4M9} 103<7 104<7 105<7 106<7 107<7 6|6b13
+. 45l8 45t33
+103m7 Hci_Version{3|53M9} 6|7b7 37m7
+104m7 Hci_Revision{3|66M9} 6|8b7 38m7
+105m7 Lmp_Pal_Version{3|53M9} 6|9b7 39m7
+106m7 Manufacturer_Name{3|66M9} 6|10b7 40m7
+107m7 Lmp_Pal_Subversion{3|66M9} 6|11b7 41m7
+109V13*Hci_Reset{1|4M9} 6|47b13 71l8 71t17
+111V13*Hci_Disconnect{1|4M9} 112>7 113>7 6|73b13 79l8 79t22
+112m7 Handle{3|66M9} 6|74b7
+113m7 Reason{3|53M9} 6|75b7
+115V13*Hci_Le_Read_Buffer_Size{1|4M9} 116<7 117<7 6|81b13 89l8 89t31
+116m7 Pkt_Len{3|66M9} 6|82b7 85r28
+117m7 Max_Pkt{3|53M9} 6|83b7 86r28
+119V13*Hci_Le_Set_Advertising_Parameters{1|4M9} 120>7 121>7 122>7 123>7 124>7
+. 125>7 126>7 127>7 6|91b13 103l8 103t41
+120m7 Min_Interval{3|66M9} 6|92b7
+121m7 Max_Interval{3|66M9} 6|93b7
+122m7 Advtype{3|53M9} 6|94b7
+123m7 Own_Bdaddr_Type{3|53M9} 6|95b7
+124m7 Direct_Bdaddr_Type{3|53M9} 6|96b7
+125a7 Direct_Bdaddr{8A9} 6|97b7
+126m7 Chan_Map{3|53M9} 6|98b7
+127m7 Filter{3|53M9} 6|99b7
+129V13*Hci_Le_Set_Advertising_Data{1|4M9} 130>7 131>7 6|105b13 111l8 111t35
+130m7 Length{3|53M9} 6|106b7
+131a7 Data{3|162A9} 6|107b7
+133V13*Hci_Le_Set_Advertise_Enable{1|4M9} 134>7 6|113b13 118l8 118t35
+134m7 Enable{3|53M9} 6|114b7
+136V13*Hci_Le_Set_Scan_Parameters{1|4M9} 137>7 138>7 139>7 140>7 141>7 6|120b13
+. 129l8 129t34
+137m7 Scan_Type{3|53M9} 6|121b7
+138m7 Interval{3|66M9} 6|122b7
+139m7 Window{3|66M9} 6|123b7
+140m7 Own_Bdaddr_Type{3|53M9} 6|124b7
+141m7 Filter{3|53M9} 6|125b7
+143V13*Hci_Le_Set_Scan_Enable{1|4M9} 144>7 145>7 6|131b13 139l8 139t30
+144m7 Enable{3|53M9} 6|132b7 135r28
+145m7 Filter_Dup{3|53M9} 6|133b7 136r28
+147V13*Hci_Le_Rand{1|4M9} 148<7 6|141b13 147l8 147t19
+148a7 Random_Number{3|162A9} 6|142b7 144r28
+150V13*Hci_Le_Set_Scan_Resp_Data{1|4M9} 151>7 152>7 6|149b13 185l8 185t33
+151m7 Length{3|53M9} 6|150b7 166r30 167r10 168r24
+152a7 Data{3|162A9} 6|151b7 170r51
+154V13*Hci_Le_Read_Advertising_Channel_Tx_Power{1|4M9} 155<7 6|187b13 193l8
+. 193t48
+155m7 Tx_Power_Level{3|53M9} 6|188b7 190r28
+157V13*Hci_Le_Set_Random_Address{1|4M9} 158>7 6|195b13 220l8 220t33
+158a7 BDaddr{8A9} 6|196b7 205r41
+160V13*Hci_Read_Bd_Addr{1|4M9} 161>7 6|222b13 227l8 227t24
+161a7 BDaddr{8A9} 6|223b7
+163V13*Hci_Le_Create_Connection{1|4M9} 164>7 165>7 166>7 167>7 168>7 169>7
+. 170>7 171>7 172>7 173>7 174>7 175>7 6|229b13 245l8 245t32
+164m7 Interval{3|66M9} 6|230b7
+165m7 Window{3|66M9} 6|231b7
+166m7 Initiator_Filter{3|53M9} 6|232b7
+167m7 Peer_Bdaddr_Type{3|53M9} 6|233b7
+168a7 Peer_Bdaddr{8A9} 6|234b7
+169m7 Own_Bdaddr_Type{3|53M9} 6|235b7
+170m7 Min_Interval{3|66M9} 6|236b7
+171m7 Max_Interval{3|66M9} 6|237b7
+172m7 Latency{3|66M9} 6|238b7
+173m7 Supervision_Timeout{3|66M9} 6|239b7
+174m7 Min_Ce_Length{3|66M9} 6|240b7
+175m7 Max_Ce_Length{3|66M9} 6|241b7
+177V13*Hci_Le_Create_Connection_Cancel{1|4M9} 6|247b13 251l8 251t39
+179V13*Hci_Le_Encrypt{1|4M9} 180>7 181>7 182<7 6|253b13 263l8 263t22
+180a7 Key{3|162A9} 6|254b7 258r28
+181a7 PlaintextData{3|162A9} 6|255b7 259r28
+182a7 EncryptedData{3|162A9} 6|256b7 260r28
+184V13*Hci_Le_Ltk_Request_Reply{1|4M9} 185>7 6|265b13 271l8 271t32
+185a7 Key{3|162A9} 6|266b7 268r28
+187V13*Hci_Le_Ltk_Request_Neg_Reply{1|4M9} 6|273b13 277l8 277t36
+189V13*Hci_Le_Read_White_List_Size{1|4M9} 190<7 6|279b13 285l8 285t35
+190m7 Size{3|53M9} 6|280b7 282r28
+192V13*Hci_Le_Clear_White_List{1|4M9} 6|287b13 291l8 291t31
+194V13*Hci_Le_Add_Device_To_White_List{1|4M9} 195>7 196>7 6|293b13 301l8
+. 301t39
+195m7 Bdaddr_Type{3|53M9} 6|294b7 297r28
+196a7 Bdaddr{8A9} 6|295b7 298r28
+198V13*Hci_Le_Remove_Device_From_White_List{1|4M9} 199>7 200>7 6|303b13 311l8
+. 311t44
+199m7 Bdaddr_Type{3|53M9} 6|304b7 307r28
+200a7 Bdaddr{8A9} 6|305b7 308r28
+202V13*Hci_Read_Transmit_Power_Level{1|4M9} 203<7 204>7 205<7 6|313b13 323l8
+. 323t37
+203m7 Conn_Handle{3|66M9} 6|314b7 318r28
+204m7 Conntype{3|53M9} 6|315b7 319r28
+205m7 Tx_Level{3|53M9} 6|316b7 320r28
+207V13*Hci_Read_Rssi{1|4M9} 208<7 209<7 6|325b13 333l8 333t21
+208m7 Conn_Handle{3|66M9} 6|326b7 329r28
+209m7 Rssi{3|53M9} 6|327b7 330r28
+211V13*Hci_Le_Read_Local_Supported_Features{1|4M9} 212<7 6|335b13 341l8 341t44
+212m7 Features{3|53M9} 6|336b7 338r28
+214V13*Hci_Le_Read_Channel_Map{1|4M9} 215<7 216>7 6|343b13 351l8 351t31
+215m7 Conn_Handle{3|66M9} 6|344b7 347r28
+216a7 Ch_Map{3|162A9} 6|345b7 348r28
+218V13*Hci_Le_Read_Supported_States{1|4M9} 219>7 6|353b13 358l8 358t36
+219a7 States{3|162A9} 6|354b7
+221V13*Hci_Le_Receiver_Test{1|4M9} 222>7 6|360b13 365l8 365t28
+222m7 Frequency{3|53M9} 6|361b7
+224V13*Hci_Le_Transmitter_Test{1|4M9} 225>7 226>7 227>7 6|367b13 374l8 374t31
+225m7 Frequency{3|53M9} 6|368b7
+226m7 Length{3|53M9} 6|369b7
+227m7 Payload{3|53M9} 6|370b7
+229V13*Hci_Le_Test_End{1|4M9} 230<7 6|376b13 382l8 382t23
+230m7 Num_Pkts{3|66M9} 6|377b7 379r28
+X 6 hci_le.adb
+13r7 Rq{4|134R9} 14r36 15m30 15r30 23m7 24m7 25m7 26m7 27m7 29m24 29r24
+14a7 RqBuff{3|162A9} 15m11 15r11 20m7
+16a7 RespBuff{8|8A9} 18m28 18r28 21m7 26m24 26r24
+17r7 Resp{4|123R9} 18m11 18r11 33r10 34r34 37r29 38r37 39r29 40r36 41r36
+49r7 Rq{4|134R9} 50r36 51m30 51r30 59m7 60m7 61m7 62m7 63m7 65m24 65r24
+50a7 RqBuff{3|162A9} 51m11 51r11 56m7
+52m7 Status{1|4M9} 54m11 54r11 68r17
+53a7 StatBuf{8|8A9} 54m30 54r30 57m7 62m24 62r24
+153r7 Rq{4|134R9} 154r35 155m30 155r30 174m7 175m7 176m7 177m7 178m7 179m7
+. 180m24 180r24
+154a7 RqBuff{3|162A9} 155m11 155r11 164m7
+156r7 Scan_Resp_Cp{5|34R9} 158r11 159m11 159r11 166m7 170m16
+157a7 ScanBuf{8|8A9} 159m36 159r36 165m7 176m24 176r24
+160m7 Status{1|4M9} 162m11 162r11 183r17
+161a7 StatBuf{8|8A9} 162m30 162r30 178m24 178r24
+168m14 I<7|63M9> 169r16 170r44 170r66
+198r7 Rq{4|134R9} 199r40 200m30 200r30 209m7 210m7 211m7 212m7 213m7 214m7
+. 215m24 215r24
+199a7 RqBuff{3|162A9} 200m11 200r11 208m7
+201m7 Status{1|4M9} 203m11 203r11 218r17
+202a7 StatBuf{8|8A9} 203m30 203r30 213m24 213r24
+204a7 Arg{8|8A9} 206m36 206r36 211m24 211r24
+205a7 Local_Bdaddr{5|8A9} 206m11 206r11
+X 7 interfac.ads
+63M9*Unsigned_8
+66M9*Unsigned_16
+X 8 memory.ads
+5K9*Memory 5|4w6 4r22 8|193e11
+8A9*DataBuffT<3|162A9>(3|53M9)<integer> 6|16r26 53r25 157r25 161r25 202r30
+. 204r30
+X 9 ogf_ocf.ads
+2K9*Ogf_Ocf 5|3w6 3r22 9|57e12
+8m4*OGF_HOST_CTL{3|47M9} 6|59r24
+10m4*OCF_RESET{3|54M9} 6|60r24
+17m4*OGF_INFO_PARAM{3|47M9} 6|23r24
+19m4*OCF_READ_LOCAL_VERSION{3|54M9} 6|24r24
+X 12 utils.ads
+5K9*Utils 6|2w6 2r27 12|69e10
+63V13*Btohs{3|66M9} 6|38s30 40s29 41s29
+

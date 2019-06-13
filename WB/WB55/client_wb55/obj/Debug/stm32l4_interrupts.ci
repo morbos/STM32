@@ -1,0 +1,27 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "stm32__timers__clear_pending_interrupt" label: "CLEAR_PENDING_INTERRUPT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-timers.ads:237:14" shape : ellipse }
+node: { title: "stm32__timers__interrupt_enabled" label: "INTERRUPT_ENABLED\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-timers.ads:245:13" shape : ellipse }
+node: { title: "stm32__timers__status" label: "STATUS\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-timers.ads:312:13" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "stm32l4_interrupts___elabs" label: "Stm32l4_Interrupts\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.ads:3:1\n8 bytes (static)" }
+edge: { sourcename: "stm32l4_interrupts___elabs" targetname: "stm32l4_interrupts__handlerTVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.ads:5:4" }
+node: { title: "stm32l4_interrupts__handler__irq_handlerP" label: "Irq_Handlerp\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:7\n32 bytes (static)" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerP" targetname: "_Unwind_Resume" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerP" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:stm32l4_interrupts__handler__irq_handlerP___finalizer.6349" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:0" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerP" targetname: "stm32l4_interrupts__handler__irq_handlerN" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:7" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:7" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:stm32l4_interrupts__handler__irq_handlerP___finalizer.6349" label: "Irq_Handlerp\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:7\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:stm32l4_interrupts__handler__irq_handlerP___finalizer.6349" targetname: "system__tasking__protected_objects__unlock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:7" }
+node: { title: "stm32l4_interrupts__handler__irq_handlerN" label: "Irq_Handlern\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:25:7\n24 bytes (static)" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerN" targetname: "stm32__timers__clear_pending_interrupt" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:29:16" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerN" targetname: "stm32__timers__interrupt_enabled" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:28:16" }
+edge: { sourcename: "stm32l4_interrupts__handler__irq_handlerN" targetname: "stm32__timers__status" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.adb:27:13" }
+node: { title: "stm32l4_interrupts__finalize_spec" label: "Finalize_Spec\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.ads:3:1\n4 bytes (static)" }
+node: { title: "stm32l4_interrupts__handlerTVIP" label: "Handlertvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.ads:5:4\n40 bytes (static)" }
+edge: { sourcename: "stm32l4_interrupts__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.ads:5:4" }
+edge: { sourcename: "stm32l4_interrupts__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/stm32l4_interrupts.ads:5:4" }
+}

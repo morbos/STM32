@@ -1,0 +1,346 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES SS ZX
+
+RN
+RV NO_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_TASKS=2
+
+U main%b		main.adb		905d4df5 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.synchronous_task_control%s  a-sytaco.adb	a-sytaco.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ble_status%s		ble_status.ads		ble_status.ali
+W comm%s		comm.adb		comm.ali
+W comm.mbox%s		comm-mbox.ads		comm-mbox.ali
+W comm.run%s		comm-run.adb		comm-run.ali
+W exti_interrupts%s	exti_interrupts.adb	exti_interrupts.ali
+W hal%s			hal.ads			hal.ali
+W hci%s			hci.adb			hci.ali
+W hw%s			hw.adb			hw.ali
+W log%s			log.adb			log.ali
+W memory%s		memory.adb		memory.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.ipcc%s		stm32-ipcc.adb		stm32-ipcc.ali
+W stm32.timers%s	stm32-timers.adb	stm32-timers.ali
+W stm32l4_interrupts%s	stm32l4_interrupts.adb	stm32l4_interrupts.ali
+Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+W utils%s		utils.adb		utils.ali
+
+U main%s		main.ads		eefc7886 EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.synchronous_task_control%s  a-sytaco.adb	a-sytaco.ali
+W bluenrg_gap%s		bluenrg_gap.ads		bluenrg_gap.ali
+W bluenrg_gap_aci%s	bluenrg_gap_aci.adb	bluenrg_gap_aci.ali
+W bluenrg_gatt_aci%s	bluenrg_gatt_aci.adb	bluenrg_gatt_aci.ali
+W bluenrg_hal_aci%s	bluenrg_hal_aci.adb	bluenrg_hal_aci.ali
+W hal%s			hal.ads			hal.ali
+W hci_le%s		hci_le.adb		hci_le.ali
+W interfaces%s		interfac.ads		interfac.ali
+W security%s		security.ads		security.ali
+W system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+T 0 2
+
+D ada.ads		20190401184724 76789da1 ada%s
+D a-except.ads		20190401184716 291912d5 ada.exceptions%s
+D a-finali.ads		20190401184717 bf4f806b ada.finalization%s
+D a-interr.ads		20190401184900 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20190516005848 93903d42 ada.interrupts.names%s
+D a-reatim.ads		20190401184901 4c16970e ada.real_time%s
+D a-retide.ads		20190401184902 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20190401184719 119b8fb3 ada.streams%s
+D a-sytaco.ads		20190401184904 e57638e1 ada.synchronous_task_control%s
+D a-tags.ads		20190401184723 491b781d ada.tags%s
+D a-taside.ads		20190401184906 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20190401184724 0e9b276f ada.unchecked_conversion%s
+D ble_status.ads	20190523214215 4b2a7901 ble_status%s
+D bluenrg_gap.ads	20190523214216 232b6eef bluenrg_gap%s
+D bluenrg_gap_aci.ads	20190604234306 95aeab11 bluenrg_gap_aci%s
+D bluenrg_gatt_aci.ads	20190610223136 3a30b302 bluenrg_gatt_aci%s
+D bluenrg_hal_aci.ads	20190605001653 2d28e648 bluenrg_hal_aci%s
+D bluenrg_l2cap_aci.ads	20190611211426 48ed002c bluenrg_l2cap_aci%s
+D comm.ads		20190609193231 0669e203 comm%s
+D comm-mbox.ads		20190605235229 65f4f959 comm.mbox%s
+D comm-run.ads		20190611234051 203f33a9 comm.run%s
+D exti_interrupts.ads	20190611000349 17879fab exti_interrupts%s
+D gen_list.ads		20190603015254 c97a5cb2 gen_list%s
+D hal.ads		20190401184234 2b42c80e hal%s
+D hal-gpio.ads		20190401184229 146364b8 hal.gpio%s
+D hal-i2c.ads		20190401184230 0ed73138 hal.i2c%s
+D hal-spi.ads		20190401184232 73427149 hal.spi%s
+D hci.ads		20190611171240 1e6f4d57 hci%s
+D hci_le.ads		20190611170805 94fc4637 hci_le%s
+D hw.ads		20190611000210 772f1087 hw%s
+D interfac.ads		20190401184735 5ab55268 interfaces%s
+D i-bit_types.ads	20190401184733 bd94d513 interfaces.bit_types%s
+D log.ads		20190602192513 bc487de7 log%s
+D main.ads		20190611004848 b3a16247 main%s
+D main.adb		20190611234341 656550bd main%b
+D memory.ads		20190606010608 89b67802 memory%s
+D ogf_ocf.ads		20190524182825 ee83137a ogf_ocf%s
+D peripherals.ads	20190611000635 84316f07 peripherals%s
+D security.ads		20190528215436 6b28ec4a security%s
+D stm32.ads		20190401183044 698e2c3b stm32%s
+D stm32-adc.ads		20190401183040 ccb8d517 stm32.adc%s
+D stm32-board.ads	20190613170209 c379a2be stm32.board%s
+D stm32-crc.ads		20190401183041 52637184 stm32.crc%s
+D stm32-device.ads	20190401182939 b68bb2e4 stm32.device%s
+D stm32-dma.ads		20190401183041 93d5e507 stm32.dma%s
+D stm32-exti.ads	20190401183041 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20190401183042 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20190401183042 a917bb1e stm32.i2c%s
+D stm32-ipcc.ads	20190525181833 758060b6 stm32.ipcc%s
+D stm32-spi.ads		20190401183043 4c59a487 stm32.spi%s
+D stm32-timers.ads	20190401183044 ae89ec08 stm32.timers%s
+D stm32_svd.ads		20190401183226 d490944b stm32_svd%s
+D stm32_svd-adc.ads	20190401183220 9b7fb3d2 stm32_svd.adc%s
+D stm32_svd-crc.ads	20190401183220 a439ed4a stm32_svd.crc%s
+D stm32_svd-dma.ads	20190401183221 50ae0182 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20190401183221 8a52f3c8 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20190401183222 2cbd6760 stm32_svd.i2c%s
+D stm32_svd-ipcc.ads	20190514182301 a92bf5d7 stm32_svd.ipcc%s
+D stm32_svd-spi.ads	20190401183224 9094ae3a stm32_svd.spi%s
+D stm32l4_interrupts.ads  20190601001308 c053cbee stm32l4_interrupts%s
+D system.ads		20190401184659 db831581 system%s
+D s-bb.ads		20190401184737 09e072ae system.bb%s
+D s-bbbopa.ads		20190401185429 9a19f194 system.bb.board_parameters%s
+D s-bbbosu.ads		20190401184908 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20190401184909 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20190401184912 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20190401185429 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20190401184856 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20190401184915 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20190401184914 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20190401184918 ad086247 system.bb.time%s
+D s-finmas.ads		20190401184746 7811a767 system.finalization_masters%s
+D s-finroo.ads		20190401184747 4ff27390 system.finalization_root%s
+D s-interr.ads		20190401184921 f1954f09 system.interrupts%s
+D s-multip.ads		20190401184924 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20190401184923 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20190401184925 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20190401184925 229b14dd system.os_interface%s
+D s-parame.ads		20190401184811 d106111e system.parameters%s
+D s-pooglo.ads		20190401184811 ede33ef8 system.pool_global%s
+D s-secsta.ads		20190401184813 56a2861c system.secondary_stack%s
+D s-stalib.ads		20190401184815 09bd3940 system.standard_library%s
+D s-stm32.ads		20190401185429 4ab394a4 system.stm32%s
+D s-stoele.ads		20190401184815 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20190401184816 b16154c2 system.storage_pools%s
+D s-stratt.ads		20190401184816 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20190401184931 801abd01 system.task_info%s
+D s-taspri.ads		20190401184933 351848fa system.task_primitives%s
+D s-taskin.ads		20190401184933 58b15916 system.tasking%s
+D s-taprob.ads		20190401184927 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20190401184936 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-tasres.ads		20190401184934 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20190401184929 c88b6d9a system.tasking.restricted.stages%s
+D s-traent.ads		20190401184820 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190401184822 34867c83 system.unsigned_types%s
+D utils.ads		20190602212515 364bd30a utils%s
+D uuid.ads		20190523214215 03622ef4 uuid%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/gnat.adc  20190514185441 00000000
+G a e
+G c Z s b [initialize main 39 14 none]
+G c Z s b [is_server main 41 13 none]
+G c Z s b [is_client main 43 13 none]
+G c Z s b [process main 45 14 none]
+G c Z s b [my_delay main 47 14 none]
+G c Z s b [initialize_timers main 49 14 none]
+G c Z s b [button_taskTK main 51 9 none]
+G c Z s s [button_taskTKVIP main 51 4 none]
+G c Z s b [led_taskTK main 56 9 none]
+G c Z s s [led_taskTKVIP main 56 4 none]
+G r c none [initialize main 39 14 none] [initialize_board stm32__board 59 14 none]
+G r c none [initialize main 39 14 none] [initialize_memory memory 191 14 none]
+G r c none [initialize main 39 14 none] [initialize_hw hw 16 14 none]
+G r c none [initialize main 39 14 none] [enable_clock stm32__device 65 14 none]
+G r c none [initialize main 39 14 none] [reset stm32__device 86 14 none]
+G r c none [initialize main 39 14 none] [configure stm32__timers 65 14 none]
+G r c none [initialize main 39 14 none] [initialize_comm comm 47 14 none]
+G r c none [process main 45 14 none] [setconnectable comm__run 22 14 none]
+G r c none [process main 45 14 none] [ipcc_cpu1_enablereceivechannel stm32__ipcc 43 14 none]
+G r c none [process main 45 14 none] [set stm32__gpio 159 14 none]
+G r c none [initialize_timers main 49 14 none] [enable_clock stm32__device 65 14 none]
+G r c none [initialize_timers main 49 14 none] [reset stm32__device 86 14 none]
+G r c none [initialize_timers main 49 14 none] [configure stm32__timers 65 14 none]
+G r c none [button_taskTK main 51 9 none] [send_message comm__run 51 14 none]
+G r c none [button_taskTK main 51 9 none] [set stm32__gpio 159 14 none]
+G r c none [led_taskTK main 56 9 none] [set stm32__gpio 159 14 none]
+G r c none [led_taskTK main 56 9 none] [clear stm32__gpio 165 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 34|11r6 11r40 12r6 12r40 35|19r6 19r40 20r6 20r40
+X 6 a-reatim.ads
+41K13*Real_Time 182e18 34|11w10 11r44 35|19w10 19r44
+51M9*Time<71|46M9>
+61I9*Time_Span<71|81I9>
+68V13*Clock{51M9}<71|134p13> 35|53s19
+72V14*"+"{51M9} 35|53s25
+128V13*Milliseconds{61I9} 35|53s27
+X 9 a-sytaco.ads
+40K13*Synchronous_Task_Control 92e33 34|12w10 12r44 35|20w10 20r44
+46W9*Suspension_Object 90e25 34|35r29 37r29
+49U14*Set_True 35|97s13
+54U14*Set_False 35|70s7
+63U14*Suspend_Until_True 35|94s10 109s10
+X 13 ble_status.ads
+2K9*BLE_Status 63e15 35|1w6 1r27
+X 14 bluenrg_gap.ads
+3K9*Bluenrg_Gap 71e16 34|5w6 5r28
+X 15 bluenrg_gap_aci.ads
+8K9*Bluenrg_Gap_Aci 177e20 34|6w6 6r28
+X 16 bluenrg_gatt_aci.ads
+8K9*Bluenrg_Gatt_Aci 179e21 34|4w6 4r28
+X 17 bluenrg_hal_aci.ads
+7K9*Bluenrg_Hal_Aci 52e20 34|7w6 7r28
+X 19 comm.ads
+6K9*Comm 49e9 35|9w6 9r27 10r6 10r27 11r6 11r27
+47U14*Initialize_Comm 35|36s7
+X 20 comm-mbox.ads
+3K14*Mbox 22e14 35|11w11 11r32
+6i4*HW_IPCC_BLE_CMD_CHANNEL{49|5I9} 35|67r40
+10i4*HW_IPCC_MM_RELEASE_BUFFER_CHANNEL{49|5I9} 35|68r40
+X 21 comm-run.ads
+10K14*Run 68e13 35|10w11 10r32
+12b4*Connected{boolean} 35|95r17
+14w4*Scan_Go{9|46W9} 35|97m23 97r23
+22U14*SetConnectable 35|60s10
+51U14*Send_Message 35|99s13
+X 22 exti_interrupts.ads
+36K9*Exti_Interrupts 49e20 35|25w6 25r48
+X 24 hal.ads
+34K9*HAL 166e8 34|2w6 2r28 35|2w6 2r27
+53M9*UInt8<31|63M9> 34|16r29
+66M9*UInt16<31|66M9> 34|17r29 18r29 19r29 20r29
+97M9*UInt32<31|74M9>
+162A9*UInt8_Array(53M9)<integer> 34|24r29
+X 25 hal-gpio.ads
+44h9*GPIO_Point
+X 26 hal-i2c.ads
+48h9*I2C_Port
+X 27 hal-spi.ads
+48h9*SPI_Port
+X 28 hci.ads
+6K9*Hci 161e8 35|8w6 8r27
+X 29 hci_le.ads
+6K9*Hci_Le 232e11 34|3w6 3r28
+8A9*BDAddrT<24|162A9>(24|53M9)<integer> 34|27r29 29r29
+X 30 hw.ads
+1K9*HW 18e7 35|12w6 12r27
+16U14*Initialize_HW 35|34s7
+X 31 interfac.ads
+38K9*Interfaces 184e15 34|1w6 1r28
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 33 log.ads
+4K9*Log 16e8 35|14w6 14r27
+X 34 main.ads
+14K9*Main 61l5 61e9 35|27b14 117l5 117t9
+16m4*HwVersion{24|53M9}
+17m4*FwVersion{24|66M9}
+18m4*Service_Handle{24|66M9}
+19m4*Dev_Name_Char_Handle{24|66M9}
+20m4*Appearance_Char_Handle{24|66M9}
+22a4*Board_Name{string}
+23a4*Serv_Name{string}
+24a4*NodeName{24|162A9}
+27a4*BDaddr{29|8A9}
+29a4*Peer_Addr{29|8A9}
+31E9*Board_Type 31e51 33r12
+31n24*Client_Board{31E9} 33r26
+31n38*Server_Board{31E9} 35|42r22
+33e4*Board{31E9} 35|42r14
+35w4*Button_Go{9|46W9} 35|70m18 70r18 94m30 94r30
+37w4*LED_Go{9|46W9} 35|109m30 109r30
+39U14*Initialize 35|29b14 37l8 37t18
+41V13*Is_Server{boolean} 35|39b13 43l8 43t17 48s18 59s10
+43V13*Is_Client{boolean} 35|45b13 49l8 49t17
+45U14*Process 35|56b14 76l8 76t15
+47U14*My_Delay 35|51b14 54l8 54t16 73s10 111s10 113s10
+49U14*Initialize_Timers 35|35s7 78b14 88l8 88t25
+51t9*Button_Task 35|90b14 102l8 102t19
+56t9*LED_Task 35|105b14 115l8 115t16
+X 36 memory.ads
+5K9*Memory 35|13w6 13r27 36|193e11
+191U14*Initialize_Memory 35|33s7
+X 39 security.ads
+2K9*Security 34|8w6 8r28 39|36e13
+X 40 stm32.ads
+39K9*STM32 35|3r6 3r27 4r6 4r27 5r6 5r27 6r6 6r27 7r6 7r27 17r5 40|48e10
+X 42 stm32-board.ads
+49K15*Board 35|4w12 4r33 42|70e16
+54r4*Blue_LED=54:33{47|129R9} 35|96r18
+55r4*Green_LED=55:33{47|129R9} 35|71r12 110r15 112r17
+59U14*Initialize_Board 35|32s7
+X 44 stm32-device.ads
+55K15*Device 35|3w12 3r33 44|327e17
+65U14*Enable_Clock 35|82s7
+68r4*Timer_2{51|52R9} 35|82m21 82r21 84m14 84r14 86m18 86r18
+86U14*Reset 35|84s7
+X 47 stm32-gpio.ads
+49K15*GPIO 35|5w12 5r33 47|271e15
+159U14*Set<25|74p14> 35|71s7 96s13 110s10
+165U14*Clear<25|77p14> 35|112s10
+X 49 stm32-ipcc.ads
+3K15*IPCC 35|6w12 6r33 49|81e15
+5I9*IPCC_Channel_Range<short_short_integer>
+43U14*IPCC_Cpu1_EnableReceiveChannel 35|66s7
+X 51 stm32-timers.ads
+50K15*Timers 35|7w12 7r33 51|1405e17
+65U14*Configure 35|86s7
+67m7 Prescaler{24|66M9} 35|86r27
+68m7 Period{24|97M9} 35|86r47
+X 60 stm32l4_interrupts.ads
+3K9*STM32L4_Interrupts 35|24w6 24r48 60|15e23
+X 61 system.ads
+50K9*System 34|10w6 53r24 58r24 61|164e11
+114i4*Max_Priority{positive} 34|53r31 58r31
+X 71 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 74 s-interr.ads
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 81 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 89 s-taskin.ads
+407V13*Get_Sec_Stack{81|46P9} 408i<c,__gnat_get_secondary_stack>22
+X 93 s-tarest.ads
+232U14*Activate_All_Tasks_Sequential 233i<c,__gnat_activate_all_tasks>22
+X 96 utils.ads
+5K9*Utils 35|15w6 15r27 96|69e10
+

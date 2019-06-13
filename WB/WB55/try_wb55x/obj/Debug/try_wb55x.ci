@@ -1,0 +1,17 @@
+graph: { title: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "stm32__gpio__toggle" label: "TOGGLE\n/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:171:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/backup/ada/STM32/WB/WB55/try_wb55x/Ada_Drivers_Library/boards/stm32wb55x_nucleo/src/stm32-board.ads:59:14" shape : ellipse }
+node: { title: "_ada_try_wb55x" label: "Try_Wb55x\n/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:12:1\n56 bytes (static)" }
+edge: { sourcename: "_ada_try_wb55x" targetname: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:try_wb55x__my_delay.6224" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:26:10" }
+edge: { sourcename: "_ada_try_wb55x" targetname: "stm32__gpio__toggle" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:25:10" }
+edge: { sourcename: "_ada_try_wb55x" targetname: "stm32__board__initialize_board" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:22:4" }
+node: { title: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:try_wb55x__my_delay.6224" label: "My_Delay\n/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:17:4\n24 bytes (static)" }
+edge: { sourcename: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:try_wb55x__my_delay.6224" targetname: "ada__real_time__delays__delay_until" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:19:7" }
+edge: { sourcename: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:try_wb55x__my_delay.6224" targetname: "ada__real_time__Oadd" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:19:25" }
+edge: { sourcename: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:try_wb55x__my_delay.6224" targetname: "ada__real_time__milliseconds" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:19:27" }
+edge: { sourcename: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:try_wb55x__my_delay.6224" targetname: "ada__real_time__clock" label: "/backup/ada/STM32/WB/WB55/try_wb55x/src/try_wb55x.adb:19:19" }
+}

@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>DMAMUX_OVR</name>
+       <value>62</value>
+     </interrupt>
      <registers>
        <register>
          <name>C0CR</name>

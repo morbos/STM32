@@ -7,6 +7,14 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>IPCC_C1_RX</name>
+       <value>44</value>
+     </interrupt>
+     <interrupt>
+       <name>IPCC_C1_TX</name>
+       <value>45</value>
+     </interrupt>
      <registers>
        <register>
          <name>C1CR</name>
@@ -37,62 +45,62 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6FM</name>
+             <name>CHFM6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5FM</name>
+             <name>CHFM5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4FM</name>
+             <name>CHFM4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3FM</name>
+             <name>CHFM3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2FM</name>
+             <name>CHFM2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1FM</name>
+             <name>CHFM1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6OM</name>
+             <name>CHOM6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5OM</name>
+             <name>CHOM5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4OM</name>
+             <name>CHOM4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3OM</name>
+             <name>CHOM3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2OM</name>
+             <name>CHOM2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1OM</name>
+             <name>CHOM1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -107,62 +115,62 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6S</name>
+             <name>CHS6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5S</name>
+             <name>CHS5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4S</name>
+             <name>CHS4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3S</name>
+             <name>CHS3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2S</name>
+             <name>CHS2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1S</name>
+             <name>CHS1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6C</name>
+             <name>CHC6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5C</name>
+             <name>CHC5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4C</name>
+             <name>CHC4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3C</name>
+             <name>CHC3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2C</name>
+             <name>CHC2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1C</name>
+             <name>CHC1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -177,32 +185,32 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6F</name>
+             <name>CHF6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5F</name>
+             <name>CHF5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4F</name>
+             <name>CHF4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3F</name>
+             <name>CHF3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2F</name>
+             <name>CHF2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1F</name>
+             <name>CHF1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -237,62 +245,62 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6FM</name>
+             <name>CHFM6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5FM</name>
+             <name>CHFM5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4FM</name>
+             <name>CHFM4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3FM</name>
+             <name>CHFM3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2FM</name>
+             <name>CHFM2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1FM</name>
+             <name>CHFM1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6OM</name>
+             <name>CHOM6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5OM</name>
+             <name>CHOM5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4OM</name>
+             <name>CHOM4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3OM</name>
+             <name>CHOM3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2OM</name>
+             <name>CHOM2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1OM</name>
+             <name>CHOM1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -307,62 +315,62 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6S</name>
+             <name>CHS6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5S</name>
+             <name>CHS5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4S</name>
+             <name>CHS4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3S</name>
+             <name>CHS3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2S</name>
+             <name>CHS2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1S</name>
+             <name>CHS1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6C</name>
+             <name>CHC6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5C</name>
+             <name>CHC5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4C</name>
+             <name>CHC4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3C</name>
+             <name>CHC3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2C</name>
+             <name>CHC2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1C</name>
+             <name>CHC1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -377,32 +385,32 @@
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6F</name>
+             <name>CHF6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5F</name>
+             <name>CHF5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4F</name>
+             <name>CHF4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3F</name>
+             <name>CHF3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2F</name>
+             <name>CHF2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1F</name>
+             <name>CHF1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>

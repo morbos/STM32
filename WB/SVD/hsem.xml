@@ -7,6 +7,10 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>HSEM</name>
+       <value>46</value>
+     </interrupt>
      <registers>
        <register>
          <name>R0</name>

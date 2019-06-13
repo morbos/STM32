@@ -1,0 +1,13 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb"
+node: { title: "hci__hci_send_req" label: "Hci_Send_Req\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/hci.ads:155:13" shape : ellipse }
+node: { title: "hci__hci_requestIP" label: "Hci_Requestip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/hci.ads:134:9" shape : ellipse }
+node: { title: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" label: "Aci_L2cap_Connection_Parameter_Update_Response_Idb05a1\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb:49:4\n568 bytes (static)" }
+edge: { sourcename: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" targetname: "hci__hci_send_req" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb:88:10" }
+edge: { sourcename: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" targetname: "hci__hci_requestIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb:60:7" }
+node: { title: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" label: "Aci_L2cap_Connection_Parameter_Update_Request\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb:9:4\n568 bytes (static)" }
+edge: { sourcename: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" targetname: "hci__hci_send_req" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb:42:10" }
+edge: { sourcename: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" targetname: "hci__hci_requestIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.adb:17:7" }
+node: { title: "bluenrg_l2cap_aci__l2cap_conn_param_update_resp_cp_idb05a1IP" label: "L2cap_Conn_Param_Update_Resp_Cp_Idb05a1ip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:35:9\n16 bytes (static)" }
+node: { title: "bluenrg_l2cap_aci__evt_l2cap_conn_upd_reqIP" label: "Evt_L2cap_Conn_Upd_Reqip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:23:9\n16 bytes (static)" }
+node: { title: "bluenrg_l2cap_aci__l2cap_conn_param_update_req_cpIP" label: "L2cap_Conn_Param_Update_Req_Cpip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:11:9\n16 bytes (static)" }
+}

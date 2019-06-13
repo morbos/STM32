@@ -1,0 +1,82 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspension_objectVIP" label: "Suspension_Objectvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:77:4" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_task" label: "Complete_Restricted_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:248:14" shape : ellipse }
+node: { title: "comm__run__send_message" label: "Send_Message\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-run.ads:51:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_true" label: "Set_True\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:49:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:63:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_activation" label: "Complete_Restricted_Activation\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:239:14" shape : ellipse }
+node: { title: "stm32__timers__configure" label: "CONFIGURE\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-timers.ads:65:14" shape : ellipse }
+node: { title: "stm32__device__reset__5" label: "RESET\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32wb55x/stm32-device.ads:86:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__4" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32wb55x/stm32-device.ads:65:14" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_false" label: "Set_False\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:54:14" shape : ellipse }
+node: { title: "stm32__ipcc__ipcc_cpu1_enablereceivechannel__2" label: "IPCC_CPU1_ENABLERECEIVECHANNEL\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:43:14" shape : ellipse }
+node: { title: "comm__run__setconnectable" label: "Setconnectable\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm-run.ads:22:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "comm__initialize_comm" label: "Initialize_Comm\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/comm/comm.ads:47:14" shape : ellipse }
+node: { title: "hw__initialize_hw" label: "INITIALIZE_HW\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/hw.ads:16:14" shape : ellipse }
+node: { title: "memory__initialize_memory" label: "Initialize_Memory\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/memory.ads:191:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/boards/stm32wb55x_nucleo/src/stm32-board.ads:59:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "Create_Restricted_Task_Sequential\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:193:14" shape : ellipse }
+node: { title: "main___elabs" label: "Main\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:14:1\n24 bytes (static)" }
+edge: { sourcename: "main___elabs" targetname: "main__led_taskTKVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:56:4" }
+edge: { sourcename: "main___elabs" targetname: "main__button_taskTKVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:51:4" }
+edge: { sourcename: "main___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:37:4" }
+edge: { sourcename: "main___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:35:4" }
+node: { title: "main___elabb" label: "Main\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:27:1\n4 bytes (static)" }
+node: { title: "main__led_taskTKB" label: "Led_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:105:4\n32 bytes (static)" }
+edge: { sourcename: "main__led_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "main__led_taskTKB" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:main__led_taskTK___finalizer.7222" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:115:0" }
+edge: { sourcename: "main__led_taskTKB" targetname: "main__my_delay" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:113:10" }
+edge: { sourcename: "main__led_taskTKB" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:112:10" }
+edge: { sourcename: "main__led_taskTKB" targetname: "main__my_delay" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:111:10" }
+edge: { sourcename: "main__led_taskTKB" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:110:10" }
+edge: { sourcename: "main__led_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:109:10" }
+edge: { sourcename: "main__led_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:105:4" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:main__led_taskTK___finalizer.7222" label: "Led_Tasktk\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:105:4\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:main__led_taskTK___finalizer.7222" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:105:4" }
+node: { title: "main__button_taskTKB" label: "Button_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:90:4\n32 bytes (static)" }
+edge: { sourcename: "main__button_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "main__button_taskTKB" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:main__button_taskTK___finalizer.7203" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:102:0" }
+edge: { sourcename: "main__button_taskTKB" targetname: "comm__run__send_message" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:99:13" }
+edge: { sourcename: "main__button_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:97:13" }
+edge: { sourcename: "main__button_taskTKB" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:96:13" }
+edge: { sourcename: "main__button_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:94:10" }
+edge: { sourcename: "main__button_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:90:4" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:main__button_taskTK___finalizer.7203" label: "Button_Tasktk\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:90:4\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:main__button_taskTK___finalizer.7203" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:90:4" }
+node: { title: "main__initialize_timers" label: "Initialize_Timers\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:78:4\n8 bytes (static)" }
+edge: { sourcename: "main__initialize_timers" targetname: "stm32__timers__configure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:86:7" }
+edge: { sourcename: "main__initialize_timers" targetname: "stm32__device__reset__5" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:84:7" }
+edge: { sourcename: "main__initialize_timers" targetname: "stm32__device__enable_clock__4" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:82:7" }
+node: { title: "main__process" label: "Process\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:56:4\n16 bytes (static)" }
+edge: { sourcename: "main__process" targetname: "main__my_delay" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:73:10" }
+edge: { sourcename: "main__process" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:71:7" }
+edge: { sourcename: "main__process" targetname: "ada__synchronous_task_control__set_false" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:70:7" }
+edge: { sourcename: "main__process" targetname: "stm32__ipcc__ipcc_cpu1_enablereceivechannel__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:66:7" }
+edge: { sourcename: "main__process" targetname: "comm__run__setconnectable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:60:10" }
+edge: { sourcename: "main__process" targetname: "main__is_server" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:59:10" }
+node: { title: "main__my_delay" label: "My_Delay\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:51:4\n16 bytes (static)" }
+edge: { sourcename: "main__my_delay" targetname: "ada__real_time__delays__delay_until" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:53:7" }
+edge: { sourcename: "main__my_delay" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:53:25" }
+edge: { sourcename: "main__my_delay" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:53:27" }
+edge: { sourcename: "main__my_delay" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:53:19" }
+node: { title: "main__is_client" label: "Is_Client\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:45:4\n8 bytes (static)" }
+edge: { sourcename: "main__is_client" targetname: "main__is_server" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:48:18" }
+node: { title: "main__is_server" label: "Is_Server\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:39:4\n4 bytes (static)" }
+node: { title: "main__initialize" label: "Initialize\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:29:4\n8 bytes (static)" }
+edge: { sourcename: "main__initialize" targetname: "comm__initialize_comm" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:36:7" }
+edge: { sourcename: "main__initialize" targetname: "main__initialize_timers" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:35:7" }
+edge: { sourcename: "main__initialize" targetname: "hw__initialize_hw" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:34:7" }
+edge: { sourcename: "main__initialize" targetname: "memory__initialize_memory" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:33:7" }
+edge: { sourcename: "main__initialize" targetname: "stm32__board__initialize_board" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.adb:32:7" }
+node: { title: "main__led_taskTKVIP" label: "Led_Tasktkvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:56:4\n80 bytes (static)" }
+edge: { sourcename: "main__led_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:56:4" }
+node: { title: "main__button_taskTKVIP" label: "Button_Tasktkvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:51:4\n80 bytes (static)" }
+edge: { sourcename: "main__button_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/src/main.ads:51:4" }
+}

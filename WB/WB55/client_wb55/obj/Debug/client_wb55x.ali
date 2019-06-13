@@ -1,0 +1,105 @@
+V "GNAT Lib v2019"
+M P W=b
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U client_wb55x%b	client_wb55x.adb	e88ecfec NE OO SU
+W last_chance_handler%s	last_chance_handler.adb	last_chance_handler.ali
+W main%s		main.adb		main.ali
+
+D ada.ads		20190401184724 76789da1 ada%s
+D a-except.ads		20190401184716 291912d5 ada.exceptions%s
+D a-reatim.ads		20190401184901 4c16970e ada.real_time%s
+D a-sytaco.ads		20190401184904 e57638e1 ada.synchronous_task_control%s
+D a-taside.ads		20190401184906 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20190401184724 0e9b276f ada.unchecked_conversion%s
+D ble_status.ads	20190523214215 4b2a7901 ble_status%s
+D bluenrg_gap.ads	20190523214216 232b6eef bluenrg_gap%s
+D bluenrg_gap_aci.ads	20190604234306 95aeab11 bluenrg_gap_aci%s
+D bluenrg_gatt_aci.ads	20190610223136 3a30b302 bluenrg_gatt_aci%s
+D bluenrg_hal_aci.ads	20190605001653 2d28e648 bluenrg_hal_aci%s
+D client_wb55x.adb	20190612173026 817e5daf client_wb55x%b
+D gen_list.ads		20190603015254 c97a5cb2 gen_list%s
+D hal.ads		20190401184234 2b42c80e hal%s
+D hci.ads		20190611171240 1e6f4d57 hci%s
+D hci_le.ads		20190611170805 94fc4637 hci_le%s
+D interfac.ads		20190401184735 5ab55268 interfaces%s
+D i-bit_types.ads	20190401184733 bd94d513 interfaces.bit_types%s
+D last_chance_handler.ads  20190401184142 da51f004 last_chance_handler%s
+D main.ads		20190611004848 b3a16247 main%s
+D memory.ads		20190606010608 89b67802 memory%s
+D ogf_ocf.ads		20190524182825 ee83137a ogf_ocf%s
+D security.ads		20190528215436 6b28ec4a security%s
+D system.ads		20190401184659 db831581 system%s
+D s-bb.ads		20190401184737 09e072ae system.bb%s
+D s-bbbopa.ads		20190401185429 9a19f194 system.bb.board_parameters%s
+D s-bbbosu.ads		20190401184908 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20190401184909 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20190401184912 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20190401185429 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20190401184856 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20190401184915 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20190401184914 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20190401184918 ad086247 system.bb.time%s
+D s-multip.ads		20190401184924 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20190401184923 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20190401184925 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20190401184925 229b14dd system.os_interface%s
+D s-parame.ads		20190401184811 d106111e system.parameters%s
+D s-secsta.ads		20190401184813 56a2861c system.secondary_stack%s
+D s-stalib.ads		20190401184815 09bd3940 system.standard_library%s
+D s-stm32.ads		20190401185429 4ab394a4 system.stm32%s
+D s-stoele.ads		20190401184815 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20190401184931 801abd01 system.task_info%s
+D s-taspri.ads		20190401184933 351848fa system.task_primitives%s
+D s-taskin.ads		20190401184933 58b15916 system.tasking%s
+D s-taprob.ads		20190401184927 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20190401184936 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-tasres.ads		20190401184934 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20190401184929 c88b6d9a system.tasking.restricted.stages%s
+D s-traent.ads		20190401184820 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190401184822 34867c83 system.unsigned_types%s
+D uuid.ads		20190523214215 03622ef4 uuid%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/client_wb55/gnat.adc  20190514185441 00000000
+G a e
+G c Z b b [client_wb55x standard 5 11 none]
+G r c none [client_wb55x standard 5 11 none] [initialize main 39 14 none]
+G r c none [client_wb55x standard 5 11 none] [process main 45 14 none]
+X 12 client_wb55x.adb
+5U11*Client_WB55x 5b11 10l5 10t17
+X 19 last_chance_handler.ads
+36K9*Last_Chance_Handler 12|3w6 3r49 19|42e24
+38U14*Last_Chance_Handler 39i<c,__gnat_last_chance_handler>22
+X 20 main.ads
+14K9*Main 12|1w6 1r20 20|61e9
+39U14*Initialize 12|8s4
+45U14*Process 12|9s4
+X 40 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 46 s-taskin.ads
+407V13*Get_Sec_Stack{40|46P9} 408i<c,__gnat_get_secondary_stack>22
+X 50 s-tarest.ads
+232U14*Activate_All_Tasks_Sequential 233i<c,__gnat_activate_all_tasks>22
+

@@ -12,19 +12,11 @@ L - Stands for the Low power line
 443 - is the # of the part in that line
 CC - helps to clarify the package used.
 
-So here we have currently two subdirs:
+So here we have three subdirs:
 
-L & F
+L & F & WB
 
 F handles the first generation STM32 parts. Not too much here other
 than some work I do on the BluePill STM32F103C8 its in STM32/F/F103.
 
-Look for a new dir WB to appear March 2019 or so.
-
-
-
-
-
-
-
-
+WB is the new Bluetooth controller.

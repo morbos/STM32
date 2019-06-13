@@ -7,6 +7,14 @@
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>C2SEV_PWR_C2H</name>
+       <value>21</value>
+     </interrupt>
+     <interrupt>
+       <name>PWR_SOTF_BLEACT_802ACT_RFPHASE</name>
+       <value>43</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>

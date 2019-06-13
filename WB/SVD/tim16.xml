@@ -8,7 +8,7 @@
        <usage>registers</usage>
      </addressBlock>
      <interrupt>
-       <name>TIM16</name>
+       <name>TIM1_UP_TIM16</name>
        <value>25</value>
      </interrupt>
      <registers>

@@ -9236,6 +9236,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>AES1</name>
+       <value>51</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -9688,6 +9692,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>AES2</name>
+       <value>52</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -10242,6 +10250,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>DMAMUX_OVR</name>
+       <value>62</value>
+     </interrupt>
      <registers>
        <register>
          <name>C0CR</name>
@@ -11267,6 +11279,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
      <interrupt>
        <name>EXTI4</name>
        <value>10</value>
+     </interrupt>
+     <interrupt>
+       <name>EXTI9_5</name>
+       <value>23</value>
      </interrupt>
      <interrupt>
        <name>EXTI15_10</name>
@@ -12422,6 +12438,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>HSEM</name>
+       <value>46</value>
+     </interrupt>
      <registers>
        <register>
          <name>R0</name>
@@ -12739,6 +12759,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>C2SEV_PWR_C2H</name>
+       <value>21</value>
+     </interrupt>
+     <interrupt>
+       <name>PWR_SOTF_BLEACT_802ACT_RFPHASE</name>
+       <value>43</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -14962,6 +14990,10 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>QUADSPI</name>
+       <value>50</value>
+     </interrupt>
      <registers>
        <register>
          <name>CR</name>
@@ -16405,6 +16437,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <size>0x400</size>
        <usage>registers</usage>
      </addressBlock>
+     <interrupt>
+       <name>IPCC_C1_RX</name>
+       <value>44</value>
+     </interrupt>
+     <interrupt>
+       <name>IPCC_C1_TX</name>
+       <value>45</value>
+     </interrupt>
      <registers>
        <register>
          <name>C1CR</name>
@@ -16435,62 +16475,62 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6FM</name>
+             <name>CHFM6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5FM</name>
+             <name>CHFM5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4FM</name>
+             <name>CHFM4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3FM</name>
+             <name>CHFM3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2FM</name>
+             <name>CHFM2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1FM</name>
+             <name>CHFM1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6OM</name>
+             <name>CHOM6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5OM</name>
+             <name>CHOM5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4OM</name>
+             <name>CHOM4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3OM</name>
+             <name>CHOM3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2OM</name>
+             <name>CHOM2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1OM</name>
+             <name>CHOM1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -16505,62 +16545,62 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6S</name>
+             <name>CHS6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5S</name>
+             <name>CHS5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4S</name>
+             <name>CHS4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3S</name>
+             <name>CHS3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2S</name>
+             <name>CHS2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1S</name>
+             <name>CHS1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6C</name>
+             <name>CHC6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5C</name>
+             <name>CHC5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4C</name>
+             <name>CHC4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3C</name>
+             <name>CHC3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2C</name>
+             <name>CHC2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1C</name>
+             <name>CHC1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -16575,32 +16615,32 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6F</name>
+             <name>CHF6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5F</name>
+             <name>CHF5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4F</name>
+             <name>CHF4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3F</name>
+             <name>CHF3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2F</name>
+             <name>CHF2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1F</name>
+             <name>CHF1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -16635,62 +16675,62 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6FM</name>
+             <name>CHFM6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5FM</name>
+             <name>CHFM5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4FM</name>
+             <name>CHFM4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3FM</name>
+             <name>CHFM3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2FM</name>
+             <name>CHFM2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1FM</name>
+             <name>CHFM1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6OM</name>
+             <name>CHOM6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5OM</name>
+             <name>CHOM5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4OM</name>
+             <name>CHOM4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3OM</name>
+             <name>CHOM3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2OM</name>
+             <name>CHOM2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1OM</name>
+             <name>CHOM1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -16705,62 +16745,62 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6S</name>
+             <name>CHS6</name>
              <bitOffset>21</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5S</name>
+             <name>CHS5</name>
              <bitOffset>20</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4S</name>
+             <name>CHS4</name>
              <bitOffset>19</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3S</name>
+             <name>CHS3</name>
              <bitOffset>18</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2S</name>
+             <name>CHS2</name>
              <bitOffset>17</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1S</name>
+             <name>CHS1</name>
              <bitOffset>16</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH6C</name>
+             <name>CHC6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5C</name>
+             <name>CHC5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4C</name>
+             <name>CHC4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3C</name>
+             <name>CHC3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2C</name>
+             <name>CHC2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1C</name>
+             <name>CHC1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -16775,32 +16815,32 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
          <resetValue>0x00000000</resetValue>
          <fields>
            <field>
-             <name>CH6F</name>
+             <name>CHF6</name>
              <bitOffset>5</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH5F</name>
+             <name>CHF5</name>
              <bitOffset>4</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH4F</name>
+             <name>CHF4</name>
              <bitOffset>3</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH3F</name>
+             <name>CHF3</name>
              <bitOffset>2</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH2F</name>
+             <name>CHF2</name>
              <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
-             <name>CH1F</name>
+             <name>CHF1</name>
              <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
@@ -26988,14 +27028,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <name>TIM1_BRK</name>
        <value>24</value>
      </interrupt>
-     <interrupt>
-       <name>TIM1_UP</name>
-       <value>25</value>
-     </interrupt>
-     <interrupt>
-       <name>TIM1_TRG_COM</name>
-       <value>26</value>
-     </interrupt>
      <registers>
        <register>
          <name>CR1</name>
@@ -29060,7 +29092,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <usage>registers</usage>
      </addressBlock>
      <interrupt>
-       <name>TIM16</name>
+       <name>TIM1_UP_TIM16</name>
        <value>25</value>
      </interrupt>
      <registers>
@@ -29666,7 +29698,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <usage>registers</usage>
      </addressBlock>
      <interrupt>
-       <name>TIM17</name>
+       <name>TIM1_TRG_COM_TIM17</name>
        <value>26</value>
      </interrupt>
      <registers>

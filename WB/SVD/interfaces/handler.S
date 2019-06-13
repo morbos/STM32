@@ -50,12 +50,12 @@ __vectors:
 	.word __gnat_irq_trap        /* 34 ADC */
 	.word __gnat_irq_trap        /* 35 USB_HP */
 	.word __gnat_irq_trap        /* 36 USB_LP */
-	.word __gnat_irq_trap        /* 37 IRQ 21. */
+	.word __gnat_irq_trap        /* 37 C2SEV_PWR_C2H */
 	.word __gnat_irq_trap        /* 38 COMP */
-	.word __gnat_irq_trap        /* 39 IRQ 23. */
+	.word __gnat_irq_trap        /* 39 EXTI9_5 */
 	.word __gnat_irq_trap        /* 40 TIM1_BRK */
-	.word __gnat_irq_trap        /* 41 TIM16 */
-	.word __gnat_irq_trap        /* 42 TIM17 */
+	.word __gnat_irq_trap        /* 41 TIM1_UP_TIM16 */
+	.word __gnat_irq_trap        /* 42 TIM1_TRG_COM_TIM17 */
 	.word __gnat_irq_trap        /* 43 TIM1_CC */
 	.word __gnat_irq_trap        /* 44 TIM2 */
 	.word __gnat_irq_trap        /* 45 IRQ 29. */
@@ -72,16 +72,16 @@ __vectors:
 	.word __gnat_irq_trap        /* 56 EXTI15_10 */
 	.word __gnat_irq_trap        /* 57 RTC_ALARM */
 	.word __gnat_irq_trap        /* 58 CRS */
-	.word __gnat_irq_trap        /* 59 IRQ 43. */
-	.word __gnat_irq_trap        /* 60 IRQ 44. */
-	.word __gnat_irq_trap        /* 61 IRQ 45. */
-	.word __gnat_irq_trap        /* 62 IRQ 46. */
+	.word __gnat_irq_trap        /* 59 PWR_SOTF_BLEACT_802ACT_RFPHASE */
+	.word __gnat_irq_trap        /* 60 IPCC_C1_RX */
+	.word __gnat_irq_trap        /* 61 IPCC_C1_TX */
+	.word __gnat_irq_trap        /* 62 HSEM */
 	.word __gnat_irq_trap        /* 63 LPTIM1 */
 	.word __gnat_irq_trap        /* 64 LPTIM2 */
 	.word __gnat_irq_trap        /* 65 LCD */
-	.word __gnat_irq_trap        /* 66 IRQ 50. */
-	.word __gnat_irq_trap        /* 67 IRQ 51. */
-	.word __gnat_irq_trap        /* 68 IRQ 52. */
+	.word __gnat_irq_trap        /* 66 QUADSPI */
+	.word __gnat_irq_trap        /* 67 AES1 */
+	.word __gnat_irq_trap        /* 68 AES2 */
 	.word __gnat_irq_trap        /* 69 RNG */
 	.word __gnat_irq_trap        /* 70 IRQ 54. */
 	.word __gnat_irq_trap        /* 71 DMA2_CH1 */
@@ -91,7 +91,7 @@ __vectors:
 	.word __gnat_irq_trap        /* 75 DMA2_CH5 */
 	.word __gnat_irq_trap        /* 76 DMA2_CH6 */
 	.word __gnat_irq_trap        /* 77 DMA2_CH7 */
-	.word __gnat_irq_trap        /* 78 IRQ 62. */
+	.word __gnat_irq_trap        /* 78 DMAMUX_OVR */
 	.word __gnat_irq_trap        /* 79 IRQ 63. */
 	.word __gnat_irq_trap        /* 80 IRQ 64. */
 	.word __gnat_irq_trap        /* 81 IRQ 65. */
