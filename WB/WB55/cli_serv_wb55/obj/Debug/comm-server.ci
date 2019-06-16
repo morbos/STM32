@@ -1,7 +1,0 @@
-graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/server/comm-server.adb"
-node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
-node: { title: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" label: "Aci_L2cap_Connection_Parameter_Update_Request\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:52:13" shape : ellipse }
-node: { title: "comm__server__rate_toggle" label: "Rate_Toggle\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/server/comm-server.adb:7:4\n32 bytes (static)" }
-edge: { sourcename: "comm__server__rate_toggle" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/server/comm-server.adb:21:10" }
-edge: { sourcename: "comm__server__rate_toggle" targetname: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_request" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/server/comm-server.adb:14:14" }
-}
