@@ -1,0 +1,401 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U bluenrg_gatt_aci%b	bluenrg_gatt_aci.adb	862fe52b NE OO PK
+W bluenrg_gatt_server%s	bluenrg_gatt_server.ads	bluenrg_gatt_server.ali
+Z system%s		system.ads		system.ali
+W utils%s		utils.adb		utils.ali
+
+U bluenrg_gatt_aci%s	bluenrg_gatt_aci.ads	80486ffa EE NE OO PK
+W ble_status%s		ble_status.ads		ble_status.ali
+W hal%s			hal.ads			hal.ali
+W hci%s			hci.adb			hci.ali
+W memory%s		memory.adb		memory.ali
+W ogf_ocf%s		ogf_ocf.ads		ogf_ocf.ali
+W uuid%s		uuid.adb		uuid.ali
+
+D ble_status.ads	20190614233745 4b2a7901 ble_status%s
+D bluenrg_gatt_aci.ads	20190615183853 edbbaa0c bluenrg_gatt_aci%s
+D bluenrg_gatt_aci.adb	20190615185002 77c49b99 bluenrg_gatt_aci%b
+D bluenrg_gatt_server.ads  20190614233745 2a1b07b4 bluenrg_gatt_server%s
+D gen_list.ads		20190614233745 c97a5cb2 gen_list%s
+D hal.ads		20190401184234 2b42c80e hal%s
+D hci.ads		20190614233745 1e6f4d57 hci%s
+D interfac.ads		20190401184735 5ab55268 interfaces%s
+D memory.ads		20190614233745 89b67802 memory%s
+D ogf_ocf.ads		20190614233745 ee83137a ogf_ocf%s
+D system.ads		20190401184659 db831581 system%s
+D s-stoele.ads		20190401184815 2dc34a04 system.storage_elements%s
+D utils.ads		20190614233745 364bd30a utils%s
+D uuid.ads		20190616175212 74c152d6 uuid%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/gnat.adc  20190614233744 00000000
+G a e
+G c Z s b [aci_gatt_init bluenrg_gatt_aci 120 13 none]
+G c Z s b [aci_gatt_update_char_value bluenrg_gatt_aci 122 13 none]
+G c Z s b [aci_gatt_add_serv bluenrg_gatt_aci 129 13 none]
+G c Z s b [aci_gatt_add_char bluenrg_gatt_aci 136 13 none]
+G c Z s b [aci_gatt_disc_charac_by_uuid bluenrg_gatt_aci 148 13 none]
+G c Z s b [aci_gatt_write_charac_descriptor bluenrg_gatt_aci 155 13 none]
+G c Z s b [aci_gatt_write_without_response bluenrg_gatt_aci 161 13 none]
+G c Z s b [aci_gatt_disc_all_primary_services bluenrg_gatt_aci 167 13 none]
+G c Z s b [aci_gatt_disc_all_charac_of_serv bluenrg_gatt_aci 169 13 none]
+G c Z s b [aci_gatt_disc_all_charac_descriptors bluenrg_gatt_aci 174 13 none]
+G c Z s s [gatt_add_serv_rpIP bluenrg_gatt_aci 11 9 none]
+G c Z s s [gatt_add_char_rpIP bluenrg_gatt_aci 20 9 none]
+G c Z s s [evt_gatt_attr_modified_idb05a1IP bluenrg_gatt_aci 28 9 none]
+G c Z s s [evt_blue_att_find_information_respIP bluenrg_gatt_aci 39 9 none]
+G c Z s s [evt_blue_gatt_read_by_type_respIP bluenrg_gatt_aci 47 9 none]
+G c Z s s [evt_blue_gatt_read_group_type_respIP bluenrg_gatt_aci 59 9 none]
+G c Z s s [evt_gatt_read_permit_reqIP bluenrg_gatt_aci 72 9 none]
+G c Z s s [evt_gatt_attr_notificationIP bluenrg_gatt_aci 81 9 none]
+G c Z s s [gatt_disc_all_charac_of_serv_paramIP bluenrg_gatt_aci 106 9 none]
+G c Z s s [gatt_disc_all_charac_descriptors_paramIP bluenrg_gatt_aci 113 9 none]
+G r s hci_request [aci_gatt_init bluenrg_gatt_aci 120 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_init bluenrg_gatt_aci 120 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_update_char_value bluenrg_gatt_aci 122 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_update_char_value bluenrg_gatt_aci 122 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_add_serv bluenrg_gatt_aci 129 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_add_serv bluenrg_gatt_aci 129 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_add_char bluenrg_gatt_aci 136 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_add_char bluenrg_gatt_aci 136 13 none] [to_uint8_from_uint16 utils 41 14 none]
+G r c none [aci_gatt_add_char bluenrg_gatt_aci 136 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_disc_charac_by_uuid bluenrg_gatt_aci 148 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_disc_charac_by_uuid bluenrg_gatt_aci 148 13 none] [to_uint8_from_uint16 utils 41 14 none]
+G r c none [aci_gatt_disc_charac_by_uuid bluenrg_gatt_aci 148 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_write_charac_descriptor bluenrg_gatt_aci 155 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_write_charac_descriptor bluenrg_gatt_aci 155 13 none] [to_uint8_from_uint16 utils 41 14 none]
+G r c none [aci_gatt_write_charac_descriptor bluenrg_gatt_aci 155 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_write_without_response bluenrg_gatt_aci 161 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_write_without_response bluenrg_gatt_aci 161 13 none] [to_uint8_from_uint16 utils 41 14 none]
+G r c none [aci_gatt_write_without_response bluenrg_gatt_aci 161 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_disc_all_primary_services bluenrg_gatt_aci 167 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_disc_all_primary_services bluenrg_gatt_aci 167 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_disc_all_charac_of_serv bluenrg_gatt_aci 169 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_disc_all_charac_of_serv bluenrg_gatt_aci 169 13 none] [hci_send_req hci 155 13 none]
+G r s hci_request [aci_gatt_disc_all_charac_descriptors bluenrg_gatt_aci 174 13 none] [hci_requestIP hci 134 9 none]
+G r c none [aci_gatt_disc_all_charac_descriptors bluenrg_gatt_aci 174 13 none] [hci_send_req hci 155 13 none]
+X 1 ble_status.ads
+2K9*BLE_Status 63e15 2|5w6 5r27
+4M9*BLE_Status_Code<6|53M9> 2|120r34 127r41 134r46 146r43 153r36 159r39 165r39
+. 167r78 172r37 177r42 3|6r34 11r17 32r41 37r17 81r46 122r17 138r43 198r17
+. 209r36 215r18 261r39 267r17 311r39 317r17 357r78 362r17 391r37 396r17 427r42
+. 432r17
+5m4*BLE_STATUS_OK{4M9} 3|125r14 201r14
+31m4*BLE_STATUS_INVALID_PARAMS{4M9} 3|47r17 274r17 324r17
+61m4*BLE_STATUS_TIMEOUT{4M9} 3|21r17 70r17 119r17 195r17 251r17 301r17 351r17
+. 381r17 417r17 453r17
+X 2 bluenrg_gatt_aci.ads
+8K9*Bluenrg_Gatt_Aci 179l5 179e21 3|4b14 459l5 459t21
+10m4*OCF_GATT_ADD_SERV{6|54M9} 3|112r27
+11R9*Gatt_Add_Serv_Rp 15e6 3|87r18
+12m7*Status{6|53M9} 3|121r15 122r39
+13m7*Handle{6|66M9} 3|124r29
+17m4*GATT_ADD_SERV_RP_SIZE{6|53M9} 3|116r20
+19m4*OCF_GATT_ADD_CHAR{6|54M9} 3|188r24
+20R9*Gatt_Add_Char_Rp 24e6 3|144r18
+21m7*Status{6|53M9} 3|197r15 198r39
+22m7*Handle{6|66M9} 3|200r26
+25m4*GATT_ADD_CHAR_RP_SIZE{6|53M9} 3|192r24
+27m4*EVT_BLUE_GATT_ATTRIBUTE_MODIFIED_CODE{6|66M9}
+28R9*Evt_Gatt_Attr_Modified_IDB05A1 34e6
+29m7*Conn_Handle{6|66M9}
+30m7*Attr_Handle{6|66M9}
+31m7*Data_Length{6|53M9}
+32m7*Offset{6|66M9}
+35m4*EVT_BLUE_GATT_ATTRIBUTE_MODIFIED_SIZE{6|53M9}
+37m4*EVT_BLUE_ATT_FIND_INFORMATION_RESP_CODE{6|66M9}
+39R9*Evt_Blue_Att_Find_Information_Resp 44e6
+40m7*Conn_Handle{6|66M9}
+41m7*Evt_Len{6|53M9}
+42m7*Format{6|53M9}
+46m4*EVT_BLUE_GATT_READ_BY_TYPE_RESP_CODE{6|66M9}
+47R9*Evt_Blue_Gatt_Read_By_Type_Resp 56e6
+48m7*Conn_Handle{6|66M9}
+49m7*Evt_Len{6|53M9}
+50m7*pair_Len{6|53M9}
+51m7*Handle{6|66M9}
+52m7*Properties{6|53M9}
+53m7*Char_Val_Handle{6|66M9}
+54a7*UUid{14|4A9}
+58m4*EVT_BLUE_GATT_READ_GROUP_TYPE_RESP_CODE{6|66M9}
+59R9*Evt_Blue_Gatt_Read_Group_Type_Resp 67e6
+60m7*Conn_Handle{6|66M9}
+61m7*Evt_Len{6|53M9}
+62m7*Attr_Len{6|53M9}
+63m7*Svc_Handle_Start{6|66M9}
+64m7*Svc_Handle_End{6|66M9}
+65a7*UUid{14|4A9}
+69m4*EVT_BLUE_GATT_PROCEDURE_COMPLETE{6|66M9}
+71m4*EVT_BLUE_GATT_READ_PERMIT_REQ{6|66M9}
+72R9*Evt_Gatt_Read_Permit_Req 78e6
+73m7*Conn_Handle{6|66M9}
+74m7*Attr_Handle{6|66M9}
+75m7*Data_Length{6|53M9}
+76m7*Offset{6|66M9}
+80m4*EVT_BLUE_GATT_NOTIFICATION_CODE{6|66M9}
+81R9*Evt_Gatt_Attr_Notification 86e6
+82m7*Conn_Handle{6|66M9}
+83m7*Attr_Handle{6|66M9}
+84m7*Attr_Length{6|53M9}
+87m4*EVT_BLUE_GATT_NOTIFICATION_SIZE{6|53M9}
+89m4*EVT_BLUE_GATT_DISC_READ_CHAR_BY_UUID_RESP_CODE{6|66M9}
+91m4*EVT_GATT_READ_PERMIT_REQ_SIZE{6|53M9}
+93m4*OCF_GATT_DISC_ALL_PRIM_SERVICES{6|54M9} 3|374r24
+95m4*OCF_GATT_DISC_ALL_CHARAC_OF_SERV{6|54M9} 3|410r24
+97m4*OCF_GATT_DISC_CHARAC_BY_UUID{6|54M9} 3|243r24
+99m4*OCF_GATT_DISC_ALL_CHARAC_DESCRIPTORS{6|54M9} 3|446r24
+101m4*OCF_GATT_WRITE_CHAR_DESCRIPTOR{6|54M9} 3|293r24
+103m4*OCF_GATT_WRITE_WITHOUT_RESPONSE{6|54M9} 3|343r24
+106R9*Gatt_Disc_All_Charac_Of_Serv_Param 111e6 3|399r17
+107m7*Conn_Handle{6|66M9} 3|404m10
+108m7*Start_Handle{6|66M9} 3|405m10
+109m7*End_Handle{6|66M9} 3|406m10
+113R9*Gatt_Disc_All_Charac_Descriptors_Param 118e6 3|435r17
+114m7*Conn_Handle{6|66M9} 3|440m10
+115m7*Start_Char_Handle{6|66M9} 3|441m10
+116m7*End_Char_Handle{6|66M9} 3|442m10
+120V13*Aci_Gatt_Init{1|4M9} 3|6b13 25l8 25t21
+122V13*Aci_Gatt_Update_Char_Value{1|4M9} 123>7 124>7 125>7 126>7 127>7 3|27b13
+. 74l8 74t34
+123m7 ServHandle{6|66M9} 3|28b7 50r28
+124m7 CharHandle{6|66M9} 3|29b7 51r28
+125m7 CharValOffset{6|53M9} 3|30b7 52r28
+126m7 CharValueLen{6|53M9} 3|31b7 46r19 53r28 56r21
+127a7 CharValue{9|8A9} 3|32b7 57r36
+129V13*Aci_Gatt_Add_Serv{1|4M9} 130>7 131>7 132>7 133>7 134<7 3|76b13 126l8
+. 126t25
+130m7 Service_Uuid_Type{6|53M9} 3|77b7 94r33 96r10
+131a7 Service_Uuid{14|4A9} 3|78b7 102r44
+132m7 Service_Type{6|53M9} 3|79b7 105r33
+133m7 Max_Attr_Records{6|53M9} 3|80b7 107r33
+134m7 ServiceHandle{6|66M9} 3|81b7 124m7
+136V13*Aci_Gatt_Add_Char{1|4M9} 137>7 138>7 139>7 140>7 141>7 142>7 143>7
+. 144>7 145>7 146<7 3|128b13 202l8 202t25
+137m7 ServiceHandle{6|66M9} 3|129b7 151r53
+138m7 CharUuidType{6|53M9} 3|130b7 154r33 157r10
+139a7 CharUuid{14|4A9} 3|131b7 163r44
+140m7 CharValueLen{6|66M9} 3|132b7 167r81
+141m7 CharProperties{6|53M9} 3|133b7 170r33
+142m7 SecPermissions{6|53M9} 3|134b7 173r33
+143m7 GattEvtMask{6|53M9} 3|135b7 176r33
+144i7 EncryKeySize{7|19I9} 3|136b7 179r40
+145b7 IsVariable{boolean} 3|137b7 182r37
+146m7 CharHandle{6|66M9} 3|138b7 200m7
+148V13*Aci_Gatt_Disc_Charac_By_Uuid{1|4M9} 149>7 150>7 151>7 152>7 153>7
+. 3|204b13 255l8 255t36
+149m7 Conn_Handle{6|66M9} 3|205b7 221r81
+150m7 Start_Handle{6|66M9} 3|206b7 224r81
+151m7 End_Handle{6|66M9} 3|207b7 227r81
+152m7 CharUuidType{6|53M9} 3|208b7 230r33 233r23
+153a7 CharUuid{14|4A9} 3|209b7 236r44
+155V13*Aci_Gatt_Write_Charac_Descriptor{1|4M9} 156>7 157>7 158>7 159>7 3|257b13
+. 305l8 305t40
+156m7 Conn_Handle{6|66M9} 3|258b7 277r81
+157m7 Attr_Handle{6|66M9} 3|259b7 280r81
+158m7 Value_Len{6|53M9} 3|260b7 273r19 283r33 286r21 289r20
+159a7 Attr_Value{9|8A9} 3|261b7 287r44
+161V13*Aci_Gatt_Write_Without_Response{1|4M9} 162>7 163>7 164>7 165>7 3|307b13
+. 355l8 355t39
+162m7 Conn_Handle{6|66M9} 3|308b7 327r81
+163m7 Attr_Handle{6|66M9} 3|309b7 330r81
+164m7 Value_Len{6|53M9} 3|310b7 323r19 333r33 336r21 339r20
+165a7 Attr_Value{9|8A9} 3|311b7 337r44
+167V13*Aci_Gatt_Disc_All_Primary_Services{1|4M9} 167>49 3|357b13 386l8 386t42
+167m49 Conn_Handle{6|66M9} 3|357b49 370r13
+169V13*Aci_Gatt_Disc_All_Charac_Of_Serv{1|4M9} 170>7 171>7 172>7 3|388b13
+. 422l8 422t40
+170m7 Conn_Handle{6|66M9} 3|389b7 404r25
+171m7 Start_Handle{6|66M9} 3|390b7 405r26
+172m7 End_Handle{6|66M9} 3|391b7 406r24
+174V13*Aci_Gatt_Disc_All_Charac_Descriptors{1|4M9} 175>7 176>7 177>7 3|424b13
+. 457l8 457t44
+175m7 Conn_Handle{6|66M9} 3|425b7 440r25
+176m7 Start_Char_Handle{6|66M9} 3|426b7 441r31
+177m7 End_Char_Handle{6|66M9} 3|427b7 442r29
+X 3 bluenrg_gatt_aci.adb
+8r7 Rq{7|134R9} 9r35 10m30 10r30 16m7 17m7 18m7 19m7 20m24 20r24
+9a7 RqBuff{6|162A9} 10m11 10r11 15m7
+11m7 Status{1|4M9} 13m11 13r11 23r17
+12a7 StatBuf{9|8A9} 13m30 13r30 18m25 18r25
+34r7 Rq{7|134R9} 35r35 36m30 36r30 62m7 63m7 64m7 65m7 66m7 67m7 69m24 69r24
+35a7 RqBuff{6|162A9} 36m11 36r11 61m7
+37m7 Status{1|4M9} 39m11 39r11 72r17
+38a7 StatBuf{9|8A9} 39m30 39r30 66m20 66r20
+40r7 Cr{10|49R9} 42r11 43m11 43r11 50m7 51m7 52m7 53m7 55r15
+41a7 Buffer{9|8A9} 43m26 43r26 57m10 64m20 64r20
+44m7 Idx{6|53M9} 55m7 57r27 58m10 58r17 65r20
+56m11 I<8|63M9> 57r56
+83a7 Buffer{9|8A9} 94m7 102m10 105m7 107m7 113m20 113r20
+84r7 Rq{7|134R9} 85r36 86m30 86r30 111m7 112m7 113m7 114m7 115m7 116m7 118m24
+. 118r24
+85a7 RqBuff{6|162A9} 86m11 86r11 110m7
+87r7 Resp{2|11R9} 89r11 90m11 90r11 121r10 122r34 124r24
+88a7 RespBuf{9|8A9} 90m28 90r28 115m20 115r20
+91m7 Uuid_Len{6|53M9} 97m10 99m10 101r21 104r20
+92m7 Idx{6|53M9} 94r24 95m7 95r14 102r31 104m7 104r14 105r24 106m7 106r14
+. 107r24 108m7 108r14 114r20
+101m11 I<8|63M9> 102r27 102r67
+140a7 Buffer{9|8A9} 151m29 151r29 151m41 151r41 154m7 163m10 167m29 167r29
+. 167m57 167r57 170m7 173m7 176m7 179m7 182m7 189m24 189r24
+141r7 Rq{7|134R9} 142r36 143m30 143r30 187m7 188m7 189m7 190m7 191m7 192m7
+. 194m24 194r24
+142a7 RqBuff{6|162A9} 143m11 143r11 185m7
+144r7 Resp{2|20R9} 146r11 147m11 147r11 197r10 198r34 200r21
+145a7 RespBuf{9|8A9} 147m28 147r28 186m7 191m24 191r24
+148m7 Idx{6|53M9} 152m7 152r14 154r24 155m7 155r14 163r31 165m7 165r14 167r46
+. 167r74 168m7 168r14 170r24 171m7 171r14 173r24 174m7 174r14 176r24 177m7
+. 177r14 179r24 180m7 180r14 182r24 183m7 183r14 190r24
+149m7 Uuid_Len{6|53M9} 158m10 160m10 162r21 165r20
+162m11 I<8|63M9> 163r27 163r63
+211a7 Buffer{9|8A9} 221m29 221r29 221m57 221r57 224m29 224r29 224m57 224r57
+. 227m29 227r29 227m57 227r57 230m7 236m10 244m24 244r24
+212r7 Rq{7|134R9} 213r36 214m30 214r30 242m7 243m7 244m7 245m7 246m7 247m7
+. 248m7 250m24 250r24
+213a7 RqBuff{6|162A9} 214m11 214r11 241m7
+215m7 Status{1|4M9} 217m11 217r11 253r17
+216a7 StatBuf{9|8A9} 217m30 217r30 247m24 247r24
+218m7 Idx{6|53M9} 221r46 221r74 222m7 222r14 224r46 224r74 225m7 225r14 227r46
+. 227r74 228m7 228r14 230r24 231m7 231r14 236r31 239m7 239r14 245r24
+219m7 Uuid_Len{6|53M9} 233m7 235r21 239r20
+235m11 I<8|63M9> 236r27 236r63
+263a7 Buffer{9|8A9} 277m29 277r29 277m57 277r57 280m29 280r29 280m57 280r57
+. 283m7 287m10 294m24 294r24
+264r7 Rq{7|134R9} 265r35 266m30 266r30 292m7 293m7 294m7 295m7 296m7 297m7
+. 298m7 300m24 300r24
+265a7 RqBuff{6|162A9} 266m11 266r11 291m7
+267m7 Status{1|4M9} 269m11 269r11 303r17
+268a7 StatBuf{9|8A9} 269m30 269r30 297m24 297r24
+270m7 Idx{6|53M9} 277r46 277r74 278m7 278r14 280r46 280r74 281m7 281r14 283r24
+. 284m7 284r14 287r31 289m7 289r14 295r24
+286m11 I<8|63M9> 287r27 287r65
+313a7 Buffer{9|8A9} 327m29 327r29 327m57 327r57 330m29 330r29 330m57 330r57
+. 333m7 337m10 344m24 344r24
+314r7 Rq{7|134R9} 315r35 316m30 316r30 342m7 343m7 344m7 345m7 346m7 347m7
+. 348m7 350m24 350r24
+315a7 RqBuff{6|162A9} 316m11 316r11 341m7
+317m7 Status{1|4M9} 319m11 319r11 353r17
+318a7 StatBuf{9|8A9} 319m30 319r30 347m24 347r24
+320m7 Idx{6|53M9} 327r46 327r74 328m7 328r14 330r46 330r74 331m7 331r14 333r24
+. 334m7 334r14 337r31 339m7 339r14 345r24
+336m11 I<8|63M9> 337r27 337r65
+359r7 Rq{7|134R9} 360r35 361m30 361r30 373m7 374m7 375m7 376m7 377m7 378m7
+. 380m24 380r24
+360a7 RqBuff{6|162A9} 361m11 361r11 372m7
+362m7 Status{1|4M9} 364m11 364r11 383r17
+363a7 StatBuf{9|8A9} 364m30 364r30 377m20 377r20
+365m7 Cr{6|66M9} 367r11 368m11 368r11 370m7
+366a7 Buffer{9|8A9} 368m26 368r26 375m20 375r20
+393r7 Rq{7|134R9} 394r35 395m30 395r30 409m7 410m7 411m7 412m7 413m7 414m7
+. 416m24 416r24
+394a7 RqBuff{6|162A9} 395m11 395r11 408m7
+396m7 Status{1|4M9} 398m11 398r11 419r17
+397a7 StatBuf{9|8A9} 398m30 398r30 413m20 413r20
+399r7 Cp{2|106R9} 401r11 402m11 402r11 404m7 405m7 406m7 412r20
+400a7 CpBuf{9|8A9} 402m26 402r26 411m20 411r20
+429r7 Rq{7|134R9} 430r35 431m30 431r30 445m7 446m7 447m7 448m7 449m7 450m7
+. 452m24 452r24
+430a7 RqBuff{6|162A9} 431m11 431r11 444m7
+432m7 Status{1|4M9} 434m11 434r11 455r17
+433a7 StatBuf{9|8A9} 434m30 434r30 449m20 449r20
+435r7 Cp{2|113R9} 437r11 438m11 438r11 440m7 441m7 442m7 448r20
+436a7 CpBuf{9|8A9} 438m26 438r26 447m20 447r20
+X 4 bluenrg_gatt_server.ads
+2K9*Bluenrg_Gatt_Server 3|1w6 1r32 4|64e24
+38m4*UUID_TYPE_16{6|53M9} 3|96r30 157r25
+X 6 hal.ads
+34K9*HAL 2|1w6 1r27 6|166e8
+47M9*UInt6
+53M9*UInt8<8|63M9> 2|12r16 17r37 21r16 25r37 31r21 35r55 41r26 42r26 49r26
+. 50r26 52r26 61r26 62r26 75r21 84r27 87r49 91r45 125r23 126r23 130r27 132r27
+. 133r27 138r24 141r24 142r24 143r24 152r22 158r21 164r21 3|30r23 31r23 44r17
+. 77r27 79r27 80r27 91r18 92r18 130r24 133r24 134r24 135r24 148r18 149r18
+. 179r33 208r22 218r18 219r18 260r21 270r17 310r21 320r17
+54M9*UInt10 2|10r36 19r36 93r48 95r48 97r48 99r53 101r48 103r49
+66M9*UInt16<8|66M9> 2|13r16 22r16 27r55 29r21 30r21 32r21 37r56 40r26 46r53
+. 48r26 51r26 53r26 58r56 60r26 63r26 64r26 69r49 71r46 73r21 74r21 76r16
+. 80r49 82r27 83r27 89r62 107r22 108r22 109r22 114r27 115r27 116r27 123r23
+. 124r23 134r31 137r24 140r24 146r28 149r22 150r22 151r22 156r21 157r21 162r21
+. 163r21 167r63 170r22 171r22 172r22 175r27 176r27 177r27 3|28r23 29r23 81r31
+. 129r24 132r24 138r28 205r22 206r22 207r22 258r21 259r21 308r21 309r21 357r63
+. 365r17 389r22 390r22 391r22 425r27 426r27 427r27
+162A9*UInt8_Array(53M9)<integer> 3|9r17 35r17 85r18 142r18 213r18 265r17
+. 315r17 360r17 394r17 430r17
+X 7 hci.ads
+6K9*Hci 2|2w6 2r27 7|161e8
+8i4*HCI_MAX_PAYLOAD_SIZE{natural} 3|46r39 273r36 323r36
+19I9*Encryption_Key_Size<short_short_integer> 2|144r24 3|136r24
+22m7*Ogf{6|47M9} 3|16m17 62m17 111m17 187m17 242m17 292m17 342m17 373m17
+. 409m17 445m17
+23m7*Ocf{6|54M9} 3|17m17 63m17 112m17 188m17 243m17 293m17 343m17 374m17
+. 410m17 446m17
+78m4*EVT_CMD_STATUS_CODE{6|53M9} 3|246r24 296r24 346r24
+134R9*Hci_Request 3|8r17 34r17 84r18 141r18 212r18 264r17 314r17 359r17 393r17
+. 429r17 7|141e14
+135r7*Opcode{21R9} 3|16m10 17m10 62m10 63m10 111m10 112m10 187m10 188m10
+. 242m10 243m10 292m10 293m10 342m10 343m10 373m10 374m10 409m10 410m10 445m10
+. 446m10
+136m7*Event{6|53M9} 3|246m10 296m10 346m10
+137p7*Cparam(9|8A9) 3|64m10 113m10 189m10 244m10 294m10 344m10 375m10 411m10
+. 447m10
+138m7*Clen{6|53M9} 3|65m10 114m10 190m10 245m10 295m10 345m10 376m10 412m10
+. 448m10
+139p7*Rparam(9|8A9) 3|18m10 66m10 115m10 191m10 247m10 297m10 347m10 377m10
+. 413m10 449m10
+140m7*Rlen{6|53M9} 3|19m10 67m10 116m10 192m10 248m10 298m10 348m10 378m10
+. 414m10 450m10
+155V13*Hci_Send_Req{integer} 3|20s10 69s10 118s10 194s10 250s10 300s10 350s10
+. 380s10 416s10 452s10
+X 8 interfac.ads
+63M9*Unsigned_8
+66M9*Unsigned_16
+X 9 memory.ads
+5K9*Memory 2|6w6 6r27 9|193e11
+8A9*DataBuffT<6|162A9>(6|53M9)<integer> 2|127r23 159r21 165r21 3|12r25 32r23
+. 38r25 41r25 83r26 88r26 140r26 145r26 211r26 216r26 261r21 263r25 268r25
+. 311r21 313r25 318r25 363r25 366r25 397r25 400r25 433r25 436r25
+X 10 ogf_ocf.ads
+2K9*Ogf_Ocf 2|3w6 3r27 10|57e12
+21m4*OGF_VENDOR_CMD{6|47M9} 3|16r25 62r24 111r27 187r24 242r24 292r24 342r24
+. 373r24 409r24 445r24
+24m4*OCF_GATT_INIT{6|54M9} 3|17r25
+25m4*OCF_GATT_UPD_CHAR_VAL{6|54M9} 3|63r24
+49R9*Gap_Update_Char_Rec 3|40r17 10|55e6
+50m7*Service_Handle{6|66M9} 3|50m10
+51m7*Char_Handle{6|66M9} 3|51m10
+52m7*Char_Offset{6|53M9} 3|52m10
+53m7*Char_Value_Len{6|53M9} 3|53m10
+X 13 utils.ads
+5K9*Utils 3|2w6 2r32 13|69e10
+41U14*To_UInt8_From_UInt16 3|151s7 167s7 221s7 224s7 227s7 277s7 280s7 327s7
+. 330s7
+X 14 uuid.ads
+2K9*UUid 2|4w6 4r27 14|27e9
+4A9*UUidT<6|162A9>(6|53M9)<integer> 2|54r26 65r26 131r27 139r24 153r22 3|78r27
+. 131r24 209r22
+

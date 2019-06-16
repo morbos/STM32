@@ -1,0 +1,146 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wb55x/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U log%b			log.adb			76525a67 NE OO PK
+W comm%s		comm.adb		comm.ali
+W comm.tl%s		comm-tl.adb		comm-tl.ali
+W system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U log%s			log.ads			1ebccdeb EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W memory%s		memory.adb		memory.ali
+
+D ada.ads		20190401184724 76789da1 ada%s
+D a-except.ads		20190401184716 291912d5 ada.exceptions%s
+D a-sytaco.ads		20190401184904 e57638e1 ada.synchronous_task_control%s
+D a-taside.ads		20190401184906 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20190401184724 0e9b276f ada.unchecked_conversion%s
+D comm.ads		20190614233745 0669e203 comm%s
+D comm-tl.ads		20190614233745 a276f2cc comm.tl%s
+D gen_list.ads		20190614233745 c97a5cb2 gen_list%s
+D hal.ads		20190401184234 2b42c80e hal%s
+D hci.ads		20190614233745 1e6f4d57 hci%s
+D interfac.ads		20190401184735 5ab55268 interfaces%s
+D i-bit_types.ads	20190401184733 bd94d513 interfaces.bit_types%s
+D log.ads		20190614233745 bc487de7 log%s
+D log.adb		20190614233745 b3efc0cd log%b
+D memory.ads		20190614233745 89b67802 memory%s
+D system.ads		20190401184659 db831581 system%s
+D s-bb.ads		20190401184737 09e072ae system.bb%s
+D s-bbbopa.ads		20190401185429 9a19f194 system.bb.board_parameters%s
+D s-bbbosu.ads		20190401184908 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20190401184909 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20190401184912 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20190401185429 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20190401184856 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20190401184915 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20190401184914 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20190401184918 ad086247 system.bb.time%s
+D s-multip.ads		20190401184924 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20190401184923 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20190401184925 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20190401184925 229b14dd system.os_interface%s
+D s-parame.ads		20190401184811 d106111e system.parameters%s
+D s-secsta.ads		20190401184813 56a2861c system.secondary_stack%s
+D s-stalib.ads		20190401184815 09bd3940 system.standard_library%s
+D s-stm32.ads		20190401185429 4ab394a4 system.stm32%s
+D s-stoele.ads		20190401184815 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20190401184931 801abd01 system.task_info%s
+D s-taspri.ads		20190401184933 351848fa system.task_primitives%s
+D s-taskin.ads		20190401184933 58b15916 system.tasking%s
+D s-taprob.ads		20190401184927 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20190401184936 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-traent.ads		20190401184820 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190401184822 34867c83 system.unsigned_types%s
+D uuid.ads		20190616175212 74c152d6 uuid%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/gnat.adc  20190614233744 00000000
+G a e
+G c Z s b [logger log 6 14 none]
+G c Z s b [initialize_log log 8 14 none]
+G c Z s b [enable_log log 10 14 none]
+G c Z s b [disable_log log 12 14 none]
+G c Z s b [log_event log 14 14 none]
+X 6 comm.ads
+6K9*Comm 49e9 14|1r6 1r23
+X 7 comm-tl.ads
+5K14*TL 74e12 14|1w11 1r28
+37R9*TL_Evt_T 42e6 14|53r20
+38m7*Evtcode{9|53M9} 14|66r29
+39m7*Plen{9|53M9} 14|64r33 67r29 68r35
+44R9*TL_EvtSerial_T 48e6 14|50r20 58r42 61r42 69r25
+45m7*Type_Code{9|53M9} 14|65r25
+46r7*Evt{37R9} 14|64r29 66r25 67r25 68r31
+56R9*TL_CsEvt_T 61e6 14|56r20
+63R9*TL_CcEvt_T 68e6 14|59r20
+X 8 gen_list.ads
+5R9*ListNode
+6P9*ListNodePtr(5R9[15|28]) 13|14r47[15|28] 14|48r47[15|28]
+11r7*Elem{15|16R9} 14|51r37[15|28]
+X 9 hal.ads
+34K9*HAL 166e8 13|1w6 1r28
+53M9*UInt8<11|63M9> 13|6r26 14|15r26
+97M9*UInt32<11|74M9> 14|9r13
+162A9*UInt8_Array(53M9)<integer> 14|17r16 28r16
+X 11 interfac.ads
+63M9*Unsigned_8
+74M9*Unsigned_32
+X 13 log.ads
+4K9*Log 16l5 16e8 14|7b14 73l5 73t8
+6U14*Logger 6>22 14|15b14 24l8 24t14 63s7 64s7 65s7 66s7 67s7 69s10
+6m22 X{9|53M9} 14|15b22 20r39
+8U14*Initialize_Log 14|26b14 34l8 34t22
+10U14*Enable_Log 14|36b14 40l8 40t18
+12U14*Disable_Log 14|42b14 46l8 46t19
+14U14*Log_Event 14>25 14|48b14 71l8 71t17
+14p25 Ptr{8|6P9[15|28]} 14|48b25 51r33
+X 14 log.adb
+9m4 Logidx{9|97M9} 20r27 21m10 21r20 22m10 22r20 30m7
+10b4 Log{boolean} 19r10 39m7 45m7
+12m4 SRAM2_Base{16|80M9} 17r70 28r70
+17a7 Buffer{9|162A9} 20m10
+28a7 Buffer{9|162A9} 31r16 32m10
+31i11 I{integer} 32r18
+50r7 EvtSerial{7|44R9} 52m11 52r11 64r19 65r15 66r15 67r15 68r21
+51a7 Buff{15|8A9} 52m33 52r33 55m29 55r29 58m31 58r31 61m31 61r31 69r18
+53r7 Event{7|37R9} 54r11 55m11 55r11
+56r7 CsEvent{7|56R9} 57r11 58m11 58r11
+59r7 CcEvent{7|63R9} 60r11 61m11 61r11
+68m11 I<11|63M9> 69r61
+X 15 memory.ads
+5K9*Memory 13|2w6 2r28 15|193e11
+8A9*DataBuffT<9|162A9>(9|53M9)<integer> 14|51r20
+17a7*DataBuff{8A9} 14|51r42
+28K12*EvtQueueBufferT[8|4] 13|14r31 14|48r31
+X 16 system.ads
+50K9*System 14|2w6 12r26 13r6 16|164e11
+80M9*Address 14|12r33 13r6
+X 32 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 38 s-taskin.ads
+407V13*Get_Sec_Stack{32|46P9} 408i<c,__gnat_get_secondary_stack>22
+

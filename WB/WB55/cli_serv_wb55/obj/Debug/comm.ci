@@ -1,0 +1,19 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.adb"
+node: { title: "ada__synchronous_task_control__suspension_objectVIP" label: "Suspension_Objectvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:77:4" shape : ellipse }
+node: { title: "comm__setup__initialize_comm_setup" label: "Initialize_Comm_Setup\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-setup.ads:59:14" shape : ellipse }
+node: { title: "comm__hw__initialize_comm_hardware" label: "Initialize_Comm_Hardware\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-hw.ads:8:14" shape : ellipse }
+node: { title: "hci__hci_init" label: "Hci_Init\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/hci.ads:145:14" shape : ellipse }
+node: { title: "comm___elabs" label: "Comm\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:6:1\n8 bytes (static)" }
+edge: { sourcename: "comm___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:14:4" }
+edge: { sourcename: "comm___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:12:4" }
+edge: { sourcename: "comm___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:10:4" }
+edge: { sourcename: "comm___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:8:4" }
+node: { title: "comm__initialize_comm" label: "Initialize_Comm\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.adb:11:4\n8 bytes (static)" }
+edge: { sourcename: "comm__initialize_comm" targetname: "comm__setup__initialize_comm_setup" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.adb:16:7" }
+edge: { sourcename: "comm__initialize_comm" targetname: "comm__hw__initialize_comm_hardware" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.adb:15:7" }
+edge: { sourcename: "comm__initialize_comm" targetname: "hci__hci_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.adb:14:7" }
+node: { title: "comm__Tcharac_result_table_tBIP" label: "Tcharac_Result_Table_Tbip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:41:4\n16 bytes (static)" }
+node: { title: "comm__charac_resultsIP" label: "Charac_Resultsip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:31:9\n16 bytes (static)" }
+node: { title: "comm__Tprim_result_table_tBIP" label: "Tprim_Result_Table_Tbip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:25:4\n16 bytes (static)" }
+node: { title: "comm__prim_resultsIP" label: "Prim_Resultsip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm.ads:16:9\n16 bytes (static)" }
+}

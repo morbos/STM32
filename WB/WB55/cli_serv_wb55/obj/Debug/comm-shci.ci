@@ -1,0 +1,21 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb"
+node: { title: "log__enable_log" label: "Enable_Log\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/log.ads:10:14" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:63:14" shape : ellipse }
+node: { title: "stm32__ipcc__ipcc_cpu1_setflag" label: "IPCC_CPU1_SETFLAG\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:17:14" shape : ellipse }
+node: { title: "stm32__ipcc__ipcc_cpu1_enablereceivechannel" label: "IPCC_CPU1_ENABLERECEIVECHANNEL\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:41:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "comm__shci__initialize_shci" label: "Initialize_Shci\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:67:4\n16 bytes (static)" }
+edge: { sourcename: "comm__shci__initialize_shci" targetname: "log__enable_log" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:73:7" }
+edge: { sourcename: "comm__shci__initialize_shci" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:71:10" }
+edge: { sourcename: "comm__shci__initialize_shci" targetname: "comm__shci__shci_c2_ble_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:70:10" }
+node: { title: "comm__shci__shci_c2_ble_init" label: "Shci_C2_Ble_Init\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:31:4\n96 bytes (static)" }
+edge: { sourcename: "comm__shci__shci_c2_ble_init" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:61:7" }
+edge: { sourcename: "comm__shci__shci_c2_ble_init" targetname: "stm32__ipcc__ipcc_cpu1_setflag" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:59:7" }
+edge: { sourcename: "comm__shci__shci_c2_ble_init" targetname: "stm32__ipcc__ipcc_cpu1_enablereceivechannel" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:57:7" }
+edge: { sourcename: "comm__shci__shci_c2_ble_init" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:53:46" }
+edge: { sourcename: "comm__shci__shci_c2_ble_init" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.adb:53:30" }
+node: { title: "comm__shci__shci_c2_ble_init_cmd_packet_tIP" label: "Shci_C2_Ble_Init_Cmd_Packet_Tip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.ads:63:9\n16 bytes (static)" }
+node: { title: "comm__shci__Tthree_elemBIP" label: "Tthree_Elembip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.ads:61:4\n16 bytes (static)" }
+node: { title: "comm__shci__shci_c2_ble_init_cmd_param_tIP" label: "Shci_C2_Ble_Init_Cmd_Param_Tip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-shci.ads:39:9\n16 bytes (static)" }
+}

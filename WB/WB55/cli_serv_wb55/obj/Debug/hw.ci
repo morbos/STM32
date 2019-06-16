@@ -1,0 +1,29 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb"
+node: { title: "stm32__ipcc__ipcc_enable_rx_interrupt" label: "IPCC_ENABLE_RX_INTERRUPT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:67:14" shape : ellipse }
+node: { title: "stm32__ipcc__ipcc_enable_tx_interrupt" label: "IPCC_ENABLE_TX_INTERRUPT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:65:14" shape : ellipse }
+node: { title: "stm32__ipcc__ipcc_enable" label: "IPCC_ENABLE\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:15:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_trigger" label: "CONFIGURE_TRIGGER\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:196:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32wb55x/stm32-device.ads:63:14" shape : ellipse }
+node: { title: "hw__initialize_hw" label: "INITIALIZE_HW\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:151:4\n8 bytes (static)" }
+edge: { sourcename: "hw__initialize_hw" targetname: "stm32__ipcc__ipcc_enable_rx_interrupt" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:162:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "stm32__ipcc__ipcc_enable_tx_interrupt" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:161:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "stm32__ipcc__ipcc_enable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:160:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "hw__syscfg2_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:159:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "hw__syscfg_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:158:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "hw__cpu2_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:157:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "hw__misc_hw_init" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:156:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "hw__configure_sw1" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:155:7" }
+edge: { sourcename: "hw__initialize_hw" targetname: "hw__initialize_blue_led" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:154:7" }
+node: { title: "hw__initialize_blue_led" label: "INITIALIZE_BLUE_LED\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:136:4\n16 bytes (static)" }
+edge: { sourcename: "hw__initialize_blue_led" targetname: "stm32__gpio__configure_io" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:146:7" }
+edge: { sourcename: "hw__initialize_blue_led" targetname: "stm32__device__enable_clock__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:140:7" }
+node: { title: "hw__configure_sw1" label: "CONFIGURE_SW1\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:120:4\n16 bytes (static)" }
+edge: { sourcename: "hw__configure_sw1" targetname: "stm32__gpio__configure_trigger" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:131:7" }
+edge: { sourcename: "hw__configure_sw1" targetname: "stm32__gpio__configure_io" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:129:7" }
+edge: { sourcename: "hw__configure_sw1" targetname: "stm32__device__enable_clock__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:123:7" }
+node: { title: "hw__cpu2_init" label: "CPU2_INIT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:105:4\n4 bytes (static)" }
+node: { title: "hw__syscfg2_init" label: "SYSCFG2_INIT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:57:4\n4 bytes (static)" }
+node: { title: "hw__syscfg_init" label: "SYSCFG_INIT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:51:4\n4 bytes (static)" }
+node: { title: "hw__misc_hw_init" label: "MISC_HW_INIT\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/hw.adb:19:4\n4 bytes (static)" }
+}

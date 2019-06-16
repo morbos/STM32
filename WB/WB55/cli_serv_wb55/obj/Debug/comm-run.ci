@@ -1,0 +1,196 @@
+graph: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspension_objectVIP" label: "Suspension_Objectvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:77:4" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_write_charac_descriptor" label: "Aci_Gatt_Write_Charac_Descriptor\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:155:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_disc_all_charac_descriptors" label: "Aci_Gatt_Disc_All_Charac_Descriptors\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:174:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_disc_all_charac_of_serv" label: "Aci_Gatt_Disc_All_Charac_Of_Serv\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:169:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_disc_all_primary_services" label: "Aci_Gatt_Disc_All_Primary_Services\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:167:13" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_false" label: "Set_False\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:54:14" shape : ellipse }
+node: { title: "stm32__ipcc__ipcc_cpu1_setflag" label: "IPCC_CPU1_SETFLAG\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-ipcc.ads:17:14" shape : ellipse }
+node: { title: "memory__evtqueuebuffert__list_insert_tail" label: "List_Insert_Tail\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/utils/gen_list.ads:29:14" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "system__img_int__image_integer" label: "Image_Integer\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-imgint.ads:39:14" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "memory__evtqueuebuffert__list_remove_head" label: "List_Remove_Head\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/utils/gen_list.ads:36:14" shape : ellipse }
+node: { title: "memory__evtqueuebuffert__list_is_empty" label: "List_Is_Empty\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/utils/gen_list.ads:22:13" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_task" label: "Complete_Restricted_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:248:14" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_create_connection" label: "Aci_Gap_Create_Connection\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:137:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_terminate_gap_procedure" label: "Aci_Gap_Terminate_Gap_Procedure\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:169:13" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_start_general_discovery_proc" label: "Aci_Gap_Start_General_Discovery_Proc\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:150:13" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:63:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_activation" label: "Complete_Restricted_Activation\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:239:14" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "Aci_Gatt_Update_Char_Value\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:122:13" shape : ellipse }
+node: { title: "bluenrg_gatt_aci__aci_gatt_write_without_response" label: "Aci_Gatt_Write_Without_Response\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gatt_aci.ads:161:13" shape : ellipse }
+node: { title: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" label: "Aci_L2cap_Connection_Parameter_Update_Response_Idb05a1\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_l2cap_aci.ads:60:13" shape : ellipse }
+node: { title: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" label: "Aci_Hal_Set_Radio_Activity_Mask\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_hal_aci.ads:49:13" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/arch/ARM/STM32/driversWB55x/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_true" label: "Set_True\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:49:14" shape : ellipse }
+node: { title: "main__is_client" label: "Is_Client\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/main.ads:44:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_update_adv_data" label: "Aci_Gap_Update_Adv_Data\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:133:13" shape : ellipse }
+node: { title: "bluenrg_gap_aci__aci_gap_set_discoverable" label: "Aci_Gap_Set_Discoverable\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/controller/bluenrg_gap_aci.ads:120:13" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "hci_le__hci_le_set_scan_resp_data" label: "Hci_Le_Set_Scan_Resp_Data\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/bt/hci/hci_le.ads:151:13" shape : ellipse }
+node: { title: "main__is_server" label: "Is_Server\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/main.ads:42:13" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "Create_Restricted_Task_Sequential\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:193:14" shape : ellipse }
+node: { title: "comm__run___elabs" label: "Run\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:10:1\n32 bytes (static)" }
+edge: { sourcename: "comm__run___elabs" targetname: "comm__run__post_conn_taskTKVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:63:4" }
+edge: { sourcename: "comm__run___elabs" targetname: "comm__run__event_taskTKVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:58:4" }
+edge: { sourcename: "comm__run___elabs" targetname: "comm__run__scan_taskTKVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:53:4" }
+edge: { sourcename: "comm__run___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:16:4" }
+edge: { sourcename: "comm__run___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:14:4" }
+node: { title: "comm__run___elabb" label: "Run\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:26:1\n4 bytes (static)" }
+node: { title: "comm__run__post_conn_taskTKB" label: "Post_Conn_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:552:4\n328 bytes (static)" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__post_conn_taskTK___finalizer.7422" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:649:0" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:640:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:639:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:636:25" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "bluenrg_gatt_aci__aci_gatt_write_charac_descriptor" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:629:29" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:622:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_rcheck_CE_Range_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:621:60" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:619:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:616:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:613:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:610:25" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "bluenrg_gatt_aci__aci_gatt_disc_all_charac_descriptors" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:602:29" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:599:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_rcheck_CE_Range_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:598:56" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:596:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:593:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:589:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:586:25" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "bluenrg_gatt_aci__aci_gatt_disc_all_charac_of_serv" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:581:29" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:578:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:575:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:573:19" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:570:22" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "bluenrg_gatt_aci__aci_gatt_disc_all_primary_services" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:567:26" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:564:18" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:562:13" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:560:10" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "ada__synchronous_task_control__set_false" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:558:7" }
+edge: { sourcename: "comm__run__post_conn_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:552:4" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__post_conn_taskTK___finalizer.7422" label: "Post_Conn_Tasktk\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:552:4\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__post_conn_taskTK___finalizer.7422" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:552:4" }
+node: { title: "comm__run__event_taskTKB" label: "Event_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:381:4\n392 bytes (dynamic)" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__event_taskTK___finalizer.7120" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:550:0" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "stm32__ipcc__ipcc_cpu1_setflag" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:546:13" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memory__evtqueuebuffert__list_insert_tail" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:545:13" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:541:25" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memcpy" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "system__img_int__image_integer" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:541:79" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__gap_disconnectioncomplete_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:539:25" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:532:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:529:40" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "main__is_client" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:527:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:525:34" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memcmp" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:519:55" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memcmp" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:517:52" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Range_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:516:89" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:514:61" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:512:61" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:510:61" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:508:61" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Range_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:497:85" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:495:59" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:493:59" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:491:59" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__l2cap_respond" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:480:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "main__is_client" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:470:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__gatt_notification_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:467:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__attribute_modified_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:459:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__read_request_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:450:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__advertising_info_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:426:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "comm__run__gap_connectioncomplete_cb" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:417:37" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memcpy" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "__gnat_rcheck_CE_Access_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:392:45" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memory__evtqueuebuffert__list_remove_head" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:389:13" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "memory__evtqueuebuffert__list_is_empty" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:388:20" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:387:10" }
+edge: { sourcename: "comm__run__event_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:381:4" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__event_taskTK___finalizer.7120" label: "Event_Tasktk\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:381:4\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__event_taskTK___finalizer.7120" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:381:4" }
+node: { title: "comm__run__scan_taskTKB" label: "Scan_Task\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:313:4\n104 bytes (static)" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__scan_taskTK___finalizer.7047" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:379:0" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:371:19" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:368:22" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "bluenrg_gap_aci__aci_gap_create_connection" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:354:26" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:352:19" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:348:25" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:344:25" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "bluenrg_gap_aci__aci_gap_terminate_gap_procedure" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:341:29" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__Oadd" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:338:29" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__clock" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:338:32" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:337:19" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:333:22" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "bluenrg_gap_aci__aci_gap_start_general_discovery_proc" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:327:26" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:323:18" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:321:10" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:313:4" }
+edge: { sourcename: "comm__run__scan_taskTKB" targetname: "ada__real_time__milliseconds" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:316:7" }
+node: { title: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__scan_taskTK___finalizer.7047" label: "Scan_Tasktk\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:313:4\n16 bytes (static)" }
+edge: { sourcename: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:comm__run__scan_taskTK___finalizer.7047" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:313:4" }
+node: { title: "comm__run__send_message" label: "Send_Message\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:277:4\n296 bytes (static)" }
+edge: { sourcename: "comm__run__send_message" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:303:13" }
+edge: { sourcename: "comm__run__send_message" targetname: "bluenrg_gatt_aci__aci_gatt_update_char_value" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:296:17" }
+edge: { sourcename: "comm__run__send_message" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:293:13" }
+edge: { sourcename: "comm__run__send_message" targetname: "bluenrg_gatt_aci__aci_gatt_write_without_response" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:286:17" }
+edge: { sourcename: "comm__run__send_message" targetname: "main__is_client" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:285:10" }
+node: { title: "comm__run__advertising_info_cb" label: "Advertising_Info_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:229:4\n40 bytes (static)" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:274:7" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:264:22" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:257:25" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:253:19" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:251:23" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:241:37" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:234:30" }
+edge: { sourcename: "comm__run__advertising_info_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:233:30" }
+node: { title: "comm__run__l2cap_respond" label: "L2cap_Respond\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:192:4\n80 bytes (static)" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:222:10" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:219:14" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:216:10" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "bluenrg_l2cap_aci__aci_l2cap_connection_parameter_update_response_idb05a1" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:203:14" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:200:10" }
+edge: { sourcename: "comm__run__l2cap_respond" targetname: "bluenrg_hal_aci__aci_hal_set_radio_activity_mask" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:197:14" }
+node: { title: "comm__run__gatt_notification_cb" label: "Gatt_Notification_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:168:4\n24 bytes (static)" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:184:16" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:182:16" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:181:16" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:181:26" }
+edge: { sourcename: "comm__run__gatt_notification_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:179:12" }
+node: { title: "comm__run__attribute_modified_cb" label: "Attribute_Modified_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:147:4\n24 bytes (static)" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:163:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "stm32__gpio__set__2" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:161:13" }
+edge: { sourcename: "comm__run__attribute_modified_cb" targetname: "__gnat_rcheck_CE_Index_Check" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:160:13" }
+node: { title: "comm__run__read_request_cb" label: "Read_Request_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:141:4\n16 bytes (static)" }
+node: { title: "comm__run__gap_disconnectioncomplete_cb" label: "Gap_Disconnectioncomplete_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:132:4\n8 bytes (static)" }
+edge: { sourcename: "comm__run__gap_disconnectioncomplete_cb" targetname: "stm32__gpio__clear" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:138:7" }
+node: { title: "comm__run__gap_connectioncomplete_cb" label: "Gap_Connectioncomplete_Cb\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:120:4\n16 bytes (static)" }
+edge: { sourcename: "comm__run__gap_connectioncomplete_cb" targetname: "ada__synchronous_task_control__set_true" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:128:10" }
+edge: { sourcename: "comm__run__gap_connectioncomplete_cb" targetname: "main__is_client" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:127:10" }
+node: { title: "comm__run__setconnectable" label: "Setconnectable\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:47:4\n160 bytes (static)" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:115:10" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "bluenrg_gap_aci__aci_gap_update_adv_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:110:14" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:106:10" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "bluenrg_gap_aci__aci_gap_set_discoverable" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:92:14" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "__gnat_raise_exception" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:90:10" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "hci_le__hci_le_set_scan_resp_data" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:88:14" }
+edge: { sourcename: "comm__run__setconnectable" targetname: "main__is_server" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.adb:75:10" }
+node: { title: "comm__run__post_conn_taskTKVIP" label: "Post_Conn_Tasktkvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:63:4\n80 bytes (static)" }
+edge: { sourcename: "comm__run__post_conn_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:63:4" }
+node: { title: "comm__run__event_taskTKVIP" label: "Event_Tasktkvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:58:4\n80 bytes (static)" }
+edge: { sourcename: "comm__run__event_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:58:4" }
+node: { title: "comm__run__scan_taskTKVIP" label: "Scan_Tasktkvip\n/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:53:4\n80 bytes (static)" }
+edge: { sourcename: "comm__run__scan_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55/src/comm/comm-run.ads:53:4" }
+}
