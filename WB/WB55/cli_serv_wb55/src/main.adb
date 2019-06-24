@@ -69,8 +69,6 @@ package body Main is
       if Is_Server then
          SetConnectable;
       else
---         Enable_Interrupt (Timer_2, Timer_Update_Interrupt);
---         Enable (Timer_2);
          Set (Green_LED);
       end if;
       IPCC_Cpu1_EnableReceiveChannel (
@@ -78,7 +76,7 @@ package body Main is
                                        HW_IPCC_MM_RELEASE_BUFFER_CHANNEL)
                                      );
       loop
-         My_Delay;
+         Sleep;
       end loop;
 
    end Process;

@@ -41,6 +41,7 @@ package body ServerHW is
          Suspend_Until_True (SW2_Go);
          if Connected then
             Rate_Toggle;
+            Suspend_Until_True (Conn_Update_Go); --  Don't send another one till the 1st finishes
          end if;
       end loop;
    end SW2_Task;

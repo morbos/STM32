@@ -4,6 +4,16 @@ with System;
 
 package Memory is
 
+   SYSTEM_MEMORY_BASE      : constant := 16#1FFF0000#;  --  System Memory : 28Kb 1FFF0000 : 1FFF6FFF
+   OTP_AREA_BASE           : constant := 16#1FFF7000#;  --  OTP area : 1kB 1FFF70000:1FFF73FF
+   OPTION_BYTE_BASE        : constant := 16#1FFF8000#;  --  Option Bytes : 4kB 1FFF8000:1FFF8FFF
+   ENGI_BYTE_BASE          : constant := 16#1FFF7400#;  --  Engi Bytes : 3kB 1FFF7400:1FFF7FFF
+   SYSTEM_MEMORY_END_ADDR  : constant := 16#1FFF6FFF#;
+   OTP_AREA_END_ADDR       : constant := 16#1FFF73FF#;
+   OPTION_BYTE_END_ADDR    : constant := 16#1FFF8FFF#;
+   ENGI_BYTE_END_ADDR      : constant := 16#1FFF7FFF#;
+
+
    HCI_READ_PACKET_SIZE    : constant Natural := 256;
    type DataBuffT is new UInt8_Array (1 .. HCI_READ_PACKET_SIZE);
 

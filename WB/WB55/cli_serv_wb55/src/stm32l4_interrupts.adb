@@ -30,6 +30,12 @@ package body STM32L4_Interrupts is
             end if;
          end if;
       end IRQ_Handler;
+
+      procedure RTC_Handler is
+      begin
+         null;
+      end RTC_Handler;
+
    end Handler;
 
 end STM32L4_Interrupts;

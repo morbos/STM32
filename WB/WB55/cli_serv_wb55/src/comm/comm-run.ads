@@ -15,6 +15,8 @@ package Comm.Run is
 
    Post_Conn_Go            : Suspension_Object; --  Finish up a connection
 
+   Conn_Update_Go          : Suspension_Object; --  When an L2Cap resp message arr
+
    Matched                 : Boolean := False;  --  Set to true when client sees the server
 
    SW1_Remote_State        : Boolean := False;  --  Track the remote blue led state

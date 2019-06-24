@@ -416,6 +416,8 @@ package body Comm.Run is
                                  begin
                                     GAP_ConnectionComplete_CB (Cc.Peer_Bdaddr, Cc.Handle);
                                  end;
+                              when EVT_LE_CONN_UPDATE_COMPLETE =>
+                                 Set_True (Conn_Update_Go);
                               when EVT_LE_ADVERTISING_REPORT =>
                                  declare
                                     Offset : constant UInt8 :=

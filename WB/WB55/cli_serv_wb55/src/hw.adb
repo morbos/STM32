@@ -1,6 +1,8 @@
 with Main;                 use Main;
 with STM32.Device;         use STM32.Device;
 with STM32.IPCC;           use STM32.IPCC;
+with STM32.HSEM;           use STM32.HSEM;
+with STM32.RTC;            use STM32.RTC;
 with STM32.GPIO;           use STM32.GPIO;
 with STM32.EXTI;           use STM32.EXTI;
 
@@ -10,6 +12,9 @@ with STM32_SVD.RCC;        use STM32_SVD.RCC;
 with STM32_SVD.PWR;        use STM32_SVD.PWR;
 with STM32_SVD.EXTI;       use STM32_SVD.EXTI;
 with STM32_SVD.FLASH;      use STM32_SVD.FLASH;
+with STM32_SVD.SCB;       use STM32_SVD.SCB;
+with STM32_SVD.HSEM;      use STM32_SVD.HSEM;
+with STM32_SVD.RTC;       use STM32_SVD.RTC;
 
 with Peripherals;          use Peripherals;
 
@@ -20,6 +25,7 @@ package body HW is
    is
    begin
       PWR_Periph.CR1.DBP := True;
+
       RCC_Periph.CR.MSION := False;
       RCC_Periph.CR.MSIRDY := False;
       RCC_Periph.CFGR.STOPWUCK := True;
@@ -27,6 +33,9 @@ package body HW is
       RCC_Periph.CCIPR.CLK48SEL := 0;
       RCC_Periph.CRRCR.HSI48RDY := True;
       RCC_Periph.CRRCR.HSI48ON := True;
+      RCC_Periph.SMPSCR.SMPSSEL := 0;
+      RCC_Periph.BDCR.RTC_SEL := 1;
+      RCC_Periph.BDCR.RTCEN := True;
       --  vvv Found using the diff tech.
       --  If not set... the radio will be in reset.
       RCC_Periph.BDCR.LSEON := True;
@@ -34,18 +43,39 @@ package body HW is
       FLASH_Periph.ACR.PRFTEN := False;
       FLASH_Periph.ACR.LATENCY := 1;
       EXTI_Periph.RTSR1.RT := 16#80000#;
---      if Is_Client then
---         EXTI_Periph.FTSR1.FT := 16#400#;
---         EXTI_Periph.IMR1 := 16#80400#;
---         null;
---      else
---         EXTI_Periph.FTSR1.FT := 16#11#;
---         EXTI_Periph.IMR1 := 16#80011#;
---         SYSCFG_Periph.EXTICR1.EXTI0 := 3;
---         SYSCFG_Periph.EXTICR2.EXTI4 := 2;
---      end if;
       EXTI_Periph.IMR2.IM := 16#10050#;
+
       PWR_Periph.CR1.DBP := False;
+
+      Disable_Write_Protection;
+      RTC_Periph.WUTR.WUT := 9;
+      loop
+         RTC_Periph.CR.WUTIE := True;
+         exit when RTC_Periph.CR.WUTIE;
+      end loop;
+      loop
+         RTC_Periph.CR.BYPSHAD := True;
+         exit when RTC_Periph.CR.BYPSHAD;
+      end loop;
+      loop
+         RTC_Periph.CR.WUTE := True;
+         exit when RTC_Periph.CR.WUTE = True;
+      end loop;
+      RTC_Periph.ISR.INIT := True;
+      loop
+         exit when RTC_Periph.ISR.INITF;
+      end loop;
+      loop
+         RTC_Periph.PRER.PREDIV_A := 16#f#;
+         exit when RTC_Periph.PRER.PREDIV_A = 16#f#;
+      end loop;
+      loop
+         RTC_Periph.PRER.PREDIV_S := 16#3fff#;
+         exit when RTC_Periph.PRER.PREDIV_S = 16#3fff#;
+      end loop;
+      RTC_Periph.ISR.INIT := False;
+      Enable_Write_Protection;
+
    end Misc_HW_Init;
 
    procedure SYSCFG_Init
@@ -111,6 +141,7 @@ package body HW is
       Asm ("sev", Volatile => True);
       Asm ("wfe", Volatile => True);
       PWR_Periph.CR4.C2BOOT := True;
+      RCC_Periph.C2APB3ENR.BLEEN := False;
    end CPU2_Init;
 
    --------------------------------
@@ -148,6 +179,109 @@ package body HW is
 
    end Initialize_Blue_LED;
 
+   function GetSysClkSource return UInt2
+   is
+   begin
+      return RCC_Periph.CFGR.SWS;
+   end GetSysClkSource;
+
+   function IsActive_C1Stop return Boolean
+   is
+   begin
+      return PWR_Periph.EXTSCR.C1STOPF;
+   end IsActive_C1Stop;
+
+   procedure Switch_On_HSI
+   is
+   begin
+      RCC_Periph.CR.HSION := True;
+      loop
+         exit when RCC_Periph.CR.HSIRDY;
+      end loop;
+      RCC_Periph.CFGR.SW := 1;
+
+      loop
+         exit when RCC_Periph.CFGR.SWS = 1;
+      end loop;
+   end Switch_On_HSI;
+
+   procedure Switch_On_HSE
+   is
+   begin
+      RCC_Periph.CR.HSEON := True;
+      loop
+         exit when RCC_Periph.CR.HSERDY;
+      end loop;
+      RCC_Periph.CFGR.SW := 2;
+      loop
+         exit when RCC_Periph.CFGR.SWS = 2;
+      end loop;
+   end Switch_On_HSE;
+
+   procedure Stop2
+   is
+   begin
+      PWR_Periph.CR1.LPMS := 2;
+      SCB_Periph.SCR.SLEEPDEEP := True;
+      Asm ("dsb", Volatile => True); --  Flush any outstanding xact's
+      Asm ("wfi", Volatile => True);
+   end Stop2;
+
+   procedure EnterStopMode
+   is
+   begin
+      loop
+         exit when not OneStepLock (HW_RCC_SEMID);
+      end loop;
+      if not OneStepLock (HW_STOP_MODE_SEMID) then
+         if PWR_Periph.EXTSCR.C2DS then
+            ReleaseLock (HW_STOP_MODE_SEMID, 0);
+            Switch_On_HSI;
+         end if;
+      else
+         Switch_On_HSI;
+      end if;
+      ReleaseLock (HW_RCC_SEMID, 0);
+   end EnterStopMode;
+
+   procedure ExitStopMode
+   is
+   begin
+      ReleaseLock (HW_STOP_MODE_SEMID, 0);
+
+      if GetSysClkSource = 1 or IsActive_C1Stop then
+         PWR_Periph.EXTSCR.C1CSSF := False;
+         loop
+            exit when not OneStepLock (HW_RCC_SEMID);
+         end loop;
+         if GetSysClkSource = 1 then
+            Switch_On_HSE;
+         end if;
+         ReleaseLock (HW_RCC_SEMID, 0);
+      end if;
+   end ExitStopMode;
+   procedure Disable_Interrupts
+   is
+   begin
+      Asm ("cpsid i", Volatile => True);
+   end Disable_Interrupts;
+   procedure Enable_Interrupts
+   is
+      NL : constant String := ASCII.LF & ASCII.HT;
+   begin
+      Asm ("cpsie i" & NL
+         & "dsb"     & NL
+         & "isb",
+           Clobber => "memory", Volatile => True);
+   end Enable_Interrupts;
+   procedure Sleep
+   is
+   begin
+      EnterStopMode;
+      Stop2;
+      ExitStopMode;
+   end Sleep;
+
    procedure Initialize_HW
    is
    begin
@@ -161,6 +295,5 @@ package body HW is
       IPCC_Enable_TX_Interrupt;
       IPCC_Enable_RX_Interrupt;
    end Initialize_HW;
-
 
 end HW;

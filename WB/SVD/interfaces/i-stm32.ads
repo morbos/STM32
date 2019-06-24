@@ -108,6 +108,14 @@ package Interfaces.STM32 is
      System'To_Address (16#40007C00#);
    LPTIM2_Base : constant System.Address :=
      System'To_Address (16#40008000#);
+   SCB_Base : constant System.Address :=
+     System'To_Address (16#E000ED00#);
+   MPU_Base : constant System.Address :=
+     System'To_Address (16#E000ED90#);
+   STK_Base : constant System.Address :=
+     System'To_Address (16#E000E010#);
+   FPU_Base : constant System.Address :=
+     System'To_Address (16#E000EF34#);
    NVIC_Base : constant System.Address :=
      System'To_Address (16#E000E000#);
    DBGMCU_Base : constant System.Address :=

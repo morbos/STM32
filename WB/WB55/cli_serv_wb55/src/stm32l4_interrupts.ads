@@ -10,6 +10,9 @@ package STM32L4_Interrupts is
       procedure IRQ_Handler;
       pragma Attach_Handler (IRQ_Handler, TIM2_Interrupt);
 
+      procedure RTC_Handler;
+      pragma Attach_Handler (RTC_Handler, RTC_WKUP_Interrupt);
+
    end Handler;
 
 end STM32L4_Interrupts;

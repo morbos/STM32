@@ -31,6 +31,12 @@ package Main is
 
    Board : Board_Type;
 
+   type OTP_ID0 is record
+      BDaddr     : BDAddrT;
+      Hse_Tuning : UInt8;
+      Id         : UInt8;
+   end record;
+
    SW1_Go                 : Suspension_Object; --  When the user presses SW1
 
    SW2_Go                 : Suspension_Object; --  When the user presses SW2

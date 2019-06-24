@@ -55,6 +55,10 @@ SVD2ADA=/backup/ada/svd2ada/svd2ada
 default: $(TARGETS)
 	cat hdr \
 	$(XMLs) \
+	scb.xml \
+	mpu.xml \
+	stk.xml \
+	fpu.xml \
 	nvic.xml \
 	dbgmcu.xml \
 	tail >STM32WB55x.svd
