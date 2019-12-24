@@ -1,4 +1,4 @@
-OBJ = veneer_s.o veneer_ns.o s_ns.o led.o
+OBJ = veneer_s.o veneer_ns.o s_ns.o
 
 .SUFFIXES:
 .SUFFIXES: .s .c .o
