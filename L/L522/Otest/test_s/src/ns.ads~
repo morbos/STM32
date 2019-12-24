@@ -1,7 +1,0 @@
-with HAL;  use HAL;
-package NS is
-
-   function NS_To_S (X : UInt32) return UInt32;
-   pragma Export (C, NS_To_S, "ns_to_s");
-
-end NS;

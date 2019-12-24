@@ -1,9 +1,0 @@
-package body NS is
-
-   function NS_To_S (X : UInt32) return UInt32
-   is
-   begin
-      return X;
-   end NS_To_S;
-
-end NS;
