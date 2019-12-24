@@ -20,7 +20,7 @@ openocd can be found here:
 https://github.com/morbos/openocd-0.10.1
 
 once built:
-
+```
 root@pi3:~/openocd-0.10.1/tcl# ../src/openocd -f board/st_nucleo_l522.cfg
 Open On-Chip Debugger 0.10.0
 Licensed under GNU GPL v2
@@ -44,14 +44,14 @@ Info : flash size = 512kbytes
 undefined debug reason 7 - target needs reset
 target halted due to debug-request, current mode: Thread
 xPSR: 0xf9000000 pc: 0x08002f0c msp: 0x20009d58
+```
 
 ## GDB
 
 Writing to ram can be done with some .gdbinit macros:
 
-The first one allows symbol debug of the S side,
-the other of the NS side.
-
+The first one allows symbol debug of the S side, the other of the NS side.
+```
 define st_s_ns
   set pagination off
   target extended-remote 10.0.1.241:3333
@@ -72,9 +72,10 @@ define st_s_ns2
   set $sp:=*16#30000000#
   set $pc:=*16#30000004#
 end
+```
+Then start the debugger:
 
-Then start the debugger
-
+```
 admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/L/L522/test$ arm-eabi-gdb
 ...
 (gdb) st_s_ns
@@ -97,3 +98,4 @@ Loading section .data, size 0x210 lma 0x20029308
 Start address 0x20025bc0, load size 38164
 Transfer rate: 39 KB/sec, 6360 bytes/write.
 (gdb) c
+```
