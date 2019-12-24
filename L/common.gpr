@@ -3,7 +3,18 @@ with "../../Ada_Drivers_Library/boards/common_config";
 project Common is
 
    type LOADER_Type is
-      ("RAM", "ROM", "ROM_L432", "ROM_L476", "ROM_L443", "ROM_L496" );
+      ("RAM",
+      "ROM",
+      "ROM_L432",
+      "ROM_L476",
+      "ROM_L443",
+      "ROM_L496",
+      "ROM_L522",
+      "ROM_S_L522",
+      "ROM_NS_L522",
+      "RAM_S_L522",
+      "RAM_NS_L522"
+      );
 
    LOADER : LOADER_Type := external ("LOADER", "ROM");
 

@@ -1,0 +1,349 @@
+Archive member included to satisfy reference by file (symbol)
+
+/backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+                              (_start_rom)
+/backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+                              /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o) (_stm32_start_common)
+/backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+                              /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o) (_exit)
+/backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+                              /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o) (_ada_setup_pll)
+/backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+                              /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o) (system__bb__mcu_parameters__pwr_initialize)
+/backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+                              /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o) (interfaces__stm32__pwr__pwr_periph)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 test_f103.o
+ .data          0x00000000        0x0 test_f103.o
+ .bss           0x00000000        0x0 test_f103.o
+ .text          0x00000000        0x0 b__test_f103.o
+ .data          0x00000000        0x0 b__test_f103.o
+ .bss           0x00000000        0x0 b__test_f103.o
+ .data.ada_main_E
+                0x00000000        0x2 b__test_f103.o
+ .rodata.__gnat_version
+                0x00000000       0x25 b__test_f103.o
+ .rodata.test_f103B
+                0x00000000        0x4 b__test_f103.o
+ .rodata.systemS
+                0x00000000        0x4 b__test_f103.o
+ .rodata.halS   0x00000000        0x4 b__test_f103.o
+ .rodata.interfacesS
+                0x00000000        0x4 b__test_f103.o
+ .data          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .bss           0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .data          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .bss           0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .text          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .data          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .bss           0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .data.system__machine_reset_E
+                0x00000000        0x2 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .text.abort    0x00000000        0xc /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .text.system__machine_reset__stop
+                0x00000000        0xc /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .text          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .data          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .bss           0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .text          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .data          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .bss           0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .data.system__bb__mcu_parameters_E
+                0x00000000        0x2 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .text.system__bb__mcu_parameters__is_pwr_stabilized
+                0x00000000       0x34 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .text.system__bb__mcu_parameters__pwr_overdrive_enable
+                0x00000000       0x10 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .text          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+ .data          0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+ .bss           0x00000000        0x0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+ .text.interfaces__stm32__pwr__cr_registerIP
+                0x00000000       0x80 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+ .text.interfaces__stm32__pwr__csr_registerIP
+                0x00000000       0x78 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+ .text.interfaces__stm32__pwr__pwr_peripheralIP
+                0x00000000       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000         xr
+sram             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD test_f103.o
+LOAD b__test_f103.o
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/boards/lib/stm32f103bluepill/ravenscar-ssfp/Debug/libstm32f103bluepill.a
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/components/lib/stm32f103bluepill/ravenscar-ssfp/Debug/libcomponents.a
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/middleware/lib/stm32f103bluepill/ravenscar-ssfp/Debug/libservices.a
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f103bluepill/ravenscar-ssfp/Debug/libstm32f103.a
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m3/stm32f103bluepill/ravenscar-ssfp/Debug/libcortex-m3.a
+LOAD /backup/ada/Ada_Drivers_Library/hal/lib/stm32f103bluepill/ravenscar-ssfp/Debug/libHAL.a
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnarl.a
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a
+                0x00000400                __stack_size = 0x400
+LOAD /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a
+START GROUP
+LOAD /usr/gnat2016/bin/../lib/gcc/arm-eabi/4.9.4/armv7m/thumb/libgcc.a
+END GROUP
+                0x00000000                __DYNAMIC = 0x0
+                0x00000800                _DEFAULT_STACK_SIZE = 0x800
+
+.text           0x08000000      0x6b0
+ *(.vectors)
+ .vectors       0x08000000       0x14 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ *(.text .text.* .gnu.linkonce.t*)
+ .text._ada_test_f103
+                0x08000014       0xac test_f103.o
+                0x08000014                _ada_test_f103
+ .text.adainit  0x080000c0       0x10 b__test_f103.o
+                0x080000c0                adainit
+ .text.main     0x080000d0       0x1c b__test_f103.o
+                0x080000d0                main
+ .text          0x080000ec      0x10c /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+                0x080000ec                _start_rom
+ .text          0x080001f8       0xe0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+                0x080001f8                _stm32_start_common
+ .text._exit    0x080002d8       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+                0x080002d8                _exit
+ .text.setup_pll__initialize_clocks.4087
+                0x080002f8      0x1f0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .text._ada_setup_pll
+                0x080004e8       0x38 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+                0x080004e8                _ada_setup_pll
+ .text.setup_pll__reset_clocks.4089
+                0x08000520      0x170 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .text.system__bb__mcu_parameters__pwr_initialize
+                0x08000690       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+                0x08000690                system__bb__mcu_parameters__pwr_initialize
+ *(.gnu.warning)
+
+.glue_7         0x080006b0        0x0
+ .glue_7        0x080006b0        0x0 linker stubs
+
+.glue_7t        0x080006b0        0x0
+ .glue_7t       0x080006b0        0x0 linker stubs
+
+.vfp11_veneer   0x080006b0        0x0
+ .vfp11_veneer  0x080006b0        0x0 linker stubs
+
+.v4_bx          0x080006b0        0x0
+ .v4_bx         0x080006b0        0x0 linker stubs
+
+.iplt           0x080006b0        0x0
+ .iplt          0x080006b0        0x0 test_f103.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                PROVIDE (__exidx_end, .)
+
+.rodata         0x080006b0       0x40
+ *(.lit)
+ *(.rodata .rodata.* .gnu.linkonce.r*)
+ .rodata        0x080006b0       0x30 test_f103.o
+ .rodata.__gnat_ada_main_program_name
+                0x080006e0        0xf b__test_f103.o
+                0x080006e0                __gnat_ada_main_program_name
+                0x080006f0                . = ALIGN (0x4)
+ *fill*         0x080006ef        0x1 
+                0x080006f0                __rom_end = .
+                0x080006f0                __data_load = __rom_end
+
+.rel.dyn        0x080006f0        0x0
+ .rel.iplt      0x080006f0        0x0 test_f103.o
+
+.data           0x20000000        0x4 load address 0x080006f0
+                0x20000000                __data_start = .
+ *(.data .data.* .gnu.linkonce.d*)
+ .data.interfaces__stm32__pwr__pwr_periph
+                0x20000000        0x4 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+                0x20000000                interfaces__stm32__pwr__pwr_periph
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                __data_end = .
+                0x00000001                __data_words = ((__data_end - __data_start) >> 0x2)
+                0x080006f4                __ccmdata_load = (__rom_end + (__data_words << 0x2))
+
+.igot.plt       0x20000004        0x0 load address 0x080006f4
+ .igot.plt      0x20000004        0x0 test_f103.o
+
+.ccmdata        0x20000004        0x0 load address 0x080006f4
+                0x20000004                __ccmdata_start = .
+ *(.ccmdata .ccmdata.*)
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                __ccmdata_end = .
+                0x00000000                __ccmdata_words = ((__ccmdata_end - __ccmdata_start) >> 0x2)
+
+.bss            0x20000004      0x404 load address 0x080006f4
+                0x20000008                . = ALIGN (0x8)
+ *fill*         0x20000004        0x4 
+                0x20000008                __bss_start = .
+ *(.bss .bss.*)
+ *(COMMON)
+                0x20000008                . = ALIGN (0x8)
+                0x20000008                __bss_end = .
+                0x20000008                __interrupt_stack_start = .
+ *(.interrupt_stacks)
+                0x20000008                . = ALIGN (0x8)
+                0x20000008                __interrupt_stack_end = .
+                0x20000008                __stack_start = .
+                0x20000808                . = (. + DEFINED (__stack_size)?__stack_size:_DEFAULT_STACK_SIZE)
+ *fill*         0x20000008      0x400 
+                0x20000408                . = ALIGN (0x8)
+                0x20000408                __stack_end = .
+                0x20000408                _end = .
+                0x20000408                __heap_start = .
+                0x20005000                __heap_end = (ORIGIN (sram) + LENGTH (sram))
+                0x00000000                __bss_words = ((__bss_end - __bss_start) >> 0x2)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x130
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 test_f103.o
+ .debug_aranges
+                0x00000020       0x28 b__test_f103.o
+ .debug_aranges
+                0x00000048       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .debug_aranges
+                0x00000068       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .debug_aranges
+                0x00000088       0x30 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .debug_aranges
+                0x000000b8       0x30 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .debug_aranges
+                0x000000e8       0x30 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_aranges
+                0x00000118       0x18 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0xbd6
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x2f7 test_f103.o
+ .debug_info    0x000002f7      0x135 b__test_f103.o
+ .debug_info    0x0000042c       0xe6 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .debug_info    0x00000512       0xe9 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .debug_info    0x000005fb       0xb1 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .debug_info    0x000006ac      0x21f /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .debug_info    0x000008cb       0x7c /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_info    0x00000947      0x28f /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.debug_abbrev   0x00000000      0x48c
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x122 test_f103.o
+ .debug_abbrev  0x00000122       0x9c b__test_f103.o
+ .debug_abbrev  0x000001be       0x14 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .debug_abbrev  0x000001d2       0x14 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .debug_abbrev  0x000001e6       0xb9 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .debug_abbrev  0x0000029f       0xf2 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .debug_abbrev  0x00000391       0x4b /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_abbrev  0x000003dc       0xb0 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.debug_line     0x00000000      0x6e7
+ *(.debug_line)
+ .debug_line    0x00000000       0xfe test_f103.o
+ .debug_line    0x000000fe       0x69 b__test_f103.o
+ .debug_line    0x00000167       0xe9 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .debug_line    0x00000250       0xec /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .debug_line    0x0000033c       0xd3 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .debug_line    0x0000040f      0x103 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .debug_line    0x00000512       0xcd /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_line    0x000005df      0x108 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.debug_frame    0x00000000      0x260
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 test_f103.o
+ .debug_frame   0x00000030       0x54 b__test_f103.o
+ .debug_frame   0x00000084       0x64 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .debug_frame   0x000000e8       0x84 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .debug_frame   0x0000016c       0x70 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_frame   0x000001dc       0x84 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.debug_str      0x00000000     0x1208
+ *(.debug_str)
+ .debug_str     0x00000000      0x47f test_f103.o
+                                0x496 (size before relaxing)
+ .debug_str     0x0000047f      0x301 b__test_f103.o
+                                0x34d (size before relaxing)
+ .debug_str     0x00000780      0x34c /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+                                0x370 (size before relaxing)
+ .debug_str     0x00000acc      0x4b7 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+                                0x76b (size before relaxing)
+ .debug_str     0x00000f83      0x114 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+                                0x3d8 (size before relaxing)
+ .debug_str     0x00001097      0x171 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+                                0x47e (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x88
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 test_f103.o
+ .debug_ranges  0x00000010       0x18 b__test_f103.o
+ .debug_ranges  0x00000028       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .debug_ranges  0x00000048       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .debug_ranges  0x00000068       0x20 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+
+.comment        0x00000000       0x37
+ .comment       0x00000000       0x37 test_f103.o
+                                 0x38 (size before relaxing)
+ .comment       0x00000037       0x38 b__test_f103.o
+ .comment       0x00000037       0x38 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .comment       0x00000037       0x38 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .comment       0x00000037       0x38 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .comment       0x00000037       0x38 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x31 test_f103.o
+ .ARM.attributes
+                0x00000031       0x31 b__test_f103.o
+ .ARM.attributes
+                0x00000062       0x21 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-rom.o)
+ .ARM.attributes
+                0x00000083       0x21 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(start-common.o)
+ .ARM.attributes
+                0x000000a4       0x31 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-macres.o)
+ .ARM.attributes
+                0x000000d5       0x31 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(setup_pll.o)
+ .ARM.attributes
+                0x00000106       0x31 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(s-bbmcpa.o)
+ .ARM.attributes
+                0x00000137       0x31 /backup/ada/STM32/F/F103/test_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/libgnat.a(i-stm32-pwr.o)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(test_f103 elf32-littlearm)

@@ -33,7 +33,8 @@ pragma Restrictions (No_Streams);
 
 with System;
 with Interfaces; use Interfaces;
-with HAL.I2C;    use HAL.I2C;
+with HAL.SPI;    use HAL.SPI;
+with Utils;      use Utils;
 
 use HAL;
 
@@ -76,7 +77,7 @@ package LSM9DS1 is
    --  Interacts with the device to read a device-class specific identifier
    --  that can be checked for a LSM9DS1-specific value
 
-   function Device_Id_M (This : in out LSM9DS1_Mag) return UInt8;
+   function Device_Id (This : in out LSM9DS1_Mag) return UInt8;
    --  Interacts with the device to read a device-class specific identifier
    --  that can be checked for a LSM9DS1-specific value
 
@@ -86,7 +87,7 @@ package LSM9DS1 is
 
    function GetFifoCtrl (This : in out LSM9DS1_AccGyro) return UInt8;
 
-   function GetTemp (This : in out LSM9DS1_AccGyro) return float;
+   function GetTemp (This : in out LSM9DS1_AccGyro) return Float;
 
    function GetTemp_Raw (This : in out LSM9DS1_AccGyro) return Integer_16;
 
@@ -106,12 +107,17 @@ package LSM9DS1 is
      (Accelerometer_Data,
       Gyroscope_Data);
 
+   function GetStatus (This : in out LSM9DS1_Mag) return UInt8;
+
    function GetXYZ (This : in out LSM9DS1_Mag) return Sensor_Data;
 
    function GetXYZ_Raw (This : in out LSM9DS1_Mag) return Sensor_Data_Raw;
 
    function GetXYZ (This : in out LSM9DS1_AccGyro; Kind : Sensor_Data_Kinds) return Sensor_Data;
+
    function GetXYZ_Raw (This : in out LSM9DS1_AccGyro; Kind : Sensor_Data_Kinds) return Sensor_Data_Raw;
+
+   procedure StatusWait (This : in out LSM9DS1_AccGyro);
 
    SENSORS_GRAVITY_EARTH : constant := 9.80665;
 
@@ -120,11 +126,6 @@ package LSM9DS1 is
 
    I_Am_LSM9DS1_M : constant := 16#3d#;
    --  The value expected to be returned from Device_Id
-
-   --  These are the possible I2C addresses for the LSM9DS1.
-   LSM9DS1_AccGyro_Address   : constant I2C_Address := 16#6b# * 2;
-   LSM9DS1_Mag_Address       : constant I2C_Address := 16#1e# * 2;
-   --  shift left one bit since we're using 7-bit addresses.
 
 private
    type LSM9DS1_AccGyro (Port : not null Any_IO_Port) is
@@ -203,7 +204,7 @@ private
    --  r 26 00100110 output
    LSM9DS1_INT_GEN_SRC_XL : constant := 16#26#;
    --  r 27 00100111 output
-   -- LSM9DS1_STATUS_REG : constant := 16#27#; Duplicate?
+   --  LSM9DS1_STATUS_REG : constant := 16#27#; Duplicate?
    --  r 28 00101000 output
    LSM9DS1_OUT_X_L_XL : constant := 16#28#;
    --  r 29 00101001 output

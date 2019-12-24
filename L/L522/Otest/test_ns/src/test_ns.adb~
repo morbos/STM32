@@ -1,0 +1,12 @@
+with HAL;   use HAL;
+with Ada.Real_Time; use Ada.Real_Time;
+
+procedure Test_Ns is
+   function NS_To_S (X : UInt32) return UInt32;
+   pragma Import (C, NS_To_S, "ns_to_s_veneer");
+   X : UInt32 := 0;
+begin
+   loop
+      X := 1 + NS_To_S (X);
+   end loop;
+end Test_Ns;

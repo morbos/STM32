@@ -36,6 +36,8 @@ package HW is
 
    procedure ExitStopMode;
 
+   procedure SysTick_Stance (On : Boolean);
+
    procedure Stop2;
 
    procedure Sleep;
@@ -43,6 +45,8 @@ package HW is
    procedure Enable_Interrupts;
 
    procedure Disable_Interrupts;
+
+   procedure Enable_MCO;
 
    procedure Initialize_HW;
 

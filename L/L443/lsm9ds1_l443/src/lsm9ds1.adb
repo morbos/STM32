@@ -55,13 +55,13 @@ package body LSM9DS1 is
       return Result;
    end Device_Id;
 
-   function Device_Id_M (This : in out LSM9DS1_Mag) return UInt8
+   function Device_Id (This : in out LSM9DS1_Mag) return UInt8
    is
       Result : UInt8;
    begin
       Read (This.Port, LSM9DS1_WHO_AM_I_M, Value => Result);
       return Result;
-   end Device_Id_M;
+   end Device_Id;
 
    function GetStatus (This : in out LSM9DS1_AccGyro) return UInt8
    is
@@ -90,15 +90,22 @@ package body LSM9DS1 is
 
    end GetFifoCtrl;
 
-   function To_UInt8 (From : Integer_16) return Sensor_Data_Buffer with Inline;
-
    function As_Unsigned_16 is new Ada.Unchecked_Conversion
      (Source => Integer_16, Target => Unsigned_16);
 
    procedure Config (This : in out LSM9DS1_Mag) is
+      type Cal_Range is range 1 .. 64;
       Result : Sensor_Data_Raw;
-      Cvert  : Sensor_Data_Buffer (0 .. 1);
+      Cvert  : Four_UInt8;
       Tmp    : UInt8;
+      Source : Register_Address;
+      Buffer : Sensor_Data_Buffer (0 .. 5);
+      New_X  : Integer_16;
+      New_Y  : Integer_16;
+      New_Z  : Integer_16;
+      Avg_X  : Integer_32 := 0;
+      Avg_Y  : Integer_32 := 0;
+      Avg_Z  : Integer_32 := 0;
    begin
 
       --  Soft reset mag
@@ -121,34 +128,59 @@ package body LSM9DS1 is
       Tmp := Tmp or 16#0c#;
       Write (This.Port, LSM9DS1_CTRL_REG4_M, Tmp);
 
---      for I in Axis loop
---      Result (I) := -Result (I);
---      end loop;
+      Source := LSM9DS1_OUT_X_L_M;
 
---      Cvert := To_UInt8 (Result (X));
---      Write (This.Port, LSM9DS1_OFFSET_X_REG_L_M, Cvert (0));
---      Write (This.Port, LSM9DS1_OFFSET_X_REG_H_M, Cvert (1));
+      for I in Cal_Range loop
+         Read_Buffer (This.Port, Source or 16#80#, Buffer);
 
---      Cvert := To_UInt8 (Result (Y));
---      Write (This.Port, LSM9DS1_OFFSET_Y_REG_L_M, Cvert (0));
---      Write (This.Port, LSM9DS1_OFFSET_Y_REG_H_M, Cvert (1));
+         New_X := To_Integer_16 (LSB => Buffer (0), MSB => Buffer (1));
+         New_Y := To_Integer_16 (LSB => Buffer (2), MSB => Buffer (3));
+         New_Z := To_Integer_16 (LSB => Buffer (4), MSB => Buffer (5));
 
---      Cvert := To_UInt8 (Result (Z));
---      Write (This.Port, LSM9DS1_OFFSET_Z_REG_L_M, Cvert (0));
---      Write (This.Port, LSM9DS1_OFFSET_Z_REG_H_M, Cvert (1));
+         Avg_X := Avg_X + Integer_32 (New_X);
+         Avg_Y := Avg_Y + Integer_32 (New_Y);
+         Avg_Z := Avg_Z + Integer_32 (New_Z);
+      end loop;
+
+      Avg_X := Avg_X / Integer_32 (Cal_Range'Last);
+      Avg_Y := Avg_Y / Integer_32 (Cal_Range'Last);
+      Avg_Z := Avg_Z / Integer_32 (Cal_Range'Last);
+
+      To_UInt8_From_Integer_32 (Cvert, Avg_X);
+      Write (This.Port, LSM9DS1_OFFSET_X_REG_L_M, Cvert (1));
+      Write (This.Port, LSM9DS1_OFFSET_X_REG_H_M, Cvert (2));
+
+      To_UInt8_From_Integer_32 (Cvert, Avg_Y);
+      Write (This.Port, LSM9DS1_OFFSET_Y_REG_L_M, Cvert (1));
+      Write (This.Port, LSM9DS1_OFFSET_Y_REG_H_M, Cvert (2));
+
+      To_UInt8_From_Integer_32 (Cvert, Avg_Z);
+      Write (This.Port, LSM9DS1_OFFSET_Z_REG_L_M, Cvert (1));
+      Write (This.Port, LSM9DS1_OFFSET_Z_REG_H_M, Cvert (2));
+
+      Read_Buffer (This.Port, LSM9DS1_OFFSET_X_REG_L_M or 16#80#, Buffer);
 
    end Config;
 
-   procedure Config (This : in out LSM9DS1_AccGyro) is
-      Result : Sensor_Data_Raw;
-      Cvert  : Sensor_Data_Buffer (0 .. 1);
+   procedure StatusWait (This : in out LSM9DS1_AccGyro) is
       Tmp    : UInt8;
    begin
+      loop
+         Read (This.Port, LSM9DS1_STATUS_REG, Value => Tmp);
+         exit when (Tmp and 8) = 0;
+      end loop;
+   end StatusWait;
 
+   procedure Config (This : in out LSM9DS1_AccGyro) is
+      Tmp    : UInt8;
+   begin
+--      StatusWait (This);
       --  Soft reset accl&gyro
-      Read (This.Port, LSM9DS1_CTRL_REG8, Value => Tmp);
-      Tmp := Tmp or 16#1#; -- reboot
-      Write (This.Port, LSM9DS1_CTRL_REG8, Tmp);
+--      Read (This.Port, LSM9DS1_CTRL_REG8, Value => Tmp);
+--      Tmp := Tmp or 16#1#; -- reboot
+--      Write (This.Port, LSM9DS1_CTRL_REG8, Tmp);
+
+      StatusWait (This);
 
       delay until Clock + Milliseconds (100);
 
@@ -156,7 +188,6 @@ package body LSM9DS1 is
       Read (This.Port, LSM9DS1_FIFO_CTRL, Value => Tmp);
       Tmp := Tmp or 16#e0#; -- continuous
       Write (This.Port, LSM9DS1_FIFO_CTRL, Tmp);
-      Read (This.Port, LSM9DS1_FIFO_CTRL, Value => Tmp);
 
       --  Fifo setup
       Read (This.Port, LSM9DS1_CTRL_REG9, Value => Tmp);
@@ -169,8 +200,11 @@ package body LSM9DS1 is
       Write (This.Port, LSM9DS1_CTRL_REG1_G, Tmp);
 
       --  Accl setup
-      Read (This.Port, LSM9DS1_CTRL_REG6_XL, Value => Tmp);
-      Tmp := Tmp or 16#60#; --  119Hz + 2g
+      Write (This.Port, LSM9DS1_CTRL_REG5_XL, 16#38#);
+
+      --  Accl setup
+--      Read (This.Port, LSM9DS1_CTRL_REG6_XL, Value => Tmp);
+      Tmp := 16#60#; --  119Hz + 2g
 --      Tmp := Tmp or 16#68#; --  119Hz + 16g
       Write (This.Port, LSM9DS1_CTRL_REG6_XL, Tmp);
 
@@ -189,41 +223,33 @@ package body LSM9DS1 is
    is
    begin
       Acc_Offset  := This.GetXYZ (Accelerometer_Data);
-      Acc_Offset (Z) := Acc_Offset (Z) - SENSORS_GRAVITY_EARTH;
+--      Acc_Offset (Z) := Acc_Offset (Z) - SENSORS_GRAVITY_EARTH;
       Gyro_Offset := This.GetXYZ (Gyroscope_Data);
    end Calibrate;
 
-   function To_Integer_16 (LSB, MSB : UInt8) return Integer_16 with Inline;
-   --  returns a signed value, possibly negative based on high-order bit of MSB
-
    function GetTemp (This : in out LSM9DS1_AccGyro) return Float
    is
-      Result : float;
+      Result : Float;
       Tmp    : Integer_16;
-      Tmp32  : Integer_32;
       Buffer : Sensor_Data_Buffer (0 .. 1);
+      Status : UInt8;
    begin
+      loop  --  Wait for a TDA reading (bit 2).
+         Status := This.GetStatus;
+         exit when (Status and 2#100#) = 2#100#;
+      end loop;
       Read_Buffer (This.Port, LSM9DS1_OUT_TEMP_L or 16#80#, Buffer);
 
-      if Buffer (0) /= 0 then
-         raise Program_Error with "misunderstanding";
-      end if;
-
-      --  vvvv trial and error! seems LSB is always 0
       --  MSB is a signed +/- off of a 25degC reference.
       Tmp := To_Integer_16 (LSB => Buffer (0), MSB => Buffer (1));
-      Tmp := Tmp / 256;
-      Tmp := Tmp + 25;
-
-      Result := Float (Tmp);
+      Result := (Float (Tmp) / 16.0) + 25.0;
 
       return Result;
    end GetTemp;
 
    function GetTemp_Raw (This : in out LSM9DS1_AccGyro) return Integer_16
    is
-      Tmp   : Integer_16;
-      Tmp32 : Integer_32;
+      Tmp       : Integer_16;
       Buffer    : Sensor_Data_Buffer (0 .. 1);
    begin
       Read_Buffer (This.Port, LSM9DS1_OUT_TEMP_L or 16#80#, Buffer);
@@ -233,6 +259,15 @@ package body LSM9DS1 is
       return Tmp;
 
    end GetTemp_Raw;
+
+   function GetStatus (This : in out LSM9DS1_Mag) return UInt8
+   is
+      Result : UInt8;
+   begin
+      Read (This.Port, LSM9DS1_STATUS_REG_M, Value => Result);
+      return Result;
+   end GetStatus;
+
 
    function GetXYZ (This : in out LSM9DS1_Mag) return Sensor_Data
    is
@@ -244,6 +279,11 @@ package body LSM9DS1 is
       --  LSB      : Float;
       Source    : Register_Address;
    begin
+
+      --  Bit 3 is an amalgam of bits 2..0. New data xyz avail
+      loop
+         exit when (GetStatus (This) and 2#1000#) = 2#1000#;
+      end loop;
 
       Source := LSM9DS1_OUT_X_L_M;
 
@@ -297,16 +337,29 @@ package body LSM9DS1 is
       New_Z    : Integer_16;
       --  LSB      : Float;
       Source   : Register_Address;
+      WaitFor  : UInt8;
+      Status   : UInt8;
+      Tmp      : UInt8;
    begin
+--      loop
+         --  Fifo
+--         Read (This.Port, LSM9DS1_FIFO_SRC, Value => Tmp);
+--         exit when (Tmp and 16#3f#) /= 0;
+--      end loop;
 
       case Kind is
          when Accelerometer_Data =>
             Source := LSM9DS1_OUT_X_L_XL;
-
+            WaitFor := 2#01#;
          when Gyroscope_Data =>
             Source := LSM9DS1_OUT_X_L_G;
-
+            WaitFor := 2#10#;
       end case;
+
+      loop
+         Status := This.GetStatus;
+         exit when (Status and WaitFor) = WaitFor;
+      end loop;
 
       Read_Buffer (This.Port, Source or 16#80#, Buffer);
 
@@ -322,9 +375,9 @@ package body LSM9DS1 is
          when Accelerometer_Data =>
             for I in Axis loop
                Result (I) := Result (I) * Accel_Mg_Lsb;
-               Result (I) := Result (I) / 1000.0;
-               Result (I) := Result (I) * SENSORS_GRAVITY_EARTH;
-               Result (I) := Result (I) - Acc_Offset (I);
+--               Result (I) := Result (I) / 1000.0;
+--               Result (I) := Result (I) * SENSORS_GRAVITY_EARTH;
+--               Result (I) := Result (I) - Acc_Offset (I);
             end loop;
          when Gyroscope_Data =>
             for I in Axis loop
@@ -363,36 +416,5 @@ package body LSM9DS1 is
       return Vals;
 
    end GetXYZ_Raw;
-
-
-   -------------------
-   -- To_Integer_16 --
-   -------------------
-
-   function To_Integer_16 (LSB : UInt8;  MSB : UInt8) return Integer_16 is
-      Result : Integer_32;
-   begin
-      Result := Integer_32 (MSB) * 256;
-      Result := Result + Integer_32 (LSB);
-      if (MSB and 16#80#) /= 0 then
-         Result := -((16#FFFF# - Result) + 1);
-      end if;
-      return Integer_16 (Result);
-   end To_Integer_16;
-
-   -------------------
-   -- To_UInt8      --
-   -------------------
-
-   function To_UInt8 (From : Integer_16) return Sensor_Data_Buffer is
-      Tmp   : Sensor_Data_Buffer (0 .. 1);
-      Tmp16 : Unsigned_16;
-   begin
-      Tmp16   := As_Unsigned_16 (From);
-      Tmp (0) := UInt8 ( Tmp16 and 16#ff#);
-      Tmp (1) := UInt8 (Shift_Right (Tmp16, 8));
-
-      return Tmp;
-   end To_UInt8;
 
 end LSM9DS1;

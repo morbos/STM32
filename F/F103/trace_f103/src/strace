@@ -1,0 +1,110 @@
+
+with HAL;           use HAL;
+with STM32.Board;   use STM32.Board;
+with STM32.Device;  use STM32.Device;
+with STM32_SVD.DBG;
+with Cortex_M_SVD.Debug;
+use STM32; -- for GPIO_Alternate_Function
+
+procedure Try_F103 is
+
+   type Reserved2_T is array (1 .. 2) of UInt32;
+   type Reserved55_T is array (1 .. 55) of UInt32;
+   type Reserved131_T is array (1 .. 131) of UInt32;
+   type Reserved759_T is array (1 .. 759) of UInt32;
+   type Reserved39_T is array (1 .. 39) of UInt32;
+   type Reserved39_T is array (1 .. 8) of UInt32;
+
+
+   type TPI_Type is record
+      SSPSR : UInt32;   -- !< Offset: 0x000 (R/ )  Supported Parallel Port Size Register
+      CSPSR : UInt32;   -- !< Offset: 0x004 (R/W)  Current Parallel Port Size Register
+      RESERVED0 : Reserved2_T;
+      UInt32 :  ACPR;   -- !< Offset: 0x010 (R/W)  Asynchronous Clock Prescaler Register
+      RESERVED1 :  Reserved55_T;
+      SPPR :   UInt32;  -- !< Offset: 0x0F0 (R/W)  Selected Pin Protocol Register
+      RESERVED2 :        Reserved131_T;
+      FFSR :   UInt32;  -- !< Offset: 0x300 (R/ )  Formatter and Flush Status Register
+      FFCR :   UInt32;  -- !< Offset: 0x304 (R/W)  Formatter and Flush Control Register
+      FSCR :   UInt32;  -- !< Offset: 0x308 (R/ )  Formatter Synchronization Counter Register
+      RESERVED3 :     Reserved759_T;
+      TRIGGER :   UInt32;                 -- !< Offset: 0xEE8 (R/ )  TRIGGER
+      FIFO0 :   UInt32;                   -- !< Offset: 0xEEC (R/ )  Integration ETM Data
+      ITATBCTR2 :   UInt32;               -- !< Offset: 0xEF0 (R/ )  ITATBCTR2
+      RESERVED4 :        UInt32;
+      ITATBCTR0 :   UInt32;               -- !< Offset: 0xEF8 (R/ )  ITATBCTR0
+      FIFO1 :   UInt32;                   -- !< Offset: 0xEFC (R/ )  Integration ITM Data
+      ITCTRL :   UInt32;                  -- !< Offset: 0xF00 (R/W)  Integration Mode Control
+      RESERVED5 :        Reserved39_T;
+      CLAIMSET :   UInt32;                -- !< Offset: 0xFA0 (R/W)  Claim tag set
+      CLAIMCLR :   UInt32;                -- !< Offset: 0xFA4 (R/W)  Claim tag clear
+      RESERVED7 :        Reserved8_T;
+      DEVID :   UInt32;                   -- !< Offset: 0xFC8 (R/ )  TPIU_DEVID
+      DEVTYPE :   UInt32;                 -- !< Offset: 0xFCC (R/ )  TPIU_DEVTYPE
+  end;
+
+   --  TPI support
+   TPI_Periph : aliased TPI_Peripheral
+     with Import, Address => System'To_Address (16#E0040000#);
+
+   procedure Configure_Tracing
+   is
+   begin
+    DBG_Periph.CR.TRACE_IOEN = True; --  Enable IO trace pins
+
+    if not DBG_Periph.CR.TRACE_IOEN then
+        -- Some (all?) STM32s don't allow writes to DBGMCU register until
+        -- C_DEBUGEN in CoreDebug->DHCSR is set. This cannot be set by the
+        -- CPU itself, so in practice you need to connect to the CPU with
+        -- a debugger once before resetting it.
+        return;
+    end if;
+
+    --  Configure Trace Port Interface Unit
+    Debug_Periph.DEMCR.TRCENA = True;  -- Enable access to registers
+    TPI->ACPR = 0; -- Trace clock = HCLK/(x+1) = 8MHz
+    TPI->SPPR = 2; -- Pin protocol = NRZ/USART
+    TPI->FFCR = 0x102; -- TPIU packet framing enabled when bit 2 is set.
+                       -- You can use 0x100 if you only need DWT/ITM and not ETM.
+
+    --  Configure PC sampling and exception trace
+    DWT->CTRL = (1 << DWT_CTRL_CYCTAP_Pos) -- Prescaler for PC sampling
+                                           -- 0 = x32, 1 = x512
+              | (0 << DWT_CTRL_POSTPRESET_Pos) -- Postscaler for PC sampling
+                                                -- Divider = value + 1
+              | (1 << DWT_CTRL_PCSAMPLENA_Pos) -- Enable PC sampling
+              | (2 << DWT_CTRL_SYNCTAP_Pos)    -- Sync packet interval
+                                               -- 0 = Off, 1 = Every 2^23 cycles,
+                                               -- 2 = Every 2^25, 3 = Every 2^27
+              | (1 << DWT_CTRL_EXCTRCENA_Pos)  -- Enable exception trace
+              | (1 << DWT_CTRL_CYCCNTENA_Pos); -- Enable cycle counter
+
+    --  Configure instrumentation trace macroblock
+    ITM->LAR = 0xC5ACCE55;
+    ITM->TCR = (1 << ITM_TCR_TraceBusID_Pos) -- Trace bus ID for TPIU
+             | (1 << ITM_TCR_DWTENA_Pos) -- Enable events from DWT
+             | (1 << ITM_TCR_SYNCENA_Pos) -- Enable sync packets
+             | (1 << ITM_TCR_ITMENA_Pos); -- Main enable for ITM
+    ITM->TER = 0xFFFFFFFF; -- Enable all stimulus ports
+
+    --  Configure embedded trace macroblock
+    ETM->LAR = 0xC5ACCE55;
+    ETM_SetupMode();
+    ETM->CR = ETM_CR_ETMEN -- Enable ETM output port
+            | ETM_CR_STALL_PROCESSOR -- Stall processor when fifo is full
+            | ETM_CR_BRANCH_OUTPUT; -- Report all branches
+    ETM->TRACEIDR = 2; -- Trace bus ID for TPIU
+    ETM->TECR1 = ETM_TECR1_EXCLUDE; -- Trace always enabled
+    ETM->FFRR = ETM_FFRR_EXCLUDE; -- Stalling always enabled
+    ETM->FFLR = 24; -- Stall when less than N bytes free in FIFO (range 1..24)
+                    -- Larger values mean less latency in trace, but more stalls.
+    -- Note: we do not enable ETM trace yet, only for specific parts of code.
+begin
+   Initialize_Board;
+   loop
+      Turn_On (Green_LED);
+      My_Delay;
+      Turn_Off (Green_LED);
+      My_Delay;
+   end loop;
+end Try_F103;

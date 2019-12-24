@@ -69,7 +69,8 @@ package body Main is
       if Is_Server then
          SetConnectable;
       else
-         Set (Green_LED);
+         --         Set (Green_LED);
+         null;
       end if;
       IPCC_Cpu1_EnableReceiveChannel (
                                       (HW_IPCC_BLE_CMD_CHANNEL,
@@ -119,10 +120,10 @@ package body Main is
    begin
       loop
          Suspend_Until_True (LED_Go);
-         Set (Green_LED);
-         My_Delay;
-         Clear (Green_LED);
-         My_Delay;
+--         Set (Green_LED);
+--         My_Delay;
+--         Clear (Green_LED);
+--         My_Delay;
       end loop;
    end LED_Task;
 

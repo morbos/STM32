@@ -1,5 +1,4 @@
-DIR=Production
-#DIR=Debug
+DIR=Debug
 default:
 	rm -f obj/$(DIR)/vl53l1x_f103
 	(export LOADER=ROM_F103; gprbuild)

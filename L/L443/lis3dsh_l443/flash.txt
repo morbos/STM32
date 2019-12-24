@@ -1,0 +1,33 @@
+> flash info 0
+#0 : stm32f2x at 0x08000000, size 0x00080000, buswidth 0, chipwidth 0
+	#  0: 0x00000000 (0x8000 32kB) not protected
+	#  1: 0x00008000 (0x8000 32kB) not protected
+	#  2: 0x00010000 (0x8000 32kB) not protected
+	#  3: 0x00018000 (0x8000 32kB) not protected
+	#  4: 0x00020000 (0x20000 128kB) not protected
+	#  5: 0x00040000 (0x40000 256kB) not protected
+error retrieving flash info
+
+> flash info 0
+device id = 0x10006433
+flash size = 512kbytes
+#0 : stm32f2x at 0x08000000, size 0x00080000, buswidth 0, chipwidth 0
+	#  0: 0x00000000 (0x4000 16kB) not protected
+	#  1: 0x00004000 (0x4000 16kB) not protected
+	#  2: 0x00008000 (0x4000 16kB) not protected
+	#  3: 0x0000c000 (0x4000 16kB) not protected
+	#  4: 0x00010000 (0x10000 64kB) not protected
+	#  5: 0x00020000 (0x20000 128kB) not protected
+	#  6: 0x00040000 (0x20000 128kB) not protected
+	#  7: 0x00060000 (0x20000 128kB) not protected
+STM32F4xx (Low Power) - Rev: A
+
+Debug: 647 14567 target.c:2264 target_read_u16(): address: 0x1ff07a22, value: 0x0200
+Info : 648 14568 stm32f2x.c:926 stm32x_probe(): flash size = 512kbytes
+Debug: 649 14569 stm32f2x.c:987 stm32x_probe(): allocated 6 sectors
+Debug: 650 14571 stm32f2x.c:778 setup_sector(): sector 0: 32kBytes
+Debug: 651 14571 stm32f2x.c:778 setup_sector(): sector 1: 32kBytes
+Debug: 652 14572 stm32f2x.c:778 setup_sector(): sector 2: 32kBytes
+Debug: 653 14572 stm32f2x.c:778 setup_sector(): sector 3: 32kBytes
+Debug: 654 14572 stm32f2x.c:778 setup_sector(): sector 4: 128kBytes
+Debug: 655 14572 stm32f2x.c:778 setup_sector(): sector 5: 256kBytes

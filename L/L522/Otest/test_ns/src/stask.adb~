@@ -1,0 +1,11 @@
+package body Stask is
+
+   task body Idle
+   is
+   begin
+      loop
+
+      end loop;
+   end Idle;
+
+end Stask;

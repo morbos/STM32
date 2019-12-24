@@ -12,9 +12,10 @@ with STM32_SVD.RCC;        use STM32_SVD.RCC;
 with STM32_SVD.PWR;        use STM32_SVD.PWR;
 with STM32_SVD.EXTI;       use STM32_SVD.EXTI;
 with STM32_SVD.FLASH;      use STM32_SVD.FLASH;
-with STM32_SVD.SCB;       use STM32_SVD.SCB;
-with STM32_SVD.HSEM;      use STM32_SVD.HSEM;
-with STM32_SVD.RTC;       use STM32_SVD.RTC;
+with STM32_SVD.SCB;        use STM32_SVD.SCB;
+with STM32_SVD.HSEM;       use STM32_SVD.HSEM;
+with STM32_SVD.RTC;        use STM32_SVD.RTC;
+with STM32_SVD.STK;        use STM32_SVD.STK;
 
 with Peripherals;          use Peripherals;
 
@@ -31,8 +32,8 @@ package body HW is
       RCC_Periph.CFGR.STOPWUCK := True;
       RCC_Periph.APB1ENR1.CRSEN := True;
       RCC_Periph.CCIPR.CLK48SEL := 0;
-      RCC_Periph.CRRCR.HSI48RDY := True;
-      RCC_Periph.CRRCR.HSI48ON := True;
+--      RCC_Periph.CRRCR.HSI48RDY := True;
+--      RCC_Periph.CRRCR.HSI48ON := True;
       RCC_Periph.SMPSCR.SMPSSEL := 0;
       RCC_Periph.BDCR.RTC_SEL := 1;
       RCC_Periph.BDCR.RTCEN := True;
@@ -40,12 +41,17 @@ package body HW is
       --  If not set... the radio will be in reset.
       RCC_Periph.BDCR.LSEON := True;
       --  ^^^
-      FLASH_Periph.ACR.PRFTEN := False;
+      FLASH_Periph.ACR.PRFTEN := True;
+      FLASH_Periph.ACR.DCEN := False;
+      FLASH_Periph.ACR.ICEN := False;
       FLASH_Periph.ACR.LATENCY := 1;
       EXTI_Periph.RTSR1.RT := 16#80000#;
       EXTI_Periph.IMR2.IM := 16#10050#;
 
-      PWR_Periph.CR1.DBP := False;
+--      PWR_Periph.CR1.DBP := False; This should be true but... match the C code diffs
+      PWR_Periph.CR2.USV := True; --  This should be false but... match the C code diffs
+
+      PWR_Periph.C2CR1.LPMS := 2; --  Stop2
 
       Disable_Write_Protection;
       RTC_Periph.WUTR.WUT := 9;
@@ -218,13 +224,23 @@ package body HW is
       end loop;
    end Switch_On_HSE;
 
+   procedure SysTick_Stance (On : Boolean)
+   is
+   begin
+      STK_Periph.CTRL.TICKINT := On;
+   end SysTick_Stance;
+
    procedure Stop2
    is
    begin
+      RCC_Periph.CRRCR.HSI48RDY := False;
+      RCC_Periph.CRRCR.HSI48ON := False;
+      SysTick_Stance (False);
       PWR_Periph.CR1.LPMS := 2;
       SCB_Periph.SCR.SLEEPDEEP := True;
       Asm ("dsb", Volatile => True); --  Flush any outstanding xact's
       Asm ("wfi", Volatile => True);
+      SysTick_Stance (True);
    end Stop2;
 
    procedure EnterStopMode
@@ -233,6 +249,11 @@ package body HW is
       loop
          exit when not OneStepLock (HW_RCC_SEMID);
       end loop;
+
+      loop
+         exit when not AnyLock (HW_STOP_MODE_SEMID);
+      end loop;
+
       if not OneStepLock (HW_STOP_MODE_SEMID) then
          if PWR_Periph.EXTSCR.C2DS then
             ReleaseLock (HW_STOP_MODE_SEMID, 0);
@@ -282,9 +303,30 @@ package body HW is
       ExitStopMode;
    end Sleep;
 
+   procedure Enable_MCO
+   is
+      GPIO_Conf       : GPIO_Port_Configuration;
+   begin
+      Enable_Clock (PA8);
+
+      GPIO_Conf.Speed       := Speed_100MHz;
+      GPIO_Conf.Mode        := Mode_AF;
+      GPIO_Conf.Output_Type := Push_Pull;
+      GPIO_Conf.Resistors   := Floating;
+
+      Configure_IO (PA8, GPIO_Conf);
+
+      Configure_Alternate_Function (PA8, GPIO_AF_MCO_0);
+
+      RCC_Periph.CFGR.MCOPRE := 3;
+      RCC_Periph.CFGR.MCOSEL := 1; --  SYSCLK
+
+   end Enable_MCO;
+
    procedure Initialize_HW
    is
    begin
+      Enable_MCO;
       Initialize_Blue_LED;
       Configure_SW1;
       Misc_HW_Init;

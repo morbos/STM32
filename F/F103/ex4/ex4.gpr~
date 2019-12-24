@@ -1,0 +1,29 @@
+project ex4 is
+
+   for Languages use ("Ada");
+
+   for Main use ("demo.adb");
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g", "-gnatwa", "-gnatQ", "-gnat12");
+--      for Default_Switches ("ada") use ("-g", "-O2", "-gnatwa", "-gnatQ", "-gnat12", "-gnatwI");
+   end Compiler;
+
+   package Builder is
+      for Default_Switches ("ada") use 
+         ("-g", 
+          "--RTS=/backup/ada/gnat2015/ravenscar-full-rm46");
+   end Builder;
+
+   package Ide is
+      for Gnat use "arm-eabi-gnat";
+      for Gnatlist use "arm-eabi-gnatls";
+      for Debugger_Command use "arm-eabi-gdb";
+      for Program_Host use "localhost:4242";
+      for Communication_Protocol use "remote";
+   end Ide;
+
+end ex4;
+

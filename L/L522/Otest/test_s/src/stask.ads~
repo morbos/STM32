@@ -1,0 +1,7 @@
+package Stask is
+
+   task Idle is
+      pragma Storage_Size (4 * 1024);
+      pragma Priority (System.Max_Priority);
+   end Idle;
+end Stask;
