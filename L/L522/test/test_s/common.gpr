@@ -48,7 +48,6 @@ project Common is
   	 "-Wl,../../../glue/veneer_s.o",
   	 "-Wl,../../../glue/veneer_ns.o",
 	 "-Wl,../../../glue/s_ns.o",
-  	 "-Wl,../../../glue/led.o",
 	 "-Wl,--cmse-implib,--out-implib=s_bind.o"
 	 );
    end Linker;
