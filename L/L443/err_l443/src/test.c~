@@ -1,9 +1,0 @@
-typedef unsigned int    u32;
-#define REG32(x) ((*(volatile u32 *)(x)))
-void
-test()
-{
-    void (*p)()=0x20d;
-    p();
-//    REG32(0x60000000);
-}

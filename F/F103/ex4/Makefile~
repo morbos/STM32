@@ -1,4 +1,0 @@
-default:
-	rm -f obj/demo
-	gprbuild -vh --target=arm-eabi --RTS=../../../ravenscar-full-rm57
-	(cd obj; arm-eabi-objdump -d demo >demo.lst; arm-eabi-objdump -s demo >demo.dmp; cp demo demo.out; arm-eabi-gcc-nm -an demo >demo.nm)

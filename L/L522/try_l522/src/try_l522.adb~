@@ -1,7 +1,0 @@
-
-procedure Try_l552 is
-begin
-   loop
-      null;
-   end loop;
-end Try_l552;
