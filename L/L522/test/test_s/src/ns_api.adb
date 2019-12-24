@@ -2,23 +2,16 @@ with STM32.Device;   use STM32.Device;
 with STM32.Board;    use STM32.Board;
 package body NS_Api is
 
-   Count : UInt2;
+   Idx   : Integer := LEDs'First;
+
    function S_From_NS (X : UInt32) return UInt32
    is
    begin
-      case Count is
-         when 0 =>
-            Toggle (Red_LED);
-         when 1 =>
-            Toggle (Blue_LED);
-         when 2 =>
-            Toggle (Green_LED);
-         when others =>
-            null;
-      end case;
-      Count := Count + 1;
-      if Count = 3 then
-         Count := 0;
+      Toggle (LEDs (Idx));
+      if Idx = LEDs'Last then
+         Idx := LEDs'First;
+      else
+         Idx := Idx + 1;
       end if;
       return X;
    end S_From_NS;
