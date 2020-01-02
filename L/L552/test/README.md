@@ -1,7 +1,7 @@
-# Ada on the STM32L522
+# Ada on the STM32L552
 
 This project shows how to get a simple secure&non-secure program going
-on the STM32L522 nucleo board.
+on the STM32L552 nucleo board.
 
 ## Prerequisites
 - gnat2019
@@ -11,7 +11,7 @@ on the STM32L522 nucleo board.
 - git clone https://github.com/morbos/embedded-runtimes.git
 - git clone https://github.com/morbos/STM32.git
 - mv ../embedded-runtimes Ada_Drivers_Library
-- cd STM32/L/L522/test
+- cd STM32/L/L552/test
 - make
 
 ## Openocd
@@ -21,7 +21,7 @@ https://github.com/morbos/openocd-0.10.1
 
 once built:
 ```
-root@pi3:~/openocd-0.10.1/tcl# ../src/openocd -f board/st_nucleo_l522.cfg
+root@pi3:~/openocd-0.10.1/tcl# ../src/openocd -f board/st_nucleo_l552.cfg
 Open On-Chip Debugger 0.10.0
 Licensed under GNU GPL v2
 For bug reports, read
@@ -76,7 +76,7 @@ end
 Then start the debugger:
 
 ```
-admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/L/L522/test$ arm-eabi-gdb
+admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/L/L552/test$ arm-eabi-gdb
 ...
 (gdb) st_s_ns
 warning: No executable has been specified and target does not support
