@@ -1,4 +1,4 @@
-# LoRa the STM32L552
+# LoRa on the STM32L552
 
 This project shows how to get a secure&non-secure LoRa program going
 on the STM32L552 nucleo board. The S side handles the LoRa HW the NS side handles the
