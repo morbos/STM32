@@ -137,7 +137,7 @@ package body SX1276_API is
       --  Make sure no funny business from NS side. I.e. They send a S pointer over to take
       --  a peek at S ram. We only accept a non-secure pointer
       TTR := Test_Address (Buffer'Address);
-      if TTR.Secure = True then
+      if TTR.Secure then
          return;
       end if;
       for I in 1 .. Len loop
@@ -160,14 +160,12 @@ package body SX1276_API is
       --  S ram. We only accept a non-secure pointers.
       --  First test the buffer address
       TTR := Test_Address (Buffer'Address);
-      if TTR.Secure = True then
-         Len.all := 0;
+      if TTR.Secure then
          return 0;
       end if;
       --  Now the Integer_Ptr
       TTR := Test_Address (A);
-      if TTR.Secure = True then
-         Len.all := 0;
+      if TTR.Secure then
          return 0;
       end if;
       if SX.Recv (LBuffer, LocalLen) then
