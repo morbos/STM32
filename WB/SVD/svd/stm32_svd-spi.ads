@@ -96,10 +96,10 @@ package STM32_SVD.SPI is
    subtype SR_FTLVL_Field is HAL.UInt2;
 
    type SR_Register is record
-      --  unspecified
-      Reserved_0_1   : HAL.UInt2 := 16#0#;
       RXNE           : Boolean := False;
       TXE            : Boolean := False;
+      --  unspecified
+      Reserved_2_3   : HAL.UInt2 := 16#0#;
       CRCERR         : Boolean := False;
       MODF           : Boolean := False;
       OVR            : Boolean := False;
@@ -114,9 +114,9 @@ package STM32_SVD.SPI is
           Bit_Order => System.Low_Order_First;
 
    for SR_Register use record
-      Reserved_0_1   at 0 range 0 .. 1;
-      RXNE           at 0 range 2 .. 2;
-      TXE            at 0 range 3 .. 3;
+      RXNE           at 0 range 0 .. 0;
+      TXE            at 0 range 1 .. 1;
+      Reserved_2_3   at 0 range 2 .. 3;
       CRCERR         at 0 range 4 .. 4;
       MODF           at 0 range 5 .. 5;
       OVR            at 0 range 6 .. 6;

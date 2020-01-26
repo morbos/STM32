@@ -91,6 +91,8 @@ BSY
 OVR
 MODF
 CRCERR
+Res.
+Res.
 TXE
 RXNE
 Reset value 0 0 0 0 0 0 0 0 0 1 0

@@ -50,8 +50,8 @@ TARGETS := \
 #	exti
 
 XMLs := $(patsubst %, %.xml, $(TARGETS))
-SVD2ADA=/backup/ada/svd2ada/svd2ada
-#SVD2ADA=/.share/CACHEDEV1_DATA/Ada/svd2ada/svd2ada
+#SVD2ADA=/backup/ada/svd2ada/svd2ada
+SVD2ADA=/.share/CACHEDEV1_DATA/Ada/svd2ada/svd2ada
 default: $(TARGETS)
 	cat hdr \
 	$(XMLs) \

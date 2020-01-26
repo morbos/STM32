@@ -1,5 +1,5 @@
 --
---  Copyright (C) 2019, AdaCore
+--  Copyright (C) 2020, AdaCore
 --
 
 --  This spec has been automatically generated from STM32WB55x.svd

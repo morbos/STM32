@@ -1,5 +1,5 @@
 --
---  Copyright (C) 2019, AdaCore
+--  Copyright (C) 2020, AdaCore
 --
 
 --  This spec has been automatically generated from STM32WB55x.svd
@@ -131,10 +131,10 @@ package Interfaces.STM32.SPI is
    subtype SR_FTLVL_Field is Interfaces.Bit_Types.UInt2;
 
    type SR_Register is record
-      --  unspecified
-      Reserved_0_1   : Interfaces.Bit_Types.UInt2 := 16#0#;
       RXNE           : SR_RXNE_Field := 16#0#;
       TXE            : SR_TXE_Field := 16#0#;
+      --  unspecified
+      Reserved_2_3   : Interfaces.Bit_Types.UInt2 := 16#0#;
       CRCERR         : SR_CRCERR_Field := 16#0#;
       MODF           : SR_MODF_Field := 16#0#;
       OVR            : SR_OVR_Field := 16#0#;
@@ -149,9 +149,9 @@ package Interfaces.STM32.SPI is
           Bit_Order => System.Low_Order_First;
 
    for SR_Register use record
-      Reserved_0_1   at 0 range 0 .. 1;
-      RXNE           at 0 range 2 .. 2;
-      TXE            at 0 range 3 .. 3;
+      RXNE           at 0 range 0 .. 0;
+      TXE            at 0 range 1 .. 1;
+      Reserved_2_3   at 0 range 2 .. 3;
       CRCERR         at 0 range 4 .. 4;
       MODF           at 0 range 5 .. 5;
       OVR            at 0 range 6 .. 6;

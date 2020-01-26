@@ -207,12 +207,12 @@
            </field>
            <field>
              <name>TXE</name>
-             <bitOffset>3</bitOffset>
+             <bitOffset>1</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
            <field>
              <name>RXNE</name>
-             <bitOffset>2</bitOffset>
+             <bitOffset>0</bitOffset>
              <bitWidth>1</bitWidth>
            </field>
          </fields>
