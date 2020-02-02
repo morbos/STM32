@@ -25,7 +25,7 @@ package body Exti is
          if External_Interrupt_Pending (EXTI_Line_0) then
             Clear_External_Interrupt (EXTI_Line_0);
          end if;
-         if External_Interrupt_Pending (EXTI_Line_0) then  --  recv T/O
+         if External_Interrupt_Pending (EXTI_Line_1) then  --  recv T/O
             Clear_External_Interrupt (EXTI_Line_1);
          end if;
          SX.ReadFlags (Flags);
