@@ -17,7 +17,7 @@ package body Curve is
       package EC is new STM32.PKA (Curve_Name => Name, Num_Bits => NB);
       use EC;
       Result     : Boolean;
-      PrivateKey : ECDSA_KeyStr       := Make_Random_Group_String;
+      PrivateKey : ECDSA_KeyStr       := Make_Random_Group_String (NClamp => True);
       PublicKey  : ECDSA_PublicKeyStr := Make_Public_Key_String (PrivateKey);
       K          : ECDSA_RandStr      := Make_Random_Group_String;
 
