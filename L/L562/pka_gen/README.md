@@ -11,7 +11,7 @@ This program tests the currently supported curves.
 - git clone https://github.com/morbos/Ada_Drivers_Library.git
 - git clone https://github.com/morbos/embedded-runtimes.git
 - git clone https://github.com/morbos/STM32.git
-- mv ../embedded-runtimes Ada_Drivers_Library
+- mv embedded-runtimes Ada_Drivers_Library
 - cd STM32/L/L562/pka_gen/
 - make
 
