@@ -1,0 +1,176 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5discovery_s/sfp/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U curve%b		curve.adb		0606e873 NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.mpu%s		stm32-mpu.adb		stm32-mpu.ali
+W stm32.pka%s		stm32-pka.adb		stm32-pka.ali
+Z stm32.rng%s		stm32-rng.adb		stm32-rng.ali
+W stm32.sau%s		stm32-sau.adb		stm32-sau.ali
+W stm32_svd%s		stm32_svd.ads		stm32_svd.ali
+W stm32_svd.gtzc%s	stm32_svd-gtzc.ads	stm32_svd-gtzc.ali
+Z stm32_svd.pka%s	stm32_svd-pka.ads	stm32_svd-pka.ali
+W stm32_svd.pwr%s	stm32_svd-pwr.ads	stm32_svd-pwr.ali
+W stm32_svd.rcc%s	stm32_svd-rcc.ads	stm32_svd-rcc.ali
+Z system%s		system.ads		system.ali
+Z system.machine_code%s	s-maccod.ads		s-maccod.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+U curve%s		curve.ads		901fdef8 EE NE OO PK
+W hal%s			hal.ads			hal.ali
+
+D ada.ads		20190401185014 76789da1 ada%s
+D a-except.ads		20190401185009 5b5f0f2f ada.exceptions%s
+D a-except.adb		20190401185009 85a38458 ada.exceptions%b
+D a-reatim.ads		20190401185100 4c16970e ada.real_time%s
+D a-tags.ads		20190401185010 2dde273c ada.tags%s
+D curve.ads		20200418215312 bb5d16f6 curve%s
+D curve.adb		20200418215312 be9b54c7 curve%b
+D hal.ads		20190401184234 2b42c80e hal%s
+D hal-gpio.ads		20190401184229 146364b8 hal.gpio%s
+D hal-spi.ads		20190401184232 73427149 hal.spi%s
+D interfac.ads		20190401185019 5ab55268 interfaces%s
+D i-bit_types.ads	20190401185017 bd94d513 interfaces.bit_types%s
+D stm32.ads		20191210025757 698e2c3b stm32%s
+D stm32-board.ads	20200307200056 f38aff50 stm32.board%s
+D stm32-device.ads	20200309001554 af0f2946 stm32.device%s
+D stm32-exti.ads	20200104053858 53264b02 stm32.exti%s
+D stm32-gpio.ads	20200104054537 51a26128 stm32.gpio%s
+D stm32-mpu.ads		20191221010835 1b29721d stm32.mpu%s
+D stm32-pka.ads		20200419201641 f5169532 stm32.pka%s
+D stm32-pka.adb		20200419201614 33e01e8b stm32.pka%b
+D stm32-rng.ads		20200310052311 72b9a007 stm32.rng%s
+D stm32-sau.ads		20191219021940 64132c36 stm32.sau%s
+D stm32-spi.ads		20191225003607 5e462e85 stm32.spi%s
+D stm32_svd.ads		20200308054020 d6ce18af stm32_svd%s
+D stm32_svd-gpio.ads	20200314035824 c1a84fd8 stm32_svd.gpio%s
+D stm32_svd-gtzc.ads	20191210021618 00424b92 stm32_svd.gtzc%s
+D stm32_svd-mpu.ads	20200309040859 fe49aea5 stm32_svd.mpu%s
+D stm32_svd-pka.ads	20191210021618 0cc5a3b0 stm32_svd.pka%s
+D stm32_svd-pwr.ads	20191210021618 5e3dab35 stm32_svd.pwr%s
+D stm32_svd-rcc.ads	20191225005210 96a2a1cc stm32_svd.rcc%s
+D stm32_svd-rng.ads	20200116205039 af9f840a stm32_svd.rng%s
+D stm32_svd-sau.ads	20200309040733 2b57044a stm32_svd.sau%s
+D stm32_svd-spi.ads	20191210021618 b677676a stm32_svd.spi%s
+D system.ads		20190401185005 aa7dab5a system%s
+D s-bb.ads		20190401185023 09e072ae system.bb%s
+D s-bbbopa.ads		20200328200258 885893c1 system.bb.board_parameters%s
+D s-bbbosu.ads		20190401185107 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20190401185109 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20190401185112 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20191226013507 045cf410 system.bb.mcu_parameters%s
+D s-bbpara.ads		20190401185055 3a78968c system.bb.parameters%s
+D s-bbthre.ads		20190401185116 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20190401185115 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20190401185118 ad086247 system.bb.time%s
+D s-maccod.ads		20190401185034 6d68a701 system.machine_code%s
+D s-multip.ads		20190401185125 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20190401185126 229b14dd system.os_interface%s
+D s-stm32.ads		20191215050856 dbea749f system.stm32%s
+D s-stoele.ads		20190401185047 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20190401185048 34867c83 system.unsigned_types%s
+D /.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_s/gnat.adc  20200418215312 00000000
+G a e
+G c Z s b [test curve 4 14 none]
+G r i none [test curve 4 14 none] [pka stm32 11 15 none]
+G r c none [test curve 4 14 none] [enable_rng stm32__rng 11 14 none]
+G r c none [test curve 4 14 none] [random stm32__rng 13 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 7|1r6 1r26
+X 4 a-reatim.ads
+41K13*Real_Time 182e18 7|1w10 1r30
+X 6 curve.ads
+2K9*Curve 5l5 5e10 7|13b14 33l5 33t10
+3A12*ECDSA_HashStr{string}<integer> 4r52 7|15r52
+4U14*Test 4>20 4>35 4>48 7|15b14 32l8 32t12
+4a20 Name{string} 7|15b20 17r50
+4m35 NB{8|97M9} 7|15b35 17r68
+4a48 H{3A12} 7|15b48 27r41 28r41
+X 7 curve.adb
+17K15 EC[19|11] 18r11
+19b7 Result{boolean} 27m7 28m7 29r14
+20a7 PrivateKey{19|33A12[17]} 21r66 27r29
+21r7 PublicKey{19|42R9[17]} 28r30
+22a7 K{19|35A12[17]} 27r44
+24r7 Sig{19|37R9[17]} 27m47 27r47 28r44
+X 8 hal.ads
+34K9*HAL 6|1w6 1r26 8|166e8
+97M9*UInt32<11|74M9> 6|4r40 7|15r40
+X 9 hal-gpio.ads
+44h9*GPIO_Point
+X 10 hal-spi.ads
+48h9*SPI_Port
+X 11 interfac.ads
+74M9*Unsigned_32
+X 13 stm32.ads
+39K9*STM32 7|2r6 2r26 3r6 3r26 4r6 4r26 5r6 5r26 6r6 6r26 7r6 17r25 13|48e10
+X 14 stm32-board.ads
+50K15*Board 7|3w12 3r32 14|76e16
+X 15 stm32-device.ads
+50K15*Device 7|2w12 2r32 15|321e17
+X 17 stm32-gpio.ads
+49K15*GPIO 7|6w12 6r32 17|275e15
+X 18 stm32-mpu.ads
+5K15*MPU 7|5w12 5r32 18|24e14
+X 19 stm32-pka.ads
+8a4 Curve_Name{string} 7|17r36
+9m4 Num_Bits{8|97M9} 7|17r56
+11k15*PKA 7|7w12 17r31 19|293e14
+32A12 ECDSA_String{string}<integer>
+33A12 ECDSA_KeyStr{32A12[7|17]}<integer> 7|20r20[17]
+35A12 ECDSA_RandStr{32A12[7|17]}<integer> 7|22r20[17]
+37R9 ECDSA_SignatureStr 7|24r20[17]
+42R9 ECDSA_PublicKeyStr 7|21r20[17]
+245U14 Enable_Pka 7|26s7[17]
+259V13 ECDSA_Sign{boolean} 7|27s17[17]
+268V13 ECDSA_Valid{boolean} 7|28s17[17]
+289V13 Make_Random_Group_String{32A12[7|17]} 7|20s42[17] 22s42[17]
+291V13 Make_Public_Key_String{42R9[7|17]} 7|21s42[17]
+X 22 stm32-sau.ads
+5K15*SAU 7|4w12 4r32 22|18e14
+X 24 stm32_svd.ads
+10K9*STM32_SVD 7|8r6 8r26 9r6 9r26 11r6 11r26 24|294e14
+X 26 stm32_svd-gtzc.ads
+10K19*GTZC 7|9w16 9r36 26|5098e19
+X 29 stm32_svd-pwr.ads
+10K19*PWR 7|11w16 11r36 29|1166e18
+X 30 stm32_svd-rcc.ads
+10K19*RCC 7|8w16 8r36 30|2278e18
+

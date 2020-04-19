@@ -1,0 +1,50 @@
+[GENERATED OBJECT FILE]
+b__test_ns.o
+[PROJECT FILES]
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/test_ns.gpr
+20200418215312
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/middleware/middleware.gpr
+20190401184310
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/components/components.gpr
+20190401183837
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20190401183226
+/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/HAL.gpr
+20190401184150
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/STM32/stm32l5x2.gpr
+20191215002146
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/target_options.gpr
+20191211002256
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/runtime_build.gpr
+20191214190318
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/ravenscar_build.gpr
+20191214190238
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_ns/config.gpr
+20200307190213
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_ns/board.gpr
+20200307190213
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_ns.gpr
+20200307191500
+[BOUND OBJECT FILES]
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/test_ns.o
+[GENERATED SOURCE FILES]
+b__test_ns.ads
+b__test_ns.adb
+b__test_ns.ali
+[RESULTING OPTIONS]
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/lib/stm32l5discovery_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_ns/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/full/adalib/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l5nucleo_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/components/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/middleware/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+-L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5discovery_ns/full/adalib/
+-static
+-static-libgcc
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/full/adalib/libgnarl.a
+/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/full/adalib/libgnat.a
