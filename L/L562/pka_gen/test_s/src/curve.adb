@@ -25,9 +25,13 @@ package body Curve is
    begin
       Enable_Pka;
       Result := ECDSA_Sign (PrivateKey, H, K, Sig);
-      Result := ECDSA_Valid (PublicKey, H, Sig);
-      if not Result then
-         raise Program_Error with "curve fail";
+      if ECDSA_Point_On_Curve (PublicKey) then
+         Result := ECDSA_Valid (PublicKey, H, Sig);
+         if not Result then
+            raise Program_Error with "curve fail";
+         end if;
+      else
+         raise Program_Error with "Public key not on curve";
       end if;
    end Test;
 end Curve;
