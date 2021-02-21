@@ -1,16 +1,16 @@
-with HAL;            use HAL;
-with Ada.Real_Time;  use Ada.Real_Time;
-with STM32.Device;   use STM32.Device;
-with STM32.Board;    use STM32.Board;
-with STM32.SAU;      use STM32.SAU;
-with STM32.MPU;      use STM32.MPU;
-with STM32.GPIO;     use STM32.GPIO;
-with STM32_SVD.RCC;  use STM32_SVD.RCC;
-with STM32_SVD.GTZC; use STM32_SVD.GTZC;
+with HAL;                use HAL;
+with Ada.Real_Time;      use Ada.Real_Time;
+with STM32.Device;       use STM32.Device;
+with STM32.Board;        use STM32.Board;
+with STM32.SAU;          use STM32.SAU;
+with STM32.MPU;          use STM32.MPU;
+with STM32.GPIO;         use STM32.GPIO;
+with STM32_SVD.RCC;      use STM32_SVD.RCC;
+with STM32_SVD.GTZC;     use STM32_SVD.GTZC;
 --  with STM32_SVD.PKA;  use STM32_SVD.PKA;
-with STM32_SVD.PWR;  use STM32_SVD.PWR;
+with STM32_SVD.PWR;      use STM32_SVD.PWR;
 
-with Curve;          use Curve;
+with Curve;              use Curve;
 
 with Ada.Real_Time; use Ada.Real_Time;
 with Ada.Synchronous_Task_Control; use Ada.Synchronous_Task_Control;
@@ -32,23 +32,23 @@ procedure Test_S is
       Add_Attrib (AttrIdx => 1, Attrib => Dev);
       Add_Region (Region_Num => 0,
                   Addr       => 16#3000_0000#,
-                  Size       => (2 ** 18) - 1,
+                  Size       => (2 ** 18),
                   AttIdx     => 0);
       Add_Region (Region_Num => 1,
                   Addr       => 16#2000_0000#,
-                  Size       => (2 ** 18) - 1,
+                  Size       => (2 ** 18),
                   AttIdx     => 0);
       Add_Region (Region_Num => 2,
                   Addr       => 16#5000_0000#,
-                  Size       => 16#1000_0000# - 1,
+                  Size       => 16#1000_0000#,
                   AttIdx     => 1);
       Add_Region (Region_Num => 3,
                   Addr       => 16#4000_0000#,
-                  Size       => 16#1000_0000# - 1,
+                  Size       => 16#1000_0000#,
                   AttIdx     => 1);
       Add_Region (Region_Num => 4,
                   Addr       => 16#E000_0000#,
-                  Size       => 16#1000_0000# - 1,
+                  Size       => 16#1000_0000#,
                   AttIdx     => 1);
       Enable_MPU;
    end Init_MPU;
@@ -77,7 +77,6 @@ procedure Test_S is
    procedure Enable_GTZC_SRAM
    is
    begin
-      --  Mark 16#2002xxxx as NS
       SEC_MPCBB1_Periph.MPCBB1_CR.SRWILADIS := True;
       SEC_MPCBB1_Periph.MPCBB1_VCTR16.Val := 0;
       SEC_MPCBB1_Periph.MPCBB1_VCTR17.Val := 0;
@@ -96,6 +95,7 @@ procedure Test_S is
       SEC_MPCBB2_Periph.MPCBB2_VCTR6.Val := 0;
       SEC_MPCBB2_Periph.MPCBB2_VCTR7.Val := 0;
       SEC_RCC_Periph.AHB1ENR.GTZCEN := True;
+      SEC_RCC_Periph.APB1ENR1.OPAMPEN := True;
    end Enable_GTZC_SRAM;
 
    H : ECDSA_HashStr :=
