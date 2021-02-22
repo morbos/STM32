@@ -1,11 +1,11 @@
-with "Ada_Drivers_Library/boards/stm32l5_nucleo.gpr";
+with "Ada_Drivers_Library/boards/stm32l5_nucleo_s.gpr";
 with "Ada_Drivers_Library/boards/common_config.gpr";
 
-project try_l522 extends "../common.gpr" is
+project try_l552 extends "./common.gpr" is
 
    for Languages use ("Ada");
 
-   for Main use ("try_l522.adb");
+   for Main use ("try_l552.adb");
 
    for Source_Dirs use ("src/**");
 
@@ -13,10 +13,10 @@ project try_l522 extends "../common.gpr" is
 
    for Target use "arm-eabi";
 
-   for Runtime ("Ada") use STM32L5_Nucleo'Runtime("Ada");
+   for Runtime ("Ada") use STM32L5_Nucleo_S'Runtime("Ada");
 
    package Builder is
      for Global_Configuration_Pragmas use "gnat.adc";
    end Builder;
 
-end try_l522;
+end try_l552;

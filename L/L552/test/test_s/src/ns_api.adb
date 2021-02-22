@@ -7,6 +7,7 @@ package body NS_Api is
    function S_From_NS (X : UInt32) return UInt32
    is
    begin
+      null;
       Toggle (LEDs (Idx));
       if Idx = LEDs'Last then
          Idx := LEDs'First;

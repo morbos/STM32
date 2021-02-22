@@ -1,52 +1,17 @@
-with HAL;            use HAL;
-with Ada.Real_Time;  use Ada.Real_Time;
-with NS_Api;         use NS_Api;
-with STM32.Device;   use STM32.Device;
-with STM32.Board;    use STM32.Board;
-with STM32.SAU;      use STM32.SAU;
-with STM32.MPU;      use STM32.MPU;
-with STM32.GPIO;     use STM32.GPIO;
-with STM32_SVD.RCC;  use STM32_SVD.RCC;
+with System;
 with STM32_SVD.GTZC; use STM32_SVD.GTZC;
-with Trace;          use Trace;
 
-with Ada.Real_Time; use Ada.Real_Time;
-with Ada.Synchronous_Task_Control; use Ada.Synchronous_Task_Control;
+package body CM33 is
 
-procedure Test_S is
-   procedure S_To_NS;
-   pragma Import (C, S_To_NS, "s_to_ns");
-
---   procedure Init_IDAU;
---   pragma Import (C, Init_IDAU, "init_idau");
-   procedure My_Delay;
-
-   procedure My_Delay is
-   begin
-      delay until Clock + Milliseconds (100);
-   end My_Delay;
---   procedure Init_SAU;
---   procedure Init_SAU
---   is
---   begin
---      Add_Region (Region_Num => 0,
---                  Addr       => 16#3000_0000#,
---                  Size       => (2 ** 16),
---                  NSC        => False);
---      Add_Region (Region_Num => 1,
---                  Addr       => 16#2001_0000#,
---                  Size       => (2 ** 16),
---                  NSC        => True);
---      Enable_SAU;
---   end Init_SAU;
-   procedure Init_MPU;
    procedure Init_MPU
    is
       Ram : Attr_Type := (Outer => 4, Inner => 4);
+      Rom : Attr_Type := (Outer => 4, Inner => 5);
       Dev : Attr_Type := (Outer => 0, Inner => 0);
    begin
       Add_Attrib (AttrIdx => 0, Attrib => Ram);
       Add_Attrib (AttrIdx => 1, Attrib => Dev);
+      Add_Attrib (AttrIdx => 2, Attrib => Rom);
       Add_Region (Region_Num => 0,
                   Addr       => 16#3000_0000#,
                   Size       => (2 ** 18),
@@ -67,10 +32,17 @@ procedure Test_S is
                   Addr       => 16#E000_0000#,
                   Size       => 16#1000_0000#,
                   AttIdx     => 1);
+      Add_Region (Region_Num => 5,
+                  Addr       => 16#0c00_0000#,
+                  Size       => 16#0004_0000#,
+                  AttIdx     => 2);
+      Add_Region (Region_Num => 6,
+                  Addr       => 16#0802_0000#,
+                  Size       => 16#0004_0000#,
+                  AttIdx     => 2);
       Enable_MPU;
    end Init_MPU;
 
-   procedure Enable_MCO;
    procedure Enable_MCO
    is
       GPIO_Conf       : GPIO_Port_Configuration;
@@ -90,12 +62,19 @@ procedure Test_S is
       SEC_RCC_Periph.CFGR.MCOSEL := 1; --  SYSCLK
    end Enable_MCO;
 
-   procedure Enable_GTZC_SRAM;
    procedure Enable_GTZC_SRAM
    is
    begin
       --  Mark 16#2002xxxx as NS
       SEC_MPCBB1_Periph.MPCBB1_CR.SRWILADIS := True;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR8.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR9.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR10.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR11.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR12.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR13.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR14.Val := 0;
+      SEC_MPCBB1_Periph.MPCBB1_VCTR15.Val := 0;
       SEC_MPCBB1_Periph.MPCBB1_VCTR16.Val := 0;
       SEC_MPCBB1_Periph.MPCBB1_VCTR17.Val := 0;
       SEC_MPCBB1_Periph.MPCBB1_VCTR18.Val := 0;
@@ -113,18 +92,32 @@ procedure Test_S is
       SEC_MPCBB2_Periph.MPCBB2_VCTR6.Val := 0;
       SEC_MPCBB2_Periph.MPCBB2_VCTR7.Val := 0;
       SEC_RCC_Periph.AHB1ENR.GTZCEN := True;
+      SEC_RCC_Periph.APB1ENR1.OPAMPEN := True;
    end Enable_GTZC_SRAM;
 
-   subtype SWO is GPIO_Point;
-   SWO_Pin  : SWO renames PB3;
+   procedure Enable_ICACHE
+   is
+   begin
+      SEC_ICache_Periph.ICACHE_CR.EN := True;
+   end Enable_ICACHE;
 
-begin
---   Enable_Clock (SWO_Pin);
---   Configure_Tracing;
-   Init_MPU;
-   Initialize_Board;
---   Enable_MCO;
-   Enable_GTZC_SRAM;
-   All_NS; --  Let IDAU defaults decide security.
-   S_To_NS; --  S_To_NS will not return.
-end Test_S;
+   procedure Init_CM33
+   is
+   begin
+      Enable_ICACHE;
+      Enable_GTZC_SRAM;
+      Init_MPU;
+      All_NS; --  Let IDAU defaults decide security.
+   end Init_CM33;
+
+   function Test_Address (Addr : System.Address) return Test_Target_Response
+   is
+      X : UInt32;
+      TTR : Test_Target_Response;
+      for X'Address use TTR'Address;
+   begin
+      X := Test_Address_Helper (Addr);
+      return TTR;
+   end Test_Address;
+
+end CM33;

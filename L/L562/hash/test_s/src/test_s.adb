@@ -30,23 +30,23 @@ procedure Test_S is
       Add_Attrib (AttrIdx => 1, Attrib => Dev);
       Add_Region (Region_Num => 0,
                   Addr       => 16#3000_0000#,
-                  Size       => (2 ** 18) - 1,
+                  Size       => (2 ** 18),
                   AttIdx     => 0);
       Add_Region (Region_Num => 1,
                   Addr       => 16#2000_0000#,
-                  Size       => (2 ** 18) - 1,
+                  Size       => (2 ** 18),
                   AttIdx     => 0);
       Add_Region (Region_Num => 2,
                   Addr       => 16#5000_0000#,
-                  Size       => 16#1000_0000# - 1,
+                  Size       => 16#1000_0000#,
                   AttIdx     => 1);
       Add_Region (Region_Num => 3,
                   Addr       => 16#4000_0000#,
-                  Size       => 16#1000_0000# - 1,
+                  Size       => 16#1000_0000#,
                   AttIdx     => 1);
       Add_Region (Region_Num => 4,
                   Addr       => 16#E000_0000#,
-                  Size       => 16#1000_0000# - 1,
+                  Size       => 16#1000_0000#,
                   AttIdx     => 1);
       Enable_MPU;
    end Init_MPU;
