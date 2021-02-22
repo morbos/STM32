@@ -3,9 +3,9 @@ with "../Ada_Drivers_Library/boards/common_config";
 project Common is
 
    type LOADER_Type is
-      ("RAM", "ROM", "ROM_S_L552", "RAM_S_L552", "ROM_NS_L552", "RAM_NS_L552" );
+      ("RAM", "ROM", "ROM_S_L5x2", "RAM_S_L5x2", "ROM_NS_L5x2", "RAM_NS_L5x2" );
 
-   LOADER : LOADER_Type := external ("LOADER", "ROM_NS_L552");
+   LOADER : LOADER_Type := external ("LOADER", "ROM_NS_L5x2");
 
    type RTS_Type is ("ravenscar-sfp", "ravenscar-full");
 --   RTS : RTS_Type := External ("RTS", "ravenscar-sfp");
