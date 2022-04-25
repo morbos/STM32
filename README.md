@@ -12,13 +12,15 @@ L - Stands for the Low power line
 443 - is the # of the part in that line
 CC - helps to clarify the package used.
 
-So here we have subdirs:
+So here we have five subdirs:
 
-L & F & WB & WL
+F & L & U & WB & WL
 
 F handles the first generation STM32 parts. Not too much here other
 than some work I do on the BluePill STM32F103C8 its in STM32/F/F103.
 
-WB is the Bluetooth controller.
+L is a low-power version of the F
+U is a low-power controller with higher performance than L
 
-WL is the new subghz controller (LoRa etc)
+WB is the Bluetooth controller.
+WL is the LoRa controller

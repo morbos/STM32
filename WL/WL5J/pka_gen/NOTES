@@ -1,0 +1,281 @@
+All input to crypto is in a block ram at 0x420c2400 -
+
+
+Lets consider ECDSA Sign:
+The in structure calls out these pointers:
+  in.primeOrderSize =  prime256v1_Order_len;
+  in.modulusSize =     prime256v1_Prime_len;
+  in.coefSign =        prime256v1_A_sign;
+  in.coef =            prime256v1_absA;
+  in.modulus =         prime256v1_Prime;
+  in.basePointX =      prime256v1_GeneratorX;
+  in.basePointY =      prime256v1_GeneratorY;
+  in.primeOrder =      prime256v1_Order;
+
+  in.integer =         SigGen_k;
+  in.hash =            SigGen_Hash_Msg;
+  in.privateKey =      SigGen_d;
+
+#define PKA_ECDSA_SIGN_IN_ORDER_NB_BITS           ((0x0400UL - PKA_RAM_OFFSET)>>2)   /*!< Input order number of bits */
+#define PKA_ECDSA_SIGN_IN_MOD_NB_BITS             ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus number of bits */
+#define PKA_ECDSA_SIGN_IN_A_COEFF_SIGN            ((0x0408UL - PKA_RAM_OFFSET)>>2)   /*!< Input sign of the 'a' coefficient */
+#define PKA_ECDSA_SIGN_IN_A_COEFF                 ((0x040CUL - PKA_RAM_OFFSET)>>2)   /*!< Input ECC curve 'a' coefficient */
+
+0x420c2400: 0x00000100 0x00000100 0x00000001 0x00000003
+
+The hash:
+
+#define PKA_ECDSA_SIGN_IN_HASH_E                  ((0x0DE8UL - PKA_RAM_OFFSET)>>2)   /*!< Input e, hash of the message */
+
+0x420c2de0: 0x00000000 0x00000000 0xa133ec56 0xdbc4e7a6
+0x420c2df0: 0x1a900377 0x4e1e2efb 0x04fe0950 0xc2c58972
+0x420c2e00: 0xe36c1342 0x44acf6b7 0x00000000 0x00000000
+
+The C program's data structure:
+
+const uint8_t SigGen_Hash_Msg[] = {
+  0x44, 0xac, 0xf6, 0xb7, 0xe3, 0x6c, 0x13, 0x42, 0xc2, 0xc5, 0x89, 0x72, 0x04, 0xfe, 0x09, 0x50,
+  0x4e, 0x1e, 0x2e, 0xfb, 0x1a, 0x90, 0x03, 0x77, 0xdb, 0xc4, 0xe7, 0xa6, 0xa1, 0x33, 0xec, 0x56
+};
+
+Observe the writing order above!
+
+The Private key:
+
+#define PKA_ECDSA_SIGN_IN_PRIVATE_KEY_D           ((0x0E3CUL - PKA_RAM_OFFSET)>>2)   /*!< Input d, private key */
+
+0x420c2e30: 0x00000000 0x00000000 0x00000000 0xda72b464
+0x420c2e40: 0xca54a56d 0x0b4e3eac 0x5b44c813 0x59f4771a
+0x420c2e50: 0x1f4fa8ee 0x715f8b58 0x519b423d 0x00000000
+
+#define PKA_ECDSA_SIGN_IN_MOD_GF                  ((0x0460UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus GF(p) */
+
+  in.modulus =         prime256v1_Prime;
+
+0x420c2460: 0xffffffff 0xffffffff 0xffffffff 0x00000000
+0x420c2470: 0x00000000 0x00000000 0x00000001 0xffffffff
+0x420c2480: 0x00000000 0x00000000 0x00000000 0x00000000
+0x420c2490: 0x00000000 0x00000000 0x00000000 0x00000000
+
+const uint8_t prime256v1_Prime[] = {
+/*0x00,*/ 0xff, 0xff, 0xff, 0xff, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+    0xff, 0xff, 0xff
+};
+
+#define PKA_ECDSA_SIGN_IN_INITIAL_POINT_X         ((0x055CUL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P X coordinate */
+
+0x420c2550: 0x00000000 0x00000000 0x00000000 0xd898c296
+0x420c2560: 0xf4a13945 0x2deb33a0 0x77037d81 0x63a440f2
+0x420c2570: 0xf8bce6e5 0xe12c4247 0x6b17d1f2 0x00000000
+
+const uint8_t prime256v1_GeneratorX[] = {
+    0x6b, 0x17, 0xd1, 0xf2, 0xe1, 0x2c, 0x42, 0x47, 0xf8, 0xbc, 0xe6, 0xe5, 0x63, 0xa4, 0x40,
+    0xf2, 0x77, 0x03, 0x7d, 0x81, 0x2d, 0xeb, 0x33, 0xa0, 0xf4, 0xa1, 0x39, 0x45, 0xd8, 0x98,
+    0xc2, 0x96
+};
+
+#define PKA_ECDSA_SIGN_IN_INITIAL_POINT_Y         ((0x05B0UL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P Y coordinate */
+
+0x420c25b0: 0x37bf51f5 0xcbb64068 0x6b315ece 0x2bce3357
+0x420c25c0: 0x7c0f9e16 0x8ee7eb4a 0xfe1a7f9b 0x4fe342e2
+
+const uint8_t prime256v1_GeneratorY[] = {
+    0x4f, 0xe3, 0x42, 0xe2, 0xfe, 0x1a, 0x7f, 0x9b, 0x8e, 0xe7, 0xeb, 0x4a, 0x7c, 0x0f, 0x9e,
+    0x16, 0x2b, 0xce, 0x33, 0x57, 0x6b, 0x31, 0x5e, 0xce, 0xcb, 0xb6, 0x40, 0x68, 0x37, 0xbf,
+    0x51, 0xf5
+};
+
+
+/*******************  Bits definition for PKA RAM  *************************/
+#define PKA_RAM_OFFSET                            0x0400UL                           /*!< PKA RAM address offset */
+
+/* Compute Montgomery parameter input data */
+#define PKA_MONTGOMERY_PARAM_IN_MOD_NB_BITS       ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus number of bits */
+#define PKA_MONTGOMERY_PARAM_IN_MODULUS           ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus */
+
+/* Compute Montgomery parameter output data */
+#define PKA_MONTGOMERY_PARAM_OUT_PARAMETER        ((0x0594UL - PKA_RAM_OFFSET)>>2)   /*!< Output Montgomery parameter */
+
+/* Compute modular exponentiation input data */
+#define PKA_MODULAR_EXP_IN_EXP_NB_BITS            ((0x0400UL - PKA_RAM_OFFSET)>>2)   /*!< Input exponent number of bits */
+#define PKA_MODULAR_EXP_IN_OP_NB_BITS             ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_MODULAR_EXP_IN_MONTGOMERY_PARAM       ((0x0594UL - PKA_RAM_OFFSET)>>2)   /*!< Input storage area for Montgomery parameter */
+#define PKA_MODULAR_EXP_IN_EXPONENT_BASE          ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input base of the exponentiation */
+#define PKA_MODULAR_EXP_IN_EXPONENT               ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Input exponent to process */
+#define PKA_MODULAR_EXP_IN_MODULUS                ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus */
+
+/* Compute modular exponentiation output data */
+#define PKA_MODULAR_EXP_OUT_MONTGOMERY_PARAM      ((0x0594UL - PKA_RAM_OFFSET)>>2)   /*!< Output storage area for Montgomery parameter */
+#define PKA_MODULAR_EXP_OUT_SM_ALGO_ACC1          ((0x0724UL - PKA_RAM_OFFSET)>>2)   /*!< Output SM algorithm accumulator 1 */
+#define PKA_MODULAR_EXP_OUT_SM_ALGO_ACC2          ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Output SM algorithm accumulator 2 */
+#define PKA_MODULAR_EXP_OUT_EXPONENT_BASE         ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Output base of the exponentiation */
+#define PKA_MODULAR_EXP_OUT_SM_ALGO_ACC3          ((0x0E3CUL - PKA_RAM_OFFSET)>>2)   /*!< Output SM algorithm accumulator 3 */
+
+/* Compute ECC scalar multiplication input data */
+#define PKA_ECC_SCALAR_MUL_IN_EXP_NB_BITS         ((0x0400UL - PKA_RAM_OFFSET)>>2)   /*!< Input exponent number of bits */
+#define PKA_ECC_SCALAR_MUL_IN_OP_NB_BITS          ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_ECC_SCALAR_MUL_IN_A_COEFF_SIGN        ((0x0408UL - PKA_RAM_OFFSET)>>2)   /*!< Input sign of the 'a' coefficient */
+#define PKA_ECC_SCALAR_MUL_IN_A_COEFF             ((0x040CUL - PKA_RAM_OFFSET)>>2)   /*!< Input ECC curve 'a' coefficient */
+#define PKA_ECC_SCALAR_MUL_IN_MOD_GF              ((0x0460UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus GF(p) */
+#define PKA_ECC_SCALAR_MUL_IN_MONTGOMERY_PARAM    ((0x04B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input storage area for Montgomery parameter */
+#define PKA_ECC_SCALAR_MUL_IN_K                   ((0x0508UL - PKA_RAM_OFFSET)>>2)   /*!< Input 'k' of KP */
+#define PKA_ECC_SCALAR_MUL_IN_INITIAL_POINT_X     ((0x055CUL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P X coordinate */
+#define PKA_ECC_SCALAR_MUL_IN_INITIAL_POINT_Y     ((0x05B0UL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P Y coordinate */
+
+/* Compute ECC scalar multiplication output data */
+#define PKA_ECC_SCALAR_MUL_OUT_RESULT_X           ((0x055CUL - PKA_RAM_OFFSET)>>2)   /*!< Output result X coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_RESULT_Y           ((0x05B0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result Y coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_LAST_DOUBLE_X1     ((0x0DE8UL - PKA_RAM_OFFSET)>>2)   /*!< Output last double X1 coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_LAST_DOUBLE_Y1     ((0x0E3CUL - PKA_RAM_OFFSET)>>2)   /*!< Output last double Y1 coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_LAST_DOUBLE_Z1     ((0x0E90UL - PKA_RAM_OFFSET)>>2)   /*!< Output last double Z1 coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_CHECK_POINT_X2     ((0x0EE4UL - PKA_RAM_OFFSET)>>2)   /*!< Output check point X2 coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_CHECK_POINT_Y2     ((0x0F38UL - PKA_RAM_OFFSET)>>2)   /*!< Output check point Y2 coordinate */
+#define PKA_ECC_SCALAR_MUL_OUT_CHECK_POINT_Z2     ((0x0F8CUL - PKA_RAM_OFFSET)>>2)   /*!< Output check point Z2 coordinate */
+
+/* Point check input data */
+#define PKA_POINT_CHECK_IN_MOD_NB_BITS            ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus number of bits */
+#define PKA_POINT_CHECK_IN_A_COEFF_SIGN           ((0x0408UL - PKA_RAM_OFFSET)>>2)   /*!< Input sign of the 'a' coefficient */
+#define PKA_POINT_CHECK_IN_A_COEFF                ((0x040CUL - PKA_RAM_OFFSET)>>2)   /*!< Input ECC curve 'a' coefficient */
+#define PKA_POINT_CHECK_IN_B_COEFF                ((0x07FCUL - PKA_RAM_OFFSET)>>2)   /*!< Input ECC curve 'b' coefficient */
+#define PKA_POINT_CHECK_IN_MOD_GF                 ((0x0460UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus GF(p) */
+#define PKA_POINT_CHECK_IN_INITIAL_POINT_X        ((0x055CUL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P X coordinate */
+#define PKA_POINT_CHECK_IN_INITIAL_POINT_Y        ((0x05B0UL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P Y coordinate */
+
+/* Point check output data */
+#define PKA_POINT_CHECK_OUT_ERROR                 ((0x0400UL - PKA_RAM_OFFSET)>>2)   /*!< Output error */
+
+/* ECDSA signature input data */
+#define PKA_ECDSA_SIGN_IN_ORDER_NB_BITS           ((0x0400UL - PKA_RAM_OFFSET)>>2)   /*!< Input order number of bits */
+#define PKA_ECDSA_SIGN_IN_MOD_NB_BITS             ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus number of bits */
+#define PKA_ECDSA_SIGN_IN_A_COEFF_SIGN            ((0x0408UL - PKA_RAM_OFFSET)>>2)   /*!< Input sign of the 'a' coefficient */
+#define PKA_ECDSA_SIGN_IN_A_COEFF                 ((0x040CUL - PKA_RAM_OFFSET)>>2)   /*!< Input ECC curve 'a' coefficient */
+#define PKA_ECDSA_SIGN_IN_MOD_GF                  ((0x0460UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus GF(p) */
+#define PKA_ECDSA_SIGN_IN_K                       ((0x0508UL - PKA_RAM_OFFSET)>>2)   /*!< Input k value of the ECDSA */
+#define PKA_ECDSA_SIGN_IN_INITIAL_POINT_X         ((0x055CUL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P X coordinate */
+#define PKA_ECDSA_SIGN_IN_INITIAL_POINT_Y         ((0x05B0UL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P Y coordinate */
+#define PKA_ECDSA_SIGN_IN_HASH_E                  ((0x0DE8UL - PKA_RAM_OFFSET)>>2)   /*!< Input e, hash of the message */
+#define PKA_ECDSA_SIGN_IN_PRIVATE_KEY_D           ((0x0E3CUL - PKA_RAM_OFFSET)>>2)   /*!< Input d, private key */
+#define PKA_ECDSA_SIGN_IN_ORDER_N                 ((0x0E94UL - PKA_RAM_OFFSET)>>2)   /*!< Input n, order of the curve */
+
+/* ECDSA signature output data */
+#define PKA_ECDSA_SIGN_OUT_ERROR                  ((0x0EE8UL - PKA_RAM_OFFSET)>>2)   /*!< Output error */
+#define PKA_ECDSA_SIGN_OUT_SIGNATURE_R            ((0x0700UL - PKA_RAM_OFFSET)>>2)   /*!< Output signature r */
+#define PKA_ECDSA_SIGN_OUT_SIGNATURE_S            ((0x0754UL - PKA_RAM_OFFSET)>>2)   /*!< Output signature s */
+#define PKA_ECDSA_SIGN_OUT_FINAL_POINT_X          ((0x103CUL - PKA_RAM_OFFSET)>>2)   /*!< Output final point kP X coordinate */
+#define PKA_ECDSA_SIGN_OUT_FINAL_POINT_Y          ((0x1090UL - PKA_RAM_OFFSET)>>2)   /*!< Output final point kP Y coordinate */
+
+/* ECDSA verification input data */
+#define PKA_ECDSA_VERIF_IN_ORDER_NB_BITS          ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input order number of bits */
+#define PKA_ECDSA_VERIF_IN_MOD_NB_BITS            ((0x04B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus number of bits */
+#define PKA_ECDSA_VERIF_IN_A_COEFF_SIGN           ((0x045CUL - PKA_RAM_OFFSET)>>2)   /*!< Input sign of the 'a' coefficient */
+#define PKA_ECDSA_VERIF_IN_A_COEFF                ((0x0460UL - PKA_RAM_OFFSET)>>2)   /*!< Input ECC curve 'a' coefficient */
+#define PKA_ECDSA_VERIF_IN_MOD_GF                 ((0x04B8UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus GF(p) */
+#define PKA_ECDSA_VERIF_IN_INITIAL_POINT_X        ((0x05E8UL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P X coordinate */
+#define PKA_ECDSA_VERIF_IN_INITIAL_POINT_Y        ((0x063CUL - PKA_RAM_OFFSET)>>2)   /*!< Input initial point P Y coordinate */
+#define PKA_ECDSA_VERIF_IN_PUBLIC_KEY_POINT_X     ((0x0F40UL - PKA_RAM_OFFSET)>>2)   /*!< Input public key point X coordinate */
+#define PKA_ECDSA_VERIF_IN_PUBLIC_KEY_POINT_Y     ((0x0F94UL - PKA_RAM_OFFSET)>>2)   /*!< Input public key point Y coordinate */
+#define PKA_ECDSA_VERIF_IN_SIGNATURE_R            ((0x1098UL - PKA_RAM_OFFSET)>>2)   /*!< Input r, part of the signature */
+#define PKA_ECDSA_VERIF_IN_SIGNATURE_S            ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input s, part of the signature */
+#define PKA_ECDSA_VERIF_IN_HASH_E                 ((0x0FE8UL - PKA_RAM_OFFSET)>>2)   /*!< Input e, hash of the message */
+#define PKA_ECDSA_VERIF_IN_ORDER_N                ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input n, order of the curve */
+
+/* ECDSA verification output data */
+#define PKA_ECDSA_VERIF_OUT_RESULT                ((0x05B0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* RSA CRT exponentiation input data */
+#define PKA_RSA_CRT_EXP_IN_MOD_NB_BITS            ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operands number of bits */
+#define PKA_RSA_CRT_EXP_IN_DP_CRT                 ((0x065CUL - PKA_RAM_OFFSET)>>2)   /*!< Input Dp CRT parameter */
+#define PKA_RSA_CRT_EXP_IN_DQ_CRT                 ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Input Dq CRT parameter */
+#define PKA_RSA_CRT_EXP_IN_QINV_CRT               ((0x07ECUL - PKA_RAM_OFFSET)>>2)   /*!< Input qInv CRT parameter */
+#define PKA_RSA_CRT_EXP_IN_PRIME_P                ((0x097CUL - PKA_RAM_OFFSET)>>2)   /*!< Input Prime p */
+#define PKA_RSA_CRT_EXP_IN_PRIME_Q                ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input Prime q */
+#define PKA_RSA_CRT_EXP_IN_EXPONENT_BASE          ((0x0EECUL - PKA_RAM_OFFSET)>>2)   /*!< Input base of the exponentiation */
+
+/* RSA CRT exponentiation output data */
+#define PKA_RSA_CRT_EXP_OUT_RESULT                ((0x0724UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Modular reduction input data */
+#define PKA_MODULAR_REDUC_IN_OP_LENGTH            ((0x0400UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand length */
+#define PKA_MODULAR_REDUC_IN_OPERAND              ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand */
+#define PKA_MODULAR_REDUC_IN_MOD_LENGTH           ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus length */
+#define PKA_MODULAR_REDUC_IN_MODULUS              ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus */
+
+/* Modular reduction output data */
+#define PKA_MODULAR_REDUC_OUT_RESULT              ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Arithmetic addition input data */
+#define PKA_ARITHMETIC_ADD_NB_BITS                ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_ARITHMETIC_ADD_IN_OP1                 ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_ARITHMETIC_ADD_IN_OP2                 ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+
+/* Arithmetic addition output data */
+#define PKA_ARITHMETIC_ADD_OUT_RESULT             ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Arithmetic substraction input data */
+#define PKA_ARITHMETIC_SUB_NB_BITS                ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_ARITHMETIC_SUB_IN_OP1                 ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_ARITHMETIC_SUB_IN_OP2                 ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+
+/* Arithmetic substraction output data */
+#define PKA_ARITHMETIC_SUB_OUT_RESULT             ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Arithmetic multiplication input data */
+#define PKA_ARITHMETIC_MUL_NB_BITS                ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_ARITHMETIC_MUL_IN_OP1                 ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_ARITHMETIC_MUL_IN_OP2                 ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+
+/* Arithmetic multiplication output data */
+#define PKA_ARITHMETIC_MUL_OUT_RESULT             ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Comparison input data */
+#define PKA_COMPARISON_NB_BITS                    ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_COMPARISON_IN_OP1                     ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_COMPARISON_IN_OP2                     ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+
+/* Comparison output data */
+#define PKA_COMPARISON_OUT_RESULT                 ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Modular addition input data */
+#define PKA_MODULAR_ADD_NB_BITS                   ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_MODULAR_ADD_IN_OP1                    ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_MODULAR_ADD_IN_OP2                    ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+#define PKA_MODULAR_ADD_IN_OP3_MOD                ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op3 (modulus) */
+
+/* Modular addition output data */
+#define PKA_MODULAR_ADD_OUT_RESULT                ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Modular inversion input data */
+#define PKA_MODULAR_INV_NB_BITS                   ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_MODULAR_INV_IN_OP1                    ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_MODULAR_INV_IN_OP2_MOD                ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 (modulus) */
+
+/* Modular inversion output data */
+#define PKA_MODULAR_INV_OUT_RESULT                ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Modular substraction input data */
+#define PKA_MODULAR_SUB_NB_BITS                   ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_MODULAR_SUB_IN_OP1                    ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_MODULAR_SUB_IN_OP2                    ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+#define PKA_MODULAR_SUB_IN_OP3_MOD                ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op3 */
+
+/* Modular substraction output data */
+#define PKA_MODULAR_SUB_OUT_RESULT                ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Montgomery multiplication input data */
+#define PKA_MONTGOMERY_MUL_NB_BITS                ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_MONTGOMERY_MUL_IN_OP1                 ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_MONTGOMERY_MUL_IN_OP2                 ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+#define PKA_MONTGOMERY_MUL_IN_OP3_MOD             ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input modulus */
+
+/* Montgomery multiplication output data */
+#define PKA_MONTGOMERY_MUL_OUT_RESULT             ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */
+
+/* Generic Arithmetic input data */
+#define PKA_ARITHMETIC_ALL_OPS_NB_BITS            ((0x0404UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand number of bits */
+#define PKA_ARITHMETIC_ALL_OPS_IN_OP1             ((0x08B4UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op1 */
+#define PKA_ARITHMETIC_ALL_OPS_IN_OP2             ((0x0A44UL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+#define PKA_ARITHMETIC_ALL_OPS_IN_OP3             ((0x0D5CUL - PKA_RAM_OFFSET)>>2)   /*!< Input operand op2 */
+
+/* Generic Arithmetic output data */
+#define PKA_ARITHMETIC_ALL_OPS_OUT_RESULT         ((0x0BD0UL - PKA_RAM_OFFSET)>>2)   /*!< Output result */

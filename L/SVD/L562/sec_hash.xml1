@@ -1,0 +1,5 @@
+    <peripheral derivedFrom="HASH">
+      <name>SEC_HASH</name>
+	  <disableCondition>DCB-&gt;DSCSR-&gt;CDS == 0 </disableCondition>
+      <baseAddress>0x520C0400</baseAddress>
+    </peripheral>

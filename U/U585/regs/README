@@ -1,0 +1,1 @@
+~/ada/xml/logs2dump.rb -x OTG_FS,SEC_OTG_FS -s ~/ada/xml/STM32U5xx.svd >idx.txt

@@ -18,6 +18,7 @@ with Ravenscar_Time;
 with Ada.Real_Time;   use Ada.Real_Time;
 with Ada.Text_IO;     use Ada.Text_IO;
 with Radio_Int;       pragma Unreferenced (Radio_Int);
+with Ada.Synchronous_Task_Control; use Ada.Synchronous_Task_Control;
 
 procedure I2C_1306 is
 
@@ -162,10 +163,7 @@ begin
 --   Initialize_Debug_SubGhz_GPIO;
 
    loop
-      Turn_On (Green_LED);
-      My_Delay;
-      Turn_Off (Green_LED);
-      My_Delay;
+      Suspend_Until_True (Radio_Int.Message_Go);
       X := 40;
       Y := 20;
       DrawString (Display, X, Y, "      ", 1);
@@ -178,5 +176,6 @@ begin
       X := 40;
       Y := 30;
       DrawString (Display, X, Y, Radio_Int.Crc8'Image, 1);
+      Turn_Off (Green_LED);
    end loop;
 end I2C_1306;

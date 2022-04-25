@@ -1,0 +1,202 @@
+    <peripheral>
+      <name>SAU</name>
+      <description>Security Attribution Unit</description>
+      <groupName>SAU</groupName>
+      <baseAddress>0xe000edd0</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x1C</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>SAU_CTRL</name>
+          <displayName>SAU_CTRL</displayName>
+          <description>SAU Control Register</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x0</resetValue>
+          <fields>
+            <field>
+              <name>ALLNS</name>
+              <description>All Non-secure. When SAU_CTRL.ENABLE is 0 this bit controls if the memory is marked as Non-secure or Secure</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ENABLE</name>
+              <description>Enables the SAU</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SAU_TYPE</name>
+          <displayName>SAU_TYPE</displayName>
+          <description>Indicates the number of regions implemented by the Security Attribution Unit.</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000008</resetValue>
+          <fields>
+            <field>
+              <name>SREGION</name>
+              <description>The number of implemented SAU regions</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SAU_RNR</name>
+          <displayName>SAU_RNR</displayName>
+          <description>Selects the region currently accessed by SAU_RBAR and SAU_RLAR</description>
+          <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>REGION</name>
+              <description>Indicates the SAU region accessed by SAU_RBAR and SAU_RLAR</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SAU_RBAR</name>
+          <displayName>SAU_RBAR</displayName>
+          <description>SAU Region Base Address Register</description>
+          <addressOffset>0xc</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>BADDR</name>
+              <description>Holds bits [31:5] of the base address for the selected SAU region</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SAU_RLAR</name>
+          <displayName>SAU_RLAR</displayName>
+          <description>SAU Region Limit Address Register</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>LADDR</name>
+              <description>Holds bits [31:5] of the limit address for the selected SAU region</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>NSC</name>
+              <description>Controls whether Non-secure state is permitted to execute an SG instruction from this region</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ENABLE</name>
+              <description>SAU region enable</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SFSR</name>
+          <displayName>SFSR</displayName>
+          <description>Provides information about any security related faults</description>
+          <addressOffset>0x14</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>LSERR</name>
+              <description>Sticky flag indicating that an error occurred during lazy state activation or deactivation</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>SFARVALID</name>
+              <description>This bit is set when the SFAR register contains a valid value</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>LSPERR</name>
+              <description>Sticky flag indicating that an SAU or IDAU violation occurred during the
+lazy preservation of Floating-point state</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>INVTRAN</name>
+              <description>Sticky flag indicating that an exception was raised due to a branch that was not flagged as being domain crossing causing a transition from Secure to Non-secure memory</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>AUVIOL</name>
+              <description>Sticky flag indicating that an attempt was made to access parts of the address space that are marked as Secure with NS-Req for the transaction set to Non-secure</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>INVER</name>
+              <description>This can be caused by EXC_RETURN.DCRS being set to 0 when returning from an exception in the Non-secure state, or by EXC_RETURN.ES being set to 1 when returning from an exception in the Non-secure state</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>INVIS</name>
+              <description>This bit is set if the integrity signature in an exception stack frame is found to be invalid during the unstacking operation</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>INVEP</name>
+              <description>This bit is set if a function call from the Non-secure state or exception targets a non-SG instruction in the Secure state. This bit is also set if the target address is an SG instruction, but there is no matching SAU/IDAU region with the NSC flag set.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SFAR</name>
+          <displayName>SFAR</displayName>
+          <description>Shows the address of the memory location that caused a Security violation</description>
+          <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ADDRESS</name>
+              <description>The address of an access that caused an attribution unit violation</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
