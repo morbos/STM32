@@ -197,9 +197,7 @@ package body SX1276 is
       This.InitModem (Selection => Bw125Cr45Sf128);
       This.SetPreambleLength (Length => 8);
       This.SetFrequency (F => 915.0);
-      --      This.SetTxPower (Db => 13, RFO => False); --  -27
-      --      This.SetTxPower (Db => 8, RFO => False); -- -36
-      This.SetTxPower (Db => 5, RFO => False); -- -36
+      This.SetTxPower (Db => 13, RFO => False);
       Write (This.Port, SX1276_DIO_MAPPING1, 16#00#); --  Interrupt on RxDone
    end Init;
 

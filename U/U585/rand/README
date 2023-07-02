@@ -1,0 +1,6 @@
+# Trim down the logs. Large dumps of all periphs run the risk of Rpi timeouts
+/media/16T/ada/xml/logs2dump.rb -s /media/16T/ada/xml/STM32U585.svd --onlylist GPIOA,GPIOB,GPIOC,DCACHE,RCC,CORDIC,ICache >index.txt
+
+
+
+

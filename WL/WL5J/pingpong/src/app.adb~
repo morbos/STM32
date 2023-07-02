@@ -1,0 +1,10 @@
+package body App is
+
+   procedure App_Start is
+   begin
+      loop
+         null;
+      end loop;
+   end App_Start;
+
+end App;

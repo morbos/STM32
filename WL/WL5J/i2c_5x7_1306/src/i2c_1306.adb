@@ -151,7 +151,7 @@ begin
                 Y_End => Display.Height - 2, Colour => 0);
 
    X := 4;
-   Y := 20;
+   Y := 10;
    DrawString (Display, X, Y, "Npkts : ", 1);
    X := 4;
    Y := 30;
@@ -165,10 +165,10 @@ begin
    loop
       Suspend_Until_True (Radio_Int.Message_Go);
       X := 40;
-      Y := 20;
+      Y := 10;
       DrawString (Display, X, Y, "      ", 1);
       X := 40;
-      Y := 20;
+      Y := 10;
       DrawString (Display, X, Y, Radio_Int.Npkts'Image, 1);
       X := 40;
       Y := 30;

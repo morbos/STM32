@@ -62,11 +62,13 @@ package body Radio_Int is
          X := Get_IrqStatus (RFStatus);
          --         if UInt16 (X and 16#063#) = 16#0002# then
          if UInt16 (X and (2 ** HeaderErr'Enum_Rep)) = (2 ** HeaderErr'Enum_Rep) then
-            Turn_On (Red_LED);
+            --            Turn_On (Red_LED);
+            null;
          elsif UInt16 (X and (2 ** Timeout'Enum_Rep)) = (2 ** Timeout'Enum_Rep) then
             Turn_On (Red_LED);
          elsif UInt16 (X and (2 ** Misc_Err'Enum_Rep)) = (2 ** Misc_Err'Enum_Rep) then
-            Turn_On (Red_LED);
+            --            Turn_On (Red_LED);
+            null;
          elsif UInt16 (X and (2 ** RxDone'Enum_Rep)) = (2 ** RxDone'Enum_Rep) then
             Get_RxBufferStatus (RFStatus, RxPayloadLength, RxStartBufferPointer);
             declare

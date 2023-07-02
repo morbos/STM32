@@ -1,0 +1,26 @@
+stacking issue. Found 32k stack was too small since the FW image was 32k chunks.
+(is there anyway to reduce that?) (maybe a special write to I2C from Flash directly?, or a DMA write with 2 chunks, the idx + flash payload).
+
+telnet to prep stack
+mwb 0x20002520 0xaa 32768
+
+in set lang c
+watch *(int *)0x20002520
+
+set pagination off
+set logging overwrite on
+set logging file ram1.log
+set logging redirect on
+set logging on
+x/16384x 0x20000000
+set logging off
+set logging redirect off
+
+set pagination off
+set logging overwrite on
+set logging file ram2.log
+set logging redirect on
+set logging on
+x/16384x 0x20000000
+set logging off
+set logging redirect off

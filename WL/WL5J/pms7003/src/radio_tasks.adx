@@ -1,0 +1,133 @@
+
+with HAL.SPI;         use HAL.SPI;
+with STM32.SubGhzPhy; use STM32.SubGhzPhy;
+with STM32.SubGhzRF;  use STM32.SubGhzRF;
+with STM32.GPIO;      use STM32.GPIO;
+with Peripherals;     use Peripherals;
+with Ada.Real_Time;   use Ada.Real_Time;
+
+package body Radio_Tasks is
+
+   task body Rx_Task
+   is
+      RFStatus             : Subghz_Status;
+      RxPayloadLength      : UInt8;
+      RxStartBufferPointer : UInt8;
+   begin
+      loop
+         Suspend_Until_True (Rx_Go);
+         if Stat.RxDone then
+            Get_RxBufferStatus (RFStatus, RxPayloadLength, RxStartBufferPointer);
+            declare
+               Buffer : SPI_Data_8b (1 .. Integer (RxPayloadLength));
+            begin
+               Read_Buffer (RxStartBufferPointer, RFStatus, Buffer);
+               Set_Sleep ((StartSel => Warm_Startup,
+                           SleepCfg => Disabled,
+                           others => <>));
+            end;
+         elsif  then
+         end if;
+      end loop;
+   end Rx_Task;
+
+   task body Tx_Task is
+   begin
+      loop
+         Suspend_Until_True (Tx_Go);
+         if Stat.TxDone then
+            --  ST_WORKAROUND_BEGIN: Reset DBG pin
+--            DBG_Line1_Pin.Clear;
+            --  DBG_GPIO_RADIO_TX(RST);
+            --  /* ST_WORKAROUND_END */
+--          TimerStop( &TxTimeoutTimer );
+            Set_Standby (RC_13_MHz);
+            State := TX;
+         else
+            raise Program_Error with "TX...?";
+         end if;
+      end loop;
+   end Tx_Task;
+
+   task body Timeout_Task is
+   begin
+      loop
+         Suspend_Until_True (Timeout_Go);
+         if State = RX then
+            State := RX_TIMEOUT;
+         elsif State = TX then
+            State := TX_TIMEOUT;
+         elsif State = CAD then
+            State := CAD_TIMEOUT;
+         else
+            raise Program_Error with "timeout w/o state";
+         end if;
+         null;
+      end loop;
+   end Timeout_Task;
+
+   task body Cad_Task is
+   begin
+      loop
+         Suspend_Until_True (Cad_Go);
+         null;
+      end loop;
+   end Cad_Task;
+
+   task body Radio_Task_Manager
+   is
+      Buffer    : LoRa_Message;
+      Goal      : Time;
+      P         : ListNodePtr;
+   begin
+      --  15.625us
+      Set_Rx (Timeout => 128_000); --  > ~2secs
+      loop
+         Suspend_Until_True (Radio_Event_Go);
+         if Stat.Timeout then  --  rx or tx?
+
+            null;
+         else if Stat.HeaderErr or Stat.Misc_Err then
+           null;
+         end if;
+         case State is
+            when RX_TIMEOUT | RX_ERROR =>
+               --  Check Q for outbound pkts
+               if not Radio_Queue.List_Is_Empty
+                 State := TX;
+               else
+                  State := LOWPOWER;
+               end if;
+            when TX =>
+               Set_Sleep ((StartSel => Warm_Startup,
+                           SleepCfg => Disabled,
+                           others => <>));
+               Set_RfFrequency ((F => 915.0E6, others => <>));
+               if not Radio_Queue.List_Is_Empty
+                 Radio_Queue.List_Remove_Head (Radio_Queue, P);
+                 Write_Buffer (Offset => 0, Buffer => P.Elem);
+               end if;
+               Set_Tx (0);
+               State := TX_DONE;
+            when LOWPOWER =>
+               null;
+            when others =>
+               null;
+         end case;
+         null;
+      end loop;
+   end Radio_Task_Manager;
+
+   procedure Radio_Tasks_Init
+   is
+   begin
+
+      List_Init_Head (Radio_Queue_Ptr);
+
+      --  Initialize the queue of free hci data packets
+      for Index in 1 .. HCI_READ_PACKET_NUM_MAX loop
+         List_Insert_Tail (HciReadPktPoolPtr, HciReadPacketBuffer (Index)'Access);
+      end loop;
+   end Radio_Tasks_Init;
+
+end Radio_Tasks;

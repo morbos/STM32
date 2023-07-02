@@ -62,8 +62,7 @@ package body Co2_Task is
          end case;
       end loop;
    end Get_Reading;
-   task body New_Co2
-      is
+   task body New_Co2 is
    begin
       loop
          Suspend_Until_True (Co2_Ready);

@@ -1,0 +1,13 @@
+with STM32.EXTI;           use STM32.EXTI;
+
+package body Hw
+is
+
+
+   procedure Initialize_HW
+   is
+   begin
+      null;
+   end Initialize_HW;
+
+end Hw;

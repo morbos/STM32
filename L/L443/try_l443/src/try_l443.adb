@@ -15,7 +15,8 @@ procedure Try_l443 is
 
    procedure My_Delay is
    begin
-      delay until Clock + Milliseconds (1000);
+      --      delay until Clock + Milliseconds (1000);
+            delay until Clock + Milliseconds (500);
    end My_Delay;
 begin
    Initialize_Board;

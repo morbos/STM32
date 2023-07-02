@@ -1,0 +1,7 @@
+with HAL;          use HAL;
+
+package App is
+
+   procedure App_Start;
+
+end App;

@@ -7,6 +7,7 @@ with STM32.Device;    use STM32.Device;
 with STM32.Board;     use STM32.Board;
 with STM32.USARTs;    use STM32.USARTs;
 with SSD1306_SPI;     use SSD1306_SPI;
+with Trace;           use Trace;
 with Fonts;           use Fonts;
 with Hw;              use Hw;
 with Co2_Task;        use Co2_Task;
@@ -153,8 +154,11 @@ procedure Aqi is
    LastData    : array (Aq_Select range AQI_Value .. PM10_0_Value) of UInt16 := (999, 999, 999, 999);
    LastCo2Conc : UInt16 := 9999;
    LastCo2Temp : Integer_8 := -50;
+   Timed_Out   : Boolean;
 begin
    Initialize_Board;
+
+   Configure_Tracing;
 
 --   delay until Clock + Milliseconds (1000);
 
@@ -184,6 +188,7 @@ begin
    Init_Co2_INT;
 
    loop
+      Timed_Out := False;
       declare
          Idx   : Integer := 1;
          Buff  : UART_Data_8b (1 .. 1);
@@ -192,9 +197,13 @@ begin
       begin
          Stamp := Clock;
          loop
-            exit when Clock > Stamp + Milliseconds (2000); --  Can't stay here forever
+            if Clock > Stamp + Milliseconds (1000) then
+               Turn_On (Green_LED);
+               Timed_Out := True;
+               exit;
+            end if;
             if Rx_Ready (USART_1) then
-               Receive (USART_1, Buff, Status, 10);
+               Receive (USART_1, Buff, Status, 100);
                if Status = Ok then
                   if Idx = 1 and Buff (1) /= Magic_Num (1) then
                      Idx := 1;
@@ -209,7 +218,7 @@ begin
             end if;
          end loop;
       end;
-      if Check_Valid then
+      if not Timed_Out and Check_Valid then
          Turn_Off (Green_LED);
          for J in PM_Select loop
             Swap (Frm.Pm_Ug (J));
@@ -228,39 +237,40 @@ begin
             DrawString (Display, X, Y, Gui (AQI_Value).Str & Gui (AQI_Value).Val'Image, 1);
             LastData (AQI_Value) := Gui (AQI_Value).Val;
          end if;
-         if Reading_Valid then
-            declare
-               Idx : Integer := Integer (Aq_Select'Pos (Aq_Select'Last)) + 2;
-               T  : Float;
-               IT : Integer;
-            begin
-               if LastCo2Conc /= Curr_Co2_Reading.Concentration then
-                  X := 4;
-                  Y := 20;
-                  DrawString (Display, X, Y, "                   ", 1);
-                  X := 4;
-                  Y := 20;
-                  DrawString (Display, X, Y,
-                              "Co2   : "
-                                &
-                                Curr_Co2_Reading.Concentration'Image, 1);
-                  LastCo2Conc := Curr_Co2_Reading.Concentration;
-               end if;
-               if LastCo2Temp /= Curr_Co2_Reading.Temp then
-                  T := Float (Curr_Co2_Reading.Temp) * (9.0 / 5.0) + 32.0;
-                  IT := Integer (T);
-                  X := 4;
-                  Y := 36;
-                  DrawString (Display, X, Y, "               ", 1);
-                  X := 4;
-                  Y := 36;
-                  DrawString (Display, X, Y, "Temp  : " & IT'Image, 1);
-                  LastCo2Temp := Curr_Co2_Reading.Temp;
-               end if;
-            end;
-         end if;
       else
-         Turn_On (Green_LED);
+         --         Turn_On (Green_LED);
+         null;
+      end if;
+      if Reading_Valid then
+         declare
+            Idx : Integer := Integer (Aq_Select'Pos (Aq_Select'Last)) + 2;
+            T  : Float;
+            IT : Integer;
+         begin
+            if LastCo2Conc /= Curr_Co2_Reading.Concentration then
+               X := 4;
+               Y := 20;
+               DrawString (Display, X, Y, "                   ", 1);
+               X := 4;
+               Y := 20;
+               DrawString (Display, X, Y,
+                           "Co2   : "
+                             &
+                             Curr_Co2_Reading.Concentration'Image, 1);
+               LastCo2Conc := Curr_Co2_Reading.Concentration;
+            end if;
+            if LastCo2Temp /= Curr_Co2_Reading.Temp then
+               T := Float (Curr_Co2_Reading.Temp) * (9.0 / 5.0) + 32.0;
+               IT := Integer (T);
+               X := 4;
+               Y := 36;
+               DrawString (Display, X, Y, "               ", 1);
+               X := 4;
+               Y := 36;
+               DrawString (Display, X, Y, "Temp  : " & IT'Image, 1);
+               LastCo2Temp := Curr_Co2_Reading.Temp;
+            end if;
+         end;
       end if;
    end loop;
 end Aqi;
