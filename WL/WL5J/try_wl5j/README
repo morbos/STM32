@@ -1,0 +1,9 @@
+Flash did not work by default needed a manual unlock:
+
+Unlock the flash
+(gdb) set *(int *)0x58004008=0x45670123
+(gdb) set *(int *)0x58004008=0xcdef89ab
+(gdb) set *(int *)0x5800400c=0x08192A3B
+(gdb) set *(int *)0x5800400c=0x4C5D6E7F
+(gdb) x/x 0x58004014
+0x58004014:	0x00000000

@@ -1,0 +1,182 @@
+V "GNAT Lib v2019"
+M P W=b
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES SS ZX
+
+RN
+RV NO_DELAY
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U try%b			try.adb			b646cb7d NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W hal%s			hal.ads			hal.ali
+W semihosting%s		semihosting.adb		semihosting.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+W stm32.cordic%s	stm32-cordic.adb	stm32-cordic.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32_svd%s		stm32_svd.ads		stm32_svd.ali
+W stm32_svd.rcc%s	stm32_svd-rcc.ads	stm32_svd-rcc.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+D ada.ads		20200106220410 76789da1 ada%s
+D a-except.ads		20200106220410 291912d5 ada.exceptions%s
+D a-finali.ads		20200106220410 bf4f806b ada.finalization%s
+D a-numeri.ads		20200106220411 bb51c45a ada.numerics%s
+D a-reatim.ads		20200106220411 4c16970e ada.real_time%s
+D a-retide.ads		20200106220411 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20200106220411 119b8fb3 ada.streams%s
+D a-tags.ads		20200106220409 491b781d ada.tags%s
+D a-textio.ads		20200106220409 ffc84532 ada.text_io%s
+D a-unccon.ads		20200106220409 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D i-bit_types.ads	20210116193600 880cac16 interfaces.bit_types%s
+D semihosting.ads	20200106220437 ca4eee59 semihosting%s
+D stm32.ads		20220102203940 698e2c3b stm32%s
+D stm32-board.ads	20230204213034 ace61b7e stm32.board%s
+D stm32-cordic.ads	20230220020757 713bceb0 stm32.cordic%s
+D stm32-dac.ads		20220103192014 42e9ae5b stm32.dac%s
+D stm32-device.ads	20220122221542 3a7d584f stm32.device%s
+D stm32-exti.ads	20220102203940 53264b02 stm32.exti%s
+D stm32-gpio.ads	20220103000107 5950628f stm32.gpio%s
+D stm32-i2c.ads		20240318211522 d4f762e2 stm32.i2c%s
+D stm32-spi.ads		20220123003149 bb290bb3 stm32.spi%s
+D stm32_svd.ads		20230206041209 ba17d9cc stm32_svd%s
+D stm32_svd-cordic.ads	20230206040751 a2bc76d9 stm32_svd.cordic%s
+D stm32_svd-dac.ads	20230206040751 0e304fb3 stm32_svd.dac%s
+D stm32_svd-gpio.ads	20230206040826 d48d9c86 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20230206040751 d60c2616 stm32_svd.i2c%s
+D stm32_svd-rcc.ads	20230206040751 38662f5e stm32_svd.rcc%s
+D stm32_svd-spi.ads	20230206040751 a6a88c4c stm32_svd.spi%s
+D system.ads		20200106220411 db831581 system%s
+D s-bb.ads		20200106220409 09e072ae system.bb%s
+D s-bbbopa.ads		20230122230811 5010154b system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220411 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220411 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220411 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220102204546 045cf410 system.bb.mcu_parameters%s
+D s-bbpara.ads		20210131011912 9bd079f5 system.bb.parameters%s
+D s-bbthre.ads		20200106220411 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220411 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220411 ad086247 system.bb.time%s
+D s-finmas.ads		20200106220410 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200106220410 4ff27390 system.finalization_root%s
+D s-imgrea.ads		20200106220410 c7a851e2 system.img_real%s
+D s-multip.ads		20200106220411 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220411 229b14dd system.os_interface%s
+D s-parame.ads		20200106220411 d106111e system.parameters%s
+D s-pooglo.ads		20200106220409 ede33ef8 system.pool_global%s
+D s-secsta.ads		20200106220410 56a2861c system.secondary_stack%s
+D s-stalib.ads		20200106220409 09bd3940 system.standard_library%s
+D s-stm32.ads		20220103223103 696d39d7 system.stm32%s
+D s-stoele.ads		20200106220410 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200106220409 b16154c2 system.storage_pools%s
+D s-stratt.ads		20200106220409 aedef97e system.stream_attributes%s
+D s-traent.ads		20200106220409 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200106220410 34867c83 system.unsigned_types%s
+D try.adb		20230220022941 d9533b1c try%b
+D /media/16T/ada/STM32/U/U5/U585/cordic/gnat.adc  20230211220612 00000000
+G a e
+G c Z b b [try standard 16 11 none]
+G r c none [try standard 16 11 none] [initialize_board stm32__board 57 14 none]
+G r c none [try standard 16 11 none] [enable stm32__cordic 87 14 none]
+G r c none [try standard 16 11 none] [float_to_q31 stm32__cordic 95 13 none]
+G r c none [try standard 16 11 none] [sqrt stm32__cordic 128 13 none]
+G r c none [try standard 16 11 none] [q31_to_float stm32__cordic 97 13 none]
+G r c none [try standard 16 11 none] [log_line semihosting 71 14 none]
+G r c none [try standard 16 11 none] [clear stm32__gpio 166 14 none]
+G r c none [try standard 16 11 none] [set stm32__gpio 160 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 60|7r6 7r25 10r6 14r6 14r25
+X 4 a-numeri.ads
+16K13*Numerics 32e17 60|10w10
+X 5 a-reatim.ads
+41K13*Real_Time 182e18 60|14w10 14r29
+51M9*Time<44|46M9>
+61I9*Time_Span<44|81I9>
+68V13*Clock{51M9}<44|134p13> 60|21s19
+72V14*"+"{51M9} 60|21s25
+128V13*Milliseconds{61I9} 60|21s27
+X 9 a-textio.ads
+31K13*Text_IO 47e16 60|7w10 7r29
+X 11 hal.ads
+34K9*HAL 166e8 60|2w6 2r15
+X 12 hal-gpio.ads
+44h9*GPIO_Point
+X 13 hal-i2c.ads
+48h9*I2C_Port
+X 14 hal-spi.ads
+48h9*SPI_Port
+X 17 semihosting.ads
+35K9*Semihosting 74e16 60|9w6 83r4
+71U14*Log_Line 60|83s16
+X 18 stm32.ads
+39K9*STM32 48e10 60|3r6 3r25 4r6 4r25 5r6 6r6 6r25 12r5 24r12 25r10 26r8
+. 27r8 31r4 80r9 81r11 82r11
+X 19 stm32-board.ads
+49K15*Board 68e16 60|6w12 6r31
+54r4*Green_LED=54:33{24|130R9} 60|86r16 88r17
+57U14*Initialize_Board 60|30s4
+60U14*Turn_On=60:67 60|86s7
+61U14*Turn_Off=61:67 60|88s7
+X 20 stm32-cordic.ads
+5K15*CORDIC 130e17 60|5w12 24r18 25r16 26r14 27r14 31r10 80r15 81r17 82r17
+50R9*Q31 61e6 60|24r25 25r23 26r21 27r21
+87U14*Enable 60|31s17
+95V13*Float_To_Q31{50R9} 60|80s22
+97V13*Q31_To_Float{float} 60|82s24
+128V13*Sqrt{50R9} 60|81s24
+X 22 stm32-device.ads
+52K15*Device 342e17 60|3w12 3r31
+X 24 stm32-gpio.ads
+49K15*GPIO 279e15 60|4w12 4r31
+X 27 stm32_svd.ads
+10K9*STM32_SVD 221e14 60|8r6 8r25
+X 32 stm32_svd-rcc.ads
+10K19*RCC 3392e18 60|8w16 8r35
+X 44 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 60 try.adb
+16U11*Try 16b11 91l5 91t8
+17U14 My_Delay 19b14 22l8 22t16 87s7 89s7
+23f4 N{float}
+24r4 Angle{20|50R9}
+25r4 Raw{20|50R9} 81m4 82r38
+26r4 X{20|50R9} 80m4 81r30
+27r4 Y{20|50R9}
+28f4 Res{float} 82m4 83r36
+

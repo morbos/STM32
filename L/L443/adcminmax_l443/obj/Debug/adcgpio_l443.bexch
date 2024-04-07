@@ -1,0 +1,50 @@
+[GENERATED OBJECT FILE]
+b__adcgpio_l443.o
+[PROJECT FILES]
+/media/16T/ada/STM32/L/L443/adcminmax_l443/adcgpio_l443.gpr
+20200907004630
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/middleware/middleware.gpr
+20200106220402
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/components/components.gpr
+20200106220430
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20200106220434
+/media/16T/ada/Ada_Drivers_Library/hal/HAL.gpr
+20200106220404
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/arch/ARM/STM32/stm32l4x3.gpr
+20200106220439
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/target_options.gpr
+20200106220407
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/runtime_build.gpr
+20200106220407
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/ravenscar_build.gpr
+20200106220407
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/config.gpr
+20200106220452
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/board.gpr
+20200106220452
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/boards/stm32l443_bluepill.gpr
+20200106220450
+[BOUND OBJECT FILES]
+/media/16T/ada/STM32/L/L443/adcminmax_l443/obj/Debug/adcgpio_l443.o
+[GENERATED SOURCE FILES]
+b__adcgpio_l443.ads
+b__adcgpio_l443.adb
+b__adcgpio_l443.ali
+[RESULTING OPTIONS]
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/obj/Debug/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/obj/Debug/
+-L/media/16T/ada/STM32/L/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Debug/
+-L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+-static
+-static-libgcc
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnarl.a
+/media/16T/ada/STM32/L/L443/adcminmax_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/libgnat.a

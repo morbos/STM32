@@ -1,0 +1,208 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U sx1276_spi%b		sx1276_spi.ads		2969bd03 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.synchronous_task_control%s  a-sytaco.adb	a-sytaco.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z exti%s		exti.adb		exti.ali
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W sx1276%s		sx1276.adb		sx1276.ali  ED
+W sx1276_spi_io%s	sx1276_spi_io.adb	sx1276_spi_io.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z uart%s		uart.adb		uart.ali
+Z utils%s		utils.adb		utils.ali
+
+U sx1276_spi%s		sx1276_spi.ads		da86cfd1 EB EE OO PK IU
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W sx1276%s		sx1276.adb		sx1276.ali
+W sx1276_spi_io%s	sx1276_spi_io.adb	sx1276_spi_io.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-except.ads		20200106220408 5b5f0f2f ada.exceptions%s
+D a-except.adb		20200106220408 85a38458 ada.exceptions%b
+D a-interr.ads		20200106220408 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20240325004640 7d39c3a0 ada.interrupts.names%s
+D a-reatim.ads		20200106220408 4c16970e ada.real_time%s
+D a-sytaco.ads		20200106220408 e57638e1 ada.synchronous_task_control%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D a-taside.ads		20200106220408 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20200106220408 0e9b276f ada.unchecked_conversion%s
+D exti.ads		20240325010006 27ca8f3a exti%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D i-bit_types.ads	20240323215954 880cac16 interfaces.bit_types%s
+D stm32.ads		20240323033822 698e2c3b stm32%s
+D stm32-exti.ads	20240323033822 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20240323033822 dfe90a82 stm32.gpio%s
+D stm32_svd.ads		20240323032222 567bda23 stm32_svd%s
+D stm32_svd-gpio.ads	20240323224814 28689f61 stm32_svd.gpio%s
+D sx1276.ads		20240325003744 81b6fdc8 sx1276%s
+D sx1276.adb		20240331020314 02ffeac9 sx1276%b
+D sx1276_spi.ads	20240325003744 2969bd03 sx1276_spi%s
+D sx1276_spi.ads	20240325003744 2969bd03 sx1276_spi%b
+D sx1276_spi_io.ads	20240325003744 011bfe53 sx1276_spi_io%s
+D system.ads		20200106220408 aa7dab5a system%s
+D s-bb.ads		20200106220408 09e072ae system.bb%s
+D s-bbbopa.ads		20240323040132 9e5f0bdf system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220408 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220408 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220408 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20240323015909 de122b3e system.bb.mcu_parameters%s
+D s-bbpara.ads		20200106220408 b91d59c8 system.bb.parameters%s
+D s-bbthre.ads		20200106220408 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220408 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220408 ad086247 system.bb.time%s
+D s-interr.ads		20200106220408 f1954f09 system.interrupts%s
+D s-multip.ads		20200106220408 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20200106220408 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20200106220408 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20200106220408 229b14dd system.os_interface%s
+D s-parame.ads		20201003195514 dfb12da9 system.parameters%s
+D s-secsta.ads		20200106220408 56a2861c system.secondary_stack%s
+D s-stm32.ads		20240323015909 e60e59e5 system.stm32%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20200106220408 801abd01 system.task_info%s
+D s-taspri.ads		20200106220408 351848fa system.task_primitives%s
+D s-taskin.ads		20200106220408 39441e76 system.tasking%s
+D s-taprob.ads		20200106220408 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20200106220408 9e6a8286 system.tasking.protected_objects.single_entry%s
+D s-unstyp.ads		20200106220408 34867c83 system.unsigned_types%s
+D uart.ads		20240331012439 6cc51efd uart%s
+D utils.ads		20240325003744 e9e55cf1 utils%s
+D /media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/gnat.adc  20240325003744 00000000
+G a e
+G c s s s [s sx1276_spi 7 1 none]
+G c Z s s [TiarrBIP sx1276_spi 77 4 7_1]
+G c Z s s [config1_registerIP sx1276_spi 173 9 7_1]
+G c Z s s [config2_registerIP sx1276_spi 200 9 7_1]
+G c Z s s [config3_registerIP sx1276_spi 218 9 7_1]
+G c Z s s [modemconfigtIP sx1276_spi 235 9 7_1]
+G c Z s s [TmodemconfigarraytBIP sx1276_spi 241 4 7_1]
+G c Z s s [device_id sx1276_spi 257 13 7_1]
+G c Z s s [setfrequency sx1276_spi 264 14 7_1]
+G c Z s s [getfrequency sx1276_spi 266 13 7_1]
+G c Z s s [settxpower sx1276_spi 268 14 7_1]
+G c Z s s [initmodem sx1276_spi 270 14 7_1]
+G c Z s s [setpreamblelength sx1276_spi 272 14 7_1]
+G c Z s s [setidlemode sx1276_spi 274 14 7_1]
+G c Z s s [setsleepmode sx1276_spi 276 14 7_1]
+G c Z s s [setloramode sx1276_spi 278 14 7_1]
+G c Z s s [settxmode sx1276_spi 280 14 7_1]
+G c Z s s [setrxmode sx1276_spi 282 14 7_1]
+G c Z s s [setcadmode sx1276_spi 284 14 7_1]
+G c Z s s [setupfifo sx1276_spi 286 14 7_1]
+G c Z s s [init sx1276_spi 288 14 7_1]
+G c Z s s [send sx1276_spi 290 14 7_1]
+G c Z s s [recv sx1276_spi 292 13 7_1]
+G c Z s s [readflags sx1276_spi 296 14 7_1]
+G c Z s s [clearflags sx1276_spi 298 14 7_1]
+G c Z s s [iscad sx1276_spi 300 13 7_1]
+G c Z s s [sumbits sx1276_spi 302 14 7_1]
+G c Z s s [dumpregs sx1276_spi 304 14 7_1]
+G c Z s s [sx1276_radioIP sx1276_spi 307 9 7_1]
+G c Z s s [irqflags_registerIP sx1276_spi 91 9 7_1]
+G c Z s s [pa_config_registerIP sx1276_spi 116 9 7_1]
+G c Z s s [opmode_registerIP sx1276_spi 140 9 7_1]
+G r i none [s sx1276_spi 7 1 none] [sx1276 standard 73 9 none]
+G r c none [device_id sx1276_spi 257 13 7_1] [read sx1276_spi_io 51 14 none]
+G r c none [setfrequency sx1276_spi 264 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [getfrequency sx1276_spi 266 13 7_1] [read sx1276_spi_io 51 14 none]
+G r c none [settxpower sx1276_spi 268 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [initmodem sx1276_spi 270 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setpreamblelength sx1276_spi 272 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setidlemode sx1276_spi 274 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setsleepmode sx1276_spi 276 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setloramode sx1276_spi 278 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [settxmode sx1276_spi 280 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setrxmode sx1276_spi 282 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setcadmode sx1276_spi 284 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [setupfifo sx1276_spi 286 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [init sx1276_spi 288 14 7_1] [read sx1276_spi_io 51 14 none]
+G r c none [init sx1276_spi 288 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [send sx1276_spi 290 14 7_1] [read sx1276_spi_io 51 14 none]
+G r c none [send sx1276_spi 290 14 7_1] [send_message uart 7 14 none]
+G r c none [send sx1276_spi 290 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [send sx1276_spi 290 14 7_1] [write_buffer sx1276_spi_io 66 14 none]
+G r c none [recv sx1276_spi 292 13 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [recv sx1276_spi 292 13 7_1] [read sx1276_spi_io 51 14 none]
+G r c none [recv sx1276_spi 292 13 7_1] [read_buffer sx1276_spi_io 61 14 none]
+G r c none [readflags sx1276_spi 296 14 7_1] [read sx1276_spi_io 51 14 none]
+G r c none [clearflags sx1276_spi 298 14 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [iscad sx1276_spi 300 13 7_1] [write sx1276_spi_io 56 14 none]
+G r c none [dumpregs sx1276_spi 304 14 7_1] [read sx1276_spi_io 51 14 none]
+X 12 hal.ads
+34K9*HAL 166e8 25|2r6 2r27
+53M9*UInt8<15|63M9>
+X 13 hal-gpio.ads
+44h9*GPIO_Point
+X 14 hal-spi.ads
+32K13*SPI 95e12 25|2w10 2r31
+44A9*SPI_Data_8b(12|53M9)<integer> 25|10r26
+X 15 interfac.ads
+63M9*Unsigned_8
+X 22 sx1276.ads
+42H9 IO_Port 25|8r4
+44P9 Any_IO_Port(42R9) 25|9r4
+58A9 Sensor_Data_Buffer(12|53M9)<integer> 25|10r4
+73k9*SX1276 367e11 25|4w6 7r27
+X 25 sx1276_spi.ads
+7K9*SX1276_SPI[22|73]
+X 26 sx1276_spi_io.ads
+36K9*SX1276_SPI_IO 25|1w6 1r27 26|71e18
+44R9*IO_Port 25|8r26 26|47e14
+49P9*Any_IO_Port(44R9) 25|9r26
+51U14*Read 22|46i19
+56U14*Write 22|52i19
+61U14*Read_Buffer 22|61i19
+66U14*Write_Buffer 22|68i19
+X 38 s-interr.ads
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 44 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 49 s-taskin.ads
+355V13*Get_Sec_Stack{44|46P9} 356i<c,__gnat_get_secondary_stack>22
+

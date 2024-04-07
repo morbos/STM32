@@ -1,41 +1,36 @@
-pragma Warnings (Off);
 pragma Ada_95;
+pragma Warnings (Off);
 pragma Source_File_Name (ada_main, Spec_File_Name => "b__dac_sw.ads");
 pragma Source_File_Name (ada_main, Body_File_Name => "b__dac_sw.adb");
 pragma Suppress (Overflow_Check);
 
 package body ada_main is
 
-   E120 : Short_Integer; pragma Import (Ada, E120, "ada__text_io_E");
-   E100 : Short_Integer; pragma Import (Ada, E100, "ada__tags_E");
-   E114 : Short_Integer; pragma Import (Ada, E114, "system__bb__timing_events_E");
-   E056 : Short_Integer; pragma Import (Ada, E056, "system__soft_links_E");
-   E054 : Short_Integer; pragma Import (Ada, E054, "system__exception_table_E");
-   E155 : Short_Integer; pragma Import (Ada, E155, "ada__streams_E");
-   E164 : Short_Integer; pragma Import (Ada, E164, "system__finalization_root_E");
-   E162 : Short_Integer; pragma Import (Ada, E162, "ada__finalization_E");
-   E166 : Short_Integer; pragma Import (Ada, E166, "system__storage_pools_E");
-   E159 : Short_Integer; pragma Import (Ada, E159, "system__finalization_masters_E");
+   E098 : Short_Integer; pragma Import (Ada, E098, "ada__tags_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "ada__streams_E");
+   E162 : Short_Integer; pragma Import (Ada, E162, "system__finalization_root_E");
+   E160 : Short_Integer; pragma Import (Ada, E160, "ada__finalization_E");
+   E055 : Short_Integer; pragma Import (Ada, E055, "system__soft_links_E");
+   E164 : Short_Integer; pragma Import (Ada, E164, "system__storage_pools_E");
+   E157 : Short_Integer; pragma Import (Ada, E157, "system__finalization_masters_E");
+   E112 : Short_Integer; pragma Import (Ada, E112, "system__bb__timing_events_E");
+   E118 : Short_Integer; pragma Import (Ada, E118, "ada__text_io_E");
+   E053 : Short_Integer; pragma Import (Ada, E053, "system__exception_table_E");
+   E166 : Short_Integer; pragma Import (Ada, E166, "system__pool_global_E");
    E008 : Short_Integer; pragma Import (Ada, E008, "ada__real_time_E");
-   E168 : Short_Integer; pragma Import (Ada, E168, "system__pool_global_E");
-   E157 : Short_Integer; pragma Import (Ada, E157, "hal__gpio_E");
-   E175 : Short_Integer; pragma Import (Ada, E175, "hal__i2c_E");
-   E179 : Short_Integer; pragma Import (Ada, E179, "hal__real_time_clock_E");
-   E187 : Short_Integer; pragma Import (Ada, E187, "hal__spi_E");
-   E133 : Short_Integer; pragma Import (Ada, E133, "stm32__adc_E");
-   E124 : Short_Integer; pragma Import (Ada, E124, "stm32__dac_E");
-   E150 : Short_Integer; pragma Import (Ada, E150, "stm32__exti_E");
-   E174 : Short_Integer; pragma Import (Ada, E174, "stm32__i2c_E");
-   E181 : Short_Integer; pragma Import (Ada, E181, "stm32__power_control_E");
-   E146 : Short_Integer; pragma Import (Ada, E146, "stm32__rcc_E");
-   E178 : Short_Integer; pragma Import (Ada, E178, "stm32__rtc_E");
-   E185 : Short_Integer; pragma Import (Ada, E185, "stm32__spi_E");
-   E144 : Short_Integer; pragma Import (Ada, E144, "stm32__gpio_E");
-   E130 : Short_Integer; pragma Import (Ada, E130, "stm32__device_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "stm32__syscfg_E");
-   E199 : Short_Integer; pragma Import (Ada, E199, "trace_E");
-
-   Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
+   E155 : Short_Integer; pragma Import (Ada, E155, "hal__gpio_E");
+   E173 : Short_Integer; pragma Import (Ada, E173, "hal__i2c_E");
+   E178 : Short_Integer; pragma Import (Ada, E178, "hal__spi_E");
+   E131 : Short_Integer; pragma Import (Ada, E131, "stm32__adc_E");
+   E122 : Short_Integer; pragma Import (Ada, E122, "stm32__dac_E");
+   E148 : Short_Integer; pragma Import (Ada, E148, "stm32__exti_E");
+   E142 : Short_Integer; pragma Import (Ada, E142, "stm32__gpio_E");
+   E172 : Short_Integer; pragma Import (Ada, E172, "stm32__i2c_E");
+   E144 : Short_Integer; pragma Import (Ada, E144, "stm32__rcc_E");
+   E176 : Short_Integer; pragma Import (Ada, E176, "stm32__spi_E");
+   E146 : Short_Integer; pragma Import (Ada, E146, "stm32__syscfg_E");
+   E128 : Short_Integer; pragma Import (Ada, E128, "stm32__device_E");
+   E190 : Short_Integer; pragma Import (Ada, E190, "trace_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -87,8 +82,6 @@ package body ada_main is
       pragma Import (C, Detect_Blocking, "__gl_detect_blocking");
       Default_Stack_Size : Integer;
       pragma Import (C, Default_Stack_Size, "__gl_default_stack_size");
-      Default_Secondary_Stack_Size : System.Parameters.Size_Type;
-      pragma Import (C, Default_Secondary_Stack_Size, "__gnat_default_ss_size");
       Leap_Seconds_Support : Integer;
       pragma Import (C, Leap_Seconds_Support, "__gl_leap_seconds_support");
       Bind_Env_Addr : System.Address;
@@ -96,11 +89,8 @@ package body ada_main is
 
       procedure Runtime_Initialize (Install_Handler : Integer);
       pragma Import (C, Runtime_Initialize, "__gnat_runtime_initialize");
-      Binder_Sec_Stacks_Count : Natural;
-      pragma Import (Ada, Binder_Sec_Stacks_Count, "__gnat_binder_ss_count");
-      Default_Sized_SS_Pool : System.Address;
-      pragma Import (Ada, Default_Sized_SS_Pool, "__gnat_default_ss_pool");
-
+      procedure Start_Slave_CPUs;
+      pragma Import (C, Start_Slave_CPUs, "__gnat_start_slave_cpus");
    begin
       if Is_Elaborated then
          return;
@@ -123,69 +113,56 @@ package body ada_main is
       Default_Stack_Size := -1;
       Leap_Seconds_Support := 0;
 
-      ada_main'Elab_Body;
-      Default_Secondary_Stack_Size := System.Parameters.Runtime_Default_Sec_Stack_Size;
-      Binder_Sec_Stacks_Count := 1;
-      Default_Sized_SS_Pool := Sec_Default_Sized_Stacks'Address;
-
       Runtime_Initialize (1);
 
-      Ada.Text_Io'Elab_Body;
-      E120 := E120 + 1;
-      System.Bb.Timing_Events'Elab_Spec;
-      E114 := E114 + 1;
-      System.Soft_Links'Elab_Spec;
-      Ada.Tags'Elab_Body;
-      E100 := E100 + 1;
-      System.Exception_Table'Elab_Body;
-      E054 := E054 + 1;
-      E056 := E056 + 1;
       Ada.Streams'Elab_Spec;
-      E155 := E155 + 1;
+      E153 := E153 + 1;
       System.Finalization_Root'Elab_Spec;
-      E164 := E164 + 1;
-      Ada.Finalization'Elab_Spec;
       E162 := E162 + 1;
+      Ada.Finalization'Elab_Spec;
+      E160 := E160 + 1;
+      System.Soft_Links'Elab_Spec;
       System.Storage_Pools'Elab_Spec;
-      E166 := E166 + 1;
+      E164 := E164 + 1;
       System.Finalization_Masters'Elab_Spec;
+      System.Bb.Timing_Events'Elab_Spec;
+      E112 := E112 + 1;
+      E055 := E055 + 1;
+      Ada.Text_Io'Elab_Body;
+      E118 := E118 + 1;
+      System.Exception_Table'Elab_Body;
+      E053 := E053 + 1;
+      System.Pool_Global'Elab_Spec;
+      E166 := E166 + 1;
       System.Finalization_Masters'Elab_Body;
-      E159 := E159 + 1;
+      E157 := E157 + 1;
+      Ada.Tags'Elab_Body;
+      E098 := E098 + 1;
       Ada.Real_Time'Elab_Body;
       E008 := E008 + 1;
-      System.Pool_Global'Elab_Spec;
-      E168 := E168 + 1;
       HAL.GPIO'ELAB_SPEC;
-      E157 := E157 + 1;
+      E155 := E155 + 1;
       HAL.I2C'ELAB_SPEC;
-      E175 := E175 + 1;
-      HAL.REAL_TIME_CLOCK'ELAB_SPEC;
-      E179 := E179 + 1;
+      E173 := E173 + 1;
       HAL.SPI'ELAB_SPEC;
-      E187 := E187 + 1;
-      STM32.ADC'ELAB_SPEC;
-      E133 := E133 + 1;
-      E124 := E124 + 1;
-      E150 := E150 + 1;
-      STM32.I2C'ELAB_SPEC;
-      STM32.I2C'ELAB_BODY;
-      E174 := E174 + 1;
-      E181 := E181 + 1;
-      E146 := E146 + 1;
-      STM32.RTC'ELAB_SPEC;
-      STM32.RTC'ELAB_BODY;
       E178 := E178 + 1;
-      STM32.SPI'ELAB_SPEC;
-      STM32.SPI'ELAB_BODY;
-      E185 := E185 + 1;
-      STM32.GPIO'ELAB_SPEC;
-      STM32.DEVICE'ELAB_SPEC;
-      E130 := E130 + 1;
+      STM32.ADC'ELAB_SPEC;
+      E131 := E131 + 1;
+      E122 := E122 + 1;
       E148 := E148 + 1;
-      STM32.GPIO'ELAB_BODY;
+      STM32.GPIO'ELAB_SPEC;
+      STM32.I2C'ELAB_SPEC;
+      E172 := E172 + 1;
       E144 := E144 + 1;
+      STM32.SPI'ELAB_SPEC;
+      E176 := E176 + 1;
+      E142 := E142 + 1;
+      STM32.DEVICE'ELAB_SPEC;
+      E128 := E128 + 1;
+      E146 := E146 + 1;
       Trace'Elab_Spec;
-      E199 := E199 + 1;
+      E190 := E190 + 1;
+      Start_Slave_CPUs;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -211,20 +188,20 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/obj/Debug/trace.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/obj/Debug/dac_sw.o
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+   --   /backup/ada/STM32/L/L443/dac_sw_trace/obj/Debug/trace.o
+   --   /backup/ada/STM32/L/L443/dac_sw_trace/obj/Debug/dac_sw.o
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/obj/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/obj/Debug/
+   --   -L/backup/ada/STM32/L/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/backup/ada/STM32/L/L443/dac_sw_trace/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

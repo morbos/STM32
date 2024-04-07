@@ -1,0 +1,144 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m4
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES SS ZX
+
+RN
+RV NO_DELAY
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U last_chance_handler%b	last_chance_handler.adb	53c26273 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+
+U last_chance_handler%s	last_chance_handler.ads	01d2e585 EE NE OO PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20200106220410 76789da1 ada%s
+D a-except.ads		20200106220410 291912d5 ada.exceptions%s
+D a-finali.ads		20200106220410 bf4f806b ada.finalization%s
+D a-reatim.ads		20200106220411 4c16970e ada.real_time%s
+D a-retide.ads		20200106220411 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20200106220411 119b8fb3 ada.streams%s
+D a-tags.ads		20200106220409 491b781d ada.tags%s
+D a-unccon.ads		20200106220409 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D hal-uart.ads		20200106220407 d58316b4 hal.uart%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D i-bit_types.ads	20210116193600 880cac16 interfaces.bit_types%s
+D last_chance_handler.ads  20200106220401 da51f004 last_chance_handler%s
+D last_chance_handler.adb  20200106220401 4a751eb0 last_chance_handler%b
+D stm32.ads		20210115032100 698e2c3b stm32%s
+D stm32-adc.ads		20210307015116 d336efe4 stm32.adc%s
+D stm32-board.ads	20210116200847 8ff01bc9 stm32.board%s
+D stm32-crc.ads		20210115032100 52637184 stm32.crc%s
+D stm32-device.ads	20220502005343 cc19a8c3 stm32.device%s
+D stm32-dma.ads		20210201015929 79647692 stm32.dma%s
+D stm32-exti.ads	20210115032100 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20210115032100 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20231123231100 d4f762e2 stm32.i2c%s
+D stm32-spi.ads		20210208005940 9f7b9005 stm32.spi%s
+D stm32-timers.ads	20210115032100 ae89ec08 stm32.timers%s
+D stm32-usarts.ads	20220508190811 08ad5e60 stm32.usarts%s
+D stm32_svd.ads		20210115031934 64232b77 stm32_svd%s
+D stm32_svd-adc.ads	20210115031934 28f4cde2 stm32_svd.adc%s
+D stm32_svd-crc.ads	20210115031934 f756bb7d stm32_svd.crc%s
+D stm32_svd-dma.ads	20210115031934 5aa47bcf stm32_svd.dma%s
+D stm32_svd-gpio.ads	20210115034602 f9f156a3 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20210115031934 a3ccc2f4 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20210115052214 44d2bef3 stm32_svd.spi%s
+D stm32_svd-usart.ads	20210115031934 05f0c27d stm32_svd.usart%s
+D system.ads		20200106220411 db831581 system%s
+D s-bb.ads		20200106220409 09e072ae system.bb%s
+D s-bbbopa.ads		20210131011801 e74167b1 system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220411 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220411 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220411 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20210115030048 649224bd system.bb.mcu_parameters%s
+D s-bbpara.ads		20210131011912 9bd079f5 system.bb.parameters%s
+D s-bbthre.ads		20200106220411 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220411 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220411 ad086247 system.bb.time%s
+D s-finmas.ads		20200106220410 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200106220410 4ff27390 system.finalization_root%s
+D s-multip.ads		20200106220411 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220411 229b14dd system.os_interface%s
+D s-parame.ads		20200106220411 d106111e system.parameters%s
+D s-pooglo.ads		20200106220409 ede33ef8 system.pool_global%s
+D s-secsta.ads		20200106220410 56a2861c system.secondary_stack%s
+D s-stalib.ads		20200106220409 09bd3940 system.standard_library%s
+D s-stm32.ads		20210115030048 4ab394a4 system.stm32%s
+D s-stoele.ads		20200106220410 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200106220409 b16154c2 system.storage_pools%s
+D s-stratt.ads		20200106220409 aedef97e system.stream_attributes%s
+D s-traent.ads		20200106220409 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200106220410 34867c83 system.unsigned_types%s
+D /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/gnat.adc  20210116213808 00000000
+G a e
+G c Z s b [last_chance_handler last_chance_handler 38 14 none]
+G r c none [last_chance_handler last_chance_handler 38 14 none] [initialize_leds stm32__board 60 14 none]
+G r c none [last_chance_handler last_chance_handler 38 14 none] [all_leds_off stm32__board 69 14 none]
+G r c none [last_chance_handler last_chance_handler 38 14 none] [set stm32__gpio 159 14 none]
+G r c none [last_chance_handler last_chance_handler 38 14 none] [clear stm32__gpio 165 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|37r6 37r25
+X 4 a-reatim.ads
+41K13*Real_Time 182e18 17|37w10 37r29
+51M9*Time<48|46M9>
+61I9*Time_Span<48|81I9>
+68V13*Clock{51M9}<48|134p13> 17|55s22 57s22
+72V14*"+"{51M9} 17|55s28 57s28
+128V13*Milliseconds{61I9} 17|55s30 57s30
+X 10 hal-gpio.ads
+44h9*GPIO_Point
+X 11 hal-i2c.ads
+48h9*I2C_Port
+X 12 hal-spi.ads
+48h9*SPI_Port
+X 13 hal-uart.ads
+48h9*UART_Port
+X 16 last_chance_handler.ads
+36K9*Last_Chance_Handler 42l5 42e24 17|39b14 63l5 63t24
+38U14*Last_Chance_Handler 38>35 38>57 39i<c,__gnat_last_chance_handler>22
+. 40r22 17|45b14 61l8 61t27
+38m35 Msg{38|80M9} 17|45b35 46r28
+38i57 Line{integer} 17|45b57 46r33
+X 18 stm32.ads
+39K9*STM32 17|36r6 36r25 18|48e10
+X 20 stm32-board.ads
+49K15*Board 17|36w12 36r31 20|70e16
+57r4*LCH_LED=57:33{25|129R9} 17|54r19 56r20
+60U14*Initialize_LEDs 17|48s7
+62U14*Turn_On=62:67 17|54s10
+63U14*Turn_Off=63:67 17|56s10
+69U14*All_LEDs_Off 17|50s7
+X 38 system.ads
+50K9*System 16|34w6 38r41 17|45r41 38|164e11
+80M9*Address 16|38r48 17|45r48
+X 48 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+

@@ -1,0 +1,72 @@
+   procedure LoRa_Sweep
+   is
+      P    : ListNodePtr;
+      N    : ListNodePtr;
+      Size : Natural;
+      Timeout  : Natural := 1000;
+   begin
+      --  Scan the queue looking for pkts that never got replies
+      --  A reply means we must have the orig in the Q
+      P := WorklistQueuePtr;
+      if not List_Is_Empty (P) then
+         Size := List_Get_Size (P);
+         N := P.Next;
+         while Size > 0 loop
+            --  Delete:
+            --  1)  To: BCAST
+            --  2)  Replies
+            --  3)  NOTIFY8's with retry count = N
+            --  Resend
+            --  NOTIFY8's
+            if Timeout > 0 and ((Clock - N.Elem.Timestamp) > Milliseconds (Timeout)) then
+               if N.Elem.Cmd.Cmd = LORA_NOTIFY8 then
+                  if N.Elem.Cmd.Retry = LORA_RETRY_LIMIT then
+                     List_Remove_Node (N);
+                     List_Insert_Tail (WorklistPoolPtr, N);
+                  else
+                     --  Send it again.
+--                     Turn_Off (Red_LED);
+--                     Turn_Off (Green_LED);
+                     N.Elem.Cmd.Retry := N.Elem.Cmd.Retry + 1;
+                     LoRa_Send (N.all, True);
+                  end if;
+               else
+                  --  Remove it.
+                  List_Remove_Node (N);
+                  List_Insert_Tail (WorklistPoolPtr, N);
+               end if;
+            end if;
+            Size := Size - 1;
+            N := N.Next;
+         end loop;
+      end if;
+   end LoRa_Sweep;
+
+
+   procedure LoRa_Rcv_Notify8_Reply (Ptr : ListNodePtr; Notify : Notify8)
+   is
+      P : ListNodePtr;
+      N : ListNodePtr;
+      Size : Natural;
+   begin
+      --  A reply means we must have the orig in the Q
+--      Turn_On (Green_LED);
+      P := WorklistQueuePtr;
+      if not List_Is_Empty (P) then
+         Size := List_Get_Size (P);
+         N := P.Next;
+         while Size > 0 loop
+            --  To = From
+            if (N.Elem.Hdr.To = Ptr.Elem.Hdr.From) and
+               (N.Elem.Cmd.Cmd = LORA_NOTIFY8) and
+               (N.Elem.Cmd.SeqNum = Ptr.Elem.Cmd.SeqNum)
+            then
+               List_Remove_Node (N);
+               List_Insert_Tail (WorklistPoolPtr, N);
+               return;
+            end if;
+            Size := Size - 1;
+            N := N.Next;
+         end loop;
+      end if;
+   end LoRa_Rcv_Notify8_Reply;

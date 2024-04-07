@@ -1,0 +1,37 @@
+
+   ------------------------
+   -- Disable_Interrupts --
+   ------------------------
+
+procedure Disable_Interrupts is
+   begin
+      Asm ("cpsid i", Volatile => True);
+   end Disable_Interrupts;
+
+   -----------------------
+   -- Enable_Interrupts --
+   -----------------------
+
+   procedure Enable_Interrupts (Level : Integer) is
+   begin
+      if not Is_ARMv6m then
+         --  BASEPRI is not available in the armv6-m architecture, it was
+         --  introduced in armv7-m. There's only one level of trap.
+
+         --  Set the BASEPRI according to the specified level. PRIMASK is still
+         --  set, so the change does not take effect until the next Asm.
+
+         Board_Support.Interrupts.Set_Current_Priority (Level);
+
+      end if;
+
+      --  The following enables interrupts and will cause any pending
+      --  interrupts to take effect. The barriers and their placing are
+      --  essential, otherwise a blocking operation might not cause an
+      --  immediate context switch, violating mutual exclusion.
+
+      Asm ("cpsie i" & NL
+         & "dsb"     & NL
+         & "isb",
+           Clobber => "memory", Volatile => True);
+   end Enable_Interrupts;

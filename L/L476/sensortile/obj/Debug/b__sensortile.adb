@@ -7,9 +7,9 @@ pragma Suppress (Overflow_Check);
 package body ada_main is
 
    E101 : Short_Integer; pragma Import (Ada, E101, "ada__tags_E");
+   E115 : Short_Integer; pragma Import (Ada, E115, "system__bb__timing_events_E");
    E057 : Short_Integer; pragma Import (Ada, E057, "system__soft_links_E");
    E055 : Short_Integer; pragma Import (Ada, E055, "system__exception_table_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "system__bb__timing_events_E");
    E170 : Short_Integer; pragma Import (Ada, E170, "ada__streams_E");
    E178 : Short_Integer; pragma Import (Ada, E178, "system__finalization_root_E");
    E176 : Short_Integer; pragma Import (Ada, E176, "ada__finalization_E");
@@ -45,38 +45,38 @@ package body ada_main is
    E255 : Short_Integer; pragma Import (Ada, E255, "stm32__sai_E");
    E282 : Short_Integer; pragma Import (Ada, E282, "uuid_E");
    E319 : Short_Integer; pragma Import (Ada, E319, "bluenrg_int_E");
-   E322 : Short_Integer; pragma Import (Ada, E322, "stm32l4_interrupts_E");
+   E266 : Short_Integer; pragma Import (Ada, E266, "bluenrg_utils_E");
    E258 : Short_Integer; pragma Import (Ada, E258, "comm_E");
    E260 : Short_Integer; pragma Import (Ada, E260, "comm__hw_E");
-   E268 : Short_Integer; pragma Import (Ada, E268, "hci_le_E");
-   E266 : Short_Integer; pragma Import (Ada, E266, "bluenrg_utils_E");
-   E203 : Short_Integer; pragma Import (Ada, E203, "utils_E");
+   E284 : Short_Integer; pragma Import (Ada, E284, "comm__setup_E");
    E315 : Short_Integer; pragma Import (Ada, E315, "gen_list_E");
+   E268 : Short_Integer; pragma Import (Ada, E268, "hci_le_E");
+   E294 : Short_Integer; pragma Import (Ada, E294, "hts221_E");
+   E298 : Short_Integer; pragma Import (Ada, E298, "lps22hb_E");
+   E236 : Short_Integer; pragma Import (Ada, E236, "pcm1774_E");
    E310 : Short_Integer; pragma Import (Ada, E310, "stc3115_E");
-   E306 : Short_Integer; pragma Import (Ada, E306, "lsm6dsm_E");
+   E322 : Short_Integer; pragma Import (Ada, E322, "stm32l4_interrupts_E");
+   E203 : Short_Integer; pragma Import (Ada, E203, "utils_E");
+   E270 : Short_Integer; pragma Import (Ada, E270, "hci_E");
+   E264 : Short_Integer; pragma Import (Ada, E264, "bluenrg_E");
+   E276 : Short_Integer; pragma Import (Ada, E276, "bluenrg_gap_aci_E");
+   E279 : Short_Integer; pragma Import (Ada, E279, "bluenrg_gatt_aci_E");
+   E286 : Short_Integer; pragma Import (Ada, E286, "bluenrg_hal_aci_E");
+   E313 : Short_Integer; pragma Import (Ada, E313, "bluenrg_l2cap_aci_E");
+   E272 : Short_Integer; pragma Import (Ada, E272, "comm__run_E");
+   E292 : Short_Integer; pragma Import (Ada, E292, "hts221_i2c_E");
+   E296 : Short_Integer; pragma Import (Ada, E296, "lps22hb_spi_E");
    E302 : Short_Integer; pragma Import (Ada, E302, "lsm303agr_E");
    E300 : Short_Integer; pragma Import (Ada, E300, "lsm303agr_spi_E");
-   E298 : Short_Integer; pragma Import (Ada, E298, "lps22hb_E");
-   E294 : Short_Integer; pragma Import (Ada, E294, "hts221_E");
-   E236 : Short_Integer; pragma Import (Ada, E236, "pcm1774_E");
+   E306 : Short_Integer; pragma Import (Ada, E306, "lsm6dsm_E");
    E304 : Short_Integer; pragma Import (Ada, E304, "lsm6dsm_spi_E");
-   E284 : Short_Integer; pragma Import (Ada, E284, "comm__setup_E");
-   E270 : Short_Integer; pragma Import (Ada, E270, "hci_E");
-   E313 : Short_Integer; pragma Import (Ada, E313, "bluenrg_l2cap_aci_E");
-   E286 : Short_Integer; pragma Import (Ada, E286, "bluenrg_hal_aci_E");
-   E279 : Short_Integer; pragma Import (Ada, E279, "bluenrg_gatt_aci_E");
-   E276 : Short_Integer; pragma Import (Ada, E276, "bluenrg_gap_aci_E");
-   E264 : Short_Integer; pragma Import (Ada, E264, "bluenrg_E");
-   E308 : Short_Integer; pragma Import (Ada, E308, "stc3115_i2c_E");
-   E296 : Short_Integer; pragma Import (Ada, E296, "lps22hb_spi_E");
-   E292 : Short_Integer; pragma Import (Ada, E292, "hts221_i2c_E");
-   E234 : Short_Integer; pragma Import (Ada, E234, "pcm1774_i2c_E");
-   E134 : Short_Integer; pragma Import (Ada, E134, "audio_E");
-   E272 : Short_Integer; pragma Import (Ada, E272, "comm__run_E");
    E005 : Short_Integer; pragma Import (Ada, E005, "main_E");
    E262 : Short_Integer; pragma Import (Ada, E262, "bluenrg_spi_E");
-   E289 : Short_Integer; pragma Import (Ada, E289, "sensors_E");
    E317 : Short_Integer; pragma Import (Ada, E317, "nrg_hal_E");
+   E234 : Short_Integer; pragma Import (Ada, E234, "pcm1774_i2c_E");
+   E134 : Short_Integer; pragma Import (Ada, E134, "audio_E");
+   E308 : Short_Integer; pragma Import (Ada, E308, "stc3115_i2c_E");
+   E289 : Short_Integer; pragma Import (Ada, E289, "sensors_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 3) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -182,13 +182,13 @@ package body ada_main is
 
       Runtime_Initialize (1);
 
-      System.Soft_Links'Elab_Spec;
-      System.Exception_Table'Elab_Body;
-      E055 := E055 + 1;
-      Ada.Tags'Elab_Body;
-      E101 := E101 + 1;
       System.Bb.Timing_Events'Elab_Spec;
       E115 := E115 + 1;
+      System.Soft_Links'Elab_Spec;
+      Ada.Tags'Elab_Body;
+      E101 := E101 + 1;
+      System.Exception_Table'Elab_Body;
+      E055 := E055 + 1;
       E057 := E057 + 1;
       Ada.Streams'Elab_Spec;
       E170 := E170 + 1;
@@ -238,10 +238,10 @@ package body ada_main is
       STM32.GPIO'ELAB_SPEC;
       STM32.DEVICE'ELAB_SPEC;
       E149 := E149 + 1;
+      E147 := E147 + 1;
       E161 := E161 + 1;
       STM32.GPIO'ELAB_BODY;
       E141 := E141 + 1;
-      E147 := E147 + 1;
       Bluenrg_Spi_Io'Elab_Spec;
       E243 := E243 + 1;
       LPS22HB_SPI_IO'ELAB_SPEC;
@@ -255,55 +255,55 @@ package body ada_main is
       E255 := E255 + 1;
       E282 := E282 + 1;
       Bluenrg_Int'Elab_Spec;
+      E266 := E266 + 1;
       Stm32l4_Interrupts'Elab_Spec;
-      E306 := E306 + 1;
-      E302 := E302 + 1;
-      LSM303AGR_SPI'ELAB_SPEC;
-      E300 := E300 + 1;
-      LSM6DSM_SPI'ELAB_SPEC;
-      E304 := E304 + 1;
+      E315 := E315 + 1;
       Hci'Elab_Spec;
+      E276 := E276 + 1;
+      E279 := E279 + 1;
+      E286 := E286 + 1;
       E319 := E319 + 1;
       E313 := E313 + 1;
-      E286 := E286 + 1;
-      E279 := E279 + 1;
-      E276 := E276 + 1;
+      E258 := E258 + 1;
+      Comm.Run'Elab_Spec;
       E268 := E268 + 1;
-      E266 := E266 + 1;
-      E315 := E315 + 1;
-      E310 := E310 + 1;
-      STC3115_I2C'ELAB_SPEC;
-      E308 := E308 + 1;
-      E298 := E298 + 1;
-      LPS22HB_SPI'ELAB_SPEC;
-      E296 := E296 + 1;
       E294 := E294 + 1;
       HTS221_I2C'ELAB_SPEC;
       E292 := E292 + 1;
+      E298 := E298 + 1;
+      LPS22HB_SPI'ELAB_SPEC;
+      E296 := E296 + 1;
+      E302 := E302 + 1;
+      LSM303AGR_SPI'ELAB_SPEC;
+      E300 := E300 + 1;
+      E306 := E306 + 1;
+      LSM6DSM_SPI'ELAB_SPEC;
+      E304 := E304 + 1;
+      Main'Elab_Spec;
+      E264 := E264 + 1;
+      Bluenrg_Spi'Elab_Spec;
+      E262 := E262 + 1;
+      E260 := E260 + 1;
+      E284 := E284 + 1;
+      Nrg_Hal'Elab_Spec;
+      E317 := E317 + 1;
+      E270 := E270 + 1;
       E236 := E236 + 1;
       PCM1774_I2C'ELAB_SPEC;
       E234 := E234 + 1;
       Audio'Elab_Spec;
       E134 := E134 + 1;
-      Comm.Run'Elab_Spec;
-      Main'Elab_Spec;
-      E284 := E284 + 1;
-      E258 := E258 + 1;
-      E264 := E264 + 1;
-      Bluenrg_Spi'Elab_Spec;
-      E262 := E262 + 1;
-      E203 := E203 + 1;
+      E310 := E310 + 1;
+      STC3115_I2C'ELAB_SPEC;
+      E308 := E308 + 1;
       Sensors'Elab_Body;
       E289 := E289 + 1;
       Comm.Run'Elab_Body;
       E272 := E272 + 1;
-      E322 := E322 + 1;
       Main'Elab_Body;
       E005 := E005 + 1;
-      E260 := E260 + 1;
-      Nrg_Hal'Elab_Spec;
-      E317 := E317 + 1;
-      E270 := E270 + 1;
+      E322 := E322 + 1;
+      E203 := E203 + 1;
       Install_Restricted_Handlers_Sequential;
       Activate_All_Tasks_Sequential;
    end adainit;
@@ -331,69 +331,69 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/ble_status.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_aci.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gap.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gatt_server.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/hts221_i2c_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/log.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/ogf_ocf.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/pcm1774_i2c_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/security.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/sensor_types.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/stc3115_i2c_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_spi_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lps22hb_spi_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lsm303agr_spi_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lsm6dsm_spi_io.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/peripherals.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/uuid.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lsm6dsm.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lsm303agr.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lsm303agr_spi.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lsm6dsm_spi.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_int.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_l2cap_aci.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_hal_aci.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gatt_aci.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gap_aci.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/hci_le.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_utils.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/gen_list.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/stc3115.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/stc3115_i2c.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lps22hb.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/lps22hb_spi.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/hts221.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/hts221_i2c.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/pcm1774.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/pcm1774_i2c.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/audio.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/comm-setup.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/comm.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_spi.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/utils.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/sensors.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/comm-run.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/stm32l4_interrupts.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/main.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/comm-hw.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/nrg_hal.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/hci.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/sensortile.o
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/boards/lib/stm32l476sensortile/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/boards/stm32l476_sensortile/lib/stm32l4nucleo/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/adalib/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4nucleo/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l4nucleo/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4nucleo/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/components/lib/stm32l4nucleo/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/sensortile/Ada_Drivers_Library/middleware/lib/stm32l4nucleo/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/adalib/
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/ble_status.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_aci.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gap.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gatt_server.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/hts221_i2c_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/log.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/ogf_ocf.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/pcm1774_i2c_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/security.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/sensor_types.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/stc3115_i2c_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_spi_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lps22hb_spi_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lsm303agr_spi_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lsm6dsm_spi_io.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/peripherals.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/uuid.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_utils.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/gen_list.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gap_aci.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_gatt_aci.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_hal_aci.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_int.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_l2cap_aci.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/comm.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/hci_le.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/hts221.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/hts221_i2c.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lps22hb.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lps22hb_spi.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lsm303agr.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lsm303agr_spi.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lsm6dsm.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/lsm6dsm_spi.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/bluenrg_spi.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/comm-hw.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/comm-setup.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/nrg_hal.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/hci.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/pcm1774.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/pcm1774_i2c.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/audio.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/stc3115.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/stc3115_i2c.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/sensors.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/comm-run.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/main.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/stm32l4_interrupts.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/utils.o
+   --   /home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/sensortile.o
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/obj/Debug/
+   --   -L/home/hedley/ada/STM32/L/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/boards/lib/stm32l476sensortile/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/boards/stm32l476_sensortile/lib/stm32l4nucleo/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/adalib/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4nucleo/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l4nucleo/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4nucleo/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/components/lib/stm32l4nucleo/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L476/sensortile/Ada_Drivers_Library/middleware/lib/stm32l4nucleo/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4x6/full/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

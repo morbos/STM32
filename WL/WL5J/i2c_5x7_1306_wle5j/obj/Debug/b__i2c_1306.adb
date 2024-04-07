@@ -9,8 +9,8 @@ package body ada_main is
    E134 : Short_Integer; pragma Import (Ada, E134, "ada__text_io_E");
    E099 : Short_Integer; pragma Import (Ada, E099, "ada__tags_E");
    E113 : Short_Integer; pragma Import (Ada, E113, "system__bb__timing_events_E");
-   E055 : Short_Integer; pragma Import (Ada, E055, "system__soft_links_E");
-   E053 : Short_Integer; pragma Import (Ada, E053, "system__exception_table_E");
+   E050 : Short_Integer; pragma Import (Ada, E050, "system__soft_links_E");
+   E048 : Short_Integer; pragma Import (Ada, E048, "system__exception_table_E");
    E141 : Short_Integer; pragma Import (Ada, E141, "ada__streams_E");
    E149 : Short_Integer; pragma Import (Ada, E149, "system__finalization_root_E");
    E147 : Short_Integer; pragma Import (Ada, E147, "ada__finalization_E");
@@ -26,9 +26,11 @@ package body ada_main is
    E160 : Short_Integer; pragma Import (Ada, E160, "hal__framebuffer_E");
    E161 : Short_Integer; pragma Import (Ada, E161, "hal__gpio_E");
    E162 : Short_Integer; pragma Import (Ada, E162, "hal__i2c_E");
-   E208 : Short_Integer; pragma Import (Ada, E208, "hal__spi_E");
+   E210 : Short_Integer; pragma Import (Ada, E210, "hal__spi_E");
    E163 : Short_Integer; pragma Import (Ada, E163, "hal__time_E");
-   E225 : Short_Integer; pragma Import (Ada, E225, "ravenscar_time_E");
+   E216 : Short_Integer; pragma Import (Ada, E216, "hal__uart_E");
+   E208 : Short_Integer; pragma Import (Ada, E208, "logcmd_E");
+   E231 : Short_Integer; pragma Import (Ada, E231, "ravenscar_time_E");
    E169 : Short_Integer; pragma Import (Ada, E169, "soft_drawing_bitmap_E");
    E165 : Short_Integer; pragma Import (Ada, E165, "memory_mapped_bitmap_E");
    E157 : Short_Integer; pragma Import (Ada, E157, "ssd1306_E");
@@ -39,12 +41,13 @@ package body ada_main is
    E194 : Short_Integer; pragma Import (Ada, E194, "stm32__rcc_E");
    E206 : Short_Integer; pragma Import (Ada, E206, "stm32__spi_E");
    E192 : Short_Integer; pragma Import (Ada, E192, "stm32__gpio_E");
-   E179 : Short_Integer; pragma Import (Ada, E179, "stm32__device_E");
    E196 : Short_Integer; pragma Import (Ada, E196, "stm32__syscfg_E");
+   E214 : Short_Integer; pragma Import (Ada, E214, "stm32__usarts_E");
+   E179 : Short_Integer; pragma Import (Ada, E179, "stm32__device_E");
    E173 : Short_Integer; pragma Import (Ada, E173, "last_chance_handler_E");
-   E218 : Short_Integer; pragma Import (Ada, E218, "stm32__subghzphy_E");
-   E215 : Short_Integer; pragma Import (Ada, E215, "stm32__subghzrf_E");
-   E213 : Short_Integer; pragma Import (Ada, E213, "radio_int_E");
+   E224 : Short_Integer; pragma Import (Ada, E224, "stm32__subghzphy_E");
+   E221 : Short_Integer; pragma Import (Ada, E221, "stm32__subghzrf_E");
+   E219 : Short_Integer; pragma Import (Ada, E219, "radio_int_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -158,8 +161,8 @@ package body ada_main is
       Ada.Tags'Elab_Body;
       E099 := E099 + 1;
       System.Exception_Table'Elab_Body;
-      E053 := E053 + 1;
-      E055 := E055 + 1;
+      E048 := E048 + 1;
+      E050 := E050 + 1;
       Ada.Streams'Elab_Spec;
       E141 := E141 + 1;
       System.Finalization_Root'Elab_Spec;
@@ -191,12 +194,15 @@ package body ada_main is
       HAL.I2C'ELAB_SPEC;
       E162 := E162 + 1;
       HAL.SPI'ELAB_SPEC;
-      E208 := E208 + 1;
+      E210 := E210 + 1;
       HAL.TIME'ELAB_SPEC;
       E163 := E163 + 1;
+      HAL.UART'ELAB_SPEC;
+      E216 := E216 + 1;
+      E208 := E208 + 1;
       Ravenscar_Time'Elab_Spec;
       Ravenscar_Time'Elab_Body;
-      E225 := E225 + 1;
+      E231 := E231 + 1;
       Soft_Drawing_Bitmap'Elab_Spec;
       Soft_Drawing_Bitmap'Elab_Body;
       E169 := E169 + 1;
@@ -218,16 +224,19 @@ package body ada_main is
       STM32.SPI'ELAB_BODY;
       E206 := E206 + 1;
       STM32.GPIO'ELAB_SPEC;
+      STM32.GPIO'ELAB_BODY;
+      E192 := E192 + 1;
+      STM32.USARTS'ELAB_SPEC;
       STM32.DEVICE'ELAB_SPEC;
       E179 := E179 + 1;
       E196 := E196 + 1;
-      STM32.GPIO'ELAB_BODY;
-      E192 := E192 + 1;
+      STM32.USARTS'ELAB_BODY;
+      E214 := E214 + 1;
       E173 := E173 + 1;
-      E218 := E218 + 1;
-      E215 := E215 + 1;
+      E224 := E224 + 1;
+      E221 := E221 + 1;
       Radio_Int'Elab_Spec;
-      E213 := E213 + 1;
+      E219 := E219 + 1;
       Install_Restricted_Handlers_Sequential;
       Activate_All_Tasks_Sequential;
    end adainit;
@@ -255,24 +264,24 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/fonts-font1.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/fonts.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/peripherals.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/last_chance_handler.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/radio_int.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/i2c_1306.o
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/
-   --   -L/home/hedley/ada/STM32/WL/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/boards/lib/stm32wl5x_nucleo/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/boards/stm32wl5x_nucleo/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/components/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/middleware/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/fonts-font1.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/fonts.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/peripherals.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/last_chance_handler.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/radio_int.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/i2c_1306.o
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/obj/Debug/
+   --   -L/media/16T/ada/STM32/WL/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/boards/lib/stm32wl5x_nucleo/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/boards/stm32wl5x_nucleo/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/components/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/middleware/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

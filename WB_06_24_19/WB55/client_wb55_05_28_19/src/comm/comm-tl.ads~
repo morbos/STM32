@@ -1,0 +1,34 @@
+with HAL;               use HAL;
+
+package Comm.TL is
+
+   TL_BLECMD_PKT_TYPE   : constant := 16#10#;
+
+   type TL_PacketHeader_T is record
+      Next : UInt32;
+      Prev : UInt32;
+   end record
+     with Volatile, Pack;
+
+   type Buffer is array (1 .. 255) of UInt8;
+
+   type TL_Cmd_T is record
+      Cmdcode : UInt16;
+      Plen    : UInt8;
+      Payload : Buffer;
+   end record
+     with Volatile, Pack;
+
+   type TL_CmdSerial_T is record
+      Type_Code : UInt8;
+      Cmd       : TL_Cmd_T;
+   end record
+     with Volatile, Pack;
+
+   type TL_CmdPacket_T is record
+      Header    : TL_PacketHeader_T;
+      Cmdserial : TL_CmdSerial_T;
+   end record
+     with Volatile, Pack;
+
+end Comm.TL;

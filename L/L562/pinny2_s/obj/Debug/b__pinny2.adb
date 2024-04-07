@@ -7,12 +7,13 @@ pragma Suppress (Overflow_Check);
 package body ada_main is
 
    E05 : Short_Integer; pragma Import (Ada, E05, "ada__real_time_E");
-   E86 : Short_Integer; pragma Import (Ada, E86, "stm32__exti_E");
-   E82 : Short_Integer; pragma Import (Ada, E82, "stm32__rcc_E");
-   E93 : Short_Integer; pragma Import (Ada, E93, "stm32__spi_E");
-   E80 : Short_Integer; pragma Import (Ada, E80, "stm32__gpio_E");
+   E80 : Short_Integer; pragma Import (Ada, E80, "stm32__dac_E");
+   E91 : Short_Integer; pragma Import (Ada, E91, "stm32__exti_E");
+   E87 : Short_Integer; pragma Import (Ada, E87, "stm32__rcc_E");
+   E96 : Short_Integer; pragma Import (Ada, E96, "stm32__spi_E");
+   E85 : Short_Integer; pragma Import (Ada, E85, "stm32__gpio_E");
    E77 : Short_Integer; pragma Import (Ada, E77, "stm32__device_E");
-   E84 : Short_Integer; pragma Import (Ada, E84, "stm32__syscfg_E");
+   E89 : Short_Integer; pragma Import (Ada, E89, "stm32__syscfg_E");
    E70 : Short_Integer; pragma Import (Ada, E70, "stm32__board_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -38,14 +39,15 @@ package body ada_main is
 
       Ada.Real_Time'Elab_Body;
       E05 := E05 + 1;
-      E86 := E86 + 1;
-      E82 := E82 + 1;
-      E93 := E93 + 1;
+      E80 := E80 + 1;
+      E91 := E91 + 1;
+      E87 := E87 + 1;
+      E96 := E96 + 1;
       STM32.DEVICE'ELAB_SPEC;
       STM32.DEVICE'ELAB_BODY;
       E77 := E77 + 1;
-      E84 := E84 + 1;
-      E80 := E80 + 1;
+      E89 := E89 + 1;
+      E85 := E85 + 1;
       STM32.BOARD'ELAB_SPEC;
       E70 := E70 + 1;
    end adainit;

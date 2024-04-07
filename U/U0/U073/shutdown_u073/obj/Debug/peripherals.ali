@@ -1,0 +1,97 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U peripherals%s		peripherals.ads		9c2aa4f0 NE OO PK
+W stm32%s		stm32.ads		stm32.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-reatim.ads		20200106220408 4c16970e ada.real_time%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D i-bit_types.ads	20240323215954 880cac16 interfaces.bit_types%s
+D peripherals.ads	20240330003551 446db14d peripherals%s
+D stm32.ads		20240323033822 698e2c3b stm32%s
+D stm32-adc.ads		20240323215358 d5b0eed0 stm32.adc%s
+D stm32-crc.ads		20240323033822 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20240323210719 92cb0c76 stm32.dac%s
+D stm32-device.ads	20240323225154 07ae1f3f stm32.device%s
+D stm32-dma.ads		20240323220117 febcce9d stm32.dma%s
+D stm32-exti.ads	20240323033822 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20240323033822 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20240323033822 d4f762e2 stm32.i2c%s
+D stm32-spi.ads		20240323033822 5e462e85 stm32.spi%s
+D stm32-timers.ads	20240323211650 46945e18 stm32.timers%s
+D stm32_svd.ads		20240323032222 567bda23 stm32_svd%s
+D stm32_svd-adc.ads	20240323032222 dce400cc stm32_svd.adc%s
+D stm32_svd-crc.ads	20240323032222 fd31973c stm32_svd.crc%s
+D stm32_svd-dac.ads	20240323032222 2a920457 stm32_svd.dac%s
+D stm32_svd-dma.ads	20240323032222 e2b76721 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20240323224814 28689f61 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20240323032222 83288095 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20240323213337 e3bbeb46 stm32_svd.spi%s
+D system.ads		20200106220408 aa7dab5a system%s
+D s-bb.ads		20200106220408 09e072ae system.bb%s
+D s-bbbopa.ads		20240323040132 9e5f0bdf system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220408 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220408 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220408 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20240323015909 de122b3e system.bb.mcu_parameters%s
+D s-bbpara.ads		20200106220408 b91d59c8 system.bb.parameters%s
+D s-bbthre.ads		20200106220408 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220408 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220408 ad086247 system.bb.time%s
+D s-multip.ads		20200106220408 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220408 229b14dd system.os_interface%s
+D s-stm32.ads		20240323015909 e60e59e5 system.stm32%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20200106220408 34867c83 system.unsigned_types%s
+D /media/16T/ada/STM32/U/U0/U073/shutdown_u073/gnat.adc  20240324005822 00000000
+G a e
+X 5 hal-gpio.ads
+44h9*GPIO_Point
+X 6 hal-i2c.ads
+48h9*I2C_Port
+X 7 hal-spi.ads
+48h9*SPI_Port
+X 10 peripherals.ads
+6K9*Peripherals 12l5 12e16
+8r4*Wakeup_Pin=8:48{18|129R9}
+10r4*Hold_Pin=10:48{18|129R9}
+X 11 stm32.ads
+39K9*STM32 10|1r6 1r31 2r6 2r31 4r5 11|48e10
+X 15 stm32-device.ads
+57K15*Device 10|1w12 1r37 15|352e17
+107r4*PA0{18|129R9} 10|8r48
+123r4*PB0{18|129R9} 10|10r48
+X 18 stm32-gpio.ads
+49K15*GPIO 10|2w12 2r37 18|271e15
+129R9*GPIO_Point<5|44R9> 10|8r29 10r29 18|134e14
+

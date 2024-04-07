@@ -1,0 +1,2 @@
+sx1276_shutdown_u073.adb:39:04: warning: variable "RxBuffer" is never read and never assigned
+sx1276_shutdown_u073.adb:202:04: warning: variable "Len" is never read and never assigned

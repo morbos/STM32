@@ -1,50 +1,63 @@
-pragma Ada_95;
 pragma Warnings (Off);
+pragma Ada_95;
 pragma Source_File_Name (ada_main, Spec_File_Name => "b__lis3dh_f103.ads");
 pragma Source_File_Name (ada_main, Body_File_Name => "b__lis3dh_f103.adb");
 pragma Suppress (Overflow_Check);
 
 package body ada_main is
 
-   E065 : Short_Integer; pragma Import (Ada, E065, "ada__text_io_E");
    E005 : Short_Integer; pragma Import (Ada, E005, "ada__real_time_E");
-   E073 : Short_Integer; pragma Import (Ada, E073, "last_chance_handler_E");
-   E091 : Short_Integer; pragma Import (Ada, E091, "stm32__adc_E");
-   E097 : Short_Integer; pragma Import (Ada, E097, "stm32__dac_E");
-   E128 : Short_Integer; pragma Import (Ada, E128, "stm32__exti_E");
-   E081 : Short_Integer; pragma Import (Ada, E081, "stm32__gpio_E");
-   E131 : Short_Integer; pragma Import (Ada, E131, "lis3dh_E");
-   E103 : Short_Integer; pragma Import (Ada, E103, "stm32__i2c_E");
-   E109 : Short_Integer; pragma Import (Ada, E109, "stm32__i2s_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "stm32__spi_E");
-   E119 : Short_Integer; pragma Import (Ada, E119, "stm32__usarts_E");
-   E085 : Short_Integer; pragma Import (Ada, E085, "stm32__device_E");
+   E066 : Short_Integer; pragma Import (Ada, E066, "ada__text_io_E");
+   E092 : Short_Integer; pragma Import (Ada, E092, "stm32__adc_E");
+   E098 : Short_Integer; pragma Import (Ada, E098, "stm32__dac_E");
+   E129 : Short_Integer; pragma Import (Ada, E129, "stm32__exti_E");
+   E116 : Short_Integer; pragma Import (Ada, E116, "stm32__spi_E");
+   E082 : Short_Integer; pragma Import (Ada, E082, "stm32__gpio_E");
+   E104 : Short_Integer; pragma Import (Ada, E104, "stm32__i2c_E");
+   E110 : Short_Integer; pragma Import (Ada, E110, "stm32__i2s_E");
+   E120 : Short_Integer; pragma Import (Ada, E120, "stm32__usarts_E");
+   E086 : Short_Integer; pragma Import (Ada, E086, "stm32__device_E");
+   E132 : Short_Integer; pragma Import (Ada, E132, "lis3dh_E");
+   E074 : Short_Integer; pragma Import (Ada, E074, "last_chance_handler_E");
+
+   Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
 
    procedure adainit is
-      procedure Start_Slave_CPUs;
-      pragma Import (C, Start_Slave_CPUs, "__gnat_start_slave_cpus");
+      Binder_Sec_Stacks_Count : Natural;
+      pragma Import (Ada, Binder_Sec_Stacks_Count, "__gnat_binder_ss_count");
+
+      Default_Secondary_Stack_Size : System.Parameters.Size_Type;
+      pragma Import (C, Default_Secondary_Stack_Size, "__gnat_default_ss_size");
+      Default_Sized_SS_Pool : System.Address;
+      pragma Import (Ada, Default_Sized_SS_Pool, "__gnat_default_ss_pool");
+
    begin
       null;
 
-      Ada.Text_Io'Elab_Body;
-      E065 := E065 + 1;
+      ada_main'Elab_Body;
+      Default_Secondary_Stack_Size := System.Parameters.Runtime_Default_Sec_Stack_Size;
+      Binder_Sec_Stacks_Count := 1;
+      Default_Sized_SS_Pool := Sec_Default_Sized_Stacks'Address;
+
+
       Ada.Real_Time'Elab_Body;
       E005 := E005 + 1;
+      Ada.Text_Io'Elab_Body;
+      E066 := E066 + 1;
       STM32.ADC'ELAB_SPEC;
-      E091 := E091 + 1;
-      E097 := E097 + 1;
-      E128 := E128 + 1;
-      E131 := E131 + 1;
-      E115 := E115 + 1;
-      E081 := E081 + 1;
+      E092 := E092 + 1;
+      E098 := E098 + 1;
+      E129 := E129 + 1;
+      E116 := E116 + 1;
+      E082 := E082 + 1;
       STM32.DEVICE'ELAB_SPEC;
-      E085 := E085 + 1;
-      E119 := E119 + 1;
-      E109 := E109 + 1;
-      E103 := E103 + 1;
-      E073 := E073 + 1;
-      Start_Slave_CPUs;
+      E086 := E086 + 1;
+      E104 := E104 + 1;
+      E110 := E110 + 1;
+      E120 := E120 + 1;
+      E132 := E132 + 1;
+      E074 := E074 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -60,22 +73,22 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/lis3dh.o
-   --   /backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/peripherals.o
-   --   /backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/last_chance_handler.o
-   --   /backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/lis3dh_f103.o
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/obj/Debug/
-   --   -L/backup/ada/STM32/F/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/Ada_Drivers_Library/hal/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m3/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/components/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/middleware/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/backup/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/../embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
+   --   /home/hedley/ada/STM32/F/F103/li3dh_f103/obj/Debug/lis3dh.o
+   --   /home/hedley/ada/STM32/F/F103/li3dh_f103/obj/Debug/peripherals.o
+   --   /home/hedley/ada/STM32/F/F103/li3dh_f103/obj/Debug/last_chance_handler.o
+   --   /home/hedley/ada/STM32/F/F103/li3dh_f103/obj/Debug/lis3dh_f103.o
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/obj/Debug/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/obj/Debug/
+   --   -L/home/hedley/ada/STM32/F/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/boards/stm32f103_bluepill/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m3/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/components/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/STM32/F/F103/li3dh_f103/Ada_Drivers_Library/middleware/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

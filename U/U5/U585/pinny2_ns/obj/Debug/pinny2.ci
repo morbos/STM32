@@ -1,0 +1,92 @@
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "stm32__gpio__configure_io__2" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:249:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__3" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u5/stm32-device.ads:62:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "stm32__gpio__toggle__2" label: "TOGGLE\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:240:14" shape : ellipse }
+node: { title: "stm32__gpio__set__4" label: "SET\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:230:14" shape : ellipse }
+node: { title: "stm32__gpio__clear__2" label: "CLEAR\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:235:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:130:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:214:9" shape : ellipse }
+node: { title: "_ada_pinny2" label: "pinny2\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:10:1\n808 bytes (static)" }
+edge: { sourcename: "_ada_pinny2" targetname: "_Unwind_Resume" }
+edge: { sourcename: "_ada_pinny2" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:52:7" }
+edge: { sourcename: "_ada_pinny2" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:52:25" }
+edge: { sourcename: "_ada_pinny2" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:52:27" }
+edge: { sourcename: "_ada_pinny2" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:52:19" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio__toggle__2" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:51:7" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio__set__4" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:48:4" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio__clear__2" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:47:4" }
+edge: { sourcename: "_ada_pinny2" targetname: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:pinny2__initialize.6324" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:45:4" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:25:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:21:53" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+edge: { sourcename: "_ada_pinny2" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:17:18" }
+node: { title: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:pinny2__initialize.6324" label: "initialize\n/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:29:4\n40 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:pinny2__initialize.6324" targetname: "stm32__gpio__configure_io__2" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:40:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:pinny2__initialize.6324" targetname: "stm32__device__enable_clock__3" label: "/media/16T/ada/STM32/U/U5/U585/pinny2_ns/src/pinny2.adb:33:7" }
+}

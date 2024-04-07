@@ -1,0 +1,4 @@
+package Secp112r2 is
+   procedure Test;
+
+end Secp112r2;

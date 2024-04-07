@@ -1,0 +1,42 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb"
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:65:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:208:9" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "utils__ms_delay" label: "Ms_Delay\n/media/16T/ada/STM32/U/U0/U073/exp/src/utils.ads:50:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "stm32__gpio__set" label: "SET\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:153:13" shape : ellipse }
+node: { title: "stm32__power_control__disable_backup_domain_protection" label: "DISABLE_BACKUP_DOMAIN_PROTECTION\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-power_control.ads:35:14" shape : ellipse }
+node: { title: "stm32__power_control__enable" label: "ENABLE\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-power_control.ads:33:14" shape : ellipse }
+node: { title: "stm32__board__all_leds_off" label: "ALL_LEDS_OFF\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/boards/stm32u073_bluepill/src/stm32-board.ads:67:14" shape : ellipse }
+node: { title: "stm32__board__initialize_leds" label: "INITIALIZE_LEDS\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/boards/stm32u073_bluepill/src/stm32-board.ads:58:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/U/U0/U073/exp/Ada_Drivers_Library/boards/stm32u073_bluepill/src/stm32-board.ads:57:14" shape : ellipse }
+node: { title: "sx1276_spi__sx1276_radioIP" label: "Sx1276_Radioip\n/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276.ads:307:9" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" label: "Init_Gpio\n/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:94:7\n104 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:158:10" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:153:10" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:151:10" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:146:10" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:100:29" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:100:29" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:100:29" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:97:32" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:97:32" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:97:32" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:97:32" }
+node: { title: "_ada_sx1276_shutdown_u073" label: "Sx1276_Shutdown_U073\n/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:30:1\n304 bytes (static)" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:205:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "utils__ms_delay" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:203:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:201:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__gpio__set" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:197:18" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__power_control__disable_backup_domain_protection" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:196:23" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__power_control__enable" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:195:23" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__board__all_leds_off" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:192:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276.4815" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:191:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__board__initialize_leds" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:190:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:189:4" }
+edge: { sourcename: "_ada_sx1276_shutdown_u073" targetname: "sx1276_spi__sx1276_radioIP" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:31:4" }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276.4815" label: "Initialize_Sx1276\n/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:45:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276.4815" targetname: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:sx1276_shutdown_u073__initialize_sx1276__init_gpio.4832" label: "/media/16T/ada/STM32/U/U0/U073/exp/src/sx1276_shutdown_u073.adb:178:7" }
+}

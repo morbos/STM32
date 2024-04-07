@@ -1,0 +1,26 @@
+with "Ada_Drivers_Library/boards/stm32wb55x_nucleo.gpr";
+with "Ada_Drivers_Library/boards/common_config.gpr";
+
+project client_wb55x extends "../../common.gpr" is
+
+   for Languages use ("Ada");
+
+   for Main use ("client_wb55x.adb");
+
+   for Source_Dirs use ("src",
+                        "src/comm",
+			"src/comm/bt/hci",
+			"src/comm/bt/hci/controller",
+			"src/comm/bt/utils");
+
+   for Object_Dir use "obj/" & Common_Config.Build;
+
+   for Target use "arm-eabi";
+
+   for Runtime ("Ada") use STM32WB55x_Nucleo'Runtime("Ada");
+
+   package Builder is
+     for Global_Configuration_Pragmas use "gnat.adc";
+   end Builder;
+
+end client_wb55x;

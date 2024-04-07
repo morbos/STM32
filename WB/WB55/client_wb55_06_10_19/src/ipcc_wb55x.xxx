@@ -1,0 +1,340 @@
+with HAL; use HAL;
+with STM32.Device;  use STM32.Device;
+with STM32.GPIO;    use STM32.GPIO;
+with STM32.I2C;     use STM32.I2C;
+with STM32.IPCC;    use STM32.IPCC;
+with Mbox_Def;      use Mbox_Def;
+with Log;           use Log;
+with STM32.Board;   use STM32.Board;
+with Ada.Text_IO;   use Ada.Text_IO;
+with Memory;
+
+use STM32; -- for GPIO_Alternate_Function
+with STM32_SVD.SYSCFG;     use STM32_SVD.SYSCFG;
+with STM32_SVD.SYSCFG2;    use STM32_SVD.SYSCFG2;
+with STM32_SVD.RCC;        use STM32_SVD.RCC;
+with STM32_SVD.PWR;        use STM32_SVD.PWR;
+with STM32_SVD.EXTI;       use STM32_SVD.EXTI;
+with STM32_SVD.FLASH;      use STM32_SVD.FLASH;
+
+with System.Machine_Code; use System.Machine_Code;
+with Ada.Real_Time;       use Ada.Real_Time;
+
+with Ipcc_Int;  pragma Unreferenced (Ipcc_Int);
+
+procedure Ipcc_wb55x is
+
+   LEDs : GPIO_Points := (Red_LED, Green_LED, Blue_LED);
+
+   type Opcode_Type is record
+      Ogf : UInt6;
+      Ocf : UInt10;
+   end record
+     with Size => 16;
+
+   for Opcode_Type use record
+      Ogf   at 0 range 10 .. 15;
+      Ocf   at 0 range  0 ..  9;
+   end record;
+
+   type Opcode_Field
+     (As_Record : Boolean := False)
+   is record
+      case As_Record is
+         when False =>
+            Result : Opcode_Type;
+         when True =>
+            Val : UInt16;
+      end case;
+   end record
+     with Unchecked_Union, Size => 16;
+
+   CFG_BLE_NUM_GATT_ATTRIBUTES     : constant := 68;
+   CFG_BLE_NUM_GATT_SERVICES       : constant := 8;
+   CFG_BLE_ATT_VALUE_ARRAY_SIZE    : constant := 1344;
+   CFG_BLE_NUM_LINK                : constant :=     8;
+   CFG_BLE_DATA_LENGTH_EXTENSION   : constant :=  1;
+   CFG_BLE_PREPARE_WRITE_LIST_SIZE : constant := 16#3A#;
+   CFG_BLE_MBLOCK_COUNT            : constant :=      16#79#;
+   CFG_BLE_MAX_ATT_MTU             : constant :=        156;
+   CFG_BLE_SLAVE_SCA               : constant :=  500;
+   CFG_BLE_MASTER_SCA              : constant := 0;
+   CFG_BLE_LSE_SOURCE              : constant := 1;
+   CFG_BLE_MAX_CONN_EVENT_LENGTH   : constant := 16#FFFFFFFF#;
+   CFG_BLE_HSE_STARTUP_TIME        : constant := 16#148#;
+   CFG_BLE_VITERBI_MODE            : constant := 1;
+   CFG_BLE_LL_ONLY                 : constant := 0;
+
+   SHCI_OGF                : constant UInt6  :=  16#3f#;
+   SHCI_OCF_C2_BLE_INIT    : constant UInt10 :=  16#066#;
+   SHCI_OPCODE_C2_BLE_INIT : Opcode_Type     := (Ogf => SHCI_OGF, Ocf => SHCI_OCF_C2_BLE_INIT);
+--  #define SHCI_OPCODE_C2_BLE_INIT                 (( SHCI_OGF << 10) + SHCI_OCF_C2_BLE_INIT)
+
+   TL_BLECMD_PKT_TYPE   : constant := 16#10#;
+
+   type SHCI_C2_Ble_Init_Cmd_Param_T is record
+      PBleBufferAddress : UInt32;
+      BleBufferSize : UInt32;
+      NumAttrRecord : UInt16;
+      NumAttrServ : UInt16;
+      AttrValueArrSize  : UInt16;
+      NumOfLinks : UInt8;
+      ExtendedPacketLengthEnable  : UInt8;
+      PrWriteListSize : UInt8;
+      MblockCount : UInt8;
+      AttMtu  : UInt16;
+      SlaveSca  : UInt16;
+      MasterSca : UInt8;
+      LsSource : UInt8;
+      MaxConnEventLength : UInt32;
+      HsStartupTime  : UInt16;
+      ViterbiEnable : UInt8;
+      LlOnly : UInt8;
+      HwVersion : UInt8;
+   end record
+     with Pack;
+
+   type Three_Elem is array (1 .. 3) of UInt32;
+
+   type SHCI_C2_Ble_Init_Cmd_Packet_T is record
+      Header : Three_Elem;
+      Param  : SHCI_C2_Ble_Init_Cmd_Param_T;
+   end record
+     with Pack;
+
+   Ble_Init_Cmd_Packet : SHCI_C2_Ble_Init_Cmd_Packet_T :=
+     (Header => (others => 0),
+      Param => (PBleBufferAddress => 0,
+                BleBufferSize => 0,
+                NumAttrRecord => CFG_BLE_NUM_GATT_ATTRIBUTES,
+                NumAttrServ => CFG_BLE_NUM_GATT_SERVICES,
+                AttrValueArrSize => CFG_BLE_ATT_VALUE_ARRAY_SIZE,
+                NumOfLinks => CFG_BLE_NUM_LINK,
+                ExtendedPacketLengthEnable => CFG_BLE_DATA_LENGTH_EXTENSION,
+                PrWriteListSize => CFG_BLE_PREPARE_WRITE_LIST_SIZE,
+                MblockCount => CFG_BLE_MBLOCK_COUNT,
+                AttMtu => CFG_BLE_MAX_ATT_MTU,
+                SlaveSca => CFG_BLE_SLAVE_SCA,
+                MasterSca => CFG_BLE_MASTER_SCA,
+                LsSource => CFG_BLE_LSE_SOURCE,
+                MaxConnEventLength => CFG_BLE_MAX_CONN_EVENT_LENGTH,
+                HsStartupTime => CFG_BLE_HSE_STARTUP_TIME,
+                ViterbiEnable => CFG_BLE_VITERBI_MODE,
+                LlOnly => CFG_BLE_LL_ONLY,
+                HwVersion => 0));
+
+   type TL_PacketHeader_T is record
+      Next : UInt32;
+      Prev : UInt32;
+   end record
+     with Volatile, Pack;
+
+   type Buffer is array (1 .. 255) of UInt8;
+
+   type TL_Cmd_T is record
+      Cmdcode : UInt16;
+      Plen    : UInt8;
+      Payload : Buffer;
+   end record
+     with Volatile, Pack;
+
+   type TL_CmdSerial_T is record
+      Type_Code : UInt8;
+      Cmd       : TL_Cmd_T;
+   end record
+     with Volatile, Pack;
+
+   type TL_CmdPacket_T is record
+      Header    : TL_PacketHeader_T;
+      Cmdserial : TL_CmdSerial_T;
+   end record
+     with Volatile, Pack;
+
+   procedure My_Delay;
+
+   procedure My_Delay is
+   begin
+      delay until Clock + Milliseconds (500);
+   end My_Delay;
+   procedure SYSCFG_Init;
+   procedure SYSCFG_Init
+   is
+   begin
+      SYSCFG_Periph.SCSR.C2RFD := True;
+
+
+   end SYSCFG_Init;
+
+   procedure SYSCFG2_Init;
+   procedure SYSCFG2_Init
+   is
+   begin
+      SYSCFG2_Periph.C2IMR1.EXTI15IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI14IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI13IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI12IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI11IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI10IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI9IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI8IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI7IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI6IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI5IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI4IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI3IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI2IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI1IM := True;
+      SYSCFG2_Periph.C2IMR1.EXTI0IM := True;
+      SYSCFG2_Periph.C2IMR1.ADCIM := True;
+      SYSCFG2_Periph.C2IMR1.COMPIM := True;
+      SYSCFG2_Periph.C2IMR1.AES1IM := True;
+      SYSCFG2_Periph.C2IMR1.RCCIM := True;
+      SYSCFG2_Periph.C2IMR1.RTCALARMIM := True;
+      SYSCFG2_Periph.C2IMR1.RTCWKUPIM := True;
+      SYSCFG2_Periph.C2IMR1.RTCSTAMPTAMPLSECSSIM := True;
+      SYSCFG2_Periph.C2IMR2.LCDIM := True;
+      SYSCFG2_Periph.C2IMR2.TSCIM := True;
+      SYSCFG2_Periph.C2IMR2.PVDIM := True;
+      SYSCFG2_Periph.C2IMR2.PVM3IM := True;
+      SYSCFG2_Periph.C2IMR2.PVM1IM := True;
+      SYSCFG2_Periph.C2IMR2.DMAMUX1IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH7IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH6IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH5IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH4IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH3IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH2IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA2CH1IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH7IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH6IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH5IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH4IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH3IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH2IM := True;
+      SYSCFG2_Periph.C2IMR2.DMA1CH1IM := True;
+   end SYSCFG2_Init;
+   procedure CPU2_Init;
+   procedure CPU2_Init
+   is
+   begin
+      RCC_Periph.C2APB3ENR.BLEEN := True;
+      RCC_Periph.CSR.RFWKPSEL := 1;
+      PWR_Periph.C2CR1.LPMS := 4;
+      Asm ("sev", Volatile => True);
+      Asm ("wfe", Volatile => True);
+      PWR_Periph.CR4.C2BOOT := True;
+   end CPU2_Init;
+
+--  SHCI_CmdStatus_t SHCI_C2_BLE_Init( SHCI_C2_Ble_Init_Cmd_Packet_t *pCmdPacket )
+--  {
+--    /**
+--     * Buffer is large enough to hold command complete without payload
+--     */
+--    uint8_t local_buffer[TL_BLEEVT_CS_BUFFER_SIZE];
+--    TL_EvtPacket_t * p_rsp;
+--
+--    p_rsp = (TL_EvtPacket_t *)local_buffer;
+--
+--   shci_send( SHCI_OPCODE_C2_BLE_INIT,
+--              sizeof( SHCI_C2_Ble_Init_Cmd_Param_t ),
+--              (uint8_t*)&pCmdPacket->Param,
+--              p_rsp );
+--
+--    return (SHCI_CmdStatus_t)(((TL_CcEvt_t*)(p_rsp->evtserial.evt.payload))->payload[0]);
+
+   procedure SHCI_C2_BLE_Init;
+   procedure SHCI_C2_BLE_Init
+   is
+      Code  : Opcode_Field;
+      Param : aliased SHCI_C2_Ble_Init_Cmd_Param_T := Ble_Init_Cmd_Packet.Param;
+      Sz  : Integer := Param'Size / 8;
+      Buff    : UInt8_Array (1 .. Sz);
+      for Buff'Address use Param'Address;
+      Syscmd : TL_CmdPacket_T
+        with Volatile, Address => System'To_Address (16#2003_01ac#);
+   begin
+      Code.Result := SHCI_OPCODE_C2_BLE_INIT;
+      Syscmd.Cmdserial.Cmd.Cmdcode := Code.Val;
+      Syscmd.Cmdserial.Cmd.Plen := UInt8 (Sz);
+      for I in 1 .. Sz loop
+         Syscmd.Cmdserial.Cmd.Payload (I) := Buff (I);
+      end loop;
+      Syscmd.Cmdserial.Type_Code := TL_BLECMD_PKT_TYPE;
+
+      IPCC_Cpu1_SetFlag (HW_IPCC_SYSTEM_CMD_RSP_CHANNEL);
+      IPCC_Cpu1_EnableReceiveChannel (HW_IPCC_SYSTEM_CMD_RSP_CHANNEL);
+
+--  return (SHCI_CmdStatus_t)(((TL_CcEvt_t*)(p_rsp->evtserial.evt.payload))->payload[0]);
+
+   end SHCI_C2_BLE_Init;
+   procedure HW_Init;
+   procedure HW_Init
+   is
+   begin
+      RCC_Periph.CR.MSION := False;
+      RCC_Periph.CR.MSIRDY := False;
+      RCC_Periph.CFGR.STOPWUCK := True;
+      RCC_Periph.APB1ENR1.CRSEN := True;
+      RCC_Periph.CCIPR.CLK48SEL := 0;
+      RCC_Periph.CRRCR.HSI48RDY := True;
+      RCC_Periph.CRRCR.HSI48ON := True;
+      RCC_Periph.HSECR.HSETUNE := 16#23#;
+      FLASH_Periph.ACR.PRFTEN := True;
+      FLASH_Periph.ACR.LATENCY := 1;
+      EXTI_Periph.RTSR1.RT := 16#80000#;
+      EXTI_Periph.FTSR1.FT := 16#400#;
+      EXTI_Periph.IMR1 := 16#80400#;
+      EXTI_Periph.IMR2.IM := 16#10050#;
+   end HW_Init;
+begin
+   Initialize_Board;
+   Memory.Init;
+   HW_Init;
+   Init_Log;
+   CPU2_Init;
+   SYSCFG_Init;
+   SYSCFG2_Init;
+   IPCC_Enable;
+
+--   IPCC_Cpu1_EnableReceiveChannel (
+--                                   (HW_IPCC_BLE_CMD_CHANNEL,
+--                                    HW_IPCC_SYSTEM_CMD_RSP_CHANNEL,
+--                                    HW_IPCC_MM_RELEASE_BUFFER_CHANNEL
+--                                    )
+--                                  );
+--   IPCC_Cpu2_EnableReceiveChannel (
+--                                   (HW_IPCC_BLE_EVENT_CHANNEL,
+--                                    HW_IPCC_SYSTEM_EVENT_CHANNEL,
+--                                    HW_IPCC_TRACES_CHANNEL,
+--                                    IPCC_Channel_6 --  mbox_def.h doesn't defn this...
+--                                   )
+--                                  );
+
+   IPCC_Enable_TX_Interrupt;
+
+   IPCC_Enable_RX_Interrupt;
+
+   SHCI_C2_BLE_Init;
+
+   --  Tricky tricky
+   --  We wait here on a CPU2 init.
+   --  The IRQ will be flaky until the mask is established as below
+   --  eventually, it will mask off all 4 of the bits below but CPU2
+   --  takes its time and you can get a suprious IPCC IRQ when you are
+   --  not ready to handle it.
+--   while IPCC_CPU2_Masked ((HW_IPCC_BLE_EVENT_CHANNEL,
+--                            HW_IPCC_SYSTEM_EVENT_CHANNEL,
+--                            HW_IPCC_TRACES_CHANNEL,
+--                            IPCC_Channel_6))
+--   loop
+--      null;
+--   end loop;
+
+
+   loop
+      for I in LEDs'Range loop
+         Toggle (LEDs (I));
+         My_Delay;
+      end loop;
+   end loop;
+end Ipcc_wb55x;

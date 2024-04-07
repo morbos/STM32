@@ -1,0 +1,18 @@
+with HAL;            use HAL;
+with STM32.Device;   use STM32.Device;
+with STM32.Board;    use STM32.Board;
+with Ada.Real_Time; use Ada.Real_Time;
+package body NStask is
+
+   task body Idle
+   is
+   begin
+      loop
+--         Turn_On (Blue_LED);
+         delay until Clock + Milliseconds (1000);
+--         Turn_Off (Blue_LED);
+--         delay until Clock + Milliseconds (1000);
+      end loop;
+   end Idle;
+
+end NStask;

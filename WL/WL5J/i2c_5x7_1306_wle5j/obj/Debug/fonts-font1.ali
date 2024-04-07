@@ -1,0 +1,187 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m4
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U fonts.font1%s		fonts-font1.ads		5a704265 NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W fonts%s		fonts.adb		fonts.ali
+
+D ada.ads		20200106220410 76789da1 ada%s
+D a-except.ads		20200106220410 291912d5 ada.exceptions%s
+D a-finali.ads		20200106220410 bf4f806b ada.finalization%s
+D a-stream.ads		20200106220411 119b8fb3 ada.streams%s
+D a-tags.ads		20200106220409 491b781d ada.tags%s
+D a-unccon.ads		20200106220409 0e9b276f ada.unchecked_conversion%s
+D fonts.ads		20210724220343 5d70889b fonts%s
+D fonts-font1.ads	20210724220343 5a704265 fonts.font1%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-bitmap.ads	20200106220407 03ebc14f hal.bitmap%s
+D hal-framebuffer.ads	20200106220407 9811b908 hal.framebuffer%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-time.ads		20200106220407 f5295cd7 hal.time%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D memory_mapped_bitmap.ads  20200106220404 b7ed57c8 memory_mapped_bitmap%s
+D soft_drawing_bitmap.ads  20200106220404 41d47adc soft_drawing_bitmap%s
+D ssd1306.ads		20201225234358 555509ad ssd1306%s
+D system.ads		20200106220411 db831581 system%s
+D s-assert.ads		20200106220408 cd8d2c94 system.assertions%s
+D s-finmas.ads		20200106220410 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200106220410 4ff27390 system.finalization_root%s
+D s-parame.ads		20200106220411 d106111e system.parameters%s
+D s-pooglo.ads		20200106220409 ede33ef8 system.pool_global%s
+D s-secsta.ads		20200106220410 56a2861c system.secondary_stack%s
+D s-stalib.ads		20200106220409 09bd3940 system.standard_library%s
+D s-stoele.ads		20200106220410 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200106220409 b16154c2 system.storage_pools%s
+D s-stratt.ads		20200106220409 aedef97e system.stream_attributes%s
+D s-traent.ads		20200106220409 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200106220410 34867c83 system.unsigned_types%s
+D /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/gnat.adc  20210724220343 00000000
+G a e
+G c Z s s [Tchrtbl_f5x7_tBIP fonts__font1 303 4 none]
+X 7 fonts.ads
+3K9*Fonts 26e10 8|1w6 1r17 3r9 332r5
+5A9*Font_Array(9|53M9)<integer> 8|13r35 16r35 19r35 22r35 25r35 28r35 31r35
+. 34r35 37r35 40r35 43r35 46r35 49r35 52r35 55r35 58r35 61r35 64r35 67r35
+. 70r35 73r35 76r35 79r35 82r35 85r35 88r35 91r35 94r35 97r35 100r35 103r35
+. 106r35 109r35 112r35 115r35 118r35 121r35 124r35 127r35 130r35 133r35 136r35
+. 139r35 142r35 145r35 148r35 151r35 154r35 157r35 160r35 163r35 166r35 169r35
+. 172r35 175r35 178r35 181r35 184r35 187r35 190r35 193r35 196r35 199r35 202r35
+. 205r35 208r35 211r35 214r35 217r35 220r35 223r35 226r35 229r35 232r35 235r35
+. 238r35 241r35 244r35 247r35 250r35 253r35 256r35 259r35 262r35 265r35 268r35
+. 271r35 274r35 277r35 280r35 283r35 286r35 289r35 292r35 295r35 298r35
+6P9*Fa_Ptr(5A9) 8|303r49
+X 8 fonts-font1.ads
+3K15*Font1 7|3k9 8|332l11 332e16
+5m4*Chr_Hgt_F5x7{9|53M9}
+7I9*Font1_Range<short_short_integer> 303r33
+13a4*Chr_F5x7_20{7|5A9} 306r17
+16a4*Chr_F5x7_21{7|5A9} 306r37
+19a4*Chr_F5x7_22{7|5A9} 306r57
+22a4*Chr_F5x7_23{7|5A9} 306r77
+25a4*Chr_F5x7_24{7|5A9} 307r17
+28a4*Chr_F5x7_25{7|5A9} 307r37
+31a4*Chr_F5x7_26{7|5A9} 307r57
+34a4*Chr_F5x7_27{7|5A9} 307r77
+37a4*Chr_F5x7_28{7|5A9} 308r17
+40a4*Chr_F5x7_29{7|5A9} 308r37
+43a4*Chr_F5x7_2A{7|5A9} 308r57
+46a4*Chr_F5x7_2B{7|5A9} 308r77
+49a4*Chr_F5x7_2C{7|5A9} 309r17
+52a4*Chr_F5x7_2D{7|5A9} 309r37
+55a4*Chr_F5x7_2E{7|5A9} 309r57
+58a4*Chr_F5x7_2F{7|5A9} 309r77
+61a4*Chr_F5x7_30{7|5A9} 310r17
+64a4*Chr_F5x7_31{7|5A9} 310r37
+67a4*Chr_F5x7_32{7|5A9} 310r57
+70a4*Chr_F5x7_33{7|5A9} 310r77
+73a4*Chr_F5x7_34{7|5A9} 311r17
+76a4*Chr_F5x7_35{7|5A9} 311r37
+79a4*Chr_F5x7_36{7|5A9} 311r57
+82a4*Chr_F5x7_37{7|5A9} 311r77
+85a4*Chr_F5x7_38{7|5A9} 312r17
+88a4*Chr_F5x7_39{7|5A9} 312r37
+91a4*Chr_F5x7_3A{7|5A9} 312r57
+94a4*Chr_F5x7_3B{7|5A9} 312r77
+97a4*Chr_F5x7_3C{7|5A9} 313r17
+100a4*Chr_F5x7_3D{7|5A9} 313r37
+103a4*Chr_F5x7_3E{7|5A9} 313r57
+106a4*Chr_F5x7_3F{7|5A9} 313r77
+109a4*Chr_F5x7_40{7|5A9} 314r17
+112a4*Chr_F5x7_41{7|5A9} 314r37
+115a4*Chr_F5x7_42{7|5A9} 314r57
+118a4*Chr_F5x7_43{7|5A9} 314r77
+121a4*Chr_F5x7_44{7|5A9} 315r17
+124a4*Chr_F5x7_45{7|5A9} 315r37
+127a4*Chr_F5x7_46{7|5A9} 315r57
+130a4*Chr_F5x7_47{7|5A9} 315r77
+133a4*Chr_F5x7_48{7|5A9} 316r17
+136a4*Chr_F5x7_49{7|5A9} 316r37
+139a4*Chr_F5x7_4A{7|5A9} 316r57
+142a4*Chr_F5x7_4B{7|5A9} 316r77
+145a4*Chr_F5x7_4C{7|5A9} 317r17
+148a4*Chr_F5x7_4D{7|5A9} 317r37
+151a4*Chr_F5x7_4E{7|5A9} 317r57
+154a4*Chr_F5x7_4F{7|5A9} 317r77
+157a4*Chr_F5x7_50{7|5A9} 318r17
+160a4*Chr_F5x7_51{7|5A9} 318r37
+163a4*Chr_F5x7_52{7|5A9} 318r57
+166a4*Chr_F5x7_53{7|5A9} 318r77
+169a4*Chr_F5x7_54{7|5A9} 319r17
+172a4*Chr_F5x7_55{7|5A9} 319r37
+175a4*Chr_F5x7_56{7|5A9} 319r57
+178a4*Chr_F5x7_57{7|5A9} 319r77
+181a4*Chr_F5x7_58{7|5A9} 320r17
+184a4*Chr_F5x7_59{7|5A9} 320r37
+187a4*Chr_F5x7_5A{7|5A9} 320r57
+190a4*Chr_F5x7_5B{7|5A9} 320r77
+193a4*Chr_F5x7_5C{7|5A9} 321r17
+196a4*Chr_F5x7_5D{7|5A9} 321r37
+199a4*Chr_F5x7_5E{7|5A9} 321r57
+202a4*Chr_F5x7_5F{7|5A9} 321r77
+205a4*Chr_F5x7_60{7|5A9} 322r17
+208a4*Chr_F5x7_61{7|5A9} 322r37
+211a4*Chr_F5x7_62{7|5A9} 322r57
+214a4*Chr_F5x7_63{7|5A9} 322r77
+217a4*Chr_F5x7_64{7|5A9} 323r17
+220a4*Chr_F5x7_65{7|5A9} 323r37
+223a4*Chr_F5x7_66{7|5A9} 323r57
+226a4*Chr_F5x7_67{7|5A9} 323r77
+229a4*Chr_F5x7_68{7|5A9} 324r17
+232a4*Chr_F5x7_69{7|5A9} 324r37
+235a4*Chr_F5x7_6A{7|5A9} 324r57
+238a4*Chr_F5x7_6B{7|5A9} 324r77
+241a4*Chr_F5x7_6C{7|5A9} 325r17
+244a4*Chr_F5x7_6D{7|5A9} 325r37
+247a4*Chr_F5x7_6E{7|5A9} 325r57
+250a4*Chr_F5x7_6F{7|5A9} 325r77
+253a4*Chr_F5x7_70{7|5A9} 326r17
+256a4*Chr_F5x7_71{7|5A9} 326r37
+259a4*Chr_F5x7_72{7|5A9} 326r57
+262a4*Chr_F5x7_73{7|5A9} 326r77
+265a4*Chr_F5x7_74{7|5A9} 327r17
+268a4*Chr_F5x7_75{7|5A9} 327r37
+271a4*Chr_F5x7_76{7|5A9} 327r57
+274a4*Chr_F5x7_77{7|5A9} 327r77
+277a4*Chr_F5x7_78{7|5A9} 328r17
+280a4*Chr_F5x7_79{7|5A9} 328r37
+283a4*Chr_F5x7_7A{7|5A9} 328r57
+286a4*Chr_F5x7_7B{7|5A9} 328r77
+289a4*Chr_F5x7_7C{7|5A9} 329r17
+292a4*Chr_F5x7_7D{7|5A9} 329r37
+295a4*Chr_F5x7_7E{7|5A9} 329r57
+298a4*Chr_F5x7_7F{7|5A9} 329r77
+303A9*Chrtbl_F5x7_T(7|6P9)<7I9> 305r18
+305a4*Chrtbl_F5x7{303A9}
+X 9 hal.ads
+53M9*UInt8<15|63M9> 8|5r28
+X 10 hal-bitmap.ads
+98h9*Bitmap_Buffer
+X 11 hal-framebuffer.ads
+44h9*Frame_Buffer_Display
+X 15 interfac.ads
+63M9*Unsigned_8
+

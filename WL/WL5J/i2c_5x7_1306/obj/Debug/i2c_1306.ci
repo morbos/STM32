@@ -1,0 +1,70 @@
+edge: { sourcename: "i2c_1306__TTdisplaySCFD"
+  targetname: "-9:ssd1306__ssd1306_screen,ssd1306__ssd1306_screen"
+  label: "i2c_1306.adb:29:4"
+}
+graph: { title: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb"
+node: { title: "stm32__i2c__configure" label: "CONFIGURE\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-i2c.ads:73:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_alternate_function__2" label: "CONFIGURE_ALTERNATE_FUNCTION\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:255:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__reset__6" label: "RESET\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32wl5x/stm32-device.ads:227:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__6" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32wl5x/stm32-device.ads:225:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32wl5x/stm32-device.ads:64:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:208:9" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "system__img_uns__image_unsigned" label: "Image_Unsigned\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-imguns.ads:41:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:63:14" shape : ellipse }
+node: { title: "ssd1306__turn_on" label: "TURN_ON\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:74:14" shape : ellipse }
+node: { title: "fonts__drawstring" label: "Drawstring\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/fonts.ads:17:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+node: { title: "ssd1306__fill_region" label: "FILL_REGION\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:79:14" shape : ellipse }
+node: { title: "ssd1306__initialize_layer" label: "INITIALIZE_LAYER\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:128:14" shape : ellipse }
+node: { title: "ssd1306__initialize" label: "INITIALIZE\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:68:14" shape : ellipse }
+node: { title: "stm32__subghzrf__subghzrf_init" label: "SUBGHZRF_INIT\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:533:14" shape : ellipse }
+node: { title: "stm32__subghzphy__subghzphy_init" label: "SUBGHZPHY_INIT\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzphy.ads:10:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo/src/stm32-board.ads:59:14" shape : ellipse }
+node: { title: "ssd1306__ssd1306_screenIP" label: "SSD1306_SCREENIP\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:206:9" shape : ellipse }
+node: { title: "ravenscar_time__delays" label: "Delays\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/middleware/src/ravenscar-common/ravenscar_time.ads:36:13" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" label: "INITIALIZE_I2C_GPIO\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:44:4\n80 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:85:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__i2c__configure" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:72:16" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:73:15" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio__configure_alternate_function__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:70:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:68:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:67:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__device__reset__6" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:61:19" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:61:32" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__device__enable_clock__6" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:59:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:59:26" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:58:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:57:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:56:7" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:54:58" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:54:58" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:54:58" }
+node: { title: "_ada_i2c_1306" label: "I2C_1306\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:23:1\n1224 bytes (static)" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:179:7" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "fonts__drawstring" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:178:7" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "system__img_uns__image_unsigned" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:178:48" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "fonts__drawstring" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:175:7" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "fonts__drawstring" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:172:7" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "system__img_uns__image_unsigned" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:172:49" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "fonts__drawstring" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:169:7" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:166:7" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ssd1306__turn_on" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:161:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "fonts__drawstring" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:158:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "fonts__drawstring" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:155:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ssd1306__fill_region" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:147:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:151:41" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:149:40" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ssd1306__fill_region" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:141:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ssd1306__initialize_layer" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:137:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ssd1306__initialize" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:135:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:i2c_1306__initialize_i2c_gpio.5273" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:126:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "stm32__subghzrf__subghzrf_init" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:124:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "stm32__subghzphy__subghzphy_init" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:123:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:122:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ssd1306__ssd1306_screenIP" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:29:4" }
+edge: { sourcename: "_ada_i2c_1306" targetname: "ravenscar_time__delays" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/i2c_1306.adb:34:52" }
+}

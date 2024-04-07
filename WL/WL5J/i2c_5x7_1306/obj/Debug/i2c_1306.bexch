@@ -1,0 +1,55 @@
+[GENERATED OBJECT FILE]
+b__i2c_1306.o
+[PROJECT FILES]
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/i2c_1306.gpr
+20210116213912
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/middleware/middleware.gpr
+20200106220402
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/components.gpr
+20200106220430
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4.gpr
+20200106220436
+/media/16T/ada/Ada_Drivers_Library/hal/HAL.gpr
+20200106220404
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/stm32wl5x.gpr
+20210131012558
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/target_options.gpr
+20210115025852
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/runtime_build.gpr
+20210115025929
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/ravenscar_build.gpr
+20210115025923
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo/config.gpr
+20210115025559
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo/board.gpr
+20210115025544
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo.gpr
+20210115025520
+[BOUND OBJECT FILES]
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/fonts-font1.o
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/fonts.o
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/peripherals.o
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/last_chance_handler.o
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/radio_int.o
+/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/i2c_1306.o
+[GENERATED SOURCE FILES]
+b__i2c_1306.ads
+b__i2c_1306.adb
+b__i2c_1306.ali
+[RESULTING OPTIONS]
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/
+-L/media/16T/ada/STM32/WL/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/lib/stm32wl5x_nucleo/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo/lib/stm32wl5x/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32wl5x/ravenscar-full/Debug/
+-L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32wl5x/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4/stm32wl5x/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/lib/stm32wl5x/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/middleware/lib/stm32wl5x/ravenscar-full/Debug/
+-L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
+-static
+-static-libgcc
+/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/libgnarl.a
+/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/libgnat.a

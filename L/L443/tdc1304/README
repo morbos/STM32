@@ -1,0 +1,19 @@
+
+TDC1304
+-------
+
+Attempt to use an off the shelf uP to SW drive a TCD1304 CMOS linear array.
+
+3648 pixels.
+
+Clk Vmin is 3v so I am hoping 3.3v is OK (4v is typ).
+
+Clk is 0.8Mhz - 2.4Mhz with 2Mhz typ. We will run at 2Mhz.
+
+There are 3 pulses/clocks to be generated:
+
+ICG (integration clear gate) (act low, goes first ~500ns delay then trigger SH)
+SH (shift gate) (act hi, ~1uSec+)
+Mclk (2Mhz freerunning?)
+
+Start ADC on rising edge of ICG 16 dummy, 13 light shield, 3 dummy, 3648 pel, 14 dummy then drive ICG lo ~500ns

@@ -1,0 +1,4 @@
+default:
+	rm -f obj/Debug/ipcc_wb55x
+	(export LOADER=ROM_WB55x; gprbuild)
+	(cd obj/Debug; arm-eabi-objdump -d ipcc_wb55x >ipcc_wb55x.lst; arm-eabi-objdump -s ipcc_wb55x >ipcc_wb55x.dmp; arm-eabi-gcc-nm -an ipcc_wb55x >ipcc_wb55x.nm; arm-eabi-objcopy -Obinary ipcc_wb55x ipcc_wb55x.bin)

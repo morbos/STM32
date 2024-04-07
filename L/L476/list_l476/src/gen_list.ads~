@@ -1,0 +1,21 @@
+generic
+   type Payload is private;
+package Gen_List is
+   type ListNode is record
+      Next : access ListNode;
+      Prev : access ListNode;
+      E    : Payload;
+   end record;
+   procedure List_Init_Head (ListHead : in out ListNode);
+--   function List_Is_Empty (ListHead : ListNode) return Boolean;
+--   procedure List_Insert_Head (ListHead : ListNode; Node : ListNode);
+--   procedure List_Insert_Tail (ListHead : ListNode; Node : ListNode);
+--   procedure List_Remove_Node (Node : ListNode);
+--   procedure List_Remove_Head (ListHead : ListNode, Node : in out ListNode);
+--   procedure List_Remove_Tail (ListHead : ListNode; Node : in out ListNode);
+--   procedure List_Insert_Node_After (Node : ListNode; Ref_Node : ListNode);
+--   procedure List_Insert_Node_Before (node : ListNode; Ref_Node : ListNode);
+--   function List_Get_Size (ListHead : ListNode) return Natural;
+--   procedure List_Get_Next_Node (Ref_Node : ListNode; Node : in out ListNode);
+--   procedure List_Get_Prev_Node (Ref_Node: ListNode; Node : in out ListNode);
+end Gen_List;

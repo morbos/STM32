@@ -1,0 +1,2 @@
+sx1276_l443.adb:25:04: warning: variable "RxBuffer" is never read and never assigned
+sx1276_l443.adb:167:04: warning: variable "Len" is never read and never assigned

@@ -1,0 +1,42 @@
+edge: { sourcename: "test_s__TTvemlSCFD"
+  targetname: "-9:veml6030_i2c__veml6030_sensor,veml6030_i2c__veml6030_sensor"
+  label: "test_s.adb:82:4"
+}
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb"
+node: { title: "stm32__i2c__configure" label: "CONFIGURE\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-i2c.ads:73:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_alternate_function__2" label: "CONFIGURE_ALTERNATE_FUNCTION\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:262:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:190:14" shape : ellipse }
+node: { title: "stm32__device__reset__4" label: "RESET\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u5/stm32-device.ads:279:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__4" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u5/stm32-device.ads:277:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u5/stm32-device.ads:61:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:130:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:214:9" shape : ellipse }
+node: { title: "veml6030_i2c__read_als" label: "Read_Als\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030.ads:43:13" shape : ellipse }
+node: { title: "veml6030_i2c__powerup" label: "Powerup\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030.ads:41:14" shape : ellipse }
+node: { title: "cm33__init_cm33" label: "INIT_CM33\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.ads:14:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/boards/stm32u5_discovery_ns/src/stm32-board.ads:63:14" shape : ellipse }
+node: { title: "veml6030_i2c__veml6030_sensorIP" label: "Veml6030_Sensorip\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030.ads:46:9" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" label: "Initialize_Gpio\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:45:4\n88 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__i2c__configure" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:71:16" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:72:15" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__gpio__configure_alternate_function__2" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:69:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:67:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:66:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__device__reset__4" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:60:19" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:60:32" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__device__enable_clock__4" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:58:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:58:26" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:57:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:56:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:54:58" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:54:58" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:54:58" }
+node: { title: "_ada_test_s" label: "Test_S\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:22:1\n40 bytes (static)" }
+edge: { sourcename: "_ada_test_s" targetname: "veml6030_i2c__read_als" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:97:11" }
+edge: { sourcename: "_ada_test_s" targetname: "veml6030_i2c__powerup" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:95:8" }
+edge: { sourcename: "_ada_test_s" targetname: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:test_s__initialize_gpio.6480" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:89:4" }
+edge: { sourcename: "_ada_test_s" targetname: "cm33__init_cm33" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:87:4" }
+edge: { sourcename: "_ada_test_s" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:86:4" }
+edge: { sourcename: "_ada_test_s" targetname: "veml6030_i2c__veml6030_sensorIP" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/test_s.adb:82:4" }
+}

@@ -1,0 +1,5 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/crc8.adb"
+node: { title: "crc8__update_crc8__2" label: "Update_Crc8\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/crc8.adb:32:4\n48 bytes (static)" }
+node: { title: "crc8__update_crc8" label: "Update_Crc8\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/crc8.adb:22:4\n48 bytes (static)" }
+node: { title: "crc8__gen_crc8_table" label: "Gen_Crc8_Table\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/crc8.adb:5:4\n24 bytes (static)" }
+}

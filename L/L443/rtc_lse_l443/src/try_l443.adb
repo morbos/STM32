@@ -27,7 +27,7 @@ procedure Try_l443 is
 begin
    Initialize_Board;
    Enable (STM32.Device.RTC, Use_LSE);
-   STM32.Device.RTC.Set_WUT_Interrupt (0);
+   STM32.Device.RTC.Set_1Hz_WUT_Interrupt;
 --   RTC_Use_Lse;
    Enable_EXTI20;
 

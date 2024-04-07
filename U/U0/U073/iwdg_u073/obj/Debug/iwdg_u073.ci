@@ -1,0 +1,17 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb"
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:65:14" shape : ellipse }
+node: { title: "uart__send_message" label: "Send_Message\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/uart.ads:7:14" shape : ellipse }
+node: { title: "stm32__gpio__set" label: "SET\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:153:13" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/Ada_Drivers_Library/boards/stm32u073_bluepill/src/stm32-board.ads:57:14" shape : ellipse }
+node: { title: "uart__initialize_uart" label: "Initialize_Uart\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/uart.ads:3:14" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:iwdg_u073__init_gpio.4165" label: "Init_Gpio\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:26:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:iwdg_u073__init_gpio.4165" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:34:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:iwdg_u073__init_gpio.4165" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:29:7" }
+node: { title: "_ada_iwdg_u073" label: "Iwdg_U073\n/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:16:1\n24 bytes (static)" }
+edge: { sourcename: "_ada_iwdg_u073" targetname: "uart__send_message" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:45:4" }
+edge: { sourcename: "_ada_iwdg_u073" targetname: "stm32__gpio__set" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:41:18" }
+edge: { sourcename: "_ada_iwdg_u073" targetname: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:iwdg_u073__init_gpio.4165" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:40:4" }
+edge: { sourcename: "_ada_iwdg_u073" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:39:4" }
+edge: { sourcename: "_ada_iwdg_u073" targetname: "uart__initialize_uart" label: "/media/16T/ada/STM32/U/U0/U073/iwdg_u073/src/iwdg_u073.adb:38:4" }
+}

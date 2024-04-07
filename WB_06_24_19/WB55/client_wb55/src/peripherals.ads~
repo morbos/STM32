@@ -1,0 +1,13 @@
+with STM32.Device;        use STM32.Device;
+with STM32.GPIO;          use STM32.GPIO;
+
+use STM32;
+
+package Peripherals is
+
+--  User button
+
+   User_Button_Point     : GPIO_Point renames PA10;
+   User_Button_Interrupt : constant Interrupt_ID := Names.EXTI15_10_Interrupt;
+
+end Peripherals;

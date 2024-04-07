@@ -7,7 +7,7 @@ package ada_main is
 
 
    GNAT_Version : constant String :=
-                    "GNAT Version: Community 2018 (20180524-73)" & ASCII.NUL;
+                    "GNAT Version: Community 2019 (20190517-74)" & ASCII.NUL;
    pragma Export (C, GNAT_Version, "__gnat_version");
 
    Ada_Main_Program_Name : constant String := "_ada_try_wb55x" & ASCII.NUL;
@@ -84,66 +84,66 @@ package ada_main is
    --  system.address_image%b
    --  system.traceback%s
    --  system.traceback%b
-   --  system.multiprocessors%s
-   --  system.standard_library%s
-   --  system.exceptions_debug%s
-   --  system.exceptions_debug%b
-   --  ada.exceptions%s
-   --  system.val_util%s
-   --  system.val_uns%s
    --  ada.tags%s
-   --  system.bb.time%s
-   --  system.bb.protection%s
-   --  system.bb.interrupts%s
-   --  system.bb.board_support%s
-   --  system.multiprocessors%b
-   --  system.multiprocessors.spin_locks%s
-   --  system.multiprocessors.spin_locks%b
-   --  system.multiprocessors.fair_locks%s
-   --  system.soft_links%s
-   --  system.exception_table%s
-   --  system.exception_table%b
    --  system.bb.cpu_primitives%s
    --  system.bb.cpu_primitives.context_switch_trigger%s
    --  system.bb.cpu_primitives.context_switch_trigger%b
+   --  system.bb.interrupts%s
+   --  system.bb.protection%s
+   --  system.multiprocessors%s
+   --  system.bb.time%s
+   --  system.bb.board_support%s
    --  system.bb.board_support%b
-   --  ada.exceptions.last_chance_handler%s
-   --  system.wch_stw%s
-   --  system.exceptions.machine%s
-   --  system.exceptions.machine%b
-   --  ada.exceptions.traceback%s
-   --  ada.exceptions.traceback%b
-   --  system.memory%s
-   --  system.memory%b
-   --  system.val_util%b
-   --  system.val_uns%b
-   --  ada.tags%b
-   --  system.bb.timing_events%s
    --  system.bb.threads%s
    --  system.bb.threads.queues%s
    --  system.bb.threads.queues%b
-   --  system.bb.interrupts%b
-   --  system.bb.cpu_primitives%b
-   --  system.os_interface%s
-   --  ada.exceptions.last_chance_handler%b
-   --  system.task_primitives%s
-   --  system.wch_stw%b
-   --  system.traceback.symbolic%s
-   --  system.traceback.symbolic%b
-   --  system.standard_library%b
-   --  ada.exceptions%b
+   --  system.bb.timing_events%s
    --  system.bb.timing_events%b
-   --  system.bb.time%b
-   --  system.bb.protection%b
-   --  system.bb.threads%b
-   --  system.multiprocessors.fair_locks%b
+   --  system.multiprocessors.spin_locks%s
+   --  system.multiprocessors.spin_locks%b
+   --  system.multiprocessors.fair_locks%s
+   --  system.os_interface%s
+   --  system.standard_library%s
+   --  ada.exceptions%s
+   --  system.exceptions.machine%s
+   --  system.exceptions.machine%b
+   --  system.exceptions_debug%s
+   --  system.exceptions_debug%b
+   --  system.soft_links%s
+   --  system.task_primitives%s
    --  system.tasking%s
+   --  system.task_primitives.operations%s
    --  system.tasking.debug%s
    --  system.tasking.debug%b
-   --  system.task_primitives.operations%s
-   --  system.tasking%b
+   --  system.val_uns%s
+   --  system.val_util%s
+   --  system.val_util%b
+   --  system.wch_stw%s
+   --  system.wch_stw%b
+   --  ada.exceptions.last_chance_handler%s
+   --  ada.exceptions.last_chance_handler%b
+   --  ada.exceptions.traceback%s
+   --  ada.exceptions.traceback%b
+   --  ada.tags%b
+   --  system.bb.cpu_primitives%b
+   --  system.bb.interrupts%b
+   --  system.bb.protection%b
+   --  system.bb.threads%b
+   --  system.bb.time%b
+   --  system.exception_table%s
+   --  system.exception_table%b
+   --  system.memory%s
+   --  system.memory%b
+   --  system.multiprocessors%b
+   --  system.multiprocessors.fair_locks%b
    --  system.soft_links%b
+   --  system.standard_library%b
    --  system.task_primitives.operations%b
+   --  system.tasking%b
+   --  system.traceback.symbolic%s
+   --  system.traceback.symbolic%b
+   --  ada.exceptions%b
+   --  system.val_uns%b
    --  ada.streams%s
    --  ada.streams%b
    --  system.finalization_root%s
@@ -199,8 +199,8 @@ package ada_main is
    --  stm32.device%s
    --  stm32.device%b
    --  stm32.syscfg%s
-   --  stm32.gpio%b
    --  stm32.syscfg%b
+   --  stm32.gpio%b
    --  stm32.board%s
    --  stm32.board%b
    --  try_wb55x%b

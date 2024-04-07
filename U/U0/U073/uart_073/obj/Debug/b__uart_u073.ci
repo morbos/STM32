@@ -1,0 +1,20 @@
+graph: { title: "b__uart_u073.adb"
+node: { title: "_ada_uart_u073" label: "ada_main_program\nb__uart_u073.adb:56:14" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e26b\nb__uart_u073.adb:50:19" shape : ellipse }
+node: { title: "ada__text_io___elabb" label: "e24b\nb__uart_u073.adb:43:18" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e22b\nb__uart_u073.adb:41:20" shape : ellipse }
+node: { title: "ada_main___elabb" label: "e20b\nb__uart_u073.adb:35:15" shape : ellipse }
+node: { title: "system__secondary_stack__ss_stackIP" label: "Ss_Stackip\n/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/../../base_runtimes/ravenscar-ssfp/common/s-secsta.ads:106:9" shape : ellipse }
+node: { title: "ada_main___elabb" label: "ada_main\nb__uart_u073.adb:7:1\n8 bytes (static)" }
+edge: { sourcename: "ada_main___elabb" targetname: "ada_main__Tsec_default_sized_stacksBIP" label: "b__uart_u073.adb:20:4" }
+node: { title: "main" label: "main\nb__uart_u073.adb:59:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_uart_u073" label: "b__uart_u073.adb:65:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__uart_u073.adb:64:7" }
+node: { title: "adainit" label: "adainit\nb__uart_u073.adb:23:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__uart_u073.adb:50:19" }
+edge: { sourcename: "adainit" targetname: "ada__text_io___elabb" label: "b__uart_u073.adb:43:18" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__uart_u073.adb:41:20" }
+edge: { sourcename: "adainit" targetname: "ada_main___elabb" label: "b__uart_u073.adb:35:15" }
+node: { title: "ada_main__Tsec_default_sized_stacksBIP" label: "tsec_default_sized_stacksbip\nb__uart_u073.adb:20:4\n32 bytes (static)" }
+edge: { sourcename: "ada_main__Tsec_default_sized_stacksBIP" targetname: "system__secondary_stack__ss_stackIP" label: "b__uart_u073.adb:20:4" }
+}

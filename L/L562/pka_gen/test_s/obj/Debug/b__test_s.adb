@@ -10,17 +10,19 @@ package body ada_main is
    E070 : Short_Integer; pragma Import (Ada, E070, "system__tasking__protected_objects_E");
    E074 : Short_Integer; pragma Import (Ada, E074, "system__tasking__protected_objects__multiprocessors_E");
    E079 : Short_Integer; pragma Import (Ada, E079, "system__tasking__restricted__stages_E");
-   E101 : Short_Integer; pragma Import (Ada, E101, "stm32__exti_E");
-   E112 : Short_Integer; pragma Import (Ada, E112, "stm32__mpu_E");
-   E097 : Short_Integer; pragma Import (Ada, E097, "stm32__rcc_E");
-   E121 : Short_Integer; pragma Import (Ada, E121, "stm32__sau_E");
-   E108 : Short_Integer; pragma Import (Ada, E108, "stm32__spi_E");
-   E095 : Short_Integer; pragma Import (Ada, E095, "stm32__gpio_E");
+   E095 : Short_Integer; pragma Import (Ada, E095, "stm32__dac_E");
+   E106 : Short_Integer; pragma Import (Ada, E106, "stm32__exti_E");
+   E111 : Short_Integer; pragma Import (Ada, E111, "stm32__i2c_E");
+   E119 : Short_Integer; pragma Import (Ada, E119, "stm32__mpu_E");
+   E102 : Short_Integer; pragma Import (Ada, E102, "stm32__rcc_E");
+   E128 : Short_Integer; pragma Import (Ada, E128, "stm32__sau_E");
+   E115 : Short_Integer; pragma Import (Ada, E115, "stm32__spi_E");
+   E100 : Short_Integer; pragma Import (Ada, E100, "stm32__gpio_E");
    E092 : Short_Integer; pragma Import (Ada, E092, "stm32__device_E");
-   E099 : Short_Integer; pragma Import (Ada, E099, "stm32__syscfg_E");
+   E104 : Short_Integer; pragma Import (Ada, E104, "stm32__syscfg_E");
    E085 : Short_Integer; pragma Import (Ada, E085, "stm32__board_E");
-   E117 : Short_Integer; pragma Import (Ada, E117, "stm32__rng_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "stm32__pka_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "stm32__rng_E");
+   E122 : Short_Integer; pragma Import (Ada, E122, "stm32__pka_E");
    E081 : Short_Integer; pragma Import (Ada, E081, "curve_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -58,21 +60,23 @@ package body ada_main is
       E074 := E074 + 1;
       System.Tasking.Restricted.Stages'Elab_Body;
       E079 := E079 + 1;
-      E101 := E101 + 1;
-      E112 := E112 + 1;
-      E097 := E097 + 1;
-      E121 := E121 + 1;
-      E108 := E108 + 1;
+      E095 := E095 + 1;
+      E106 := E106 + 1;
+      E111 := E111 + 1;
+      E119 := E119 + 1;
+      E102 := E102 + 1;
+      E128 := E128 + 1;
+      E115 := E115 + 1;
       STM32.DEVICE'ELAB_SPEC;
       STM32.DEVICE'ELAB_BODY;
       E092 := E092 + 1;
-      E099 := E099 + 1;
-      E095 := E095 + 1;
+      E104 := E104 + 1;
+      E100 := E100 + 1;
       STM32.BOARD'ELAB_SPEC;
       E085 := E085 + 1;
       STM32.RNG'ELAB_SPEC;
-      E117 := E117 + 1;
-      E115 := E115 + 1;
+      E124 := E124 + 1;
+      E122 := E122 + 1;
       E081 := E081 + 1;
       Activate_All_Tasks_Sequential;
    end adainit;
@@ -90,20 +94,20 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_s/obj/Debug/curve.o
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_s/obj/Debug/test_s.o
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_s/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_s/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_s/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_s/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l5nucleo_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/components/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/middleware/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5discovery_s/sfp/adalib/
+   --   /home/hedley/ada/STM32/L/L562/pka_gen/test_s/obj/Debug/curve.o
+   --   /home/hedley/ada/STM32/L/L562/pka_gen/test_s/obj/Debug/test_s.o
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/test_s/obj/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/test_s/obj/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/test_s/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_s/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l5nucleo_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/components/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/middleware/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5discovery_s/sfp/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

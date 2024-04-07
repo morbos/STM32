@@ -38,6 +38,10 @@ procedure sx1276_Ns is
                   Addr       => 16#2000_0000#,
                   Size       => (2 ** 18) - 1,
                   AttIdx     => 0);
+      Add_Region (Region_Num => 2,
+                  Addr       => 16#5000_0000#,
+                  Size       => 16#1000_0000# - 1,
+                  AttIdx     => 1);
       Add_Region (Region_Num => 3,
                   Addr       => 16#4000_0000#,
                   Size       => 16#1000_0000# - 1,

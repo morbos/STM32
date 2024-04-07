@@ -1,0 +1,14 @@
+   procedure Push
+     (This : in out BLE_Packet;
+      Data : UInt32)
+   is
+      type As_Array is array (1 .. 4) of UInt8 with Pack, Size => 32;
+
+      Data_As_Array : As_Array;
+      for Data_As_Array'Address use Data'Address;
+   begin
+      Push (This, Data_As_Array (1));
+      Push (This, Data_As_Array (2));
+      Push (This, Data_As_Array (3));
+      Push (This, Data_As_Array (4));
+   end Push;

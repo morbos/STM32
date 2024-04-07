@@ -1,0 +1,5 @@
+package Sx1276_Task is
+   task Send_Sx1276 Task is
+      pragma Storage_Size (4 * 1024);
+      pragma Priority (System.Max_Priority);
+   end SW1_Task;

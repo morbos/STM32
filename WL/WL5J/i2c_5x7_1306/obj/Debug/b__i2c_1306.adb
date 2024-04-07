@@ -6,44 +6,48 @@ pragma Suppress (Overflow_Check);
 
 package body ada_main is
 
-   E121 : Short_Integer; pragma Import (Ada, E121, "ada__text_io_E");
+   E134 : Short_Integer; pragma Import (Ada, E134, "ada__text_io_E");
    E099 : Short_Integer; pragma Import (Ada, E099, "ada__tags_E");
    E113 : Short_Integer; pragma Import (Ada, E113, "system__bb__timing_events_E");
-   E055 : Short_Integer; pragma Import (Ada, E055, "system__soft_links_E");
-   E053 : Short_Integer; pragma Import (Ada, E053, "system__exception_table_E");
-   E128 : Short_Integer; pragma Import (Ada, E128, "ada__streams_E");
-   E136 : Short_Integer; pragma Import (Ada, E136, "system__finalization_root_E");
-   E134 : Short_Integer; pragma Import (Ada, E134, "ada__finalization_E");
-   E138 : Short_Integer; pragma Import (Ada, E138, "system__storage_pools_E");
-   E131 : Short_Integer; pragma Import (Ada, E131, "system__finalization_masters_E");
+   E050 : Short_Integer; pragma Import (Ada, E050, "system__soft_links_E");
+   E048 : Short_Integer; pragma Import (Ada, E048, "system__exception_table_E");
+   E141 : Short_Integer; pragma Import (Ada, E141, "ada__streams_E");
+   E149 : Short_Integer; pragma Import (Ada, E149, "system__finalization_root_E");
+   E147 : Short_Integer; pragma Import (Ada, E147, "ada__finalization_E");
+   E151 : Short_Integer; pragma Import (Ada, E151, "system__storage_pools_E");
+   E144 : Short_Integer; pragma Import (Ada, E144, "system__finalization_masters_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__real_time_E");
-   E140 : Short_Integer; pragma Import (Ada, E140, "system__pool_global_E");
-   E203 : Short_Integer; pragma Import (Ada, E203, "system__tasking__protected_objects_E");
-   E207 : Short_Integer; pragma Import (Ada, E207, "system__tasking__protected_objects__multiprocessors_E");
-   E212 : Short_Integer; pragma Import (Ada, E212, "system__tasking__restricted__stages_E");
-   E126 : Short_Integer; pragma Import (Ada, E126, "hal__bitmap_E");
-   E154 : Short_Integer; pragma Import (Ada, E154, "bitmap_color_conversion_E");
-   E147 : Short_Integer; pragma Import (Ada, E147, "hal__framebuffer_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "hal__gpio_E");
-   E149 : Short_Integer; pragma Import (Ada, E149, "hal__i2c_E");
-   E194 : Short_Integer; pragma Import (Ada, E194, "hal__spi_E");
-   E150 : Short_Integer; pragma Import (Ada, E150, "hal__time_E");
-   E224 : Short_Integer; pragma Import (Ada, E224, "ravenscar_time_E");
-   E156 : Short_Integer; pragma Import (Ada, E156, "soft_drawing_bitmap_E");
-   E152 : Short_Integer; pragma Import (Ada, E152, "memory_mapped_bitmap_E");
-   E144 : Short_Integer; pragma Import (Ada, E144, "ssd1306_E");
-   E123 : Short_Integer; pragma Import (Ada, E123, "fonts_E");
-   E184 : Short_Integer; pragma Import (Ada, E184, "stm32__exti_E");
-   E189 : Short_Integer; pragma Import (Ada, E189, "stm32__i2c_E");
-   E180 : Short_Integer; pragma Import (Ada, E180, "stm32__rcc_E");
-   E192 : Short_Integer; pragma Import (Ada, E192, "stm32__spi_E");
-   E178 : Short_Integer; pragma Import (Ada, E178, "stm32__gpio_E");
-   E166 : Short_Integer; pragma Import (Ada, E166, "stm32__device_E");
-   E182 : Short_Integer; pragma Import (Ada, E182, "stm32__syscfg_E");
-   E160 : Short_Integer; pragma Import (Ada, E160, "last_chance_handler_E");
-   E217 : Short_Integer; pragma Import (Ada, E217, "stm32__subghzphy_E");
-   E214 : Short_Integer; pragma Import (Ada, E214, "stm32__subghzrf_E");
-   E199 : Short_Integer; pragma Import (Ada, E199, "radio_int_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "system__pool_global_E");
+   E123 : Short_Integer; pragma Import (Ada, E123, "system__tasking__protected_objects_E");
+   E127 : Short_Integer; pragma Import (Ada, E127, "system__tasking__protected_objects__multiprocessors_E");
+   E132 : Short_Integer; pragma Import (Ada, E132, "system__tasking__restricted__stages_E");
+   E139 : Short_Integer; pragma Import (Ada, E139, "hal__bitmap_E");
+   E167 : Short_Integer; pragma Import (Ada, E167, "bitmap_color_conversion_E");
+   E160 : Short_Integer; pragma Import (Ada, E160, "hal__framebuffer_E");
+   E161 : Short_Integer; pragma Import (Ada, E161, "hal__gpio_E");
+   E162 : Short_Integer; pragma Import (Ada, E162, "hal__i2c_E");
+   E210 : Short_Integer; pragma Import (Ada, E210, "hal__spi_E");
+   E163 : Short_Integer; pragma Import (Ada, E163, "hal__time_E");
+   E216 : Short_Integer; pragma Import (Ada, E216, "hal__uart_E");
+   E208 : Short_Integer; pragma Import (Ada, E208, "logcmd_E");
+   E231 : Short_Integer; pragma Import (Ada, E231, "ravenscar_time_E");
+   E169 : Short_Integer; pragma Import (Ada, E169, "soft_drawing_bitmap_E");
+   E165 : Short_Integer; pragma Import (Ada, E165, "memory_mapped_bitmap_E");
+   E157 : Short_Integer; pragma Import (Ada, E157, "ssd1306_E");
+   E136 : Short_Integer; pragma Import (Ada, E136, "fonts_E");
+   E183 : Short_Integer; pragma Import (Ada, E183, "stm32__adc_E");
+   E198 : Short_Integer; pragma Import (Ada, E198, "stm32__exti_E");
+   E203 : Short_Integer; pragma Import (Ada, E203, "stm32__i2c_E");
+   E194 : Short_Integer; pragma Import (Ada, E194, "stm32__rcc_E");
+   E206 : Short_Integer; pragma Import (Ada, E206, "stm32__spi_E");
+   E192 : Short_Integer; pragma Import (Ada, E192, "stm32__gpio_E");
+   E196 : Short_Integer; pragma Import (Ada, E196, "stm32__syscfg_E");
+   E214 : Short_Integer; pragma Import (Ada, E214, "stm32__usarts_E");
+   E179 : Short_Integer; pragma Import (Ada, E179, "stm32__device_E");
+   E173 : Short_Integer; pragma Import (Ada, E173, "last_chance_handler_E");
+   E224 : Short_Integer; pragma Import (Ada, E224, "stm32__subghzphy_E");
+   E221 : Short_Integer; pragma Import (Ada, E221, "stm32__subghzrf_E");
+   E219 : Short_Integer; pragma Import (Ada, E219, "radio_int_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -150,81 +154,89 @@ package body ada_main is
       Runtime_Initialize (1);
 
       Ada.Text_Io'Elab_Body;
-      E121 := E121 + 1;
+      E134 := E134 + 1;
       System.Bb.Timing_Events'Elab_Spec;
       E113 := E113 + 1;
       System.Soft_Links'Elab_Spec;
       Ada.Tags'Elab_Body;
       E099 := E099 + 1;
       System.Exception_Table'Elab_Body;
-      E053 := E053 + 1;
-      E055 := E055 + 1;
+      E048 := E048 + 1;
+      E050 := E050 + 1;
       Ada.Streams'Elab_Spec;
-      E128 := E128 + 1;
+      E141 := E141 + 1;
       System.Finalization_Root'Elab_Spec;
-      E136 := E136 + 1;
+      E149 := E149 + 1;
       Ada.Finalization'Elab_Spec;
-      E134 := E134 + 1;
+      E147 := E147 + 1;
       System.Storage_Pools'Elab_Spec;
-      E138 := E138 + 1;
+      E151 := E151 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E131 := E131 + 1;
+      E144 := E144 + 1;
       Ada.Real_Time'Elab_Body;
       E006 := E006 + 1;
       System.Pool_Global'Elab_Spec;
-      E140 := E140 + 1;
+      E153 := E153 + 1;
       System.Tasking.Protected_Objects'Elab_Body;
-      E203 := E203 + 1;
+      E123 := E123 + 1;
       System.Tasking.Protected_Objects.Multiprocessors'Elab_Body;
-      E207 := E207 + 1;
+      E127 := E127 + 1;
       System.Tasking.Restricted.Stages'Elab_Body;
-      E212 := E212 + 1;
+      E132 := E132 + 1;
       HAL.BITMAP'ELAB_SPEC;
-      E126 := E126 + 1;
-      E154 := E154 + 1;
+      E139 := E139 + 1;
+      E167 := E167 + 1;
       HAL.FRAMEBUFFER'ELAB_SPEC;
-      E147 := E147 + 1;
+      E160 := E160 + 1;
       HAL.GPIO'ELAB_SPEC;
-      E148 := E148 + 1;
+      E161 := E161 + 1;
       HAL.I2C'ELAB_SPEC;
-      E149 := E149 + 1;
+      E162 := E162 + 1;
       HAL.SPI'ELAB_SPEC;
-      E194 := E194 + 1;
+      E210 := E210 + 1;
       HAL.TIME'ELAB_SPEC;
-      E150 := E150 + 1;
+      E163 := E163 + 1;
+      HAL.UART'ELAB_SPEC;
+      E216 := E216 + 1;
+      E208 := E208 + 1;
       Ravenscar_Time'Elab_Spec;
       Ravenscar_Time'Elab_Body;
-      E224 := E224 + 1;
+      E231 := E231 + 1;
       Soft_Drawing_Bitmap'Elab_Spec;
       Soft_Drawing_Bitmap'Elab_Body;
-      E156 := E156 + 1;
+      E169 := E169 + 1;
       Memory_Mapped_Bitmap'Elab_Spec;
       Memory_Mapped_Bitmap'Elab_Body;
-      E152 := E152 + 1;
+      E165 := E165 + 1;
       SSD1306'ELAB_SPEC;
       SSD1306'ELAB_BODY;
-      E144 := E144 + 1;
-      E123 := E123 + 1;
-      E184 := E184 + 1;
+      E157 := E157 + 1;
+      E136 := E136 + 1;
+      STM32.ADC'ELAB_SPEC;
+      E183 := E183 + 1;
+      E198 := E198 + 1;
       STM32.I2C'ELAB_SPEC;
       STM32.I2C'ELAB_BODY;
-      E189 := E189 + 1;
-      E180 := E180 + 1;
+      E203 := E203 + 1;
+      E194 := E194 + 1;
       STM32.SPI'ELAB_SPEC;
       STM32.SPI'ELAB_BODY;
-      E192 := E192 + 1;
+      E206 := E206 + 1;
       STM32.GPIO'ELAB_SPEC;
-      STM32.DEVICE'ELAB_SPEC;
-      E166 := E166 + 1;
-      E182 := E182 + 1;
       STM32.GPIO'ELAB_BODY;
-      E178 := E178 + 1;
-      E160 := E160 + 1;
-      E217 := E217 + 1;
+      E192 := E192 + 1;
+      STM32.USARTS'ELAB_SPEC;
+      STM32.DEVICE'ELAB_SPEC;
+      E179 := E179 + 1;
+      E196 := E196 + 1;
+      STM32.USARTS'ELAB_BODY;
       E214 := E214 + 1;
+      E173 := E173 + 1;
+      E224 := E224 + 1;
+      E221 := E221 + 1;
       Radio_Int'Elab_Spec;
-      E199 := E199 + 1;
+      E219 := E219 + 1;
       Install_Restricted_Handlers_Sequential;
       Activate_All_Tasks_Sequential;
    end adainit;
@@ -252,24 +264,24 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/fonts-font1.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/fonts.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/peripherals.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/last_chance_handler.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/radio_int.o
-   --   /home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/i2c_1306.o
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/
-   --   -L/home/hedley/ada/STM32/WL/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/lib/stm32wl5x_nucleo/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/middleware/lib/stm32wl5x/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/fonts-font1.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/fonts.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/peripherals.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/last_chance_handler.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/radio_int.o
+   --   /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/i2c_1306.o
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/obj/Debug/
+   --   -L/media/16T/ada/STM32/WL/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/lib/stm32wl5x_nucleo/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32wl5x_nucleo/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/components/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/middleware/lib/stm32wl5x/ravenscar-full/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

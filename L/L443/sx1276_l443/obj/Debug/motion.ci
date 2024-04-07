@@ -1,0 +1,24 @@
+graph: { title: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_task" label: "Complete_Restricted_Task\n/media/16T/ada/STM32/L/L443/sx1276_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:248:14" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/media/16T/ada/STM32/L/L443/sx1276_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/L/L443/sx1276_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\n/media/16T/ada/STM32/L/L443/sx1276_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:63:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__complete_restricted_activation" label: "Complete_Restricted_Activation\n/media/16T/ada/STM32/L/L443/sx1276_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:239:14" shape : ellipse }
+node: { title: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "Create_Restricted_Task_Sequential\n/media/16T/ada/STM32/L/L443/sx1276_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-tarest.ads:193:14" shape : ellipse }
+node: { title: "motion___elabs" label: "Motion\n/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.ads:2:1\n16 bytes (static)" }
+edge: { sourcename: "motion___elabs" targetname: "motion__motion_taskTKVIP" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.ads:4:4" }
+node: { title: "motion___elabb" label: "Motion\n/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:8:1\n4 bytes (static)" }
+node: { title: "motion__motion_taskTKB" label: "Motion_Task\n/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:9:4\n32 bytes (static)" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "_Unwind_Resume" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:motion__motion_taskTK___finalizer.5902" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:18:0" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:16:10" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:15:10" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:14:10" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "ada__synchronous_task_control__suspend_until_true" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:13:10" }
+edge: { sourcename: "motion__motion_taskTKB" targetname: "system__tasking__restricted__stages__complete_restricted_activation" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:9:4" }
+node: { title: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:motion__motion_taskTK___finalizer.5902" label: "Motion_Tasktk\n/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:9:4\n16 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:motion__motion_taskTK___finalizer.5902" targetname: "system__tasking__restricted__stages__complete_restricted_task" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.adb:9:4" }
+node: { title: "motion__motion_taskTKVIP" label: "Motion_Tasktkvip\n/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.ads:4:4\n80 bytes (static)" }
+edge: { sourcename: "motion__motion_taskTKVIP" targetname: "system__tasking__restricted__stages__create_restricted_task_sequential" label: "/media/16T/ada/STM32/L/L443/sx1276_l443/src/motion.ads:4:4" }
+}

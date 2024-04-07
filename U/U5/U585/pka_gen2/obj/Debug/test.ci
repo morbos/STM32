@@ -1,0 +1,25 @@
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb"
+node: { title: "curve__test" label: "Test\n/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/curve.ads:4:14" shape : ellipse }
+node: { title: "cm33__init_cm33" label: "INIT_CM33\n/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/cm33.ads:14:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/U/U5/U585/pka_gen2/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/src/stm32-board.ads:57:14" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:test__cache_enable.5580" label: "Cache_Enable\n/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:32:4\n16 bytes (static)" }
+node: { title: "_ada_test" label: "Test\n/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:20:1\n136 bytes (static)" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:59:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:58:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:57:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:56:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:55:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:54:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:53:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:52:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:51:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:48:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:47:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:46:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:45:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:44:4" }
+edge: { sourcename: "_ada_test" targetname: "curve__test" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:43:4" }
+edge: { sourcename: "_ada_test" targetname: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:test__cache_enable.5580" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:42:4" }
+edge: { sourcename: "_ada_test" targetname: "cm33__init_cm33" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:41:4" }
+edge: { sourcename: "_ada_test" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/U/U5/U585/pka_gen2/src/test.adb:40:4" }
+}

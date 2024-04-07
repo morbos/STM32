@@ -1,0 +1,18 @@
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb"
+node: { title: "stm32__mpu__enable_mpu" label: "ENABLE_MPU\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-mpu.ads:22:14" shape : ellipse }
+node: { title: "stm32__mpu__add_region" label: "ADD_REGION\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-mpu.ads:15:14" shape : ellipse }
+node: { title: "stm32__mpu__add_attrib" label: "ADD_ATTRIB\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-mpu.ads:20:14" shape : ellipse }
+node: { title: "cm33__init_cm33" label: "INIT_CM33\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:41:4\n8 bytes (static)" }
+edge: { sourcename: "cm33__init_cm33" targetname: "cm33__init_mpu" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:44:7" }
+node: { title: "cm33__init_mpu" label: "INIT_MPU\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:5:4\n16 bytes (static)" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__enable_mpu" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:38:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_region" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:34:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_region" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:30:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_region" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:26:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_region" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:22:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_region" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:18:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_region" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:14:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_attrib" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:13:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_attrib" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:12:7" }
+edge: { sourcename: "cm33__init_mpu" targetname: "stm32__mpu__add_attrib" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/cm33.adb:11:7" }
+}

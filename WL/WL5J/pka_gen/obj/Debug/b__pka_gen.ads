@@ -192,6 +192,7 @@ package ada_main is
    --  hal.i2c%s
    --  hal.spi%s
    --  stm32.adc%s
+   --  stm32.adc%b
    --  stm32.crc%s
    --  stm32.crc%b
    --  stm32.dma%s

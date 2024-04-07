@@ -1,0 +1,49 @@
+0x00
+CRC_DR
+DR[31:0]
+Reset value 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+0x04
+CRC_IDR
+IDR[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x08
+CRC_CR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+REV_OUT
+REV_IN[1:0]
+POLYSIZE[1:0]
+Res.
+Res.
+RESET
+Reset value 0 0 0 0 0 0
+0x10
+CRC_INIT
+CRC_INIT[31:0]
+Reset value 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+0x14
+CRC_POL
+POLY[31:0]
+Reset value 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 0 0 1 1 1 0 1 1 0 1 1 0 1 1 1

@@ -1,0 +1,5 @@
+package CRC8 is
+
+   procedure Gen_CRC8_Table;
+
+end CRC8;

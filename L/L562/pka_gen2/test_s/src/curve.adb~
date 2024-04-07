@@ -1,0 +1,54 @@
+with HAL;            use HAL;
+with Ada.Real_Time;  use Ada.Real_Time;
+with STM32.Device;   use STM32.Device;
+with STM32.Board;    use STM32.Board;
+with STM32.SAU;      use STM32.SAU;
+with STM32.MPU;      use STM32.MPU;
+with STM32.GPIO;     use STM32.GPIO;
+with STM32.PKA;   --  use STM32.GPKA;
+with STM32_SVD.RCC;  use STM32_SVD.RCC;
+with STM32_SVD.GTZC; use STM32_SVD.GTZC;
+--  with STM32_SVD.PKA;  use STM32_SVD.PKA;
+with STM32_SVD.PWR;  use STM32_SVD.PWR;
+
+package body Secp112r2 is
+   package EC is new STM32.PKA (Curve_Name => "secp112r2", Num_Bits => 112);
+   use EC;
+
+   PrivateKey : ECDSA_KeyStr :=
+     "339753310fe027524ce439f20fbc";
+   H : ECDSA_HashStr :=
+     "13612b47a99844aa4c1492624afb9f2c1f36b098cd581ad100bfc19f447db024";
+   Sig : ECDSA_SignatureStr;
+
+   K : ECDSA_RandStr :=
+     "1411bec87e70d0dbbfa63f099dd0";
+
+   PublicKey : ECDSA_PublicKeyStr :=
+     (X => "228e7524ba38b7ad3f4462db2fe3",
+      Y => "7fdbf2b02400a769a22dc299d55d");
+
+--   #<ECDSA::Group:secp112r2>
+--private key: 0x339753310fe027524ce439f20fbc
+--Digest: 13612b47a99844aa4c1492624afb9f2c1f36b098cd581ad100bfc19f447db024
+--temp_key: 1411bec87e70d0dbbfa63f099dd0
+--signature:
+--  r: 0x311581217ab144c0f45183ebae92
+--  s: 0x35e2ce2446f6e87b313e2d84f302
+--public key:
+--  x: 0x228e7524ba38b7ad3f4462db2fe3
+--  y: 0x7fdbf2b02400a769a22dc299d55d
+--valid: true
+
+   procedure Test
+   is
+      Result : Boolean;
+   begin
+      Enable_Pka;
+      Result := ECDSA_Sign (PrivateKey, H, K, Sig);
+      Result := ECDSA_Valid (PublicKey, H, Sig);
+      if not Result then
+         raise Program_Error with "secp112r2 fail";
+      end if;
+   end Test;
+end Secp112r2;

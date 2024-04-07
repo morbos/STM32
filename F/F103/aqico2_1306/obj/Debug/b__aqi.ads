@@ -110,13 +110,17 @@ package ada_main is
    --  ada.interrupts%s
    --  ada.interrupts%b
    --  ada.interrupts.names%s
+   --  cortex_m_svd%s
    --  hal%s
+   --  cortex_m_svd.debug%s
+   --  cortex_m_svd.dwt%s
    --  stm32%s
    --  stm32_svd%s
    --  stm32_svd.adc%s
    --  stm32_svd.afio%s
    --  stm32_svd.crc%s
    --  stm32_svd.dac%s
+   --  stm32_svd.dbg%s
    --  stm32_svd.dma%s
    --  stm32_svd.exti%s
    --  stm32_svd.gpio%s
@@ -184,6 +188,8 @@ package ada_main is
    --  stm32.board%b
    --  last_chance_handler%s
    --  last_chance_handler%b
+   --  trace%s
+   --  trace%b
    --  utils%s
    --  utils%b
    --  co2_int%s

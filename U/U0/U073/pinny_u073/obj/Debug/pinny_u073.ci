@@ -1,0 +1,92 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb"
+node: { title: "stm32__gpio__configure_io__2" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:243:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__3" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:66:14" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "stm32__gpio__toggle__2" label: "TOGGLE\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:234:14" shape : ellipse }
+node: { title: "stm32__gpio__set__4" label: "SET\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:224:14" shape : ellipse }
+node: { title: "stm32__gpio__clear__2" label: "CLEAR\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:229:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:208:9" shape : ellipse }
+node: { title: "_ada_pinny_u073" label: "Pinny_U073\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:12:1\n848 bytes (static)" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:53:7" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:53:25" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:53:27" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:53:19" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio__toggle__2" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:52:7" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio__set__4" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:49:4" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio__clear__2" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:48:4" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:pinny_u073__initialize.4830" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:46:4" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:26:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:22:53" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+edge: { sourcename: "_ada_pinny_u073" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:18:18" }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:pinny_u073__initialize.4830" label: "Initialize\n/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:30:4\n40 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:pinny_u073__initialize.4830" targetname: "stm32__gpio__configure_io__2" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:41:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:pinny_u073__initialize.4830" targetname: "stm32__device__enable_clock__3" label: "/media/16T/ada/STM32/U/U0/U073/pinny_u073/src/pinny_u073.adb:34:7" }
+}

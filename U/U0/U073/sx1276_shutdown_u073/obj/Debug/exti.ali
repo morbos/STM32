@@ -1,0 +1,211 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U exti%b		exti.adb		eba5ace1 OO PK
+W hal%s			hal.ads			hal.ali
+W peripherals%s		peripherals.ads		peripherals.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.board%s		stm32-board.adb		stm32-board.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.exti%s		stm32-exti.adb		stm32-exti.ali
+W sx1276_spi%s		sx1276_spi.ads		sx1276_spi.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W uart%s		uart.adb		uart.ali
+W utils%s		utils.adb		utils.ali
+
+U exti%s		exti.ads		94c7bc75 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.interrupts%s	a-interr.adb		a-interr.ali
+W ada.interrupts.names%s  a-intnam.ads		a-intnam.ali
+W ada.synchronous_task_control%s  a-sytaco.adb	a-sytaco.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+Z system%s		system.ads		system.ali
+Z system.interrupts%s	s-interr.adb		s-interr.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-interr.ads		20200106220408 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20240325004640 7d39c3a0 ada.interrupts.names%s
+D a-reatim.ads		20200106220408 4c16970e ada.real_time%s
+D a-sytaco.ads		20200106220408 e57638e1 ada.synchronous_task_control%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D a-taside.ads		20200106220408 c3e0cda8 ada.task_identification%s
+D a-unccon.ads		20200106220408 0e9b276f ada.unchecked_conversion%s
+D exti.ads		20240325010006 27ca8f3a exti%s
+D exti.adb		20240331015113 cbe4aac3 exti%b
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D i-bit_types.ads	20240323215954 880cac16 interfaces.bit_types%s
+D peripherals.ads	20240331003705 0c6f6a07 peripherals%s
+D stm32.ads		20240323033822 698e2c3b stm32%s
+D stm32-adc.ads		20240323215358 d5b0eed0 stm32.adc%s
+D stm32-board.ads	20240323030525 ace61b7e stm32.board%s
+D stm32-crc.ads		20240323033822 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20240323210719 92cb0c76 stm32.dac%s
+D stm32-device.ads	20240323225154 07ae1f3f stm32.device%s
+D stm32-dma.ads		20240323220117 febcce9d stm32.dma%s
+D stm32-exti.ads	20240323033822 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20240323033822 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20240323033822 d4f762e2 stm32.i2c%s
+D stm32-spi.ads		20240323033822 5e462e85 stm32.spi%s
+D stm32-timers.ads	20240323211650 46945e18 stm32.timers%s
+D stm32_svd.ads		20240323032222 567bda23 stm32_svd%s
+D stm32_svd-adc.ads	20240323032222 dce400cc stm32_svd.adc%s
+D stm32_svd-crc.ads	20240323032222 fd31973c stm32_svd.crc%s
+D stm32_svd-dac.ads	20240323032222 2a920457 stm32_svd.dac%s
+D stm32_svd-dma.ads	20240323032222 e2b76721 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20240323224814 28689f61 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20240323032222 83288095 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20240323213337 e3bbeb46 stm32_svd.spi%s
+D sx1276.ads		20240325003744 81b6fdc8 sx1276%s
+D sx1276_spi.ads	20240325003744 2969bd03 sx1276_spi%s
+D sx1276_spi_io.ads	20240325003744 011bfe53 sx1276_spi_io%s
+D system.ads		20200106220408 aa7dab5a system%s
+D s-bb.ads		20200106220408 09e072ae system.bb%s
+D s-bbbopa.ads		20240323040132 9e5f0bdf system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220408 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220408 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220408 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20240323015909 de122b3e system.bb.mcu_parameters%s
+D s-bbpara.ads		20200106220408 b91d59c8 system.bb.parameters%s
+D s-bbthre.ads		20200106220408 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220408 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220408 ad086247 system.bb.time%s
+D s-interr.ads		20200106220408 f1954f09 system.interrupts%s
+D s-multip.ads		20200106220408 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20200106220408 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20200106220408 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20200106220408 229b14dd system.os_interface%s
+D s-parame.ads		20201003195514 dfb12da9 system.parameters%s
+D s-secsta.ads		20200106220408 56a2861c system.secondary_stack%s
+D s-stm32.ads		20240323015909 e60e59e5 system.stm32%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20200106220408 801abd01 system.task_info%s
+D s-taspri.ads		20200106220408 351848fa system.task_primitives%s
+D s-taskin.ads		20200106220408 39441e76 system.tasking%s
+D s-taprob.ads		20200106220408 c8fc0753 system.tasking.protected_objects%s
+D s-tposen.ads		20200106220408 9e6a8286 system.tasking.protected_objects.single_entry%s
+D s-unstyp.ads		20200106220408 34867c83 system.unsigned_types%s
+D uart.ads		20240331012439 6cc51efd uart%s
+D utils.ads		20240325003744 e9e55cf1 utils%s
+D /media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/gnat.adc  20240325003744 00000000
+G a e
+G c b b b [b exti 11 1 none]
+G c Z s b [handler__exti_handlerN exti 20 7 none]
+G c Z s b [exti_handler exti__handler 20 17 none]
+G c Z s b [handler__exti_handlerP exti 20 7 none]
+G c Z s s [handlerTVIP exti 15 4 none]
+G r s sx1276_radio [b exti 11 1 none] [sx1276_radioIP sx1276_spi 307 9 7_1]
+G r s irqflags_register [exti_handler exti__handler 20 17 none] [irqflags_registerIP sx1276_spi 91 9 7_1]
+G r c none [exti_handler exti__handler 20 17 none] [external_interrupt_pending stm32__exti 106 13 none]
+G r c none [exti_handler exti__handler 20 17 none] [clear_external_interrupt stm32__exti 110 14 none]
+G r c none [exti_handler exti__handler 20 17 none] [readflags sx1276_spi 296 14 7_1]
+G r c none [exti_handler exti__handler 20 17 none] [sumbits sx1276_spi 302 14 7_1]
+G r c none [exti_handler exti__handler 20 17 none] [clearflags sx1276_spi 298 14 7_1]
+X 1 ada.ads
+16K9*Ada 20e8 9|2r6 2r40 3r6 3r40
+X 2 a-interr.ads
+40K13*Interrupts 100e19 9|2r10 2r44
+42I9*Interrupt_ID<52|57I9>
+X 3 a-intnam.ads
+8K24*Names 118e25 9|2w21 2r55
+38i4*EXTI0_1_Interrupt{2|42I9} 9|22r44
+41i4*EXTI2_3_Interrupt{2|42I9} 9|21r44
+X 5 a-sytaco.ads
+40K13*Synchronous_Task_Control 92e33 9|3w10 3r44
+46W9*Suspension_Object 90e25 9|7r30 8r30
+X 9 exti.ads
+5K9*Exti 26l5 26e9 10|11b14 60l5 60t9
+7w4*Tx_Done{5|46W9}
+8w4*Rx_Done{5|46W9}
+10b4*Tx_Done_Flag{boolean} 10|38m13
+11b4*Rx_Done_Flag{boolean} 10|42m13 46m13 53m13
+12b4*Rx_Error_Flag{boolean}
+13b4*Cad_Done_Flag{boolean} 10|49m13
+15w14*Handler 10|19b19 58l8 58t15
+20U17 EXTI_Handler 21r30 22r30 10|25b17 56l11 56t23
+X 10 exti.adb
+13r4 SX{38|75R9[39|7]} 34m10 34r10 35m10 35r10 55m10 55r10
+26r10 Flags{38|91R9[39|7]} 34m24 35r22 36r13 40r13 44r13 48r13 51r13 55r25
+X 11 hal.ads
+34K9*HAL 9|1w6 1r40 10|4w6 4r25 11|166e8
+X 12 hal-gpio.ads
+44h9*GPIO_Point
+X 13 hal-i2c.ads
+48h9*I2C_Port
+X 14 hal-spi.ads
+48h9*SPI_Port
+X 17 peripherals.ads
+8K9*Peripherals 10|7w6 7r25 17|32e16
+24r4*SX1276_Port{40|44R9} 10|13m23 13r23
+X 18 stm32.ads
+39K9*STM32 10|1r6 1r25 2r6 2r25 3r6 3r25 18|48e10
+X 20 stm32-board.ads
+49K15*Board 10|1w12 1r31 20|68e16
+X 23 stm32-device.ads
+57K15*Device 10|2w12 2r31 23|352e17
+X 25 stm32-exti.ads
+45K15*EXTI 10|3w12 3r31 25|113e15
+49n7*EXTI_Line_1{47E9} 10|31r41 32r39
+50n7*EXTI_Line_2{47E9} 10|28r41 29r39
+106V13*External_Interrupt_Pending{boolean} 10|28s13 31s13
+110U14*Clear_External_Interrupt 10|29s13 32s13
+X 38 sx1276.ads
+75R9*SX1276_Radio 10|13r9[39|7]
+91R9*IrqFlags_Register 10|26r21[39|7]
+94b7*CadDone{boolean} 10|48r19[39|7]
+95b7*TxDone{boolean} 10|36r19[39|7]
+97b7*PayloadCrcError{boolean} 10|44r19[39|7]
+98b7*RxDone{boolean} 10|40r19[39|7]
+99b7*RxTimeout{boolean} 10|51r19[39|7]
+296U14*ReadFlags 10|34s13[39|7]
+298U14*ClearFlags 10|55s13[39|7]
+302U14*SumBits 10|35s13[39|7]
+X 39 sx1276_spi.ads
+7K9*SX1276_SPI[38|73] 10|5w6 5r25
+X 40 sx1276_spi_io.ads
+51U14*Read 38|46i19
+56U14*Write 38|52i19
+61U14*Read_Buffer 38|61i19
+66U14*Write_Buffer 38|68i19
+X 52 s-interr.ads
+57I9*Ada_Interrupt_ID<integer>
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 58 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 63 s-taskin.ads
+355V13*Get_Sec_Stack{58|46P9} 356i<c,__gnat_get_secondary_stack>22
+X 67 uart.ads
+1K9*Uart 10|8w6 8r25 67|9e9
+X 68 utils.ads
+6K9*Utils 10|6w6 6r25 68|54e10
+

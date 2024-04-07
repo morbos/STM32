@@ -1,0 +1,23 @@
+
+with HAL; use HAL;
+with HAL.SPI;
+with Gen_List;
+
+--  use STM32; -- for GPIO_Alternate_Function
+
+with Ada.Real_Time; use Ada.Real_Time;
+
+procedure List_l476
+is
+   type BLENode is record
+      Code : Natural;
+   end record;
+   package BLENodeT is new Gen_List (BLENode);
+   use BLENodeT;
+   L : BLENodeT;
+begin
+   BLENodeT.List_Init_Head (L);
+   loop
+      null;
+   end loop;
+end List_l476;

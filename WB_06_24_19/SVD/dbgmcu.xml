@@ -1,0 +1,220 @@
+    <peripheral>
+      <name>DBGMCU</name>
+      <description>MCU debug component</description>
+      <groupName>DBGMCU</groupName>
+      <baseAddress>0xE0042000</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x15</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>IDCODE</name>
+          <displayName>IDCODE</displayName>
+          <description>DBGMCU_IDCODE</description>
+          <addressOffset>0x0</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DEV_ID</name>
+              <description>Device identifier</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>12</bitWidth>
+            </field>
+            <field>
+              <name>REV_ID</name>
+              <description>Revision identifie</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>16</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>CR</name>
+          <displayName>CR</displayName>
+          <description>Debug MCU configuration
+          register</description>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_SLEEP</name>
+              <description>Debug Sleep mode</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_STOP</name>
+              <description>Debug Stop mode</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_STANDBY</name>
+              <description>Debug Standby mode</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRACE_IOEN</name>
+              <description>Trace pin assignment
+              control</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>TRACE_MODE</name>
+              <description>Trace pin assignment
+              control</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>APB1FZR1</name>
+          <displayName>APB1FZR1</displayName>
+          <description>Debug MCU APB1 freeze
+          register1</description>
+          <addressOffset>0x8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_TIM2_STOP</name>
+              <description>TIM2 counter stopped when core is
+              halted</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM6_STOP</name>
+              <description>TIM6 counter stopped when core is
+              halted</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM7_STOP</name>
+              <description>TIM7 counter stopped when core is
+              halted</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_RTC_STOP</name>
+              <description>RTC counter stopped when core is
+              halted</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_WWDG_STOP</name>
+              <description>Window watchdog counter stopped when
+              core is halted</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_IWDG_STOP</name>
+              <description>Independent watchdog counter stopped
+              when core is halted</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_I2C1_STOP</name>
+              <description>I2C1 SMBUS timeout counter stopped when
+              core is halted</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_I2C2_STOP</name>
+              <description>I2C2 SMBUS timeout counter stopped when
+              core is halted</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_I2C3_STOP</name>
+              <description>I2C3 SMBUS timeout counter stopped when
+              core is halted</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_CAN_STOP</name>
+              <description>bxCAN stopped when core is
+              halted</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_LPTIM1_STOP</name>
+              <description>LPTIM1 counter stopped when core is
+              halted</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>APB1FZR2</name>
+          <displayName>APB1FZR2</displayName>
+          <description>Debug MCU APB1 freeze register
+          2</description>
+          <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_LPTIM2_STOP</name>
+              <description>LPTIM2 counter stopped when core is
+              halted</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>APB2FZR</name>
+          <displayName>APB2FZR</displayName>
+          <description>Debug MCU APB2 freeze register</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>DBG_TIM1_STOP</name>
+              <description>TIM1 counter stopped when core is
+              halted</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM15_STOP</name>
+              <description>TIM15 counter stopped when core is
+              halted</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DBG_TIM16_STOP</name>
+              <description>TIM16 counter stopped when core is
+              halted</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>

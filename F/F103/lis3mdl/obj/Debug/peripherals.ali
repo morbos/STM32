@@ -1,0 +1,142 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U peripherals%s		peripherals.ads		20d60218 NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W lis3mdl_i2c%s		lis3mdl_i2c.ads		lis3mdl_i2c.ali
+W lis3mdl_i2c_io%s	lis3mdl_i2c_io.adb	lis3mdl_i2c_io.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.device%s	stm32-device.adb	stm32-device.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+W stm32.i2c%s		stm32-i2c.adb		stm32-i2c.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-reatim.ads		20200106220408 4c16970e ada.real_time%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-audio.ads		20200106220407 09f1fb35 hal.audio%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-real_time_clock.ads  20200106220407 9dd52fca hal.real_time_clock%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D hal-uart.ads		20200106220407 d58316b4 hal.uart%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D i-bit_types.ads	20240323215954 880cac16 interfaces.bit_types%s
+D i-stm32.ads		20200106220416 7f31ad58 interfaces.stm32%s
+D i-stm32-pwr.ads	20200106220416 dbc7df38 interfaces.stm32.pwr%s
+D lis3mdl.ads		20200223051151 2df961ca lis3mdl%s
+D lis3mdl_i2c.ads	20200219055052 f4f32cb8 lis3mdl_i2c%s
+D lis3mdl_i2c_io.ads	20200219055116 09d89d52 lis3mdl_i2c_io%s
+D peripherals.ads	20200219063227 45d1ef5c peripherals%s
+D stm32.ads		20200106220443 698e2c3b stm32%s
+D stm32-adc.ads		20200106220443 ea83c12b stm32.adc%s
+D stm32-crc.ads		20200106220443 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20221224235924 8493a9ae stm32.dac%s
+D stm32-device.ads	20221224235647 7a979811 stm32.device%s
+D stm32-dma.ads		20200106220443 a771b9fb stm32.dma%s
+D stm32-exti.ads	20200106220443 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20200106220443 6a2e5d0d stm32.gpio%s
+D stm32-i2c.ads		20240401230155 5da604c3 stm32.i2c%s
+D stm32-i2s.ads		20200106220443 29c9082d stm32.i2s%s
+D stm32-rtc.ads		20200106220443 69b416d3 stm32.rtc%s
+D stm32-spi.ads		20200106220443 b60e4efe stm32.spi%s
+D stm32-timers.ads	20200106220443 63c500b2 stm32.timers%s
+D stm32-usarts.ads	20200106220443 6de0aaea stm32.usarts%s
+D stm32_svd.ads		20200106220440 58ad1fd6 stm32_svd%s
+D stm32_svd-adc.ads	20200106220440 02731202 stm32_svd.adc%s
+D stm32_svd-crc.ads	20200106220440 ef17177d stm32_svd.crc%s
+D stm32_svd-dac.ads	20200106220440 6e9f8d82 stm32_svd.dac%s
+D stm32_svd-dma.ads	20200106220440 f294e42e stm32_svd.dma%s
+D stm32_svd-gpio.ads	20200106220440 e12f4994 stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20200106220440 b5e39574 stm32_svd.i2c%s
+D stm32_svd-spi.ads	20200106220440 34edd16c stm32_svd.spi%s
+D stm32_svd-usart.ads	20200106220440 e77009d4 stm32_svd.usart%s
+D system.ads		20200106220408 aa7dab5a system%s
+D s-bb.ads		20200106220408 09e072ae system.bb%s
+D s-bbbopa.ads		20200106220416 dc32312b system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220408 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220408 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220408 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20200106220416 3bf15db6 system.bb.mcu_parameters%s
+D s-bbpara.ads		20200106220408 b91d59c8 system.bb.parameters%s
+D s-bbthre.ads		20200106220408 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220408 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220408 ad086247 system.bb.time%s
+D s-multip.ads		20200106220408 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220408 229b14dd system.os_interface%s
+D s-stm32.ads		20200106220416 e60e59e5 system.stm32%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20200106220408 34867c83 system.unsigned_types%s
+D /media/16T/ada/STM32/F/F103/lis3mdl/gnat.adc  20200219044500 00000000
+G a e
+X 4 hal.ads
+34K9*HAL 166e8 18|1r6 2w6 2r31 14r37
+54M9*UInt10
+X 5 hal-audio.ads
+59h9*Audio_Stream
+X 6 hal-gpio.ads
+44h9*GPIO_Point
+X 7 hal-i2c.ads
+32K13*I2C 92e12 18|1w10 14r41
+46M12*I2C_Address{4|54M9} 18|14r45
+48h9*I2C_Port
+X 9 hal-spi.ads
+48h9*SPI_Port
+X 10 hal-uart.ads
+48h9*UART_Port
+X 16 lis3mdl_i2c.ads
+7K9*LIS3MDL_I2C[15|30] 18|7w6 7r31
+X 17 lis3mdl_i2c_io.ads
+7K9*LIS3MDL_I2C_IO 31e19 18|6w6 19r26
+9R9*IO_Port 12e14 18|19r41
+16U14*Read 15|11i19
+21U14*Write 15|17i19
+26U14*Read_Buffer 15|23i19
+X 18 peripherals.ads
+11K9*Peripherals 21l5 21e16
+13p4*LIS3MDL_I2C_Port(27|85R9) 19r53
+14m4*LIS3MDL_Address{7|46M12} 19r71
+15r4*LIS3MDL_I2C_Clock_Pin=15:47{26|163R9}
+16r4*LIS3MDL_I2C_Data_Pin=16:47{26|163R9}
+17r4*LIS3MDL_HW_Reset_Pin=17:47{26|163R9}
+19r4*Sensor_Port{17|9R9}
+X 19 stm32.ads
+39K9*STM32 18|3r6 3r31 4r6 4r31 5r6 5r31 9r5 19|48e10
+X 23 stm32-device.ads
+59K15*Device 18|3w12 3r37 23|430e17
+110r4*PB5{26|163R9} 18|17r47
+111r4*PB6{26|163R9} 18|15r47
+112r4*PB7{26|163R9} 18|16r47
+290r4*I2C_1{27|85R9} 18|13m56 13r56
+X 26 stm32-gpio.ads
+49K15*GPIO 18|4w12 4r37 26|319e15
+163R9*GPIO_Point<6|44R9> 18|15r28 16r28 17r28 26|168e14
+X 27 stm32-i2c.ads
+48K15*I2C 18|5w12 5r37 27|178e14
+85R9*I2C_Port<7|48R9> 18|13r44 27|176e17
+

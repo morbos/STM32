@@ -1,0 +1,26 @@
+graph: { title: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb"
+node: { title: "ssd1306__update_layers" label: "UPDATE_LAYERS\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:154:14" shape : ellipse }
+node: { title: "ssd1306__set_pixel" label: "SET_PIXEL\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:177:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "ssd1306__set_native_source" label: "SET_NATIVE_SOURCE\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:83:14" shape : ellipse }
+node: { title: "ssd1306__fill_region" label: "FILL_REGION\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/Ada_Drivers_Library/components/src/screen/ssd1306/ssd1306.ads:79:14" shape : ellipse }
+node: { title: "fonts__getchar" label: "Getchar\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:60:4\n48 bytes (static)" }
+edge: { sourcename: "fonts__getchar" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:68:44" }
+node: { title: "fonts__drawstring" label: "Drawstring\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:45:4\n56 bytes (static)" }
+edge: { sourcename: "fonts__drawstring" targetname: "fonts__drawchar" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:52:10" }
+node: { title: "fonts__drawchar" label: "Drawchar\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:6:4\n112 bytes (static)" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306__update_layers" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:42:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306__set_pixel" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:36:19" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:35:54" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:33:38" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:33:38" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:30:20" }
+edge: { sourcename: "fonts__drawchar" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:30:20" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306__set_native_source" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:27:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "ssd1306__fill_region" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:21:7" }
+edge: { sourcename: "fonts__drawchar" targetname: "fonts__getchar" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.adb:19:7" }
+node: { title: "fonts__font_arrayIP" label: "Font_Arrayip\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306_wle5j/src/fonts.ads:5:9\n16 bytes (static)" }
+}

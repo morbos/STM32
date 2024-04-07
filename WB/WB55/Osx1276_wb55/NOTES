@@ -1,0 +1,658 @@
+set pagination off
+set logging overwrite on
+set logging file myserv.log
+set logging redirect on
+set logging on
+x/5976xb 0x20020000
+
+set pagination off
+set logging overwrite on
+set logging file cli.log
+set logging redirect on
+set logging on
+x/683xb 0x20020000
+
+set pagination off
+set logging overwrite on
+set logging file odd.log
+set logging redirect on
+set logging on
+x/347xb 0x20020000
+
+
+set pagination off
+set logging overwrite on
+set logging file crash1.log
+set logging redirect on
+set logging on
+x/65536xb 0x20020000
+
+set pagination off
+set logging overwrite on
+set logging file badmem1.log
+set logging redirect on
+set logging on
+x/768x 0x20030000
+set logging off
+set logging redirect off
+
+set pagination off
+set logging overwrite on
+set logging file badmem2.log
+set logging redirect on
+set logging on
+x/768x 0x20030000
+set logging off
+set logging redirect off
+
+
+set pagination off
+set logging overwrite on
+set logging file goodmem1.log
+set logging redirect on
+set logging on
+x/768x 0x20030000
+set logging off
+set logging redirect off
+
+set pagination off
+set logging overwrite on
+set logging file goodmem2.log
+set logging redirect on
+set logging on
+x/768x 0x20030000
+set logging off
+set logging redirect off
+
+set pagination off
+set logging overwrite on
+set logging file goodmem3.log
+set logging redirect on
+set logging on
+x/768x 0x20030000
+set logging off
+set logging redirect off
+
+
+
+
+
+/** Documentation for C struct Advertising_Report_t */
+typedef PACKED(struct)
+{
+  /** Type of advertising report event:
+ADV_IND: Connectable undirected advertising',
+ADV_DIRECT_IND: Connectable directed advertising,
+ADV_SCAN_IND: Scannable undirected advertising,
+ADV_NONCONN_IND: Non connectable undirected advertising,
+SCAN_RSP: Scan response.
+  * Values:
+  - 0x00: ADV_IND
+  - 0x01: ADV_DIRECT_IND
+  - 0x02: ADV_SCAN_IND
+  - 0x03: ADV_NONCONN_IND
+  - 0x04: SCAN_RSP
+  */
+  uint8_t Event_Type;
+  /** 0x00 Public Device Address
+0x01 Random Device Address
+0x02 Public Identity Address (Corresponds to Resolved Private Address)
+0x03 Random (Static) Identity Address (Corresponds to Resolved Private Address)
+  * Values:
+  - 0x00: Public Device Address
+  - 0x01: Random Device Address
+  - 0x02: Public Identity Address
+  - 0x03: Random (Static) Identity Address
+  */
+  uint8_t Address_Type;
+  /** Public Device Address or Random Device Address of the device
+to be connected.
+  */
+  uint8_t Address[6];
+  /** Length of the Data[i] field for each device which responded.
+  * Values:
+  - 0 ... 31
+  */
+  uint8_t Length_Data;
+  /** Length_Data[i] octets of advertising or scan response data formatted
+as defined in [Vol 3] Part C, Section 8.
+  */
+  uint8_t *Data;
+  /** N Size: 1 Octet (signed integer)
+Units: dBm
+  * Values:
+  - 127: RSSI not available
+  - -127 ... 20
+  */
+  uint8_t RSSI;
+} Advertising_Report_t;
+
+Debug
+   procedure Advertising_Info_CB
+     (Buff   : DataBuffT;
+      Offset : UInt8)
+
+offset 4
+
+(gdb) x/64xb Buff'Address
+0x2000266c <hci__hci_event_task+4380>:	0x04	0x3e	0x29	0x02	0x01	0x00	0x00	0xe8
+0x20002674 <hci__hci_event_task+4388>:	0x49	0x00	0x26	0xe1	0x80	0x1d	0x0d	0xff
+0x2000267c <hci__hci_event_task+4396>:	0x01	0x83	0x00	0x00	0x00	0x00	0x80	0xe1
+0x20002684 <hci__hci_event_task+4404>:	0x26	0x00	0x49	0xe8	0x02	0x01	0x06	0x08
+0x2000268c <hci__hci_event_task+4412>:	0x09	0x50	0x32	0x50	0x53	0x52	0x56	0x31
+0x20002694 <hci__hci_event_task+4420>:	0x02	0x0a	0x00	0xca	0x00	0x00	0x00	0x00
+0x2000269c <hci__hci_event_task+4428>:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x200026a4 <hci__hci_event_task+4436>:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+
+EVT     META   LEN      ADVRpt   1rec  ADV_IND  PUB      1
+0x04	0x3e	0x29	0x02	0x01	0x00	0x00	0xe8
+  2      3       4        5       6     len     len
+0x49	0x00	0x26	0xe1	0x80	0x1d	0x0d	0xff
+                                                 mac    add
+0x01	0x83	0x00	0x00	0x00	0x00	0x80	0xe1
+                       endmac    len     flags   6       len
+0x26	0x00	0x49	0xe8	0x02	0x01	0x06	0x08
+NAM
+0x09	0x50	0x32	0x50	0x53	0x52	0x56	0x31
+0x02	0x0a	0x00	0xca	0x00	0x00	0x00	0x00
+0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+
+
+Radio in reset issue:
+
+(gdb) x/x 0x58000094
+0x58000094:	0x14014000  (bit16 in reset)
+(gdb) n
+302	  SHCI_C2_BLE_Init( &ble_init_cmd_packet );
+(gdb) n
+307	  Ble_Hci_Gap_Gatt_Init();
+(gdb) x/x 0x58000094
+0x58000094:	0x14004000 (ST's SHCI init clears it).
+
+ST in TL_SYS_SendCmd
+0x200306e8 <SystemCmdBuffer>:	0x00000000	0x00000000	0x21fc6610	0x00000000
+0x200306f8 <SystemCmdBuffer+16>:	0x00000000	0x00080044	0x01080540	0x009c793a
+0x20030708 <SystemCmdBuffer+32>:	0x010001f4	0xffffffff	0x00010148	0x00000000
+0x20030718 <SystemCmdBuffer+48>:	0x00000000	0x00000000	0x00000000	0x00000000
+0x20030728 <SystemCmdBuffer+64>:	0x00000000	0x00000000	0x00000000	0x00000000
+and
+x/x 0x58000094
+0x58000094:	0x1c014000
+
+after
+0x200306e8 <SystemCmdBuffer>:	0x01040e11	0x0000fc66	0x01040e11	0x0000fc66
+0x200306f8 <SystemCmdBuffer+16>:	0x00000000	0x00080044	0x01080540	0x009c793a
+0x20030708 <SystemCmdBuffer+32>:	0x010001f4	0xffffffff	0x00010148	0x00000000
+0x20030718 <SystemCmdBuffer+48>:	0x00000000	0x00000000	0x00000000	0x00000000
+0x20030728 <SystemCmdBuffer+64>:	0x00000000	0x00000000	0x00000000	0x00000000
+0x20030738 <SystemCmdBuffer+80>:	0x00000000	0x00000000	0x00000000	0x00000000
+0x20030748 <SystemCmdBuffer+96>:	0x00000000	0x00000000	0x00000000	0x00000000
+0x20030758 <SystemCmdBuffer+112>:	0x00000000	0x00000000	0x00000000	0x00000000
+
+(gdb) x/x 0x58000094
+0x58000094:	0x1c004000
+
+(gdb) x/2x 0x20000190
+0x20000190 <HciAsynchEventQueue>:	0x200302b8	0x200302b8
+(gdb) c
+Continuing.
+
+Breakpoint 1, Event_Handler (Event=0x200302c0 <EvtPool+276>) at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Projects/P-NUCLEO-WB55.USBDongle/Applications/BLE/BLE_p2pClient/STM32_WPAN/App/p2p_client_app.c:260
+260	  return_value = SVCCTL_EvtNotAck;
+(gdb) x/2x 0x20000190
+0x20000190 <HciAsynchEventQueue>:	0x200303c4	0x200304d0
+
+When 190 gets updated:
+Program received signal SIGTRAP, Trace/breakpoint trap.
+0x0800918c in LST_insert_tail (listHead=0x20000190 <HciAsynchEventQueue>, node=0x200302b8 <EvtPool+268>)
+    at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Middlewares/ST/STM32_WPAN/utilities/stm_list.c:83
+83	  (node->prev)->next = node;
+(gdb) where
+#0  0x0800918c in LST_insert_tail (listHead=0x20000190 <HciAsynchEventQueue>, node=0x200302b8 <EvtPool+268>)
+    at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Middlewares/ST/STM32_WPAN/utilities/stm_list.c:83
+#1  0x080083bc in TlEvtReceived (hcievt=0x200302b8 <EvtPool+268>)
+    at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/hci_tl.c:284
+#2  0x080087b4 in HW_IPCC_BLE_RxEvtNot ()
+    at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl/tl_mbox.c:147
+#3  0x08002e88 in HW_IPCC_BLE_EvtHandler ()
+    at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Projects/P-NUCLEO-WB55.USBDongle/Applications/BLE/BLE_p2pClient/STM32_WPAN/Target/hw_ipcc.c:200
+#4  0x08002d5c in HW_IPCC_Rx_Handler ()
+    at /backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Projects/P-NUCLEO-WB55.USBDongle/Applications/BLE/BLE_p2pClient/STM32_WPAN/Target/hw_ipcc.c:98
+#5  0x08001a6c in IPCC_C1_RX_IRQHandler ()
+
+After an isEmpty, remove
+
+ptr = 0x200302b8
+
+
+
+< 0x200303c0 <EvtPool+532>:	0x00000000	0x200304d0	0x200302b8	0x020c3e04
+---
+> 0x200303c0 <EvtPool+532>:	0x00000000	0x200304d0	0x20030a1c	0x020c3e04
+162c162
+< 0x20030a10 <CsBuffer+4>:	0x00000000	0x00000000	0x00000000	0x200302b8
+---
+> 0x20030a10 <CsBuffer+4>:	0x00000000	0x00000000	0x00000000	0x200303c4
+
+
+Server is: 80:E1:26:00:49:E8
+
+[                 ][LE]> connect 80:E1:26:00:49:E8
+Attempting to connect to 80:E1:26:00:49:E8
+Connection successful
+[80:E1:26:00:49:E8][LE]> primary
+attr handle: 0x0001, end grp handle: 0x0004 uuid: 00001801-0000-1000-8000-00805f9b34fb
+attr handle: 0x0005, end grp handle: 0x000b uuid: 00001800-0000-1000-8000-00805f9b34fb
+attr handle: 0x000c, end grp handle: 0x0011 uuid: 0000fe40-cc7a-482a-984a-7f2ed5b3e58f
+[80:E1:26:00:49:E8][LE]> characteristics
+handle: 0x0002, char properties: 0x20, char value handle: 0x0003, uuid: 00002a05-0000-1000-8000-00805f9b34fb
+handle: 0x0006, char properties: 0x4e, char value handle: 0x0007, uuid: 00002a00-0000-1000-8000-00805f9b34fb
+handle: 0x0008, char properties: 0x4e, char value handle: 0x0009, uuid: 00002a01-0000-1000-8000-00805f9b34fb
+handle: 0x000a, char properties: 0x02, char value handle: 0x000b, uuid: 00002a04-0000-1000-8000-00805f9b34fb
+handle: 0x000d, char properties: 0x06, char value handle: 0x000e, uuid: 0000fe41-8e22-4541-9d4c-21edae82ed19
+handle: 0x000f, char properties: 0x10, char value handle: 0x0010, uuid: 0000fe42-8e22-4541-9d4c-21edae82ed19
+[80:E1:26:00:49:E8][LE]> char-desc 01 0x11
+handle: 0x0001, uuid: 00002800-0000-1000-8000-00805f9b34fb
+handle: 0x0002, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x0003, uuid: 00002a05-0000-1000-8000-00805f9b34fb
+handle: 0x0004, uuid: 00002902-0000-1000-8000-00805f9b34fb
+handle: 0x0005, uuid: 00002800-0000-1000-8000-00805f9b34fb
+handle: 0x0006, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x0007, uuid: 00002a00-0000-1000-8000-00805f9b34fb
+handle: 0x0008, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x0009, uuid: 00002a01-0000-1000-8000-00805f9b34fb
+handle: 0x000a, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x000b, uuid: 00002a04-0000-1000-8000-00805f9b34fb
+handle: 0x000c, uuid: 00002800-0000-1000-8000-00805f9b34fb
+handle: 0x000d, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x000e, uuid: 0000fe41-8e22-4541-9d4c-21edae82ed19
+handle: 0x000f, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x0010, uuid: 0000fe42-8e22-4541-9d4c-21edae82ed19
+handle: 0x0011, uuid: 00002902-0000-1000-8000-00805f9b34fb
+
+This event: c0a Evt_Blue_Att_Read_By_Group_Type_Resp
+
+0a 00657 Evt_Blue_Att_Read_By_Group_Type_Resp
+0c 00658
+
+01 00659 conn handle (801)
+08 00660
+
+14 00661 evt len ==
+14 00662   attr len == 20, a UUID
+
+0c 00663 Service Handle (000c)
+00 00664
+
+11 00665 Service Handle End (0011)
+00 00666
+
+8f 00667 U
+e5 00668
+b3 00669
+d5 00670
+2e 00671   U
+7f 00672
+4a 00673
+98 00674
+2a 00675
+48 00676      I
+7a 00677
+cc 00678
+40 00679
+fe 00680
+00 00681
+00 00682          D
+
+0000fe40-cc7a-482a-984a-7f2ed5b3e58f matches with gatttool output ^^^^
+
+from results2.txt
+ISR @9250 21
+evt ff evtlen 12
+"EVT_VENDOR"
+ecode 0c0a (Evt_Blue_Gatt_read_by_group_type_resp)
+
+bb 09250
+15 09251
+04 09252
+ff 09253
+12 09254
+0a 09255
+0c 09256
+
+01 09257
+08 09258
+
+06 09259 len
+
+0c 09260 pairlen ea pair seems to be 6
+
+01 09261 from 1
+00 09262
+
+04 09263  to 4
+00 09264
+
+01 09265 top uuid 1801
+18 09266
+
+05 09267 from 5
+00 09268
+0b 09269 to b
+00 09270
+
+00 09271 top uuid 1800
+18 09272
+
+
+bb 09466
+1e 09467
+04 09468
+ff 09469
+1b 09470
+06 09471
+0c 09472
+
+01 09473
+08 09474
+
+15 09475
+15 09476
+
+0d 09477
+00 09478
+06 09479
+0e 09480
+00 09481
+
+handle: 0x000d, char properties: 0x06, char value handle: 0x000e, uuid: 0000fe41-8e22-4541-9d4c-21edae82ed19
+
+19 09482
+ed 09483
+82 09484
+ae 09485
+ed 09486
+21 09487
+4c 09488
+9d 09489
+41 09490
+45 09491
+22 09492
+8e 09493
+41 09494
+fe 09495
+00 09496
+00 09497
+
+
+
+bb 09537
+1e 09538
+04 09539
+ff 09540
+1b 09541
+06 09542
+0c 09543
+
+01 09544
+08 09545
+
+15 09546 len
+15 09547 handle pair len
+
+Here is the record from above
+handle: 0x000f, char properties: 0x10, char value handle: 0x0010, uuid: 0000fe42-8e22-4541-9d4c-21edae82ed19
+0f 09548 handle 000f
+00 09549
+10 09550 properties
+10 09551 handle 0x0010
+00 09552
+
+19 09553 this is handle 0x11's data
+ed 09554
+82 09555
+ae 09556
+ed 09557
+21 09558
+4c 09559
+9d 09560
+41 09561
+45 09562
+22 09563
+8e 09564
+42 09565
+fe 09566
+00 09567
+00 09568
+
+Evt_Blue_Att_Find_Information_Resp
+bb 09692
+0d 09693
+04 09694
+ff 09695
+0a 09696
+04 09697
+0c 09698
+01 09699
+08 09700
+
+01 09701
+04 09702 from 4
+11 09703   to 11
+00 09704
+02 09705
+29 09706
+
+handle: 0x0004, uuid: 00002902-0000-1000-8000-00805f9b34fb
+
+After ^^
+OGF_VENDOR_CMD OCF_GATT_WRITE_CHAR_DESCRIPTOR
+
+aa 09769
+04 09770
+07 09771
+01 09772
+21 09773
+fd 09774
+07 09775
+
+01 09776 conn
+08 09777
+
+11 09778 attr
+00 09779
+
+02 09780 val len
+01 09781 attr
+00 09782   value
+
+then
+SENDCMD @9997 4 7 ogf 3f ocf 123 OGF_VENDOR_CMD OCF_GATT_WRITE_WITHOUT_RESPONSE plen 7
+
+aa 09997
+04 09998
+07 09999
+01 10000
+23 10001
+fd 10002
+07 10003
+
+01 10004
+08 10005
+
+0e 10006
+00 10007
+
+02 10008
+01 10009
+01 10010
+
+SENDCMD @10267 4 7 ogf 3f ocf 123 OGF_VENDOR_CMD OCF_GATT_WRITE_WITHOUT_RESPONSE plen 7
+aa 10267
+04 10268
+07 10269
+01 10270
+23 10271
+fd 10272
+07 10273
+01 10274
+08 10275
+0e 10276
+00 10277
+02 10278
+01 10279
+00 10280
+
+The service and add_chars are done here:
+
+/backup/STM32WB/STM32Cube_FW_WB_V1.1.0/Middlewares/ST/STM32_WPAN/ble/core/Src/blesvc/p2p_stm.c
+#define COPY_P2P_SERVICE_UUID(uuid_struct)       COPY_UUID_128(uuid_struct,0x00,0x00,0xfe,0x40,0xcc,0x7a,0x48,0x2a,0x98,0x4a,0x7f,0x2e,0xd5,0xb3,0xe5,0x8f)
+#define COPY_P2P_WRITE_CHAR_UUID(uuid_struct)    COPY_UUID_128(uuid_struct,0x00,0x00,0xfe,0x41,0x8e,0x22,0x45,0x41,0x9d,0x4c,0x21,0xed,0xae,0x82,0xed,0x19)
+#define COPY_P2P_NOTIFY_UUID(uuid_struct)        COPY_UUID_128(uuid_struct,0x00,0x00,0xfe,0x42,0x8e,0x22,0x45,0x41,0x9d,0x4c,0x21,0xed,0xae,0x82,0xed,0x19)
+
+Evt_Blue_Gatt_notification's
+
+bb 18402
+0c 18403
+04 18404
+ff 18405
+09 18406
+0f 18407
+0c 18408
+
+01 18409
+08 18410
+
+10 18411 handle
+00 18412
+
+02 18413 len
+01 18414
+00 18415
+
+bb 21028
+0c 21029
+04 21030
+ff 21031
+09 21032
+0f 21033
+0c 21034
+
+01 21035 handle
+08 21036
+
+10 21037 char handle
+00 21038
+02 21039 2 bytes
+01 21040
+01 21041
+
+
+Evt_Blue_L2CAP_CONN_Upd_Req
+bb 19678
+12 19679
+04 19680
+ff 19681
+0f 19682
+02 19683
+08 19684
+
+01 19685
+08 19686 handle
+
+01 19687 ID
+08 19688 Len
+00 19689
+
+20 19690 min
+03 19691
+
+20 19692 max
+03 19693
+
+00 19694 slave lat
+00 19695
+
+f4 19696 timeout
+01 19697
+then
+SENDCMD @19711 4 2 ogf 3f ocf 18 OGF_VENDOR_CMD OCF_HAL_SET_RADIO_ACTIVITY_MASK plen 2
+SENDCMD @19729 4 16 ogf 3f ocf 182 OGF_VENDOR_CMD OCF_L2CAP_CONN_PARAM_UPDATE_RESP plen 16
+SENDCMD @19761 4 2 ogf 3f ocf 18 OGF_VENDOR_CMD OCF_HAL_SET_RADIO_ACTIVITY_MASK plen 2
+
+also:
+loss of power on server:
+
+unknown evtcode:  5 (disconn handled now)
+
+
+crash when hit SW2 on the server right away
+(gdb) p except
+$1 = (id => 0x2000070c <program_error>, machine_occurrence => (system.address) 0x0, msg_length => 110,
+    msg => "System.Tasking.Protected_Objects.Single_Entry.Protected_Single_Entry_Call: No_Entry_Queue restriction violated["00"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]7["0b"]["01"]["08"]["d4"];["00"] ["c6"]["01"]["00"]["00"]["00"]["00"]["00"]["00"]["08"]["00"]["00"]["00"]8["91"]["01"] ["0c"]["07"]["00"] ["e4"]X["01"]["08"]["d0"]X["01"]["08"]", '["00"]' <repeats 12 times>, "["d7"]["15"]["01"]["08"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]8["91"]["01"] }["ec"]["00"]["08"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]["00"]8["91"]["01"] ", exception_raised => false, pid => 0,
+    num_tracebacks => 0, tracebacks => (0, 0, 0, 0, 172, 536886976, 536886356, 2885681152, 0, 134289315, 536886316,
+      134275231, 536973712, 134270173, 0, 1, 10, 536886976, 0, 536973624, 170, 536886976, 536886436, 2852126720, 0,
+      134289315, 536886380, 134277329, 0, 0, 0, 134295580, 536973624, 536886976, 0, 134278269, 0, 134287317, 0, 0, 0,
+      536973624, 4294967294, 9, 536973712, 536883436, 9, 5, 536973624, 536886496))
+
+Need new func for server:
+0x080088f8 in hci_le_set_default_phy (ALL_PHYS=0 '\000', TX_PHYS=2 '\002',
+    RX_PHYS=2 '\002')
+    at /.share/CACHEDEV1_DATA/hacking/STM32WB/STM32Cube_FW_WB_V1.1.0/Middlewares/ST/STM32_WPAN/ble/core/Src/core/ble_hci_le.c:1610
+
+nvic diffs ST server vs my
+< NVIC.ISER0.SETENA[31:0]: 0x4448
+< NVIC.ISER1.SETENA[31:0]: 0x4003010
+---
+> NVIC.ISER0.SETENA[31:0]: 0x10000440
+> NVIC.ISER1.SETENA[31:0]: 0x3000
+
+admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55$ ~/ruby/bitter.rb --32 --nib=_ 0x4448
+3322_2222_2222_1111_1111_1100_0000_0000
+1098_7654_3210_9876_5432_1098_7654_3210
+0000_0000_0000_0000_0100_0100_0100_1000
+admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55$ ~/ruby/bitter.rb --32 --nib=_ 0x4003010
+3322_2222_2222_1111_1111_1100_0000_0000
+1098_7654_3210_9876_5432_1098_7654_3210
+0000_0100_0000_0000_0011_0000_0001_0000
+admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55$ ~/ruby/bitter.rb --32 --nib=_ 0x10000440
+3322_2222_2222_1111_1111_1100_0000_0000
+1098_7654_3210_9876_5432_1098_7654_3210
+0001_0000_0000_0000_0000_0100_0100_0000
+admin@ubuntu_1604:/.share/CACHEDEV1_DATA/Ada/STM32/WB/WB55/cli_serv_wb55$ ~/ruby/bitter.rb --32 --nib=_ 0x3000
+3322_2222_2222_1111_1111_1100_0000_0000
+1098_7654_3210_9876_5432_1098_7654_3210
+0000_0000_0000_0000_0011_0000_0000_0000
+
+To ena STOP2.
+
+#define LL_PWR_MODE_STOP2                  (PWR_CR1_LPMS_1)
+#define PWR_CR1_LPMS_1                 (0x2U << PWR_CR1_LPMS_Pos)              /*!< 0x00000002 */
+
+/**
+  * @brief  Set Low-Power mode
+  * @rmtoll CR1          LPMS          LL_PWR_SetPowerMode
+  * @param  LowPowerMode This parameter can be one of the following values:
+  *         @arg @ref LL_PWR_MODE_STOP0
+  *         @arg @ref LL_PWR_MODE_STOP1
+  *         @arg @ref LL_PWR_MODE_STOP2
+  *         @arg @ref LL_PWR_MODE_STANDBY
+  *         @arg @ref LL_PWR_MODE_SHUTDOWN
+  * @retval None
+  */
+__STATIC_INLINE void LL_PWR_SetPowerMode(uint32_t LowPowerMode)
+{
+  MODIFY_REG(PWR->CR1, PWR_CR1_LPMS, LowPowerMode);
+}
+
+/**
+  * @brief  Processor uses deep sleep as its low power mode
+  * @rmtoll SCB_SCR      SLEEPDEEP     LL_LPM_EnableDeepSleep
+  * @retval None
+  */
+__STATIC_INLINE void LL_LPM_EnableDeepSleep(void)
+{
+  /* Set SLEEPDEEP bit of Cortex System Control Register */
+  SET_BIT(SCB->SCR, ((uint32_t)SCB_SCR_SLEEPDEEP_Msk));
+}

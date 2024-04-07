@@ -1,0 +1,74 @@
+package AQI is
+   
+   --  Air quality record, interpretation of Wikipedia page
+   type Breakpoints is record
+      Clow   : Float;
+      Chigh  : Float;
+      Ilow   : UInt16;
+      Ihigh  : UInt16;
+   end record;
+   type Aq_Range is range 1 .. 7;
+   --  Air quality array, per Wikipedia
+   type Aq_Array is array (Aq_Range) of Breakpoints;
+   --  Colours are consistent with the charts
+   AqA : constant Aq_Array := (
+                               (0.0,    12.0,   0,  50),
+                               (12.1,   35.4,  51, 100),
+                               (35.5,   55.4, 101, 150),
+                               (55.5,  150.4, 151, 200),
+                               (150.5, 250.4, 201, 300),
+                               (250.5, 350.4, 301, 400),
+                               (350.5, 500.4, 401, 500));
+
+   type PM_Select is
+     (PM1_0,
+      PM2_5,
+      PM10_0);
+
+   type Aq_Select is
+     (AQI_Value,
+      PM1_0_Value,
+      PM2_5_Value,
+      PM10_0_Value);
+
+   type PM_Array is array (PM_Select range PM1_0 .. PM10_0) of UInt16;
+
+   type Uart_Frame is record
+      Magic      : UInt16;   --  0
+      Len        : UInt16;   --  1
+      Pm_Ug      : PM_Array; --  2 .. 4
+      Pm1_Conc   : PM_Array; --  5 .. 7
+      Reserved1  : UInt16;   --  8
+      Reserved2  : UInt16;   --  9
+      Reserved3  : UInt16;   --  10
+      Csum       : UInt16;   --  11
+   end record
+     with Pack;
+
+   type LoRa_Packet is record
+      Aqi    : UInt16;
+      Pm_Ug  : PM_Array;
+      Crc    : UInt8;
+   end record
+     with Pack;
+
+   --  We overlay a 24byte UART buffer on top of the Uart_Frame, in
+   --  this way, we can structure the UART buffer.
+   A         : UInt8_Array (1 .. 24);
+   Frm       : Uart_Frame;
+   for Frm'Alignment use 1;
+   for Frm'Address use A'Address;
+
+   --  Per the datasheet for the PMS3003
+   Magic_Num : constant UInt8_Array (1 .. 2) := (16#42#, 16#4d#);
+
+   procedure Swap (X : in out UInt16);
+
+
+   function Compute_Aqi (Pm25 : UInt16; Idx : out Aq_Range; Aqi_Val : out Float) return Boolean;
+
+
+   function Check_Valid return Boolean;
+
+   
+end AQI;

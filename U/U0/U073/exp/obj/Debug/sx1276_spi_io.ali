@@ -1,0 +1,133 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U sx1276_spi_io%b	sx1276_spi_io.adb	3b4b8c32 NE OO PK IU
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U sx1276_spi_io%s	sx1276_spi_io.ads	adb08598 EE NE OO PK IU
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W stm32%s		stm32.ads		stm32.ali
+W stm32.gpio%s		stm32-gpio.adb		stm32-gpio.ali
+Z system%s		system.ads		system.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D stm32.ads		20240323033822 698e2c3b stm32%s
+D stm32-exti.ads	20240323033822 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20240323033822 dfe90a82 stm32.gpio%s
+D stm32_svd.ads		20240323032222 567bda23 stm32_svd%s
+D stm32_svd-gpio.ads	20240323224814 28689f61 stm32_svd.gpio%s
+D sx1276_spi_io.ads	20240329193049 011bfe53 sx1276_spi_io%s
+D sx1276_spi_io.adb	20240329193049 3a507261 sx1276_spi_io%b
+D system.ads		20200106220408 aa7dab5a system%s
+D s-assert.ads		20200106220408 cd8d2c94 system.assertions%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20200106220408 34867c83 system.unsigned_types%s
+D /media/16T/ada/STM32/U/U0/U073/exp/gnat.adc  20240329193049 00000000
+G a e
+G c Z s b [read sx1276_spi_io 51 14 none]
+G c Z s b [write sx1276_spi_io 56 14 none]
+G c Z s b [read_buffer sx1276_spi_io 61 14 none]
+G c Z s b [write_buffer sx1276_spi_io 66 14 none]
+G c Z s s [io_portIP sx1276_spi_io 44 9 none]
+G r c none [read sx1276_spi_io 51 14 none] [clear stm32__gpio 165 14 none]
+G r c none [read sx1276_spi_io 51 14 none] [set stm32__gpio 159 14 none]
+G r c none [write sx1276_spi_io 56 14 none] [clear stm32__gpio 165 14 none]
+G r c none [write sx1276_spi_io 56 14 none] [set stm32__gpio 159 14 none]
+G r c none [read_buffer sx1276_spi_io 61 14 none] [clear stm32__gpio 165 14 none]
+G r c none [read_buffer sx1276_spi_io 61 14 none] [set stm32__gpio 159 14 none]
+G r c none [write_buffer sx1276_spi_io 66 14 none] [clear stm32__gpio 165 14 none]
+G r c none [write_buffer sx1276_spi_io 66 14 none] [set stm32__gpio 159 14 none]
+G r s gpio_point [io_portIP sx1276_spi_io 44 9 none] [gpio_pointIP stm32__gpio 129 9 none]
+X 3 hal.ads
+34K9*HAL 166e8 12|33r6 33r27 34r5
+53M9*UInt8<6|63M9> 12|40r33 41r33 42r33 53r18 54r22 58r18 59r18 63r18 68r18
+. 13|40r19 41r19 46r40 63r18 64r22 70r45 94r18 101r45 129r18 136r45
+X 4 hal-gpio.ads
+44h9*GPIO_Point
+X 5 hal-spi.ads
+32K13*SPI 95e12 12|33w10 33r31
+34E9*SPI_Status 38e12 13|43r16 67r16 97r18 132r18
+35n7*Ok{34E9} 13|51r20 72r20 81r20 106r20 115r20 141r20 150r20
+44A9*SPI_Data_8b(3|53M9)<integer> 12|64r22 69r18 13|46r27 66r14 70r27 95r22
+. 101r27 130r18 136r27
+48h9*SPI_Port
+50P9*Any_SPI_Port(48R9) 12|45r16
+54x14*Transmit 13|46R17 70R17 101R17 136R17 146R17
+70x14*Receive 13|77R17 111R17
+X 6 interfac.ads
+63M9*Unsigned_8
+X 7 stm32.ads
+39K9*STM32 48e10 12|32r6 32r27
+X 9 stm32-gpio.ads
+49K15*GPIO 271e15 12|32w12 32r33
+129R9*GPIO_Point<4|44R9> 134e14 12|46r16
+159U14*Set<4|74p14> 13|49s15 79s15 113s15 148s15
+165U14*Clear<4|77p14> 13|45s15 69s15 99s15 134s15
+X 12 sx1276_spi_io.ads
+36K9*SX1276_SPI_IO 71l5 71e18 13|32b14 157l5 157t18
+40m4*SPI_Read_Flag{3|53M9} 13|70r64 102r57
+41m4*SPI_Write_Flag{3|53M9} 13|46r59 137r57
+42m4*SPI_AutoInc_Flag{3|53M9}
+44R9*IO_Port 47e14 49r35
+45p7*Port{5|50P9} 13|46r12 70r12 77r12 101r12 111r12 136r12 146r12
+46r7*CS{9|129R9} 13|45m12 49m12 69m12 79m12 99m12 113m12 134m12 148m12
+49P9*Any_IO_Port(44R9) 52r18 57r18 62r18 67r18 13|39r19 62r18 93r18 128r18
+51U14*Read 52>7 53>7 54<7 13|61b14 86l8 86t12
+52p7 This{49P9} 13|62b7 69r7 70r7 77r7 79r7
+53m7 Register{3|53M9} 13|63b7 70r52
+54m7 Value{3|53M9} 13|64b7 85m7
+56U14*Write 57>7 58>7 59>7 13|38b14 55l8 55t13
+57p7 This{49P9} 13|39b7 45r7 46r7 49r7
+58m7 Register{3|53M9} 13|40b7 46r47
+59m7 Value{3|53M9} 13|41b7 47r27
+61U14*Read_Buffer 62>7 63>7 64<7 13|92b14 120l8 120t19
+62p7 This{49P9} 13|93b7 99r7 101r7 111r7 113r7
+63m7 Register{3|53M9} 13|94b7 101r52
+64a7 Value{5|44A9} 13|95b7 111m26
+66U14*Write_Buffer 67>7 68>7 69>7 13|127b14 155l8 155t20
+67p7 This{49P9} 13|128b7 134r7 136r7 146r7 148r7
+68m7 Register{3|53M9} 13|129b7 136r52
+69a7 Value{5|44A9} 13|130b7 146r27
+X 13 sx1276_spi_io.adb
+43e7 Status{5|34E9} 48m27 51r10
+66a7 Data{5|44A9} 77m26 85r16
+67e7 Status{5|34E9} 71m27 72r10 77m32 81r10
+97e7 Status{5|34E9} 104m27 106r10 111m33 115r10
+132e7 Status{5|34E9} 139m27 141r10 146m34 150r10
+

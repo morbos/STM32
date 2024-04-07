@@ -1,0 +1,6 @@
+(gdb) where
+#0  0x08013b50 in system.bb.time."&" (left=837, right=2869417061) at /home/hedley/ada/STM32/F/F103/aqico2_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-bbtime.adb:71
+#1  0x0801381c in system.bb.time.clock () at /home/hedley/ada/STM32/F/F103/aqico2_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-bbtime.adb:295
+#2  0x080105a8 in system.task_primitives.operations.monotonic_clock () at /home/hedley/ada/STM32/F/F103/aqico2_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprop.adb:139
+#3  0x0800feb0 in ada.real_time.clock () at /home/hedley/ada/STM32/F/F103/aqico2_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.adb:313
+#4  0x0800029a in aqi () at /home/hedley/ada/STM32/F/F103/aqico2_1306/src/aqi.adb:198

@@ -1,0 +1,64 @@
+with HAL;     use HAL;
+package Bluenrg_Gatt_Server is
+   PRIMARY_SERVICE_UUID                  : constant UInt16 := 16#2800#;
+   SECONDARY_SERVICE_UUID                : constant UInt16 := 16#2801#;
+   INCLUDE_SERVICE_UUID                  : constant UInt16 := 16#2802#;
+   CHARACTERISTIC_UUID                   : constant UInt16 := 16#2803#;
+   CHAR_EXTENDED_PROP_DESC_UUID          : constant UInt16 := 16#2900#;
+   CHAR_USER_DESC_UUID                   : constant UInt16 := 16#2901#;
+   CHAR_CLIENT_CONFIG_DESC_UUID          : constant UInt16 := 16#2902#;
+   CHAR_SERVER_CONFIG_DESC_UUID          : constant UInt16 := 16#2903#;
+   CHAR_FORMAT_DESC_UUID                 : constant UInt16 := 16#2904#;
+   CHAR_AGGR_FMT_DESC_UUID               : constant UInt16 := 16#2905#;
+   GATT_SERVICE_UUID                     : constant UInt16 := 16#1801#;
+   GAP_SERVICE_UUID                      : constant UInt16 := 16#1800#;
+   SERVICE_CHANGED_UUID                  : constant UInt16 := 16#2A05#;
+   ATTR_NO_ACCESS                        : constant  UInt8 := 16#00#;
+   ATTR_ACCESS_READ_ONLY                 : constant  UInt8 := 16#01#;
+   ATTR_ACCESS_WRITE_REQ_ONLY            : constant  UInt8 := 16#02#;
+   ATTR_ACCESS_READ_WRITE                : constant  UInt8 := 16#03#;
+   ATTR_ACCESS_WRITE_WITHOUT_RESPONSE    : constant  UInt8 := 16#04#;
+   ATTR_ACCESS_SIGNED_WRITE_ALLOWED      : constant  UInt8 := 16#08#;
+   ATTR_ACCESS_WRITE_ANY                 : constant  UInt8 := 16#0E#;
+   CHAR_PROP_BROADCAST                   : constant  UInt8 := 16#01#;
+   CHAR_PROP_READ                        : constant  UInt8 := 16#02#;
+   CHAR_PROP_WRITE_WITHOUT_RESP          : constant  UInt8 := 16#04#;
+   CHAR_PROP_WRITE                       : constant  UInt8 := 16#08#;
+   CHAR_PROP_NOTIFY                      : constant  UInt8 := 16#10#;
+   CHAR_PROP_INDICATE                    : constant  UInt8 := 16#20#;
+   CHAR_PROP_SIGNED_WRITE                : constant  UInt8 := 16#40#;
+   CHAR_PROP_EXT                         : constant  UInt8 := 16#80#;
+   ATTR_PERMISSION_NONE                  : constant  UInt8 := 16#00#;
+   ATTR_PERMISSION_AUTHEN_READ           : constant  UInt8 := 16#01#;
+   ATTR_PERMISSION_AUTHOR_READ           : constant  UInt8 := 16#02#;
+   ATTR_PERMISSION_ENCRY_READ            : constant  UInt8 := 16#04#;
+   ATTR_PERMISSION_AUTHEN_WRITE          : constant  UInt8 := 16#08#;
+   ATTR_PERMISSION_AUTHOR_WRITE          : constant  UInt8 := 16#10#;
+   ATTR_PERMISSION_ENCRY_WRITE           : constant  UInt8 := 16#20#;
+   UUID_TYPE_16                          : constant  UInt8 := 16#01#;
+   UUID_TYPE_128                         : constant  UInt8 := 16#02#;
+   PRIMARY_SERVICE                       : constant  UInt8 := 16#01#;
+   SECONDARY_SERVICE                     : constant  UInt8 := 16#02#;
+   GATT_DONT_NOTIFY_EVENTS               : constant  UInt8 := 16#00#;
+   GATT_NOTIFY_ATTRIBUTE_WRITE           : constant  UInt8 := 16#01#;
+   GATT_NOTIFY_WRITE_REQ_AND_WAIT_FOR_APPL_RESP   : constant  UInt8 := 16#02#;
+   GATT_NOTIFY_READ_REQ_AND_WAIT_FOR_APPL_RESP    : constant  UInt8 := 16#04#;
+   CHAR_VALUE_LEN_CONSTANT               : constant  UInt8 := 16#00#;
+   CHAR_VALUE_LEN_VARIABLE               : constant  UInt8 := 16#01#;
+   MIN_ENCRY_KEY_SIZE                    : constant  UInt8 :=   7;
+   MAX_ENCRY_KEY_SIZE                    : constant  UInt8 := 16#10#;
+
+   FORMAT_UINT8                          : constant  UInt8 := 16#04#;
+   FORMAT_UINT16                         : constant  UInt8 := 16#06#;
+   FORMAT_SINT16                         : constant  UInt8 := 16#0E#;
+   FORMAT_SINT24                         : constant  UInt8 := 16#0F#;
+   UNIT_UNITLESS                         : constant UInt16 := 16#2700#;
+   UNIT_TEMP_CELSIUS                     : constant UInt16 := 16#272F#;
+   UNIT_PRESSURE_BAR                     : constant UInt16 := 16#2780#;
+
+   ATT_MTU                               : constant UInt8 := 23;
+
+   NOTIFICATION                          : constant UInt8 := 1;
+   INDICATION                            : constant UInt8 := 2;
+
+end Bluenrg_Gatt_Server;

@@ -1,0 +1,149 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m4
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES SS ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U fonts%b		fonts.adb		b164948e NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W fonts%s		fonts.adb		fonts.ali
+W fonts.font1%s		fonts-font1.ads		fonts-font1.ali
+W hal%s			hal.ads			hal.ali
+W hal.bitmap%s		hal-bitmap.ads		hal-bitmap.ali
+
+U fonts%s		fonts.ads		23674938 EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W ssd1306%s		ssd1306.adb		ssd1306.ali
+
+D ada.ads		20200106220410 76789da1 ada%s
+D a-except.ads		20200106220410 291912d5 ada.exceptions%s
+D a-finali.ads		20200106220410 bf4f806b ada.finalization%s
+D a-stream.ads		20200106220411 119b8fb3 ada.streams%s
+D a-tags.ads		20200106220409 491b781d ada.tags%s
+D a-unccon.ads		20200106220409 0e9b276f ada.unchecked_conversion%s
+D fonts.ads		20210116213808 5d70889b fonts%s
+D fonts.adb		20210116213808 b58f9f3f fonts%b
+D fonts-font1.ads	20210116213808 5a704265 fonts.font1%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-bitmap.ads	20200106220407 03ebc14f hal.bitmap%s
+D hal-framebuffer.ads	20200106220407 9811b908 hal.framebuffer%s
+D hal-gpio.ads		20200106220407 146364b8 hal.gpio%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D hal-time.ads		20200106220407 f5295cd7 hal.time%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D memory_mapped_bitmap.ads  20200106220404 b7ed57c8 memory_mapped_bitmap%s
+D soft_drawing_bitmap.ads  20200106220404 41d47adc soft_drawing_bitmap%s
+D ssd1306.ads		20201225234358 555509ad ssd1306%s
+D system.ads		20200106220411 db831581 system%s
+D s-assert.ads		20200106220408 cd8d2c94 system.assertions%s
+D s-finmas.ads		20200106220410 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200106220410 4ff27390 system.finalization_root%s
+D s-parame.ads		20200106220411 d106111e system.parameters%s
+D s-pooglo.ads		20200106220409 ede33ef8 system.pool_global%s
+D s-secsta.ads		20200106220410 56a2861c system.secondary_stack%s
+D s-stalib.ads		20200106220409 09bd3940 system.standard_library%s
+D s-stoele.ads		20200106220410 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200106220409 b16154c2 system.storage_pools%s
+D s-stratt.ads		20200106220409 aedef97e system.stream_attributes%s
+D s-traent.ads		20200106220409 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200106220410 34867c83 system.unsigned_types%s
+D /media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/gnat.adc  20210116213808 00000000
+G a e
+G c Z s b [getchar fonts 7 14 none]
+G c Z s b [drawchar fonts 12 14 none]
+G c Z s b [drawstring fonts 17 14 none]
+G c Z s s [font_arrayIP fonts 5 9 none]
+G r c none [drawchar fonts 12 14 none] [fill_region ssd1306 79 14 none]
+G r c none [drawchar fonts 12 14 none] [set_native_source ssd1306 83 14 none]
+G r c none [drawchar fonts 12 14 none] [set_pixel ssd1306 177 14 none]
+G r c none [drawchar fonts 12 14 none] [update_layers ssd1306 154 14 none]
+G r c none [drawstring fonts 17 14 none] [fill_region ssd1306 79 14 none]
+G r c none [drawstring fonts 17 14 none] [set_native_source ssd1306 83 14 none]
+G r c none [drawstring fonts 17 14 none] [set_pixel ssd1306 177 14 none]
+G r c none [drawstring fonts 17 14 none] [update_layers ssd1306 154 14 none]
+X 7 fonts.ads
+3K9*Fonts 26l5 26e10 8|3r6 3r23 4b14 81l5 81t10
+5A9*Font_Array(10|53M9)<integer> 6r35 22r31
+6P9*Fa_Ptr(5A9) 8r56 8|11r14 61r53
+7U14*GetChar 7>23 7>45 8<45 9<45 10<45 8|19s7 60b14 80l8 80t15
+7i23 FontNumber{integer} 8|60b23 66r12
+7i45 Char{integer} 8|60b45 68r44
+8p45 P{6P9} 8|61b45 68m13 76m13
+9m45 W{10|53M9} 8|62b45 69m13 77m13
+10m45 H{10|53M9} 8|63b45 70m13 78m13
+12U14*DrawChar 12=24 13=24 13=27 14>24 15>24 8|6b14 43l8 43t16 52s10
+12r24 Display{19|46R9} 8|6b24 21m20 27m26 36m30 42m22
+13m24 X{10|66M9} 8|7b24 22r29 23r29 34r40 41m7 41r12
+13m27 Y{10|66M9} 8|7b27 24r29 25r29 35r51
+14e24 C{character} 8|8b24 18r29
+15m24 Colour{10|97M9} 8|9b24 26r24 27r35
+17U14*DrawString 17=26 18=24 18=27 19>24 20>24 8|45b14 54l8 54t18
+17r26 Display{19|46R9} 8|45b26 52m20
+18m24 X{10|66M9} 8|46b24 52m29
+18m27 Y{10|66M9} 8|46b27 52m32
+19a24 S{string} 8|47b24 51r16 52r35
+20m24 Colour{10|97M9} 8|48b24 52r42
+22a4*No_Char{5A9} 8|76r18
+X 8 fonts.adb
+11p7 P{7|6P9} 19m24 19r24 30r18
+12i7 Idx{integer} 18m7 19r19
+13m7 W{10|53M9} 19m27 23r43 29r42 41r24
+14m7 H{10|53M9} 19m30 25r43 32r36
+15m7 Elem{10|53M9} 30m10 31r13 33r20
+16r7 Pt{11|67R9} 34m19 36r39
+29m11 I<16|66M9> 30r34 34r54
+32i17 J{integer} 33r41 35r65
+51i11 I{integer} 52r38
+X 9 fonts-font1.ads
+3K15*Font1 8|3w12 3r29 9|332e16
+5m4*Chr_Hgt_F5x7{10|53M9} 8|70r18
+7I9*Font1_Range<short_short_integer> 8|68r31
+303A9*Chrtbl_F5x7_T(7|6P9)<7I9>
+305a4*Chrtbl_F5x7{303A9} 8|68r18
+X 10 hal.ads
+34K9*HAL 7|1w6 1r27 8|1r6 1r26 10|166e8
+53M9*UInt8<16|63M9> 7|5r52 9r56 10r56 8|13r14 14r14 15r14 33r29 62r53 63r53
+66M9*UInt16<16|66M9> 7|13r41 18r43 8|7r41 29r16 29r34 41r16 46r43
+97M9*UInt32<16|74M9> 7|15r34 20r36 8|9r34 48r36
+X 11 hal-bitmap.ads
+34K13*Bitmap 8|1w10 1r30 11|424e15
+67R9*Point 8|16r14 11|70e14
+68i7*X{natural} 8|34m26
+69i7*Y{natural} 8|35m37
+98h9*Bitmap_Buffer
+X 12 hal-framebuffer.ads
+44h9*Frame_Buffer_Display
+X 16 interfac.ads
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 19 ssd1306.ads
+42K9*SSD1306 7|2w6 2r27 19|248e12
+46R9*SSD1306_Screen<12|44R9> 7|12r41 17r43 8|6r41 45r43 19|218e17
+79U14*Fill_Region 8|21s7
+83U14*Set_Native_Source 8|27s7
+154U14*Update_Layers<12|106p14> 8|42s7
+177U14*Set_Pixel 8|36s19
+

@@ -1,0 +1,27 @@
+graph: { title: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "stm32__rtc__clear_rtc_wakeup" label: "CLEAR_RTC_WAKEUP\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-rtc.ads:66:14" shape : ellipse }
+node: { title: "stm32__rtc__rtc_wakeup_flag" label: "RTC_WAKEUP_FLAG\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-rtc.ads:68:13" shape : ellipse }
+node: { title: "stm32__exti__clear_external_interrupt" label: "CLEAR_EXTERNAL_INTERRUPT\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-exti.ads:110:14" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "rtc_wkup_int___elabs" label: "Rtc_Wkup_Int\n/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.ads:3:1\n8 bytes (static)" }
+edge: { sourcename: "rtc_wkup_int___elabs" targetname: "rtc_wkup_int__handlerTVIP" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.ads:5:4" }
+node: { title: "rtc_wkup_int__handler__rtc_wkup_handlerP" label: "Rtc_Wkup_Handlerp\n/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:7\n32 bytes (static)" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerP" targetname: "_Unwind_Resume" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerP" targetname: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:rtc_wkup_int__handler__rtc_wkup_handlerP___finalizer.5960" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:0" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerP" targetname: "rtc_wkup_int__handler__rtc_wkup_handlerN" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:7" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:7" }
+node: { title: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:rtc_wkup_int__handler__rtc_wkup_handlerP___finalizer.5960" label: "Rtc_Wkup_Handlerp\n/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:7\n16 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:rtc_wkup_int__handler__rtc_wkup_handlerP___finalizer.5960" targetname: "system__tasking__protected_objects__unlock" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:7" }
+node: { title: "rtc_wkup_int__handler__rtc_wkup_handlerN" label: "Rtc_Wkup_Handlern\n/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:19:7\n24 bytes (static)" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerN" targetname: "stm32__rtc__clear_rtc_wakeup" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:24:13" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerN" targetname: "stm32__rtc__rtc_wakeup_flag" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:23:13" }
+edge: { sourcename: "rtc_wkup_int__handler__rtc_wkup_handlerN" targetname: "stm32__exti__clear_external_interrupt" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.adb:22:10" }
+node: { title: "rtc_wkup_int__finalize_spec" label: "Finalize_Spec\n/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.ads:3:1\n4 bytes (static)" }
+node: { title: "rtc_wkup_int__handlerTVIP" label: "Handlertvip\n/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.ads:5:4\n40 bytes (static)" }
+edge: { sourcename: "rtc_wkup_int__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.ads:5:4" }
+edge: { sourcename: "rtc_wkup_int__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/rtc_wkup_int.ads:5:4" }
+}

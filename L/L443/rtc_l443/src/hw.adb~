@@ -1,0 +1,11 @@
+package body Hw is
+
+   procedure Enable_EXTI20
+   is
+      Line : constant External_Line_Number := EXTI_Line_20;
+      Index : constant Natural := External_Line_Number'Pos (Line);
+   begin
+      EXTI_Periph.IMR1.Arr (Index) := True;
+   end Enable_SPI_IRQ;
+
+end Hw;

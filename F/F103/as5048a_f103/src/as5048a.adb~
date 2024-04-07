@@ -1,0 +1,75 @@
+with HAL.SPI;         use HAL.SPI;
+with Peripherals;     use Peripherals;
+
+package body AS5048A is
+
+   procedure WriteRegister (This   : in out AS5048A_Encoder;
+                            CS     : in out GPIO_Point;
+                            Reg    : UInt16;
+                            Val    : UInt16;
+                            Status : out HAL.SPI.SPI_Status)
+   is
+      Tx         : HAL.SPI.SPI_Data_16b (1 .. 2);
+   begin
+      Tx := (1 => (Reg), 2 => Val);
+      Clear (CS);
+      Transmit (This.Port.all, Tx, Status);
+      Set (CS);
+   end WriteRegister;
+   function ReadRegister (This   : in out AS5048A_Encoder;
+                          CS     : in out GPIO_Point;
+                          Reg    : UInt16;
+                          Status : out HAL.SPI.SPI_Status) return UInt16
+   is
+      Tx         : HAL.SPI.SPI_Data_8b (1 .. 2);
+      Rx         : HAL.SPI.SPI_Data_8b (1 .. 2);
+      Tx16       : HAL.SPI.SPI_Data_16b (1 .. 1);
+      for Tx16'Address use Tx'Address;
+      Rx16       : HAL.SPI.SPI_Data_16b (1 .. 1);
+      for Rx16'Address use Rx'Address;
+      Temp       : UInt8;
+   begin
+      Tx16 := (1 => (Reg or SPI_Par_Flag or SPI_Read_Flag));
+      Clear (CS);
+      Transmit_Receive (This.Port.all, Tx, Rx, Status);
+      Set (CS);
+      -- Swap the bytes
+      Temp := Rx (1);
+      Rx (1) := Rx (2);
+      Rx (2) :
+      --  Check errors here.
+      if (Rx16 (1) and SPI_Err_Flag) = SPI_Err_Flag then
+         return 0;
+      else
+         Rx16 (1) := Rx16 (1) and 16#3fff#;
+         return Rx16 (1);
+      end if;
+   end ReadRegister;
+
+   procedure Initialize (This   : in out AS5048A_Encoder;
+                         CS     : in out GPIO_Point;
+                         Status : out Boolean)
+   is
+--      Spi_Status : HAL.SPI.SPI_Status;
+   begin
+      null;
+   end Initialize;
+
+   function Get_Angle (This   : in out AS5048A_Encoder;
+                       Status : out Boolean) return AngleT
+   is
+      Result : AngleT;
+      Raw    : UInt16;
+      LStatus : SPI_Status;
+   begin
+      Raw := ReadRegister (This, CS_Pin, ANGLE, LStatus);
+      if LStatus = HAL.SPI.Ok then
+         Status := True;
+      else
+         Status := False;
+      end if;
+      Result := 360.0 * (AngleT (Raw) / AngleT (2 ** 14));
+      return Result;
+   end Get_Angle;
+
+end AS5048A;

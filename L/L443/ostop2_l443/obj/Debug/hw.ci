@@ -1,0 +1,35 @@
+graph: { title: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb"
+node: { title: "stm32__device__disable_clock__3" label: "DISABLE_CLOCK\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x3/stm32-device.ads:70:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io__2" label: "CONFIGURE_IO\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:243:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__3" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x3/stm32-device.ads:66:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_alternate_function" label: "CONFIGURE_ALTERNATE_FUNCTION\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:202:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32l4x3/stm32-device.ads:65:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "stm32__board__initialize_leds" label: "INITIALIZE_LEDS\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/src/stm32-board.ads:58:14" shape : ellipse }
+node: { title: "stm32__exti__enable_external_interrupt" label: "ENABLE_EXTERNAL_INTERRUPT\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-exti.ads:86:14" shape : ellipse }
+node: { title: "hw__internal_clocks" label: "Internal_Clocks\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:207:4\n8 bytes (static)" }
+edge: { sourcename: "hw__internal_clocks" targetname: "hw__switch_on_hsi" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:210:7" }
+node: { title: "hw__gpio_off" label: "Gpio_Off\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:181:4\n1008 bytes (static)" }
+edge: { sourcename: "hw__gpio_off" targetname: "stm32__device__disable_clock__3" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:203:7" }
+edge: { sourcename: "hw__gpio_off" targetname: "stm32__gpio__configure_io__2" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:201:7" }
+edge: { sourcename: "hw__gpio_off" targetname: "stm32__device__enable_clock__3" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:195:7" }
+node: { title: "hw__gate_off" label: "Gate_Off\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:123:4\n4 bytes (static)" }
+node: { title: "hw__enable_mco" label: "Enable_Mco\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:103:4\n16 bytes (static)" }
+edge: { sourcename: "hw__enable_mco" targetname: "stm32__gpio__configure_alternate_function" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:116:7" }
+edge: { sourcename: "hw__enable_mco" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:114:7" }
+edge: { sourcename: "hw__enable_mco" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:107:7" }
+node: { title: "hw__stop2" label: "Stop2\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:71:4\n8 bytes (static)" }
+edge: { sourcename: "hw__stop2" targetname: "hw__systick_stance" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:99:7" }
+edge: { sourcename: "hw__stop2" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:95:7" }
+edge: { sourcename: "hw__stop2" targetname: "stm32__board__initialize_leds" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:93:7" }
+edge: { sourcename: "hw__stop2" targetname: "hw__switch_on_pll" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:91:7" }
+edge: { sourcename: "hw__stop2" targetname: "hw__internal_clocks" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:89:7" }
+edge: { sourcename: "hw__stop2" targetname: "hw__systick_stance" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:77:7" }
+node: { title: "hw__systick_stance" label: "Systick_Stance\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:65:4\n16 bytes (static)" }
+node: { title: "hw__switch_on_pll" label: "Switch_On_Pll\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:52:4\n4 bytes (static)" }
+node: { title: "hw__switch_on_hse" label: "Switch_On_Hse\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:39:4\n4 bytes (static)" }
+node: { title: "hw__switch_on_hsi" label: "Switch_On_Hsi\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:25:4\n4 bytes (static)" }
+node: { title: "hw__enable_exti20" label: "Enable_Exti20\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:16:4\n16 bytes (static)" }
+edge: { sourcename: "hw__enable_exti20" targetname: "stm32__exti__enable_external_interrupt" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.adb:21:7" }
+}

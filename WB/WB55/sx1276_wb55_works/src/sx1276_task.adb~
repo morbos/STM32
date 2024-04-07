@@ -1,0 +1,18 @@
+package body Sx1276_Task is
+
+   task body Send_Sx1276
+   is
+   begin
+      for I in S'Range loop
+         TxBuffer (I) := Character'Pos (S (I));
+      end loop;
+   end task;
+
+   task body Receive_Sx1276
+   is
+   begin
+      Suspend_Until_True (Receive_Sx1276_Go);
+      Result := Recv_SX1276 (RxBuffer, RecLenPtr);
+   end task;
+
+end Sx1276_Task;

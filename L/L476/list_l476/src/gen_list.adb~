@@ -1,0 +1,27 @@
+package body Gen_List is
+   procedure List_Init_Head (ListHead : in out ListNode)
+   is
+   begin
+      ListHead.Next := null;
+      ListHead.Prev := null;
+   end List_Init_Head;
+   --  uint8_t list_is_empty (ListNode * listHead)
+   procedure List_Insert_Head (ListHead : ListNodePtr; Node : ListNodePtr)
+   is
+   begin
+      Node.Next := ListHead.Next;
+      Node.Prev := ListHead;
+      ListHead.Next := Node;
+      Node.Next.Prev := Node;
+   end List_Insert_Head;
+   --  void list_insert_tail (ListNode * listHead, ListNode * node)
+   --  void list_remove_node (ListNode * node)
+   --  void list_remove_head (ListNode * listHead, ListNode ** node )
+   --  void list_remove_tail (ListNode * listHead, ListNode ** node )
+   --  void list_insert_node_after (ListNode * node, ListNode * ref_node)
+   --  void list_insert_node_before (ListNode * node, ListNode * ref_node)
+   --  int list_get_size (ListNode * listHead)
+   --  void list_get_next_node (ListNode * ref_node, ListNode ** node)
+   --  void list_get_prev_node (ListNode * ref_node, ListNode ** node)
+
+end Gen_List;

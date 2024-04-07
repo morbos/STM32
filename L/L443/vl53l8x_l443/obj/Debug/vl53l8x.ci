@@ -1,0 +1,385 @@
+edge: { sourcename: "vl53l8x__i2c_write"
+  targetname: "1:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "vl53l8x.adb:53:14"
+}
+edge: { sourcename: "vl53l8x__i2c_write__2"
+  targetname: "2:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "vl53l8x.adb:70:14"
+}
+edge: { sourcename: "vl53l8x__i2c_read"
+  targetname: "3:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "vl53l8x.adb:91:14"
+}
+graph: { title: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "memset" label: "builtin_memset\n<built-in>" shape : ellipse }
+node: { title: "memmove" label: "builtin_memmove\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Length_Check" label: "gnat_rcheck_CE_Length_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "Sz2_Vl53l8x\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/interfac.ads:63:30\n24 bytes (static)" }
+node: { title: "vl53l8x__read_id" label: "READ_ID\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1154:4\n24 bytes (static)" }
+edge: { sourcename: "vl53l8x__read_id" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1162:7" }
+edge: { sourcename: "vl53l8x__read_id" targetname: "vl53l8x__read__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1161:7" }
+edge: { sourcename: "vl53l8x__read_id" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1160:7" }
+node: { title: "vl53l8x__initialize" label: "INITIALIZE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:978:4\n208 bytes (static)" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1145:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1144:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1137:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1135:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1133:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__send_xtalk_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1129:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__send_offset_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1122:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1117:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1113:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1111:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1110:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1107:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1104:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__poll_for_mcu_boot" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1102:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1100:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1099:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1098:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1097:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1096:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1095:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1094:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1093:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1092:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1089:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1088:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1087:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1085:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1083:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1082:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1081:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1078:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1077:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1076:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1075:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1074:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1073:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1072:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1069:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1068:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1067:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1066:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1065:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1064:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1061:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1060:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1059:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1058:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1057:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1056:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1055:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1054:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1053:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1052:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1051:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1050:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1049:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1048:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1047:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1045:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1044:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1041:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1039:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1037:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1036:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1035:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1033:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1032:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1029:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1027:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1026:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1020:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1020:25" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1020:27" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1020:19" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1018:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1017:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1015:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1015:25" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1015:27" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1015:19" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1013:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1012:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1011:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1010:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1009:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1008:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1007:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1006:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1005:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1003:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1002:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1001:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:1000:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:999:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:998:7" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "memset" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:995:29" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:992:10" }
+edge: { sourcename: "vl53l8x__initialize" targetname: "vl53l8x__read_id" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:991:10" }
+node: { title: "vl53l8x__get_ranging_data" label: "GET_RANGING_DATA\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:705:4\n96 bytes (static)" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:778:24" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:778:20" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:778:35" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "memcpy" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:65" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:93" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:76" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:72" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:61" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:774:51" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:771:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:771:54" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:771:50" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:769:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:769:54" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:769:50" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:767:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:767:54" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:767:50" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:765:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:765:54" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:765:50" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:763:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:763:56" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:761:41" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:761:56" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:757:43" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:757:56" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:758:76" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:758:53" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:757:52" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:758:68" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "memmove" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:752:66" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:753:43" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:753:62" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:754:82" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:754:59" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:754:54" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:753:58" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:753:53" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:754:74" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:752:42" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:752:60" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "memcpy" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:749:43" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:749:63" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:750:61" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:749:59" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:750:77" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "memcpy" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:745:43" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:745:62" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:746:60" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:745:58" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:746:76" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:741:43" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:741:56" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:742:76" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:742:53" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:741:52" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:742:68" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "memcpy" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Length_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:737:43" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:737:62" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:738:60" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:737:58" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:738:76" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:734:64" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:734:73" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:726:34" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:725:33" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "vl53l8x__swapbuffer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:716:7" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:716:44" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:716:76" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "vl53l8x__read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:714:7" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:714:47" }
+edge: { sourcename: "vl53l8x__get_ranging_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:714:79" }
+node: { title: "vl53l8x__check_data_ready" label: "CHECK_DATA_READY\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:684:4\n32 bytes (static)" }
+edge: { sourcename: "vl53l8x__check_data_ready" targetname: "vl53l8x__read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:689:7" }
+node: { title: "vl53l8x__start_ranging" label: "START_RANGING\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:554:4\n200 bytes (static)" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__dci_read_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:677:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__dci_read_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:668:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:664:10" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:662:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:661:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:658:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:657:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__write__3" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:656:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:655:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:653:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:648:7" }
+edge: { sourcename: "vl53l8x__start_ranging" targetname: "vl53l8x__get_resolution" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:587:7" }
+node: { title: "vl53l8x__set_resolution" label: "SET_RESOLUTION\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:522:4\n80 bytes (static)" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "vl53l8x__send_xtalk_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:550:7" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "vl53l8x__send_offset_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:549:7" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:546:13" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:544:13" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "vl53l8x__dci_read_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:539:13" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "vl53l8x__dci_write_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:538:13" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "vl53l8x__dci_read_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:534:13" }
+edge: { sourcename: "vl53l8x__set_resolution" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:532:13" }
+node: { title: "vl53l8x__get_resolution" label: "GET_RESOLUTION\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:510:4\n40 bytes (static)" }
+edge: { sourcename: "vl53l8x__get_resolution" targetname: "vl53l8x__dci_read_data" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:518:7" }
+node: { title: "vl53l8x__dci_read_data" label: "DCI_READ_DATA\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:468:4\n112 bytes (static)" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:505:48" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:505:10" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "vl53l8x__swapbuffer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:502:7" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:502:44" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "vl53l8x__read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:500:7" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:500:67" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:497:10" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:495:7" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "vl53l8x__write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:494:7" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:492:25" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:491:25" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:490:31" }
+edge: { sourcename: "vl53l8x__dci_read_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:489:25" }
+node: { title: "vl53l8x__dci_write_data" label: "DCI_WRITE_DATA\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:417:4\n152 bytes (dynamic)" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:463:10" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:461:7" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "vl53l8x__write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:459:7" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:459:54" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:456:26" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:448:17" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:447:43" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:447:26" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:447:35" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "vl53l8x__swapbuffer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:443:7" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:441:29" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:440:29" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:439:35" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:438:29" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "memcpy" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:428:35" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:426:84" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:426:42" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:424:33" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:424:33" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:424:33" }
+edge: { sourcename: "vl53l8x__dci_write_data" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:424:33" }
+node: { title: "vl53l8x__swapbuffer" label: "SWAPBUFFER\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:400:4\n48 bytes (static)" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:413:10" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:408:15" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:407:28" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:407:28" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:407:28" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:407:28" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:402:41" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:402:41" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:402:41" }
+edge: { sourcename: "vl53l8x__swapbuffer" targetname: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:_GLOBAL__SZ2_vl53l8x" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:402:41" }
+node: { title: "vl53l8x__send_xtalk_data" label: "SEND_XTALK_DATA\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:377:4\n64 bytes (static)" }
+edge: { sourcename: "vl53l8x__send_xtalk_data" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:395:10" }
+edge: { sourcename: "vl53l8x__send_xtalk_data" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:393:7" }
+edge: { sourcename: "vl53l8x__send_xtalk_data" targetname: "vl53l8x__write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:391:7" }
+node: { title: "vl53l8x__send_offset_data" label: "SEND_OFFSET_DATA\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:333:4\n72 bytes (static)" }
+edge: { sourcename: "vl53l8x__send_offset_data" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:364:10" }
+edge: { sourcename: "vl53l8x__send_offset_data" targetname: "vl53l8x__poll_for_answer" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:362:7" }
+edge: { sourcename: "vl53l8x__send_offset_data" targetname: "vl53l8x__write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:360:7" }
+node: { title: "vl53l8x__poll_for_mcu_boot" label: "POLL_FOR_MCU_BOOT\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:302:4\n40 bytes (static)" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:325:10" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:325:28" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:325:30" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:325:22" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:319:13" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "vl53l8x__read__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:317:10" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:314:13" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:311:13" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:311:24" }
+edge: { sourcename: "vl53l8x__poll_for_mcu_boot" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:311:16" }
+node: { title: "vl53l8x__poll_for_answer" label: "POLL_FOR_ANSWER\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:271:4\n80 bytes (dynamic)" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:295:14" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:292:32" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:291:10" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:291:28" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:291:30" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:291:22" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "vl53l8x__read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:290:10" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:287:13" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:284:13" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:284:24" }
+edge: { sourcename: "vl53l8x__poll_for_answer" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:284:16" }
+node: { title: "vl53l8x__read__4" label: "READ\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:251:4\n64 bytes (static)" }
+edge: { sourcename: "vl53l8x__read__4" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__read__4" targetname: "vl53l8x__i2c_read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:263:10" }
+edge: { sourcename: "vl53l8x__read__4" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:261:7" }
+edge: { sourcename: "vl53l8x__read__4" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:258:48" }
+edge: { sourcename: "vl53l8x__read__4" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:257:65" }
+node: { title: "vl53l8x__read__3" label: "READ\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:230:4\n56 bytes (static)" }
+edge: { sourcename: "vl53l8x__read__3" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__read__3" targetname: "vl53l8x__i2c_read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:242:10" }
+edge: { sourcename: "vl53l8x__read__3" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:240:7" }
+edge: { sourcename: "vl53l8x__read__3" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:237:48" }
+edge: { sourcename: "vl53l8x__read__3" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:236:65" }
+node: { title: "vl53l8x__read__2" label: "READ\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:209:4\n56 bytes (static)" }
+edge: { sourcename: "vl53l8x__read__2" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__read__2" targetname: "vl53l8x__i2c_read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:221:10" }
+edge: { sourcename: "vl53l8x__read__2" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:219:7" }
+edge: { sourcename: "vl53l8x__read__2" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:216:48" }
+edge: { sourcename: "vl53l8x__read__2" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:215:65" }
+node: { title: "vl53l8x__read" label: "READ\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:190:4\n40 bytes (static)" }
+edge: { sourcename: "vl53l8x__read" targetname: "vl53l8x__i2c_read" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:201:10" }
+edge: { sourcename: "vl53l8x__read" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:199:7" }
+edge: { sourcename: "vl53l8x__read" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:197:48" }
+edge: { sourcename: "vl53l8x__read" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:196:65" }
+node: { title: "vl53l8x__write__5" label: "WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:167:4\n56 bytes (static)" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:176:7" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:182:27" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:181:44" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:180:45" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:179:22" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:174:48" }
+edge: { sourcename: "vl53l8x__write__5" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:173:65" }
+node: { title: "vl53l8x__write__4" label: "WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:146:4\n32 bytes (static)" }
+edge: { sourcename: "vl53l8x__write__4" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:155:7" }
+edge: { sourcename: "vl53l8x__write__4" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:159:27" }
+edge: { sourcename: "vl53l8x__write__4" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:158:22" }
+edge: { sourcename: "vl53l8x__write__4" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:153:48" }
+edge: { sourcename: "vl53l8x__write__4" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:152:65" }
+node: { title: "vl53l8x__write__3" label: "WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:130:4\n32 bytes (static)" }
+edge: { sourcename: "vl53l8x__write__3" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:139:7" }
+edge: { sourcename: "vl53l8x__write__3" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:137:48" }
+edge: { sourcename: "vl53l8x__write__3" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:136:65" }
+node: { title: "vl53l8x__write__2" label: "WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:116:4\n48 bytes (static)" }
+edge: { sourcename: "vl53l8x__write__2" targetname: "vl53l8x__i2c_write__2" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:123:7" }
+node: { title: "vl53l8x__write" label: "WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:103:4\n80 bytes (dynamic)" }
+edge: { sourcename: "vl53l8x__write" targetname: "_Unwind_Resume" }
+edge: { sourcename: "vl53l8x__write" targetname: "vl53l8x__i2c_write" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:113:7" }
+edge: { sourcename: "vl53l8x__write" targetname: "memcpy" }
+edge: { sourcename: "vl53l8x__write" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:110:48" }
+edge: { sourcename: "vl53l8x__write" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:109:65" }
+node: { title: "vl53l8x__i2c_read" label: "I2C_READ\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:83:4\n48 bytes (static)" }
+edge: { sourcename: "vl53l8x__i2c_read" targetname: "__indirect_call" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:91:14" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+node: { title: "vl53l8x__i2c_write__2" label: "I2C_WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:61:4\n72 bytes (static)" }
+edge: { sourcename: "vl53l8x__i2c_write__2" targetname: "__indirect_call" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:70:14" }
+node: { title: "vl53l8x__i2c_write" label: "I2C_WRITE\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:45:4\n48 bytes (static)" }
+edge: { sourcename: "vl53l8x__i2c_write" targetname: "__indirect_call" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.adb:53:14" }
+node: { title: "vl53l8x__resultsdataIP" label: "RESULTSDATAIP\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:153:9\n16 bytes (static)" }
+node: { title: "vl53l8x__motion_indicator_recordIP" label: "MOTION_INDICATOR_RECORDIP\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:144:9\n16 bytes (static)" }
+node: { title: "vl53l8x__block_headerIP" label: "BLOCK_HEADERIP\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:117:9\n16 bytes (static)" }
+node: { title: "vl53l8x__vl53l8x_ranging_sensorIP" label: "VL53L8X_RANGING_SENSORIP\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:219:9\n16 bytes (static)" }
+node: { title: "vl53l8x__temp_overlayIP" label: "TEMP_OVERLAYIP\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:203:9\n16 bytes (static)" }
+node: { title: "vl53l8x__temp_overlayEQ" label: "TEMP_OVERLAYEQ\n/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:203:9\n24 bytes (static)" }
+edge: { sourcename: "vl53l8x__temp_overlayEQ" targetname: "memcmp" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:203:9" }
+edge: { sourcename: "vl53l8x__temp_overlayEQ" targetname: "memcmp" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:203:9" }
+edge: { sourcename: "vl53l8x__temp_overlayEQ" targetname: "memcmp" label: "/media/16T/ada/STM32/L/L443/vl53l8x_l443/src/vl53l8x.ads:203:9" }
+}

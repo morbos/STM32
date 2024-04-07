@@ -1,0 +1,24 @@
+package body Utils is
+
+   ------------------------
+   -- Disable_Interrupts --
+   ------------------------
+
+   procedure Disable_Interrupts is
+   begin
+      Asm ("cpsid i", Volatile => True);
+   end Disable_Interrupts;
+
+   -----------------------
+   -- Enable_Interrupts --
+   -----------------------
+
+   procedure Enable_Interrupts
+   is
+   begin
+      Asm ("cpsie i" & NL
+         & "dsb"     & NL
+         & "isb",
+           Clobber => "memory", Volatile => True);
+   end Enable_Interrupts;
+end Utils;

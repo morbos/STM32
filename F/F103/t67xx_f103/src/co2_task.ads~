@@ -1,0 +1,26 @@
+with HAL;             use HAL;
+with HAL.UART;        use HAL.UART;
+with Interfaces;      use Interfaces;
+with Peripherals;     use Peripherals;
+with STM32.Device;    use STM32.Device;
+with STM32.Board;     use STM32.Board;
+with Hw;              use Hw;
+with Utils;           use Utils;
+with Ada.Synchronous_Task_Control; use Ada.Synchronous_Task_Control;
+with System;
+
+package Co2_Task is
+   Co2_Ready        : Suspension_Object;
+   RxBuff           : UART_Data_8b (1 .. 7);
+   procedure Init_Co2_FW;
+
+private
+
+   FwRev    : UART_Data_8b := (16#15#, 16#04#, 16#13#, 16#89#,
+                              16#00#, 16#01#);
+
+   Status  : UART_Status;
+
+   procedure Get_Reading;
+
+end Co2_Task;

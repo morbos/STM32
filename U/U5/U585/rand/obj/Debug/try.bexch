@@ -1,0 +1,50 @@
+[GENERATED OBJECT FILE]
+b__try.o
+[PROJECT FILES]
+/media/16T/ada/STM32/U/U5/U585/rand/try.gpr
+20230312232535
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/middleware/middleware.gpr
+20200106220402
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/components/components.gpr
+20200106220430
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/arch/ARM/cortex_m/cortex_m4f.gpr
+20200106220434
+/media/16T/ada/Ada_Drivers_Library/hal/HAL.gpr
+20200106220404
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/arch/ARM/STM32/stm32u5xx.gpr
+20220102231444
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/target_options.gpr
+20230122224345
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/runtime_build.gpr
+20230122224345
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/ravenscar_build.gpr
+20230122224345
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/config.gpr
+20230122224257
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/board.gpr
+20230122224140
+/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/boards/stm32u5_bluepill_ns.gpr
+20230122225026
+[BOUND OBJECT FILES]
+/media/16T/ada/STM32/U/U5/U585/rand/obj/Debug/try.o
+[GENERATED SOURCE FILES]
+b__try.ads
+b__try.adb
+b__try.ali
+[RESULTING OPTIONS]
+-L/media/16T/ada/STM32/U/U5/U585/rand/obj/Debug/
+-L/media/16T/ada/STM32/U/U5/U585/rand/obj/Debug/
+-L/media/16T/ada/STM32/U/U5/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/boards/lib/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/lib/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/full/adalib/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/components/lib/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/STM32/U/U5/U585/rand/Ada_Drivers_Library/middleware/lib/stm32u5bluepill_ns/ravenscar-full/Debug/
+-L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/full/adalib/
+-static
+-static-libgcc
+/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/full/adalib/libgnarl.a
+/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5bluepill_ns/full/adalib/libgnat.a

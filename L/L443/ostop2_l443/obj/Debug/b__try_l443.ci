@@ -1,0 +1,88 @@
+graph: { title: "b__try_l443.adb"
+node: { title: "__gnat_finalize" label: "finalize\nb__try_l443.adb:214:17" shape : ellipse }
+node: { title: "_ada_try_l443" label: "ada_main_program\nb__try_l443.adb:207:14" shape : ellipse }
+node: { title: "__gnat_initialize" label: "initialize\nb__try_l443.adb:211:17" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__try_l443.adb:107:17" shape : ellipse }
+node: { title: "__gnat_attach_all_handlers" label: "install_restricted_handlers_sequential\nb__try_l443.adb:101:17" shape : ellipse }
+node: { title: "rtc_wkup_int___elabs" label: "e124b\nb__try_l443.adb:201:19" shape : ellipse }
+node: { title: "stm32__gpio___elabb" label: "e122b\nb__try_l443.adb:198:17" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e120b\nb__try_l443.adb:195:19" shape : ellipse }
+node: { title: "stm32__gpio___elabs" label: "e118b\nb__try_l443.adb:194:17" shape : ellipse }
+node: { title: "stm32__spi___elabb" label: "e116b\nb__try_l443.adb:192:16" shape : ellipse }
+node: { title: "stm32__spi___elabs" label: "e114b\nb__try_l443.adb:191:16" shape : ellipse }
+node: { title: "stm32__rtc___elabb" label: "e112b\nb__try_l443.adb:189:16" shape : ellipse }
+node: { title: "stm32__rtc___elabs" label: "e110b\nb__try_l443.adb:188:16" shape : ellipse }
+node: { title: "stm32__i2c___elabb" label: "e108b\nb__try_l443.adb:184:16" shape : ellipse }
+node: { title: "stm32__i2c___elabs" label: "e106b\nb__try_l443.adb:183:16" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e104b\nb__try_l443.adb:179:16" shape : ellipse }
+node: { title: "hal__spi___elabs" label: "e102b\nb__try_l443.adb:177:14" shape : ellipse }
+node: { title: "hal__real_time_clock___elabs" label: "e100b\nb__try_l443.adb:175:26" shape : ellipse }
+node: { title: "hal__i2c___elabs" label: "e98b\nb__try_l443.adb:173:14" shape : ellipse }
+node: { title: "hal__gpio___elabs" label: "e96b\nb__try_l443.adb:171:15" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e94b\nb__try_l443.adb:169:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e92b\nb__try_l443.adb:167:39" shape : ellipse }
+node: { title: "system__pool_global___elabs" label: "e90b\nb__try_l443.adb:165:25" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e88b\nb__try_l443.adb:163:20" shape : ellipse }
+node: { title: "system__finalization_masters___elabb" label: "e86b\nb__try_l443.adb:161:34" shape : ellipse }
+node: { title: "system__finalization_masters___elabs" label: "e84b\nb__try_l443.adb:160:34" shape : ellipse }
+node: { title: "system__storage_pools___elabs" label: "e82b\nb__try_l443.adb:158:27" shape : ellipse }
+node: { title: "ada__finalization___elabs" label: "e80b\nb__try_l443.adb:156:23" shape : ellipse }
+node: { title: "system__finalization_root___elabs" label: "e78b\nb__try_l443.adb:154:31" shape : ellipse }
+node: { title: "ada__streams___elabs" label: "e76b\nb__try_l443.adb:152:18" shape : ellipse }
+node: { title: "system__exception_table___elabb" label: "e74b\nb__try_l443.adb:149:29" shape : ellipse }
+node: { title: "ada__tags___elabb" label: "e72b\nb__try_l443.adb:147:15" shape : ellipse }
+node: { title: "system__soft_links___elabs" label: "e70b\nb__try_l443.adb:146:24" shape : ellipse }
+node: { title: "system__bb__timing_events___elabs" label: "e68b\nb__try_l443.adb:144:30" shape : ellipse }
+node: { title: "__gnat_runtime_initialize" label: "runtime_initialize\nb__try_l443.adb:99:17" shape : ellipse }
+node: { title: "ada_main___elabb" label: "e66b\nb__try_l443.adb:137:15" shape : ellipse }
+node: { title: "system__standard_library__adafinal" label: "s_stalib_adafinal\nb__try_l443.adb:48:17" shape : ellipse }
+node: { title: "__gnat_runtime_finalize" label: "runtime_finalize\nb__try_l443.adb:51:17" shape : ellipse }
+node: { title: "system__secondary_stack__ss_stackIP" label: "Ss_Stackip\n/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/../../base_runtimes/ravenscar-full/common/s-secsta.ads:106:9" shape : ellipse }
+node: { title: "ada_main___elabb" label: "ada_main\nb__try_l443.adb:7:1\n16 bytes (static)" }
+edge: { sourcename: "ada_main___elabb" targetname: "ada_main__Tsec_default_sized_stacksBIP" label: "b__try_l443.adb:40:4" }
+node: { title: "main" label: "main\nb__try_l443.adb:210:4\n24 bytes (static)" }
+edge: { sourcename: "main" targetname: "__gnat_finalize" label: "b__try_l443.adb:226:7" }
+edge: { sourcename: "main" targetname: "adafinal" label: "b__try_l443.adb:225:7" }
+edge: { sourcename: "main" targetname: "_ada_try_l443" label: "b__try_l443.adb:224:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__try_l443.adb:223:7" }
+edge: { sourcename: "main" targetname: "__gnat_initialize" label: "b__try_l443.adb:222:7" }
+node: { title: "adainit" label: "adainit\nb__try_l443.adb:63:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__try_l443.adb:204:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_attach_all_handlers" label: "b__try_l443.adb:203:7" }
+edge: { sourcename: "adainit" targetname: "rtc_wkup_int___elabs" label: "b__try_l443.adb:201:19" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabb" label: "b__try_l443.adb:198:17" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__try_l443.adb:195:19" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabs" label: "b__try_l443.adb:194:17" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabb" label: "b__try_l443.adb:192:16" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabs" label: "b__try_l443.adb:191:16" }
+edge: { sourcename: "adainit" targetname: "stm32__rtc___elabb" label: "b__try_l443.adb:189:16" }
+edge: { sourcename: "adainit" targetname: "stm32__rtc___elabs" label: "b__try_l443.adb:188:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabb" label: "b__try_l443.adb:184:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabs" label: "b__try_l443.adb:183:16" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__try_l443.adb:179:16" }
+edge: { sourcename: "adainit" targetname: "hal__spi___elabs" label: "b__try_l443.adb:177:14" }
+edge: { sourcename: "adainit" targetname: "hal__real_time_clock___elabs" label: "b__try_l443.adb:175:26" }
+edge: { sourcename: "adainit" targetname: "hal__i2c___elabs" label: "b__try_l443.adb:173:14" }
+edge: { sourcename: "adainit" targetname: "hal__gpio___elabs" label: "b__try_l443.adb:171:15" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__try_l443.adb:169:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__try_l443.adb:167:39" }
+edge: { sourcename: "adainit" targetname: "system__pool_global___elabs" label: "b__try_l443.adb:165:25" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__try_l443.adb:163:20" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabb" label: "b__try_l443.adb:161:34" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabs" label: "b__try_l443.adb:160:34" }
+edge: { sourcename: "adainit" targetname: "system__storage_pools___elabs" label: "b__try_l443.adb:158:27" }
+edge: { sourcename: "adainit" targetname: "ada__finalization___elabs" label: "b__try_l443.adb:156:23" }
+edge: { sourcename: "adainit" targetname: "system__finalization_root___elabs" label: "b__try_l443.adb:154:31" }
+edge: { sourcename: "adainit" targetname: "ada__streams___elabs" label: "b__try_l443.adb:152:18" }
+edge: { sourcename: "adainit" targetname: "system__exception_table___elabb" label: "b__try_l443.adb:149:29" }
+edge: { sourcename: "adainit" targetname: "ada__tags___elabb" label: "b__try_l443.adb:147:15" }
+edge: { sourcename: "adainit" targetname: "system__soft_links___elabs" label: "b__try_l443.adb:146:24" }
+edge: { sourcename: "adainit" targetname: "system__bb__timing_events___elabs" label: "b__try_l443.adb:144:30" }
+edge: { sourcename: "adainit" targetname: "__gnat_runtime_initialize" label: "b__try_l443.adb:142:7" }
+edge: { sourcename: "adainit" targetname: "ada_main___elabb" label: "b__try_l443.adb:137:15" }
+node: { title: "adafinal" label: "adafinal\nb__try_l443.adb:47:4\n8 bytes (static)" }
+edge: { sourcename: "adafinal" targetname: "system__standard_library__adafinal" label: "b__try_l443.adb:60:7" }
+edge: { sourcename: "adafinal" targetname: "__gnat_runtime_finalize" label: "b__try_l443.adb:59:7" }
+node: { title: "ada_main__Tsec_default_sized_stacksBIP" label: "tsec_default_sized_stacksbip\nb__try_l443.adb:40:4\n32 bytes (static)" }
+edge: { sourcename: "ada_main__Tsec_default_sized_stacksBIP" targetname: "system__secondary_stack__ss_stackIP" label: "b__try_l443.adb:40:4" }
+}

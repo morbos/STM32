@@ -1,0 +1,66 @@
+with "Ada_Drivers_Library/boards/stm32l476_sensortile.gpr";
+with "Ada_Drivers_Library/boards/common_config.gpr";
+
+project merge_l476 extends "../../common.gpr" is
+
+   for Languages use ("Ada", "C");
+
+   for Main use ("merge_l476.adb");
+
+   for Source_Dirs use (
+       "src",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/STM32L4xx_HAL_Driver/Src",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/SensorTile",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG/Interface",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/hci/controller",
+       "src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/utils"
+       );
+   for Object_Dir use "obj/" & Common_Config.Build;
+
+   for Target use "arm-eabi";
+
+   for Runtime ("Ada") use STM32L476_Sensortile'Runtime("Ada");
+
+   package Compiler is
+      for default_switches ("C")
+         use (
+	 "-g",
+ 	 "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Projects/Multi/Applications/ALLMEMS1/Inc",
+	 "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/STM32L4xx_HAL_Driver/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/SensorTile",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/CMSIS/Include",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/Components/Common",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG/SimpleBlueNRG_HCI/includes",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueNRG/Interface",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/Components/lsm6dsm",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/Components/hts221",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/Components/lps22hb",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/Components/lsm303agr",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Drivers/BSP/Components/stc3115",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_MotionAR_Library/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_MotionCP_Library/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_MotionFX_Library/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_MotionGR_Library/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_BlueVoiceADPCM_Library/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_MetaDataManager",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/Third_Party/FatFs/src",
+	  "-I/.share/CACHEDEV1_DATA/Ada/STM32/L/L476/merge_l476/src/STM32CubeFunctionPack_ALLMEMS1_V3.4.0/Middlewares/Third_Party/FatFs/src/drivers",
+	"-std=c99",
+	"-DUSE_HAL_DRIVER",
+	"-DSTM32L476xx",
+	"-DUSE_STM32L4XX_NUCLEO",
+	"-DSTM32_SENSORTILE",
+	"-DALLMEMS1"
+	 );
+   end Compiler;
+
+   package Builder is
+     for Global_Configuration_Pragmas use "gnat.adc";
+   end Builder;
+
+end merge_l476;

@@ -1,0 +1,76 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U crc8%b		crc8.adb		2625844e NE OO PK
+
+U crc8%s		crc8.ads		2e39c3ed EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D crc8.ads		20240329193049 76397aaa crc8%s
+D crc8.adb		20240329193049 501cfee4 crc8%b
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D system.ads		20200106220408 aa7dab5a system%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D /media/16T/ada/STM32/U/U0/U073/exp/gnat.adc  20240329193049 00000000
+G a e
+G c Z s b [gen_crc8_table crc8 7 14 none]
+G c Z s b [update_crc8 crc8 8 14 none]
+G c Z s b [update_crc8 crc8 9 14 none]
+X 3 crc8.ads
+4K9*Crc8 11l5 11e9 4|1b14 41l5 41t9
+7U14*Gen_Crc8_Table 4|4b14 20l8 20t22
+8U14*Update_Crc8 8=27 8>53 4|21b14 29l8 29t19
+8m27 Crc_Accum{5|53M9} 4|21b27 26r15 27m10
+8a53 Data{5|162A9} 4|21b53 25r16 26r29
+9U14*Update_Crc8 9=27 9>53 4|31b14 39l8 39t19
+9m27 Crc_Accum{5|53M9} 4|31b27 36r15 37m10
+9a53 Data{6|44A9} 4|31b53 35r16 36r29
+X 4 crc8.adb
+3a4 Crc8_Table{5|162A9} 9r16 18m10 27r23 37r23
+6m7 Crc_Accum{5|53M9} 10m10 12r17 13m16 13r41 15m16 15r41 18r28
+7m7 DI{5|53M9} 13r59
+9i11 I{integer} 10r30 18r22
+11i14 J{integer}
+23m7 I{5|53M9} 26m10 27r44
+25i11 J{integer} 26r35
+33m7 I{5|53M9} 36m10 37r44
+35i11 J{integer} 36r35
+X 5 hal.ads
+34K9*HAL 3|1w6 1r25 2r6 2r25 5|166e8
+53M9*UInt8<7|63M9> 3|8r46 9r46 4|6r19 7r21 10r23 21r46 23r11 31r46 33r11
+162A9*UInt8_Array(53M9)<integer> 3|8r60 4|3r17 21r60
+X 6 hal-spi.ads
+32K13*SPI 3|2w10 2r29 6|95e12
+44A9*SPI_Data_8b(5|53M9)<integer> 3|9r60 4|31r60
+X 7 interfac.ads
+63M9*Unsigned_8
+81V13*Shift_Left{63M9} 4|13s29 15s29
+

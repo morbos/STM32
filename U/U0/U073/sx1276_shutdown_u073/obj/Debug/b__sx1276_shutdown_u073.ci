@@ -1,0 +1,38 @@
+graph: { title: "b__sx1276_shutdown_u073.adb"
+node: { title: "_ada_sx1276_shutdown_u073" label: "ada_main_program\nb__sx1276_shutdown_u073.adb:98:14" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__sx1276_shutdown_u073.adb:42:17" shape : ellipse }
+node: { title: "__gnat_attach_all_handlers" label: "install_restricted_handlers_sequential\nb__sx1276_shutdown_u073.adb:36:17" shape : ellipse }
+node: { title: "wd___elabs" label: "e55b\nb__sx1276_shutdown_u073.adb:92:9" shape : ellipse }
+node: { title: "exti___elabb" label: "e53b\nb__sx1276_shutdown_u073.adb:90:11" shape : ellipse }
+node: { title: "sx1276_spi___elabs" label: "e51b\nb__sx1276_shutdown_u073.adb:88:17" shape : ellipse }
+node: { title: "exti___elabs" label: "e49b\nb__sx1276_shutdown_u073.adb:86:11" shape : ellipse }
+node: { title: "peripherals___elabs" label: "e47b\nb__sx1276_shutdown_u073.adb:81:18" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e45b\nb__sx1276_shutdown_u073.adb:76:19" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e43b\nb__sx1276_shutdown_u073.adb:68:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "e41b\nb__sx1276_shutdown_u073.adb:66:55" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e39b\nb__sx1276_shutdown_u073.adb:64:39" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e37b\nb__sx1276_shutdown_u073.adb:62:20" shape : ellipse }
+node: { title: "ada_main___elabb" label: "e35b\nb__sx1276_shutdown_u073.adb:56:15" shape : ellipse }
+node: { title: "system__secondary_stack__ss_stackIP" label: "Ss_Stackip\n/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/../../base_runtimes/ravenscar-ssfp/common/s-secsta.ads:106:9" shape : ellipse }
+node: { title: "ada_main___elabb" label: "ada_main\nb__sx1276_shutdown_u073.adb:7:1\n8 bytes (static)" }
+edge: { sourcename: "ada_main___elabb" targetname: "ada_main__Tsec_default_sized_stacksBIP" label: "b__sx1276_shutdown_u073.adb:32:4" }
+node: { title: "main" label: "main\nb__sx1276_shutdown_u073.adb:101:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_sx1276_shutdown_u073" label: "b__sx1276_shutdown_u073.adb:107:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__sx1276_shutdown_u073.adb:106:7" }
+node: { title: "adainit" label: "adainit\nb__sx1276_shutdown_u073.adb:35:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__sx1276_shutdown_u073.adb:95:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_attach_all_handlers" label: "b__sx1276_shutdown_u073.adb:94:7" }
+edge: { sourcename: "adainit" targetname: "wd___elabs" label: "b__sx1276_shutdown_u073.adb:92:9" }
+edge: { sourcename: "adainit" targetname: "exti___elabb" label: "b__sx1276_shutdown_u073.adb:90:11" }
+edge: { sourcename: "adainit" targetname: "sx1276_spi___elabs" label: "b__sx1276_shutdown_u073.adb:88:17" }
+edge: { sourcename: "adainit" targetname: "exti___elabs" label: "b__sx1276_shutdown_u073.adb:86:11" }
+edge: { sourcename: "adainit" targetname: "peripherals___elabs" label: "b__sx1276_shutdown_u073.adb:81:18" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__sx1276_shutdown_u073.adb:76:19" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__sx1276_shutdown_u073.adb:68:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects__multiprocessors___elabb" label: "b__sx1276_shutdown_u073.adb:66:55" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__sx1276_shutdown_u073.adb:64:39" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__sx1276_shutdown_u073.adb:62:20" }
+edge: { sourcename: "adainit" targetname: "ada_main___elabb" label: "b__sx1276_shutdown_u073.adb:56:15" }
+node: { title: "ada_main__Tsec_default_sized_stacksBIP" label: "tsec_default_sized_stacksbip\nb__sx1276_shutdown_u073.adb:32:4\n32 bytes (static)" }
+edge: { sourcename: "ada_main__Tsec_default_sized_stacksBIP" targetname: "system__secondary_stack__ss_stackIP" label: "b__sx1276_shutdown_u073.adb:32:4" }
+}

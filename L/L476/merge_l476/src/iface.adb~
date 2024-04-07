@@ -1,0 +1,9 @@
+package body Iface is
+
+   procedure HAL_Delay (Dly : Interfaces.C.unsigned)
+   is
+   begin
+      delay until Clock + Milliseconds (10);
+   end HAL_Delay;
+
+end Iface;

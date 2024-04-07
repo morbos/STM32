@@ -1,0 +1,35 @@
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb"
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "utils__btohs" label: "Btohs\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:89:4\n16 bytes (static)" }
+node: { title: "utils__htobs" label: "Htobs\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:84:4\n16 bytes (static)" }
+node: { title: "utils__to_uint16_from_integer_16" label: "To_Uint16_From_Integer_16\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:76:4\n24 bytes (static)" }
+node: { title: "utils__to_string_from_uint16" label: "To_String_From_Uint16\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:58:4\n48 bytes (static)" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:70:56" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:68:56" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:65:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:65:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:65:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:65:40" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:65:45" }
+node: { title: "utils__to_uint32_from_uint8" label: "To_Uint32_From_Uint8\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:50:4\n24 bytes (static)" }
+node: { title: "utils__to_uint16_from_integer_32" label: "To_Uint16_From_Integer_32\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:42:4\n32 bytes (static)" }
+node: { title: "utils__to_uint8_from_integer_32" label: "To_Uint8_From_Integer_32\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:34:4\n32 bytes (static)" }
+node: { title: "utils__to_uint8_from_uint16" label: "To_Uint8_From_Uint16\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:27:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint8_from_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:31:27" }
+edge: { sourcename: "utils__to_uint8_from_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:30:44" }
+node: { title: "utils__to_uint16" label: "To_Uint16\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:19:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:24:22" }
+node: { title: "utils__to_integer_16" label: "To_Integer_16\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:8:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_rcheck_CE_Range_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:16:26" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:14:20" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:14:32" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.adb:12:24" }
+node: { title: "utils__union4IP" label: "Union4ip\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.ads:19:9\n24 bytes (static)" }
+node: { title: "utils__union4EQ" label: "Union4eq\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.ads:19:9\n24 bytes (static)" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.ads:19:9" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.ads:19:9" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.ads:19:9" }
+node: { title: "utils__integer_16_arrayIP" label: "Integer_16_Arrayip\n/media/16T/ada/STM32/U/U5/U585/lps22/src/utils.ads:15:9\n16 bytes (static)" }
+}

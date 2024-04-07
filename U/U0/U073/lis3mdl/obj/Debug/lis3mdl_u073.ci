@@ -1,0 +1,50 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb"
+node: { title: "stm32__i2c__configure" label: "CONFIGURE\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-i2c.ads:73:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_alternate_function__2" label: "CONFIGURE_ALTERNATE_FUNCTION\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:255:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__reset__6" label: "RESET\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:264:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__6" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:262:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__enable_clock__3" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:66:14" shape : ellipse }
+node: { title: "stm32__gpio___assign" label: "GPIO\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointsIP" label: "GPIO_POINTSIP\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:208:9" shape : ellipse }
+node: { title: "lis3mdl_i2c__configure" label: "Configure\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl.ads:238:14" shape : ellipse }
+node: { title: "semihosting__log_line" label: "Log_Line\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/arch/ARM/cortex_m/src/semihosting.ads:71:14" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "system__img_int__image_integer" label: "Image_Integer\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-imgint.ads:39:14" shape : ellipse }
+node: { title: "lis3mdl_i2c__read_mag" label: "Read_Mag\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl.ads:254:14" shape : ellipse }
+node: { title: "lis3mdl_i2c__get_status" label: "Get_Status\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl.ads:252:13" shape : ellipse }
+node: { title: "lis3mdl_i2c__lis3mdl_sensorIP" label: "Lis3mdl_Sensorip\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl.ads:289:9" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__set_up_mag.4228" label: "Set_Up_Mag\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:77:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__set_up_mag.4228" targetname: "lis3mdl_i2c__configure" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:84:10" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__set_up_mag.4228" targetname: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:79:7" }
+node: { title: "_ada_lis3mdl_u073" label: "Lis3mdl_U073\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:18:1\n144 bytes (dynamic)" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "semihosting__log_line" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:96:21" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:98:41" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:97:41" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:96:50" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "lis3mdl_i2c__read_mag" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:95:13" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "lis3mdl_i2c__get_status" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:93:14" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__set_up_mag.4228" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:91:4" }
+edge: { sourcename: "_ada_lis3mdl_u073" targetname: "lis3mdl_i2c__lis3mdl_sensorIP" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:20:4" }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" label: "Initialize_Mag_Io_Hardware\n/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:33:4\n96 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__i2c__configure" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:61:16" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:62:15" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__gpio__configure_alternate_function__2" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:59:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:57:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:56:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__device__reset__6" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:45:19" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:45:32" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__device__enable_clock__6" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:43:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:43:26" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__device__enable_clock__3" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:42:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:40:48" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__gpio___assign" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:40:48" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:lis3mdl_u073__initialize_mag_io_hardware.4979" targetname: "stm32__gpio__gpio_pointsIP" label: "/media/16T/ada/STM32/U/U0/U073/lis3mdl/src/lis3mdl_u073.adb:40:48" }
+}

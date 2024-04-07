@@ -1,0 +1,140 @@
+class {
+  classname: "sx1276_spi_io__io_port"
+  label: "sx1276_spi_io__io_port\sx1276_spi_io.ads:44:9"
+  virtuals: "-1:sx1276_spi_io___size\n
+             -6:sx1276_spi_io__Oeq\n
+             -7:sx1276_spi_io___assign"
+}
+edge: { sourcename: "sx1276_spi_io__write"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "sx1276_spi_io__write"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:46:16"
+}
+edge: { sourcename: "sx1276_spi_io__read"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "sx1276_spi_io__read"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:70:16"
+}
+edge: { sourcename: "sx1276_spi_io__read"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:76:21"
+}
+edge: { sourcename: "sx1276_spi_io__read"
+  targetname: "4:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:77:16"
+}
+edge: { sourcename: "sx1276_spi_io__read_buffer"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "sx1276_spi_io__read_buffer"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:101:16"
+}
+edge: { sourcename: "sx1276_spi_io__read_buffer"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:76:21"
+}
+edge: { sourcename: "sx1276_spi_io__read_buffer"
+  targetname: "4:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:111:16"
+}
+edge: { sourcename: "sx1276_spi_io__write_buffer"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "sx1276_spi_io__write_buffer"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:136:16"
+}
+edge: { sourcename: "sx1276_spi_io__write_buffer"
+  targetname: "1:hal__spi__spi_port,hal__spi__spi_port"
+  label: "hal-spi.ads:60:21"
+}
+edge: { sourcename: "sx1276_spi_io__write_buffer"
+  targetname: "2:hal__spi__spi_port,hal__spi__spi_port"
+  label: "sx1276_spi_io.adb:146:16"
+}
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb"
+node: { title: "stm32__gpio__set__2" label: "SET\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-assert.ads:46:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "stm32__gpio__Oeq" label: "=\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "stm32__gpio__gpio_pointIP" label: "GPIO_POINTIP\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:129:9" shape : ellipse }
+node: { title: "sx1276_spi_io__write_buffer" label: "WRITE_BUFFER\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:127:4\n64 bytes (static)" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:152:10" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:148:14" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:148:11" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:146:16" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:146:16" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:146:11" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:146:11" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:143:10" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:136:16" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:136:16" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:136:11" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:136:11" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:134:14" }
+edge: { sourcename: "sx1276_spi_io__write_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:134:11" }
+node: { title: "sx1276_spi_io__read_buffer" label: "READ_BUFFER\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:92:4\n64 bytes (static)" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:117:10" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:113:14" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:113:11" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:111:16" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:111:16" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:76:21" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:111:11" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:111:11" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:108:10" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:101:16" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:101:16" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:101:11" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:101:11" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:99:14" }
+edge: { sourcename: "sx1276_spi_io__read_buffer" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:99:11" }
+node: { title: "sx1276_spi_io__read" label: "READ\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:61:4\n64 bytes (static)" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:83:10" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:79:14" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:79:11" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:77:16" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:77:16" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:76:21" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:77:11" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:77:11" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:74:10" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:70:16" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:70:16" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:70:11" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:70:11" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:69:14" }
+edge: { sourcename: "sx1276_spi_io__read" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:69:11" }
+node: { title: "sx1276_spi_io__write" label: "WRITE\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:38:4\n40 bytes (static)" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:53:10" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:49:14" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:49:11" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:46:16" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "system__assertions__raise_assert_failure" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:46:16" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__indirect_call" label: "/media/16T/ada/Ada_Drivers_Library/hal/src/hal-spi.ads:60:21" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:46:11" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:46:11" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:45:14" }
+edge: { sourcename: "sx1276_spi_io__write" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.adb:45:11" }
+node: { title: "sx1276_spi_io___assign" label: "SX1276_SPI_IO\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.ads:44:9\n24 bytes (static)" }
+node: { title: "sx1276_spi_io__Oeq" label: "=\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.ads:44:4\n16 bytes (static)" }
+edge: { sourcename: "sx1276_spi_io__Oeq" targetname: "stm32__gpio__Oeq" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.ads:44:9" }
+node: { title: "sx1276_spi_io___size" label: "SX1276_SPI_IO\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.ads:44:9\n24 bytes (static)" }
+node: { title: "sx1276_spi_io__io_portIP" label: "IO_PORTIP\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.ads:44:9\n16 bytes (static)" }
+edge: { sourcename: "sx1276_spi_io__io_portIP" targetname: "stm32__gpio__gpio_pointIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276_spi_io.ads:46:7" }
+}

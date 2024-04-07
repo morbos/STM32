@@ -1,0 +1,102 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -gnatA
+A -gnatWb
+A -gnatiw
+A -gnatws
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -fcallgraph-info=su
+A -ffunction-sections
+A -fdata-sections
+P DB ZX
+
+RN
+RR NO_EXCEPTION_PROPAGATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U ada_main%b		b__sx1276_shutdown_u073.adb  64a3d5bd OO PK IL
+Z system%s		system.ads		system.ali
+
+U ada_main%s		b__sx1276_shutdown_u073.ads  01d96895 EE NE OO PK IL
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D b__sx1276_shutdown_u073.ads  20240330003957 22b7687a ada_main%s
+D b__sx1276_shutdown_u073.adb  20240330003957 4614bdc7 ada_main%b
+D system.ads		20200106220408 aa7dab5a system%s
+D s-parame.ads		20201003195514 dfb12da9 system.parameters%s
+D s-secsta.ads		20200106220408 56a2861c system.secondary_stack%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+G a e
+G c Z s b [adainit ada_main 17 14 none]
+G c Z s b [main ada_main 20 14 none]
+G c Z b b [Tsec_default_sized_stacksBIP ada_main 30 4 none]
+G c Z b b [ada_main_program ada_main 93 14 none]
+X 1 b__sx1276_shutdown_u073.ads
+7K9*ada_main 172l5 172e13 2|7b14 131l5 131t13
+10a4*GNAT_Version{string} 12r22
+14a4*Ada_Main_Program_Name{string} 15r22 2|97r52
+17U14*adainit 18i<c,adainit>22 2|33b14 91l8 91t15 101s7
+20U14*main 21i<c,main>22 2|96b14 103t7
+X 2 b__sx1276_shutdown_u073.adb
+9i4 E005{short_integer} 9m46 9r46 61m7 61r15
+10i4 E065{short_integer} 10m46 10r46 63m7 63r15
+11i4 E069{short_integer} 11m46 11r46 65m7 65r15
+12i4 E074{short_integer} 12m46 12r46 67m7 67r15
+13i4 E081{short_integer} 13m46 13r46 68m7 68r15
+14i4 E099{short_integer} 14m46 14r46 69m7 69r15
+15i4 E110{short_integer} 15m46 15r46 70m7 70r15
+16i4 E116{short_integer} 16m46 16r46 71m7 71r15
+17i4 E143{short_integer} 17m46 17r46 72m7 72r15
+18i4 E106{short_integer} 18m46 18r46 73m7 73r15
+19i4 E120{short_integer} 19m46 19r46 74m7 74r15
+20i4 E104{short_integer} 20m46 20r46 78m7 78r15
+21i4 E088{short_integer} 21m46 21r46 76m7 76r15
+22i4 E108{short_integer} 22m46 22r46 77m7 77r15
+23i4 E125{short_integer} 23m46 23r46 79m7 79r15
+24i4 E085{short_integer} 24m46 24r46 81m7 81r15
+25i4 E134{short_integer} 25m46 25r46 82m7 82r15
+26i4 E084{short_integer} 26m46 26r46 88m7 88r15
+27i4 E132{short_integer} 27m46 27r46 84m7 84r15
+28i4 E130{short_integer} 28m46 28r46 86m7 86r15
+30a4 Sec_Default_Sized_Stacks(5|43R9) 57m32 57r32
+34U17*Install_Restricted_Handlers_Sequential 35b<c,__gnat_attach_all_handlers>24
+. 89s7
+37e7*Partition_Elaboration_Policy{character} 38m25 38r25 52m7
+40U17*Activate_All_Tasks_Sequential 41b<c,__gnat_activate_all_tasks>25 90s7
+43i7*Binder_Sec_Stacks_Count{natural} 44m27 44r27 56m7
+46i7*Default_Secondary_Stack_Size{4|56I9} 47m25 47r25 55m7
+48m7*Default_Sized_SS_Pool{3|90M9} 49m27 49r27 57m7
+93U14 Ada_Main_Program 94b<ada,_ada_sx1276_shutdown_u073>24 102s7
+97m7 Ensure_Reference{3|90M9} 98r24
+X 3 system.ads
+60K9*System 1|4w6 5r6 6r6 2|30r57 30r90 46r38 48r31 55r39 97r34 3|174e11
+90M9*Address 2|48r38 97r41
+X 4 s-parame.ads
+49K16*Parameters 1|5w13 2|30r97 46r45 55r46 4|187e22
+56I9*Size_Type<integer> 2|46r56
+88i4*Runtime_Default_Sec_Stack_Size{56I9} 2|30r108 55r57
+X 5 s-secsta.ads
+37K16*Secondary_Stack 1|6w13 2|30r64 5|154e27
+43R9*SS_Stack 2|30r80 5|119e14
+

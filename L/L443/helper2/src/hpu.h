@@ -1,0 +1,41 @@
+#ifndef __HPU_H__
+#define __HPU_H__
+
+#define PATCH_0 (HPU_BASE + 0x0)
+#define PATCH_1 (HPU_BASE + 0x4)
+#define PATCH_2 (HPU_BASE + 0x8)
+#define PATCH_3 (HPU_BASE + 0xc)
+#define PATCH_4 (HPU_BASE + 0x10)
+#define PATCH_5 (HPU_BASE + 0x14)
+#define PATCH_6 (HPU_BASE + 0x18)
+#define PATCH_7 (HPU_BASE + 0x1c)
+#define PATCH_8 (HPU_BASE + 0x20)
+#define PATCH_9 (HPU_BASE + 0x24)
+#define PATCH_10 (HPU_BASE + 0x28)
+#define PATCH_11 (HPU_BASE + 0x2c)
+#define PATCH_12 (HPU_BASE + 0x30)
+#define PATCH_13 (HPU_BASE + 0x34)
+#define PATCH_14 (HPU_BASE + 0x38)
+#define PATCH_15 (HPU_BASE + 0x3c)
+#define PATCH_16 (HPU_BASE + 0x40)
+#define PATCH_17 (HPU_BASE + 0x44)
+#define PATCH_18 (HPU_BASE + 0x48)
+#define PATCH_19 (HPU_BASE + 0x4c)
+#define PATCH_20 (HPU_BASE + 0x50)
+#define PATCH_21 (HPU_BASE + 0x54)
+#define PATCH_22 (HPU_BASE + 0x58)
+#define PATCH_23 (HPU_BASE + 0x5c)
+
+#define LITERAL (HPU_BASE + 0x3cc)
+
+#define ADDR_HIT_ENTRY (HPU_BASE + 0x3dc)
+#define ADDR_HIT_VAL (HPU_BASE + 0x3e0)
+#define HPU_CTRL (HPU_BASE + 0x3e4)
+#define HPU_ARM_SWI (HPU_BASE + 0x3e8)
+#define HPU_THUMB_SWI (HPU_BASE + 0x3ec)
+#define HPU_DATA_VAL (HPU_BASE + 0x3f0)
+#define HPU_ADDR_MASK (HPU_BASE + 0x3f4)
+#define SPARE_REG0 (HPU_BASE + 0x3f8)
+#define SPARE_REG1 (HPU_BASE + 0x3fc)
+
+#endif //__HPU_H__

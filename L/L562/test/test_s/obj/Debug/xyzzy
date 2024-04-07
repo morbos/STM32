@@ -18,10 +18,6 @@ Archive member included to satisfy reference by file (symbol)
                               /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o) (stm32__spi__spi_portIP)
 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
                               b__test_s.o (stm32__syscfg_E)
-/home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
-                              /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o) (stm32_svd__mpu__mpu_rbar_registerIP)
-/home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
-                              /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o) (stm32_svd__sau__sau_rbar_registerIP)
 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
                               /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o) (stm32_svd__spi__sr_registerIP)
 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
@@ -72,8 +68,6 @@ Archive member included to satisfy reference by file (symbol)
                               /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o) (system__assertions__raise_assert_failure)
 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
                               /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o) (system__machine_reset__stop)
-/home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
-                              /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o) (memcmp)
 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
                               /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o) (memcpy)
 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
@@ -391,6 +385,8 @@ Discarded input sections
                 0x0000000000000000       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
  .text.stm32__mpu__rlar_overlayEQ
                 0x0000000000000000       0xe4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+ .text.stm32__mpu__rlar_overlayIP
+                0x0000000000000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
  .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
  .data          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
  .bss           0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
@@ -402,9 +398,9 @@ Discarded input sections
  .text.stm32__sau__rlar_overlayEQ
                 0x0000000000000000       0xe4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
  .text.stm32__sau__rlar_overlayIP
-                0x0000000000000000       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+                0x0000000000000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
  .text.stm32__sau__add_region
-                0x0000000000000000       0x90 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+                0x0000000000000000       0x84 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
  .text.stm32__sau__enable_sau
                 0x0000000000000000       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
  .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
@@ -462,67 +458,6 @@ Discarded input sections
                 0x0000000000000000       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
  .text.stm32__syscfg__clear_external_interrupt
                 0x0000000000000000       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
- .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .data          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .bss           0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_type_registerIP
-                0x0000000000000000       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_ctrl_registerIP
-                0x0000000000000000       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_rnr_registerIP
-                0x0000000000000000       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_rbar_alias_registerIP
-                0x0000000000000000       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_rlar_alias_registerIP
-                0x0000000000000000       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__Tmpu_mair0_attr_field_arrayBIP
-                0x0000000000000000       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_mair0_registerEQ
-                0x0000000000000000       0x60 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_mair0_registerIP
-                0x0000000000000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__Tmpu_mair1_attr_field_arrayBIP
-                0x0000000000000000       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_mair1_registerEQ
-                0x0000000000000000       0x60 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_mair1_registerIP
-                0x0000000000000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .rodata        0x0000000000000000       0x12 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_peripheralEQ
-                0x0000000000000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text.stm32_svd__mpu__mpu_peripheralIP
-                0x0000000000000000       0x7c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .rodata.stm32_svd__mpu__mpu_periph
-                0x0000000000000000        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .data          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .bss           0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sau_ctrl_registerIP
-                0x0000000000000000       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sau_type_registerIP
-                0x0000000000000000       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sau_rnr_registerIP
-                0x0000000000000000       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sau_rbar_registerIP
-                0x0000000000000000       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sau_rlar_registerIP
-                0x0000000000000000       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sfsr_registerIP
-                0x0000000000000000       0x90 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .text.stm32_svd__sau__sau_peripheralIP
-                0x0000000000000000       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .rodata.stm32_svd__sau__sau_periph
-                0x0000000000000000        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .debug_info    0x0000000000000000      0x371 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .debug_abbrev  0x0000000000000000       0xcc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .debug_aranges
-                0x0000000000000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .debug_line    0x0000000000000000      0x13a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .debug_str     0x0000000000000000      0x58a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .comment       0x0000000000000000       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .debug_frame   0x0000000000000000      0x124 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
- .ARM.attributes
-                0x0000000000000000       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-sau.o)
  .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
  .data          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
  .bss           0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
@@ -1027,24 +962,6 @@ Discarded input sections
  .text.abort    0x0000000000000000       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
  .data.system__machine_reset_E
                 0x0000000000000000        0x2 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
- .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .data          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .bss           0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .text.memcmp   0x0000000000000000       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .data.system__memory_compare_E
-                0x0000000000000000        0x2 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_info    0x0000000000000000       0xea /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_abbrev  0x0000000000000000       0x83 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_loc     0x0000000000000000      0x129 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_aranges
-                0x0000000000000000       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_ranges  0x0000000000000000       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_line    0x0000000000000000       0xec /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_str     0x0000000000000000      0x348 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .comment       0x0000000000000000       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .debug_frame   0x0000000000000000       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
- .ARM.attributes
-                0x0000000000000000       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcom.o)
  .text          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
  .data          0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
  .bss           0x0000000000000000        0x0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
@@ -1227,416 +1144,408 @@ END GROUP
 
 .text           0x0000000030000000     0x60ca
  *(.vectors)
- .vectors       0x0000000030000000       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(start-ram.o)
+ .vectors       0x0000000030000000       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(start-ram.o)
+                0x0000000030000014                local_id
  *(.text .text.* .gnu.linkonce.t*)
  .text._ada_test_s
-                0x0000000030000014       0x38 test_s.o
-                0x0000000030000014                _ada_test_s
+                0x0000000030000018       0x38 test_s.o
+                0x0000000030000018                _ada_test_s
  .text.test_s__init_mpu.5426
-                0x000000003000004c       0x84 test_s.o
+                0x0000000030000050       0x84 test_s.o
  .text.test_s__enable_gtzc_sram.5430
-                0x00000000300000d0      0x180 test_s.o
+                0x00000000300000d4      0x180 test_s.o
  .text.ada_main__Tsec_default_sized_stacksBIP
-                0x0000000030000250       0x44 b__test_s.o
-                0x0000000030000250                ada_main__Tsec_default_sized_stacksBIP
- .text.adainit  0x0000000030000294      0x16c b__test_s.o
-                0x0000000030000294                adainit
- .text.main     0x0000000030000400       0x1c b__test_s.o
-                0x0000000030000400                main
+                0x0000000030000254       0x44 b__test_s.o
+                0x0000000030000254                ada_main__Tsec_default_sized_stacksBIP
+ .text.adainit  0x0000000030000298      0x16c b__test_s.o
+                0x0000000030000298                adainit
+ .text.main     0x0000000030000404       0x1c b__test_s.o
+                0x0000000030000404                main
  .text.ada_main___elabb
-                0x000000003000041c       0x1c b__test_s.o
-                0x000000003000041c                ada_main___elabb
+                0x0000000030000420       0x1c b__test_s.o
+                0x0000000030000420                ada_main___elabb
  .text.s_from_ns
-                0x0000000030000438       0x84 /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/ns_api.o
-                0x0000000030000438                s_from_ns
+                0x000000003000043c       0x84 /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/ns_api.o
+                0x000000003000043c                s_from_ns
  .text.trace___elabs
-                0x00000000300004bc        0xc /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/trace.o
-                0x00000000300004bc                trace___elabs
+                0x00000000300004c0        0xc /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/trace.o
+                0x00000000300004c0                trace___elabs
  .text.stm32__board__initialize_leds
-                0x00000000300004c8       0x5c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
-                0x00000000300004c8                stm32__board__initialize_leds
+                0x00000000300004cc       0x5c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
+                0x00000000300004cc                stm32__board__initialize_leds
  .text.stm32__board__initialize_button
-                0x0000000030000524       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
-                0x0000000030000524                stm32__board__initialize_button
+                0x0000000030000528       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
+                0x0000000030000528                stm32__board__initialize_button
  .text.stm32__board__initialize_board
-                0x00000000300005b8       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
-                0x00000000300005b8                stm32__board__initialize_board
+                0x00000000300005bc       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
+                0x00000000300005bc                stm32__board__initialize_board
  .text.stm32__board___elabs
-                0x00000000300005c8       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
-                0x00000000300005c8                stm32__board___elabs
+                0x00000000300005cc       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
+                0x00000000300005cc                stm32__board___elabs
  .text.stm32__device__enable_clock
-                0x0000000030000600      0x2dc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
-                0x0000000030000600                stm32__device__enable_clock
+                0x0000000030000604      0x2dc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+                0x0000000030000604                stm32__device__enable_clock
  .text.stm32__device__enable_clock__2
-                0x00000000300008dc       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
-                0x00000000300008dc                stm32__device__enable_clock__2
+                0x00000000300008e0       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+                0x00000000300008e0                stm32__device__enable_clock__2
  .text.stm32__device__enable_clock__3
-                0x0000000030000908       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
-                0x0000000030000908                stm32__device__enable_clock__3
+                0x000000003000090c       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+                0x000000003000090c                stm32__device__enable_clock__3
  .text.stm32__device__s_ns_periph
-                0x0000000030000980       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
-                0x0000000030000980                stm32__device__s_ns_periph
+                0x0000000030000984       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+                0x0000000030000984                stm32__device__s_ns_periph
  .text.stm32__device___elabb
-                0x00000000300009bc       0x50 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
-                0x00000000300009bc                stm32__device___elabb
+                0x00000000300009c0       0x50 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+                0x00000000300009c0                stm32__device___elabb
  .text.stm32__device___elabs
-                0x0000000030000a0c      0xfe4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
-                0x0000000030000a0c                stm32__device___elabs
+                0x0000000030000a10      0xfe4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+                0x0000000030000a10                stm32__device___elabs
  .text.stm32__exti__enable_external_interrupt
-                0x00000000300019f0      0x268 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
-                0x00000000300019f0                stm32__exti__enable_external_interrupt
+                0x00000000300019f4      0x268 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
+                0x00000000300019f4                stm32__exti__enable_external_interrupt
  .text.stm32__exti__enable_external_event
-                0x0000000030001c58      0x11c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
-                0x0000000030001c58                stm32__exti__enable_external_event
+                0x0000000030001c5c      0x11c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
+                0x0000000030001c5c                stm32__exti__enable_external_event
  .text.stm32__gpio__gpio_pinRP
-                0x0000000030001d74       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001d74                stm32__gpio__gpio_pinRP
+                0x0000000030001d78       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001d78                stm32__gpio__gpio_pinRP
  .text.stm32__gpio__gpio_pointIP
-                0x0000000030001e44       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001e44                stm32__gpio__gpio_pointIP
+                0x0000000030001e48       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001e48                stm32__gpio__gpio_pointIP
  .text.stm32__gpio___size__2
-                0x0000000030001e70       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001e70                stm32__gpio___size__2
+                0x0000000030001e74       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001e74                stm32__gpio___size__2
  .text.stm32__gpio__Oeq
-                0x0000000030001e8c       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001e8c                stm32__gpio__Oeq
+                0x0000000030001e90       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001e90                stm32__gpio__Oeq
  .text.stm32__gpio___assign
-                0x0000000030001ec0       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001ec0                stm32__gpio___assign
+                0x0000000030001ec4       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001ec4                stm32__gpio___assign
  .text.stm32__gpio__gpio_pointsIP
-                0x0000000030001ee4       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001ee4                stm32__gpio__gpio_pointsIP
+                0x0000000030001ee8       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001ee8                stm32__gpio__gpio_pointsIP
  .text.stm32__gpio__mode
-                0x0000000030001f28       0x7c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001f28                stm32__gpio__mode
+                0x0000000030001f2c       0x7c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001f2c                stm32__gpio__mode
  .text.stm32__gpio__set_mode
-                0x0000000030001fa4       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030001fa4                stm32__gpio__set_mode
+                0x0000000030001fa8       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030001fa8                stm32__gpio__set_mode
  .text.stm32__gpio__pull_resistor
-                0x0000000030002074       0x9c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002074                stm32__gpio__pull_resistor
+                0x0000000030002078       0x9c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002078                stm32__gpio__pull_resistor
  .text.stm32__gpio__set_pull_resistor
-                0x0000000030002110      0x124 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002110                stm32__gpio__set_pull_resistor
+                0x0000000030002114      0x124 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002114                stm32__gpio__set_pull_resistor
  .text.stm32__gpio__set
-                0x0000000030002234       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002234                stm32__gpio__set
+                0x0000000030002238       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002238                stm32__gpio__set
  .text.stm32__gpio__set__2
-                0x000000003000227c       0x5c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x000000003000227c                stm32__gpio__set__2
+                0x0000000030002280       0x5c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002280                stm32__gpio__set__2
  .text.stm32__gpio__clear
-                0x00000000300022d8       0x5c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x00000000300022d8                stm32__gpio__clear
+                0x00000000300022dc       0x5c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x00000000300022dc                stm32__gpio__clear
  .text.stm32__gpio__toggle
-                0x0000000030002334       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002334                stm32__gpio__toggle
+                0x0000000030002338       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002338                stm32__gpio__toggle
  .text.stm32__gpio__locked
-                0x00000000300023ac       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x00000000300023ac                stm32__gpio__locked
+                0x00000000300023b0       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x00000000300023b0                stm32__gpio__locked
  .text.stm32__gpio__lock_the_pin
-                0x00000000300023f8       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x00000000300023fc       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
  .text.stm32__gpio__lock___postconditions.6823
-                0x000000003000242c       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002430       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
  .text.stm32__gpio__lock
-                0x0000000030002468       0x6c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002468                stm32__gpio__lock
+                0x000000003000246c       0x6c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x000000003000246c                stm32__gpio__lock
  .text.stm32__gpio__configure_io
-                0x00000000300024d4      0x1dc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x00000000300024d4                stm32__gpio__configure_io
+                0x00000000300024d8      0x1dc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x00000000300024d8                stm32__gpio__configure_io
  .text.stm32__gpio__configure_io__2
-                0x00000000300026b0       0x54 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x00000000300026b0                stm32__gpio__configure_io__2
+                0x00000000300026b4       0x54 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x00000000300026b4                stm32__gpio__configure_io__2
  .text.stm32__gpio__configure_alternate_function
-                0x0000000030002704       0xf8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002704                stm32__gpio__configure_alternate_function
+                0x0000000030002708       0xf8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002708                stm32__gpio__configure_alternate_function
  .text.stm32__gpio__interrupt_line_number
-                0x00000000300027fc       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x00000000300027fc                stm32__gpio__interrupt_line_number
+                0x0000000030002800       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002800                stm32__gpio__interrupt_line_number
  .text.stm32__gpio__configure_trigger
-                0x0000000030002840       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
-                0x0000000030002840                stm32__gpio__configure_trigger
- .text.stm32__mpu__rlar_overlayIP
-                0x00000000300028b8       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
-                0x00000000300028b8                stm32__mpu__rlar_overlayIP
+                0x0000000030002844       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+                0x0000000030002844                stm32__gpio__configure_trigger
  .text.stm32__mpu__add_region
-                0x00000000300028d8       0x90 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
-                0x00000000300028d8                stm32__mpu__add_region
+                0x00000000300028bc       0x84 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+                0x00000000300028bc                stm32__mpu__add_region
  .text.stm32__mpu__add_attrib
-                0x0000000030002968       0x88 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
-                0x0000000030002968                stm32__mpu__add_attrib
+                0x0000000030002940       0x88 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+                0x0000000030002940                stm32__mpu__add_attrib
  .text.stm32__mpu__enable_mpu
-                0x00000000300029f0       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
-                0x00000000300029f0                stm32__mpu__enable_mpu
+                0x00000000300029c8       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+                0x00000000300029c8                stm32__mpu__enable_mpu
  .text.stm32__sau__all_ns
-                0x0000000030002a14       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
-                0x0000000030002a14                stm32__sau__all_ns
+                0x00000000300029ec       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+                0x00000000300029ec                stm32__sau__all_ns
  .text.stm32__spi__spi_portIP
-                0x0000000030002a3c       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002a3c                stm32__spi__spi_portIP
+                0x0000000030002a14       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002a14                stm32__spi__spi_portIP
  .text.stm32__spi___size__2
-                0x0000000030002a6c       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002a6c                stm32__spi___size__2
+                0x0000000030002a44       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002a44                stm32__spi___size__2
  .text.stm32__spi__configure
-                0x0000000030002a88      0x2f8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002a88                stm32__spi__configure
+                0x0000000030002a60      0x2f8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002a60                stm32__spi__configure
  .text.stm32__spi__enable
-                0x0000000030002d80       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002d80                stm32__spi__enable
+                0x0000000030002d58       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002d58                stm32__spi__enable
  .text.stm32__spi__disable
-                0x0000000030002da8       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002da8                stm32__spi__disable
+                0x0000000030002d80       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002d80                stm32__spi__disable
  .text.stm32__spi__enabled
-                0x0000000030002dcc       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002dcc                stm32__spi__enabled
+                0x0000000030002da4       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002da4                stm32__spi__enabled
  .text.stm32__spi__send
-                0x0000000030002df0       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002df0                stm32__spi__send
+                0x0000000030002dc8       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002dc8                stm32__spi__send
  .text.stm32__spi__data
-                0x0000000030002e1c       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002e1c                stm32__spi__data
+                0x0000000030002df4       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002df4                stm32__spi__data
  .text.stm32__spi__send__2
-                0x0000000030002e3c       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002e3c                stm32__spi__send__2
+                0x0000000030002e14       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002e14                stm32__spi__send__2
  .text.stm32__spi__data__2
-                0x0000000030002e60       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002e60                stm32__spi__data__2
+                0x0000000030002e38       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002e38                stm32__spi__data__2
  .text.stm32__spi__is_busy
-                0x0000000030002e8c       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002e8c                stm32__spi__is_busy
+                0x0000000030002e64       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002e64                stm32__spi__is_busy
  .text.stm32__spi__tx_is_empty
-                0x0000000030002ed0       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002ed0                stm32__spi__tx_is_empty
+                0x0000000030002ea8       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002ea8                stm32__spi__tx_is_empty
  .text.stm32__spi__rx_is_empty
-                0x0000000030002ef4       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002ef4                stm32__spi__rx_is_empty
+                0x0000000030002ecc       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002ecc                stm32__spi__rx_is_empty
  .text.stm32__spi__busy
-                0x0000000030002f24       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002f24                stm32__spi__busy
+                0x0000000030002efc       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002efc                stm32__spi__busy
  .text.stm32__spi__current_mode
-                0x0000000030002f48       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002f48                stm32__spi__current_mode
+                0x0000000030002f20       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002f20                stm32__spi__current_mode
  .text.stm32__spi__current_data_direction
-                0x0000000030002fa0       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030002fa0                stm32__spi__current_data_direction
+                0x0000000030002f78       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002f78                stm32__spi__current_data_direction
  .text.stm32__spi__crc_enabled
-                0x0000000030003004       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003004                stm32__spi__crc_enabled
+                0x0000000030002fdc       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030002fdc                stm32__spi__crc_enabled
  .text.stm32__spi__crc_error_indicated
-                0x0000000030003028       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003028                stm32__spi__crc_error_indicated
+                0x0000000030003000       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003000                stm32__spi__crc_error_indicated
  .text.stm32__spi__mode_fault_indicated
-                0x000000003000304c       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x000000003000304c                stm32__spi__mode_fault_indicated
+                0x0000000030003024       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003024                stm32__spi__mode_fault_indicated
  .text.stm32__spi__overrun_indicated
-                0x0000000030003070       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003070                stm32__spi__overrun_indicated
+                0x0000000030003048       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003048                stm32__spi__overrun_indicated
  .text.stm32__spi__frame_fmt_error_indicated
-                0x0000000030003094       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003094                stm32__spi__frame_fmt_error_indicated
+                0x000000003000306c       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x000000003000306c                stm32__spi__frame_fmt_error_indicated
  .text.stm32__spi__clear_overrun
-                0x00000000300030b8       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300030b8                stm32__spi__clear_overrun
+                0x0000000030003090       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003090                stm32__spi__clear_overrun
  .text.stm32__spi__reset_crc
-                0x00000000300030e4       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300030e4                stm32__spi__reset_crc
+                0x00000000300030bc       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300030bc                stm32__spi__reset_crc
  .text.stm32__spi__is_data_frame_16bit
-                0x000000003000311c       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x000000003000311c                stm32__spi__is_data_frame_16bit
+                0x00000000300030f4       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300030f4                stm32__spi__is_data_frame_16bit
  .text.stm32__spi__data_size
-                0x0000000030003140       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003140                stm32__spi__data_size
+                0x0000000030003118       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003118                stm32__spi__data_size
  .text.stm32__spi__transmit
-                0x0000000030003174       0xd4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003174                stm32__spi__transmit
+                0x000000003000314c       0xd4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x000000003000314c                stm32__spi__transmit
  .text.stm32__spi__transmit__2
-                0x0000000030003248       0xd8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003248                stm32__spi__transmit__2
+                0x0000000030003220       0xd8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003220                stm32__spi__transmit__2
  .text.stm32__spi__transmit__3
-                0x0000000030003320       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003320                stm32__spi__transmit__3
+                0x00000000300032f8       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300032f8                stm32__spi__transmit__3
  .text.stm32__spi__receive
-                0x00000000300033f0      0x14c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300033f0                stm32__spi(long double,...)(char,...)(int, void,...)
+                0x00000000300033c8      0x14c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300033c8                stm32__spi(long double,...)(char,...)(int, void,...)
  .text.stm32__spi__receive__2
-                0x000000003000353c       0xac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x000000003000353c                stm32__spi__receive__2
+                0x0000000030003514       0xac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003514                stm32__spi__receive__2
  .text.stm32__spi__receive__3
-                0x00000000300035e8       0xcc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300035e8                stm32__spi__receive__3
+                0x00000000300035c0       0xcc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300035c0                stm32__spi__receive__3
  .text.stm32__spi__transmit_receive__2
-                0x00000000300036b4      0x124 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300036b4                stm32__spi__transmit_receive__2
+                0x000000003000368c      0x124 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x000000003000368c                stm32__spi__transmit_receive__2
  .text.stm32__spi__transmit_receive__3
-                0x00000000300037d8      0x10c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300037d8                stm32__spi__transmit_receive__3
+                0x00000000300037b0      0x10c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300037b0                stm32__spi__transmit_receive__3
  .text.stm32__spi__send_receive_16bit_mode
-                0x00000000300038e4      0x378 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300038e4                stm32__spi__send_receive_16bit_mode
+                0x00000000300038bc      0x378 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300038bc                stm32__spi__send_receive_16bit_mode
  .text.stm32__spi__send_receive_8bit_mode
-                0x0000000030003c5c      0x2f4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003c5c                stm32__spi__send_receive_8bit_mode
+                0x0000000030003c34      0x2f4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003c34                stm32__spi__send_receive_8bit_mode
  .text.stm32__spi__send_16bit_mode
-                0x0000000030003f50      0x1e8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030003f50                stm32__spi__send_16bit_mode
+                0x0000000030003f28      0x1e8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030003f28                stm32__spi__send_16bit_mode
  .text.stm32__spi__send_8bit_mode
-                0x0000000030004138      0x194 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030004138                stm32__spi__send_8bit_mode
+                0x0000000030004110      0x194 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030004110                stm32__spi__send_8bit_mode
  .text.stm32__spi__receive_16bit_mode
-                0x00000000300042cc       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x00000000300042cc                stm32__spi__receive_16bit_mode
+                0x00000000300042a4       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300042a4                stm32__spi__receive_16bit_mode
  .text.stm32__spi__receive_8bit_mode
-                0x0000000030004360       0xa0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030004360                stm32__spi__receive_8bit_mode
+                0x0000000030004338       0xa0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x0000000030004338                stm32__spi__receive_8bit_mode
  .text.stm32__spi__transmit_receive
-                0x0000000030004400      0x214 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
-                0x0000000030004400                stm32__spi__transmit_receive
- .text.stm32_svd__mpu__mpu_rbar_registerIP
-                0x0000000030004614       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
-                0x0000000030004614                stm32_svd__mpu__mpu_rbar_registerIP
- .text.stm32_svd__mpu__mpu_rlar_registerIP
-                0x0000000030004660       0x4c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
-                0x0000000030004660                stm32_svd__mpu__mpu_rlar_registerIP
+                0x00000000300043d8      0x214 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+                0x00000000300043d8                stm32__spi__transmit_receive
  .text.stm32_svd__spi__sr_registerIP
-                0x00000000300046ac       0xac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
-                0x00000000300046ac                stm32_svd__spi__sr_registerIP
+                0x00000000300045ec       0xac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+                0x00000000300045ec                stm32_svd__spi__sr_registerIP
  .text.ada__real_time___elabb
-                0x0000000030004758        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
-                0x0000000030004758                ada__real_time___elabb
+                0x0000000030004698        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+                0x0000000030004698                ada__real_time___elabb
  .text.system__bb__board_support__timer_interrupt_handler
-                0x000000003000475c        0x8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
-                0x000000003000475c                system__bb__board_support__timer_interrupt_handler
+                0x000000003000469c        0x8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x000000003000469c                system__bb__board_support__timer_interrupt_handler
  .text.system__bb__board_support__interrupt_handler
-                0x0000000030004764        0xc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
-                0x0000000030004764                system__bb__board_support__interrupt_handler
+                0x00000000300046a4        0xc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x00000000300046a4                system__bb__board_support__interrupt_handler
  .text.system__bb__board_support__enable_interrupt_request.part.0
-                0x0000000030004770       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x00000000300046b0       0x1c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
  .text.system__bb__board_support__time__read_clock
-                0x000000003000478c       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
-                0x000000003000478c                system__bb__board_support__time__read_clock
+                0x00000000300046cc       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x00000000300046cc                system__bb__board_support__time__read_clock
  .text.system__bb__board_support__time__set_alarm
-                0x00000000300047d0       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
-                0x00000000300047d0                system__bb__board_support__time__set_alarm
+                0x0000000030004710       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x0000000030004710                system__bb__board_support__time__set_alarm
  .text.system__bb__board_support__time__install_alarm_handler
-                0x0000000030004834        0xc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
-                0x0000000030004834                system__bb__board_support__time__install_alarm_handler
+                0x0000000030004774        0xc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x0000000030004774                system__bb__board_support__time__install_alarm_handler
  .text.system__bb__board_support__initialize_board
-                0x0000000030004840       0x9c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
-                0x0000000030004840                system__bb__board_support__initialize_board
+                0x0000000030004780       0x9c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x0000000030004780                system__bb__board_support__initialize_board
  .text.system__bb__cpu_primitives__gnat_error_handler
-                0x00000000300048dc      0x1b8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
-                0x00000000300048dc                system__bb__cpu_primitives__gnat_error_handler
+                0x000000003000481c      0x1b8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x000000003000481c                system__bb__cpu_primitives__gnat_error_handler
  .text.__gnat_irq_trap
-                0x0000000030004a94       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
-                0x0000000030004a94                __gnat_irq_trap
+                0x00000000300049d4       0x64 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x00000000300049d4                __gnat_irq_trap
  .text.__gnat_sv_call_trap
-                0x0000000030004af8        0x8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
-                0x0000000030004af8                __gnat_sv_call_trap
+                0x0000000030004a38        0x8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x0000000030004a38                __gnat_sv_call_trap
  .text.__gnat_sys_tick_trap
-                0x0000000030004b00       0x80 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
-                0x0000000030004b00                __gnat_sys_tick_trap
+                0x0000000030004a40       0x80 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x0000000030004a40                __gnat_sys_tick_trap
  .text.system__bb__cpu_primitives__install_trap_handler
-                0x0000000030004b80        0xc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
-                0x0000000030004b80                system__bb__cpu_primitives__install_trap_handler
+                0x0000000030004ac0        0xc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x0000000030004ac0                system__bb__cpu_primitives__install_trap_handler
  .text.system__bb__interrupts__interrupt_wrapper
-                0x0000000030004b8c       0xf4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
-                0x0000000030004b8c                system__bb__interrupts__interrupt_wrapper
+                0x0000000030004acc       0xf4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+                0x0000000030004acc                system__bb__interrupts__interrupt_wrapper
  .text.system__bb__interrupts__initialize_interrupts
-                0x0000000030004c80       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
-                0x0000000030004c80                system__bb__interrupts__initialize_interrupts
+                0x0000000030004bc0       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+                0x0000000030004bc0                system__bb__interrupts__initialize_interrupts
  .text.system__bb__threads__queues__change_priority
-                0x0000000030004c90       0x70 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
-                0x0000000030004c90                system__bb__threads__queues__change_priority
+                0x0000000030004bd0       0x70 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+                0x0000000030004bd0                system__bb__threads__queues__change_priority
  .text.system__bb__threads__queues__wakeup_expired_alarms
-                0x0000000030004d00       0xf4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
-                0x0000000030004d00                system__bb__threads__queues__wakeup_expired_alarms
+                0x0000000030004c40       0xf4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+                0x0000000030004c40                system__bb__threads__queues__wakeup_expired_alarms
  .text.system__bb__time__initialize_timers
-                0x0000000030004df4       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
-                0x0000000030004df4                system__bb__time__initialize_timers
+                0x0000000030004d34       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+                0x0000000030004d34                system__bb__time__initialize_timers
  .text.system__bb__time__update_alarm
-                0x0000000030004e88       0x98 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
-                0x0000000030004e88                system__bb__time__update_alarm
+                0x0000000030004dc8       0x98 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+                0x0000000030004dc8                system__bb__time__update_alarm
  .text.system__bb__time__alarm_handler
-                0x0000000030004f20       0xb8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+                0x0000000030004e60       0xb8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
  .text.system__bb__cpu_primitives__context_switch_trigger__initialize_context_switch
-                0x0000000030004fd8        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
-                0x0000000030004fd8                system__bb__cpu_primitives__context_switch_trigger__initialize_context_switch
+                0x0000000030004f18        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+                0x0000000030004f18                system__bb__cpu_primitives__context_switch_trigger__initialize_context_switch
  .text.system__bb__cpu_primitives__context_switch_trigger__trigger_context_switch
-                0x0000000030004fdc       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
-                0x0000000030004fdc                system__bb__cpu_primitives__context_switch_trigger__trigger_context_switch
+                0x0000000030004f1c       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+                0x0000000030004f1c                system__bb__cpu_primitives__context_switch_trigger__trigger_context_switch
  .text.__gnat_pend_sv_trap
-                0x0000000030004fec       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
-                0x0000000030004fec                __gnat_pend_sv_trap
+                0x0000000030004f2c       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+                0x0000000030004f2c                __gnat_pend_sv_trap
  .text.system__tasking__protected_objects___elabb
-                0x0000000030005034        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
-                0x0000000030005034                system__tasking__protected_objects___elabb
+                0x0000000030004f74        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+                0x0000000030004f74                system__tasking__protected_objects___elabb
  .text.system__tasking__restricted__stages__task_wrapper
-                0x0000000030005038       0xa0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+                0x0000000030004f78       0xa0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
  .text.system__tasking__restricted__stages__activate_tasks
-                0x00000000300050d8       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+                0x0000000030005018       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
  .text.__gnat_activate_all_tasks
-                0x000000003000516c       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
-                0x000000003000516c                __gnat_activate_all_tasks
+                0x00000000300050ac       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+                0x00000000300050ac                __gnat_activate_all_tasks
  .text.system__tasking__restricted__stages___elabb
-                0x0000000030005180        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
-                0x0000000030005180                system__tasking__restricted__stages___elabb
+                0x00000000300050c0        0x4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+                0x00000000300050c0                system__tasking__restricted__stages___elabb
  .text.system__tasking__initialize_atcb
-                0x0000000030005184       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
-                0x0000000030005184                system__tasking__initialize_atcb
+                0x00000000300050c4       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+                0x00000000300050c4                system__tasking__initialize_atcb
  .text.system__tasking__initialize
-                0x00000000300051b4      0x174 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
-                0x00000000300051b4                system__tasking__initialize
+                0x00000000300050f4      0x174 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+                0x00000000300050f4                system__tasking__initialize
  .text.system__tasking__protected_objects__multiprocessors__wakeup_served_entry
-                0x0000000030005328       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
-                0x0000000030005328                system__tasking__protected_objects__multiprocessors__wakeup_served_entry
+                0x0000000030005268       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+                0x0000000030005268                system__tasking__protected_objects__multiprocessors__wakeup_served_entry
  .text.system__tasking__protected_objects__multiprocessors___elabb
-                0x0000000030005380       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
-                0x0000000030005380                system__tasking__protected_objects__multiprocessors___elabb
+                0x00000000300052c0       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+                0x00000000300052c0                system__tasking__protected_objects__multiprocessors___elabb
  .text.system__bb__protection__leave_kernel
-                0x00000000300053a0       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
-                0x00000000300053a0                system__bb__protection__leave_kernel
+                0x00000000300052e0       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+                0x00000000300052e0                system__bb__protection__leave_kernel
  .text.system__bb__threads__initialize
-                0x00000000300053f8      0x14c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
-                0x00000000300053f8                system__bb__threads__initialize
+                0x0000000030005338      0x14c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+                0x0000000030005338                system__bb__threads__initialize
  .text.system__bb__threads__sleep
-                0x0000000030005544       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
-                0x0000000030005544                system__bb__threads(short, long,...)(...)( *)
+                0x0000000030005484       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+                0x0000000030005484                system__bb__threads(short, long,...)(...)( *)
  .text.system__bb__threads__thread_create
-                0x000000003000558c      0x100 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
-                0x000000003000558c                system__bb__threads__thread_create
+                0x00000000300054cc      0x100 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+                0x00000000300054cc                system__bb__threads__thread_create
  .text.system__bb__threads__wakeup
-                0x000000003000568c       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
-                0x000000003000568c                system__bb__threads__wakeup
+                0x00000000300055cc       0x94 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+                0x00000000300055cc                system__bb__threads__wakeup
  .text.system__bb__timing_events__execute_expired_timing_events
-                0x0000000030005720       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
-                0x0000000030005720                system__bb__timing_events__execute_expired_timing_events
+                0x0000000030005660       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+                0x0000000030005660                system__bb__timing_events__execute_expired_timing_events
  .text.system__task_primitives__operations__enter_task
-                0x0000000030005798       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
-                0x0000000030005798                system__task_primitives__operations__enter_task
+                0x00000000300056d8       0x3c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+                0x00000000300056d8                system__task_primitives__operations__enter_task
  .text.system__task_primitives__operations__idle
-                0x00000000300057d4       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
-                0x00000000300057d4                system__task_primitives__operations(int, double, long,...)
+                0x0000000030005714       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+                0x0000000030005714                system__task_primitives__operations(int, double, long,...)
  .text.system__task_primitives__operations__initialize_idle
-                0x00000000300057e8       0x60 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
-                0x00000000300057e8                system__task_primitives__operations__initialize_idle
+                0x0000000030005728       0x60 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+                0x0000000030005728                system__task_primitives__operations__initialize_idle
  .text.__gnat_last_chance_handler
-                0x0000000030005848       0x84 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
-                0x0000000030005848                __gnat_last_chance_handler
+                0x0000000030005788       0x84 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+                0x0000000030005788                __gnat_last_chance_handler
  .text.gnat__io__put__2
-                0x00000000300058cc       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
-                0x00000000300058cc                gnat__io__put__2
+                0x000000003000580c       0x44 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x000000003000580c                gnat__io__put__2
  .text.gnat__io__new_line
-                0x0000000030005910       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
-                0x0000000030005910                gnat__io__new_line
+                0x0000000030005850       0x14 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x0000000030005850                gnat__io__new_line
  .text.gnat__io__put__3
-                0x0000000030005924       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
-                0x0000000030005924                gnat__io__put__3
+                0x0000000030005864       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x0000000030005864                gnat__io__put__3
  .text.gnat__io__put
-                0x0000000030005944       0x70 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
-                0x0000000030005944                gnat__io__put
+                0x0000000030005884       0x70 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x0000000030005884                gnat__io__put
  .text.gnat__io__put_line
-                0x00000000300059b4       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
-                0x00000000300059b4                gnat__io__put_line
- *fill*         0x00000000300059c4       0x3c 
+                0x00000000300058f4       0x10 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x00000000300058f4                gnat__io__put_line
+ *fill*         0x0000000030005904       0xfc 
  .text          0x0000000030005a00      0x1a0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(handler.o)
                 0x0000000030005a00                __vectors
  .text.system__assertions__raise_assert_failure
@@ -2496,7 +2405,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0xd78
+.debug_aranges  0x0000000000000000      0xd60
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x30 test_s.o
@@ -2525,78 +2434,76 @@ END GROUP
  .debug_aranges
                 0x0000000000000490       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
  .debug_aranges
-                0x00000000000004d0       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
+                0x00000000000004d0       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
  .debug_aranges
-                0x00000000000004e8       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+                0x00000000000004e8       0x18 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
  .debug_aranges
-                0x0000000000000500       0x18 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
+                0x0000000000000500       0x18 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
  .debug_aranges
-                0x0000000000000518       0x18 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+                0x0000000000000518       0xd8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
  .debug_aranges
-                0x0000000000000530       0xd8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+                0x00000000000005f0       0xb0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
  .debug_aranges
-                0x0000000000000608       0xb0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x00000000000006a0       0x88 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
  .debug_aranges
-                0x00000000000006b8       0x88 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x0000000000000728       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
  .debug_aranges
-                0x0000000000000740       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+                0x0000000000000768       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
  .debug_aranges
-                0x0000000000000780       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+                0x00000000000007e0       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
  .debug_aranges
-                0x00000000000007f8       0x58 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+                0x0000000000000838       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
  .debug_aranges
-                0x0000000000000850       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+                0x0000000000000868       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
  .debug_aranges
-                0x0000000000000880       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+                0x00000000000008a0       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
  .debug_aranges
-                0x00000000000008b8       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+                0x0000000000000918       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
  .debug_aranges
-                0x0000000000000930       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+                0x0000000000000938       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
  .debug_aranges
-                0x0000000000000950       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+                0x0000000000000978       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
  .debug_aranges
-                0x0000000000000990       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+                0x00000000000009a8       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
  .debug_aranges
-                0x00000000000009c0       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+                0x00000000000009d0       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
  .debug_aranges
-                0x00000000000009e8       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+                0x0000000000000a48       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
  .debug_aranges
-                0x0000000000000a60       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+                0x0000000000000a88       0xa8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
  .debug_aranges
-                0x0000000000000aa0       0xa8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+                0x0000000000000b30       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
  .debug_aranges
-                0x0000000000000b48       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+                0x0000000000000b50       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
  .debug_aranges
-                0x0000000000000b68       0x18 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
+                0x0000000000000b68       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
  .debug_aranges
-                0x0000000000000b80       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x0000000000000ba8       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
  .debug_aranges
-                0x0000000000000bc0       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+                0x0000000000000bc8       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
  .debug_aranges
-                0x0000000000000be0       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+                0x0000000000000bf0       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
  .debug_aranges
-                0x0000000000000c08       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+                0x0000000000000c10       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
  .debug_aranges
-                0x0000000000000c28       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+                0x0000000000000c30       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
  .debug_aranges
-                0x0000000000000c48       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+                0x0000000000000c50       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
  .debug_aranges
-                0x0000000000000c68       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+                0x0000000000000c90       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
  .debug_aranges
-                0x0000000000000ca8       0x48 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+                0x0000000000000cd8       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
  .debug_aranges
-                0x0000000000000cf0       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+                0x0000000000000cf8       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
  .debug_aranges
-                0x0000000000000d10       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+                0x0000000000000d20       0x20 ../../../glue/veneer_s.o
  .debug_aranges
-                0x0000000000000d38       0x20 ../../../glue/veneer_s.o
- .debug_aranges
-                0x0000000000000d58       0x20 ../../../glue/s_ns.o
+                0x0000000000000d40       0x20 ../../../glue/s_ns.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x1a350
+.debug_info     0x0000000000000000    0x19e60
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0xa35 test_s.o
  .debug_info    0x0000000000000a35      0x4de b__test_s.o
@@ -2611,42 +2518,41 @@ END GROUP
  .debug_info    0x000000000000ab4a      0x21b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
  .debug_info    0x000000000000ad65     0x170c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
  .debug_info    0x000000000000c471      0xc20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
- .debug_info    0x000000000000d091      0x4f0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .debug_info    0x000000000000d581      0x5c5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
- .debug_info    0x000000000000db46       0x41 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
- .debug_info    0x000000000000db87       0x5d /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
- .debug_info    0x000000000000dbe4     0x1137 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
- .debug_info    0x000000000000ed1b      0x877 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
- .debug_info    0x000000000000f592      0xc4e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
- .debug_info    0x00000000000101e0      0x742 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
- .debug_info    0x0000000000010922      0x6c6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
- .debug_info    0x0000000000010fe8      0xdc1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
- .debug_info    0x0000000000011da9       0xb7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
- .debug_info    0x0000000000011e60      0xa5e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
- .debug_info    0x00000000000128be     0x1469 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
- .debug_info    0x0000000000013d27      0x65b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
- .debug_info    0x0000000000014382      0xdd1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
- .debug_info    0x0000000000015153      0xc52 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
- .debug_info    0x0000000000015da5      0x373 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
- .debug_info    0x0000000000016118      0xbc6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
- .debug_info    0x0000000000016cde      0x85e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
- .debug_info    0x000000000001753c     0x12f1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
- .debug_info    0x000000000001882d      0x2be /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
- .debug_info    0x0000000000018aeb      0x157 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
- .debug_info    0x0000000000018c42      0x31f /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
- .debug_info    0x0000000000018f61      0x1b8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
- .debug_info    0x0000000000019119       0xee /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
- .debug_info    0x0000000000019207       0xc3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
- .debug_info    0x00000000000192ca      0x122 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
- .debug_info    0x00000000000193ec      0x13d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
- .debug_info    0x0000000000019529      0x661 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
- .debug_info    0x0000000000019b8a      0x140 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
- .debug_info    0x0000000000019cca      0x548 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
- .debug_info    0x000000000001a212       0x60 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
- .debug_info    0x000000000001a272       0xb8 ../../../glue/veneer_s.o
- .debug_info    0x000000000001a32a       0x26 ../../../glue/s_ns.o
+ .debug_info    0x000000000000d091      0x5c5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+ .debug_info    0x000000000000d656       0x41 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
+ .debug_info    0x000000000000d697       0x5d /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+ .debug_info    0x000000000000d6f4     0x1137 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+ .debug_info    0x000000000000e82b      0x877 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+ .debug_info    0x000000000000f0a2      0xc4e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+ .debug_info    0x000000000000fcf0      0x742 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+ .debug_info    0x0000000000010432      0x6c6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+ .debug_info    0x0000000000010af8      0xdc1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+ .debug_info    0x00000000000118b9       0xb7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+ .debug_info    0x0000000000011970      0xa5e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+ .debug_info    0x00000000000123ce     0x1469 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+ .debug_info    0x0000000000013837      0x65b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+ .debug_info    0x0000000000013e92      0xdd1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+ .debug_info    0x0000000000014c63      0xc52 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+ .debug_info    0x00000000000158b5      0x373 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+ .debug_info    0x0000000000015c28      0xbc6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+ .debug_info    0x00000000000167ee      0x85e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+ .debug_info    0x000000000001704c     0x12f1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+ .debug_info    0x000000000001833d      0x2be /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+ .debug_info    0x00000000000185fb      0x157 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
+ .debug_info    0x0000000000018752      0x31f /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+ .debug_info    0x0000000000018a71      0x1b8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+ .debug_info    0x0000000000018c29       0xee /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+ .debug_info    0x0000000000018d17       0xc3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+ .debug_info    0x0000000000018dda      0x122 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+ .debug_info    0x0000000000018efc      0x13d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+ .debug_info    0x0000000000019039      0x661 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+ .debug_info    0x000000000001969a      0x140 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+ .debug_info    0x00000000000197da      0x548 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+ .debug_info    0x0000000000019d22       0x60 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_info    0x0000000000019d82       0xb8 ../../../glue/veneer_s.o
+ .debug_info    0x0000000000019e3a       0x26 ../../../glue/s_ns.o
 
-.debug_abbrev   0x0000000000000000     0x68ab
+.debug_abbrev   0x0000000000000000     0x67a9
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x2bb test_s.o
  .debug_abbrev  0x00000000000002bb      0x213 b__test_s.o
@@ -2656,47 +2562,46 @@ END GROUP
  .debug_abbrev  0x0000000000000af3      0x45d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
  .debug_abbrev  0x0000000000000f50       0xc2 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
  .debug_abbrev  0x0000000000001012      0x3e0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
- .debug_abbrev  0x00000000000013f2      0x141 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
- .debug_abbrev  0x0000000000001533       0x42 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
- .debug_abbrev  0x0000000000001575      0x125 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
- .debug_abbrev  0x000000000000169a      0x2fb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
- .debug_abbrev  0x0000000000001995      0x2cc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
- .debug_abbrev  0x0000000000001c61      0x11a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .debug_abbrev  0x0000000000001d7b       0xdb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
- .debug_abbrev  0x0000000000001e56       0x28 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
- .debug_abbrev  0x0000000000001e7e       0x28 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
- .debug_abbrev  0x0000000000001ea6      0x34c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
- .debug_abbrev  0x00000000000021f2      0x3c7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
- .debug_abbrev  0x00000000000025b9      0x436 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
- .debug_abbrev  0x00000000000029ef      0x397 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
- .debug_abbrev  0x0000000000002d86      0x375 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
- .debug_abbrev  0x00000000000030fb      0x405 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
- .debug_abbrev  0x0000000000003500       0x99 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
- .debug_abbrev  0x0000000000003599      0x421 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
- .debug_abbrev  0x00000000000039ba      0x5c6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
- .debug_abbrev  0x0000000000003f80      0x232 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
- .debug_abbrev  0x00000000000041b2      0x4f2 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
- .debug_abbrev  0x00000000000046a4      0x3d7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
- .debug_abbrev  0x0000000000004a7b      0x24a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
- .debug_abbrev  0x0000000000004cc5      0x43a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
- .debug_abbrev  0x00000000000050ff      0x35b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
- .debug_abbrev  0x000000000000545a      0x5a1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
- .debug_abbrev  0x00000000000059fb      0x1a9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
- .debug_abbrev  0x0000000000005ba4       0xd3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
- .debug_abbrev  0x0000000000005c77      0x1f4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
- .debug_abbrev  0x0000000000005e6b      0x118 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
- .debug_abbrev  0x0000000000005f83       0xff /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
- .debug_abbrev  0x0000000000006082       0x76 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
- .debug_abbrev  0x00000000000060f8       0xe4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
- .debug_abbrev  0x00000000000061dc       0x95 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
- .debug_abbrev  0x0000000000006271      0x2e9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
- .debug_abbrev  0x000000000000655a       0x8c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
- .debug_abbrev  0x00000000000065e6      0x18e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
- .debug_abbrev  0x0000000000006774       0x63 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
- .debug_abbrev  0x00000000000067d7       0xc0 ../../../glue/veneer_s.o
- .debug_abbrev  0x0000000000006897       0x14 ../../../glue/s_ns.o
+ .debug_abbrev  0x00000000000013f2      0x159 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+ .debug_abbrev  0x000000000000154b       0x42 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
+ .debug_abbrev  0x000000000000158d      0x125 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+ .debug_abbrev  0x00000000000016b2      0x2fb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+ .debug_abbrev  0x00000000000019ad      0x2cc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
+ .debug_abbrev  0x0000000000001c79       0xdb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+ .debug_abbrev  0x0000000000001d54       0x28 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
+ .debug_abbrev  0x0000000000001d7c       0x28 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+ .debug_abbrev  0x0000000000001da4      0x34c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+ .debug_abbrev  0x00000000000020f0      0x3c7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+ .debug_abbrev  0x00000000000024b7      0x436 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+ .debug_abbrev  0x00000000000028ed      0x397 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+ .debug_abbrev  0x0000000000002c84      0x375 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+ .debug_abbrev  0x0000000000002ff9      0x405 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+ .debug_abbrev  0x00000000000033fe       0x99 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+ .debug_abbrev  0x0000000000003497      0x421 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+ .debug_abbrev  0x00000000000038b8      0x5c6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+ .debug_abbrev  0x0000000000003e7e      0x232 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+ .debug_abbrev  0x00000000000040b0      0x4f2 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+ .debug_abbrev  0x00000000000045a2      0x3d7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+ .debug_abbrev  0x0000000000004979      0x24a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+ .debug_abbrev  0x0000000000004bc3      0x43a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+ .debug_abbrev  0x0000000000004ffd      0x35b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+ .debug_abbrev  0x0000000000005358      0x5a1 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+ .debug_abbrev  0x00000000000058f9      0x1a9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+ .debug_abbrev  0x0000000000005aa2       0xd3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
+ .debug_abbrev  0x0000000000005b75      0x1f4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+ .debug_abbrev  0x0000000000005d69      0x118 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+ .debug_abbrev  0x0000000000005e81       0xff /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+ .debug_abbrev  0x0000000000005f80       0x76 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+ .debug_abbrev  0x0000000000005ff6       0xe4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+ .debug_abbrev  0x00000000000060da       0x95 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+ .debug_abbrev  0x000000000000616f      0x2e9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+ .debug_abbrev  0x0000000000006458       0x8c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+ .debug_abbrev  0x00000000000064e4      0x18e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+ .debug_abbrev  0x0000000000006672       0x63 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_abbrev  0x00000000000066d5       0xc0 ../../../glue/veneer_s.o
+ .debug_abbrev  0x0000000000006795       0x14 ../../../glue/s_ns.o
 
-.debug_line     0x0000000000000000     0x72f7
+.debug_line     0x0000000000000000     0x71bb
  *(.debug_line)
  .debug_line    0x0000000000000000      0x24c test_s.o
  .debug_line    0x000000000000024c      0x147 b__test_s.o
@@ -2706,47 +2611,46 @@ END GROUP
  .debug_line    0x000000000000097d      0x854 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
  .debug_line    0x00000000000011d1      0x34f /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
  .debug_line    0x0000000000001520      0x719 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
- .debug_line    0x0000000000001c39      0x189 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
- .debug_line    0x0000000000001dc2       0x95 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
- .debug_line    0x0000000000001e57      0x16d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
- .debug_line    0x0000000000001fc4      0xae3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
- .debug_line    0x0000000000002aa7      0x27e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
- .debug_line    0x0000000000002d25      0x13a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .debug_line    0x0000000000002e5f       0xbe /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
- .debug_line    0x0000000000002f1d       0x1d /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
- .debug_line    0x0000000000002f3a       0x1d /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
- .debug_line    0x0000000000002f57      0x4e5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
- .debug_line    0x000000000000343c      0x338 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
- .debug_line    0x0000000000003774      0x3a4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
- .debug_line    0x0000000000003b18      0x2ab /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
- .debug_line    0x0000000000003dc3      0x328 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
- .debug_line    0x00000000000040eb      0x4e5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
- .debug_line    0x00000000000045d0       0xd3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
- .debug_line    0x00000000000046a3      0x2f9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
- .debug_line    0x000000000000499c      0x4c3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
- .debug_line    0x0000000000004e5f      0x1af /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
- .debug_line    0x000000000000500e      0x3ac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
- .debug_line    0x00000000000053ba      0x3d3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
- .debug_line    0x000000000000578d      0x1ba /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
- .debug_line    0x0000000000005947      0x548 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
- .debug_line    0x0000000000005e8f      0x2c9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
- .debug_line    0x0000000000006158      0x56b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
- .debug_line    0x00000000000066c3       0xf3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
- .debug_line    0x00000000000067b6       0xb7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
- .debug_line    0x000000000000686d      0x177 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
- .debug_line    0x00000000000069e4       0xe6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
- .debug_line    0x0000000000006aca       0xbc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
- .debug_line    0x0000000000006b86       0xcb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
- .debug_line    0x0000000000006c51       0xda /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
- .debug_line    0x0000000000006d2b       0xb9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
- .debug_line    0x0000000000006de4      0x16c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
- .debug_line    0x0000000000006f50      0x16d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
- .debug_line    0x00000000000070bd       0xeb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
- .debug_line    0x00000000000071a8       0xbd /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
- .debug_line    0x0000000000007265       0x43 ../../../glue/veneer_s.o
- .debug_line    0x00000000000072a8       0x4f ../../../glue/s_ns.o
+ .debug_line    0x0000000000001c39      0x188 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+ .debug_line    0x0000000000001dc1       0x95 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
+ .debug_line    0x0000000000001e56      0x16c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+ .debug_line    0x0000000000001fc2      0xae3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+ .debug_line    0x0000000000002aa5      0x27e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
+ .debug_line    0x0000000000002d23       0xbe /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+ .debug_line    0x0000000000002de1       0x1d /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
+ .debug_line    0x0000000000002dfe       0x1d /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+ .debug_line    0x0000000000002e1b      0x4e5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+ .debug_line    0x0000000000003300      0x338 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+ .debug_line    0x0000000000003638      0x3a4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+ .debug_line    0x00000000000039dc      0x2ab /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+ .debug_line    0x0000000000003c87      0x328 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+ .debug_line    0x0000000000003faf      0x4e5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+ .debug_line    0x0000000000004494       0xd3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+ .debug_line    0x0000000000004567      0x2f9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+ .debug_line    0x0000000000004860      0x4c3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+ .debug_line    0x0000000000004d23      0x1af /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+ .debug_line    0x0000000000004ed2      0x3ac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+ .debug_line    0x000000000000527e      0x3d3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+ .debug_line    0x0000000000005651      0x1ba /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+ .debug_line    0x000000000000580b      0x548 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+ .debug_line    0x0000000000005d53      0x2c9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+ .debug_line    0x000000000000601c      0x56b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+ .debug_line    0x0000000000006587       0xf3 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+ .debug_line    0x000000000000667a       0xb7 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
+ .debug_line    0x0000000000006731      0x177 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+ .debug_line    0x00000000000068a8       0xe6 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+ .debug_line    0x000000000000698e       0xbc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+ .debug_line    0x0000000000006a4a       0xcb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+ .debug_line    0x0000000000006b15       0xda /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+ .debug_line    0x0000000000006bef       0xb9 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+ .debug_line    0x0000000000006ca8      0x16c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+ .debug_line    0x0000000000006e14      0x16d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+ .debug_line    0x0000000000006f81       0xeb /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+ .debug_line    0x000000000000706c       0xbd /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_line    0x0000000000007129       0x43 ../../../glue/veneer_s.o
+ .debug_line    0x000000000000716c       0x4f ../../../glue/s_ns.o
 
-.debug_frame    0x0000000000000000     0x303c
+.debug_frame    0x0000000000000000     0x2df8
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x84 test_s.o
  .debug_frame   0x0000000000000084       0x9c b__test_s.o
@@ -2756,138 +2660,135 @@ END GROUP
  .debug_frame   0x00000000000004dc      0x274 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
  .debug_frame   0x0000000000000750      0x110 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
  .debug_frame   0x0000000000000860      0x560 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
- .debug_frame   0x0000000000000dc0       0xec /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
- .debug_frame   0x0000000000000eac       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
- .debug_frame   0x0000000000000edc       0xc0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
- .debug_frame   0x0000000000000f9c      0x6fc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
- .debug_frame   0x0000000000001698       0xd4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
- .debug_frame   0x000000000000176c      0x254 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
- .debug_frame   0x00000000000019c0      0x14c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
- .debug_frame   0x0000000000001b0c       0x60 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
- .debug_frame   0x0000000000001b6c      0x2bc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
- .debug_frame   0x0000000000001e28      0x188 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
- .debug_frame   0x0000000000001fb0      0x170 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
- .debug_frame   0x0000000000002120       0xa4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
- .debug_frame   0x00000000000021c4      0x178 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
- .debug_frame   0x000000000000233c      0x158 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
- .debug_frame   0x0000000000002494       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
- .debug_frame   0x00000000000024d4       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
- .debug_frame   0x000000000000254c      0x188 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
- .debug_frame   0x00000000000026d4       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
- .debug_frame   0x000000000000270c       0xcc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
- .debug_frame   0x00000000000027d8       0x74 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
- .debug_frame   0x000000000000284c       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
- .debug_frame   0x0000000000002884      0x158 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
- .debug_frame   0x00000000000029dc       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
- .debug_frame   0x0000000000002aac      0x1ec /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
- .debug_frame   0x0000000000002c98       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
- .debug_frame   0x0000000000002cc0       0xa8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
- .debug_frame   0x0000000000002d68       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
- .debug_frame   0x0000000000002d94       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
- .debug_frame   0x0000000000002dd4       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
- .debug_frame   0x0000000000002e08       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
- .debug_frame   0x0000000000002e38       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
- .debug_frame   0x0000000000002e58       0xa8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
- .debug_frame   0x0000000000002f00       0x70 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
- .debug_frame   0x0000000000002f70       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
- .debug_frame   0x0000000000002f9c       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
- .debug_frame   0x0000000000002fdc       0x60 ../../../glue/veneer_s.o
+ .debug_frame   0x0000000000000dc0       0xf4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+ .debug_frame   0x0000000000000eb4       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
+ .debug_frame   0x0000000000000ee4       0xc8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+ .debug_frame   0x0000000000000fac      0x6fc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+ .debug_frame   0x00000000000016a8       0xd4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
+ .debug_frame   0x000000000000177c      0x14c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+ .debug_frame   0x00000000000018c8       0x60 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+ .debug_frame   0x0000000000001928      0x2bc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+ .debug_frame   0x0000000000001be4      0x188 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+ .debug_frame   0x0000000000001d6c      0x170 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+ .debug_frame   0x0000000000001edc       0xa4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+ .debug_frame   0x0000000000001f80      0x178 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+ .debug_frame   0x00000000000020f8      0x158 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+ .debug_frame   0x0000000000002250       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+ .debug_frame   0x0000000000002290       0x78 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+ .debug_frame   0x0000000000002308      0x188 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+ .debug_frame   0x0000000000002490       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+ .debug_frame   0x00000000000024c8       0xcc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+ .debug_frame   0x0000000000002594       0x74 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+ .debug_frame   0x0000000000002608       0x38 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+ .debug_frame   0x0000000000002640      0x158 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+ .debug_frame   0x0000000000002798       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+ .debug_frame   0x0000000000002868      0x1ec /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+ .debug_frame   0x0000000000002a54       0x28 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+ .debug_frame   0x0000000000002a7c       0xa8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+ .debug_frame   0x0000000000002b24       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+ .debug_frame   0x0000000000002b50       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+ .debug_frame   0x0000000000002b90       0x34 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+ .debug_frame   0x0000000000002bc4       0x30 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+ .debug_frame   0x0000000000002bf4       0x20 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+ .debug_frame   0x0000000000002c14       0xa8 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+ .debug_frame   0x0000000000002cbc       0x70 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+ .debug_frame   0x0000000000002d2c       0x2c /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+ .debug_frame   0x0000000000002d58       0x40 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_frame   0x0000000000002d98       0x60 ../../../glue/veneer_s.o
 
-.debug_str      0x0000000000000000     0xf3e4
+.debug_str      0x0000000000000000     0xf26c
  *(.debug_str)
  .debug_str     0x0000000000000000      0xf6f test_s.o
                                         0xf9a (size before relaxing)
  .debug_str     0x0000000000000f6f      0x8fb b__test_s.o
                                         0x9bd (size before relaxing)
- .debug_str     0x000000000000186a       0x57 /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/ns_api.o
+ .debug_str     0x000000000000186a      0x234 /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/ns_api.o
                                         0x356 (size before relaxing)
- .debug_str     0x00000000000018c1     0x10bf /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/trace.o
+ .debug_str     0x0000000000001a9e     0x10bf /home/hedley/ada/STM32/L/L562/test/test_s/obj/Debug/trace.o
                                        0x14cc (size before relaxing)
- .debug_str     0x0000000000002980      0x735 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
+ .debug_str     0x0000000000002b5d      0x735 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/boards/lib/stm32l5discovery_s/ravenscar-sfp/Debug/libstm32l5discovery_s.a(stm32-board.o)
                                        0x1363 (size before relaxing)
- .debug_str     0x00000000000030b5     0x3253 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
+ .debug_str     0x0000000000003292     0x3253 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-device.o)
                                        0x40e5 (size before relaxing)
- .debug_str     0x0000000000006308      0x521 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
+ .debug_str     0x00000000000064e5      0x521 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-exti.o)
                                         0x92e (size before relaxing)
- .debug_str     0x0000000000006829      0x4b0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
+ .debug_str     0x0000000000006a06      0x4b0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-gpio.o)
                                        0x18e2 (size before relaxing)
- .debug_str     0x0000000000006cd9      0x165 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
+ .debug_str     0x0000000000006eb6      0x165 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-mpu.o)
                                         0x522 (size before relaxing)
- .debug_str     0x0000000000006e3e       0x84 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
+ .debug_str     0x000000000000701b       0x84 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-rcc.o)
                                         0x434 (size before relaxing)
- .debug_str     0x0000000000006ec2      0x159 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
+ .debug_str     0x000000000000709f      0x159 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
                                         0x487 (size before relaxing)
- .debug_str     0x000000000000701b      0x992 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
+ .debug_str     0x00000000000071f8      0x992 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
                                        0x129c (size before relaxing)
- .debug_str     0x00000000000079ad      0x165 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
+ .debug_str     0x0000000000007b8a      0x165 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
                                         0xf14 (size before relaxing)
- .debug_str     0x0000000000007b12      0x355 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
-                                        0x752 (size before relaxing)
- .debug_str     0x0000000000007e67      0x139 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+ .debug_str     0x0000000000007cef      0x139 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
                                         0x691 (size before relaxing)
- .debug_str     0x0000000000007fa0      0x2a2 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
+ .debug_str     0x0000000000007e28      0x2a2 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
                                         0x2d6 (size before relaxing)
- .debug_str     0x0000000000008242       0x39 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+ .debug_str     0x00000000000080ca       0x39 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
                                         0x31f (size before relaxing)
- .debug_str     0x000000000000827b      0xabc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+ .debug_str     0x0000000000008103      0xabc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
                                         0xb59 (size before relaxing)
- .debug_str     0x0000000000008d37      0x810 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+ .debug_str     0x0000000000008bbf      0x810 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
                                         0xb43 (size before relaxing)
- .debug_str     0x0000000000009547      0xb5b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+ .debug_str     0x00000000000093cf      0xb5b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
                                        0x1101 (size before relaxing)
- .debug_str     0x000000000000a0a2      0x3da /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+ .debug_str     0x0000000000009f2a      0x3da /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
                                         0xc68 (size before relaxing)
- .debug_str     0x000000000000a47c      0x3f4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+ .debug_str     0x000000000000a304      0x3f4 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
                                         0xa64 (size before relaxing)
- .debug_str     0x000000000000a870      0x538 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+ .debug_str     0x000000000000a6f8      0x538 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
                                         0xf45 (size before relaxing)
- .debug_str     0x000000000000ada8      0x184 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+ .debug_str     0x000000000000ac30      0x184 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
                                         0x47b (size before relaxing)
- .debug_str     0x000000000000af2c      0x8ba /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+ .debug_str     0x000000000000adb4      0x8ba /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
                                        0x1334 (size before relaxing)
- .debug_str     0x000000000000b7e6      0x691 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+ .debug_str     0x000000000000b66e      0x691 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
                                        0x177d (size before relaxing)
- .debug_str     0x000000000000be77      0x28d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+ .debug_str     0x000000000000bcff      0x28d /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
                                         0xe70 (size before relaxing)
- .debug_str     0x000000000000c104      0x415 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+ .debug_str     0x000000000000bf8c      0x415 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
                                        0x159d (size before relaxing)
- .debug_str     0x000000000000c519      0x419 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+ .debug_str     0x000000000000c3a1      0x419 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
                                        0x14d5 (size before relaxing)
- .debug_str     0x000000000000c932       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+ .debug_str     0x000000000000c7ba       0xd0 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
                                         0x880 (size before relaxing)
- .debug_str     0x000000000000ca02      0x172 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+ .debug_str     0x000000000000c88a      0x172 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
                                         0xce7 (size before relaxing)
- .debug_str     0x000000000000cb74      0x1ac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+ .debug_str     0x000000000000c9fc      0x1ac /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
                                         0xa14 (size before relaxing)
- .debug_str     0x000000000000cd20      0x4c5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+ .debug_str     0x000000000000cba8      0x4c5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
                                        0x1ae1 (size before relaxing)
- .debug_str     0x000000000000d1e5      0x47f /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+ .debug_str     0x000000000000d06d      0x47f /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
                                         0x51a (size before relaxing)
- .debug_str     0x000000000000d664      0x322 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
+ .debug_str     0x000000000000d4ec      0x322 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
                                         0x3e2 (size before relaxing)
- .debug_str     0x000000000000d986      0x165 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+ .debug_str     0x000000000000d80e      0x165 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
                                         0x461 (size before relaxing)
- .debug_str     0x000000000000daeb      0x28a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+ .debug_str     0x000000000000d973      0x28a /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
                                         0x458 (size before relaxing)
- .debug_str     0x000000000000dd75       0xbc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+ .debug_str     0x000000000000dbfd       0xbc /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
                                         0x336 (size before relaxing)
- .debug_str     0x000000000000de31      0x106 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+ .debug_str     0x000000000000dcb9      0x106 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
                                         0x338 (size before relaxing)
- .debug_str     0x000000000000df37       0xba /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+ .debug_str     0x000000000000ddbf       0xba /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
                                         0x382 (size before relaxing)
- .debug_str     0x000000000000dff1      0x1f5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+ .debug_str     0x000000000000de79      0x1f5 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
                                         0x4a5 (size before relaxing)
- .debug_str     0x000000000000e1e6      0x787 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+ .debug_str     0x000000000000e06e      0x787 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
                                         0xdc4 (size before relaxing)
- .debug_str     0x000000000000e96d      0x23e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+ .debug_str     0x000000000000e7f5      0x23e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
                                         0x555 (size before relaxing)
- .debug_str     0x000000000000ebab      0x63b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+ .debug_str     0x000000000000ea33      0x63b /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
                                         0xa2e (size before relaxing)
- .debug_str     0x000000000000f1e6       0xca /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+ .debug_str     0x000000000000f06e       0xca /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
                                         0x318 (size before relaxing)
- .debug_str     0x000000000000f2b0      0x11e ../../../glue/veneer_s.o
+ .debug_str     0x000000000000f138      0x11e ../../../glue/veneer_s.o
                                         0x126 (size before relaxing)
- .debug_str     0x000000000000f3ce       0x16 ../../../glue/s_ns.o
+ .debug_str     0x000000000000f256       0x16 ../../../glue/s_ns.o
                                          0x3e (size before relaxing)
 
 .debug_loc      0x0000000000000000     0x4ce1
@@ -2978,7 +2879,6 @@ END GROUP
  .comment       0x000000000000003d       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-sau.o)
  .comment       0x000000000000003d       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-spi.o)
  .comment       0x000000000000003d       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
- .comment       0x000000000000003d       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
  .comment       0x000000000000003d       0x3e /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
  .comment       0x000000000000003d       0x3e /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
  .comment       0x000000000000003d       0x3e /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
@@ -3041,79 +2941,77 @@ END GROUP
  .ARM.attributes
                 0x0000000000000294       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32-syscfg.o)
  .ARM.attributes
-                0x00000000000002cb       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-mpu.o)
+                0x00000000000002cb       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
  .ARM.attributes
-                0x0000000000000302       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libstm32l5xx.a(stm32_svd-spi.o)
+                0x0000000000000302       0x37 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
  .ARM.attributes
-                0x0000000000000339       0x37 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-gpio.o)
+                0x0000000000000339       0x37 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
  .ARM.attributes
-                0x0000000000000370       0x37 /home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_s/ravenscar-sfp/Debug/libHAL.a(hal-spi.o)
+                0x0000000000000370       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
  .ARM.attributes
-                0x00000000000003a7       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(a-reatim.o)
+                0x00000000000003a7       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
  .ARM.attributes
-                0x00000000000003de       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbbosu.o)
+                0x00000000000003de       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
  .ARM.attributes
-                0x0000000000000415       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbcppr.o)
+                0x0000000000000415       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
  .ARM.attributes
-                0x000000000000044c       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbinte.o)
+                0x000000000000044c       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
  .ARM.attributes
-                0x0000000000000483       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthqu.o)
+                0x0000000000000483       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
  .ARM.attributes
-                0x00000000000004ba       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtime.o)
+                0x00000000000004ba       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
  .ARM.attributes
-                0x00000000000004f1       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bcpcst.o)
+                0x00000000000004f1       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
  .ARM.attributes
-                0x0000000000000528       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprob.o)
+                0x0000000000000528       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
  .ARM.attributes
-                0x000000000000055f       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tarest.o)
+                0x000000000000055f       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
  .ARM.attributes
-                0x0000000000000596       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tasdeb.o)
+                0x0000000000000596       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
  .ARM.attributes
-                0x00000000000005cd       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taskin.o)
+                0x00000000000005cd       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
  .ARM.attributes
-                0x0000000000000604       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-tpobmu.o)
+                0x0000000000000604       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
  .ARM.attributes
-                0x000000000000063b       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbprot.o)
+                0x000000000000063b       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
  .ARM.attributes
-                0x0000000000000672       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbthre.o)
+                0x0000000000000672       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
  .ARM.attributes
-                0x00000000000006a9       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-bbtiev.o)
+                0x00000000000006a9       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
  .ARM.attributes
-                0x00000000000006e0       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnarl.a(s-taprop.o)
+                0x00000000000006e0       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
  .ARM.attributes
-                0x0000000000000717       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-elchha.o)
+                0x0000000000000717       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
  .ARM.attributes
-                0x000000000000074e       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(a-except.o)
+                0x000000000000074e       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
  .ARM.attributes
-                0x0000000000000785       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(g-io.o)
+                0x0000000000000785       0x21 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(handler.o)
  .ARM.attributes
-                0x00000000000007bc       0x21 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(handler.o)
+                0x00000000000007a6       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
  .ARM.attributes
-                0x00000000000007dd       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-assert.o)
+                0x00000000000007dd       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
  .ARM.attributes
-                0x0000000000000814       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-macres.o)
+                0x0000000000000814       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
  .ARM.attributes
-                0x000000000000084b       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memcop.o)
+                0x000000000000084b       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
  .ARM.attributes
-                0x0000000000000882       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-memset.o)
+                0x0000000000000882       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
  .ARM.attributes
-                0x00000000000008b9       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-parame.o)
+                0x00000000000008b9       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
  .ARM.attributes
-                0x00000000000008f0       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-secsta.o)
+                0x00000000000008f0       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
  .ARM.attributes
-                0x0000000000000927       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-textio.o)
+                0x0000000000000927       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(start-common.o)
  .ARM.attributes
-                0x000000000000095e       0x24 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(start-common.o)
+                0x000000000000094b       0x21 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(start-ram.o)
  .ARM.attributes
-                0x0000000000000982       0x21 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(start-ram.o)
+                0x000000000000096c       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
  .ARM.attributes
-                0x00000000000009a3       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(setup_pll.o)
+                0x00000000000009a3       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
  .ARM.attributes
-                0x00000000000009da       0x37 /home/hedley/ada/STM32/L/L562/test/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_s/sfp/adalib/libgnat.a(s-bbmcpa.o)
+                0x00000000000009da       0x3c ../../../glue/veneer_s.o
  .ARM.attributes
-                0x0000000000000a11       0x3c ../../../glue/veneer_s.o
- .ARM.attributes
-                0x0000000000000a4d       0x28 ../../../glue/s_ns.o
+                0x0000000000000a16       0x28 ../../../glue/s_ns.o
 
 .gnu.attributes
  *(.gnu.attributes)

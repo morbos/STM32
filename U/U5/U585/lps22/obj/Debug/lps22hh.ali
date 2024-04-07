@@ -1,0 +1,241 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5discovery_ns/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_DELAY
+RV NO_DISPATCH
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lps22hh%b		lps22hh.adb		d50ad5fe NE OO PK GE IU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W utils%s		utils.adb		utils.ali
+
+U lps22hh%s		lps22hh.ads		17149d26 BN EE NE OO PK GE
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20200106220410 76789da1 ada%s
+D a-except.ads		20200106220410 291912d5 ada.exceptions%s
+D a-finali.ads		20200106220410 bf4f806b ada.finalization%s
+D a-reatim.ads		20200106220411 4c16970e ada.real_time%s
+D a-stream.ads		20200106220411 119b8fb3 ada.streams%s
+D a-tags.ads		20200106220409 491b781d ada.tags%s
+D a-unccon.ads		20200106220409 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D i-bit_types.ads	20210116193600 880cac16 interfaces.bit_types%s
+D lps22hh.ads		20220417235321 9892523f lps22hh%s
+D lps22hh.adb		20220417235339 a0090d21 lps22hh%b
+D system.ads		20200106220411 db831581 system%s
+D s-bb.ads		20200106220409 09e072ae system.bb%s
+D s-bbbopa.ads		20230122230811 5010154b system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220411 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220411 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220411 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220102204546 045cf410 system.bb.mcu_parameters%s
+D s-bbpara.ads		20210131011912 9bd079f5 system.bb.parameters%s
+D s-bbthre.ads		20200106220411 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220411 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220411 ad086247 system.bb.time%s
+D s-finmas.ads		20200106220410 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200106220410 4ff27390 system.finalization_root%s
+D s-multip.ads		20200106220411 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220411 229b14dd system.os_interface%s
+D s-parame.ads		20200106220411 d106111e system.parameters%s
+D s-pooglo.ads		20200106220409 ede33ef8 system.pool_global%s
+D s-stalib.ads		20200106220409 09bd3940 system.standard_library%s
+D s-stm32.ads		20220103223103 696d39d7 system.stm32%s
+D s-stoele.ads		20200106220410 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200106220409 b16154c2 system.storage_pools%s
+D s-traent.ads		20200106220409 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200106220410 34867c83 system.unsigned_types%s
+D utils.ads		20220417035859 5ff64891 utils%s
+D /media/16T/ada/STM32/U/U5/U585/lps22/gnat.adc  20220416232632 00000000
+G a e
+G c Z s b [lps22hh standard 31 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|3r6 3r34
+X 4 a-reatim.ads
+41K13*Real_Time 182e18 13|3w10 3r38
+51M9*Time<24|46M9>
+61I9*Time_Span<24|81I9>
+68V13*Clock{51M9}<24|134p13> 13|50s19 67s19
+72V14*"+"{51M9} 13|50s25 67s25
+128V13*Milliseconds{61I9} 13|50s27 67s27
+X 8 hal.ads
+34K9*HAL 166e8 12|2w6 2r22 3r6 3r22 13|1r6 1r34
+53M9*UInt8<10|63M9> 12|13r18 14r22 19r18 20r18 25r18 234r61 238r62 13|10r61
+. 12r16 18r62 20r16 35r14 36r14
+66M9*UInt16<10|66M9> 13|61r18
+97M9*UInt32<10|74M9> 13|63r18
+162A9*UInt8_Array(53M9)<integer> 12|26r22 13|60r18
+X 9 hal-i2c.ads
+32K13*I2C 92e12 12|3w10 3r26 13|1w10 1r38
+X 10 interfac.ads
+38K9*Interfaces 184e15 12|1w6 1r22
+49I9*Integer_16<short_integer> 13|62r18
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 12 lps22hh.ads
+7H9 IO_Port 9r35
+9P9 Any_IO_Port(7R9) 12r18 18r18 24r18 33r41 255r41
+11U19 Read 12>7 13>7 14<7 13|14s7 22s7
+12*7 This{9P9}
+13m7 Register{8|53M9}
+14m7 Value{8|53M9} 13|14r42 22r40
+17U19 Write 18>7 19>7 20>7 13|49s7 51s7 66s7
+18*7 This{9P9}
+19m7 Register{8|53M9}
+20m7 Value{8|53M9}
+23U19 Read_Buffer 24>7 25>7 26<7 13|68s7
+24*7 This{9P9}
+25m7 Register{8|53M9}
+26a7 Value{8|162A9}
+31k9*LPS22HH 7z9 9z9 11z19 17z19 23z19 255E9 279l5 279e12 13|5b14 79l5 79t12
+33R9*LPS22HH_Sensor 33d25 234p13 234r38 238p13 238r39 240p14 240r38 242p14
+. 243r29 255c9 258e14 13|10r38 18r39 27r29 58r38
+33*25 Port{9P9} 255r25 13|14r18 22r18 49r19 51r19 66r19 68r25
+36E9*SPI_Serial_Interface_Mode_Selection 38e30 40r8
+37n7*Serial_Interface_4Wire{36E9} 41r7
+38n7*Serial_Interface_3Wire{36E9} 42r7
+44E9*Block_Data_Update_Selection 47e7 49r8 248r22 13|32r22
+45n7*BDU_Continuous{44E9} 50r7
+46n7*BDU_After_MSB_LSB_Rd{44E9} 51r7
+54E9*Low_Pass_Config_Selection 59e7 62r8
+55n7*ODR_By_2{54E9} 63r7
+56n7*ODR_By_2_Alt{54E9} 64r7
+57n7*ODR_By_9{54E9} 65r7
+58n7*ODR_By_20{54E9} 66r7
+69E9*Data_Rate_Power_Mode_Selection 76e7 78r8 244r22 13|28r22
+70n7*Power_Down{69E9} 79r7
+71n7*ODR_1Hz{69E9} 80r7
+72n7*ODR_10Hz{69E9} 81r7
+73n7*ODR_25Hz{69E9} 82r7
+74n7*ODR_50Hz{69E9} 83r7
+75n7*ODR_75Hz{69E9} 84r7
+89E9*One_Shot_Selection 92e7 94r8
+90n7*One_Shot_Idle{89E9} 95r7
+91n7*One_Shot_Acquire{89E9} 96r7
+99E9*SW_Reset_Selection 102e7 104r8
+100n7*Normal{99E9} 105r7
+101n7*SW_Reset{99E9} 106r7 13|47r9
+109E9*I2C_Selection 112e7 114r8 247r22 13|31r22
+110n7*Enabled{109E9} 115r7
+111n7*Disabled{109E9} 116r7
+119E9*Auto_Inc_Selection 122e7 124r8 246r22 13|30r22
+120n7*Disabled{119E9} 125r7
+121n7*Enabled{119E9} 126r7
+129E9*Fifo_Stop_Selection 132e7 134r8
+130n7*Disabled{129E9} 135r7
+131n7*Enabled{129E9} 136r7
+139E9*Fifo_Enable_Selection 142e7 144r8 245r22 13|29r22
+140n7*Disabled{139E9} 145r7
+141n7*Enabled{139E9} 146r7
+149E9*Boot_Selection 152e7 154r8
+150n7*Normal{149E9} 155r7
+151n7*Reboot{149E9} 156r7
+160E9*Int_Sx_Selection 165e7 167r8
+161n7*Data_Signal{160E9} 168r7
+162n7*P_High{160E9} 169r7
+163n7*P_Low{160E9} 170r7
+164n7*P_Low_Or_High{160E9} 171r7
+174E9*Data_Ready_Int_Selection 177e7 179r8
+175n7*Disable{174E9} 180r7
+176n7*Enable{174E9} 181r7
+184E9*Fifo_Overrun_Int_Selection 187e7 189r8
+185n7*Disable{184E9} 190r7
+186n7*Enable{184E9} 191r7
+194E9*Fifo_Watermark_Int_Selection 197e7 199r8
+195n7*Disable{194E9} 200r7
+196n7*Enable{194E9} 201r7
+204E9*Fifo_Full_Int_Selection 207e7 209r8
+205n7*Disable{204E9} 210r7
+206n7*Enable{204E9} 211r7
+214E9*Int_Pad_Selection 217e7 219r8
+215n7*Push_Pull{214E9} 220r7
+216n7*Open_Drain{214E9} 221r7
+224E9*Int_Stance_Selection 227e7 229r8
+225n7*Active_High{224E9} 230r7
+226n7*Active_Low{224E9} 231r7
+234V13*Device_Id{8|53M9} 234=24 13|10b13 16l8 16t17 53s15
+234r24 This{33R9} 13|10b24 14r13
+238V13*Get_Status{8|53M9} 238=25 13|18b13 24l8 24t18
+238r25 This{33R9} 13|18b25 22r13
+240U14*Get_Data 240=24 240<54 240<76 13|58b14 77l8 77t16
+240r24 This{33R9} 13|58b24 66r14 68r20
+240f54 Pressure{float} 13|58b54 74m7
+240f76 Temp{float} 13|58b76 76m7
+242U14*Configure 243=7 244>7 245>7 246>7 247>7 248>7 13|26b14 56l8 56t17
+243r7 This{33R9} 13|27b7 49r14 51r14 53m10 53r10
+244e7 ODR{69E9} 13|28b7 39r9
+245e7 Fifo_Enable{139E9} 13|29b7 44r9
+246e7 Auto_Inc{119E9} 13|30b7 45r9
+247e7 I2C_Stance{109E9} 13|31b7 46r9
+248e7 BDU{44E9} 13|32b7 40r9
+251N4*I_Am_LPS22HH 13|53r28
+257i7 Mode{natural}
+261N4 LPS22HH_WHO_AM_I 13|14r24
+262N4 LPS22HH_CTRL_REG1 13|51r25
+263N4 LPS22HH_CTRL_REG2 13|49r25 66r25
+264N4 LPS22HH_FIFO_CTRL
+265N4 LPS22HH_REF_P
+267N4 LPS22HH_RES_CONF
+269N4 LPS22HH_FIFO_STATUS
+270N4 LPS22HH_STATUS 13|22r24
+271N4 LPS22HH_PRESS_OUT 13|68r31
+272N4 LPS22HH_PRESS_OUT_XL
+273N4 LPS22HH_PRESS_OUT_L
+274N4 LPS22HH_PRESS_OUT_H
+275N4 LPS22HH_TEMP_OUT
+276N4 LPS22HH_TEMP_OUT_L
+277N4 LPS22HH_TEMP_OUT_H
+X 13 lps22hh.adb
+12m7 Result{8|53M9} 14m51 15r14
+20m7 Result{8|53M9} 22m49 23r14
+35m7 Reg1{8|53M9} 38m7 51r44
+36m7 Reg2{8|53M9} 43m7 49r44
+60a7 Buffer{8|162A9} 68m50 69r18 70r18 71r18 75r41 75r60
+61m7 Result{8|66M9}
+62i7 Raw_Temp{10|49I9} 75m7 76r22
+63m7 Result32{8|97M9} 73m34 74r26
+64a7 Dat{37|11A9} 69m7 70m7 71m7 72m7 73r29
+X 24 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 37 utils.ads
+5K9*Utils 13|2w6 2r34 37|57e10
+11A9*Four_UInt8<8|162A9>(8|53M9)<integer> 13|64r18
+37V13*To_Integer_16{10|49I9} 13|75s19
+37m28 MSB{8|53M9} 13|75r53
+37m42 LSB{8|53M9} 13|75r34
+47U14*To_UInt32_From_UInt8 13|73s7
+

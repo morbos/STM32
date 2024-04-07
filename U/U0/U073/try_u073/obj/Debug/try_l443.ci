@@ -1,0 +1,20 @@
+graph: { title: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/L/L443/try_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/src/stm32-board.ads:57:14" shape : ellipse }
+node: { title: "_ada_try_l443" label: "Try_L443\n/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:13:1\n16 bytes (static)" }
+edge: { sourcename: "_ada_try_l443" targetname: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:27:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:26:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:25:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:24:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:22:4" }
+node: { title: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" label: "My_Delay\n/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:16:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:19:13" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:19:31" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:19:33" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:try_l443__my_delay.5572" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/try_l443/src/try_l443.adb:19:25" }
+}

@@ -1,0 +1,41 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb"
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "uart__send_char" label: "Send_Char\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/uart.ads:5:14" shape : ellipse }
+node: { title: "uart__send_message" label: "Send_Message\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/uart.ads:7:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "system__img_uns__image_unsigned" label: "Image_Unsigned\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-imguns.ads:41:14" shape : ellipse }
+node: { title: "read32" label: "Read32\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:21:19" shape : ellipse }
+node: { title: "getpsp" label: "Getpsp\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:19:19" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "wd___elabs" label: "Wd\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.ads:5:1\n8 bytes (static)" }
+edge: { sourcename: "wd___elabs" targetname: "wd__handlerTVIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.ads:7:4" }
+node: { title: "wd__handler__wd_handlerP" label: "Wd_Handlerp\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:18:7\n16 bytes (static)" }
+edge: { sourcename: "wd__handler__wd_handlerP" targetname: "system__tasking__protected_objects__unlock" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:18:7" }
+edge: { sourcename: "wd__handler__wd_handlerP" targetname: "wd__handler__wd_handlerN" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:18:7" }
+edge: { sourcename: "wd__handler__wd_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:18:7" }
+node: { title: "wd__handler__wd_handlerN" label: "Wd_Handlern\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:18:7\n144 bytes (static)" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_char" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:42:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_char" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:41:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_message" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:40:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:39:23" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "system__img_uns__image_unsigned" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:39:23" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "read32" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:38:13" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_char" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:37:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_char" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:36:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_message" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:35:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_char" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:34:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_char" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:33:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "uart__send_message" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:32:10" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "memcpy" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:31:23" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "system__img_uns__image_unsigned" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:31:23" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "read32" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:29:13" }
+edge: { sourcename: "wd__handler__wd_handlerN" targetname: "getpsp" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.adb:28:14" }
+node: { title: "wd__finalize_spec" label: "Finalize_Spec\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.ads:5:1\n8 bytes (static)" }
+node: { title: "wd__handlerTVIP" label: "Handlertvip\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.ads:7:4\n40 bytes (static)" }
+edge: { sourcename: "wd__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.ads:7:4" }
+edge: { sourcename: "wd__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/wd.ads:7:4" }
+}

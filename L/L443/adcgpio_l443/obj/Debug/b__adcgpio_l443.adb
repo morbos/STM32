@@ -10,28 +10,30 @@ package body ada_main is
    E080 : Short_Integer; pragma Import (Ada, E080, "system__bb__timing_events_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "system__soft_links_E");
    E092 : Short_Integer; pragma Import (Ada, E092, "system__exception_table_E");
-   E155 : Short_Integer; pragma Import (Ada, E155, "ada__streams_E");
-   E164 : Short_Integer; pragma Import (Ada, E164, "system__finalization_root_E");
-   E162 : Short_Integer; pragma Import (Ada, E162, "ada__finalization_E");
-   E166 : Short_Integer; pragma Import (Ada, E166, "system__storage_pools_E");
-   E159 : Short_Integer; pragma Import (Ada, E159, "system__finalization_masters_E");
-   E117 : Short_Integer; pragma Import (Ada, E117, "ada__real_time_E");
-   E168 : Short_Integer; pragma Import (Ada, E168, "system__pool_global_E");
-   E157 : Short_Integer; pragma Import (Ada, E157, "hal__gpio_E");
-   E175 : Short_Integer; pragma Import (Ada, E175, "hal__i2c_E");
-   E179 : Short_Integer; pragma Import (Ada, E179, "hal__real_time_clock_E");
-   E187 : Short_Integer; pragma Import (Ada, E187, "hal__spi_E");
-   E121 : Short_Integer; pragma Import (Ada, E121, "stm32__adc_E");
-   E138 : Short_Integer; pragma Import (Ada, E138, "stm32__dac_E");
-   E150 : Short_Integer; pragma Import (Ada, E150, "stm32__exti_E");
-   E174 : Short_Integer; pragma Import (Ada, E174, "stm32__i2c_E");
-   E181 : Short_Integer; pragma Import (Ada, E181, "stm32__power_control_E");
-   E146 : Short_Integer; pragma Import (Ada, E146, "stm32__rcc_E");
-   E178 : Short_Integer; pragma Import (Ada, E178, "stm32__rtc_E");
-   E185 : Short_Integer; pragma Import (Ada, E185, "stm32__spi_E");
-   E144 : Short_Integer; pragma Import (Ada, E144, "stm32__gpio_E");
-   E132 : Short_Integer; pragma Import (Ada, E132, "stm32__device_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "stm32__syscfg_E");
+   E164 : Short_Integer; pragma Import (Ada, E164, "ada__streams_E");
+   E173 : Short_Integer; pragma Import (Ada, E173, "system__finalization_root_E");
+   E171 : Short_Integer; pragma Import (Ada, E171, "ada__finalization_E");
+   E175 : Short_Integer; pragma Import (Ada, E175, "system__storage_pools_E");
+   E168 : Short_Integer; pragma Import (Ada, E168, "system__finalization_masters_E");
+   E118 : Short_Integer; pragma Import (Ada, E118, "ada__real_time_E");
+   E177 : Short_Integer; pragma Import (Ada, E177, "system__pool_global_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "cortex_m__debug_E");
+   E166 : Short_Integer; pragma Import (Ada, E166, "hal__gpio_E");
+   E184 : Short_Integer; pragma Import (Ada, E184, "hal__i2c_E");
+   E188 : Short_Integer; pragma Import (Ada, E188, "hal__real_time_clock_E");
+   E196 : Short_Integer; pragma Import (Ada, E196, "hal__spi_E");
+   E121 : Short_Integer; pragma Import (Ada, E121, "semihosting_E");
+   E130 : Short_Integer; pragma Import (Ada, E130, "stm32__adc_E");
+   E147 : Short_Integer; pragma Import (Ada, E147, "stm32__dac_E");
+   E159 : Short_Integer; pragma Import (Ada, E159, "stm32__exti_E");
+   E183 : Short_Integer; pragma Import (Ada, E183, "stm32__i2c_E");
+   E190 : Short_Integer; pragma Import (Ada, E190, "stm32__power_control_E");
+   E155 : Short_Integer; pragma Import (Ada, E155, "stm32__rcc_E");
+   E187 : Short_Integer; pragma Import (Ada, E187, "stm32__rtc_E");
+   E194 : Short_Integer; pragma Import (Ada, E194, "stm32__spi_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "stm32__gpio_E");
+   E141 : Short_Integer; pragma Import (Ada, E141, "stm32__device_E");
+   E157 : Short_Integer; pragma Import (Ada, E157, "stm32__syscfg_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -137,49 +139,51 @@ package body ada_main is
       E092 := E092 + 1;
       E094 := E094 + 1;
       Ada.Streams'Elab_Spec;
-      E155 := E155 + 1;
-      System.Finalization_Root'Elab_Spec;
       E164 := E164 + 1;
+      System.Finalization_Root'Elab_Spec;
+      E173 := E173 + 1;
       Ada.Finalization'Elab_Spec;
-      E162 := E162 + 1;
+      E171 := E171 + 1;
       System.Storage_Pools'Elab_Spec;
-      E166 := E166 + 1;
+      E175 := E175 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E159 := E159 + 1;
-      Ada.Real_Time'Elab_Body;
-      E117 := E117 + 1;
-      System.Pool_Global'Elab_Spec;
       E168 := E168 + 1;
+      Ada.Real_Time'Elab_Body;
+      E118 := E118 + 1;
+      System.Pool_Global'Elab_Spec;
+      E177 := E177 + 1;
+      E124 := E124 + 1;
       HAL.GPIO'ELAB_SPEC;
-      E157 := E157 + 1;
+      E166 := E166 + 1;
       HAL.I2C'ELAB_SPEC;
-      E175 := E175 + 1;
+      E184 := E184 + 1;
       HAL.REAL_TIME_CLOCK'ELAB_SPEC;
-      E179 := E179 + 1;
+      E188 := E188 + 1;
       HAL.SPI'ELAB_SPEC;
-      E187 := E187 + 1;
-      STM32.ADC'ELAB_SPEC;
+      E196 := E196 + 1;
       E121 := E121 + 1;
-      E138 := E138 + 1;
-      E150 := E150 + 1;
+      STM32.ADC'ELAB_SPEC;
+      E130 := E130 + 1;
+      E147 := E147 + 1;
+      E159 := E159 + 1;
       STM32.I2C'ELAB_SPEC;
       STM32.I2C'ELAB_BODY;
-      E174 := E174 + 1;
-      E181 := E181 + 1;
-      E146 := E146 + 1;
+      E183 := E183 + 1;
+      E190 := E190 + 1;
+      E155 := E155 + 1;
       STM32.RTC'ELAB_SPEC;
       STM32.RTC'ELAB_BODY;
-      E178 := E178 + 1;
+      E187 := E187 + 1;
       STM32.SPI'ELAB_SPEC;
       STM32.SPI'ELAB_BODY;
-      E185 := E185 + 1;
+      E194 := E194 + 1;
       STM32.GPIO'ELAB_SPEC;
       STM32.DEVICE'ELAB_SPEC;
-      E132 := E132 + 1;
-      E148 := E148 + 1;
+      E141 := E141 + 1;
+      E157 := E157 + 1;
       STM32.GPIO'ELAB_BODY;
-      E144 := E144 + 1;
+      E153 := E153 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -205,19 +209,19 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /home/hedley/ada/STM32/L/L443/adcgpio_l443/obj/Debug/adcgpio_l443.o
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/obj/Debug/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/obj/Debug/
-   --   -L/home/hedley/ada/STM32/L/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
+   --   /media/16T/ada/STM32/L/L443/adcgpio_l443/obj/Debug/adcgpio_l443.o
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/obj/Debug/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/obj/Debug/
+   --   -L/media/16T/ada/STM32/L/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/boards/lib/stm32l443bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4bluepill/full/adalib/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/components/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/STM32/L/L443/adcgpio_l443/Ada_Drivers_Library/middleware/lib/stm32l4bluepill/ravenscar-full/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

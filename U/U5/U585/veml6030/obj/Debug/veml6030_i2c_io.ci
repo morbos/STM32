@@ -1,0 +1,127 @@
+edge: { sourcename: "veml6030_i2c_io__Tio_portCFD"
+  targetname: "-9:veml6030_i2c_io__io_port,veml6030_i2c_io__io_port"
+  label: "veml6030_i2c_io.ads:7:9"
+}
+class {
+  classname: "veml6030_i2c_io__io_port"
+  label: "veml6030_i2c_io__io_port\veml6030_i2c_io.ads:7:9"
+  virtuals: "-1:veml6030_i2c_io___size\n
+             -2:veml6030_i2c_io__io_portSR\n
+             -3:veml6030_i2c_io__io_portSW\n
+             -4:veml6030_i2c_io__io_portSI\n
+             -5:veml6030_i2c_io__io_portSO\n
+             -6:veml6030_i2c_io__Oeq\n
+             -7:veml6030_i2c_io___assign\n
+             -8:veml6030_i2c_io__io_portDA\n
+             -9:veml6030_i2c_io__io_portDF"
+}
+edge: { sourcename: "veml6030_i2c_io__read"
+  targetname: "5:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "veml6030_i2c_io.adb:15:7"
+}
+edge: { sourcename: "veml6030_i2c_io__write"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "veml6030_i2c_io.adb:40:7"
+}
+edge: { sourcename: "veml6030_i2c_io__read_buffer"
+  targetname: "5:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "veml6030_i2c_io.adb:63:7"
+}
+edge: { sourcename: "veml6030_i2c_io__write_buffer"
+  targetname: "4:hal__i2c__i2c_port,hal__i2c__i2c_port"
+  label: "veml6030_i2c_io.adb:82:7"
+}
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:552:14" shape : ellipse }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:465:14" shape : ellipse }
+node: { title: "system__finalization_masters__set_finalize_address" label: "Set_Finalize_Address\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:126:14" shape : ellipse }
+node: { title: "system__finalization_masters__set_base_pool" label: "Set_Base_Pool\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:201:14" shape : ellipse }
+node: { title: "system__finalization_masters__initialize__2" label: "Initialize\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:198:25" shape : ellipse }
+node: { title: "system__finalization_masters__finalization_masterIP" label: "Finalization_Masterip\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:161:9" shape : ellipse }
+node: { title: "__gnat_raise_exception" label: "Raise_Exception_Always\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-except.ads:188:14" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "system__img_enum_new__image_enumeration_8" label: "Image_Enumeration_8\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-imenne.ads:48:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Access_Check" label: "gnat_rcheck_CE_Access_Check\n<built-in>" shape : ellipse }
+node: { title: "__gnat_end_handler" label: "gnat_end_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_begin_handler" label: "gnat_begin_handler\n<built-in>" shape : ellipse }
+node: { title: "system__finalization_masters__finalize" label: "Finalize\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-finmas.ads:96:25" shape : ellipse }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/a-tags.ads:588:14" shape : ellipse }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-secsta.ads:58:14" shape : ellipse }
+node: { title: "system__stream_attributes__w_su" label: "W_Su\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:150:14" shape : ellipse }
+node: { title: "system__stream_attributes__w_as" label: "W_As\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:133:14" shape : ellipse }
+node: { title: "system__stream_attributes__i_su" label: "I_Su\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:118:13" shape : ellipse }
+node: { title: "system__stream_attributes__i_as" label: "I_As\n/media/16T/ada/STM32/U/U5/U585/veml6030/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/common/s-stratt.ads:102:13" shape : ellipse }
+node: { title: "veml6030_i2c_io___elabs" label: "VEML6030_I2C_IO\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:5:1\n8 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io___elabs" targetname: "ada__tags__register_tag" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+edge: { sourcename: "veml6030_i2c_io___elabs" targetname: "ada__tags__check_tsd" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+edge: { sourcename: "veml6030_i2c_io___elabs" targetname: "system__finalization_masters__set_finalize_address" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:12:9" }
+edge: { sourcename: "veml6030_i2c_io___elabs" targetname: "system__finalization_masters__set_base_pool" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:12:9" }
+edge: { sourcename: "veml6030_i2c_io___elabs" targetname: "system__finalization_masters__initialize__2" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:12:9" }
+edge: { sourcename: "veml6030_i2c_io___elabs" targetname: "system__finalization_masters__finalization_masterIP" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:12:9" }
+node: { title: "veml6030_i2c_io__write_buffer" label: "WRITE_BUFFER\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:75:4\n128 bytes (dynamic)" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:90:10" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "memcpy" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "system__img_enum_new__image_enumeration_8" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:90:69" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:90:63" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:82:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:84:14" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:83:20" }
+edge: { sourcename: "veml6030_i2c_io__write_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:83:14" }
+node: { title: "veml6030_i2c_io__read_buffer" label: "READ_BUFFER\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:56:4\n128 bytes (dynamic)" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:71:10" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "memcpy" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "system__img_enum_new__image_enumeration_8" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:71:66" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:71:60" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:63:7" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:65:14" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:64:20" }
+edge: { sourcename: "veml6030_i2c_io__read_buffer" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:64:14" }
+node: { title: "veml6030_i2c_io__write" label: "WRITE\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:32:4\n128 bytes (dynamic)" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:48:10" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "memcpy" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "system__img_enum_new__image_enumeration_8" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:48:62" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:48:56" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:40:7" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:42:14" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:41:20" }
+edge: { sourcename: "veml6030_i2c_io__write" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:41:14" }
+node: { title: "veml6030_i2c_io__read" label: "READ\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:7:4\n128 bytes (dynamic)" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "_Unwind_Resume" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "__gnat_raise_exception" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:23:10" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "memcpy" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "system__img_enum_new__image_enumeration_8" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:23:61" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:23:55" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:15:7" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:17:14" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:16:20" }
+edge: { sourcename: "veml6030_i2c_io__read" targetname: "__gnat_rcheck_CE_Access_Check" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.adb:16:14" }
+node: { title: "veml6030_i2c_io__finalize_spec" label: "FINALIZE_SPEC\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:5:1\n16 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io__finalize_spec" targetname: "__gnat_end_handler" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:5:1" }
+edge: { sourcename: "veml6030_i2c_io__finalize_spec" targetname: "__gnat_begin_handler" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:5:1" }
+edge: { sourcename: "veml6030_i2c_io__finalize_spec" targetname: "_Unwind_Resume" }
+edge: { sourcename: "veml6030_i2c_io__finalize_spec" targetname: "system__finalization_masters__finalize" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:12:9" }
+edge: { sourcename: "veml6030_i2c_io__finalize_spec" targetname: "ada__tags__unregister_tag" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:5:1" }
+node: { title: "veml6030_i2c_io__Tio_portCFD" label: "TIO_PORTCFD\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n32 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io__Tio_portCFD" targetname: "__indirect_call" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+node: { title: "veml6030_i2c_io__io_portDF" label: "IO_PORTDF\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n16 bytes (static)" }
+node: { title: "veml6030_i2c_io__io_portDA" label: "IO_PORTDA\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n16 bytes (static)" }
+node: { title: "veml6030_i2c_io___assign" label: "VEML6030_I2C_IO\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n440 bytes (static)" }
+node: { title: "veml6030_i2c_io__Oeq" label: "=\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:4\n16 bytes (static)" }
+node: { title: "veml6030_i2c_io__io_portSO" label: "IO_PORTSO\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n24 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io__io_portSO" targetname: "veml6030_i2c_io__io_portSW" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+node: { title: "veml6030_i2c_io__io_portSI" label: "IO_PORTSI\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n40 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io__io_portSI" targetname: "system__secondary_stack__ss_allocate" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+edge: { sourcename: "veml6030_i2c_io__io_portSI" targetname: "veml6030_i2c_io__io_portSR" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+edge: { sourcename: "veml6030_i2c_io__io_portSI" targetname: "veml6030_i2c_io__io_portIP" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+node: { title: "veml6030_i2c_io__io_portSW" label: "IO_PORTSW\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n24 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io__io_portSW" targetname: "system__stream_attributes__w_su" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+edge: { sourcename: "veml6030_i2c_io__io_portSW" targetname: "system__stream_attributes__w_as" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+node: { title: "veml6030_i2c_io__io_portSR" label: "IO_PORTSR\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n24 bytes (static)" }
+edge: { sourcename: "veml6030_i2c_io__io_portSR" targetname: "system__stream_attributes__i_su" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+edge: { sourcename: "veml6030_i2c_io__io_portSR" targetname: "system__stream_attributes__i_as" label: "/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9" }
+node: { title: "veml6030_i2c_io___size" label: "VEML6030_I2C_IO\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n16 bytes (static)" }
+node: { title: "veml6030_i2c_io__io_portIP" label: "IO_PORTIP\n/media/16T/ada/STM32/U/U5/U585/veml6030/src/veml6030_i2c_io.ads:7:9\n16 bytes (static)" }
+}

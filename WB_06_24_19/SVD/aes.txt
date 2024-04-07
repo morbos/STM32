@@ -1,0 +1,151 @@
+0x0000
+AES_CR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+NPBLB[3:0]
+Res.
+KEYSIZE
+Res.
+CHMOD[2]
+Res.
+GCMPH[1:0]
+DMAOUTEN
+DMAINEN
+ERRIE
+CCFIE
+ERRC
+CCFC
+CHMOD[1:0]
+MODE[1:0]
+DATATYPE[1:0]
+EN
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0004
+AES_SR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+BUSY
+WRERR
+RDERR
+CCF
+Reset value 0 0 0 0
+0x0008
+AES_DINR
+DIN[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x000C
+AES_DOUTR
+DOUT[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0010
+AES_KEYR0
+KEY[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0014
+AES_KEYR1
+KEY[63:32]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0018
+AES_KEYR2
+KEY[95:64]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x001C
+AES_KEYR3
+KEY[127:96]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0020
+AES_IVR0
+IVI[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0024
+AES_IVR1
+IVI[63:32]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0028
+AES_IVR2
+IVI[95:64]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x002C
+AES_IVR3
+IVI[127:96]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0030
+AES_KEYR4
+KEY[159:128]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0034
+AES_KEYR5
+KEY[191:160]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0038
+AES_KEYR6
+KEY[223:192]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x003C
+AES_KEYR7
+KEY[255:224]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0040
+AES_SUSP0R
+SUSP0[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0044
+AES_SUSP1R
+SUSP1[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0048
+AES_SUSP2R
+SUSP2[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x004C
+AES_SUSP3R
+SUSP3[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0050
+AES_SUSP4R
+SUSP4[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0054
+AES_SUSP5R
+SUSP5[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x0058
+AES_SUSP6R
+SUSP6[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x005C
+AES_SUSP7R
+SUSP7[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

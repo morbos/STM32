@@ -1,0 +1,26 @@
+graph: { title: "b__shutdown_u073.adb"
+node: { title: "_ada_shutdown_u073" label: "ada_main_program\nb__shutdown_u073.adb:73:14" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__shutdown_u073.adb:31:17" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e36b\nb__shutdown_u073.adb:65:19" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e34b\nb__shutdown_u073.adb:57:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "e32b\nb__shutdown_u073.adb:55:55" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e30b\nb__shutdown_u073.adb:53:39" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e28b\nb__shutdown_u073.adb:51:20" shape : ellipse }
+node: { title: "ada_main___elabb" label: "e26b\nb__shutdown_u073.adb:45:15" shape : ellipse }
+node: { title: "system__secondary_stack__ss_stackIP" label: "Ss_Stackip\n/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/../../base_runtimes/ravenscar-ssfp/common/s-secsta.ads:106:9" shape : ellipse }
+node: { title: "ada_main___elabb" label: "ada_main\nb__shutdown_u073.adb:7:1\n8 bytes (static)" }
+edge: { sourcename: "ada_main___elabb" targetname: "ada_main__Tsec_default_sized_stacksBIP" label: "b__shutdown_u073.adb:24:4" }
+node: { title: "main" label: "main\nb__shutdown_u073.adb:76:4\n16 bytes (static)" }
+edge: { sourcename: "main" targetname: "_ada_shutdown_u073" label: "b__shutdown_u073.adb:82:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__shutdown_u073.adb:81:7" }
+node: { title: "adainit" label: "adainit\nb__shutdown_u073.adb:27:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__shutdown_u073.adb:70:7" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__shutdown_u073.adb:65:19" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__shutdown_u073.adb:57:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects__multiprocessors___elabb" label: "b__shutdown_u073.adb:55:55" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__shutdown_u073.adb:53:39" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__shutdown_u073.adb:51:20" }
+edge: { sourcename: "adainit" targetname: "ada_main___elabb" label: "b__shutdown_u073.adb:45:15" }
+node: { title: "ada_main__Tsec_default_sized_stacksBIP" label: "tsec_default_sized_stacksbip\nb__shutdown_u073.adb:24:4\n32 bytes (static)" }
+edge: { sourcename: "ada_main__Tsec_default_sized_stacksBIP" targetname: "system__secondary_stack__ss_stackIP" label: "b__shutdown_u073.adb:24:4" }
+}

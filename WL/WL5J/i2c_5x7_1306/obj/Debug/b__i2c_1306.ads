@@ -68,8 +68,8 @@ package ada_main is
    --  system.img_uns%s
    --  system.img_uns%b
    --  system.stm32%s
-   --  system.bb.parameters%s
    --  system.stm32%b
+   --  system.bb.parameters%s
    --  system.text_io%s
    --  system.text_io%b
    --  system.io%s
@@ -196,6 +196,7 @@ package ada_main is
    --  stm32_svd.rcc%s
    --  stm32_svd.spi%s
    --  stm32_svd.syscfg%s
+   --  stm32_svd.usart%s
    --  hal.bitmap%s
    --  bitmap_color_conversion%s
    --  bitmap_color_conversion%b
@@ -204,6 +205,9 @@ package ada_main is
    --  hal.i2c%s
    --  hal.spi%s
    --  hal.time%s
+   --  hal.uart%s
+   --  logcmd%s
+   --  logcmd%b
    --  ravenscar_time%s
    --  ravenscar_time%b
    --  soft_drawing_bitmap%s
@@ -216,6 +220,7 @@ package ada_main is
    --  fonts.font1%s
    --  fonts%b
    --  stm32.adc%s
+   --  stm32.adc%b
    --  stm32.crc%s
    --  stm32.crc%b
    --  stm32.dma%s
@@ -232,11 +237,13 @@ package ada_main is
    --  stm32.timers%s
    --  stm32.timers%b
    --  stm32.gpio%s
+   --  stm32.syscfg%s
+   --  stm32.gpio%b
+   --  stm32.usarts%s
    --  stm32.device%s
    --  stm32.device%b
-   --  stm32.syscfg%s
    --  stm32.syscfg%b
-   --  stm32.gpio%b
+   --  stm32.usarts%b
    --  peripherals%s
    --  stm32.board%s
    --  stm32.board%b

@@ -91,6 +91,7 @@ package ada_main is
    --  hal%s
    --  stm32%s
    --  stm32_svd%s
+   --  stm32_svd.dac%s
    --  stm32_svd.exti%s
    --  stm32_svd.gpio%s
    --  stm32_svd.nvic%s
@@ -100,6 +101,8 @@ package ada_main is
    --  stm32_svd.syscfg%s
    --  hal.gpio%s
    --  hal.spi%s
+   --  stm32.dac%s
+   --  stm32.dac%b
    --  stm32.exti%s
    --  stm32.exti%b
    --  stm32.rcc%s

@@ -1,0 +1,86 @@
+graph: { title: "b__shutdown_l443.adb"
+node: { title: "__gnat_finalize" label: "finalize\nb__shutdown_l443.adb:210:17" shape : ellipse }
+node: { title: "_ada_shutdown_l443" label: "ada_main_program\nb__shutdown_l443.adb:203:14" shape : ellipse }
+node: { title: "__gnat_initialize" label: "initialize\nb__shutdown_l443.adb:207:17" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__shutdown_l443.adb:104:17" shape : ellipse }
+node: { title: "stm32__gpio___elabb" label: "e123b\nb__shutdown_l443.adb:197:17" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e121b\nb__shutdown_l443.adb:194:19" shape : ellipse }
+node: { title: "stm32__gpio___elabs" label: "e119b\nb__shutdown_l443.adb:193:17" shape : ellipse }
+node: { title: "stm32__spi___elabb" label: "e117b\nb__shutdown_l443.adb:191:16" shape : ellipse }
+node: { title: "stm32__spi___elabs" label: "e115b\nb__shutdown_l443.adb:190:16" shape : ellipse }
+node: { title: "stm32__rtc___elabb" label: "e113b\nb__shutdown_l443.adb:188:16" shape : ellipse }
+node: { title: "stm32__rtc___elabs" label: "e111b\nb__shutdown_l443.adb:187:16" shape : ellipse }
+node: { title: "stm32__i2c___elabb" label: "e109b\nb__shutdown_l443.adb:183:16" shape : ellipse }
+node: { title: "stm32__i2c___elabs" label: "e107b\nb__shutdown_l443.adb:182:16" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e105b\nb__shutdown_l443.adb:178:16" shape : ellipse }
+node: { title: "hal__spi___elabs" label: "e103b\nb__shutdown_l443.adb:176:14" shape : ellipse }
+node: { title: "hal__real_time_clock___elabs" label: "e101b\nb__shutdown_l443.adb:174:26" shape : ellipse }
+node: { title: "hal__i2c___elabs" label: "e99b\nb__shutdown_l443.adb:172:14" shape : ellipse }
+node: { title: "hal__gpio___elabs" label: "e97b\nb__shutdown_l443.adb:170:15" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e95b\nb__shutdown_l443.adb:168:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "e93b\nb__shutdown_l443.adb:166:55" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e91b\nb__shutdown_l443.adb:164:39" shape : ellipse }
+node: { title: "system__pool_global___elabs" label: "e89b\nb__shutdown_l443.adb:162:25" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e87b\nb__shutdown_l443.adb:160:20" shape : ellipse }
+node: { title: "system__finalization_masters___elabb" label: "e85b\nb__shutdown_l443.adb:158:34" shape : ellipse }
+node: { title: "system__finalization_masters___elabs" label: "e83b\nb__shutdown_l443.adb:157:34" shape : ellipse }
+node: { title: "system__storage_pools___elabs" label: "e81b\nb__shutdown_l443.adb:155:27" shape : ellipse }
+node: { title: "ada__finalization___elabs" label: "e79b\nb__shutdown_l443.adb:153:23" shape : ellipse }
+node: { title: "system__finalization_root___elabs" label: "e77b\nb__shutdown_l443.adb:151:31" shape : ellipse }
+node: { title: "ada__streams___elabs" label: "e75b\nb__shutdown_l443.adb:149:18" shape : ellipse }
+node: { title: "system__exception_table___elabb" label: "e73b\nb__shutdown_l443.adb:146:29" shape : ellipse }
+node: { title: "ada__tags___elabb" label: "e71b\nb__shutdown_l443.adb:144:15" shape : ellipse }
+node: { title: "system__soft_links___elabs" label: "e69b\nb__shutdown_l443.adb:143:24" shape : ellipse }
+node: { title: "system__bb__timing_events___elabs" label: "e67b\nb__shutdown_l443.adb:141:30" shape : ellipse }
+node: { title: "__gnat_runtime_initialize" label: "runtime_initialize\nb__shutdown_l443.adb:99:17" shape : ellipse }
+node: { title: "ada_main___elabb" label: "e65b\nb__shutdown_l443.adb:134:15" shape : ellipse }
+node: { title: "system__standard_library__adafinal" label: "s_stalib_adafinal\nb__shutdown_l443.adb:48:17" shape : ellipse }
+node: { title: "__gnat_runtime_finalize" label: "runtime_finalize\nb__shutdown_l443.adb:51:17" shape : ellipse }
+node: { title: "system__secondary_stack__ss_stackIP" label: "Ss_Stackip\n/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/../../base_runtimes/ravenscar-full/common/s-secsta.ads:106:9" shape : ellipse }
+node: { title: "ada_main___elabb" label: "ada_main\nb__shutdown_l443.adb:7:1\n16 bytes (static)" }
+edge: { sourcename: "ada_main___elabb" targetname: "ada_main__Tsec_default_sized_stacksBIP" label: "b__shutdown_l443.adb:40:4" }
+node: { title: "main" label: "main\nb__shutdown_l443.adb:206:4\n24 bytes (static)" }
+edge: { sourcename: "main" targetname: "__gnat_finalize" label: "b__shutdown_l443.adb:222:7" }
+edge: { sourcename: "main" targetname: "adafinal" label: "b__shutdown_l443.adb:221:7" }
+edge: { sourcename: "main" targetname: "_ada_shutdown_l443" label: "b__shutdown_l443.adb:220:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__shutdown_l443.adb:219:7" }
+edge: { sourcename: "main" targetname: "__gnat_initialize" label: "b__shutdown_l443.adb:218:7" }
+node: { title: "adainit" label: "adainit\nb__shutdown_l443.adb:63:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__shutdown_l443.adb:200:7" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabb" label: "b__shutdown_l443.adb:197:17" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__shutdown_l443.adb:194:19" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabs" label: "b__shutdown_l443.adb:193:17" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabb" label: "b__shutdown_l443.adb:191:16" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabs" label: "b__shutdown_l443.adb:190:16" }
+edge: { sourcename: "adainit" targetname: "stm32__rtc___elabb" label: "b__shutdown_l443.adb:188:16" }
+edge: { sourcename: "adainit" targetname: "stm32__rtc___elabs" label: "b__shutdown_l443.adb:187:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabb" label: "b__shutdown_l443.adb:183:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabs" label: "b__shutdown_l443.adb:182:16" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__shutdown_l443.adb:178:16" }
+edge: { sourcename: "adainit" targetname: "hal__spi___elabs" label: "b__shutdown_l443.adb:176:14" }
+edge: { sourcename: "adainit" targetname: "hal__real_time_clock___elabs" label: "b__shutdown_l443.adb:174:26" }
+edge: { sourcename: "adainit" targetname: "hal__i2c___elabs" label: "b__shutdown_l443.adb:172:14" }
+edge: { sourcename: "adainit" targetname: "hal__gpio___elabs" label: "b__shutdown_l443.adb:170:15" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__shutdown_l443.adb:168:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects__multiprocessors___elabb" label: "b__shutdown_l443.adb:166:55" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__shutdown_l443.adb:164:39" }
+edge: { sourcename: "adainit" targetname: "system__pool_global___elabs" label: "b__shutdown_l443.adb:162:25" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__shutdown_l443.adb:160:20" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabb" label: "b__shutdown_l443.adb:158:34" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabs" label: "b__shutdown_l443.adb:157:34" }
+edge: { sourcename: "adainit" targetname: "system__storage_pools___elabs" label: "b__shutdown_l443.adb:155:27" }
+edge: { sourcename: "adainit" targetname: "ada__finalization___elabs" label: "b__shutdown_l443.adb:153:23" }
+edge: { sourcename: "adainit" targetname: "system__finalization_root___elabs" label: "b__shutdown_l443.adb:151:31" }
+edge: { sourcename: "adainit" targetname: "ada__streams___elabs" label: "b__shutdown_l443.adb:149:18" }
+edge: { sourcename: "adainit" targetname: "system__exception_table___elabb" label: "b__shutdown_l443.adb:146:29" }
+edge: { sourcename: "adainit" targetname: "ada__tags___elabb" label: "b__shutdown_l443.adb:144:15" }
+edge: { sourcename: "adainit" targetname: "system__soft_links___elabs" label: "b__shutdown_l443.adb:143:24" }
+edge: { sourcename: "adainit" targetname: "system__bb__timing_events___elabs" label: "b__shutdown_l443.adb:141:30" }
+edge: { sourcename: "adainit" targetname: "__gnat_runtime_initialize" label: "b__shutdown_l443.adb:139:7" }
+edge: { sourcename: "adainit" targetname: "ada_main___elabb" label: "b__shutdown_l443.adb:134:15" }
+node: { title: "adafinal" label: "adafinal\nb__shutdown_l443.adb:47:4\n8 bytes (static)" }
+edge: { sourcename: "adafinal" targetname: "system__standard_library__adafinal" label: "b__shutdown_l443.adb:60:7" }
+edge: { sourcename: "adafinal" targetname: "__gnat_runtime_finalize" label: "b__shutdown_l443.adb:59:7" }
+node: { title: "ada_main__Tsec_default_sized_stacksBIP" label: "tsec_default_sized_stacksbip\nb__shutdown_l443.adb:40:4\n32 bytes (static)" }
+edge: { sourcename: "ada_main__Tsec_default_sized_stacksBIP" targetname: "system__secondary_stack__ss_stackIP" label: "b__shutdown_l443.adb:40:4" }
+}

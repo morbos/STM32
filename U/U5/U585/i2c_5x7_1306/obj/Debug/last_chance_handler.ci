@@ -1,0 +1,17 @@
+graph: { title: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "stm32__gpio__toggle" label: "TOGGLE\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:172:14" shape : ellipse }
+node: { title: "stm32__board__all_leds_off" label: "ALL_LEDS_OFF\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/src/stm32-board.ads:67:14" shape : ellipse }
+node: { title: "stm32__board__initialize_leds" label: "INITIALIZE_LEDS\n/media/16T/ada/STM32/U/U5/U585/i2c_5x7_1306/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/src/stm32-board.ads:58:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:45:4\n24 bytes (static)" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:55:10" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:55:28" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:55:30" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:55:22" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__gpio__toggle" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:54:10" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__board__all_leds_off" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:50:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "stm32__board__initialize_leds" label: "/media/16T/ada/STM32/U/U5/lch_full/led/last_chance_handler.adb:48:7" }
+}

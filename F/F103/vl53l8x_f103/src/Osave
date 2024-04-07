@@ -1,0 +1,32 @@
+   procedure Initialize_Range_Sensor
+     (Port     : access I2C_Port;
+      SCL      : GPIO_Point;
+      SDA      : GPIO_Point
+     )
+   is
+      GPIO_Conf            : GPIO_Port_Configuration;
+      Selected_Clock_Speed : constant := 400_000;
+   begin
+      Enable_Clock (SCL);
+      Enable_Clock (SDA);
+      Enable_Clock (Port.all);
+
+      STM32.Device.Reset (Port.all);
+
+      GPIO_Conf.Speed       := Speed_2MHz;
+      GPIO_Conf.Mode        := Mode_AF;
+      GPIO_Conf.Output_Type := Open_Drain;
+      GPIO_Conf.Resistors   := Pull_Up;
+      Configure_IO (SCL, GPIO_Conf);
+      Configure_IO (SDA, GPIO_Conf);
+
+      STM32.I2C.Configure
+        (Port.all,
+         (Clock_Speed              => Selected_Clock_Speed,
+          Addressing_Mode          => Addressing_Mode_7bit,
+          General_Call_Enabled     => False,
+          Clock_Stretching_Enabled => True,
+          Own_Address              => 16#00#,
+          others                   => <>));
+
+   end Initialize_Range_Sensor;

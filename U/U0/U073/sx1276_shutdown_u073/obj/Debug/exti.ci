@@ -1,0 +1,37 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb"
+node: { title: "ada__synchronous_task_control__suspension_objectVIP" label: "Suspension_Objectvip\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-sytaco.ads:77:4" shape : ellipse }
+node: { title: "sx1276_spi__sx1276_radioIP" label: "Sx1276_Radioip\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276.ads:307:9" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "sx1276_spi__clearflags" label: "Clearflags\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276.ads:298:14" shape : ellipse }
+node: { title: "sx1276_spi__sumbits" label: "Sumbits\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276.ads:302:14" shape : ellipse }
+node: { title: "sx1276_spi__readflags" label: "Readflags\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276.ads:296:14" shape : ellipse }
+node: { title: "stm32__exti__clear_external_interrupt" label: "CLEAR_EXTERNAL_INTERRUPT\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-exti.ads:110:14" shape : ellipse }
+node: { title: "stm32__exti__external_interrupt_pending" label: "EXTERNAL_INTERRUPT_PENDING\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-exti.ads:106:13" shape : ellipse }
+node: { title: "sx1276_spi__irqflags_registerIP" label: "Irqflags_Registerip\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/sx1276.ads:91:9" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "exti___elabs" label: "Exti\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:5:1\n8 bytes (static)" }
+edge: { sourcename: "exti___elabs" targetname: "exti__handlerTVIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:15:4" }
+edge: { sourcename: "exti___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:8:4" }
+edge: { sourcename: "exti___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:7:4" }
+node: { title: "exti___elabb" label: "Exti\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:11:1\n8 bytes (static)" }
+edge: { sourcename: "exti___elabb" targetname: "sx1276_spi__sx1276_radioIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:13:4" }
+node: { title: "exti__handler__exti_handlerP" label: "Exti_Handlerp\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:25:7\n16 bytes (static)" }
+edge: { sourcename: "exti__handler__exti_handlerP" targetname: "system__tasking__protected_objects__unlock" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:25:7" }
+edge: { sourcename: "exti__handler__exti_handlerP" targetname: "exti__handler__exti_handlerN" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:25:7" }
+edge: { sourcename: "exti__handler__exti_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:25:7" }
+node: { title: "exti__handler__exti_handlerN" label: "Exti_Handlern\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:25:7\n32 bytes (static)" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "sx1276_spi__clearflags" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:55:12" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "sx1276_spi__sumbits" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:35:12" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "sx1276_spi__readflags" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:34:12" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "stm32__exti__clear_external_interrupt" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:32:13" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "stm32__exti__external_interrupt_pending" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:31:13" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "stm32__exti__clear_external_interrupt" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:29:13" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "stm32__exti__external_interrupt_pending" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:28:13" }
+edge: { sourcename: "exti__handler__exti_handlerN" targetname: "sx1276_spi__irqflags_registerIP" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.adb:26:10" }
+node: { title: "exti__finalize_spec" label: "Finalize_Spec\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:5:1\n8 bytes (static)" }
+node: { title: "exti__handlerTVIP" label: "Handlertvip\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:15:4\n48 bytes (static)" }
+edge: { sourcename: "exti__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:15:4" }
+edge: { sourcename: "exti__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/exti.ads:15:4" }
+}

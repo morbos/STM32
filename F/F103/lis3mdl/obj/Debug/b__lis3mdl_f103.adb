@@ -75,24 +75,24 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl.o
-   --   /home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl_i2c_io.o
-   --   /home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl_i2c.o
-   --   /home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/peripherals.o
-   --   /home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/last_chance_handler.o
-   --   /home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl_f103.o
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/obj/Debug/
-   --   -L/home/hedley/ada/STM32/F/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/boards/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/boards/stm32f103_bluepill/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m3/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/components/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/middleware/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
-   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
+   --   /media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl.o
+   --   /media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl_i2c_io.o
+   --   /media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl_i2c.o
+   --   /media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/peripherals.o
+   --   /media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/last_chance_handler.o
+   --   /media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/lis3mdl_f103.o
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/obj/Debug/
+   --   -L/media/16T/ada/STM32/F/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/boards/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/boards/stm32f103_bluepill/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m3/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/components/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/middleware/lib/stm32f103bluepill/ravenscar-ssfp/Debug/
+   --   -L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32f103bluepill/ssfp/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

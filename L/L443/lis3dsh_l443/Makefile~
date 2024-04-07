@@ -1,0 +1,6 @@
+#DIR=Production
+DIR=Debug
+default:
+	rm -f obj/$(DIR)/lsm9ds1_l443
+	(export LOADER=ROM_L443; gprbuild)
+	(cd obj/$(DIR); arm-eabi-objdump -d lsm9ds1_l443 >lsm9ds1_l443.lst; arm-eabi-objdump -s lsm9ds1_l443 >lsm9ds1_l443.dmp; arm-eabi-gcc-nm -an lsm9ds1_l443 >lsm9ds1_l443.nm; arm-eabi-objcopy -Obinary lsm9ds1_l443 lsm9ds1_l443.bin)

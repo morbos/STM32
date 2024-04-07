@@ -1,0 +1,30 @@
+graph: { title: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "hw__stop2" label: "Stop2\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.ads:16:14" shape : ellipse }
+node: { title: "hw__gpio_off" label: "Gpio_Off\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.ads:22:14" shape : ellipse }
+node: { title: "hw__internal_clocks" label: "Internal_Clocks\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.ads:24:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "hw__enable_exti20" label: "Enable_Exti20\n/media/16T/ada/STM32/L/L443/stop2_l443/src/hw.ads:6:14" shape : ellipse }
+node: { title: "stm32__rtc__set_wut_interrupt" label: "SET_WUT_INTERRUPT\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-rtc.ads:64:14" shape : ellipse }
+node: { title: "stm32__rtc__enable" label: "ENABLE\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/arch/ARM/STM32/driversL4x3/stm32-rtc.ads:61:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/L/L443/stop2_l443/Ada_Drivers_Library/boards/stm32l443_bluepill/src/stm32-board.ads:57:14" shape : ellipse }
+node: { title: "_ada_try_l443" label: "Try_L443\n/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:15:1\n16 bytes (static)" }
+edge: { sourcename: "_ada_try_l443" targetname: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:41:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "hw__stop2" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:40:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "hw__gpio_off" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:39:7" }
+edge: { sourcename: "_ada_try_l443" targetname: "hw__internal_clocks" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:35:4" }
+edge: { sourcename: "_ada_try_l443" targetname: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:33:4" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:31:4" }
+edge: { sourcename: "_ada_try_l443" targetname: "hw__enable_exti20" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:30:4" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__rtc__set_wut_interrupt" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:28:20" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__rtc__enable" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:27:4" }
+edge: { sourcename: "_ada_try_l443" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:25:4" }
+node: { title: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" label: "My_Delay\n/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:18:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:20:7" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:20:25" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:20:27" }
+edge: { sourcename: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:try_l443__my_delay.5574" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/L/L443/stop2_l443/src/try_l443.adb:20:19" }
+}

@@ -1,0 +1,85 @@
+class {
+  classname: "lis3mdl_i2c__lis3mdl_sensor"
+  label: "lis3mdl_i2c__lis3mdl_sensor\lis3mdl.ads:32:9 [lis3mdl_i2c.ads:7:1]"
+  parent: "lis3mdl_i2c__lis3mdl_sensor"
+  virtuals: "1:lis3mdl_i2c__soft_reset\n
+             2:lis3mdl_i2c__configure\n
+             3:lis3mdl_i2c__device_id\n
+             4:lis3mdl_i2c__set_range\n
+             5:lis3mdl_i2c__get_range\n
+             6:lis3mdl_i2c__set_opmode\n
+             7:lis3mdl_i2c__set_bdu\n
+             8:lis3mdl_i2c__get_status\n
+             9:lis3mdl_i2c__read_mag\n
+             10:lis3mdl_i2c__set_xy_perf\n
+             11:lis3mdl_i2c__set_z_perf\n
+             12:lis3mdl_i2c__set_datarate\n
+             -1:lis3mdl_i2c___size"
+}
+graph: { title: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_i2c.ads"
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:43:17" shape : ellipse }
+node: { title: "lis3mdl_i2c_io__read_buffer" label: "READ_BUFFER\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_i2c_io.ads:26:14" shape : ellipse }
+node: { title: "lis3mdl_i2c_io__write" label: "WRITE\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_i2c_io.ads:21:14" shape : ellipse }
+node: { title: "lis3mdl_i2c_io__read" label: "READ\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_i2c_io.ads:16:14" shape : ellipse }
+node: { title: "lis3mdl_i2c__configure" label: "CONFIGURE\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:124:4\n96 bytes (dynamic)" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__set_datarate" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:136:11" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__set_z_perf" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:135:11" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__set_xy_perf" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:134:11" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__set_bdu" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:133:11" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__set_opmode" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:132:11" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__set_range" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:131:11" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:78:19" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:77:19" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "memcpy" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:75:49" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:69:16" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:67:16" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:64:39" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:64:55" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-except.adb:54:10" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__device_id" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:128:14" }
+edge: { sourcename: "lis3mdl_i2c__configure" targetname: "lis3mdl_i2c__soft_reset" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:127:11" }
+node: { title: "lis3mdl_i2c__soft_reset" label: "SOFT_RESET\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:113:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__soft_reset" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:121:7" }
+edge: { sourcename: "lis3mdl_i2c__soft_reset" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:119:7" }
+node: { title: "lis3mdl_i2c__read_mag" label: "READ_MAG\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:103:4\n40 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__read_mag" targetname: "lis3mdl_i2c_io__read_buffer" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:109:7" }
+node: { title: "lis3mdl_i2c__get_status" label: "GET_STATUS\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:93:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__get_status" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:99:7" }
+node: { title: "lis3mdl_i2c__set_z_perf" label: "SET_Z_PERF\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:82:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__set_z_perf" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:90:7" }
+edge: { sourcename: "lis3mdl_i2c__set_z_perf" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:88:7" }
+node: { title: "lis3mdl_i2c__set_datarate" label: "SET_DATARATE\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:71:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__set_datarate" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:79:7" }
+edge: { sourcename: "lis3mdl_i2c__set_datarate" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:77:7" }
+node: { title: "lis3mdl_i2c__set_xy_perf" label: "SET_XY_PERF\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:60:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__set_xy_perf" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:68:7" }
+edge: { sourcename: "lis3mdl_i2c__set_xy_perf" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:66:7" }
+node: { title: "lis3mdl_i2c__set_bdu" label: "SET_BDU\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:49:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__set_bdu" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:57:7" }
+edge: { sourcename: "lis3mdl_i2c__set_bdu" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:55:7" }
+node: { title: "lis3mdl_i2c__set_opmode" label: "SET_OPMODE\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:38:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__set_opmode" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:46:7" }
+edge: { sourcename: "lis3mdl_i2c__set_opmode" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:44:7" }
+node: { title: "lis3mdl_i2c__get_range" label: "GET_RANGE\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:28:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__get_range" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:34:7" }
+node: { title: "lis3mdl_i2c__set_range" label: "SET_RANGE\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:17:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__set_range" targetname: "lis3mdl_i2c_io__write" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:25:7" }
+edge: { sourcename: "lis3mdl_i2c__set_range" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:23:7" }
+node: { title: "lis3mdl_i2c__device_id" label: "DEVICE_ID\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:9:4\n24 bytes (static)" }
+edge: { sourcename: "lis3mdl_i2c__device_id" targetname: "lis3mdl_i2c_io__read" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.adb:13:7" }
+node: { title: "lis3mdl_i2c__Tsensor_dataBIP" label: "Tsensor_Databip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:234:4\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__int_src_regIP" label: "Int_Src_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:201:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__int_config_regIP" label: "Int_Config_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:181:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__status_regIP" label: "Status_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:157:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__cfg_reg5_regIP" label: "Cfg_Reg5_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:145:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__cfg_reg4_regIP" label: "Cfg_Reg4_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:133:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__cfg_reg3_regIP" label: "Cfg_Reg3_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:119:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__cfg_reg2_regIP" label: "Cfg_Reg2_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:105:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__cfg_reg1_regIP" label: "Cfg_Reg1_Regip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:87:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c___size" label: "Lis3mdl_I2c\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:289:9\n16 bytes (static)" }
+node: { title: "lis3mdl_i2c__lis3mdl_sensorIP" label: "Lis3mdl_Sensorip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:289:9\n24 bytes (static)" }
+node: { title: "lis3mdl_i2c__Tsensitivity_rangeBIP" label: "Tsensitivity_Rangebip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:224:4\n16 bytes (static)" }
+}

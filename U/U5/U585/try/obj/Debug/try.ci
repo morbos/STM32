@@ -1,0 +1,28 @@
+graph: { title: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "stm32__gpio__configure_alternate_function" label: "CONFIGURE_ALTERNATE_FUNCTION\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:208:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:190:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u5/stm32-device.ads:61:14" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:160:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/arch/ARM/STM32/driversU5/stm32-gpio.ads:166:14" shape : ellipse }
+node: { title: "stm32__board__initialize_board" label: "INITIALIZE_BOARD\n/media/16T/ada/STM32/U/U5/U585/try/Ada_Drivers_Library/boards/stm32u5_bluepill_ns/src/stm32-board.ads:57:14" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__enable_mco.5574" label: "Enable_Mco\n/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:21:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__enable_mco.5574" targetname: "stm32__gpio__configure_alternate_function" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:34:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__enable_mco.5574" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:32:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__enable_mco.5574" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:25:7" }
+node: { title: "_ada_try" label: "Try\n/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:13:1\n16 bytes (static)" }
+edge: { sourcename: "_ada_try" targetname: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:48:7" }
+edge: { sourcename: "_ada_try" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:47:7" }
+edge: { sourcename: "_ada_try" targetname: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:46:7" }
+edge: { sourcename: "_ada_try" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:45:7" }
+edge: { sourcename: "_ada_try" targetname: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__enable_mco.5574" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:43:4" }
+edge: { sourcename: "_ada_try" targetname: "stm32__board__initialize_board" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:42:4" }
+node: { title: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" label: "My_Delay\n/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:16:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:18:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:18:25" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:18:27" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:try__my_delay.5572" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/U/U5/U585/try/src/try.adb:18:19" }
+}

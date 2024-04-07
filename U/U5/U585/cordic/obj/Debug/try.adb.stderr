@@ -1,0 +1,2 @@
+try.adb:24:04: warning: variable "Angle" is never read and never assigned
+try.adb:27:04: warning: variable "Y" is never read and never assigned

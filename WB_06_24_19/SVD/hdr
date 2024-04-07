@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<device schemaVersion="1.1"
+xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
+  <cpu>                                                           <!-- details about the cpu embedded in the device -->
+    <name>CM4</name>
+    <revision>r0p1</revision>
+    <endian>little</endian>
+    <nvicPrioBits>4</nvicPrioBits>
+  </cpu>
+  <name>STM32WB55x</name>
+  <version>1.0</version>
+  <description>STM32WB55x</description>
+  <!--Bus Interface Properties-->
+  <!--Cortex-M3 is byte addressable-->
+  <addressUnitBits>8</addressUnitBits>
+  <!--the maximum data bit width accessible within a single transfer-->
+  <width>32</width>
+  <!--Register Default Properties-->
+  <size>0x20</size>
+  <resetValue>0x0</resetValue>
+  <resetMask>0xFFFFFFFF</resetMask>
+  <peripherals>

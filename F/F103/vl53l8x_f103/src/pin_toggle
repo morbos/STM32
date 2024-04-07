@@ -1,0 +1,26 @@
+   --------------------------------
+   ---  Initialize_Range_Sensor  --
+   --------------------------------
+   procedure Initialize_Range_Sensor
+     (Port     : access I2C_Port;
+      SCL      : GPIO_Point;
+      SDA      : GPIO_Point
+     )
+   is
+      GPIO_Conf            : GPIO_Port_Configuration;
+   begin
+      Enable_Clock (SCL);
+
+      GPIO_Conf.Mode        := Mode_Out;
+      GPIO_Conf.Output_Type := Push_Pull;
+      GPIO_Conf.Speed       := Speed_2MHz;
+      GPIO_Conf.Resistors   := Floating;
+      Configure_IO (SCL, Config => GPIO_Conf);
+
+      loop
+         Clear (Selected_I2C_Clock_Pin);
+         delay until Clock + Milliseconds (100);
+         Set (Selected_I2C_Clock_Pin);
+         delay until Clock + Milliseconds (100);
+      end loop;
+   end Initialize_Range_Sensor;

@@ -10,22 +10,25 @@ package body ada_main is
    E113 : Short_Integer; pragma Import (Ada, E113, "system__bb__timing_events_E");
    E055 : Short_Integer; pragma Import (Ada, E055, "system__soft_links_E");
    E053 : Short_Integer; pragma Import (Ada, E053, "system__exception_table_E");
-   E141 : Short_Integer; pragma Import (Ada, E141, "ada__streams_E");
-   E150 : Short_Integer; pragma Import (Ada, E150, "system__finalization_root_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "ada__finalization_E");
-   E152 : Short_Integer; pragma Import (Ada, E152, "system__storage_pools_E");
-   E145 : Short_Integer; pragma Import (Ada, E145, "system__finalization_masters_E");
+   E144 : Short_Integer; pragma Import (Ada, E144, "ada__streams_E");
+   E153 : Short_Integer; pragma Import (Ada, E153, "system__finalization_root_E");
+   E151 : Short_Integer; pragma Import (Ada, E151, "ada__finalization_E");
+   E155 : Short_Integer; pragma Import (Ada, E155, "system__storage_pools_E");
+   E148 : Short_Integer; pragma Import (Ada, E148, "system__finalization_masters_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__real_time_E");
-   E154 : Short_Integer; pragma Import (Ada, E154, "system__pool_global_E");
-   E143 : Short_Integer; pragma Import (Ada, E143, "hal__gpio_E");
-   E162 : Short_Integer; pragma Import (Ada, E162, "hal__spi_E");
-   E134 : Short_Integer; pragma Import (Ada, E134, "stm32__exti_E");
-   E164 : Short_Integer; pragma Import (Ada, E164, "stm32__mpu_E");
-   E130 : Short_Integer; pragma Import (Ada, E130, "stm32__rcc_E");
-   E160 : Short_Integer; pragma Import (Ada, E160, "stm32__spi_E");
-   E128 : Short_Integer; pragma Import (Ada, E128, "stm32__gpio_E");
+   E157 : Short_Integer; pragma Import (Ada, E157, "system__pool_global_E");
+   E146 : Short_Integer; pragma Import (Ada, E146, "hal__gpio_E");
+   E164 : Short_Integer; pragma Import (Ada, E164, "hal__i2c_E");
+   E169 : Short_Integer; pragma Import (Ada, E169, "hal__spi_E");
+   E128 : Short_Integer; pragma Import (Ada, E128, "stm32__dac_E");
+   E139 : Short_Integer; pragma Import (Ada, E139, "stm32__exti_E");
+   E163 : Short_Integer; pragma Import (Ada, E163, "stm32__i2c_E");
+   E171 : Short_Integer; pragma Import (Ada, E171, "stm32__mpu_E");
+   E135 : Short_Integer; pragma Import (Ada, E135, "stm32__rcc_E");
+   E167 : Short_Integer; pragma Import (Ada, E167, "stm32__spi_E");
+   E133 : Short_Integer; pragma Import (Ada, E133, "stm32__gpio_E");
    E124 : Short_Integer; pragma Import (Ada, E124, "stm32__device_E");
-   E132 : Short_Integer; pragma Import (Ada, E132, "stm32__syscfg_E");
+   E137 : Short_Integer; pragma Import (Ada, E137, "stm32__syscfg_E");
    E121 : Short_Integer; pragma Import (Ada, E121, "stm32__board_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -132,37 +135,43 @@ package body ada_main is
       E053 := E053 + 1;
       E055 := E055 + 1;
       Ada.Streams'Elab_Spec;
-      E141 := E141 + 1;
+      E144 := E144 + 1;
       System.Finalization_Root'Elab_Spec;
-      E150 := E150 + 1;
+      E153 := E153 + 1;
       Ada.Finalization'Elab_Spec;
-      E148 := E148 + 1;
+      E151 := E151 + 1;
       System.Storage_Pools'Elab_Spec;
-      E152 := E152 + 1;
+      E155 := E155 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E145 := E145 + 1;
+      E148 := E148 + 1;
       Ada.Real_Time'Elab_Body;
       E006 := E006 + 1;
       System.Pool_Global'Elab_Spec;
-      E154 := E154 + 1;
+      E157 := E157 + 1;
       HAL.GPIO'ELAB_SPEC;
-      E143 := E143 + 1;
-      HAL.SPI'ELAB_SPEC;
-      E162 := E162 + 1;
-      E134 := E134 + 1;
+      E146 := E146 + 1;
+      HAL.I2C'ELAB_SPEC;
       E164 := E164 + 1;
-      E130 := E130 + 1;
+      HAL.SPI'ELAB_SPEC;
+      E169 := E169 + 1;
+      E128 := E128 + 1;
+      E139 := E139 + 1;
+      STM32.I2C'ELAB_SPEC;
+      STM32.I2C'ELAB_BODY;
+      E163 := E163 + 1;
+      E171 := E171 + 1;
+      E135 := E135 + 1;
       STM32.SPI'ELAB_SPEC;
       STM32.SPI'ELAB_BODY;
-      E160 := E160 + 1;
+      E167 := E167 + 1;
       STM32.GPIO'ELAB_SPEC;
       STM32.DEVICE'ELAB_SPEC;
       STM32.DEVICE'ELAB_BODY;
       E124 := E124 + 1;
-      E132 := E132 + 1;
+      E137 := E137 + 1;
       STM32.GPIO'ELAB_BODY;
-      E128 := E128 + 1;
+      E133 := E133 + 1;
       STM32.BOARD'ELAB_SPEC;
       E121 := E121 + 1;
    end adainit;
@@ -190,19 +199,19 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/test_ns.o
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/test_ns/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/lib/stm32l5discovery_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_ns/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/full/adalib/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l5nucleo_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/components/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/middleware/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
-   --   -L/.share/CACHEDEV1_DATA/Ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5discovery_ns/full/adalib/
+   --   /home/hedley/ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/test_ns.o
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/test_ns/obj/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/test_ns/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/lib/stm32l5discovery_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/boards/stm32l5_discovery_ns/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5nucleo_ns/full/adalib/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/hal/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m4f/stm32l5nucleo_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/components/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/STM32/L/L562/pka_gen/Ada_Drivers_Library/middleware/lib/stm32l5nucleo_ns/ravenscar-full/Debug/
+   --   -L/home/hedley/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l5discovery_ns/full/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat

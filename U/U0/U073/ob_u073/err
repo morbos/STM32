@@ -1,0 +1,43 @@
+rm -f obj/Debug/try_u073
+(export LOADER=ROM_U073; gprbuild -j24)
+using project file try_u073.gpr
+common.gpr:3:09: warning: there are no sources of language "C" in this project
+Compile
+   [Ada]          stm32-syscfg.adb
+   [Ada]          stm32-gpio.adb
+stm32-gpio.adb:264:07: warning: variable "Temp" is never read and never assigned
+Build Libraries
+   [gprlib]       gnat.lexch
+   [archive]      libgnat.a
+   [index]        libgnat.a
+   [gprlib]       gnarl.lexch
+   [archive]      libgnarl.a
+   [index]        libgnarl.a
+   [gprlib]       HAL.lexch
+   [archive]      libHAL.a
+   [index]        libHAL.a
+   [gprlib]       cortex-m0.lexch
+   [archive]      libcortex-m0.a
+   [index]        libcortex-m0.a
+   [gprlib]       stm32u07x.lexch
+   [archive]      libstm32u07x.a
+   [index]        libstm32u07x.a
+   [gprlib]       services.lexch
+   [archive]      libservices.a
+   [index]        libservices.a
+   [gprlib]       components.lexch
+   [archive]      libcomponents.a
+   [index]        libcomponents.a
+   [gprlib]       stm32u073bluepill.lexch
+   [archive]      libstm32u073bluepill.a
+   [index]        libstm32u073bluepill.a
+Bind
+   [gprbind]      try_u073.bexch
+   [Ada]          try_u073.ali
+Link
+   [link]         try_u073.adb
+/media/16T/p4work/GNAT/2019-arm-elf/bin/../lib/gcc/arm-eabi/7.4.1/../../../../arm-eabi/bin/ld: cannot open linker script file memory-map_U073.ld: No such file or directory
+collect2: error: ld returned 1 exit status
+gprbuild: link of try_u073.adb failed
+gprbuild: failed command was: /media/16T/p4work/GNAT/2019-arm-elf/bin/arm-eabi-gcc try_u073.o b__try_u073.o /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/boards/lib/stm32u073bluepill/ravenscar-ssfp/Debug/libstm32u073bluepill.a /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/components/lib/stm32u073bluepill/ravenscar-ssfp/Debug/libcomponents.a /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/middleware/lib/stm32u073bluepill/ravenscar-ssfp/Debug/libservices.a /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32u073bluepill/ravenscar-ssfp/Debug/libstm32u07x.a /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m0/stm32u073bluepill/ravenscar-ssfp/Debug/libcortex-m0.a /media/16T/ada/Ada_Drivers_Library/hal/lib/stm32u073bluepill/ravenscar-ssfp/Debug/libHAL.a /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/adalib/libgnarl.a /media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/adalib/libgnat.a -Wl,--defsym=__stack_size=4096 -Wl,--gc-sections -Wl,--print-memory-usage -Wl,-Map=xyzzy -L/media/16T/ada/STM32/U/U0/U073/try_u073/obj/Debug/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/obj/Debug/ -L/media/16T/ada/STM32/U/U0/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/boards/lib/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/boards/stm32u073_bluepill/lib/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/adalib/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/arch/ARM/STM32/lib/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/Ada_Drivers_Library/hal/lib/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/arch/ARM/cortex_m/lib/cortex-m0/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/components/lib/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/STM32/U/U0/U073/try_u073/Ada_Drivers_Library/middleware/lib/stm32u073bluepill/ravenscar-ssfp/Debug/ -L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/adalib/ -static-libgcc /media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/adalib/libgnarl.a /media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/adalib/libgnat.a -L/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp//adalib -nolibc -nostartfiles -g -mlittle-endian -mfloat-abi=soft -mcpu=cortex-m0plus.small-multiply -mthumb -L /media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp//../../bsps/stm32l0/bsp/ -T memory-map_U073.ld -T common-ROM_U073.ld -o try_u073
+make: *** [Makefile:3: default] Error 4

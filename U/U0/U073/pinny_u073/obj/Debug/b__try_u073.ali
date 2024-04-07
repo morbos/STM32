@@ -1,0 +1,88 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -gnatA
+A -gnatWb
+A -gnatiw
+A -gnatws
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -fcallgraph-info=su
+A -ffunction-sections
+A -fdata-sections
+P DB ZX
+
+RN
+RR NO_EXCEPTION_PROPAGATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U ada_main%b		b__try_u073.adb		5a6a2016 OO PK IL
+Z system%s		system.ads		system.ali
+
+U ada_main%s		b__try_u073.ads		8f878e20 EE NE OO PK IL
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D b__try_u073.ads	20240323230929 ace98ecf ada_main%s
+D b__try_u073.adb	20240323230929 f683aed9 ada_main%b
+D system.ads		20200106220408 aa7dab5a system%s
+D s-parame.ads		20201003195514 dfb12da9 system.parameters%s
+D s-secsta.ads		20200106220408 56a2861c system.secondary_stack%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+G a e
+G c Z s b [adainit ada_main 17 14 none]
+G c Z s b [main ada_main 20 14 none]
+G c Z b b [Tsec_default_sized_stacksBIP ada_main 20 4 none]
+G c Z b b [ada_main_program ada_main 56 14 none]
+X 1 b__try_u073.ads
+7K9*ada_main 139l5 139e13 2|7b14 87l5 87t13
+10a4*GNAT_Version{string} 12r22
+14a4*Ada_Main_Program_Name{string} 15r22 2|60r52
+17U14*adainit 18i<c,adainit>22 2|23b14 54l8 54t15 64s7
+20U14*main 21i<c,main>22 2|59b14 66t7
+X 2 b__try_u073.adb
+9i4 E005{short_integer} 9m46 9r46 42m7 42r15
+10i4 E065{short_integer} 10m46 10r46 44m7 44r15
+11i4 E088{short_integer} 11m46 11r46 45m7 45r15
+12i4 E099{short_integer} 12m46 12r46 46m7 46r15
+13i4 E105{short_integer} 13m46 13r46 47m7 47r15
+14i4 E095{short_integer} 14m46 14r46 48m7 48r15
+15i4 E109{short_integer} 15m46 15r46 49m7 49r15
+16i4 E093{short_integer} 16m46 16r46 53m7 53r15
+17i4 E077{short_integer} 17m46 17r46 51m7 51r15
+18i4 E097{short_integer} 18m46 18r46 52m7 52r15
+20a4 Sec_Default_Sized_Stacks(5|43R9) 38m32 38r32
+24i7*Binder_Sec_Stacks_Count{natural} 25m27 25r27 37m7
+27i7*Default_Secondary_Stack_Size{4|56I9} 28m25 28r25 36m7
+29m7*Default_Sized_SS_Pool{3|90M9} 30m27 30r27 38m7
+56U14 Ada_Main_Program 57b<ada,_ada_try_u073>24 65s7
+60m7 Ensure_Reference{3|90M9} 61r24
+X 3 system.ads
+60K9*System 1|4w6 5r6 6r6 2|20r57 20r90 27r38 29r31 36r39 60r34 3|174e11
+90M9*Address 2|29r38 60r41
+X 4 s-parame.ads
+49K16*Parameters 1|5w13 2|20r97 27r45 36r46 4|187e22
+56I9*Size_Type<integer> 2|27r56
+88i4*Runtime_Default_Sec_Stack_Size{56I9} 2|20r108 36r57
+X 5 s-secsta.ads
+37K16*Secondary_Stack 1|6w13 2|20r64 5|154e27
+43R9*SS_Stack 2|20r80 5|119e14
+

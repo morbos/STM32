@@ -1,0 +1,404 @@
+0x00
+HASH_CR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+ALGO[1]
+Res.
+LKEY
+Res.
+Res.
+MDMAT
+DINNE
+NBW[3:0]
+ALGO[0]
+MODE
+DATATYPE[1:0]
+DMAE
+INIT
+Res.
+Res.
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x04
+HASH_DIN
+DATAIN[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x08
+HASH_STR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+DCAL
+Res.
+Res.
+Res.
+NBLW[4:0]
+Reset value 0 0 0 0 0 0
+0x0C
+HASH_HRA0
+H0[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x10
+HASH_HRA1
+H1[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x14
+HASH_HRA2
+H2[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x18
+HASH_HRA3
+H3[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1C
+HASH_HRA4
+H4[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x20
+HASH_IMR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+DCIE
+DINIE
+Reset value 0 0
+0x24
+HASH_SR
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+Res.
+BUSY
+DMAS
+DCIS
+DINIS
+Reset value 0 0 0 1
+0xF8
+HASH_CSR0
+CSR0[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0
+0xFC
+HASH_CSR1
+CSR1[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x100
+HASH_CSR2
+CSR2[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x104
+HASH_CSR3
+CSR3[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x108
+HASH_CSR4
+CSR4[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x10c
+HASH_CSR5
+CSR5[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x110
+HASH_CSR6
+CSR6[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x114
+HASH_CSR7
+CSR7[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x118
+HASH_CSR8
+CSR8[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x11c
+HASH_CSR9
+CSR9[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x120
+HASH_CSR10
+CSR10[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x124
+HASH_CSR11
+CSR11[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x128
+HASH_CSR12
+CSR12[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x12c
+HASH_CSR13
+CSR13[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x130
+HASH_CSR14
+CSR14[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x134
+HASH_CSR15
+CSR15[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x138
+HASH_CSR16
+CSR16[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x13c
+HASH_CSR17
+CSR17[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x140
+HASH_CSR18
+CSR18[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x144
+HASH_CSR19
+CSR19[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x148
+HASH_CSR20
+CSR20[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x14c
+HASH_CSR21
+CSR21[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x150
+HASH_CSR22
+CSR22[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x154
+HASH_CSR23
+CSR23[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x158
+HASH_CSR24
+CSR24[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x15c
+HASH_CSR25
+CSR25[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x160
+HASH_CSR26
+CSR26[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x164
+HASH_CSR27
+CSR27[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x168
+HASH_CSR28
+CSR28[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x16c
+HASH_CSR29
+CSR29[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x170
+HASH_CSR30
+CSR30[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x174
+HASH_CSR31
+CSR31[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x178
+HASH_CSR32
+CSR32[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x17c
+HASH_CSR33
+CSR33[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x180
+HASH_CSR34
+CSR34[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x184
+HASH_CSR35
+CSR35[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x188
+HASH_CSR36
+CSR36[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x18c
+HASH_CSR37
+CSR37[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x190
+HASH_CSR38
+CSR38[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x194
+HASH_CSR39
+CSR39[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x198
+HASH_CSR40
+CSR40[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x19c
+HASH_CSR41
+CSR41[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1a0
+HASH_CSR42
+CSR42[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1a4
+HASH_CSR43
+CSR43[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1a8
+HASH_CSR44
+CSR44[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1ac
+HASH_CSR45
+CSR45[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1b0
+HASH_CSR46
+CSR46[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1b4
+HASH_CSR47
+CSR47[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1b8
+HASH_CSR48
+CSR48[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1bc
+HASH_CSR49
+CSR49[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1c0
+HASH_CSR50
+CSR50[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1c4
+HASH_CSR51
+CSR51[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1c8
+HASH_CSR52
+CSR52[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x1CC
+HASH_CSR53
+CSR53[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x310
+HASH_HR0
+H0[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x314
+HASH_HR1
+H1[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x318
+HASH_HR2
+H2[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x31C
+HASH_HR3
+H3[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x320
+HASH_HR4
+H4[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x324
+HASH_HR5
+H5[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x328
+HASH_HR6
+H6[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0x32C
+HASH_HR7
+H7[31:0]
+Reset value 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

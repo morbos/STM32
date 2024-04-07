@@ -1,0 +1,81 @@
+Metrics computed for /home/hedley/ada/STM32/L/L443/i2c_5x7_1306/src/i2c_1306.adb
+containing procedure body I2C_1306
+
+=== Code line metrics ===
+  all lines           : 132
+  code lines          : 103
+  comment lines       : 9
+  end-of-line comments: 1
+  comment percentage  : 8.92
+  blank lines         : 20
+
+I2C_1306 (procedure body - library item at lines  19: 132)
+
+=== Code line metrics ===
+   all lines           : 114
+   code lines          : 88
+   comment lines       : 7
+   end-of-line comments: 0
+   comment percentage  : 7.36
+   blank lines         : 19
+
+=== Element metrics ===
+   public subprograms       : 1
+   all subprogram bodies    : 2
+   all statements           : 35
+   all declarations         : 18
+   logical SLOC             : 53
+   maximal unit nesting     : 1
+   maximal construct nesting: 2
+   all parameters           : 0
+
+=== Complexity metrics ===
+   statement complexity     : 1
+   expression complexity    : 0
+   cyclomatic complexity    : 1
+   essential complexity     : 1
+   maximum loop nesting     : 1
+   extra exit points        : 0
+
+   Initialize_GPIO (procedure at lines  32: 38)
+
+   === Element metrics ===
+      all parameters           : 5
+      IN parameters            : 5
+      OUT parameters           : 0
+      IN OUT parameters        : 0
+
+   Initialize_GPIO (procedure body at lines  40: 83)
+
+   === Code line metrics ===
+      all lines           : 44
+      code lines          : 38
+      comment lines       : 0
+      end-of-line comments: 0
+      comment percentage  : 0.00
+      blank lines         : 6
+
+   === Element metrics ===
+      all statements           : 18
+      all declarations         : 9
+      logical SLOC             : 27
+      maximal construct nesting: 1
+      all parameters           : 5
+      IN parameters            : 5
+      OUT parameters           : 0
+      IN OUT parameters        : 0
+
+   === Complexity metrics ===
+      statement complexity     : 1
+      expression complexity    : 0
+      cyclomatic complexity    : 1
+      essential complexity     : 1
+      maximum loop nesting     : 0
+      extra exit points        : 0
+
+=== Average complexity metrics ===
+      statement_complexity     :  1.00
+      expression_complexity    :  0.00
+      cyclomatic_complexity    :  1.00
+      essential_complexity     :  1.00
+      max_loop_nesting         :  1.00

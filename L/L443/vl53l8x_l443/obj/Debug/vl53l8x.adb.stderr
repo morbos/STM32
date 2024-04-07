@@ -1,0 +1,8 @@
+vl53l8x.adb:710:07: warning: variable "Header_Id" is never read and never assigned
+vl53l8x.adb:711:07: warning: variable "Footer_Id" is never read and never assigned
+vl53l8x.adb:981:07: warning: variable "Result" is never read and never assigned
+vl53l8x.adb:982:07: warning: variable "Result16" is never read and never assigned
+vl53l8x.adb:983:07: warning: variable "Start" is never read and never assigned
+vl53l8x.adb:985:07: warning: variable "Value16" is never read and never assigned
+vl53l8x.adb:986:07: warning: variable "Result32" is never read and never assigned
+vl53l8x.adb:1158:07: warning: variable "Val" is never read and never assigned

@@ -7,7 +7,7 @@ package ada_main is
 
 
    GNAT_Version : constant String :=
-                    "GNAT Version: Community 2018 (20180524-73)" & ASCII.NUL;
+                    "GNAT Version: Community 2019 (20190517-74)" & ASCII.NUL;
    pragma Export (C, GNAT_Version, "__gnat_version");
 
    Ada_Main_Program_Name : constant String := "_ada_sensortile" & ASCII.NUL;
@@ -88,66 +88,66 @@ package ada_main is
    --  system.address_image%b
    --  system.traceback%s
    --  system.traceback%b
-   --  system.multiprocessors%s
-   --  system.standard_library%s
-   --  system.exceptions_debug%s
-   --  system.exceptions_debug%b
-   --  ada.exceptions%s
-   --  system.val_util%s
-   --  system.val_uns%s
    --  ada.tags%s
-   --  system.bb.time%s
-   --  system.bb.protection%s
-   --  system.bb.interrupts%s
-   --  system.bb.board_support%s
-   --  system.multiprocessors%b
-   --  system.multiprocessors.spin_locks%s
-   --  system.multiprocessors.spin_locks%b
-   --  system.multiprocessors.fair_locks%s
-   --  system.soft_links%s
-   --  system.exception_table%s
-   --  system.exception_table%b
    --  system.bb.cpu_primitives%s
    --  system.bb.cpu_primitives.context_switch_trigger%s
    --  system.bb.cpu_primitives.context_switch_trigger%b
+   --  system.bb.interrupts%s
+   --  system.bb.protection%s
+   --  system.multiprocessors%s
+   --  system.bb.time%s
+   --  system.bb.board_support%s
    --  system.bb.board_support%b
-   --  ada.exceptions.last_chance_handler%s
-   --  system.wch_stw%s
-   --  system.exceptions.machine%s
-   --  system.exceptions.machine%b
-   --  ada.exceptions.traceback%s
-   --  ada.exceptions.traceback%b
-   --  system.memory%s
-   --  system.memory%b
-   --  system.val_util%b
-   --  system.val_uns%b
-   --  ada.tags%b
-   --  system.bb.timing_events%s
    --  system.bb.threads%s
    --  system.bb.threads.queues%s
    --  system.bb.threads.queues%b
-   --  system.bb.interrupts%b
-   --  system.bb.cpu_primitives%b
-   --  system.os_interface%s
-   --  ada.exceptions.last_chance_handler%b
-   --  system.task_primitives%s
-   --  system.wch_stw%b
-   --  system.traceback.symbolic%s
-   --  system.traceback.symbolic%b
-   --  system.standard_library%b
-   --  ada.exceptions%b
+   --  system.bb.timing_events%s
    --  system.bb.timing_events%b
-   --  system.bb.time%b
-   --  system.bb.protection%b
-   --  system.bb.threads%b
-   --  system.multiprocessors.fair_locks%b
+   --  system.multiprocessors.spin_locks%s
+   --  system.multiprocessors.spin_locks%b
+   --  system.multiprocessors.fair_locks%s
+   --  system.os_interface%s
+   --  system.standard_library%s
+   --  ada.exceptions%s
+   --  system.exceptions.machine%s
+   --  system.exceptions.machine%b
+   --  system.exceptions_debug%s
+   --  system.exceptions_debug%b
+   --  system.soft_links%s
+   --  system.task_primitives%s
    --  system.tasking%s
+   --  system.task_primitives.operations%s
    --  system.tasking.debug%s
    --  system.tasking.debug%b
-   --  system.task_primitives.operations%s
-   --  system.tasking%b
+   --  system.val_uns%s
+   --  system.val_util%s
+   --  system.val_util%b
+   --  system.wch_stw%s
+   --  system.wch_stw%b
+   --  ada.exceptions.last_chance_handler%s
+   --  ada.exceptions.last_chance_handler%b
+   --  ada.exceptions.traceback%s
+   --  ada.exceptions.traceback%b
+   --  ada.tags%b
+   --  system.bb.cpu_primitives%b
+   --  system.bb.interrupts%b
+   --  system.bb.protection%b
+   --  system.bb.threads%b
+   --  system.bb.time%b
+   --  system.exception_table%s
+   --  system.exception_table%b
+   --  system.memory%s
+   --  system.memory%b
+   --  system.multiprocessors%b
+   --  system.multiprocessors.fair_locks%b
    --  system.soft_links%b
+   --  system.standard_library%b
    --  system.task_primitives.operations%b
+   --  system.tasking%b
+   --  system.traceback.symbolic%s
+   --  system.traceback.symbolic%b
+   --  ada.exceptions%b
+   --  system.val_uns%b
    --  ada.streams%s
    --  ada.streams%b
    --  system.fat_flt%s
@@ -262,9 +262,9 @@ package ada_main is
    --  stm32.device%s
    --  stm32.device%b
    --  stm32.syscfg%s
+   --  stm32.syscfg%b
    --  stm32.dfsdm%b
    --  stm32.gpio%b
-   --  stm32.syscfg%b
    --  bluenrg_spi_io%s
    --  bluenrg_spi_io%b
    --  lps22hb_spi_io%s
@@ -279,71 +279,71 @@ package ada_main is
    --  uuid%s
    --  uuid%b
    --  bluenrg_int%s
-   --  stm32l4_interrupts%s
+   --  bluenrg_utils%s
    --  comm%s
    --  comm.hw%s
-   --  hci_le%s
-   --  bluenrg_utils%s
-   --  utils%s
+   --  comm.setup%s
    --  gen_list%s
+   --  hci_le%s
+   --  bluenrg_utils%b
+   --  hts221%s
+   --  lps22hb%s
+   --  pcm1774%s
    --  stc3115%s
-   --  lsm6dsm%s
-   --  lsm6dsm%b
+   --  stm32l4_interrupts%s
+   --  utils%s
+   --  gen_list%b
+   --  hci%s
+   --  bluenrg%s
+   --  bluenrg_gap_aci%s
+   --  bluenrg_gap_aci%b
+   --  bluenrg_gatt_aci%s
+   --  bluenrg_gatt_aci%b
+   --  bluenrg_hal_aci%s
+   --  bluenrg_hal_aci%b
+   --  bluenrg_int%b
+   --  bluenrg_l2cap_aci%s
+   --  bluenrg_l2cap_aci%b
+   --  comm%b
+   --  comm.run%s
+   --  hci_le%b
+   --  hts221%b
+   --  hts221_i2c%s
+   --  hts221_i2c%b
+   --  lps22hb%b
+   --  lps22hb_spi%s
+   --  lps22hb_spi%b
    --  lsm303agr%s
    --  lsm303agr%b
    --  lsm303agr_spi%s
    --  lsm303agr_spi%b
-   --  lps22hb%s
-   --  hts221%s
-   --  pcm1774%s
+   --  lsm6dsm%s
+   --  lsm6dsm%b
    --  lsm6dsm_spi%s
    --  lsm6dsm_spi%b
-   --  comm.setup%s
-   --  hci%s
-   --  bluenrg_int%b
-   --  bluenrg_l2cap_aci%s
-   --  bluenrg_l2cap_aci%b
-   --  bluenrg_hal_aci%s
-   --  bluenrg_hal_aci%b
-   --  bluenrg_gatt_aci%s
-   --  bluenrg_gatt_aci%b
-   --  bluenrg_gap_aci%s
-   --  bluenrg_gap_aci%b
-   --  hci_le%b
-   --  bluenrg_utils%b
-   --  bluenrg%s
-   --  gen_list%b
-   --  stc3115%b
-   --  stc3115_i2c%s
-   --  stc3115_i2c%b
-   --  lps22hb%b
-   --  lps22hb_spi%s
-   --  lps22hb_spi%b
-   --  hts221%b
-   --  hts221_i2c%s
-   --  hts221_i2c%b
+   --  main%s
+   --  bluenrg%b
+   --  bluenrg_spi%s
+   --  bluenrg_spi%b
+   --  comm.hw%b
+   --  comm.setup%b
+   --  nrg_hal%s
+   --  nrg_hal%b
+   --  hci%b
    --  pcm1774%b
    --  pcm1774_i2c%s
    --  pcm1774_i2c%b
    --  audio%s
    --  audio%b
-   --  comm.run%s
-   --  main%s
-   --  comm.setup%b
-   --  comm%b
-   --  bluenrg%b
-   --  bluenrg_spi%s
-   --  bluenrg_spi%b
-   --  utils%b
+   --  stc3115%b
+   --  stc3115_i2c%s
+   --  stc3115_i2c%b
    --  sensors%s
    --  sensors%b
    --  comm.run%b
-   --  stm32l4_interrupts%b
    --  main%b
-   --  comm.hw%b
-   --  nrg_hal%s
-   --  nrg_hal%b
-   --  hci%b
+   --  stm32l4_interrupts%b
+   --  utils%b
    --  sensortile%b
    --  END ELABORATION ORDER
 

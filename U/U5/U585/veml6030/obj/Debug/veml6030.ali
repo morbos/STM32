@@ -1,0 +1,130 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u5discovery_ns/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB ES ZX
+
+RN
+RV NO_DISPATCH
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U veml6030%b		veml6030.adb		d96ebbac NE OO PK GE IU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W utils%s		utils.adb		utils.ali
+
+U veml6030%s		veml6030.ads		e6d5a8b1 BN EE NE OO PK GE
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20200106220410 76789da1 ada%s
+D a-except.ads		20200106220410 291912d5 ada.exceptions%s
+D a-finali.ads		20200106220410 bf4f806b ada.finalization%s
+D a-reatim.ads		20200106220411 4c16970e ada.real_time%s
+D a-stream.ads		20200106220411 119b8fb3 ada.streams%s
+D a-tags.ads		20200106220409 491b781d ada.tags%s
+D a-unccon.ads		20200106220409 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-i2c.ads		20230701205434 fe71557f hal.i2c%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D i-bit_types.ads	20210116193600 880cac16 interfaces.bit_types%s
+D system.ads		20200106220411 db831581 system%s
+D s-bb.ads		20200106220409 09e072ae system.bb%s
+D s-bbbopa.ads		20230122230811 5010154b system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220411 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220411 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220411 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220102204546 045cf410 system.bb.mcu_parameters%s
+D s-bbpara.ads		20210131011912 9bd079f5 system.bb.parameters%s
+D s-bbthre.ads		20200106220411 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220411 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220411 ad086247 system.bb.time%s
+D s-finmas.ads		20200106220410 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200106220410 4ff27390 system.finalization_root%s
+D s-multip.ads		20200106220411 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220411 229b14dd system.os_interface%s
+D s-parame.ads		20200106220411 d106111e system.parameters%s
+D s-pooglo.ads		20200106220409 ede33ef8 system.pool_global%s
+D s-stalib.ads		20200106220409 09bd3940 system.standard_library%s
+D s-stm32.ads		20220103223103 696d39d7 system.stm32%s
+D s-stoele.ads		20200106220410 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200106220409 b16154c2 system.storage_pools%s
+D s-traent.ads		20200106220409 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200106220410 34867c83 system.unsigned_types%s
+D utils.ads		20220423194543 5ff64891 utils%s
+D veml6030.ads		20220423224459 695367a8 veml6030%s
+D veml6030.adb		20220423224453 5dac56e4 veml6030%b
+D /media/16T/ada/STM32/U/U5/U585/veml6030/gnat.adc  20220423194543 00000000
+G a e
+G c Z s b [veml6030 standard 37 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 37|3r6 3r34
+X 4 a-reatim.ads
+41K13*Real_Time 182e18 37|3w10 3r38
+X 8 hal.ads
+34K9*HAL 166e8 36|2w6 2r22 3r6 3r22 37|1r6 1r34
+53M9*UInt8<10|63M9> 36|13r18 14r22 19r18 20r18 25r18 32r18
+66M9*UInt16<10|66M9> 36|43r61 37|15r61 20r26 20r53
+162A9*UInt8_Array(53M9)<integer> 36|26r22
+X 9 hal-i2c.ads
+32K13*I2C 92e12 36|3w10 3r26 37|1w10 1r38
+40A12*I2C_Data{8|162A9}<integer> 36|33r18 37|9r13 17r16
+X 10 interfac.ads
+38K9*Interfaces 184e15 36|1w6 1r22
+63M9*Unsigned_8
+66M9*Unsigned_16
+101V13*Shift_Left{66M9} 37|20s14
+X 35 utils.ads
+5K9*Utils 57e10 37|2w6 2r34
+X 36 veml6030.ads
+7H9 IO_Port 9r35
+9P9 Any_IO_Port(7R9) 12r18 18r18 24r18 31r18 39r42 46r42
+11U19 Read 12>7 13>7 14<7
+12*7 This{9P9}
+13m7 Register{8|53M9}
+14m7 Value{8|53M9}
+17U19 Write 18>7 19>7 20>7
+18*7 This{9P9}
+19m7 Register{8|53M9}
+20m7 Value{8|53M9}
+23U19 Read_Buffer 24>7 25>7 26<7 37|19s7
+24*7 This{9P9}
+25m7 Register{8|53M9}
+26a7 Value{8|162A9} 37|19r34
+30U19 Write_Buffer 31>7 32>7 33>7 37|12s7
+31*7 This{9P9}
+32m7 Register{8|53M9}
+33a7 Value{9|40A12} 37|12r35
+37k9*VEML6030 7z9 9z9 11z19 17z19 23z19 30z19 46E9 51l5 51e13 37|5b14 23l5
+. 23t13
+39R9*VEML6030_Sensor 39d26 41p14 41r37 43p13 43r37 46c9 49e14 37|7r37 15r37
+39*26 Port{9P9} 46r26 37|12r26 19r25
+41U14*PowerUp 41=23 37|7b14 13l8 13t15
+41r23 This{39R9} 37|7b23 12r21
+43V13*Read_ALS{8|66M9} 43=23 37|15b13 21l8 21t16
+43r23 This{39R9} 37|15b23 19r20
+48i7 Mode{natural}
+X 37 veml6030.adb
+9a7 Seq{9|40A12} 11m7 12r44
+17a7 Result{9|40A12} 19m43 20r34 20r61
+

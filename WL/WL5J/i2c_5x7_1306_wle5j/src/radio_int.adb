@@ -57,17 +57,17 @@ package body Radio_Int is
          Npkt    : UInt16;
          Ncrc    : UInt16;
          Nlen    : UInt16;
-         X       : UInt16;
+         X       : Irq_Status;
       begin
          X := Get_IrqStatus (RFStatus);
          --         if UInt16 (X and 16#063#) = 16#0002# then
-         if UInt16 (X and (2 ** HeaderErr'Enum_Rep)) = (2 ** HeaderErr'Enum_Rep) then
+         if X.HeaderErr then
             Turn_On (Red_LED);
-         elsif UInt16 (X and (2 ** Timeout'Enum_Rep)) = (2 ** Timeout'Enum_Rep) then
+         elsif X.Timeout then
             Turn_On (Red_LED);
-         elsif UInt16 (X and (2 ** Misc_Err'Enum_Rep)) = (2 ** Misc_Err'Enum_Rep) then
+         elsif X.Misc_Err then
             Turn_On (Red_LED);
-         elsif UInt16 (X and (2 ** RxDone'Enum_Rep)) = (2 ** RxDone'Enum_Rep) then
+         elsif X.RxDone then
             Get_RxBufferStatus (RFStatus, RxPayloadLength, RxStartBufferPointer);
             declare
                Buffer : SPI_Data_8b (1 .. Integer (RxPayloadLength));

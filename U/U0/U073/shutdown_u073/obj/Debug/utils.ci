@@ -1,0 +1,42 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb"
+node: { title: "ada__real_time__delays__delay_until" label: "Delay_Until\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-retide.ads:42:14" shape : ellipse }
+node: { title: "ada__real_time__Oadd" label: "+\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:72:13" shape : ellipse }
+node: { title: "ada__real_time__milliseconds" label: "Milliseconds\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:128:13" shape : ellipse }
+node: { title: "ada__real_time__clock" label: "Clock\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/gnarl-common/a-reatim.ads:68:13" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "memcmp" label: "builtin_memcmp\n<built-in>" shape : ellipse }
+node: { title: "utils__sum" label: "Sum\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:90:4\n40 bytes (static)" }
+node: { title: "utils__ms_delay" label: "Ms_Delay\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:85:4\n24 bytes (static)" }
+edge: { sourcename: "utils__ms_delay" targetname: "ada__real_time__delays__delay_until" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:87:7" }
+edge: { sourcename: "utils__ms_delay" targetname: "ada__real_time__Oadd" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:87:25" }
+edge: { sourcename: "utils__ms_delay" targetname: "ada__real_time__milliseconds" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:87:27" }
+edge: { sourcename: "utils__ms_delay" targetname: "ada__real_time__clock" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:87:19" }
+node: { title: "utils__to_uint16_from_integer_16" label: "To_Uint16_From_Integer_16\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:77:4\n24 bytes (static)" }
+node: { title: "utils__to_string_from_uint16" label: "To_String_From_Uint16\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:59:4\n48 bytes (static)" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:71:56" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:69:56" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:66:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:66:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:66:51" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:66:40" }
+edge: { sourcename: "utils__to_string_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:66:45" }
+node: { title: "utils__to_uint32_from_uint8" label: "To_Uint32_From_Uint8\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:51:4\n24 bytes (static)" }
+node: { title: "utils__to_uint16_from_integer_32" label: "To_Uint16_From_Integer_32\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:43:4\n32 bytes (static)" }
+node: { title: "utils__to_uint8_from_integer_32" label: "To_Uint8_From_Integer_32\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:35:4\n32 bytes (static)" }
+node: { title: "utils__to_uint8_from_uint16" label: "To_Uint8_From_Uint16\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:28:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint8_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:32:27" }
+edge: { sourcename: "utils__to_uint8_from_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:31:44" }
+node: { title: "utils__to_uint16" label: "To_Uint16\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:20:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_uint16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:25:22" }
+node: { title: "utils__to_integer_16" label: "To_Integer_16\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:9:4\n24 bytes (static)" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:17:26" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:15:20" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:15:32" }
+edge: { sourcename: "utils__to_integer_16" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.adb:13:24" }
+node: { title: "utils__union4IP" label: "Union4ip\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.ads:16:9\n24 bytes (static)" }
+node: { title: "utils__union4EQ" label: "Union4eq\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.ads:16:9\n24 bytes (static)" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.ads:16:9" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.ads:16:9" }
+edge: { sourcename: "utils__union4EQ" targetname: "memcmp" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.ads:16:9" }
+node: { title: "utils__integer_16_arrayIP" label: "Integer_16_Arrayip\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/utils.ads:12:9\n16 bytes (static)" }
+}

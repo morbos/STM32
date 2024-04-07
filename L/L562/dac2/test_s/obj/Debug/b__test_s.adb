@@ -9,15 +9,16 @@ package body ada_main is
    E005 : Short_Integer; pragma Import (Ada, E005, "ada__real_time_E");
    E075 : Short_Integer; pragma Import (Ada, E075, "stm32__dac_E");
    E086 : Short_Integer; pragma Import (Ada, E086, "stm32__exti_E");
-   E096 : Short_Integer; pragma Import (Ada, E096, "stm32__mpu_E");
+   E092 : Short_Integer; pragma Import (Ada, E092, "stm32__i2c_E");
+   E100 : Short_Integer; pragma Import (Ada, E100, "stm32__mpu_E");
    E082 : Short_Integer; pragma Import (Ada, E082, "stm32__rcc_E");
-   E099 : Short_Integer; pragma Import (Ada, E099, "stm32__sau_E");
-   E092 : Short_Integer; pragma Import (Ada, E092, "stm32__spi_E");
+   E103 : Short_Integer; pragma Import (Ada, E103, "stm32__sau_E");
+   E096 : Short_Integer; pragma Import (Ada, E096, "stm32__spi_E");
    E080 : Short_Integer; pragma Import (Ada, E080, "stm32__gpio_E");
    E072 : Short_Integer; pragma Import (Ada, E072, "stm32__device_E");
    E084 : Short_Integer; pragma Import (Ada, E084, "stm32__syscfg_E");
    E066 : Short_Integer; pragma Import (Ada, E066, "cm33_E");
-   E103 : Short_Integer; pragma Import (Ada, E103, "stm32__board_E");
+   E107 : Short_Integer; pragma Import (Ada, E107, "stm32__board_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -44,10 +45,11 @@ package body ada_main is
       E005 := E005 + 1;
       E075 := E075 + 1;
       E086 := E086 + 1;
-      E096 := E096 + 1;
-      E082 := E082 + 1;
-      E099 := E099 + 1;
       E092 := E092 + 1;
+      E100 := E100 + 1;
+      E082 := E082 + 1;
+      E103 := E103 + 1;
+      E096 := E096 + 1;
       STM32.DEVICE'ELAB_SPEC;
       STM32.DEVICE'ELAB_BODY;
       E072 := E072 + 1;
@@ -55,7 +57,7 @@ package body ada_main is
       E080 := E080 + 1;
       E066 := E066 + 1;
       STM32.BOARD'ELAB_SPEC;
-      E103 := E103 + 1;
+      E107 := E107 + 1;
    end adainit;
 
    procedure Ada_Main_Program;

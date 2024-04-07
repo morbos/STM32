@@ -1,0 +1,53 @@
+with Interfaces; use Interfaces;
+with HAL;        use HAL;
+with HAL.I2C;    use HAL.I2C;
+
+generic
+
+   type IO_Port (<>) is abstract tagged limited private;
+
+   type Any_IO_Port is access all IO_Port'Class;
+
+   with procedure Read
+     (This     : Any_IO_Port;
+      Register : UInt8;
+      Value    : out UInt8) is <>;
+   --  Get the Value at the address specified in Register via This port.
+
+   with procedure Write
+     (This     : Any_IO_Port;
+      Register : UInt8;
+      Value    : UInt8) is <>;
+   --  Write the Value to the address specified in Register via This port.
+
+   with procedure Read_Buffer
+     (This     : Any_IO_Port;
+      Register : UInt8;
+      Value    : out UInt8_Array) is <>;
+   --  Get the multiple Values at the address specified in Register via This
+   --  port.
+
+package LIS3MDL is
+
+   type LIS3MDL_Sensor (Port : not null Any_IO_Port) is tagged limited private;
+
+   procedure Configure
+     (This      : in out LIS3MDL_Sensor);
+
+   function Device_Id (This : in out LIS3MDL_Sensor) return UInt8;
+   --  Interacts with the device to read a device-class specific identifier
+   --  that can be checked for a LIS3MDL-specific value
+
+   I_Am_LIS3MDL : constant := 16#3D#;
+   --  The value expected to be returned from Device_Id
+
+   LIS3MDL_AUTO_INC       : constant := 16#80#;
+
+private
+
+   type LIS3MDL_Sensor (Port : not null Any_IO_Port) is
+   tagged limited record
+      null;
+   end record;
+
+end LIS3MDL;

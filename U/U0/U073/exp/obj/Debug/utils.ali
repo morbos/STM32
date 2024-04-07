@@ -1,0 +1,165 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32u073bluepill/ssfp/
+A -g
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0plus.small-multiply
+A -mthumb
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P DB LC TF  ES ZX
+
+RN
+RV NO_DELAY
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U utils%b		utils.adb		505fe92b NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+
+U utils%s		utils.ads		eb50b7de EE NE OO PK
+W hal%s			hal.ads			hal.ali
+W hal.spi%s		hal-spi.ads		hal-spi.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20200106220408 76789da1 ada%s
+D a-reatim.ads		20200106220408 4c16970e ada.real_time%s
+D a-retide.ads		20200106220408 081cdaa4 ada.real_time.delays%s
+D a-tags.ads		20200106220408 2dde273c ada.tags%s
+D hal.ads		20200106220407 2b42c80e hal%s
+D hal-spi.ads		20200106220407 73427149 hal.spi%s
+D interfac.ads		20200106220408 5ab55268 interfaces%s
+D i-bit_types.ads	20240323215954 880cac16 interfaces.bit_types%s
+D system.ads		20200106220408 aa7dab5a system%s
+D s-bb.ads		20200106220408 09e072ae system.bb%s
+D s-bbbopa.ads		20240323040132 9e5f0bdf system.bb.board_parameters%s
+D s-bbbosu.ads		20200106220408 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20200106220408 bcfa73ad system.bb.cpu_primitives%s
+D s-bbinte.ads		20200106220408 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20240323015909 de122b3e system.bb.mcu_parameters%s
+D s-bbpara.ads		20200106220408 b91d59c8 system.bb.parameters%s
+D s-bbthre.ads		20200106220408 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20200106220408 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20200106220408 ad086247 system.bb.time%s
+D s-multip.ads		20200106220408 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20200106220408 229b14dd system.os_interface%s
+D s-stm32.ads		20240323015909 e60e59e5 system.stm32%s
+D s-stoele.ads		20200106220408 2dc34a04 system.storage_elements%s
+D utils.ads		20240329193049 e9e55cf1 utils%s
+D utils.adb		20240329193049 f5ac22d4 utils%b
+D /media/16T/ada/STM32/U/U0/U073/exp/gnat.adc  20240329193049 00000000
+G a e
+G c Z s b [to_integer_16 utils 34 13 none]
+G c Z s b [to_uint16 utils 36 13 none]
+G c Z s b [to_uint8_from_uint16 utils 38 14 none]
+G c Z s b [to_uint8_from_integer_32 utils 40 14 none]
+G c Z s b [to_uint16_from_integer_32 utils 42 14 none]
+G c Z s b [to_uint32_from_uint8 utils 44 14 none]
+G c Z s b [to_string_from_uint16 utils 46 14 none]
+G c Z s b [to_uint16_from_integer_16 utils 48 14 none]
+G c Z s b [ms_delay utils 50 14 none]
+G c Z s b [sum utils 52 13 none]
+G c Z s s [integer_16_arrayIP utils 12 9 none]
+G c Z s s [union4IP utils 16 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 25|1r6 1r25
+X 2 a-reatim.ads
+41K13*Real_Time 182e18 25|1w10 1r29
+51M9*Time<19|46M9>
+61I9*Time_Span<19|81I9>
+68V13*Clock{51M9}<19|134p13> 25|87s19
+72V14*"+"{51M9} 25|87s25
+128V13*Milliseconds{61I9} 25|87s27
+X 5 hal.ads
+34K9*HAL 166e8 24|2w6 2r25 3r6 3r25
+53M9*UInt8<7|63M9> 24|34r34 34r48 36r30 36r44 38r51 52r42 25|9r34 9r48 20r30
+. 20r44 28r51 31r14 32r14 90r42 92r14
+66M9*UInt16<7|66M9> 24|36r58 38r66 46r61 48r54 25|20r58 25r14 28r66 59r61
+. 61r14 77r54
+97M9*UInt32<7|74M9> 24|23r20 44r67 25|21r16 23r17 24r26 51r67
+162A9*UInt8_Array(53M9)<integer> 24|8r27
+163A9*UInt16_Array(66M9)<integer> 24|10r27
+X 6 hal-spi.ads
+32K13*SPI 95e12 24|3w10 3r29
+44A9*SPI_Data_8b(5|53M9)<integer> 24|52r22 25|90r22
+X 7 interfac.ads
+38K9*Interfaces 184e15 24|1w6 1r25
+49I9*Integer_16<short_integer> 24|12r57 34r62 48r70 25|9r62 17r14 77r70
+52I9*Integer_32<integer> 24|21r20 40r73 42r74 25|10r16 12r17 13r26 35r73
+. 43r74
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+105V13*Shift_Right{66M9} 25|31s21 66s17
+X 19 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 24 utils.ads
+6K9*Utils 54l5 54e10 25|3b14 100l5 100t10
+8A9*Four_UInt8<5|162A9>(5|53M9)<integer> 29r20 40r53 44r42 25|35r53 51r42
+10A9*Two_UInt16<5|163A9>(5|66M9)<integer> 27r20 42r54 25|43r54
+12A9*Integer_16_Array(7|49I9)<integer> 14r31
+14A9*Two_Integer_16<12A9>(7|49I9)<integer> 25r20
+16R9*Union4 17d7 32e6 25|37r11 45r11 53r11 79r11
+17i7*As_Array{natural} 19r12
+21i13*Val{7|52I9} 25|39m9 47m9
+23m13*UVal{5|97M9} 25|56r19
+25a13*IArr{14A9} 25|81m9
+27a13*HArr{10A9} 25|48r19 82r19
+29a13*BArr{8A9} 25|40r19 55m9
+34V13*To_Integer_16{7|49I9} 34>28 34>42 25|9b13 18l8 18t21
+34m28 MSB{5|53M9} 25|9b28 12r29 14r11
+34m42 LSB{5|53M9} 25|9b42 13r38
+36V13*To_UInt16{5|66M9} 36>24 36>38 25|20b13 26l8 26t17
+36m24 MSB{5|53M9} 25|20b24 23r25
+36m38 LSB{5|53M9} 25|20b38 24r34
+38U14*To_UInt8_From_UInt16 38<36 38<41 38>58 25|28b14 33l8 33t28
+38m36 Msb{5|53M9} 25|28b36 31m7
+38m41 Lsb{5|53M9} 25|28b41 32m7
+38m58 Value{5|66M9} 25|28b58 31r34 32r21
+40U14*To_UInt8_From_Integer_32 40<40 40>65 25|35b14 41l8 41t32
+40a40 Result{8A9} 25|35b40 40m7
+40i65 Value{7|52I9} 25|35b65 39r16
+42U14*To_UInt16_From_Integer_32 42<41 42>66 25|43b14 49l8 49t33
+42a41 Result{10A9} 25|43b41 48m7
+42i66 Value{7|52I9} 25|43b66 47r16
+44U14*To_UInt32_From_UInt8 44>36 44<54 25|51b14 57l8 57t28
+44a36 Dat{8A9} 25|51b36 55r17
+44m54 Result{5|97M9} 25|51b54 56m7
+46U14*To_String_From_UInt16 46<37 46>53 25|59b14 75l8 75t29
+46a37 S{string} 25|59b37 65r16 73m10
+46m53 Value{5|66M9} 25|59b53 66r30
+48U14*To_UInt16_From_Integer_16 48<41 48>62 25|77b14 83l8 83t33
+48m41 Result{5|66M9} 25|77b41 82m7
+48i62 Value{7|49I9} 25|77b62 81r21
+50U14*MS_Delay 50>24 25|85b14 88l8 88t16
+50i24 Param{integer} 25|85b24 87r41
+52V13*Sum{5|53M9} 52>18 25|90b13 98l8 98t11
+52a18 S{6|44A9} 25|90b18 94r16 95r25
+X 25 utils.adb
+10i7 Result{7|52I9} 12m7 13m7 13r17 15m10 15r34 17r26
+21m7 Result{5|97M9} 23m7 24m7 24r17 25r22
+37r7 X{24|16R9} 39m7 40r17
+45r7 X{24|16R9} 47m7 48r17
+53r7 X{24|16R9} 55m7 56r17
+61m7 Idx{5|66M9} 66m10 67r15 69r58 71r59
+62e7 C{character} 69m16 71m16 73r19
+65i11 I{integer} 66r43 73r13
+79r7 X{24|16R9} 81m7 82r17
+92m7 Csum{5|53M9} 95m10 95r18 97r14
+94i11 I{integer} 95r28
+

@@ -1,0 +1,10 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/last_chance_handler.adb"
+node: { title: "uart__send_message" label: "Send_Message\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/uart.ads:7:14" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "system__img_int__image_integer" label: "Image_Integer\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-imgint.ads:39:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "Last_Chance_Handler\n/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/last_chance_handler.adb:11:4\n80 bytes (dynamic)" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "uart__send_message" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/last_chance_handler.adb:16:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "uart__send_message" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/last_chance_handler.adb:15:7" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "memcpy" }
+edge: { sourcename: "__gnat_last_chance_handler" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/U/U0/U073/sx1276_shutdown_u073/src/last_chance_handler.adb:13:31" }
+}

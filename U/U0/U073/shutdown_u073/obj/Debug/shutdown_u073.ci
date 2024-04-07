@@ -1,0 +1,17 @@
+graph: { title: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb"
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:185:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32u07x/stm32-device.ads:65:14" shape : ellipse }
+node: { title: "stm32__gpio__set" label: "SET\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-gpio.ads:153:13" shape : ellipse }
+node: { title: "stm32__power_control__disable_backup_domain_protection" label: "DISABLE_BACKUP_DOMAIN_PROTECTION\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-power_control.ads:35:14" shape : ellipse }
+node: { title: "stm32__power_control__enable" label: "ENABLE\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/Ada_Drivers_Library/arch/ARM/STM32/driversU07x/stm32-power_control.ads:33:14" shape : ellipse }
+node: { title: "_ada_shutdown_u073" label: "Shutdown_U073\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:24:1\n32 bytes (static)" }
+edge: { sourcename: "_ada_shutdown_u073" targetname: "stm32__gpio__set" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:84:18" }
+edge: { sourcename: "_ada_shutdown_u073" targetname: "stm32__power_control__disable_backup_domain_protection" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:82:23" }
+edge: { sourcename: "_ada_shutdown_u073" targetname: "stm32__power_control__enable" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:81:23" }
+edge: { sourcename: "_ada_shutdown_u073" targetname: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:shutdown_u073__init_gpio.4163" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:74:4" }
+node: { title: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:shutdown_u073__init_gpio.4163" label: "Init_Gpio\n/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:36:4\n32 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:shutdown_u073__init_gpio.4163" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:53:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:shutdown_u073__init_gpio.4163" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:48:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:shutdown_u073__init_gpio.4163" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:46:7" }
+edge: { sourcename: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:shutdown_u073__init_gpio.4163" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/U/U0/U073/shutdown_u073/src/shutdown_u073.adb:41:7" }
+}

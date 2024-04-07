@@ -11,7 +11,7 @@ with Ada.Real_Time; use Ada.Real_Time;
 
 procedure Try_wb55x is
 
-   LEDs : GPIO_Points := (Red_LED, Green_LED, Blue_LED);
+--   LEDs : GPIO_Points := (Red_LED, Green_LED, Blue_LED);
    procedure My_Delay;
 
    procedure My_Delay is
@@ -19,11 +19,12 @@ procedure Try_wb55x is
       delay until Clock + Milliseconds (500);
    end My_Delay;
 begin
-   Initialize_Board;
+--   Initialize_Board;
    loop
-      for I in LEDs'Range loop
-         Toggle (LEDs (I));
-         My_Delay;
-      end loop;
+--      for I in LEDs'Range loop
+--         Toggle (LEDs (I));
+--         My_Delay;
+--      end loop;
+      null;
    end loop;
 end Try_wb55x;

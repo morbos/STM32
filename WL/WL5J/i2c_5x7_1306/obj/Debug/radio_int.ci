@@ -1,0 +1,46 @@
+graph: { title: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb"
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspension_objectVIP" label: "Suspension_Objectvip\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:77:4" shape : ellipse }
+node: { title: "system__tasking__protected_objects__unlock" label: "Unlock\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:198:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__lock" label: "Lock\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:184:14" shape : ellipse }
+node: { title: "stm32__subghzrf__clr_irqstatus" label: "CLR_IRQSTATUS\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:592:14" shape : ellipse }
+node: { title: "stm32__subghzrf__set_rx" label: "SET_RX\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:570:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_true" label: "Set_True\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/a-sytaco.ads:49:14" shape : ellipse }
+node: { title: "stm32__gpio__clear" label: "CLEAR\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:165:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "stm32__subghzrf__lora_get_stats" label: "LORA_GET_STATS\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:605:14" shape : ellipse }
+node: { title: "stm32__subghzrf__read_buffer" label: "READ_BUFFER\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:598:14" shape : ellipse }
+node: { title: "stm32__subghzrf__get_rxbufferstatus" label: "GET_RXBUFFERSTATUS\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:594:14" shape : ellipse }
+node: { title: "stm32__gpio__set__2" label: "SET\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-gpio.ads:159:14" shape : ellipse }
+node: { title: "stm32__subghzrf__get_irqstatus" label: "GET_IRQSTATUS\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/arch/ARM/STM32/driversWL5x/stm32-subghzrf.ads:590:13" shape : ellipse }
+node: { title: "system__interrupts__install_restricted_handlers" label: "Install_Restricted_Handlers\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-interr.ads:88:14" shape : ellipse }
+node: { title: "system__tasking__protected_objects__initialize_protection" label: "Initialize_Protection\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-full/gnarl-common/s-taprob.ads:178:14" shape : ellipse }
+node: { title: "radio_int___elabs" label: "Radio_Int\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:37:1\n8 bytes (static)" }
+edge: { sourcename: "radio_int___elabs" targetname: "radio_int__handlerTVIP" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:43:4" }
+edge: { sourcename: "radio_int___elabs" targetname: "ada__synchronous_task_control__suspension_objectVIP" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:41:4" }
+node: { title: "radio_int__handler__radio_handlerP" label: "Radio_Handlerp\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:7\n32 bytes (static)" }
+edge: { sourcename: "radio_int__handler__radio_handlerP" targetname: "_Unwind_Resume" }
+edge: { sourcename: "radio_int__handler__radio_handlerP" targetname: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:radio_int__handler__radio_handlerP___finalizer.5387" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:0" }
+edge: { sourcename: "radio_int__handler__radio_handlerP" targetname: "radio_int__handler__radio_handlerN" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:7" }
+edge: { sourcename: "radio_int__handler__radio_handlerP" targetname: "system__tasking__protected_objects__lock" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:7" }
+node: { title: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:radio_int__handler__radio_handlerP___finalizer.5387" label: "Radio_Handlerp\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:7\n16 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:radio_int__handler__radio_handlerP___finalizer.5387" targetname: "system__tasking__protected_objects__unlock" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:7" }
+node: { title: "radio_int__handler__radio_handlerN" label: "Radio_Handlern\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:52:7\n88 bytes (dynamic)" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__subghzrf__clr_irqstatus" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:86:10" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__subghzrf__set_rx" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:85:10" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "ada__synchronous_task_control__set_true" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:83:13" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__gpio__clear" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:82:13" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "__gnat_rcheck_CE_Index_Check" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:80:24" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__subghzrf__lora_get_stats" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:78:16" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__subghzrf__read_buffer" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:76:16" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:75:16" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__subghzrf__get_rxbufferstatus" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:71:13" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:69:13" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:67:13" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__gpio__set__2" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:65:13" }
+edge: { sourcename: "radio_int__handler__radio_handlerN" targetname: "stm32__subghzrf__get_irqstatus" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.adb:62:15" }
+node: { title: "radio_int__finalize_spec" label: "Finalize_Spec\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:37:1\n4 bytes (static)" }
+node: { title: "radio_int__handlerTVIP" label: "Handlertvip\n/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:43:4\n40 bytes (static)" }
+edge: { sourcename: "radio_int__handlerTVIP" targetname: "system__interrupts__install_restricted_handlers" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:43:4" }
+edge: { sourcename: "radio_int__handlerTVIP" targetname: "system__tasking__protected_objects__initialize_protection" label: "/media/16T/ada/STM32/WL/WL5J/i2c_5x7_1306/src/radio_int.ads:43:4" }
+}

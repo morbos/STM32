@@ -110,10 +110,12 @@ package ada_main is
    --  cortex_m_svd.dwt%s
    --  stm32%s
    --  stm32_svd%s
+   --  stm32_svd.dac%s
    --  stm32_svd.dbgmcu%s
    --  stm32_svd.exti%s
    --  stm32_svd.gpio%s
    --  stm32_svd.gtzc%s
+   --  stm32_svd.i2c%s
    --  stm32_svd.icache%s
    --  stm32_svd.mpu%s
    --  stm32_svd.nvic%s
@@ -122,9 +124,14 @@ package ada_main is
    --  stm32_svd.spi%s
    --  stm32_svd.syscfg%s
    --  hal.gpio%s
+   --  hal.i2c%s
    --  hal.spi%s
+   --  stm32.dac%s
+   --  stm32.dac%b
    --  stm32.exti%s
    --  stm32.exti%b
+   --  stm32.i2c%s
+   --  stm32.i2c%b
    --  stm32.mpu%s
    --  stm32.mpu%b
    --  stm32.rcc%s

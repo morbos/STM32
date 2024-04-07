@@ -66,8 +66,8 @@ package ada_main is
    --  system.bb.mcu_parameters%s
    --  system.bb.mcu_parameters%b
    --  system.stm32%s
-   --  system.bb.parameters%s
    --  system.stm32%b
+   --  system.bb.parameters%s
    --  system.text_io%s
    --  system.text_io%b
    --  system.io%s
@@ -175,13 +175,19 @@ package ada_main is
    --  stm32_svd.rcc%s
    --  stm32_svd.spi%s
    --  stm32_svd.syscfg%s
+   --  stm32_svd.usart%s
    --  hal.gpio%s
    --  hal.i2c%s
    --  hal.spi%s
+   --  hal.uart%s
+   --  logcmd%s
+   --  logcmd%b
    --  stm32.adc%s
+   --  stm32.adc%b
    --  stm32.crc%s
    --  stm32.crc%b
    --  stm32.dma%s
+   --  stm32.dma%b
    --  stm32.exti%s
    --  stm32.exti%b
    --  stm32.i2c%s
@@ -194,11 +200,13 @@ package ada_main is
    --  stm32.timers%s
    --  stm32.timers%b
    --  stm32.gpio%s
+   --  stm32.syscfg%s
+   --  stm32.gpio%b
+   --  stm32.usarts%s
    --  stm32.device%s
    --  stm32.device%b
-   --  stm32.syscfg%s
    --  stm32.syscfg%b
-   --  stm32.gpio%b
+   --  stm32.usarts%b
    --  stm32.board%s
    --  stm32.board%b
    --  try_wl5j%b

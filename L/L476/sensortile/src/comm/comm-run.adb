@@ -93,7 +93,7 @@ package body Comm.Run is
 
       --  Send Advertising data
       Status := Aci_Gap_Update_Adv_Data
-        (AdvLen  => 26,
+        (AdvLen  => (Manuf_Data'Size / 8),
          AdvData => Manuf_Data);
 
       if Status /= BLE_STATUS_OK then

@@ -1,0 +1,48 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A --RTS=/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32l4nucleo/full/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -g
+A -gnata
+A -fcallgraph-info=su
+A -gnatQ
+A -gnatw.X
+A -gnaty
+A -gnatyO
+A -gnatyM120
+A -ffunction-sections
+A -fdata-sections
+P ES ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U vl53l8x_firmware%s	vl53l8x_firmware.ads	c561088b NE OO PK
+W hal%s			hal.ads			hal.ali
+
+D hal.ads		20200106220407 2b42c80e hal%s
+D interfac.ads		20200106220410 5ab55268 interfaces%s
+D system.ads		20200106220411 db831581 system%s
+D vl53l8x_firmware.ads	20230529174114 ee23c085 vl53l8x_firmware%s
+D /media/16T/ada/STM32/L/L443/vl53l8x_l443/gnat.adc  20230527192743 00000000
+G a e
+X 1 hal.ads
+34K9*HAL 166e8 4|1w6 1r17
+53M9*UInt8<2|63M9>
+162A9*UInt8_Array(53M9)<integer> 4|5r29 21512r42 21759r34 21959r32
+X 2 interfac.ads
+63M9*Unsigned_8
+X 4 vl53l8x_firmware.ads
+3K9*VL53L8x_FIRMWARE 21972l5 21972e21
+5a1*Firmware{1|162A9}
+21512a1*Default_Configuration{1|162A9}
+21759a1*Default_XTALK{1|162A9}
+21959a1*Get_NVM_Cmd{1|162A9}
+

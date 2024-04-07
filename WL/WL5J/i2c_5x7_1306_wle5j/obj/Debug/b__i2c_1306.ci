@@ -1,0 +1,114 @@
+graph: { title: "b__i2c_1306.adb"
+node: { title: "__gnat_finalize" label: "finalize\nb__i2c_1306.adb:251:17" shape : ellipse }
+node: { title: "_ada_i2c_1306" label: "ada_main_program\nb__i2c_1306.adb:244:14" shape : ellipse }
+node: { title: "__gnat_initialize" label: "initialize\nb__i2c_1306.adb:248:17" shape : ellipse }
+node: { title: "__gnat_activate_all_tasks" label: "activate_all_tasks_sequential\nb__i2c_1306.adb:119:17" shape : ellipse }
+node: { title: "__gnat_attach_all_handlers" label: "install_restricted_handlers_sequential\nb__i2c_1306.adb:113:17" shape : ellipse }
+node: { title: "radio_int___elabs" label: "e162b\nb__i2c_1306.adb:238:16" shape : ellipse }
+node: { title: "stm32__usarts___elabb" label: "e160b\nb__i2c_1306.adb:233:19" shape : ellipse }
+node: { title: "stm32__device___elabs" label: "e158b\nb__i2c_1306.adb:230:19" shape : ellipse }
+node: { title: "stm32__usarts___elabs" label: "e156b\nb__i2c_1306.adb:229:19" shape : ellipse }
+node: { title: "stm32__gpio___elabb" label: "e154b\nb__i2c_1306.adb:227:17" shape : ellipse }
+node: { title: "stm32__gpio___elabs" label: "e152b\nb__i2c_1306.adb:226:17" shape : ellipse }
+node: { title: "stm32__spi___elabb" label: "e150b\nb__i2c_1306.adb:224:16" shape : ellipse }
+node: { title: "stm32__spi___elabs" label: "e148b\nb__i2c_1306.adb:223:16" shape : ellipse }
+node: { title: "stm32__i2c___elabb" label: "e146b\nb__i2c_1306.adb:220:16" shape : ellipse }
+node: { title: "stm32__i2c___elabs" label: "e144b\nb__i2c_1306.adb:219:16" shape : ellipse }
+node: { title: "stm32__adc___elabs" label: "e142b\nb__i2c_1306.adb:216:16" shape : ellipse }
+node: { title: "ssd1306___elabb" label: "e140b\nb__i2c_1306.adb:213:14" shape : ellipse }
+node: { title: "ssd1306___elabs" label: "e138b\nb__i2c_1306.adb:212:14" shape : ellipse }
+node: { title: "memory_mapped_bitmap___elabb" label: "e136b\nb__i2c_1306.adb:210:27" shape : ellipse }
+node: { title: "memory_mapped_bitmap___elabs" label: "e134b\nb__i2c_1306.adb:209:27" shape : ellipse }
+node: { title: "soft_drawing_bitmap___elabb" label: "e132b\nb__i2c_1306.adb:207:26" shape : ellipse }
+node: { title: "soft_drawing_bitmap___elabs" label: "e130b\nb__i2c_1306.adb:206:26" shape : ellipse }
+node: { title: "ravenscar_time___elabb" label: "e128b\nb__i2c_1306.adb:204:21" shape : ellipse }
+node: { title: "ravenscar_time___elabs" label: "e126b\nb__i2c_1306.adb:203:21" shape : ellipse }
+node: { title: "hal__uart___elabs" label: "e124b\nb__i2c_1306.adb:200:15" shape : ellipse }
+node: { title: "hal__time___elabs" label: "e122b\nb__i2c_1306.adb:198:15" shape : ellipse }
+node: { title: "hal__spi___elabs" label: "e120b\nb__i2c_1306.adb:196:14" shape : ellipse }
+node: { title: "hal__i2c___elabs" label: "e118b\nb__i2c_1306.adb:194:14" shape : ellipse }
+node: { title: "hal__gpio___elabs" label: "e116b\nb__i2c_1306.adb:192:15" shape : ellipse }
+node: { title: "hal__framebuffer___elabs" label: "e114b\nb__i2c_1306.adb:190:22" shape : ellipse }
+node: { title: "hal__bitmap___elabs" label: "e112b\nb__i2c_1306.adb:187:17" shape : ellipse }
+node: { title: "system__tasking__restricted__stages___elabb" label: "e110b\nb__i2c_1306.adb:185:39" shape : ellipse }
+node: { title: "system__tasking__protected_objects__multiprocessors___elabb" label: "e108b\nb__i2c_1306.adb:183:55" shape : ellipse }
+node: { title: "system__tasking__protected_objects___elabb" label: "e106b\nb__i2c_1306.adb:181:39" shape : ellipse }
+node: { title: "system__pool_global___elabs" label: "e104b\nb__i2c_1306.adb:179:25" shape : ellipse }
+node: { title: "ada__real_time___elabb" label: "e102b\nb__i2c_1306.adb:177:20" shape : ellipse }
+node: { title: "system__finalization_masters___elabb" label: "e100b\nb__i2c_1306.adb:175:34" shape : ellipse }
+node: { title: "system__finalization_masters___elabs" label: "e98b\nb__i2c_1306.adb:174:34" shape : ellipse }
+node: { title: "system__storage_pools___elabs" label: "e96b\nb__i2c_1306.adb:172:27" shape : ellipse }
+node: { title: "ada__finalization___elabs" label: "e94b\nb__i2c_1306.adb:170:23" shape : ellipse }
+node: { title: "system__finalization_root___elabs" label: "e92b\nb__i2c_1306.adb:168:31" shape : ellipse }
+node: { title: "ada__streams___elabs" label: "e90b\nb__i2c_1306.adb:166:18" shape : ellipse }
+node: { title: "system__exception_table___elabb" label: "e88b\nb__i2c_1306.adb:163:29" shape : ellipse }
+node: { title: "ada__tags___elabb" label: "e86b\nb__i2c_1306.adb:161:15" shape : ellipse }
+node: { title: "system__soft_links___elabs" label: "e84b\nb__i2c_1306.adb:160:24" shape : ellipse }
+node: { title: "system__bb__timing_events___elabs" label: "e82b\nb__i2c_1306.adb:158:30" shape : ellipse }
+node: { title: "ada__text_io___elabb" label: "e80b\nb__i2c_1306.adb:156:18" shape : ellipse }
+node: { title: "__gnat_runtime_initialize" label: "runtime_initialize\nb__i2c_1306.adb:111:17" shape : ellipse }
+node: { title: "ada_main___elabb" label: "e78b\nb__i2c_1306.adb:149:15" shape : ellipse }
+node: { title: "system__standard_library__adafinal" label: "s_stalib_adafinal\nb__i2c_1306.adb:60:17" shape : ellipse }
+node: { title: "__gnat_runtime_finalize" label: "runtime_finalize\nb__i2c_1306.adb:63:17" shape : ellipse }
+node: { title: "system__secondary_stack__ss_stackIP" label: "Ss_Stackip\n/media/16T/ada/Ada_Drivers_Library/embedded-runtimes/ravenscar-stm32wl5x/full/../../base_runtimes/ravenscar-full/common/s-secsta.ads:106:9" shape : ellipse }
+node: { title: "ada_main___elabb" label: "ada_main\nb__i2c_1306.adb:7:1\n16 bytes (static)" }
+edge: { sourcename: "ada_main___elabb" targetname: "ada_main__Tsec_default_sized_stacksBIP" label: "b__i2c_1306.adb:52:4" }
+node: { title: "main" label: "main\nb__i2c_1306.adb:247:4\n24 bytes (static)" }
+edge: { sourcename: "main" targetname: "__gnat_finalize" label: "b__i2c_1306.adb:263:7" }
+edge: { sourcename: "main" targetname: "adafinal" label: "b__i2c_1306.adb:262:7" }
+edge: { sourcename: "main" targetname: "_ada_i2c_1306" label: "b__i2c_1306.adb:261:7" }
+edge: { sourcename: "main" targetname: "adainit" label: "b__i2c_1306.adb:260:7" }
+edge: { sourcename: "main" targetname: "__gnat_initialize" label: "b__i2c_1306.adb:259:7" }
+node: { title: "adainit" label: "adainit\nb__i2c_1306.adb:75:4\n8 bytes (static)" }
+edge: { sourcename: "adainit" targetname: "__gnat_activate_all_tasks" label: "b__i2c_1306.adb:241:7" }
+edge: { sourcename: "adainit" targetname: "__gnat_attach_all_handlers" label: "b__i2c_1306.adb:240:7" }
+edge: { sourcename: "adainit" targetname: "radio_int___elabs" label: "b__i2c_1306.adb:238:16" }
+edge: { sourcename: "adainit" targetname: "stm32__usarts___elabb" label: "b__i2c_1306.adb:233:19" }
+edge: { sourcename: "adainit" targetname: "stm32__device___elabs" label: "b__i2c_1306.adb:230:19" }
+edge: { sourcename: "adainit" targetname: "stm32__usarts___elabs" label: "b__i2c_1306.adb:229:19" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabb" label: "b__i2c_1306.adb:227:17" }
+edge: { sourcename: "adainit" targetname: "stm32__gpio___elabs" label: "b__i2c_1306.adb:226:17" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabb" label: "b__i2c_1306.adb:224:16" }
+edge: { sourcename: "adainit" targetname: "stm32__spi___elabs" label: "b__i2c_1306.adb:223:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabb" label: "b__i2c_1306.adb:220:16" }
+edge: { sourcename: "adainit" targetname: "stm32__i2c___elabs" label: "b__i2c_1306.adb:219:16" }
+edge: { sourcename: "adainit" targetname: "stm32__adc___elabs" label: "b__i2c_1306.adb:216:16" }
+edge: { sourcename: "adainit" targetname: "ssd1306___elabb" label: "b__i2c_1306.adb:213:14" }
+edge: { sourcename: "adainit" targetname: "ssd1306___elabs" label: "b__i2c_1306.adb:212:14" }
+edge: { sourcename: "adainit" targetname: "memory_mapped_bitmap___elabb" label: "b__i2c_1306.adb:210:27" }
+edge: { sourcename: "adainit" targetname: "memory_mapped_bitmap___elabs" label: "b__i2c_1306.adb:209:27" }
+edge: { sourcename: "adainit" targetname: "soft_drawing_bitmap___elabb" label: "b__i2c_1306.adb:207:26" }
+edge: { sourcename: "adainit" targetname: "soft_drawing_bitmap___elabs" label: "b__i2c_1306.adb:206:26" }
+edge: { sourcename: "adainit" targetname: "ravenscar_time___elabb" label: "b__i2c_1306.adb:204:21" }
+edge: { sourcename: "adainit" targetname: "ravenscar_time___elabs" label: "b__i2c_1306.adb:203:21" }
+edge: { sourcename: "adainit" targetname: "hal__uart___elabs" label: "b__i2c_1306.adb:200:15" }
+edge: { sourcename: "adainit" targetname: "hal__time___elabs" label: "b__i2c_1306.adb:198:15" }
+edge: { sourcename: "adainit" targetname: "hal__spi___elabs" label: "b__i2c_1306.adb:196:14" }
+edge: { sourcename: "adainit" targetname: "hal__i2c___elabs" label: "b__i2c_1306.adb:194:14" }
+edge: { sourcename: "adainit" targetname: "hal__gpio___elabs" label: "b__i2c_1306.adb:192:15" }
+edge: { sourcename: "adainit" targetname: "hal__framebuffer___elabs" label: "b__i2c_1306.adb:190:22" }
+edge: { sourcename: "adainit" targetname: "hal__bitmap___elabs" label: "b__i2c_1306.adb:187:17" }
+edge: { sourcename: "adainit" targetname: "system__tasking__restricted__stages___elabb" label: "b__i2c_1306.adb:185:39" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects__multiprocessors___elabb" label: "b__i2c_1306.adb:183:55" }
+edge: { sourcename: "adainit" targetname: "system__tasking__protected_objects___elabb" label: "b__i2c_1306.adb:181:39" }
+edge: { sourcename: "adainit" targetname: "system__pool_global___elabs" label: "b__i2c_1306.adb:179:25" }
+edge: { sourcename: "adainit" targetname: "ada__real_time___elabb" label: "b__i2c_1306.adb:177:20" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabb" label: "b__i2c_1306.adb:175:34" }
+edge: { sourcename: "adainit" targetname: "system__finalization_masters___elabs" label: "b__i2c_1306.adb:174:34" }
+edge: { sourcename: "adainit" targetname: "system__storage_pools___elabs" label: "b__i2c_1306.adb:172:27" }
+edge: { sourcename: "adainit" targetname: "ada__finalization___elabs" label: "b__i2c_1306.adb:170:23" }
+edge: { sourcename: "adainit" targetname: "system__finalization_root___elabs" label: "b__i2c_1306.adb:168:31" }
+edge: { sourcename: "adainit" targetname: "ada__streams___elabs" label: "b__i2c_1306.adb:166:18" }
+edge: { sourcename: "adainit" targetname: "system__exception_table___elabb" label: "b__i2c_1306.adb:163:29" }
+edge: { sourcename: "adainit" targetname: "ada__tags___elabb" label: "b__i2c_1306.adb:161:15" }
+edge: { sourcename: "adainit" targetname: "system__soft_links___elabs" label: "b__i2c_1306.adb:160:24" }
+edge: { sourcename: "adainit" targetname: "system__bb__timing_events___elabs" label: "b__i2c_1306.adb:158:30" }
+edge: { sourcename: "adainit" targetname: "ada__text_io___elabb" label: "b__i2c_1306.adb:156:18" }
+edge: { sourcename: "adainit" targetname: "__gnat_runtime_initialize" label: "b__i2c_1306.adb:154:7" }
+edge: { sourcename: "adainit" targetname: "ada_main___elabb" label: "b__i2c_1306.adb:149:15" }
+node: { title: "adafinal" label: "adafinal\nb__i2c_1306.adb:59:4\n8 bytes (static)" }
+edge: { sourcename: "adafinal" targetname: "system__standard_library__adafinal" label: "b__i2c_1306.adb:72:7" }
+edge: { sourcename: "adafinal" targetname: "__gnat_runtime_finalize" label: "b__i2c_1306.adb:71:7" }
+node: { title: "ada_main__Tsec_default_sized_stacksBIP" label: "tsec_default_sized_stacksbip\nb__i2c_1306.adb:52:4\n32 bytes (static)" }
+edge: { sourcename: "ada_main__Tsec_default_sized_stacksBIP" targetname: "system__secondary_stack__ss_stackIP" label: "b__i2c_1306.adb:52:4" }
+}

@@ -1,0 +1,41 @@
+graph: { title: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb"
+node: { title: "stm32__i2c__configure" label: "CONFIGURE\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversF1/i2c_stm32f1/stm32-i2c.ads:88:14" shape : ellipse }
+node: { title: "stm32__gpio__configure_io" label: "CONFIGURE_IO\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/driversF1/stm32-gpio.ads:219:14" shape : ellipse }
+node: { title: "stm32__device__reset__7" label: "RESET\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:298:14" shape : ellipse }
+node: { title: "stm32__device__enable_clock__8" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:295:14" shape : ellipse }
+node: { title: "__gnat_last_chance_handler" label: "gnat_last_chance_handler\n<built-in>" shape : ellipse }
+node: { title: "stm32__device__enable_clock__2" label: "ENABLE_CLOCK\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/arch/ARM/STM32/devices/stm32f1/stm32-device.ads:68:14" shape : ellipse }
+node: { title: "lis3mdl_i2c__configure" label: "Configure\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:238:14" shape : ellipse }
+node: { title: "ada__text_io__put_line" label: "Put_Line\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/a-textio.ads:41:14" shape : ellipse }
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "system__img_int__image_integer" label: "Image_Integer\n/media/16T/ada/STM32/F/F103/lis3mdl/Ada_Drivers_Library/embedded-runtimes/base_runtimes/ravenscar-ssfp/common/s-imgint.ads:39:14" shape : ellipse }
+node: { title: "lis3mdl_i2c__read_mag" label: "Read_Mag\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:254:14" shape : ellipse }
+node: { title: "lis3mdl_i2c__get_status" label: "Get_Status\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:252:13" shape : ellipse }
+node: { title: "lis3mdl_i2c__lis3mdl_sensorIP" label: "Lis3mdl_Sensorip\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl.ads:289:9" shape : ellipse }
+node: { title: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__set_up_mag.4228" label: "Set_Up_Mag\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:77:4\n24 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__set_up_mag.4228" targetname: "lis3mdl_i2c__configure" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:84:10" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__set_up_mag.4228" targetname: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:79:7" }
+node: { title: "_ada_lis3mdl_f103" label: "Lis3mdl_F103\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:16:1\n144 bytes (dynamic)" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "ada__text_io__put_line" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:98:10" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "memcpy" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:100:41" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:99:41" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "system__img_int__image_integer" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:98:38" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "lis3mdl_i2c__read_mag" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:97:13" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "lis3mdl_i2c__get_status" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:95:14" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__set_up_mag.4228" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:92:4" }
+edge: { sourcename: "_ada_lis3mdl_f103" targetname: "lis3mdl_i2c__lis3mdl_sensorIP" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:18:4" }
+node: { title: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" label: "Initialize_Mag_Io_Hardware\n/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:31:4\n48 bytes (static)" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__i2c__configure" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:61:16" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:62:15" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:59:7" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__gpio__configure_io" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:58:7" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__device__reset__7" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:44:19" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:44:32" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__device__enable_clock__8" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:42:7" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "__gnat_last_chance_handler" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:42:26" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:40:7" }
+edge: { sourcename: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:lis3mdl_f103__initialize_mag_io_hardware.4782" targetname: "stm32__device__enable_clock__2" label: "/media/16T/ada/STM32/F/F103/lis3mdl/src/lis3mdl_f103.adb:39:7" }
+}

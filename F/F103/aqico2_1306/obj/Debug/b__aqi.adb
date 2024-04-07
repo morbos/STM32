@@ -28,6 +28,7 @@ package body ada_main is
    E164 : Short_Integer; pragma Import (Ada, E164, "screen_E");
    E163 : Short_Integer; pragma Import (Ada, E163, "stm32__afio_E");
    E170 : Short_Integer; pragma Import (Ada, E170, "last_chance_handler_E");
+   E174 : Short_Integer; pragma Import (Ada, E174, "trace_E");
    E168 : Short_Integer; pragma Import (Ada, E168, "utils_E");
    E071 : Short_Integer; pragma Import (Ada, E071, "co2_int_E");
    E069 : Short_Integer; pragma Import (Ada, E069, "hw_E");
@@ -93,6 +94,8 @@ package body ada_main is
       E164 := E164 + 1;
       E163 := E163 + 1;
       E170 := E170 + 1;
+      Trace'Elab_Spec;
+      E174 := E174 + 1;
       E168 := E168 + 1;
       Co2_Int'Elab_Spec;
       E069 := E069 + 1;
@@ -122,6 +125,7 @@ package body ada_main is
    --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/peripherals.o
    --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/screen.o
    --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/last_chance_handler.o
+   --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/trace.o
    --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/utils.o
    --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/hw.o
    --   /home/hedley/ada/STM32/F/F103/aqico2_1306/obj/Debug/co2_task.o
